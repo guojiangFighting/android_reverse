@@ -1,0 +1,4 @@
+静态分析过程
+
+1、存在壳的入口查找
+全局搜：extends Application

@@ -1,0 +1,29 @@
+# APK 与解包产物（体积大，不入库）
+*.apk
+aito_250626/
+com.dodonew.online/
+jadx_out/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# 本地分析输出（可能含 Key）
+reapk_*.json
+reapk_*.txt
+*_out.json
+*_out.txt
+manifest_ascii.txt
+
+# IDE / OS
+.idea/
+.vscode/
+.cursor/
+*.swp
+Thumbs.db
+Desktop.ini
+.DS_Store

@@ -1,0 +1,16 @@
+APK 分析结果（aito_250626.apk）
+包名：app.huawei.auto（华为汽车 / AITO 车联 App）
+Application：app.huawei.auto.XCarApplication（manifest） / 壳入口 com.Proxy.ShellApplication
+启动页：SplashActivity → MainActivity
+当前 JADX 可见类仅约 62 个——主体被壳保护
+壳特征（com.Proxy.* + com.Install.*）：
+
+壳版本：Defines.VERSION = v1.5.2.17
+原生库：libxloader.so（VLibrary.attachApp() 为 native）
+从 assets 释放加密载荷：maindata/res.data、maindata/xXxX.enc、meta-inf/enc.mf、cert0_enc
+运行时解密装载二次 DEX（.cache/ / .local/ / .shell/）
+业务侧（从 manifest 可见，代码在加密 DEX 内）：
+
+数字车钥匙 / BLE（ICCE）
+充电、试驾、社区、消息
+地图（高德/百度/腾讯）、推送（HMS/JPush/小米等）、微信相关组件
