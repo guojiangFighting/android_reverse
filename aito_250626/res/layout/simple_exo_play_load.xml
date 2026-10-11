@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/video_load_color" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:my="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwprogressbar.widget.HwProgressBar android:layout_gravity="center" android:id="@id/play_loading_view" android:layout_width="@dimen/font56" android:layout_height="@dimen/font56" my:hwFillColor="@color/white" style="@style/Widget.Emui.HwProgressBar" />
+    <TextView android:textSize="@dimen/font12" android:textColor="@android:color/white" android:id="@id/exo_loading_show_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/xcar_app_text_loading" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/no_data_layout" android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <app.huawei.auto.im.ui.common.illustration.IllustrationLayout android:layout_width="match_parent" android:layout_height="match_parent" app:illustrationLayout_text="@string/xcar_app_text_has_no_search_result" app:image_src="@drawable/sns_ic_search_app_empty_normal" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/no_data_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/image_no_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_ic_nogroup" />
+        <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_text_secondary" android:id="@id/text_no_group_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/emui_dimens_max_start" android:layout_marginTop="1.0dp" android:layout_marginRight="@dimen/emui_dimens_max_end" android:text="@string/xcar_app_text_sns_no_group_title" android:layout_marginStart="@dimen/emui_dimens_max_start" android:layout_marginEnd="@dimen/emui_dimens_max_end" />
+    </LinearLayout>
+</LinearLayout>

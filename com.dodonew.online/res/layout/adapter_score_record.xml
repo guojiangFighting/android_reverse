@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/option_txt_color" android:id="@id/tv_record_scoreStrategy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:singleLine="true" />
+        <TextView android:id="@id/tv_record_operaTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/option_txt_color" android:id="@id/tv_record_operaType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:drawableLeft="@drawable/icon_price" android:drawablePadding="5.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

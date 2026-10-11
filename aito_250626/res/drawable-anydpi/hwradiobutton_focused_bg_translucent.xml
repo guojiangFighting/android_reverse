@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/hwradiobutton_focused_radius" />
+    <size android:height="@dimen/hwradiobutton_focused_size" android:width="@dimen/hwradiobutton_focused_size" />
+    <stroke android:width="@dimen/hwradiobutton_focused_width" android:color="@color/emui_control_focused_outline_translucent" />
+</shape>

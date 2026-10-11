@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/order_number" android:layout_width="match_parent" android:layout_height="47.0dp" android:layout_below="@id/title" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_order_no" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeBody1AndFamilyMedium" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="right" android:id="@id/older_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font8" android:text="" android:layout_toLeftOf="@id/copy_image" android:layout_centerVertical="true" style="@style/textColorSecondaryAndSizeBody2" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center" android:id="@id/copy_image" android:background="@drawable/ic_public_copy" android:layout_width="@dimen/font16" android:layout_height="@dimen/font16" android:layout_marginLeft="@dimen/font4" android:layout_marginTop="1.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:layout_gravity="center" android:id="@id/view_line" android:background="#e8eaec" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_below="@id/order_number" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:id="@id/prompt_language" android:paddingBottom="@dimen/font16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginHorizontal="@dimen/font16" style="@style/textColorAndTextSizeBody3AndFamilyRegular" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/font24" android:layout_above="@id/prompt_language" android:layout_below="@id/view_line" />
+    <include android:id="@id/title" layout="@layout/mine_hwappbarpattern_navigation_icon_layout" />
+</RelativeLayout>

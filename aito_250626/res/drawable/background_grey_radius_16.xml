@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/ads_epa_finish_bg_corners_radius" />
+    <solid android:color="@color/epa_image_background" />
+</shape>

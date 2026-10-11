@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center_horizontal" android:id="@id/ota_empty_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ota_empty" app:layout_constraintBottom_toBottomOf="@id/guideline3" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/guideline3" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_gravity="center_horizontal" android:id="@id/ota_empty_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/xcar_app_text_ota_version_failed_notice" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ota_empty_iv" style="@style/textColorTertiaryAndSizeBody2" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline3" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

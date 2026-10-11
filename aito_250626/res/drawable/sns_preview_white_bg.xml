@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/sns_preview_bottom_background" />
+    <size android:height="@dimen/sns_im_select_width" android:width="@dimen/sns_im_select_width" />
+</shape>

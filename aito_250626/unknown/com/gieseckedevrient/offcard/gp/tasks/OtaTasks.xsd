@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0" xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0" elementFormDefault="qualified">
+    <include schemaLocation="GpKeySetTypes.xsd"/>
+    <import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="CommonTypes.xsd"/>
+    <complexType name="OpenOtaSessionTaskType">
+        <sequence minOccurs="0">
+      <element name="OtaKeySet" type="ogpt:OtaKeySetType"/>
+            <element name="OtaParameters" type="ogpt:OtaParametersType"/>
+        </sequence>
+        <attribute name="Name" type="string" use="optional"/>
+        <attribute name="UpdateCounter" type="boolean" use="optional"/>
+    </complexType>
+    <complexType name="CloseOtaSessionTaskType">
+        <attribute name="Name" type="string" use="optional"/>
+    </complexType>
+    <complexType name="OtaParametersType">
+        <sequence>
+            <element name="TerminalProfile" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+            <element name="ServiceCenterAddress" type="string"/>
+            <element name="OriginatorAddress" type="string" minOccurs="0"/>
+            <element name="TimeStamp" type="oct:EncodingHex7Byte" minOccurs="0"/>
+            <element name="ClassByte" type="oct:EncodingHex1Byte" default="A0"/>
+            <element name="FirstByte" type="oct:EncodingHex1Byte" default="44"/>
+            <element name="ProtocolIdentifier" type="oct:EncodingHex1Byte" default="7F"/>
+            <element name="DataCodingScheme" type="oct:EncodingHex1Byte" default="F6"/>
+            <element name="ReferenceNumber" default="00">
+                <complexType>
+                    <simpleContent>
+                        <extension base="oct:EncodingHex1Byte">
+                            <attribute name="Increment" type="boolean" default="false"/>
+                        </extension>
+                    </simpleContent>
+                </complexType>
+            </element>
+            <element name="InitialCommand" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+            <element name="TonNpi" type="oct:EncodingHex1Byte" minOccurs="0"/>
+        </sequence>
+    </complexType>
+    <complexType name="OtaScriptTaskType">
+        <sequence>
+            <element name="OtaScript" type="ogpt:OtaScriptType"/>
+            <element name="ExpectedResponse" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+        </sequence>
+        <attribute name="Name" type="string" use="optional"/>
+    </complexType>
+    <complexType name="OtaScriptType">
+        <attribute name="Uri" type="string" use="required"/>
+    </complexType>
+</schema>

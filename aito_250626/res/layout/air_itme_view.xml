@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="80.0dp" android:layout_centerVertical="true">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="44.0dp" android:text="@string/xcar_app_text_airconditioner_temperature" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeBody1" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/air_conditioner_subtracts" android:layout_width="44.0dp" android:layout_height="44.0dp" android:layout_marginRight="12.0dp" android:layout_toLeftOf="@id/air_conditioner_numbers">
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/mAIRHwImageViewReduce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/air_conditioner_subtract" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:gravity="center" android:layout_gravity="center" android:id="@id/air_conditioner_numbers" android:layout_width="@dimen/font40sp" android:layout_height="wrap_content" android:text="@string/xcar_app_text_default_ac_temp_value" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/air_conditioner_adds" android:layout_width="44.0dp" android:layout_height="44.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="-12.0dp" android:layout_alignParentRight="true">
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/mAIRHwImageViewAdd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/air_conditioner_add" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

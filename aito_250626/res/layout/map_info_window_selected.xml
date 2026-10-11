@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="fill_horizontal" android:orientation="vertical" android:id="@id/info_window_ll" android:background="@drawable/ic_bubble_white_selected" android:layout_width="wrap_content" android:layout_height="@dimen/dp_44" android:minWidth="73.0dp" android:minHeight="44.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="32.0dp" android:layout_marginStart="@dimen/font6" android:layout_marginEnd="@dimen/font10">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/station_icon" android:background="@drawable/ic_common_slow_selected" android:layout_width="26.0dp" android:layout_height="26.0dp" android:layout_marginTop="3.0dp" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="16.0sp" android:textColor="#99000000" android:id="@id/station_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font7" android:singleLine="true" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginStart="@dimen/font4" />
+    </LinearLayout>
+</LinearLayout>

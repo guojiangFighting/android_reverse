@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center|bottom" android:id="@id/widget_container" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rpa="http://schemas.android.com/apk/res-auto">
+    <com.huawei.ads.sdk.epa.view.OneBtnWidget android:id="@id/one_button_widget" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" rpa:widget_background="@drawable/ads_background_white_radius_16" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.huawei.ads.sdk.epa.view.TwoBtnWidget android:id="@id/two_button_widget" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" rpa:two_button_widget_background="@drawable/ads_background_white_radius_16" />
+    </LinearLayout>
+    <include layout="@layout/ads_widget_sys_prepare" />
+    <include layout="@layout/ads_widget_unavailable" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/act_base_color" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/ic_exclusive_rights_bg" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/car_name_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_104" android:layout_marginStart="@dimen/baseui_dp_24" android:layout_toStartOf="@id/my_vehicle_image_rights" android:layout_alignParentStart="true">
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font18" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="left" android:id="@id/my_car_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_my_m5" android:maxLines="2" android:fontFamily="@string/emui_text_font_family_medium" />
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/vehicle_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font6" android:maxLines="2" />
+    </LinearLayout>
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/my_vehicle_image_rights" android:layout_width="@dimen/dp_215" android:layout_height="@dimen/baseui_dp_84" android:layout_marginTop="@dimen/baseui_dp_113" android:layout_alignParentEnd="true" />
+</RelativeLayout>

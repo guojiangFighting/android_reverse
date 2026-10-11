@@ -1,0 +1,13 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+option java_package = "com.huawei.ads.rpa.net.proto";
+
+package RtsaMsgs;
+
+// 4 avp
+message CloudEncryptOperation {
+    string payload = 1;
+    string sign = 2;
+    string transId = 3;
+}

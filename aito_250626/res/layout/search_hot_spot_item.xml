@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/hot_spot_lay" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:gravity="center" android:id="@id/hot_spot_index" android:layout_width="@dimen/font18" android:layout_height="match_parent" android:layout_centerVertical="true" android:fontFamily="@string/emui_text_font_family_medium" />
+    <com.huawei.uikit.hwtextview.widget.HwTextView android:id="@id/search_hot_spot_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.5dp" android:layout_marginBottom="10.5dp" android:layout_toRightOf="@id/hot_spot_index" android:layout_centerVertical="true" android:layout_marginStart="@dimen/font12" style="@style/textColorPrimaryAndSizeBody2" />
+    <View android:id="@id/hot_spot_view" android:background="@drawable/ic_horizontal_driver_bg" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_toRightOf="@id/hot_spot_index" android:layout_below="@id/search_hot_spot_tv" android:layout_marginStart="@dimen/font12" />
+</RelativeLayout>

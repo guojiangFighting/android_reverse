@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/title_back_icon" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:src="@drawable/ic_public_back_white" android:layout_marginHorizontal="@dimen/font16" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font20" android:id="@id/title_description" android:text="@string/xcar_app_app_bar_vehicle_drive_report_title" style="@style/driving_report_tv_style" />
+    <View android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/title_share_icon" android:visibility="gone" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:src="@drawable/icon_public_share" android:layout_marginHorizontal="@dimen/font16" />
+</LinearLayout>

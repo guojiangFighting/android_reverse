@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/tex_layout" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="66.0dp">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="16.0sp" android:id="@id/fingerprint_list_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_enable_fingerprint_verification" android:alpha="0.9" style="@style/textSizeBody1AndColorPrimary" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_secondary" android:id="@id/fingerprint_list_sub_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_enable_fingerprint_verification_des" android:layout_below="@id/fingerprint_list_text" android:fontFamily="@string/emui_text_font_family_regular" />
+    </RelativeLayout>
+    <com.huawei.uikit.phone.hwswitch.widget.HwSwitch android:id="@id/fingerprint_list_switch" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_centerVertical="true" android:layout_marginEnd="2.0dp" android:layout_alignParentEnd="true" />
+    <View android:id="@id/my_settings_list_line" android:background="@color/black" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginRight="4.0dp" android:layout_alignBottom="@id/tex_layout" android:alpha="0.2" android:layout_alignEnd="@id/fingerprint_list_switch" />
+</RelativeLayout>

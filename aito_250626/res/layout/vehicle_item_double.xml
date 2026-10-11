@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/moduleConceal" android:background="@drawable/vehicle_list_bg" android:layout_width="match_parent" android:layout_height="@dimen/baseui_dp_59"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/vehicle_list_double_icon" android:layout_width="@dimen/baseui_dp_24" android:layout_height="@dimen/baseui_dp_24" android:layout_marginLeft="@dimen/baseui_dp_8" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/vehicle_select_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/baseui_dp_8" android:src="@drawable/icon_public_arrow_right" android:layout_centerVertical="true" android:alpha="0.2" android:layout_alignParentEnd="true" />
+    <com.huawei.uikit.phone.hwprogressbar.widget.HwProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="@dimen/baseui_dp_24" android:layout_height="@dimen/baseui_dp_24" android:layout_marginRight="@dimen/baseui_dp_8" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/Widget.Emui.HwProgressBar.Large" />
+    <LinearLayout android:orientation="vertical" android:id="@id/doublelins_lay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/vehicle_select_icon" android:layout_toRightOf="@id/vehicle_list_double_icon" android:layout_centerVertical="true" android:layout_marginStart="@dimen/baseui_dp_16">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_primary" android:id="@id/vehicle_list_double_text_up" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/version_img" android:visibility="gone" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/baseui_dp_16" android:src="@drawable/beta_version_img" android:layout_marginStart="@dimen/baseui_dp_4" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_anim_subtitle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/ll_status_anim" android:visibility="visible" android:layout_width="@dimen/font19" android:layout_height="@dimen/font19" android:layout_marginTop="2.0dp">
+                    <com.airbnb.lottie.LottieAnimationView android:id="@id/status_anim" android:layout_width="@dimen/font19" android:layout_height="@dimen/font19" android:scaleType="centerCrop" android:adjustViewBounds="true" app:lottie_autoPlay="true" app:lottie_fileName="sentry/xiaoqiu.json" app:lottie_loop="true" />
+                </LinearLayout>
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_secondary" android:id="@id/vehicle_list_double_text_down_icon" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_2" android:layout_marginEnd="@dimen/baseui_dp_8" />
+            </LinearLayout>
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_secondary" android:id="@id/vehicle_list_double_text_down" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_2" android:layout_marginEnd="@dimen/baseui_dp_8" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/car_versions_red_dot" android:visibility="gone" android:layout_width="@dimen/baseui_dp_6" android:layout_height="@dimen/baseui_dp_6" android:src="@drawable/notify_red_point" android:layout_toLeftOf="@id/vehicle_select_icon" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/baseui_dp_2" />
+    <View android:id="@id/vehicle_list_diliver" android:background="#000000" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" android:alpha="0.2" android:layout_marginStart="@dimen/baseui_dp_16" android:layout_marginEnd="@dimen/baseui_dp_8" android:layout_toEndOf="@id/vehicle_list_double_icon" />
+</RelativeLayout>

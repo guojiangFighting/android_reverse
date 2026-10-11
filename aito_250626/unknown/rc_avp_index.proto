@@ -1,0 +1,55 @@
+
+// [START declaration]
+syntax = "proto3";
+package rc_avp.index;
+option java_package = "com.huawei.ads.carsearch.proto.index";
+option java_outer_classname = "RcAvpIndex";
+// [END declaration]
+
+
+// [START messages]
+
+message Index {
+  repeated PatchIndex patches = 1;
+}
+
+message Point {
+	double x = 1;
+	double y = 2;
+	double z = 3;
+}
+
+message TileIndex {
+  uint32 tileId = 1;               // 高16位是有符号x，低16位是有符号y
+  double minX = 2;                 // 相对坐标，绝对坐标减去oriPoint.x坐标
+  double minY = 3;                 // 相对坐标，绝对坐标减去oriPoint.y坐标
+  double maxX = 4;                 // 相对坐标，绝对坐标减去oriPoint.x坐标
+  double maxY = 5;                 // 相对坐标，绝对坐标减去oriPoint.y坐标
+}
+
+message PatchIndex {
+  uint32 version = 1;
+  uint64 patchId = 2;
+  double minX = 3;                  // MBR,GCJ02坐标系
+  double minY = 4;                  // MBR,GCJ02坐标系
+  double maxX = 5;                  // MBR,GCJ02坐标系
+  double maxY = 6;                  // MBR,GCJ02坐标系
+  Point referencePoint = 7;         // 锚点(计算相对坐标), GCJ02坐标系
+  Point oriPoint = 8;               // tile坐标系原点(计算tile编号), GCJ02坐标系
+  repeated TileIndex tiles = 9;
+  uint32 zoneId = 10;               // 锚点转UTM时的带号
+  uint64 patchVersion = 11;         // uint64类型的version
+  uint32 patchTag = 12;             // patch类型标识（0-城区patch nca, 1-园区patch avp 30w, 2-园区patch nca GCJ02）
+  uint64 relatedNCAPatchId = 13;    // 关联的NCA的patchid
+}
+
+message PatchPolygons {
+  repeated PatchPolygon polygons = 1;
+}
+
+message PatchPolygon {
+  uint64 id = 1;
+  repeated Point points = 2;
+}
+
+// [END messages]

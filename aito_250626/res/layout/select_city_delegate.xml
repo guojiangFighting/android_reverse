@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center_vertical" android:id="@id/text_view" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:layout_marginStart="@dimen/font16" />
+</RelativeLayout>

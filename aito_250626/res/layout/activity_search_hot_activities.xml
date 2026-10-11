@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <app.huawei.auto.base.view.StatusBarView android:id="@id/status_bar_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/layout_hot_activities" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/search_page_top_layout" android:layout_width="match_parent" android:layout_height="@dimen/font56" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" layout="@layout/search_top_layout" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/post_recycler_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/search_page_top_layout" android:overScrollMode="never" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+fan修改：
+//2014-7-17 12时修改如下
+1.	在request中添加getHttpEntity()方法
+	修改HttpClientStack的setEntityIfNonEmptyBody()和HurlStack的addBodyIfExists,使优先上传httpEntity的内容
+//2014-7-24 17时修改如下
+1.	修改缓存目录 Volley
+//2014-7-25 21时修改如下
+1.	修改HttpHeaderParser默认编码格式（parseCharset方法）
+//2014-8-6 15:03修改如下
+1.添加类HTTPSTrustManager
+      在HurlStack的createConnection（）中添加https支持
+//2014-10-30 15:03修改如下
+1.添加自定义拓展到包com.hk.app.android.lib下
+//2014-11-11 11:03修改如下
+1.修改DefaultRetryPolicy,使默认超时为30s,重试3次
+2.修改volleylog.add()方法，使调试模式不抛异常
+3.修改ajaxParams.java,提供getCommonEntity()和getFileUploadEntity（）,方便子类自定义
+//2014-11-24 13:50修改如下
+对AjaxParams添加参数的方法做了简单的封装,主要封装出了以下方法
+	1.默认值为null的putCommonTypeParam()，以及可以手动指定默认值的重载方法
+	2.默认值为null的putStringTypeParam()，以及可以手动置顶默认值的重载方法
+//2014-12-23 10:50修改如下
+1.对VolleyRequestManager进行方法重载，允许外部定义HttpStack
+	

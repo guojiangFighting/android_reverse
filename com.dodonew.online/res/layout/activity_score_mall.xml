@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbarThumbVertical="@drawable/scrollbar_vertical" android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_my_info" android:background="@color/colorPrimary" android:padding="10.0dp" android:paddingTop="10.0dp" android:layout_width="match_parent" android:layout_height="@dimen/user_img_height">
+            <TextView android:textSize="16.0sp" android:textStyle="italic" android:textColor="@color/white" android:id="@id/tv_my_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/divider" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/view_mall_task" style="@style/MyButtonLinearLayoutStyle">
+                <TextView android:id="@id/tv_sign_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_sign" />
+                <TextView android:textSize="12.0sp" android:id="@id/tv_sign_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="+积分" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/view_mall_score_record" android:layout_marginLeft="1.0px" style="@style/MyButtonLinearLayoutStyle">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_score_record" />
+                <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="点击查看" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/view_mall_exchange_record" android:layout_marginLeft="1.0px" style="@style/MyButtonLinearLayoutStyle">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_exchange_record" />
+                <TextView android:textSize="12.0sp" android:id="@id/tv_mall_exchange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="2张" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:background="@drawable/shape_title_btn" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="积分兑换" />
+        <com.dodonew.online.widget.MultiStateView android:id="@id/msv_mall" android:layout_width="match_parent" android:layout_height="match_parent" app:msv_loadingView="@layout/view_load_web" app:msv_emptyView="@layout/view_empty" app:msv_errorView="@layout/view_error" app:msv_viewState="loading">
+            <com.dodonew.online.widget.MGridView android:id="@id/mgv_mall" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:horizontalSpacing="5.0dp" android:verticalSpacing="5.0dp" android:numColumns="2" />
+        </com.dodonew.online.widget.MultiStateView>
+    </LinearLayout>
+</ScrollView>

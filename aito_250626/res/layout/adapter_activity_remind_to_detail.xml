@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:layout_marginEnd="@dimen/font4"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/signuseravatar_remind" android:background="@drawable/mine_portrait" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

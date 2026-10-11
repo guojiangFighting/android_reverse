@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_150"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="@dimen/dp_150" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:layout_marginStart="8.0dp" android:layout_marginEnd="@dimen/font28" app:cardCornerRadius="@dimen/emui_corner_radius_card" app:cardElevation="@dimen/font4" app:hwAdvancedCardViewClickAnimationEnable="false" style="@style/Base.CardView">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/font16" android:paddingEnd="16.0dp" />
+    </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+</FrameLayout>

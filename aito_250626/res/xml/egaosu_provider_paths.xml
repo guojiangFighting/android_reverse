@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <root-path name="xl_root_path" path="Pictures" />
+        <external-path name="xl_external_files" path="Pictures" />
+        <external-files-path name="xl_external_files_path" path="Pictures" />
+        <external-cache-path name="xl_external_cache_path" path="xUtils_cache" />
+    </paths>
+</resources>

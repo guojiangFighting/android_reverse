@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_priview" android:padding="@dimen/sns_message_bottom_menu_text_margin_top" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <app.huawei.auto.im.ui.chat.photo.view.PhotoGridImageView android:id="@id/photo_image_view" android:layout_width="@dimen/sns_im_image_select_width" android:layout_height="wrap_content" android:src="@drawable/sns_default_pic" android:scaleType="centerCrop" />
+    <View android:id="@id/white_album" android:background="@color/sns_white_50" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

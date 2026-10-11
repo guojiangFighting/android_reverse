@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/flex_layout" android:background="@color/id_fa_color_sub_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/app_bar_layout" android:background="#00000000" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentScrim="#00000000" app:layout_scrollFlags="scroll">
+            <ImageView android:id="@id/topic_cover_image" android:layout_width="match_parent" android:layout_height="271.0dp" android:src="@color/default_pic_light_color" android:scaleType="centerCrop" app:layout_scrollFlags="scroll" />
+            <View android:id="@id/image_cover_mask" android:background="@drawable/post_detail_image_mask" android:layout_width="match_parent" android:layout_height="271.0dp" />
+            <LinearLayout android:orientation="vertical" android:id="@id/topic_root_view" android:background="@color/id_fa_color_sub_background" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="270.0dp" app:layout_scrollFlags="scroll">
+                <View android:id="@id/scroll_content_rl" android:background="@drawable/topic_detail_bg" android:layout_width="match_parent" android:layout_height="@dimen/font16" android:layout_marginTop="-16.0dp" app:layout_scrollFlags="scroll" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/topic_name_htv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" app:layout_scrollFlags="scroll" style="@style/textColorPrimaryAndSizeHeadline7AndFamilyMedium" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/topic_sub_name_htv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2" android:layout_marginHorizontal="@dimen/font16" app:layout_scrollFlags="scroll" style="@style/textColorSecondaryAndSizeBody3AndFamilyRegular" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/topic_participants_tv" android:background="@drawable/topic_participatecnt_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:layout_marginHorizontal="@dimen/font16" app:layout_scrollFlags="scroll" style="@style/textColorSecondaryAndSizeCaption1" />
+                <Space android:layout_width="match_parent" android:layout_height="25.0dp" />
+            </LinearLayout>
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar_view" android:tag="toolbar" android:layout_width="match_parent" android:layout_height="@dimen/dp_100" app:layout_collapseMode="pin" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@id/frame_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <include android:id="@id/loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/xcar_poster_loadding_view" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

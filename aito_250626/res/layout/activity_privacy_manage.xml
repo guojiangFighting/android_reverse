@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/id_fa_color_sub_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/privacy_manager_title" layout="@layout/mine_hwappbarpattern_navigation_icon_layout" />
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_marginTop="@dimen/font8" android:layout_marginRight="@dimen/font16" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:layout_marginBottom="@dimen/font4" android:layout_marginHorizontal="@dimen/font4">
+            <RelativeLayout android:background="@drawable/mine_list_bg" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:paddingStart="8.0dp" android:paddingEnd="8.0dp">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font16" android:textColor="@color/emui_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_who_can_see_my_page" android:layout_centerVertical="true" android:fontFamily="@string/emui_text_font_family_medium" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/open_all_rl" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:paddingStart="8.0dp" android:paddingEnd="8.0dp">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_all_the_people" android:layout_centerVertical="true" style="@style/textSizeBody1AndColorPrimary" />
+                <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/cb_all" android:background="@drawable/ic_privacy_checkbox_selector" android:focusable="false" android:clickable="false" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:checked="false" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" style="@style/item_divider" />
+            <RelativeLayout android:id="@id/open_follow_rl" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:paddingStart="8.0dp" android:paddingEnd="8.0dp">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_my_follow_people" android:layout_centerVertical="true" style="@style/textSizeBody1AndColorPrimary" />
+                <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/cb_my_follow" android:background="@drawable/ic_privacy_checkbox_selector" android:focusable="false" android:clickable="false" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:checked="false" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" style="@style/item_divider" />
+            <RelativeLayout android:id="@id/open_self_rl" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:paddingStart="8.0dp" android:paddingEnd="8.0dp">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_only_self" android:layout_centerVertical="true" style="@style/textSizeBody1AndColorPrimary" />
+                <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/cb_my_self" android:background="@drawable/ic_privacy_checkbox_selector" android:focusable="false" android:clickable="false" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:checked="false" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="@dimen/font56" android:layout_marginTop="12.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/follow_and_fans" android:background="@drawable/mine_list_bg" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:paddingStart="12.0dp" android:paddingEnd="12.0dp">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_follow_and_fans" android:layout_centerVertical="true" style="@style/textSizeBody1AndColorPrimary" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_width="12.0dp" android:layout_height="24.0dp" android:src="@drawable/icon_public_arrow_right" android:layout_centerVertical="true" android:alpha="0.2" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="@dimen/font56" android:layout_marginTop="12.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/rl_blacklist" android:background="@drawable/mine_list_bg" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:paddingStart="12.0dp" android:paddingEnd="12.0dp">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/security_manager_list_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_black_list" android:layout_centerVertical="true" style="@style/textSizeBody1AndColorPrimary" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/security_manager_list_right_arrow" android:layout_width="12.0dp" android:layout_height="24.0dp" android:src="@drawable/icon_public_arrow_right" android:layout_centerVertical="true" android:alpha="0.2" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="@dimen/font56" android:layout_marginTop="12.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/rl_content_recommend" android:background="@drawable/mine_list_bg" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:paddingStart="12.0dp" android:paddingEnd="12.0dp">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_recommend_content_activity_title" android:layout_centerVertical="true" style="@style/textSizeBody1AndColorPrimary" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_width="12.0dp" android:layout_height="24.0dp" android:src="@drawable/icon_public_arrow_right" android:layout_centerVertical="true" android:alpha="0.2" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</LinearLayout>

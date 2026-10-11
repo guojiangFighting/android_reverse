@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="437.0dp">
+        <app.huawei.auto.base.view.XCarWebView android:id="@id/content_web_view" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+        <include android:id="@id/loading_view" layout="@layout/loading_view" />
+        <include android:id="@id/error_view" android:visibility="gone" layout="@layout/error_view" />
+    </FrameLayout>
+    <include layout="@layout/dialog_auto_charge_bottom_btn" />
+</androidx.appcompat.widget.LinearLayoutCompat>

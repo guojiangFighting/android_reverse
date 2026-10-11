@@ -1,0 +1,19 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+option java_package = "com.huawei.ads.carsearch.proto";
+
+package SdkMsgs;
+
+message Vector3 {
+    double x = 1;
+    double y = 2;
+    double z = 3;
+}
+
+message Twist {
+    Vector3 linear = 1;
+}
+
+message TwistWithCovariance {
+    Twist twist = 1;
+}

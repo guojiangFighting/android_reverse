@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<drawable android:shape="rectangle" app:hwHoveredColor="@color/emui_control_hover" app:hwPressedColor="@color/emui_clickeffic_default_color" class="com.huawei.uikit.animations.drawable.HwHoverAndPressAnimatedDrawable"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <corners android:radius="@dimen/emui_corner_radius_small" />
+</drawable>

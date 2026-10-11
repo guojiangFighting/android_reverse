@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/arrow_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dp" android:src="@drawable/ic_parking_order_more_arrow" android:layout_alignParentEnd="true" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/order_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="viewEnd" android:layout_toStartOf="@id/arrow_more" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/hwlistdrawable_round_rectangle_card_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/sns_list_height_64" android:paddingStart="@dimen/font16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_head" android:layout_width="@dimen/sns_list_head_image_width" android:layout_height="@dimen/sns_list_head_image_height" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/emui_dimens_element_horizontal_large" />
+    <RelativeLayout android:id="@id/group_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="4.0dp" android:layout_toStartOf="@id/checkbox_status_btn" android:layout_toEndOf="@id/image_head">
+        <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_text_primary" android:ellipsize="end" android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerVertical="true" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/expand_img_arrow" android:layout_alignParentStart="true" />
+        <ImageView android:id="@id/expand_img_arrow" android:layout_width="@dimen/sns_member_list_head_arrow_image_width" android:layout_height="@dimen/sns_member_list_head_arrow_image_height" android:src="@drawable/sns_ic_public_arrow_top" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.huawei.uikit.hwcheckbox.widget.HwCheckBox android:id="@id/checkbox_status_btn" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/Widget.Emui.HwCheckBox.Large" />
+    <ImageView android:id="@id/bottom_line" android:layout_width="match_parent" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/sns_item_margin_end" android:layout_alignStart="@id/group_title" style="@style/crossuikit_divider_style" />
+</RelativeLayout>

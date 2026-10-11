@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/letter_text_layout" android:layout_width="match_parent" android:layout_height="48.0dp" android:paddingStart="@dimen/font16" android:paddingEnd="@dimen/font16">
+        <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/font14" android:textColor="@color/emui_color_text_secondary" android:gravity="bottom" android:id="@id/letterTxt" android:paddingBottom="9.5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:fontFamily="@string/emui_text_font_family_medium" />
+    </RelativeLayout>
+    <include layout="@layout/sns_friend_list_view_layout" />
+</LinearLayout>

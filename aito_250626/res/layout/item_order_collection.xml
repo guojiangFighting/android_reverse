@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/rl_order_item_root" android:layout_width="match_parent" android:layout_height="71.0dp" android:paddingHorizontal="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_parking_lot" android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@drawable/svg_ic_parking_lot" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginStart="12.0dp" android:layout_toEndOf="@id/iv_parking_lot">
+        <TextView android:textSize="14.0dp" android:textColor="@color/black" android:id="@id/tv_parking_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/black_60alpha" android:id="@id/tv_order_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_alignParentEnd="true">
+        <TextView android:textSize="14.0dp" android:textColor="@color/black" android:layout_gravity="end" android:id="@id/tv_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/black_60alpha" android:layout_gravity="end" android:id="@id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+    </LinearLayout>
+    <View android:background="@color/black_5alpha" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" android:layout_marginStart="12.0dp" android:layout_toEndOf="@id/iv_parking_lot" />
+</RelativeLayout>

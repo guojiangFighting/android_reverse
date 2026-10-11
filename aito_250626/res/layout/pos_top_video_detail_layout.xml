@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/root" android:background="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <app.huawei.auto.base.view.video.VideoPlayerView android:layout_gravity="center" android:id="@id/video_play_view" android:layout_width="match_parent" android:layout_height="match_parent" app:player_layout_id="@layout/post_top_video_item_view" app:player_preview_layout_id="@layout/simple_exo_default_preview" />
+</FrameLayout>

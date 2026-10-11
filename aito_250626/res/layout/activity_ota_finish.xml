@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/ota_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/hwappbarpattern_height" layout="@layout/hwappbarpattern_title_item_layout" />
+    <RelativeLayout android:id="@id/ota_finish_upper_failure" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/ota_title_bar">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/ota_upper_failure_bg" android:layout_width="@dimen/font56" android:layout_height="@dimen/font56" android:layout_marginTop="100.0dp" android:src="@drawable/ota_download_warning" android:layout_centerHorizontal="true" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center_horizontal" android:id="@id/ota_upper_failure_error_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24" android:text="@string/xcar_app_toast_download_failed" android:layout_below="@id/ota_upper_failure_bg" style="@style/textColorPrimaryAndSizeHeadline8" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_below="@id/ota_upper_failure_error_title" android:layout_centerHorizontal="true">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center" android:layout_gravity="center" android:id="@id/ota_upper_failure_error_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_insufficient_storage_space" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" style="@style/textColorSecondaryAndSizeBody3" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/ota_finish_download_success" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/ota_title_bar">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/ota_download_success" android:background="@drawable/ota_success_icon" android:layout_width="@dimen/font56" android:layout_height="@dimen/font56" android:layout_marginTop="100.0dp" android:layout_centerHorizontal="true" android:backgroundTint="@color/emui_color_4" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center_horizontal" android:id="@id/ota_success_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24" android:text="@string/xcar_app_text_ota_finish_download" android:layout_below="@id/ota_download_success" style="@style/textColorPrimaryAndSizeHeadline8" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/ota_btn_root_relative" android:layout_width="match_parent" android:layout_height="76.0dp" android:layout_alignParentBottom="true">
+        <com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout android:id="@id/ota_column_have_know" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:layout_marginBottom="@dimen/font24" android:layout_centerHorizontal="true" app:hwColumnType="button_type">
+            <com.huawei.uikit.phone.hwbutton.widget.HwButton android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/ota_btn_have_know" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_button_knowed" android:layout_centerHorizontal="true" style="@style/Widget.Emui.HwButton.Light" />
+        </com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout>
+        <com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout android:id="@id/ota_column_contact_post" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:layout_marginBottom="@dimen/font24" android:layout_centerHorizontal="true" app:hwColumnType="button_type">
+            <com.huawei.uikit.phone.hwbutton.widget.HwButton android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/ota_btn_contact_post" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_button_contact_after_sales" android:layout_centerHorizontal="true" style="@style/Widget.Emui.HwButton.Light" />
+        </com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

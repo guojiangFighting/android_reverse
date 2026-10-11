@@ -1,0 +1,11 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+option java_package = "com.huawei.ads.rpa.net.proto";
+
+package RtsaMsgs;
+
+message RpaCtrlCmd {
+    uint32 cmdCode = 1;         // RpaCmdCode
+    uint32 parkoutDir = 2;      // 泊出方向选择
+}

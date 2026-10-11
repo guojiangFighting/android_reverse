@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/hwcheckbox_normal_focus_size" android:width="@dimen/hwcheckbox_normal_focus_size" />
+    <corners android:radius="@dimen/hwcheckbox_normal_focus_radius" />
+    <stroke android:width="@dimen/hwcheckbox_normal_focus_stroke_width" android:color="@color/emui_control_focused_outline_dark" />
+</shape>

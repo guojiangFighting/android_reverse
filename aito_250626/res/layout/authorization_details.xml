@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/function_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:text="@string/xcar_app_text_mine_remote_control" style="@style/textSizeBody1AndColorPrimary" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14_empower" android:id="@id/function_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="...." android:layout_below="@id/function_name" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+    <View android:layout_gravity="center" android:id="@id/line1" android:background="@color/color_line_f2f2f2" android:layout_width="304.0dp" android:layout_height="0.5dp" android:layout_marginTop="@dimen/font10" android:layout_marginBottom="@dimen/font10" android:layout_below="@id/function_info" android:layout_alignParentBottom="true" />
+</LinearLayout>

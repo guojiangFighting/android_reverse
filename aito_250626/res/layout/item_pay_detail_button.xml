@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/button_layout" android:background="@drawable/cardview_normal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/button_icon" android:background="@drawable/apply_refund" android:layout_width="@dimen/baseui_dp_24" android:layout_height="@dimen/baseui_dp_24" android:layout_marginTop="@dimen/baseui_dp_16" android:layout_marginBottom="@dimen/baseui_dp_16" android:layout_marginStart="@dimen/baseui_dp_12" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/button_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/button_icon" app:layout_constraintTop_toTopOf="parent" style="@style/textColorPrimaryAndSizeBody2AndFamilyRegular" />
+</androidx.constraintlayout.widget.ConstraintLayout>

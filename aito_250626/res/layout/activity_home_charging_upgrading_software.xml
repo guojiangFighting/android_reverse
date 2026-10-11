@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/id_fa_color_sub_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <app.huawei.auto.base.view.StatusBarView android:id="@id/title_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ScrollView android:id="@id/scroll_view" android:paddingBottom="@dimen/baseui_dp_90" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_below="@id/title_view">
+        <RelativeLayout android:id="@id/content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@id/progress_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12">
+                <com.huawei.uikit.phone.hwprogressindicator.widget.HwProgressIndicator android:id="@id/circle_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/font36" android:layout_marginEnd="@dimen/font36" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/dp_60" android:gravity="center" android:id="@id/upgrade_numder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:fontFamily="@string/emui_text_font_family_medium" />
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/numder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" />
+                    </LinearLayout>
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font16" android:gravity="center" android:id="@id/status_upgrade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" />
+                </LinearLayout>
+            </RelativeLayout>
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center" android:id="@id/upgrade_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font24" android:layout_marginTop="@dimen/font16" android:layout_marginRight="@dimen/font24" android:layout_below="@id/progress_layout" style="@style/textprimarysizebody1" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center" android:id="@id/upgrade_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font24" android:layout_marginTop="@dimen/font4" android:layout_marginRight="@dimen/font24" android:layout_below="@id/upgrade_description" style="@style/textsecondarysizebody3" />
+            <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/content_pic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_marginTop="@dimen/font24" android:layout_marginRight="@dimen/font16" android:layout_below="@id/upgrade_tip" app:cardCornerRadius="@dimen/emui_corner_radius_notification" app:contentPaddingLeft="@dimen/font12" app:contentPaddingRight="@dimen/font12" app:hwAdvancedCardViewClickAnimationEnable="false">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:text="@string/xcar_app_text_new_version_update_log" style="@style/textprimarysizebody1" />
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="#817d7d" android:id="@id/journal_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginBottom="@dimen/font16" style="@style/textColorPrimaryAndSizeBody2" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/connection_charging" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <View android:background="#c6c4c4" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/font11" app:contentPaddingLeft="@dimen/font12" app:contentPaddingRight="@dimen/font12" />
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:id="@id/update_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:layout_marginBottom="@dimen/font16" style="@style/textColorTertiaryAndSizeCaption1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/bluetooth_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font16" android:layout_below="@id/content_pic" android:layout_alignParentBottom="true">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center" android:id="@id/bluetooth_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_marginRight="@dimen/font16" android:layout_marginBottom="@dimen/font8" android:text="@string/xcar_app_text_the_home_charging_stub_is_connected_to_the_bluetooth_device_successfully" android:layout_above="@id/install_phone_btn" android:layout_centerHorizontal="true" style="@style/textColorSecondaryAndSizeBody2" />
+        <com.huawei.uikit.phone.hwbutton.widget.HwButton android:textSize="@dimen/font16" android:textColor="@color/color_gray_f1f1f1" android:id="@id/install_phone_btn" android:background="@drawable/color_accent_dark_blue" android:layout_width="198.0dp" android:layout_height="@dimen/font40" android:text="@string/xcar_app_button_install_now" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Widget.Emui.HwButton.Light" />
+    </RelativeLayout>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/title_view" layout="@layout/home_charging_upgrade_error_view" />
+    <include android:id="@id/loadding_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/xcar_charging_hub_loadding_view" />
+</RelativeLayout>

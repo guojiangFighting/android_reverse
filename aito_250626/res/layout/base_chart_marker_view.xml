@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwbubblelayout.widget.HwBubbleLayout android:gravity="center" android:orientation="vertical" android:id="@id/marker_bubble_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" app:hwBubbleRadius="8.0dp">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="@dimen/font48" android:layout_marginHorizontal="@dimen/font8">
+            <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="10.0sp" android:textColor="#99ffffff" android:layout_gravity="center_horizontal" android:id="@id/marker_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_regular" />
+            <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/marker_value_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_regular" />
+        </LinearLayout>
+    </com.huawei.uikit.phone.hwbubblelayout.widget.HwBubbleLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/line_chart_marker_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:src="@drawable/charge_marker_point" />
+</LinearLayout>

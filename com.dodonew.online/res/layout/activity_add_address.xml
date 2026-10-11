@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/view_address_area" android:padding="10.0dp" style="@style/UnderLineViewStyle">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <EditText android:id="@id/et_address_area" android:hint="输入省市 例如  (xx省xx市)" android:inputType="text" style="@style/EditTextMatchParentStyle" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View style="@style/DividerStyle" />
+            <LinearLayout android:orientation="vertical" android:padding="10.0dp" style="@style/UnderLineViewStyle">
+                <EditText android:id="@id/et_address_detail" android:hint="请输入详细地址" android:inputType="text" style="@style/EditTextMatchParentStyle" />
+            </LinearLayout>
+            <View style="@style/DividerStyle" />
+            <LinearLayout android:orientation="vertical" android:padding="10.0dp" style="@style/UnderLineViewStyle">
+                <EditText android:id="@id/et_address_name" android:hint="请输入收货人姓名" android:inputType="text" style="@style/EditTextMatchParentStyle" />
+            </LinearLayout>
+            <View style="@style/DividerStyle" />
+            <LinearLayout android:orientation="vertical" android:padding="10.0dp" style="@style/UnderLineViewStyle">
+                <EditText android:id="@id/et_address_mobile" android:hint="请输入收货人联系电话" android:inputType="phone" style="@style/EditTextMatchParentStyle" />
+            </LinearLayout>
+            <View style="@style/DividerStyle" />
+            <LinearLayout android:orientation="vertical" android:padding="10.0dp" style="@style/UnderLineViewStyle">
+                <EditText android:id="@id/et_address_qq" android:hint="请输入QQ号码" android:inputType="number" style="@style/EditTextMatchParentStyle" />
+            </LinearLayout>
+            <View style="@style/DividerStyle" />
+            <LinearLayout android:orientation="vertical" android:padding="10.0dp" style="@style/UnderLineViewStyle">
+                <EditText android:id="@id/et_address_postNum" android:hint="请输入邮编" android:inputType="number" style="@style/EditTextMatchParentStyle" />
+            </LinearLayout>
+            <View style="@style/DividerStyle" />
+        </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton android:layout_gravity="end|bottom" android:id="@id/fab_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" android:src="@drawable/ic_done" app:layout_anchorGravity="end|bottom" app:rippleColor="@color/half_transparent" app:borderWidth="0.0dp" />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/emui_corner_radius_large" />
+    <solid android:color="@color/sns_chat_link_background" />
+    <stroke android:width="@dimen/sns_stroke_size" android:color="@color/emui_accent" />
+</shape>

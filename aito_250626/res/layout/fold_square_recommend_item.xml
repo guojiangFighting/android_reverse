@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/content_pic" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/emui_corner_radius_small" app:hwAdvancedCardViewClickAnimationEnable="false" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/square_recommend_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

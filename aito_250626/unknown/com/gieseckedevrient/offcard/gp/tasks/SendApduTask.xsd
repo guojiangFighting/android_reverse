@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0"
+        xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0"
+        xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified">
+
+  <import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="CommonTypes.xsd"/>
+
+  <complexType name="SendApduTaskType">
+    <sequence>
+	  <element name="Command" type="oct:EncodingHexCommandApduByte"/>
+	  <element name="CommandCallback" type="ogpt:HexCallbackType" minOccurs="0"/>
+      <element name="Answer" type="ogpt:AnswerType" minOccurs="0"/>
+	</sequence>
+    <attribute name="Name" type="string" use="optional"/>
+  </complexType>
+  
+  <complexType name="SendBytesTaskType">
+    <sequence>
+	  <element name="Command" type="oct:EncodingHexUnlimitedByte"/>
+	  <element name="CommandCallback" type="ogpt:HexCallbackType" minOccurs="0"/>
+      <element name="ExpectedResponse" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+	</sequence>
+    <attribute name="Name" type="string" use="optional"/>
+  </complexType>
+  
+  <complexType name="AnswerType">
+    <sequence>
+      <element name="Data" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+      <element name="Sw" type="oct:EncodingHex2Byte" minOccurs="0"/>
+    </sequence>
+  </complexType>
+  
+  <complexType name="HexCallbackType">
+	<sequence>
+	  <element name="HexParameter" minOccurs="0" maxOccurs="unbounded">
+        <complexType>
+          <attribute name="Offset" type="unsignedByte" use="required"/>
+          <attribute name="Length" type="unsignedByte" use="required"/>
+          <attribute name="Name" type="string" use="required"/>
+          <attribute name="InitializeDefault" type="boolean" default="false" use="optional"/>
+        </complexType>
+      </element>
+	</sequence>
+	<attribute name="SpecificName" type="token" use="optional"/>
+  </complexType>
+  
+</schema>

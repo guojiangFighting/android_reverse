@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/album" android:layout_width="match_parent" android:layout_height="@dimen/dp_96" android:paddingHorizontal="@dimen/font16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/album_image_hacv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp" android:layout_centerVertical="true" app:cardBackgroundColor="@color/emui_card_panel_bg" app:cardCornerRadius="@dimen/emui_corner_radius_small" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/album_image" android:layout_width="@dimen/dp_64" android:layout_height="@dimen/dp_64" android:scaleType="centerCrop" />
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    <TextView android:id="@id/album_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/album_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrowhead" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/alnum_info_rl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/album_arrow" android:layout_toRightOf="@id/album_image_hacv" android:layout_centerVertical="true" android:layout_marginHorizontal="@dimen/font16">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="end" android:id="@id/album_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/textColorPrimaryAndSizeBody1AndFamilyRegular" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="end" android:id="@id/album_photo_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2" android:maxLines="1" android:layout_below="@id/album_name" style="@style/textColorSecondaryAndSizeBody3" />
+    </RelativeLayout>
+    <View android:id="@id/bottom_line_view" android:background="#33000000" android:layout_width="match_parent" android:layout_height="@dimen/font_px_1" android:layout_alignLeft="@id/alnum_info_rl" android:layout_alignRight="@id/album_arrow" android:layout_alignParentBottom="true" />
+</RelativeLayout>

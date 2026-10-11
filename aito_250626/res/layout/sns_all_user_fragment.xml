@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <app.huawei.auto.im.ui.widget.FastSearchRecycleView android:id="@id/sns_fast_search_list" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@id/error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/im_base_error_view" />
+    <include android:id="@id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/im_base_empty_view" />
+    <include android:id="@id/loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/im_base_loading_view" />
+    <app.huawei.auto.base.view.BaseNoInternetLayout android:id="@id/no_network_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

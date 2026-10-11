@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="40.0dp" android:width="50.0dp" android:viewportWidth="50.0" android:viewportHeight="40.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#00000000" android:pathData="M0,12.5L31,43.5" android:strokeColor="@drawable/$bind_veh_left__0" android:strokeWidth="0.5" android:fillType="evenOdd" />
+    <path android:fillColor="#00000000" android:pathData="M0.9781,9.5L31.9781,40.5" android:strokeColor="@drawable/$bind_veh_left__1" android:strokeWidth="0.5" android:fillType="evenOdd" />
+    <path android:fillColor="#00000000" android:pathData="M2.131,6.5L37.3737,41.7426" android:strokeColor="@drawable/$bind_veh_left__2" android:strokeWidth="0.5" android:fillType="evenOdd" />
+    <path android:fillColor="#00000000" android:pathData="M2.131,2.5L40.9092,41.2782" android:strokeColor="@drawable/$bind_veh_left__3" android:strokeWidth="0.5" android:fillType="evenOdd" />
+    <path android:fillColor="#00000000" android:pathData="M4.3606,0.5L45.2601,41.3995" android:strokeColor="@drawable/$bind_veh_left__4" android:strokeWidth="0.5" android:fillType="evenOdd" />
+    <path android:fillColor="#00000000" android:pathData="M8.8734,0.5L49.7729,41.3995" android:strokeColor="@drawable/$bind_veh_left__5" android:strokeWidth="0.5" android:fillType="evenOdd" />
+</vector>

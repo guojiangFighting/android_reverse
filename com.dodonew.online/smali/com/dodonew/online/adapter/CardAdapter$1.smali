@@ -1,0 +1,72 @@
+.class Lcom/dodonew/online/adapter/CardAdapter$1;
+.super Lcom/dodonew/online/widget/swipelayout/SimpleSwipeListener;
+.source "CardAdapter.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/dodonew/online/adapter/CardAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/dodonew/online/adapter/CardAdapter;
+
+
+# direct methods
+.method constructor <init>(Lcom/dodonew/online/adapter/CardAdapter;)V
+    .locals 0
+    .param p1, "this$0"    # Lcom/dodonew/online/adapter/CardAdapter;
+
+    .prologue
+    .line 84
+    iput-object p1, p0, Lcom/dodonew/online/adapter/CardAdapter$1;->this$0:Lcom/dodonew/online/adapter/CardAdapter;
+
+    invoke-direct {p0}, Lcom/dodonew/online/widget/swipelayout/SimpleSwipeListener;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onOpen(Lcom/dodonew/online/widget/swipelayout/SwipeLayout;)V
+    .locals 4
+    .param p1, "layout"    # Lcom/dodonew/online/widget/swipelayout/SwipeLayout;
+
+    .prologue
+    .line 87
+    sget-object v0, Lcom/dodonew/online/widget/swipelayout/Techniques;->Tada:Lcom/dodonew/online/widget/swipelayout/Techniques;
+
+    invoke-static {v0}, Lcom/dodonew/online/widget/swipelayout/YoYo;->with(Lcom/dodonew/online/widget/swipelayout/Techniques;)Lcom/dodonew/online/widget/swipelayout/YoYo$AnimationComposer;
+
+    move-result-object v0
+
+    const-wide/16 v2, 0x1f4
+
+    invoke-virtual {v0, v2, v3}, Lcom/dodonew/online/widget/swipelayout/YoYo$AnimationComposer;->duration(J)Lcom/dodonew/online/widget/swipelayout/YoYo$AnimationComposer;
+
+    move-result-object v0
+
+    const-wide/16 v2, 0x64
+
+    invoke-virtual {v0, v2, v3}, Lcom/dodonew/online/widget/swipelayout/YoYo$AnimationComposer;->delay(J)Lcom/dodonew/online/widget/swipelayout/YoYo$AnimationComposer;
+
+    move-result-object v0
+
+    const v1, 0x7f0d0149
+
+    .line 88
+    invoke-virtual {p1, v1}, Lcom/dodonew/online/widget/swipelayout/SwipeLayout;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/dodonew/online/widget/swipelayout/YoYo$AnimationComposer;->playOn(Landroid/view/View;)Lcom/dodonew/online/widget/swipelayout/YoYo$YoYoString;
+
+    .line 89
+    return-void
+.end method

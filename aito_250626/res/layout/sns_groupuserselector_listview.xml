@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/groupuserselector_fragment_layout_id" android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_bar" layout="@layout/sns_action_bar_not_meui" />
+    <include android:id="@id/groupuserselector_searchbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_address_search_margin_top_down" layout="@layout/sns_local_search_layout" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/sns_selected_ry" android:visibility="gone" layout="@layout/sns_activity_address_selector_more" />
+        <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/sns_group_select_all" android:background="#fff1f3f5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/sns_selected_ry" app:hwAdvancedCardViewClickAnimationEnable="false">
+            <include layout="@layout/sns_groupuserselector_item" />
+        </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/sns_fast_search_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0.0px" android:layout_below="@id/sns_group_select_all" android:overScrollMode="never" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/no_friend_data_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/contact_guide_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_ic_search_app_empty_normal" android:scaleX="@integer/sns_image_scaleX" />
+        <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_text_secondary" android:gravity="center_horizontal" android:id="@id/no_data_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginRight="24.0dp" android:text="@string/xcar_app_text_has_no_search_result" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginStart="24.0dp" android:layout_marginEnd="24.0dp" />
+    </LinearLayout>
+</LinearLayout>

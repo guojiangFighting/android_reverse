@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/act_base_color" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/charge_evaluation_success_title_layout" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/hwappbarpattern_title_item_layout" />
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/img_success" android:background="@drawable/ic_charging_evaluation_success" android:layout_width="@dimen/font56" android:layout_height="@dimen/font56" android:layout_marginTop="@dimen/dp_101" android:layout_below="@id/charge_evaluation_success_title_layout" android:layout_centerHorizontal="true" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/sp_20" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24" android:text="@string/xcar_app_text_submit_success" android:layout_below="@id/img_success" android:layout_centerHorizontal="true" android:fontFamily="@string/emui_text_font_family_regular" />
+    <com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout android:orientation="vertical" android:id="@id/column_rl" android:layout_width="@dimen/dp_188" android:layout_height="@dimen/font40" android:layout_marginTop="@dimen/font16" android:layout_marginBottom="@dimen/font16" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:hwColumnType="button_type">
+        <com.huawei.uikit.phone.hwbutton.widget.HwButton android:layout_gravity="center_horizontal" android:id="@id/btn_complete" android:layout_width="@dimen/dp_188" android:layout_height="@dimen/font40" android:text="@string/xcar_app_button_complete" style="@style/Widget.Emui.HwButton.Light" />
+    </com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_item_parking_collection" android:background="@color/white" android:paddingTop="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toStartOf="@id/ll_right_item">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/tv_city_poi_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="500" android:layout_marginEnd="16.0dp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_right_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_alignParentEnd="true">
+                <TextView android:textSize="14.0sp" android:textColor="@color/black_60alpha" android:id="@id/tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="500" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_current_position_tag" android:background="@drawable/drawable_bg_full_c4_black_6alpha" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_ic_current_location" android:paddingHorizontal="5.0dp" />
+                    <TextView android:textSize="14.0dp" android:textColor="@color/theme_color_title_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/current_position" android:paddingEnd="5.0dp" android:paddingVertical="2.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="16.0dp" android:layout_marginTop="8.0dp">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/theme_svg_bg_map_total_spots" android:layout_width="wrap_content" android:layout_height="16.0dp" android:paddingEnd="5.0dp">
+                <androidx.appcompat.widget.AppCompatImageView android:gravity="center_vertical" android:layout_width="18.0dp" android:layout_height="16.0dp" android:src="@drawable/png_ic_parking_spots" />
+                <TextView android:textSize="10.0sp" android:textColor="#5b6d8e" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_total_parking_spots" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:maxLength="500" android:layout_marginStart="3.0dp" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/theme_color_title_secondary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_available_layer" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:includeFontPadding="false" android:maxLength="500" android:layout_marginStart="8.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/black_10alpha" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="16.0dp" />
+</LinearLayout>

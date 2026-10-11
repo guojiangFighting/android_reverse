@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/emui_color_subbg" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scroll_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sns_offline_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <ImageView android:gravity="center" android:id="@id/offline_imageView" android:layout_width="72.0dp" android:layout_height="72.0dp" android:src="@drawable/sns_ic_nophone_normal" android:tint="@color/sns_color_thirdly" />
+            <com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:hwColumnType="content_type">
+                <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_text_secondary" android:layout_gravity="center" android:id="@id/offline_title_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_sns_reconnect_title" />
+                <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_text_secondary" android:layout_gravity="center" android:id="@id/offline_time_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_text_secondary" android:id="@id/text_offline_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/emui_dimens_text_margin_tertiary" android:lineSpacingMultiplier="1.1" />
+            </com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout>
+            <com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_button_margin_top" android:layout_marginBottom="@dimen/emui_dimens_element_vertical_large" android:layout_centerHorizontal="true" app:hwColumnType="button_type">
+                <Button android:id="@id/btn_reconnect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_sns_reconnect_dialog_button" style="@style/Widget.Emui.HwButton" />
+            </com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/common_fragment_layout_id" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/sns_check_intent_layout" />
+        <FrameLayout android:id="@id/conversation_list_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+</FrameLayout>

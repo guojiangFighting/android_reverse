@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/sns_common_padding_24" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/emui_color_text_primary" android:id="@id/tv_message" android:paddingLeft="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    <com.huawei.uikit.hwcheckbox.widget.HwCheckBox android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_text_primary" android:id="@id/cb_not_remind" android:paddingLeft="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:checked="false" android:text="@string/xcar_app_text_no_remind" android:includeFontPadding="false" android:paddingStart="8.0dp" style="@style/Widget.Emui.HwCheckBox.Normal" />
+</LinearLayout>

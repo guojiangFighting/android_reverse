@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_group_new_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/baseui_dp_70" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" android:layout_alignParentStart="true">
+        <ImageView android:id="@id/image_head" android:background="@drawable/mine_portrait" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/font16" android:layout_alignParentStart="true" />
+        <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/font14" android:textColor="@color/emui_color_text_primary" android:ellipsize="end" android:id="@id/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/emui_dimens_text_margin_fourth" android:layout_marginBottom="@dimen/emui_dimens_text_margin_fourth" android:text="" android:singleLine="true" android:layout_centerVertical="true" android:layout_toEndOf="@id/image_head" />
+        <ImageView android:id="@id/detail_diliver" android:layout_width="match_parent" android:layout_alignParentBottom="true" style="@style/crossuikit_divider_style" />
+    </RelativeLayout>
+</RelativeLayout>

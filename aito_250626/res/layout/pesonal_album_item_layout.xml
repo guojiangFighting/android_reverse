@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font18" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="@color/emui_black" android:gravity="center_vertical" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="21.5dp" android:fontFamily="@string/emui_text_font_family_regular" />
+    <app.huawei.auto.community.views.search.FlowLayout android:id="@id/album_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.5dp" android:nestedScrollingEnabled="false" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#f1f3f5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="true" android:layout_width="match_parent" android:layout_height="87.0dp" app:cardCornerRadius="@dimen/emui_corner_radius_large">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/vehicle_pic_hiv" android:layout_width="60.0dp" android:layout_height="30.0dp" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_marginStart="12.0dp" android:layout_alignParentStart="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_weight="1.0">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="14.0dp" android:textColor="@color/emui_text_primary" android:ellipsize="end" android:id="@id/vehicle_name_htv" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@string/emui_text_font_family_regular" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="12.0dp" android:textColor="@color/emui_color_text_secondary" android:id="@id/vehicle_vin_htv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:fontFamily="@string/emui_text_font_family_regular" />
+            </LinearLayout>
+            <com.huawei.uikit.phone.hwbutton.widget.HwButton android:textSize="12.0dp" android:gravity="center" android:id="@id/vehicle_view_btn" android:background="#f1f3f5" android:layout_width="72.0dp" android:layout_height="28.0dp" android:layout_marginLeft="12.0dp" android:text="@string/xcar_app_text_look" android:layout_marginEnd="12.0dp" />
+        </LinearLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/hwlistpattern_item_singleline_with_left_element_height" android:paddingStart="@dimen/emui_dimens_default_start" android:paddingEnd="@dimen/emui_dimens_max_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/hwlistpattern_icon" android:padding="@dimen/hwlistpattern_item_left_element_margin_l" android:layout_width="@dimen/hwlistpattern_item_right_element_width" android:layout_height="@dimen/hwlistpattern_item_right_element_height" android:layout_marginEnd="@dimen/hwlistpattern_margin_s" />
+    <TextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_selector_text_primary" android:layout_gravity="center_vertical" android:id="@id/hwlistpattern_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:textDirection="locale" />
+</LinearLayout>

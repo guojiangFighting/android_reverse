@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/font12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout android:id="@id/rl_vehicle_status" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:id="@id/sv_scrollview" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:hwAdvancedCardViewClickAnimationEnable="false">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:layout_marginHorizontal="@dimen/font12">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/font56">
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/xcar_app_text_total_mileage" style="@style/textprimarysizebody1" />
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="end|center" android:id="@id/tv_zlc" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font12" android:layout_weight="1.0" style="@style/textprimarysizebody1" />
+                        </LinearLayout>
+                        <View android:background="@color/emui_color_divider_horizontal" android:layout_width="match_parent" android:layout_height="1.0px" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_pjdh" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12">
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/xcar_app_text_mean_power" android:layout_weight="1.0" style="@style/textprimarysizebody2" />
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="end|center" android:id="@id/tv_pjdh" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font12" android:layout_weight="1.0" style="@style/textsecondarysizebody2" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_pjyh" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12">
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/xcar_text_app_mean_fuel" android:layout_weight="1.0" style="@style/textprimarysizebody2" />
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="end|center" android:id="@id/tv_pjyh" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font12" android:layout_weight="1.0" style="@style/textsecondarysizebody2" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_xjlca" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12">
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/xcar_app_text_small_mileage_a" android:layout_weight="1.0" style="@style/textprimarysizebody2" />
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="end|center" android:id="@id/tv_xjlca" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font16" android:layout_weight="1.0" style="@style/textsecondarysizebody2" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_indoor_pm_25" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12">
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/xcar_app_text_pm_25" android:layout_weight="1.0" style="@style/textprimarysizebody2" />
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="end|center" android:id="@id/tv_pm" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font12" android:layout_weight="1.0" style="@style/textsecondarysizebody2" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12">
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/xcar_app_text_vehicle_run_status" android:layout_weight="1.0" style="@style/textprimarysizebody2" />
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="end|center" android:id="@id/tv_xszt" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font12" android:layout_weight="1.0" style="@style/textsecondarysizebody2" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_cldw" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12">
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/xcar_app_text_vehicle_gears" android:layout_weight="1.0" style="@style/textprimarysizebody2" />
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="end|center" android:id="@id/tv_cldw" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font12" android:layout_weight="1.0" style="@style/textsecondarysizebody2" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12">
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/xcar_app_text_far_burner_status" android:layout_weight="1.0" style="@style/textprimarysizebody2" />
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="end|center" android:id="@id/tv_ygd" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font12" android:layout_weight="1.0" style="@style/textsecondarysizebody2" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12">
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/xcar_app_text_near_burner_status" android:layout_weight="1.0" style="@style/textprimarysizebody2" />
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="end|center" android:id="@id/tv_jgd" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font12" android:layout_weight="1.0" style="@style/textsecondarysizebody2" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_exterior_mirror_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12">
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/xcar_app_text_exterior_mirror_heating_status" android:layout_weight="1.0" style="@style/textprimarysizebody2" />
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="end|center" android:id="@id/tv_exterior_mirror_status" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font12" android:layout_weight="1.0" style="@style/textsecondarysizebody2" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_hsj" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12">
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/xcar_app_text_lens_status" android:layout_weight="1.0" style="@style/textprimarysizebody2" />
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="end|center" android:id="@id/tv_hsj" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font12" android:layout_weight="1.0" style="@style/textsecondarysizebody2" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_sunshade_status" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12">
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/xcar_app_text_sunshade_status" android:layout_weight="1.0" style="@style/textprimarysizebody2" />
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="end|center" android:id="@id/tv_sunshade_status" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font12" android:layout_weight="1.0" style="@style/textsecondarysizebody2" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_ss" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12">
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/xcar_app_text_hand_brake_status" android:layout_weight="1.0" style="@style/textprimarysizebody2" />
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="end|center" android:id="@id/tv_sszt" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font12" android:layout_weight="1.0" style="@style/textsecondarysizebody2" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:layout_marginBottom="@dimen/font12">
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/xcar_app_text_cell_status" android:layout_weight="1.0" style="@style/textprimarysizebody2" />
+                            <com.huawei.uikit.hwtextview.widget.HwTextView android:gravity="end|center" android:id="@id/cell_status" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font12" android:layout_weight="1.0" style="@style/textsecondarysizebody2" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:textColor="@color/emui_color_secondary" android:gravity="center_horizontal" android:id="@id/status_update_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:fontFamily="@string/emui_text_font_family_regular" android:textAlignment="center" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout>
+</RelativeLayout>

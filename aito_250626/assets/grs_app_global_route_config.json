@@ -1,0 +1,58 @@
+{
+  "applications": [
+    {
+      "name": "xCarApp",
+      "customservices": [
+        {
+          "name": "app.huawei.auto",
+          "routeBy": "ser_country",
+          "servings": [
+            {
+              "countryOrAreaGroup": "DR1",
+              "addresses": {
+                "ESO": "https://eso.uopes.cn",
+                "HAUrl": "https://metrics1-drcn.dt.dbankcloud.cn:443",
+                "JDAppBaseUrl": "https://dcksvr.fgaiservice.com",
+                "OMP": "https://omp.uopes.cn"
+              }
+            }
+          ],
+          "countryOrAreaGroups": [
+            {
+              "id": "DR1",
+              "name": "China",
+              "countriesOrAreas": [
+                "CN"
+              ],
+              "description": "China zone"
+            }
+          ]
+        }
+      ],
+      "services": [
+        "app.huawei.auto",
+        "com.huawei.cloud.hwid"
+      ],
+      "cacheControl": 86400
+    }
+  ],
+  "services": [
+    {
+      "name": "com.huawei.cloud.hwid",
+      "routeBy": "unconditional",
+      "servings": [
+        {
+          "addresses": {
+            "CASAuthorizeUrl": "https://oauth-login.platform.hicloud.com",
+            "CASDomainUrl": "https://id.cloud.huawei.com",
+            "CASGetResourceUrl": "https://hwid.platform.hicloud.com",
+            "GwSilentCodeUrl": "https://login.cloud.huawei.com",
+            "Root": "https://hwid.platform.hicloud.com"
+          }
+        }
+      ],
+      "countryOrAreaGroups": []
+    }
+  ],
+  "countryOrAreaGroups": []
+}

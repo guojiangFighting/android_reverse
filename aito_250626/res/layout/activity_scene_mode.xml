@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#f1f3f5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/veh_scene_mode_title" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/hwappbarpattern_title_item_layout" />
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="88.0dp" android:layout_marginTop="9.0dp" android:layout_below="@id/veh_scene_mode_title" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/img_pet_mode" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/pet_mode_icon" android:layout_marginStart="12.0dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_16" android:textColor="@color/opacity_90_black" android:id="@id/tv_pet_mode_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_pet_mode_title" android:fontFamily="@string/emui_text_font_family_medium" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_14" android:textColor="@color/new_emui_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_3" android:text="@string/xcar_app_text_pet_mode_tips" android:maxLines="2" android:fontFamily="@string/emui_text_font_family_medium" />
+            </LinearLayout>
+            <app.huawei.auto.base.view.NoCircleAnimationSwitch android:id="@id/switch_pet_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/baseui_dp_12" style="@style/Widget.Emui.HwSwitch" />
+        </LinearLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    <include android:visibility="gone" layout="@layout/xcar_ota_loadding_view" />
+</RelativeLayout>

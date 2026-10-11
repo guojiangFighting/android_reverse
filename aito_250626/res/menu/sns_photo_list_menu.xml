@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_lp_send2friend" android:title="@string/xcar_app_text_sns_system_share_name" android:showAsAction="never" />
+    <item android:id="@id/menu_lp_save" android:title="@string/xcar_app_text_save_photo" android:showAsAction="never" />
+</menu>

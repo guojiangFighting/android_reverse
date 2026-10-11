@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:layout_marginStart="@dimen/font12" android:layout_marginEnd="@dimen/font12" app:cardBackgroundColor="#ffffff" app:cardCornerRadius="@dimen/font24" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/font24" android:paddingEnd="@dimen/font24">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24" android:layout_marginBottom="4.0dp" />
+            <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font16" android:textColor="@color/emui_functional_blue" android:gravity="center" android:id="@id/text_cancel" android:layout_width="match_parent" android:layout_height="@dimen/font40" android:layout_marginBottom="@dimen/font16" android:text="@string/xcar_app_button_cancel" android:fontFamily="@string/emui_text_font_family_regular" />
+        </LinearLayout>
+    </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

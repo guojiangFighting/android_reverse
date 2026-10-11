@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/hwseekbar_oval_hover_dark_emui" />
+    <item android:gravity="center">
+        <selector>
+            <item android:state_enabled="false" android:drawable="@drawable/hwseekbar_slider_thumb_disable_dark_emui" />
+            <item android:state_pressed="true" android:drawable="@drawable/hwseekbar_slider_thumb_pressed_dark_emui" />
+            <item android:drawable="@drawable/hwseekbar_slider_thumb_normal_dark_emui" />
+        </selector>
+    </item>
+</layer-list>

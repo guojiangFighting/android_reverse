@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:interpolator="@android:anim/linear_interpolator" android:shareInterpolator="true"
+  xmlns:android="http://schemas.android.com/apk/res">
+    <alpha android:duration="400" android:fromAlpha="0" android:toAlpha="1" />
+    <com.egaosu.h5activeaar.view.sweetdialog.Rotate3dAnimationXl android:duration="400" android:fromDeg="100" android:pivotX="50.0%" android:pivotY="50.0%" android:rollType="x" android:toDeg="0" />
+</set>

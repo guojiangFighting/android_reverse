@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/bottom_line_view" android:background="@drawable/ic_horizontal_driver_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/font12" />
+    <RelativeLayout android:id="@id/after_service_view" android:layout_width="match_parent" android:layout_height="@dimen/font48">
+        <TextView android:textSize="@dimen/font16" android:textColor="@color/emui_primary" android:gravity="center_vertical" android:id="@id/after_service_title_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font18" android:text="@string/xcar_app_text_after_sale_server" android:fontFamily="@string/emui_text_font_family_medium" />
+    </RelativeLayout>
+</LinearLayout>

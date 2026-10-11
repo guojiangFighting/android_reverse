@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="16.0sp" android:ellipsize="end" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/font22" android:layout_marginTop="@dimen/font10" android:text="@string/xcar_app_text_no_poi_found" android:maxLines="1" style="@style/textColorSecondaryAndSizeBody1" />
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_4">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:gravity="center_vertical" android:id="@id/create_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_create_new_address" android:maxLines="1" style="@style/textColorBlueActivatedAndSizeBody2AndRegular" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/address" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/baseui_dp_4" style="@style/textColorSecondaryAndSizeBody2" />
+    </LinearLayout>
+</LinearLayout>

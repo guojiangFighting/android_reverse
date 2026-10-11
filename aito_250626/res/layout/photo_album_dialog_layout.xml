@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/font24" android:paddingEnd="@dimen/font24">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font20" android:textStyle="bold" android:textColor="@color/new_emui_text_primary" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/font56" android:text="@string/xcar_app_text_please_select" style="@style/textColorPrimaryAndSizeBody1" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center_vertical" android:id="@id/photograph" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:text="@string/xcar_app_button_photograph" style="@style/textColorPrimaryAndSizeBody1" />
+        <View android:id="@id/line1" android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center_vertical" android:id="@id/photo_album_htv" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:layout_marginBottom="@dimen/font8" android:text="@string/xcar_app_menu_item_photo_album" style="@style/textColorPrimaryAndSizeBody1" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/font56">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="16.0sp" android:textColor="@color/emui_text_Color_Link" android:gravity="center" android:id="@id/photo_dialog_cancel" android:layout_width="match_parent" android:layout_height="@dimen/font40" android:text="@string/xcar_app_button_cancel" android:fontFamily="sans-serif-medium" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

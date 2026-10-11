@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/umeng_fb_conversation_list_wrapper" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/umeng_fb_reply_content_wrapper" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <Button android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/umeng_fb_send" android:background="@drawable/btn_vote_selector" android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/umeng_fb_send" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <EditText android:textSize="12.0sp" android:textColor="#000000" android:gravity="top" android:id="@id/umeng_fb_reply_content" android:background="@drawable/white_bg" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" android:hint="@string/umeng_fb_title" android:lines="2" android:maxLength="200" android:layout_toLeftOf="@id/umeng_fb_send" />
+        </RelativeLayout>
+        <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/umeng_fb_reply_content_wrapper" layout="@layout/view_recyclerview_refresh" />
+    </RelativeLayout>
+</RelativeLayout>

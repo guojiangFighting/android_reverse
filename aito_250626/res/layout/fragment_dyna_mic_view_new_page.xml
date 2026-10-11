@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tl="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_view_label" android:layout_width="match_parent" android:layout_height="@dimen/font56" android:layout_marginEnd="@dimen/font16" tl:layout_constraintEnd_toEndOf="parent" tl:layout_constraintStart_toStartOf="parent" tl:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.tabs.TabLayout android:orientation="horizontal" android:id="@id/post_recycler_view_label" android:visibility="visible" android:fadingEdgeLength="@dimen/font22" android:layout_width="wrap_content" android:layout_height="@dimen/font40" android:requiresFadingEdge="horizontal" android:layout_marginStart="8.0dp" tl:layout_constrainedWidth="true" tl:layout_constraintBottom_toBottomOf="parent" tl:layout_constraintEnd_toStartOf="@id/barrier" tl:layout_constraintHorizontal_bias="0.0" tl:layout_constraintStart_toStartOf="parent" tl:layout_constraintTop_toTopOf="parent" tl:tabMinWidth="@dimen/font24" tl:tabPaddingEnd="8.0dp" tl:tabPaddingStart="8.0dp" tl:tabTextAppearance="@style/tabTextStyle" style="@style/tabStyle" />
+        <androidx.constraintlayout.widget.Barrier android:id="@id/barrier" android:layout_width="wrap_content" android:layout_height="wrap_content" tl:barrierDirection="start" tl:constraint_referenced_ids="iv_sort" />
+        <ImageView android:id="@id/iv_sort" android:visibility="gone" android:layout_width="@dimen/font30" android:layout_height="match_parent" android:src="@drawable/ic_filter" android:paddingStart="@dimen/font8" android:paddingEnd="@dimen/font2" tl:layout_constraintBottom_toBottomOf="parent" tl:layout_constraintEnd_toEndOf="parent" tl:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:id="@id/fl_post" android:layout_width="match_parent" android:layout_height="0.0dp" tl:layout_constraintBottom_toBottomOf="parent" tl:layout_constraintEnd_toEndOf="parent" tl:layout_constraintStart_toStartOf="parent" tl:layout_constraintTop_toBottomOf="@id/cl_view_label">
+        <app.huawei.auto.base.view.ViewPager2Container android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.viewpager2.widget.ViewPager2 android:id="@id/post_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </app.huawei.auto.base.view.ViewPager2Container>
+    </FrameLayout>
+    <include android:id="@id/error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/center_no_network_connect" />
+    <include android:id="@id/load_progress_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/center_load_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

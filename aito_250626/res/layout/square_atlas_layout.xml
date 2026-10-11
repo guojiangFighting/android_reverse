@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_atlas" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/rl_atlas" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/hwsubheader_title_more_grid" />
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/content_pic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" app:cardCornerRadius="@dimen/emui_corner_radius_small" app:hwAdvancedCardViewClickAnimationEnable="false" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/rl_atlas">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/square_atlas_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/component_scroll_pictures_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.huawei.ads.uavp.sdksource.widget.RoundCornerCameraImage android:id="@id/iv_font_Camera_image" android:tag="binding_1" android:layout_width="343.0dp" android:layout_height="193.0dp" bind:rRadius="24.0dp" />
+            <com.huawei.ads.uavp.sdksource.widget.RoundCornerCameraImage android:id="@id/iv_back_Camera_image" android:tag="binding_2" android:layout_width="343.0dp" android:layout_height="193.0dp" android:layout_marginStart="12.0dp" bind:rRadius="24.0dp" />
+            <com.huawei.ads.uavp.sdksource.widget.RoundCornerCameraImage android:id="@id/iv_surround_Camera_image" android:tag="binding_3" android:layout_width="343.0dp" android:layout_height="193.0dp" android:layout_marginStart="12.0dp" bind:rRadius="24.0dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </HorizontalScrollView>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0dp" android:textColor="@color/blue_main" android:gravity="center" android:id="@id/tv_load_failed" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/load_fail_retry" android:maxLength="500" android:drawablePadding="8.0dp" bind:drawableTopCompat="@drawable/svg_ic_avp_pic_load_failed" bind:layout_constraintBottom_toBottomOf="parent" bind:layout_constraintEnd_toEndOf="parent" bind:layout_constraintStart_toStartOf="parent" bind:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" bind:layout_constraintBottom_toBottomOf="parent" bind:layout_constraintEnd_toEndOf="parent" bind:layout_constraintStart_toStartOf="parent" bind:layout_constraintTop_toTopOf="parent">
+        <com.huawei.ads.uavp.sdksource.widget.HwLoadingProgressView android:id="@id/hws_loading" android:layout_width="72.0dp" android:layout_height="72.0dp" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0dp" android:textColor="@color/black_60alpha" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载…" android:maxLength="500" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

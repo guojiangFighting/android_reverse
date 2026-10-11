@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/recommend_searchView_lay" android:layout_width="match_parent" android:layout_height="@dimen/font56" android:paddingStart="@dimen/font16" android:paddingEnd="@dimen/font16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/search_lay_bg" android:layout_width="match_parent" android:layout_height="@dimen/font40" android:layout_marginTop="@dimen/font8" android:paddingEnd="@dimen/font12">
+        <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/search_page_search_small" android:layout_width="@dimen/font16" android:layout_height="@dimen/font16" android:src="@drawable/ic_search" android:alpha="0.6" android:layout_marginStart="@dimen/font12" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:enabled="true" android:textSize="@dimen/font16" android:textColor="@color/emui_text_primary" android:gravity="center_vertical" android:id="@id/search_edit" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:alpha="0.6" android:layout_marginStart="@dimen/font8" android:layout_marginEnd="@dimen/font12" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/search_page_search_small" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:background="@drawable/search_fade_bg" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:layout_centerInParent="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

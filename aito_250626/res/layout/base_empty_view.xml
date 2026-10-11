@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:id="@id/error_empty_ll" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:id="@id/view_first" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="4.0" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout1" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="6.0">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/empty_image" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_120" android:layout_marginTop="-60.0dp" android:src="@drawable/icon_mine_empty" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center" android:id="@id/no_empty_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:text="@string/xcar_app_text_xcar_content_no_data_title" style="@style/textColorTertiaryAndSizeBody2" />
+    </LinearLayout>
+</merge>

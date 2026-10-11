@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/sns_card_radius_size" />
+    <solid android:color="@color/sns_item_normal_selector" />
+    <stroke android:width="@dimen/sns_stroke_size" android:color="@color/sns_message_frame" />
+</shape>

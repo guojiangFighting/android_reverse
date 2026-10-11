@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_primary" android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font17" android:layout_marginBottom="@dimen/font17" android:text="开始时间" android:layout_centerVertical="true" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_secondary" android:id="@id/txt_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/font4" android:text="开始时间" android:layout_toLeftOf="@id/arrow_icon" android:layout_centerVertical="true" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/arrow_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_public_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:alpha="0.2" android:layout_alignParentEnd="true" />
+        <View android:id="@id/view_divider" android:background="#000000" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" android:alpha="0.2" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" />
+    </RelativeLayout>
+</RelativeLayout>

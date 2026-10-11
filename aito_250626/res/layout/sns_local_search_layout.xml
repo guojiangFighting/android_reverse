@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_layout" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/focus_view" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_centerVertical="true" />
+    <com.huawei.uikit.phone.hwsearchview.widget.HwSearchView android:id="@id/search_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_marginRight="@dimen/font16" android:textDirection="locale" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" style="@style/Widget.Emui.HwSearchView.White" />
+    <View android:id="@id/sns_search_view" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/search_view" android:layout_alignBottom="@id/search_view" android:contentDescription="@string/xcar_app_text_local_search" />
+</RelativeLayout>

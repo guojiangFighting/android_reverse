@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Przewiń do przodu o %d sekundę</item>
+        <item quantity="few">Przewiń do przodu o %d sekundy</item>
+        <item quantity="many">Przewiń do przodu o %d sekund</item>
+        <item quantity="other">Przewiń do przodu o %d sekundy</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Przewiń do tyłu o %d sekundę</item>
+        <item quantity="few">Przewiń do tyłu o %d sekundy</item>
+        <item quantity="many">Przewiń do tyłu o %d sekund</item>
+        <item quantity="other">Przewiń do tyłu o %d sekundy</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nowe powiadomienie</item>
+        <item quantity="few">%d nowe powiadomienia</item>
+        <item quantity="many">%d nowych powiadomień</item>
+        <item quantity="other">%d nowego powiadomienia</item>
+    </plurals>
+    <plurals name="page_progress">
+        <item quantity="one">Strona %1$d</item>
+        <item quantity="few">Strona %1$d</item>
+        <item quantity="many">Strona %1$d</item>
+        <item quantity="other">Strona %1$d</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="one">%d gwiazdka</item>
+        <item quantity="few">%d gwiazdki</item>
+        <item quantity="many">%d gwiazdek</item>
+        <item quantity="other">%d gwiazdki</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="one">z %1$d</item>
+        <item quantity="few">z %1$d</item>
+        <item quantity="many">z %1$d</item>
+        <item quantity="other">z %1$d</item>
+    </plurals>
+</resources>

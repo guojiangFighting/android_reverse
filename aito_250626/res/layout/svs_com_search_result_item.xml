@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/image" android:background="@drawable/svs_com_location_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginTop="2.0dp" android:layout_marginEnd="4.0dp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/svs_txt_normal" android:textColor="@color/svs_white_bg_txt_brand_color" android:id="@id/svs_location_name_avp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="@dimen/svs_txt_normal" android:textColor="@color/svs_main_txt_color" android:id="@id/svs_location_name_sd" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="@dimen/svs_txt_normal" android:textColor="@color/svs_main_txt_color" android:id="@id/parking_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/svs_com_park_spot_literal" android:layout_marginStart="3.0dp" app:layout_constraintStart_toEndOf="@id/svs_location_name_avp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView android:textSize="@dimen/svs_txt_small" android:textColor="@color/svs_gray_txt_color" android:id="@id/full_address_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="" />
+        <View android:id="@id/line" android:background="@color/svs_split_line_color" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="16.5dp" android:baselineAlignBottom="true" />
+    </LinearLayout>
+</LinearLayout>

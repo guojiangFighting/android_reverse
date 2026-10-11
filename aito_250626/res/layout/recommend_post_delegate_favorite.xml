@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:id="@id/post_space" android:layout_width="match_parent" android:layout_height="@dimen/font24" />
+    <include android:id="@id/store_is_empty_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/is_enmpty_store_layout" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/user_root_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/user_icon_view_border" android:background="@drawable/user_icon_border_shape" android:layout_width="41.0dp" android:layout_height="41.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:layout_gravity="center" android:id="@id/user_icon_view" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:src="@drawable/mine_portrait" />
+        </FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_user" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginStart="@dimen/font8" app:layout_constraintBottom_toBottomOf="@id/user_icon_view_border" app:layout_constraintEnd_toStartOf="@id/review_follow_rl" app:layout_constraintStart_toEndOf="@id/user_icon_view_border" app:layout_constraintTop_toTopOf="@id/user_icon_view_border">
+            <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <TextView android:textSize="@dimen/font14" android:textColor="#18181a" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/user_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:singleLine="true" android:layout_weight="1.0" android:fontFamily="@string/emui_text_font_family_medium" />
+                <include layout="@layout/name_label_view" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font12" android:textColor="@color/emui_color_secondary" android:ellipsize="end" android:id="@id/user_title_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="@string/emui_text_font_family_regular" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="@id/linearLayout" app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout android:id="@id/review_follow_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/font8" app:layout_constraintBottom_toBottomOf="@id/user_icon_view_border" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/user_icon_view_border">
+            <RelativeLayout android:id="@id/review_status_rl" android:background="@drawable/recommend_post_review_status_bg_shape" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/user_icon_view_border">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/review_status_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font1" android:layout_marginBottom="@dimen/font1" android:text="@string/xcar_app_text_post_passed" android:layout_marginStart="@dimen/font4" android:layout_marginEnd="@dimen/font4" style="@style/textColorPrimaryActivatedAndSizeCaptionAndRegular" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_follow" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/user_icon_view_border" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/user_icon_view_border">
+                <app.huawei.auto.base.view.FollowHwButton android:textColor="@color/black" android:id="@id/hb_follow" android:layout_width="@dimen/dp_64" android:layout_height="@dimen/font28" android:text="@string/xcar_app_button_my_follow" style="@style/Widget.Emui.HwButton.Small" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Space android:id="@id/topic_top_space_view" android:layout_width="match_parent" android:layout_height="@dimen/font12" />
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font8" layout="@layout/under_review_warn_tip" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font16" android:ellipsize="end" android:id="@id/content_title_tv" android:paddingTop="@dimen/font4" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:fontFamily="@string/emui_text_font_family_medium" style="@style/textColorPrimaryAndSizeBody1" />
+    <Space android:id="@id/content_top_space_view" android:layout_width="match_parent" android:layout_height="@dimen/font4" />
+    <app.huawei.auto.base.view.EllipsizeTextView android:textSize="@dimen/font14" android:textColor="@color/emui_color_primary" android:ellipsize="end" android:id="@id/content_msg_tv" android:paddingTop="@dimen/font4" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="3" android:lineSpacingMultiplier="1.2" style="@style/textColorPrimaryAndSizeBody2AndFontFamilyRegular" />
+    <Space android:id="@id/content_pic_cv_top_space_view" android:layout_width="match_parent" android:layout_height="@dimen/font12" />
+    <app.huawei.auto.tangram.AutoWrapLinearLayout android:id="@id/topic_recycler" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Space android:id="@id/title_top_space_view" android:layout_width="match_parent" android:layout_height="@dimen/font16" />
+    <FrameLayout android:id="@id/content_pic_cv_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <app.huawei.auto.tangram.MyFavoritePostIsDeleteView android:id="@id/img_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/recommended_layout" android:background="@drawable/recommended_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="@dimen/font8" android:minHeight="@dimen/dp_64">
+        <ImageView android:id="@id/recommended_image" android:layout_width="@dimen/font48" android:layout_height="@dimen/font48" android:layout_marginLeft="@dimen/font8" android:scaleType="centerCrop" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_toLeftOf="@id/image_arrowhead" android:layout_toRightOf="@id/recommended_image" android:layout_centerVertical="true">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:id="@id/recommended_name_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollHorizontally="false" android:fontFamily="@string/emui_text_font_family_medium" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:id="@id/recommended_quantity_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2" android:layout_marginRight="@dimen/font36" android:layout_below="@id/recommended_name_tv" android:fontFamily="@string/emui_text_font_family_medium" />
+        </RelativeLayout>
+        <ImageView android:id="@id/image_arrowhead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_public_arrow_right" android:layout_centerVertical="true" android:alpha="0.2" android:paddingStart="@dimen/font16" android:paddingEnd="@dimen/font16" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <Space android:id="@id/location_top_space_view" android:layout_width="match_parent" android:layout_height="@dimen/font16" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/location_root_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.huawei.uikit.hwimageview.widget.HwImageView android:layout_gravity="center_vertical" android:id="@id/gps_icon_view" android:layout_width="@dimen/font16" android:layout_height="@dimen/font16" android:src="@drawable/list_location_icon" android:alpha="0.6" />
+        <TextView android:textSize="@dimen/font12" android:textColor="@color/emui_color_secondary" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/location_tv_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/font4" />
+    </LinearLayout>
+    <include android:id="@id/post_status_count_view" android:layout_width="match_parent" android:layout_height="@dimen/font48" layout="@layout/post_list_bottom_view" />
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/font8" />
+    <View android:id="@id/bottom_line_view" android:background="@drawable/ic_horizontal_driver_bg" android:layout_width="match_parent" android:layout_height="1.0px" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwviewpager.widget.HwViewPager android:id="@id/drive_hw_vp_portal" android:nextFocusDown="@id/drive_hw_dots_portal" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+    <include android:id="@id/drive_hw_dots_space" layout="@layout/hwappbarpattern_title_item_layout" />
+    <app.huawei.auto.drive.ui.view.SmartDriveTabView android:id="@id/smart_brand_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/bottom_icon_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:src="@drawable/ic_scroll_down_icon" android:layout_alignBottom="@id/drive_hw_vp_portal" android:layout_centerHorizontal="true" />
+    <com.huawei.uikit.phone.hwdotspageindicator.widget.HwDotsPageIndicator android:id="@id/drive_hw_dots_portal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom_icon_view" android:layout_centerHorizontal="true" app:hwUnselectedDotColor="#33ffffff" style="@style/Widget.Emui.HwDotsPageIndicator.Translucent" />
+    <include android:id="@id/progress_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/xcar_dark_bg_progress_loading_view" />
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/brand_picture" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/font160" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/details_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font25" android:layout_below="@id/brand_picture" android:layout_centerHorizontal="true">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/details_image_id" android:layout_width="80.0dp" android:layout_height="28.0dp" />
+    </RelativeLayout>
+    <app.huawei.auto.base.view.BaseNoInternetLayout android:id="@id/no_internet_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/drive_hw_dots_space" />
+    <app.huawei.auto.base.view.BaseStatusLayout android:id="@id/start_view" android:background="@color/community_title_bg" android:paddingTop="@dimen/smart_car_model_title_height" android:layout_width="match_parent" android:layout_height="match_parent" app:show_type="content" />
+</RelativeLayout>

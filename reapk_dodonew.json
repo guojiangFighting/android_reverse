@@ -1,0 +1,1044 @@
+{
+  "apk_path": "F:\\Android_reverse\\pro_aito\\com.dodonew.online.apk",
+  "package": "com.dodonew.online",
+  "app_name": "嘟嘟牛在线",
+  "version_name": "2.3",
+  "version_code": "230",
+  "min_sdk": "11",
+  "target_sdk": "20",
+  "application_class": "com.dodonew.online.DodonewOnlineApplication",
+  "main_activity": "com.dodonew.online.ui.StartActivity",
+  "allow_backup": true,
+  "debuggable": null,
+  "uses_cleartext": null,
+  "permissions": [
+    {
+      "name": "android.permission.ACCESS_COARSE_LOCATION",
+      "level": "high",
+      "note": "粗略定位"
+    },
+    {
+      "name": "android.permission.ACCESS_FINE_LOCATION",
+      "level": "high",
+      "note": "精确定位，查定位 SDK / 地图 Key"
+    },
+    {
+      "name": "android.permission.ACCESS_NETWORK_STATE",
+      "level": "info",
+      "note": "判断网络状态"
+    },
+    {
+      "name": "android.permission.ACCESS_WIFI_STATE",
+      "level": "info",
+      "note": "读 WiFi 信息，常用于设备指纹"
+    },
+    {
+      "name": "android.permission.BLUETOOTH",
+      "level": "info",
+      "note": "蓝牙"
+    },
+    {
+      "name": "android.permission.CALL_PHONE",
+      "level": "high",
+      "note": "直接拨号"
+    },
+    {
+      "name": "android.permission.CAMERA",
+      "level": "high",
+      "note": "相机，扫码/上传场景"
+    },
+    {
+      "name": "android.permission.CHANGE_NETWORK_STATE",
+      "level": "medium",
+      "note": "改网络状态"
+    },
+    {
+      "name": "android.permission.CHANGE_WIFI_STATE",
+      "level": "medium",
+      "note": "改 WiFi，少见业务需求"
+    },
+    {
+      "name": "android.permission.FLASHLIGHT",
+      "level": "info",
+      "note": "闪光灯"
+    },
+    {
+      "name": "android.permission.GET_TASKS",
+      "level": "medium",
+      "note": "读任务栈（旧权限）"
+    },
+    {
+      "name": "android.permission.INTERNET",
+      "level": "info",
+      "note": "联网，抓包/定位 API 入口"
+    },
+    {
+      "name": "android.permission.READ_PHONE_STATE",
+      "level": "high",
+      "note": "读设备标识，常配合加固/风控"
+    },
+    {
+      "name": "android.permission.READ_SMS",
+      "level": "critical",
+      "note": "读短信，验证码/隐私敏感"
+    },
+    {
+      "name": "android.permission.RECEIVE_SMS",
+      "level": "critical",
+      "note": "收短信广播"
+    },
+    {
+      "name": "android.permission.SYSTEM_ALERT_WINDOW",
+      "level": "high",
+      "note": "悬浮窗，可被滥用"
+    },
+    {
+      "name": "android.permission.VIBRATE",
+      "level": "info",
+      "note": "震动"
+    },
+    {
+      "name": "android.permission.WAKE_LOCK",
+      "level": "info",
+      "note": "保活/推送常见"
+    },
+    {
+      "name": "android.permission.WRITE_EXTERNAL_STORAGE",
+      "level": "medium",
+      "note": "写存储，关注落地文件/缓存"
+    },
+    {
+      "name": "com.dodonew.online.permission.MIPUSH_RECEIVE",
+      "level": "info",
+      "note": "常规/第三方自定义权限"
+    }
+  ],
+  "custom_permissions": [
+    {
+      "name": "com.dodonew.online.permission.MIPUSH_RECEIVE",
+      "protectionLevel": "0x00000003"
+    }
+  ],
+  "components": [
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.StartActivity",
+      "exported": true,
+      "export_reason": "未显式声明且有 intent-filter → 默认 exported=true（旧规则）",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.MAIN"
+          ],
+          "categories": [
+            "android.intent.category.LAUNCHER"
+          ],
+          "schemes": [],
+          "hosts": [],
+          "mime_types": []
+        }
+      ],
+      "notes": [
+        "LAUNCHER 入口 Activity",
+        "导出组件：优先检查是否可被外部唤起"
+      ]
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.AppGuideActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.GuideActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": "2",
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.MainActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": "2",
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.LoginActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": "2",
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.RegisterActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": "2",
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.FindPasswordActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": "2",
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.GuessMoreActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": "2",
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.GuessDetailActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": "2",
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.NewsDetailActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.ActiveDetailActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": "2",
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.FunctionActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": "2",
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.ShopActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": "2",
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.ScanActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.ChooseCityActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.SearchNetBarActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": "2",
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.NetbarDetailActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": "2",
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.MapActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": "2",
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.OnlineDetailActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": "2",
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.OrderBarActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": "2",
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.OrderPayActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.OrderRechargeDetailActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.TicketActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.GetTicketActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.MyOrderActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": "2",
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.MyGuessActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.MyTicketActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.MyCardActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.MyAddCardActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.UserInfoActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.ScoreMallActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.BindCardProvinceActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.PayActivity",
+      "exported": false,
+      "export_reason": "显式 android:exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.AddressActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.AddAddressActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.UserInfoEditorActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.BindMobileActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.OrderDetailActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.ProvinceActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.SettingActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.ScoreRecordActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.ExchangeRecordActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.MyCollectionActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.MyActiveActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.FeedbackActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.AboutActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": "2",
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.GamePlayActivity",
+      "exported": true,
+      "export_reason": "未显式声明且有 intent-filter → 默认 exported=true（旧规则）",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [
+        {
+          "actions": [],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "schemes": [],
+          "hosts": [],
+          "mime_types": []
+        }
+      ],
+      "notes": [
+        "导出组件：优先检查是否可被外部唤起"
+      ]
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.WebViewActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.ui.PlayVideoActivity",
+      "exported": true,
+      "export_reason": "显式 android:exported=true",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [
+        {
+          "actions": [],
+          "categories": [
+            "android.intent.category.DEFAULT",
+            "android.intent.category.BROWSABLE"
+          ],
+          "schemes": [],
+          "hosts": [],
+          "mime_types": []
+        }
+      ],
+      "notes": [
+        "导出组件：优先检查是否可被外部唤起"
+      ]
+    },
+    {
+      "type": "activity",
+      "name": "com.umeng.fb.ConversationActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.mob.tools.MobUIShell",
+      "exported": true,
+      "export_reason": "未显式声明且有 intent-filter → 默认 exported=true（旧规则）",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.BROWSABLE",
+            "android.intent.category.DEFAULT"
+          ],
+          "schemes": [
+            "tencent1104219088"
+          ],
+          "hosts": [],
+          "mime_types": []
+        },
+        {
+          "actions": [
+            "com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "schemes": [],
+          "hosts": [],
+          "mime_types": []
+        }
+      ],
+      "notes": [
+        "Deep Link / URL Scheme 入口",
+        "导出组件：优先检查是否可被外部唤起"
+      ]
+    },
+    {
+      "type": "activity",
+      "name": "com.tencent.tauth.AuthActivity",
+      "exported": true,
+      "export_reason": "未显式声明且有 intent-filter → 默认 exported=true（旧规则）",
+      "process": null,
+      "permission": null,
+      "launch_mode": "2",
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.BROWSABLE"
+          ],
+          "schemes": [
+            "tencent1104219088"
+          ],
+          "hosts": [],
+          "mime_types": []
+        }
+      ],
+      "notes": [
+        "Deep Link / URL Scheme 入口",
+        "导出组件：优先检查是否可被外部唤起"
+      ]
+    },
+    {
+      "type": "activity",
+      "name": "com.tencent.connect.common.AssistActivity",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.wxapi.WXEntryActivity",
+      "exported": true,
+      "export_reason": "显式 android:exported=true",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.intent.action.VIEW"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "schemes": [
+            "wxe759af68c4898c4a"
+          ],
+          "hosts": [],
+          "mime_types": []
+        }
+      ],
+      "notes": [
+        "Deep Link / URL Scheme 入口",
+        "导出组件：优先检查是否可被外部唤起",
+        "微信回调入口"
+      ]
+    },
+    {
+      "type": "activity",
+      "name": "com.dodonew.online.wxapi.WXPayEntryActivity",
+      "exported": true,
+      "export_reason": "显式 android:exported=true",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": [
+        "导出组件：优先检查是否可被外部唤起",
+        "微信回调入口"
+      ]
+    },
+    {
+      "type": "activity",
+      "name": "com.alipay.sdk.app.H5PayActivity",
+      "exported": false,
+      "export_reason": "显式 android:exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": [
+        "支付宝相关组件"
+      ]
+    },
+    {
+      "type": "activity",
+      "name": "com.alipay.sdk.auth.AuthActivity",
+      "exported": false,
+      "export_reason": "显式 android:exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": [
+        "支付宝相关组件"
+      ]
+    },
+    {
+      "type": "service",
+      "name": "com.amap.api.location.APSService",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": []
+    },
+    {
+      "type": "service",
+      "name": "com.xiaomi.push.service.XMPushService",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": ":pushservice",
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": [
+        "小米推送相关"
+      ]
+    },
+    {
+      "type": "service",
+      "name": "com.xiaomi.mipush.sdk.PushMessageHandler",
+      "exported": true,
+      "export_reason": "显式 android:exported=true",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": [
+        "导出组件：优先检查是否可被外部唤起",
+        "小米推送相关"
+      ]
+    },
+    {
+      "type": "service",
+      "name": "com.xiaomi.mipush.sdk.MessageHandleService",
+      "exported": false,
+      "export_reason": "未显式声明且无 intent-filter → 默认 exported=false",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [],
+      "notes": [
+        "小米推送相关"
+      ]
+    },
+    {
+      "type": "receiver",
+      "name": "com.dodonew.online.receiver.XiaoMiPushReceiver",
+      "exported": true,
+      "export_reason": "显式 android:exported=true",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "com.xiaomi.mipush.RECEIVE_MESSAGE"
+          ],
+          "categories": [],
+          "schemes": [],
+          "hosts": [],
+          "mime_types": []
+        },
+        {
+          "actions": [
+            "com.xiaomi.mipush.ERROR"
+          ],
+          "categories": [],
+          "schemes": [],
+          "hosts": [],
+          "mime_types": []
+        }
+      ],
+      "notes": [
+        "导出组件：优先检查是否可被外部唤起",
+        "小米推送相关"
+      ]
+    },
+    {
+      "type": "receiver",
+      "name": "com.xiaomi.push.service.receivers.NetworkStatusReceiver",
+      "exported": true,
+      "export_reason": "显式 android:exported=true",
+      "process": null,
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "android.net.conn.CONNECTIVITY_CHANGE"
+          ],
+          "categories": [
+            "android.intent.category.DEFAULT"
+          ],
+          "schemes": [],
+          "hosts": [],
+          "mime_types": []
+        }
+      ],
+      "notes": [
+        "导出组件：优先检查是否可被外部唤起",
+        "小米推送相关"
+      ]
+    },
+    {
+      "type": "receiver",
+      "name": "com.xiaomi.push.service.receivers.PingReceiver",
+      "exported": false,
+      "export_reason": "显式 android:exported=false",
+      "process": ":pushservice",
+      "permission": null,
+      "launch_mode": null,
+      "intent_filters": [
+        {
+          "actions": [
+            "com.xiaomi.push.PING_TIMER"
+          ],
+          "categories": [],
+          "schemes": [],
+          "hosts": [],
+          "mime_types": []
+        }
+      ],
+      "notes": [
+        "小米推送相关"
+      ]
+    }
+  ],
+  "meta_data": [
+    {
+      "name": "UMENG_APPKEY",
+      "value": "54b5d5f6fd98c5c91f0011fa"
+    },
+    {
+      "name": "UMENG_CHANNEL",
+      "value": "baidu"
+    },
+    {
+      "name": "com.amap.api.v2.apikey",
+      "value": "c5e4afee43c52bb00e2df9039d4aa470"
+    }
+  ],
+  "deep_links": [
+    "tencent1104219088://",
+    "wxe759af68c4898c4a://"
+  ],
+  "sdks": [
+    "腾讯 OpenSDK",
+    "小米推送 MiPush",
+    "腾讯 QQ/OpenSDK",
+    "支付宝 SDK",
+    "Mob/ShareSDK",
+    "高德地图/定位",
+    "友盟统计/反馈"
+  ],
+  "native_libs": [
+    "lib/armeabi/libgdinamapv4sdk752.so",
+    "lib/armeabi/libgdinamapv4sdk752ex.so",
+    "lib/armeabi/libumeng_opustool.so"
+  ],
+  "class_count": 0,
+  "dex_count": 0,
+  "light_mode": true,
+  "shell_signals": [],
+  "likely_packed": false,
+  "next_steps": [
+    "正常包：先看 Application `com.dodonew.online.DodonewOnlineApplication` 与 LAUNCHER `com.dodonew.online.ui.StartActivity`",
+    "检查 10 个导出组件的 intent-filter / permission 保护",
+    "高危权限 8 个：结合代码交叉引用确认真实用途",
+    "Manifest meta-data 含 3 个可疑 Key/渠道字段，注意是否硬编码",
+    "Deep Link 2 条：验证是否可外部伪造唤起",
+    "allowBackup=true：可关注备份导出数据面",
+    "第三方 SDK：腾讯 OpenSDK、小米推送 MiPush、腾讯 QQ/OpenSDK、支付宝 SDK、Mob/ShareSDK、高德地图/定位、友盟统计/反馈",
+    "含 3 个 .so，按需用 IDA/Ghidra 跟 JNI"
+  ],
+  "warnings": []
+}

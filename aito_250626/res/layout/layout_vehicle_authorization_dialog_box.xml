@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/font16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/mine_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_below="@id/mine_authorized_details" app:cardCornerRadius="@dimen/font24" app:hwAdvancedCardViewClickAnimationEnable="false" style="@style/Widget.Emui.HwAdvancedCardView.Light">
+        <RelativeLayout android:id="@id/mine_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font14" android:layout_marginStart="@dimen/font24" android:layout_marginEnd="@dimen/font24">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mine_name_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font14">
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_dialog_title" android:id="@id/mine_Vehicle_Authorization_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xcar_app_text_vehicle_authorization_modify" android:fontFamily="@string/emui_text_font_family_medium" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/mine_layout_binding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/mine_name_layout">
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:id="@id/mine_vehicle_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="车辆HUAWEI CAR 40—粤DB12345授权功能已被修改" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeBody1AndFamilyRegular" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_horizontal" android:id="@id/mine_layout2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font17" android:layout_marginBottom="25.0dp" android:layout_below="@id/mine_layout_binding">
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:id="@id/min_confirms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" style="@style/textColorLinkAndSizeBody1" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+</LinearLayout>

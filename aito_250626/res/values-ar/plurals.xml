@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="zero">تقديم سريع للفيديو بمقدار %d ثانية</item>
+        <item quantity="one">تقديم سريع للفيديو بمقدار ثانية واحدة (%d)</item>
+        <item quantity="two">تقديم سريع للفيديو بمقدار ثانيتَين (%d)</item>
+        <item quantity="few">تقديم سريع للفيديو بمقدار %d ثوانٍ</item>
+        <item quantity="many">تقديم سريع للفيديو بمقدار %d ثانية</item>
+        <item quantity="other">تقديم سريع للفيديو بمقدار %d ثانية</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="zero">ترجيع الفيديو بمقدار %d ثانية</item>
+        <item quantity="one">ترجيع الفيديو بمقدار ثانية واحدة (%d)</item>
+        <item quantity="two">ترجيع الفيديو بمقدار ثانيتَين (%d)</item>
+        <item quantity="few">ترجيع الفيديو بمقدار %d ثوانٍ</item>
+        <item quantity="many">ترجيع الفيديو بمقدار %d ثانية</item>
+        <item quantity="other">ترجيع الفيديو بمقدار %d ثانية</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="zero">%d إشعار جديد</item>
+        <item quantity="one">إشعار جديد واحد (%d)</item>
+        <item quantity="two">إشعاران جديدان (%d)</item>
+        <item quantity="few">%d إشعارات جديدة</item>
+        <item quantity="many">%d إشعارًا جديدًا</item>
+        <item quantity="other">%d إشعار جديد</item>
+    </plurals>
+    <plurals name="page_progress">
+        <item quantity="zero">الصفحة %1$d</item>
+        <item quantity="one">الصفحة %1$d</item>
+        <item quantity="two">الصفحة %1$d</item>
+        <item quantity="few">الصفحة %1$d</item>
+        <item quantity="many">الصفحة %1$d</item>
+        <item quantity="other">الصفحة %1$d</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="zero">%d نجوم</item>
+        <item quantity="one">نجمة واحدة</item>
+        <item quantity="two">نجمتان</item>
+        <item quantity="few">%d نجوم</item>
+        <item quantity="many">%d نجمة</item>
+        <item quantity="other">%d نجمة</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="zero">من أصل %1$d</item>
+        <item quantity="one">من أصل %1$d</item>
+        <item quantity="two">من أصل %1$d</item>
+        <item quantity="few">من أصل %1$d</item>
+        <item quantity="many">من أصل %1$d</item>
+        <item quantity="other">من أصل %1$d</item>
+    </plurals>
+</resources>

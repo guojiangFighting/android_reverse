@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/selector_bottom_community" android:title="@string/xcar_app_text_community_title" />
+    <item android:icon="@drawable/selector_bottom_mall" android:title="@string/xcar_app_bottom_tab_smart_choose" />
+    <item android:icon="@drawable/selector_bottom_vehicle" android:title="@string/xcar_app_bottom_tab_vehicle" />
+    <item android:icon="@drawable/selector_bottom_service" android:title="@string/xcar_app_title_service" />
+    <item android:icon="@drawable/selector_bottom_mine" android:title="@string/xcar_app_app_bar_mine" />
+</menu>

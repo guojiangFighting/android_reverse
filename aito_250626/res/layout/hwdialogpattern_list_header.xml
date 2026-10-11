@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="0.0dp" android:layout_height="@dimen/hwdialogpattern_padding_top" />
+    <Space android:id="@id/hwdialogpattern_textspacernotitle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/hwdialogpattern_content_padding_top" />
+    <TextView android:id="@id/hwdialogpattern_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/emui_dimens_element_vertical_middle" android:textAlignment="viewStart" android:paddingStart="@dimen/hwdialogpattern_padding_horizontal" android:paddingEnd="@dimen/hwdialogpattern_padding_horizontal" style="@style/Widget.Emui.HwDialogPattern.DialogBody2" />
+</LinearLayout>

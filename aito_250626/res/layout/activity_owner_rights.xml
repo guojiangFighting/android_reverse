@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/id_fa_color_sub_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.hwswiperefreshlayout.widget.HwSwipeRefreshLayout android:layout_gravity="center_horizontal" android:id="@id/owner_rights_refresh" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/owner_rights_title">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvRights" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/font18" android:overScrollMode="never" android:nestedScrollingEnabled="true" />
+    </com.huawei.uikit.hwswiperefreshlayout.widget.HwSwipeRefreshLayout>
+    <include android:id="@id/rights_load_progress_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/owner_rights_title" layout="@layout/rights_load_view" />
+    <include android:id="@id/error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/xcar_error_view" />
+    <include android:id="@id/no_rights" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/no_owner_rights" />
+    <include android:id="@id/owner_rights_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/mine_hwappbarpattern_navigation_icon_layout" />
+</RelativeLayout>

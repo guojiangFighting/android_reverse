@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.hwtextview.widget.HwTextView android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" app:hwAutoSizeMinTextSize="@dimen/hwappbarpattern_title_min_textsize" app:hwAutoSizeStepGranularity="@dimen/hwappbarpattern_title_textsize_step" style="@style/Widget.Emui.HwAppbarPattern.TextAppearance.Title"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

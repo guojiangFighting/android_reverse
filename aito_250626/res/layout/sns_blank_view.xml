@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/sns_bg_color" android:descendantFocusability="afterDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/bold_divider_imageview" android:background="@color/emui_color_subheader_divider" android:layout_width="match_parent" android:layout_height="@dimen/sns_bold_divider_height" />
+    <ImageView android:id="@id/divider_imageview" android:layout_width="match_parent" android:layout_marginLeft="@dimen/emui_dimens_max_start" android:layout_marginRight="@dimen/emui_dimens_max_end" android:layout_marginStart="@dimen/emui_dimens_max_start" android:layout_marginEnd="@dimen/emui_dimens_max_end" style="@style/crossuikit_divider_style" />
+</LinearLayout>

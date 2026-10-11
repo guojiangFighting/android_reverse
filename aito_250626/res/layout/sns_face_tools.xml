@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <app.huawei.auto.im.ui.face.InterceptRelativeLayout android:id="@id/ic_history_layout" android:background="@color/sns_chat_face_tools_background" android:visibility="gone" android:layout_width="@dimen/sns_face_tools_width" android:layout_height="@dimen/sns_face_tools_height">
+        <ImageView android:id="@id/ic_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_ic_history" android:scaleType="fitXY" android:tint="@color/emui_toolbar_text_pressed" android:layout_centerInParent="true" />
+    </app.huawei.auto.im.ui.face.InterceptRelativeLayout>
+    <app.huawei.auto.im.ui.face.InterceptRelativeLayout android:gravity="center" android:id="@id/ic_emotion_layout" android:background="@color/transparent" android:layout_width="@dimen/sns_face_tools_width" android:layout_height="@dimen/sns_face_tools_height">
+        <ImageView android:id="@id/ic_emotion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_ic_menu_expression_enter" android:tint="@color/emui_toolbar_text_pressed" android:layout_centerInParent="true" android:layout_toEndOf="@id/ic_history" />
+    </app.huawei.auto.im.ui.face.InterceptRelativeLayout>
+    <RelativeLayout android:background="@color/sns_chat_face_tools_background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <app.huawei.auto.im.ui.face.InterceptRelativeLayout android:gravity="center" android:id="@id/ic_del_layout" android:layout_width="@dimen/sns_face_tools_width" android:layout_height="@dimen/sns_face_tools_height" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_ic_delete" android:tint="@color/emui_toolbar_text_pressed" android:layout_centerInParent="true" />
+        </app.huawei.auto.im.ui.face.InterceptRelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

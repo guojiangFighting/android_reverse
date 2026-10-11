@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/baseui_dp_56"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/ivAnnualReportBack" android:background="@drawable/hwappbarpattern_selector_item_bg" android:layout_width="@dimen/hwappbarpattern_icon_size" android:layout_height="@dimen/hwappbarpattern_icon_size" android:src="@drawable/hwsearchview_ic_public_back_translucent" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_marginStart="@dimen/baseui_dp_4" />
+</RelativeLayout>

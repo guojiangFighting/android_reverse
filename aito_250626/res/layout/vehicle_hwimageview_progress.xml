@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content_hiv_rlayout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/content_hiv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.huawei.uikit.phone.hwprogressbar.widget.HwProgressBar android:id="@id/content_animation_hpb" android:visibility="gone" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" app:hwFillColor="#ffffff" style="@style/Widget.Emui.HwProgressBar" />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="delete_query">[PL_700359]_Clear query</string>
+    <string name="dialog_button_done_new">[PL_525334]_OK</string>
+    <string name="dialog_button_last_step">[PL_830508]_Previous step</string>
+    <string name="dialog_button_next_step">[PL_830507]_Next step</string>
+    <string name="discard_label">[PL_525333]_Cancel</string>
+    <string name="hwalphaindexerlistview_label">[PL_654332]_Index bar. Swipe with two fingers to select.</string>
+    <string name="hwbottomnavigationview_access_ability_message_text">[PL_700360]_There are new messages</string>
+    <string name="hwdateandtimepicker_calendar_title_today">[PL_522839]_Today</string>
+    <string name="hwdateandtimepicker_dialog_button_done">[PL_522838]_OK</string>
+    <string name="hwdateandtimepicker_discard_label">[PL_522836]_Cancel</string>
+    <string name="hwnumberpicker_change1">[PL_657915]_%2$s changed to %1$s</string>
+    <string name="hwnumberpicker_change2">[PL_657917]_%2$s changed to %1$s</string>
+    <string name="hwnumberpicker_change3">[PL_657916]_%2$s changed to %1$s</string>
+    <string name="hwnumberpicker_change4">[PL_657919]_%2$s changed to %1$s</string>
+    <string name="hwnumberpicker_change5">[PL_657918]_%2$s changed to %1$s</string>
+    <string name="hwnumberpicker_change6">[PL_657920]_%2$s changed to %1$s</string>
+    <string name="indicate_anchored">[PL_703139]_Half screen</string>
+    <string name="indicate_button">[PL_703138]_Control bar, %s</string>
+    <string name="indicate_collapsed">[PL_703140]_Collapsed</string>
+    <string name="indicate_expanded">[PL_703137]_Full screen</string>
+    <string name="new_message">[PL_700360]_There are new messages</string>
+    <string name="page">[PL_758274]_%1$s %2$s</string>
+</resources>

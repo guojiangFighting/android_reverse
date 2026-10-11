@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/xcar_emui_bottomsheet_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.hwrecyclerview.widget.HwRecyclerView android:id="@id/video_frame_recycler" android:layout_width="match_parent" android:layout_height="@dimen/dp_64" android:layout_marginTop="@dimen/font8" />
+    <app.huawei.auto.community.views.ChooseFrameMask android:id="@id/choose_mask" android:layout_width="match_parent" android:layout_height="@dimen/dp_64" android:layout_marginTop="@dimen/font8" />
+    <com.huawei.uikit.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_80" android:text="@string/xcar_app_text_slip_choose" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/textColorTertiaryAndSizeBody3" />
+</RelativeLayout>

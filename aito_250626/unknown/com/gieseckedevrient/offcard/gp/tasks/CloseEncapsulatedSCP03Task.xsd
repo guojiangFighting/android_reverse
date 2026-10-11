@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0"
+        xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0"
+        xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified">
+
+  <include schemaLocation="GpKeySetTypes.xsd"/>
+
+  <import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="CommonTypes.xsd"/>
+
+  <complexType name="CloseEncapsulatedSCP03TaskType">    
+  </complexType>
+  
+</schema>

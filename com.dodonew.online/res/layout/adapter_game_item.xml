@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:orientation="vertical" android:id="@id/view_card_contanier" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_marginBottom="10.0dp" android:foreground="?android:selectableItemBackground" card_view:cardBackgroundColor="@color/white" card_view:cardCornerRadius="5.0dp" card_view:cardElevation="2.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/view_game_pic" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_game_pic" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/default_news" android:scaleType="fitXY" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/tv_game_title" android:background="@color/black_transparent" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        </FrameLayout>
+        <RelativeLayout android:padding="5.0dp" android:paddingLeft="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/gray" android:id="@id/tv_game_flowers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_alignParentRight="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/result_view" android:id="@id/tv_game_channel_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/tv_game_flowers" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,92 @@
+v3.2.2.1
+#############################################
+axml
+	name : v1.0
+common
+	sharedPerferenceArmSo64 : v3.4.5
+	sqliteX86So : v3.8
+	sqliteX86So64 : v3.8
+	shellDex : v1.5.2.17
+	xloaderX86So : v1.5.4.19
+	xloaderArmSo64 : v1.5.4.19
+	xloaderArmSo : v1.5.4.19
+	sharedPerferenceX86So64 : v3.4.5
+	xloaderX86So64 : v1.5.4.19
+	sqliteArmSo64 : v3.8
+	sharedPerferenceArmSo : v3.4.5
+	sqliteArmSo : v3.8
+	sharedPerferenceX86So : v3.4.5
+uxml
+	name : v3.7.7
+rcRes
+	rcDex : v2.0
+	libRc : v2.0
+	rcSmali : v2.0
+	libRcX86 : v2.0
+	libRcX64 : v2.0
+	libRc64 : v2.0
+j2c
+	cmd2 : [{"--abis":""},{"--oem-name":""},{"--max-methods":"3000"},{"--annotation":""},{"--apk":"1"},{"--splite":"1"}]
+	name : v3.0
+	j2cpy : ${j2c:j2chelper:j2c.py}
+d8
+	lib : v1.0
+	name : v1.0
+resPro
+	name : v1.0
+manif
+	name : v1.0
+antiHijack
+	dex : v1.0
+antiEmulator
+	dex : v1.2
+antiScreen
+	smali : v1.4
+baksmali
+	name : v1.0
+smali
+	name : v1.0
+mergeDex
+	name : v2.0.3
+permission
+	name : v3.7.7
+aop
+	aopNoAntiDebugX86_64 : v8.90
+	aopsecX86 : v1.1.1
+	aopsecX86_64 : v1.1.1
+	aopsecArmeabi : v1.1.1
+	aopsecArmeabi_64 : v1.1.1
+	aopAntiDebugArmeabi_64 : v8.90
+	keyDir : v1.0
+	aopAntiDebugArmeabi : v8.90
+	modeStandard : 11100
+	vdogdefaultDebug : true
+	modeFast : 10100
+	name : v3.4.8
+	aopNoAntiDebugArmeabi : v8.90
+	aopNoAntiDebugArmeabi_64 : v8.90
+	aopAntiDebugX86_64 : v8.90
+	aopAntiDebugX86 : v8.90
+	aopNoAntiDebugX86 : v8.90
+signHap
+	name : v1.0
+sign
+	name : v1.0
+newSign
+	name : v1.0
+lineage
+	name : v1.0
+extras
+	buildZipMode : 0
+	zipalign : v1.0
+	asmTool : ${extras:asm.jar}
+	clean : 0
+	systemApp : false
+ngrtc
+	ngrtcX86So64 : v1.4.1.7
+	ngrtcDex : v1.4.1.7
+	ngrtcArmSo64 : v1.4.1.7
+	ngrtcX86So : v1.4.1.7
+	ngrtcArmSo : v1.4.1.7
+ngrtcTool
+	name : v1.4.1.7

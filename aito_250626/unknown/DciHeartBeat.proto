@@ -1,0 +1,14 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+option java_package = "com.huawei.ads.rpa.net.proto";
+
+package RtsaMsgs;
+
+import "DciHeader.proto";
+import "DciSsState.proto";
+import "AdsVersion.proto";
+
+message MciHeartBeat {
+  Header header = 1;
+  repeated Version functionVersion = 2;
+}

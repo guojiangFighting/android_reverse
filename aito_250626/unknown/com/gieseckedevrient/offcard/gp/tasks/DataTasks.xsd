@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0"
+        xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0"
+        xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified">
+        
+  <include schemaLocation="GpKeySetTypes.xsd"/>
+
+  <import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="CommonTypes.xsd" />
+
+  <complexType name="GetDataTaskType">
+    <attribute name="Name" type="string" use="optional"/>
+    <attribute name="Tag" type="oct:EncodingHex1_2Byte" use="required"/>
+  </complexType>
+  
+  <complexType name="GetFreeSpaceTaskType">
+    <attribute name="Name" type="string" use="optional"/>
+    <attribute name="ResourceName" type="ogpt:ResourceNameType" use="required"/>
+  </complexType>
+  
+  <simpleType name="ResourceNameType">
+    <restriction base="string">
+      <enumeration value="biggest consecutive EEPROM block" />
+      <enumeration value="EEPROM" />
+      <enumeration value="transient COD" />
+      <enumeration value="transient COR" />
+      <enumeration value="OHT" />
+      <enumeration value="HUAA" />
+      <enumeration value="maximum HUFs" />
+      <enumeration value="HUFs" />
+      <enumeration value="commit buffer" />
+    </restriction>
+  </simpleType>
+
+  <complexType name="GetKeyInformationTaskType">
+    <attribute name="Name" type="string" use="optional"/>
+  </complexType>
+  
+  <complexType name="PutDataTaskType">
+    <sequence>
+      <element name="Data" type="oct:EncodingHexUnlimitedByte"/>
+    </sequence>
+    <attribute name="Name" type="string" use="optional"/>
+    <attribute name="Tag" type="oct:EncodingHex1_2Byte" use="required"/>
+  </complexType>
+  
+  <complexType name="StoreDataTaskType">
+    <sequence>
+      <element name="DataGrouping" type="ogpt:DataGroupingType" maxOccurs="unbounded"/>
+    </sequence>
+    <attribute name="Name" type="string" use="optional"/>
+    <attribute name="Final" type="string" default="true" use="optional"/>
+  </complexType>
+  
+  <complexType name="DataGroupingType">
+    <choice>
+      <element name="Data" type="oct:EncodingHexUnlimitedByte"/>
+      <!-- RFU: PrimitiveData and ConstructedData -->
+    </choice>
+    <attribute name="Dgi" type="oct:EncodingHex2Byte" use="optional"/>
+    <attribute name="P1" type="oct:EncodingHexByte" use="optional"/>
+    <attribute name="Encryption" type="string" use="optional"/>
+    <attribute name="Le" type="string" use="optional"/>
+  </complexType>
+  
+  <complexType name="UpdateDataTaskType">
+    <choice maxOccurs="unbounded">
+      <element name="PrimitiveDataItem" type="ogpt:PrimitiveDataItemType"/>
+      <element name="ConstructedDataItem" type="ogpt:ConstructedDataItemType"/>
+    </choice>
+    <attribute name="Name" type="string" use="optional"/>
+    <attribute name="Dgi" type="oct:EncodingHex2Byte" use="optional"/>
+  </complexType>
+  
+  <complexType name="PrimitiveDataItemType">
+    <simpleContent>
+      <extension base="oct:EncodingHexUnlimitedByte">
+        <attribute name="Name" type="string" use="optional"/>
+        <attribute name="Tag" type="oct:EncodingHex1_2Byte" use="required"/>
+      </extension>
+    </simpleContent>
+  </complexType>
+  
+  <complexType name="ConstructedDataItemType">
+    <choice minOccurs="0" maxOccurs="unbounded">
+      <element name="PrimitiveDataItem" type="ogpt:PrimitiveDataItemType"/>
+      <element name="ConstructedDataItem" type="ogpt:ConstructedDataItemType"/>
+    </choice>
+    <attribute name="Name" type="string" use="optional"/>
+    <attribute name="Tag" type="oct:EncodingHex1_2Byte" use="required"/>
+  </complexType>
+  
+</schema>

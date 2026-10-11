@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/font56"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="@dimen/font56">
+        <FrameLayout android:id="@id/comment_root_view" android:paddingTop="@dimen/font8" android:paddingBottom="@dimen/font8" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginStart="16.0dp" android:layout_marginEnd="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/send_comment_icon" app:layout_constraintStart_toStartOf="parent">
+            <com.huawei.uikit.hwedittext.widget.HwEditText android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_secondary" android:textColorHint="@color/emui_color_secondary" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/comment_edt_view" android:background="@drawable/comment_tip_tv_card_bg_shape" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/font40" android:hint="@string/xcar_app_text_post_detail_comment_tip_content" android:maxLines="5" android:singleLine="false" android:maxLength="500" android:fontFamily="@string/emui_text_font_family_regular" android:paddingStart="@dimen/font12" android:paddingEnd="@dimen/font12" />
+        </FrameLayout>
+        <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/send_comment_icon" android:padding="@dimen/font8" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:src="@drawable/icon_send_comment" android:layout_marginEnd="@dimen/font8" app:layout_constraintBottom_toBottomOf="@id/comment_root_view" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/comment_root_view" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

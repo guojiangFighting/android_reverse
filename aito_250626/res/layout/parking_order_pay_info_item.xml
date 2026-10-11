@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/pay_card_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" app:cardCornerRadius="@dimen/font16" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_16" android:layout_marginBottom="@dimen/baseui_dp_16" android:layout_marginStart="@dimen/baseui_dp_12" android:layout_marginEnd="@dimen/baseui_dp_12">
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/parking_pay_mode_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_pay_type" style="@style/ColorPrimaryAndSizeBody2AndFamilyRegular" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/parking_pay_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textAlignment="viewEnd" android:layout_marginStart="@dimen/font16" android:layout_toEndOf="@id/parking_pay_mode_title" android:layout_alignParentEnd="true" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_12">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/parking_pay_amount_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_pay_amount" style="@style/ColorPrimaryAndSizeBody2AndFamilyRegular" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/parking_pay_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textAlignment="viewEnd" android:layout_marginStart="@dimen/font16" android:layout_toEndOf="@id/parking_pay_amount_title" android:layout_alignParentEnd="true" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_12">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/parking_pay_time_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_pay_time" style="@style/ColorPrimaryAndSizeBody2AndFamilyRegular" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/parking_pay_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textAlignment="viewEnd" android:layout_marginStart="@dimen/font16" android:layout_toEndOf="@id/parking_pay_time_title" android:layout_alignParentEnd="true" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/refund_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_12">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/parking_refund_amount_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_parking_refund_amount" style="@style/ColorPrimaryAndSizeBody2AndFamilyRegular" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/parking_refund_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textAlignment="viewEnd" android:layout_marginStart="@dimen/font16" android:layout_toEndOf="@id/parking_refund_amount_title" android:layout_alignParentEnd="true" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

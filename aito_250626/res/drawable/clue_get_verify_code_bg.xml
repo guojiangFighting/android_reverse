@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="40.0dp" android:width="188.0dp" android:top="6.0dp" android:start="6.0dp">
+        <selector>
+            <item android:state_selected="false" android:drawable="@drawable/clue_get_verify_code_unselected_shape" />
+            <item android:drawable="@drawable/clue_get_verify_code_selected_shape" />
+        </selector>
+    </item>
+    <item android:height="52.0dp" android:width="200.0dp">
+        <shape>
+            <corners android:radius="61.0dp" />
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="1.0dp" android:color="@color/opacity_40_white" />
+        </shape>
+    </item>
+</layer-list>

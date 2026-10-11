@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/emui_corner_radius_toast" />
+    <solid android:color="#4d4d4d" />
+    <size android:height="@dimen/font36" />
+</shape>

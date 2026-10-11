@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Avança ràpidament %d segon</item>
+        <item quantity="other">Avança ràpidament %d segons</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Rebobina %d segon</item>
+        <item quantity="other">Rebobina %d segons</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d notificació nova</item>
+        <item quantity="other">%d notificacions noves</item>
+    </plurals>
+    <plurals name="page_progress">
+        <item quantity="one">Pàgina %1$d</item>
+        <item quantity="other">Pàgina %1$d</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="one">%d estrella</item>
+        <item quantity="other">%d estrelles</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="one">de %1$d</item>
+        <item quantity="other">de %1$d</item>
+    </plurals>
+</resources>

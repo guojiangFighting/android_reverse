@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/no_data_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/contact_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_ic_nocontact" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_text_secondary" android:gravity="center" android:id="@id/contact_empty_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/emui_dimens_max_start" android:layout_marginRight="@dimen/emui_dimens_max_end" android:text="@string/xcar_app_text_sns_no_contact" android:layout_marginStart="@dimen/emui_dimens_max_start" android:layout_marginEnd="@dimen/emui_dimens_max_end" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/sns_button_text_nomal" android:id="@id/contact_permission_go_set" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/emui_dimens_max_start" android:layout_marginRight="@dimen/emui_dimens_max_end" android:text="@string/xcar_app_text_sns_go_to_settings" android:layout_marginStart="@dimen/emui_dimens_max_start" android:layout_marginEnd="@dimen/emui_dimens_max_end" />
+    </LinearLayout>
+</RelativeLayout>

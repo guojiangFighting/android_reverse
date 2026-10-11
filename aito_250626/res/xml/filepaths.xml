@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <files-path name="intfiles" path="files/" />
+        <files-path name="apk" path="apk/" />
+        <files-path name="videoFiles" path="videos/" />
+        <files-path name="imageFiles" path="images/" />
+        <external-cache-path name="extfiles" path="files/" />
+        <external-files-path name="download" path="/" />
+        <cache-path name="camerafiles" path="cameraImage" />
+        <external-cache-path name="hm_external_cache" path="shareImage" />
+        <cache-path name="hm_private_cache" path="shareImage" />
+        <external-path name="hm_share" path="shareImage" />
+        <external-files-path name="hm_external_share" path="shareImage" />
+    </paths>
+</resources>

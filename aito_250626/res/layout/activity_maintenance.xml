@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/maintain_detail_title" layout="@layout/mine_hwappbarpattern_navigation_icon_layout" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/font16" android:paddingRight="@dimen/font16" android:layout_width="match_parent" android:layout_height="@dimen/font48">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/xcar_app_text_maintenance_detail_next_mileage" style="@style/Widget.Emui.HwAppbarPattern.TextAppearance.Title" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:gravity="end|center" android:id="@id/detail_next_mileage" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/xcar_app_text_next_mil_default_value" style="@style/textColorSecondaryAndSizeBody3" />
+    </LinearLayout>
+    <View android:background="@color/gray_7d" android:layout_width="match_parent" android:layout_height="@dimen/font0.5" android:layout_marginLeft="@dimen/font16" android:layout_marginRight="@dimen/font16" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/font16" android:paddingRight="@dimen/font16" android:layout_width="match_parent" android:layout_height="@dimen/font48">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/xcar_app_text_maintenance_detail_next_date" style="@style/Widget.Emui.HwAppbarPattern.TextAppearance.Title" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:gravity="end|center" android:id="@id/detail_next_date" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/xcar_app_text_next_day_default_value" style="@style/textColorSecondaryAndSizeBody3" />
+    </LinearLayout>
+    <com.huawei.uikit.hwscrollview.widget.HwScrollView android:paddingLeft="@dimen/font16" android:paddingRight="@dimen/font16" android:paddingBottom="16.0dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/extenderLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="16.0sp" android:id="@id/extenderTitle" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_range_extender" style="@style/Widget.Emui.HwAppbarPattern.TextAppearance.Title" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/otherLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="16.0sp" android:id="@id/otherTitle" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_button_other" style="@style/Widget.Emui.HwAppbarPattern.TextAppearance.Title" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.huawei.uikit.hwscrollview.widget.HwScrollView>
+</LinearLayout>

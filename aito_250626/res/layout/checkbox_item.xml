@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/check_relat" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/check_bacground" />
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_gravity="center" android:id="@id/check_bacground" android:layout_width="match_parent" android:layout_height="448.0dp" android:layout_marginLeft="@dimen/font11" android:layout_marginRight="@dimen/font13" android:layout_marginBottom="16.0dp" android:layout_alignParentBottom="true" app:cardCornerRadius="@dimen/font24" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:orientation="vertical" android:id="@id/check_lienr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font23" android:layout_marginRight="@dimen/font14">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_corner_radius_popwindow" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="@dimen/font56" android:text="重复" android:fontFamily="@string/emui_text_font_family_medium" />
+            <RelativeLayout android:id="@id/check_relat1" android:layout_width="wrap_content" android:layout_height="@dimen/font48">
+                <LinearLayout android:id="@id/layout_text7" android:layout_width="wrap_content" android:layout_height="@dimen/font48">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_dimens_text_margin_tertiary" android:textColor="#000000" android:layout_gravity="center_vertical" android:id="@id/date_text7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周日" android:fontFamily="@string/emui_text_font_family_regular" />
+                </LinearLayout>
+                <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/date_checkbox7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="style/Widget.Emui.CheckBox.Large" />
+            </RelativeLayout>
+            <View android:background="#000000" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginRight="@dimen/font16" android:alpha="0.05" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/layout_text" android:layout_width="wrap_content" android:layout_height="@dimen/font48">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_dimens_text_margin_tertiary" android:textColor="#000000" android:layout_gravity="center_vertical" android:id="@id/date_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周一" android:fontFamily="@string/emui_text_font_family_regular" />
+                </LinearLayout>
+                <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/date_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="style/Widget.Emui.CheckBox.Large" />
+            </RelativeLayout>
+            <View android:background="#000000" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginRight="@dimen/font16" android:alpha="0.05" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/layout_text2" android:layout_width="wrap_content" android:layout_height="@dimen/font48">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_dimens_text_margin_tertiary" android:textColor="#000000" android:layout_gravity="center_vertical" android:id="@id/date_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周二" android:fontFamily="@string/emui_text_font_family_regular" />
+                </LinearLayout>
+                <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/date_checkbox2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="style/Widget.Emui.CheckBox.Large" />
+            </RelativeLayout>
+            <View android:background="#000000" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginRight="@dimen/font16" android:alpha="0.05" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/layout_text3" android:layout_width="wrap_content" android:layout_height="@dimen/font48">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_dimens_text_margin_tertiary" android:textColor="#000000" android:layout_gravity="center_vertical" android:id="@id/date_text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周三" android:fontFamily="@string/emui_text_font_family_regular" />
+                </LinearLayout>
+                <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/date_checkbox3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="style/Widget.Emui.CheckBox.Large" />
+            </RelativeLayout>
+            <View android:background="#000000" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginRight="@dimen/font16" android:alpha="0.05" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/layout_text4" android:layout_width="wrap_content" android:layout_height="@dimen/font48">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_dimens_text_margin_tertiary" android:textColor="#000000" android:layout_gravity="center_vertical" android:id="@id/date_text4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周四" android:fontFamily="@string/emui_text_font_family_regular" />
+                </LinearLayout>
+                <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/date_checkbox4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="style/Widget.Emui.CheckBox.Large" />
+            </RelativeLayout>
+            <View android:background="#000000" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginRight="@dimen/font16" android:alpha="0.05" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/layout_text5" android:layout_width="wrap_content" android:layout_height="@dimen/font48">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_dimens_text_margin_tertiary" android:textColor="#000000" android:layout_gravity="center_vertical" android:id="@id/date_text5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周五" android:fontFamily="@string/emui_text_font_family_regular" />
+                </LinearLayout>
+                <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/date_checkbox5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="style/Widget.Emui.CheckBox.Large" />
+            </RelativeLayout>
+            <View android:background="#000000" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginRight="@dimen/font16" android:alpha="0.05" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/layout_text6" android:layout_width="wrap_content" android:layout_height="@dimen/font48">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_dimens_text_margin_tertiary" android:textColor="#000000" android:layout_gravity="center_vertical" android:id="@id/date_text6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周六" android:fontFamily="@string/emui_text_font_family_regular" />
+                </LinearLayout>
+                <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/date_checkbox6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="style/Widget.Emui.CheckBox.Large" />
+            </RelativeLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/emui_dimens_dialog_bottom" android:textColor="#0a59f7" android:gravity="center" android:id="@id/tv_cancel" android:layout_width="0.0dp" android:layout_height="50.0dp" android:text="取消" android:layout_weight="1.0" android:fontFamily="@string/emui_text_font_family_medium" />
+                <View android:layout_gravity="center_vertical" android:background="#8a8787" android:layout_width="0.5dp" android:layout_height="@dimen/dp_30" android:alpha="0.4" />
+                <TextView android:textSize="@dimen/emui_dimens_dialog_bottom" android:textColor="#0a59f7" android:gravity="center" android:id="@id/tv_positive" android:layout_width="0.0dp" android:layout_height="50.0dp" android:text="确定" android:layout_weight="1.0" android:fontFamily="@string/emui_text_font_family_medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

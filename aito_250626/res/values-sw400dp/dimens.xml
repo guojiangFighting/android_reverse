@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ads_rpa_common_banner_txt_view_margin_top">45.0dp</dimen>
+    <dimen name="ads_rpa_common_env_ani_direction_margin_top">510.0dp</dimen>
+    <dimen name="ads_rpa_common_txt_view_position_one_margin_start">250.0dp</dimen>
+    <dimen name="ads_rpa_common_txt_view_position_zero_margin_start">240.0dp</dimen>
+    <dimen name="env_ani_direction_common_margin_top">510.0dp</dimen>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start|center" android:orientation="horizontal" android:tag="layout/item_uavp_search_result_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/standard_margin" android:paddingVertical="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="16.0dp" android:textColor="@color/uavp_search_result_item_title_text_color" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="500" android:fontFamily="sans-serif-medium" android:layout_marginHorizontal="16.0dp" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_desc_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginHorizontal="16.0dp">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="10.0dp" android:textColor="@color/uavp_search_result_item_tag_text_color" android:gravity="start|center" android:id="@id/tv_desc_tag1" android:background="@drawable/drawable_bg_label_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="500" android:layout_marginEnd="4.0dp" android:paddingHorizontal="4.0dp" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="10.0dp" android:textColor="@color/uavp_search_result_item_tag_text_color" android:gravity="start|center" android:id="@id/tv_desc_tag2" android:background="@drawable/drawable_bg_label_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="500" android:layout_marginEnd="4.0dp" android:paddingHorizontal="4.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0dp" android:textColor="@color/theme_favorite_btn_txt_color" android:gravity="center" android:id="@id/tv_button" android:background="@drawable/theme_drawable_bg_item_collection_button" android:layout_width="72.0dp" android:layout_height="28.0dp" android:maxLength="500" android:fontFamily="sans-serif-medium" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>

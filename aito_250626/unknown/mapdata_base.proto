@@ -1,0 +1,15 @@
+
+// [START declaration]
+syntax = "proto3";
+package proto;
+// [END declaration]
+option java_package = "com.huawei.ads.uavp.servicecommon.bean.proto";
+option java_outer_classname = "AvpMapBaseProto";
+// [START messages]
+
+message Point_ {
+    double x = 1;
+    double y = 2;
+    double z = 3;
+}
+// [END messages]

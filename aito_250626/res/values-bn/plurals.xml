@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">%d সেকেন্ড ফাস্ট ফরওয়ার্ড করুন</item>
+        <item quantity="other">%d সেকেন্ড ফাস্ট ফরওয়ার্ড করুন</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d সেকেন্ড রিওয়াইন্ড করুন</item>
+        <item quantity="other">%d সেকেন্ড রিওয়াইন্ড করুন</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%dটি নতুন বিজ্ঞপ্তি</item>
+        <item quantity="other">%dটি নতুন বিজ্ঞপ্তি</item>
+    </plurals>
+    <plurals name="page_progress">
+        <item quantity="one">পৃষ্ঠা %1$d</item>
+        <item quantity="other">পৃষ্ঠা %1$d</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="one">%d তারকা</item>
+        <item quantity="other">%d তারকা</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="one">%1$dটি</item>
+        <item quantity="other">%1$dটি</item>
+    </plurals>
+</resources>

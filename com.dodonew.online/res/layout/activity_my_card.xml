@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.dodonew.online.widget.MultiStateView android:id="@id/msv_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" app:msv_loadingView="@layout/view_loading" app:msv_emptyView="@layout/view_empty" app:msv_errorView="@layout/view_error" app:msv_viewState="loading">
+            <com.dodonew.online.widget.MListView android:id="@id/mlv_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:dividerHeight="5.0dp" />
+        </com.dodonew.online.widget.MultiStateView>
+        <LinearLayout android:orientation="horizontal" android:id="@id/view_my_add_card" android:paddingLeft="20.0dp" android:layout_marginTop="10.0dp" style="@style/UnderLineViewStyle">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_add_card" android:layout_centerVertical="true" />
+            <TextView android:textColor="@color/option_txt_color" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="添加会员卡" android:drawableRight="@drawable/my_right" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/view_my_recharge" android:paddingLeft="20.0dp" android:layout_marginTop="10.0dp" style="@style/UnderLineViewStyle">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_recharge" android:layout_centerVertical="true" />
+            <TextView android:textColor="@color/option_txt_color" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="充值上网费" android:drawableRight="@drawable/my_right" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

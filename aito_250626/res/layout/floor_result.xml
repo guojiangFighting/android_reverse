@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/avp_floor_layout" android:background="@drawable/avp_floor_item_left_bg" android:layout_width="42.0dp" android:layout_height="32.0dp" android:layout_marginStart="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/avp_floor_prev_img" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="16.0dp" android:layout_centerVertical="true" android:layout_marginStart="6.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="15.0dp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/avp_floor_name_text" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/avp_floor_prev_img" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

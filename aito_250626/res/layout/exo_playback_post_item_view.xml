@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/simple_top" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/video_preview_imageview" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/MediaPreViewImage" />
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/exo_play" android:visibility="gone" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:layout_marginTop="59.0dp" android:src="@drawable/ic_exo_play" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/ExoMediaButton.Play2" />
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/exo_pause" android:visibility="gone" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:layout_marginTop="59.0dp" android:src="@drawable/ic_exo_pause" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/ExoMediaButton.Pause2" />
+</RelativeLayout>

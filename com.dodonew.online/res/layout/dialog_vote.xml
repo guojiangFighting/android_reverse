@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="14.0sp" android:textColor="@color/black" android:textColorHint="@color/gray" android:gravity="center" android:id="@id/et_vote_score" android:background="@drawable/btn_grey" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="请输入下注积分" android:inputType="number" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_vote" android:layout_width="match_parent" android:layout_height="@dimen/guess_choose_btn_height" android:layout_marginTop="10.0dp" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预计收入:" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/colorPrimary" android:id="@id/tv_vote_getScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="剩余积分:" />
+            <TextView android:textSize="12.0sp" android:id="@id/tv_vote_youScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <Button android:textColor="@color/white" android:id="@id/btn_vote" android:background="@drawable/btn_vote_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="立即下注" />
+</LinearLayout>

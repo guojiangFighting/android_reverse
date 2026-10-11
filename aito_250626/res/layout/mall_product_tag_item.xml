@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font10" android:textColor="@color/new_emui_text_secondary" android:gravity="center" android:id="@id/product_tag" android:background="@drawable/mall_product_tag_bg" android:layout_width="wrap_content" android:layout_height="@dimen/font16" android:fontFamily="@string/emui_text_font_family_regular" />
+</LinearLayout>

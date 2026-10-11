@@ -1,0 +1,42 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+option java_package = "com.huawei.ads.carsearch.proto";
+
+import "Header.proto";
+import "SdkPoseWithCovariance.proto";
+import "SdkTwistWithCovariance.proto";
+
+package SdkMsgs;
+
+message AccelWithCovarianceSd {
+    repeated float covariance = 1;
+}
+
+message VehicleStateSd {
+    reserved 3, 4, 6, 7, 9;
+    StdMsgs.Header header = 1;
+    enum WorkState {
+        WORK_STATE_PREPARATION = 0;
+        WORK_STATE_ALIGNMENT = 1;
+        WORK_STATE_NORMAL_NAV = 2;
+        WORK_STATE_BACKUP_NAV = 3;
+        WORK_STATE_FAULT = 4;
+    }
+    WorkState workState = 2;
+    // PoseWithCovariance poseMap = 3;
+    // uint64 roadIdCurrent = 4;
+    PoseWithCovariance poseLLA = 5;
+    // uint32 integratedState = 6;
+    // uint32 roadIdState = 7;
+    PoseWithCovariance poseRelative = 8;
+    // AccelWithCovarianceSd acceleration = 9;
+    TwistWithCovariance twist = 10;
+
+    // 经纬度，高德字段占位未确定，先占位
+    double mapOriginLatitude = 11;
+
+    double mapOriginLongitude = 12;
+
+    double mapOriginAltitude = 13;
+}

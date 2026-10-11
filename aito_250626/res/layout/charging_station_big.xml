@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/roll_up_station_layout" android:layout_width="@dimen/font40" android:layout_height="43.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:textColor="#ef6f21" android:gravity="center" android:id="@id/charging_station_tv" android:layout_width="@dimen/font40" android:layout_height="43.0dp" android:fontFamily="@string/emui_text_font_family_medium" />
+</LinearLayout>

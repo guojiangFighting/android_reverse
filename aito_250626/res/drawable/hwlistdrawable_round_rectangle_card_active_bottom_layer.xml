@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:bottomLeftRadius="@dimen/emui_drawable_corner_radius_card" android:bottomRightRadius="@dimen/emui_drawable_corner_radius_card" />
+    <solid android:color="@color/emui_color_text_highlight" />
+</shape>

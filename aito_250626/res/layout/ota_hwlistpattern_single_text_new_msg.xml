@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/hwlistpattern_msg" android:layout_width="@dimen/font8" android:layout_height="@dimen/font8" android:layout_marginTop="@dimen/font20" android:src="@drawable/notify_error_point" android:layout_marginStart="@dimen/font12" android:layout_marginEnd="@dimen/font8" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_selector_text_primary" android:ellipsize="end" android:id="@id/hwlistpattern_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font14" android:layout_marginBottom="@dimen/font15" android:fontFamily="@string/emui_text_font_family_regular" android:textDirection="locale" android:layout_toEndOf="@id/hwlistpattern_msg" />
+</RelativeLayout>

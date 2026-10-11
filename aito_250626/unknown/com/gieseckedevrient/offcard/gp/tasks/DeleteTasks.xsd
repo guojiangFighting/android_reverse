@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0" xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0" elementFormDefault="qualified">
+	<import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="CommonTypes.xsd"/>
+	<include schemaLocation="LoadInstallTasks.xsd"/>
+	<complexType name="DeleteTaskType">
+		<sequence>
+			<element name="Data" type="oct:EncodingHexUnlimitedByte"/>
+		</sequence>
+		<attribute name="Name" type="string" use="optional"/>
+		<attribute name="DeleteRelated" type="boolean" use="optional" default="false"/>
+	</complexType>
+	<complexType name="DeleteCardComponentTaskType">
+		<sequence>
+			<element name="Aid" type="oct:EncodingAidHex" maxOccurs="unbounded"/>
+			<group ref="ogpt:TokenGroup" minOccurs="0"/>
+		</sequence>
+		<attribute name="Name" type="string" use="optional"/>
+		<attribute name="DeleteRelated" type="boolean" use="optional" default="false"/>
+	</complexType>
+	<complexType name="DeleteKeyTaskType">
+		<attribute name="Name" type="string" use="optional"/>
+		<attribute name="Version" type="oct:EncodingHex1Byte" use="optional" default="00"/>
+		<attribute name="Index" type="oct:EncodingHex1Byte" use="optional" default="00"/>
+	</complexType>
+</schema>

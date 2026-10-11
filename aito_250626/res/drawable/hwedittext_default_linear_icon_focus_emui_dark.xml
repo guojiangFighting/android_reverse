@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/hwedittext_stroke_width_size" android:color="@color/emui_control_focused_outline_dark" />
+    <corners android:radius="@dimen/emui_corner_radius_small" />
+</shape>

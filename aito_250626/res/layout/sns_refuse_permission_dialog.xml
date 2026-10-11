@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/emui_dimens_element_horizontal_large" android:paddingTop="@dimen/emui_dimens_element_horizontal_large" android:paddingRight="@dimen/emui_dimens_element_horizontal_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/emui_dimens_element_horizontal_large" android:paddingEnd="@dimen/emui_dimens_element_horizontal_large"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_text_primary" android:id="@id/text1" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.1" />
+    <TextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_text_primary" android:id="@id/text2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/emui_dimens_element_horizontal_middle" android:lineSpacingMultiplier="1.1" />
+</LinearLayout>

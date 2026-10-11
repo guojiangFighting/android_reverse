@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/font16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.huawei.uikit.phone.hwbutton.widget.HwButton android:layout_gravity="center" android:id="@id/clear_data_action_htbn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_marginEnd="@dimen/font16" style="@style/Widget.Emui.HwButton.Small" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/iv_point" android:background="@drawable/timeline_green" android:layout_width="@dimen/font10" android:layout_height="@dimen/font10" android:layout_centerVertical="true" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/new_emui_text_tertiary" android:gravity="center" android:layout_gravity="center" android:id="@id/clear_data_action_htv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginEnd="@dimen/font16" android:layout_alignStart="@id/clear_data_action_htbn" android:layout_alignEnd="@id/clear_data_action_htbn" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="@color/emui_primary" android:id="@id/timeline_content_htv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_point" android:layout_centerVertical="true" android:layout_marginStart="@dimen/font16" style="@style/textColorPrimaryAndSizeBody2" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="@dimen/font10" android:layout_height="65.0dp" android:layout_marginTop="@dimen/font19">
+        <View android:layout_gravity="center_vertical" android:id="@id/v_line" android:background="#7f7c7c" android:layout_width="1.0dp" android:layout_height="65.0dp" android:alpha="0.4" />
+    </LinearLayout>
+</RelativeLayout>

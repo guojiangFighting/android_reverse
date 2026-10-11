@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="#1affffff" app:hwAdvancedCardViewClickAnimationEnable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.huawei.uikit.hwimageview.widget.HwImageView android:background="@drawable/drivingcard_scale_background" android:layout_width="wrap_content" android:layout_height="@dimen/dp_200" />
+        <RelativeLayout android:id="@id/energy_consumption_analysis_layout" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:layout_marginLeft="@dimen/baseui_dp_16" android:layout_marginRight="@dimen/baseui_dp_16">
+            <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/baseui_dp_16" android:textColor="#dbffffff" android:gravity="bottom" android:id="@id/chart_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_16" android:text="@string/xcar_app_text_mileage_analysis" android:fontFamily="@string/emui_text_font_family_medium" />
+            <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font10" android:textColor="#61ffffff" android:gravity="end" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font18" android:text="@string/xcar_app_text_unit_km" android:layout_alignBaseline="@id/chart_bar_title" android:layout_centerVertical="true" android:layout_toEndOf="@id/chart_bar_title" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/total_mileage_layout" android:layout_width="match_parent" android:layout_height="64.0dp" android:layout_marginLeft="@dimen/baseui_dp_16" android:layout_marginTop="8.0dp" android:layout_marginRight="@dimen/baseui_dp_16" android:layout_below="@id/energy_consumption_analysis_layout">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font20" android:textColor="#ffffffff" android:id="@id/total_mileage_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:fontFamily="@string/emui_text_font_family_medium" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font11" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="km" android:fontFamily="@string/emui_text_font_family_regular" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/baseui_dp_12" android:textColor="#99ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_total_mileage" />
+        </LinearLayout>
+        <com.github.mikephil.charting.charts.BarChart android:id="@id/driving_bar_chart" android:layout_width="match_parent" android:layout_height="296.0dp" android:layout_marginTop="-62.0dp" android:layout_marginBottom="@dimen/font24" android:layout_below="@id/total_mileage_layout" />
+        <include android:id="@id/bar_line_xaxis" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-8.0dp" android:layout_alignBottom="@id/driving_bar_chart" android:layout_marginStart="45.0dp" android:layout_marginEnd="@dimen/baseui_dp_20" layout="@layout/x_axis_layout" />
+    </RelativeLayout>
+</com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>

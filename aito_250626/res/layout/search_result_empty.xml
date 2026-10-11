@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/empty_view_container" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center_horizontal" android:id="@id/empty_image" android:background="@drawable/icon_no_comment" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_120" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_tertiary" android:layout_gravity="center_horizontal" android:id="@id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:text="@string/xcar_app_text_no_search_result" android:layout_below="@id/empty_image" android:layout_centerHorizontal="true" android:fontFamily="@string/emui_text_font_family_regular" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/dp12" android:textColor="@color/emui_color_tertiary" android:layout_gravity="center_horizontal" android:id="@id/empty_guide" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_no_search_result_charging_guide" android:layout_centerHorizontal="true" android:fontFamily="@string/emui_text_font_family_regular" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CollapsingToolbarLayout android:id="@id/collapse_toolbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:contentScrim="?colorPrimary">
+        <android.support.v7.widget.Toolbar android:gravity="top" android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" android:minHeight="?actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:layout_collapseMode="pin" />
+        <LinearLayout android:orientation="vertical" android:id="@id/header" android:paddingTop="@dimen/header_margin" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="?actionBarSize">
+            <RelativeLayout android:id="@id/view_order_time" android:background="@drawable/under_view_selector" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/option_txt_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="选择预定时间" android:drawableRight="@drawable/my_right" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/colorPrimary" android:id="@id/tv_order_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/under_divider_bg" android:paddingLeft="5.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/option_txt_color" android:background="@drawable/btn_border_white" android:text="可选" style="@style/OrderTextStyle" />
+                <TextView android:textColor="@color/white" android:background="@drawable/btn_border_green" android:text="选中" style="@style/OrderTextStyle" />
+                <TextView android:textColor="@color/white" android:background="@drawable/btn_border_red" android:text="已订" style="@style/OrderTextStyle" />
+                <TextView android:textColor="@color/option_txt_color" android:background="@drawable/btn_gray" android:text="不可订" style="@style/OrderTextStyle" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:gravity="top" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:layout_collapseMode="pin">
+            <ImageButton android:id="@id/ib_header_back" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/header_back_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_header" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="3.0dp" android:layout_toRightOf="@id/ib_header_back" />
+        </RelativeLayout>
+        <android.support.design.widget.TabLayout android:layout_gravity="bottom" android:id="@id/tabs" android:background="@drawable/under_divider_bg" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:layout_marginTop="5.0dp" android:fillViewport="false" app:tabIndicatorColor="@color/material_green" app:tabTextColor="@color/option_txt_color" app:tabSelectedTextColor="@color/material_green" />
+    </android.support.design.widget.CollapsingToolbarLayout>
+</android.support.design.widget.AppBarLayout>

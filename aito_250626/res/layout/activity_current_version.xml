@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/my_charging_hub_title_l" layout="@layout/home_charging_hub_navigation_icon_layout" />
+    <LinearLayout android:layout_gravity="center" android:id="@id/layout" android:layout_width="wrap_content" android:layout_height="@dimen/font26" android:layout_marginTop="@dimen/font48" android:layout_below="@id/my_charging_hub_title_l" android:layout_centerInParent="true">
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_version_no" />
+        <TextView android:textSize="@dimen/font16" android:textColor="#040404" android:id="@id/current_numder" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:id="@id/layout_time" android:layout_width="wrap_content" android:layout_height="@dimen/font22" android:layout_below="@id/layout" android:layout_centerInParent="true">
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="#817d7d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/xcar_app_text_upgrade_time" />
+        <TextView android:textSize="@dimen/font14" android:textColor="#817d7d" android:layout_gravity="center" android:id="@id/time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" />
+    </LinearLayout>
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_gravity="center" android:id="@id/content_pic_cv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_marginTop="@dimen/font48" android:layout_marginRight="@dimen/font16" android:layout_below="@id/layout_time" app:cardBackgroundColor="@color/emui_card_panel_bg" app:cardCornerRadius="@dimen/emui_corner_radius_notification" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginTop="@dimen/font10" android:layout_marginRight="@dimen/font12">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_new_version_update_log" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font16" android:textColor="#888484" android:id="@id/journal_texts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font8" />
+        </LinearLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

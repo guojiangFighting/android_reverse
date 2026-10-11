@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/post_detail_card_shape" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_title" android:layout_width="match_parent" android:layout_height="@dimen/font48">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/emui_black" android:id="@id/tv_comment_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="@string/xcar_app_text_comment_content" android:layout_centerVertical="true" />
+        <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/iv_close" android:padding="10.0dp" android:layout_width="44.0dp" android:layout_height="44.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/ic_close_comment_pop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_text_secondary" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/input_content_tv" android:background="@drawable/comment_tip_tv_card_bg_shape" android:layout_width="match_parent" android:layout_height="@dimen/font40" android:layout_marginLeft="16.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="8.0dp" android:text="@string/xcar_app_text_post_detail_comment_tip_content" android:layout_alignParentBottom="true" android:fontFamily="@string/emui_text_font_family_regular" android:paddingStart="@dimen/hwedittext_bubble_text_padding_start" android:paddingEnd="@dimen/hwedittext_bubble_text_padding_end" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/comment_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/input_content_tv" android:layout_below="@id/rl_title" android:overScrollMode="never" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/input_content_tv" android:layout_below="@id/rl_title">
+        <app.huawei.auto.base.view.CommentListPopNoInternetLayout android:id="@id/no_internet_layout_post" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <include android:id="@id/no_comment_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/post_detail_no_comment_layout" />
+        <include android:id="@id/no_content_view_post" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/post_no_content_layout" />
+        <include android:id="@id/load_progress_view_post" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/xcar_loading_view" />
+    </FrameLayout>
+</RelativeLayout>

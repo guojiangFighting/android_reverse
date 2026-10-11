@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/ota_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/hwappbarpattern_height" layout="@layout/hwappbarpattern_title_item_layout" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/ota_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24" android:layout_marginBottom="@dimen/font24" android:text="@string/xcar_app_text_os_update_notices" android:layout_below="@id/ota_title_bar" android:layout_centerHorizontal="true" style="@style/textColorPrimaryAndSizeHeadLine9" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/ota_text_title" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font16" android:text="@string/xcar_app_text_notice_in_update" style="@style/textColorPrimaryAndSizeBody1" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_tips" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout android:id="@id/ota_tips_column_have_know" android:layout_width="wrap_content" android:layout_height="64.0dp" android:layout_alignParentBottom="true" android:layout_centerInParent="true" app:hwColumnType="button_type">
+        <com.huawei.uikit.phone.hwbutton.widget.HwButton android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/ota_tips_btn_have_know" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_button_ok" android:layout_centerHorizontal="true" style="@style/Widget.Emui.HwButton.Emphasize.Light" />
+    </com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout>
+</RelativeLayout>

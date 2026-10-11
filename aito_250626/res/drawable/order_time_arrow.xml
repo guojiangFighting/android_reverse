@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="8.0dp" android:width="90.0dp" android:autoMirrored="true" android:viewportWidth="90.0" android:viewportHeight="8.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@drawable/$order_time_arrow__0" android:pathData="M1.931,6.956C31.769,7.328 60.242,7.514 87.35,7.514C88.553,6.573 87.976,5.816 87.554,5.216C85.613,2.861 79.674,-0.171 78.674,0.612C77.818,1.181 78.498,3.736 78.674,4.961C77.758,4.961 52.177,5.046 1.931,5.216L1.931,6.956Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+</vector>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="config_materialPreferenceIconSpaceReserved">false</bool>
+    <bool name="emui_stroke_enable">false</bool>
+    <bool name="hwadvancedcardview_click_enable">true</bool>
+    <bool name="hwbottomsheet_animation_enable">true</bool>
+    <bool name="hwedittext_is_single_line">false</bool>
+    <bool name="hwprogressBar_glowing_enabled">false</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <bool name="sns_config_is_pad">false</bool>
+    <bool name="theme_default_loading">true</bool>
+</resources>

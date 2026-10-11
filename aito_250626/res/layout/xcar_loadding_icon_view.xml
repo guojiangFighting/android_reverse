@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/loading_view_icon_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:background="@drawable/loading_bg" android:layout_width="@dimen/dp_140" android:layout_height="@dimen/dp_140" android:layout_centerHorizontal="true">
+        <com.huawei.uikit.hwprogressbar.widget.HwProgressBar android:id="@id/progress" android:layout_width="@dimen/font72" android:layout_height="@dimen/font72" android:layout_marginTop="@dimen/font12" android:layout_centerHorizontal="true" app:hwFillColor="@color/emui_white" style="@style/Widget.Emui.HwProgressBar.Large" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_text_secondary_inverse" android:id="@id/loading_tips_htv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font18" android:text="@string/xcar_app_text_loading" android:layout_below="@id/progress" android:layout_centerInParent="true" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginStart="@dimen/font8" android:layout_marginEnd="@dimen/font8" />
+    </RelativeLayout>
+</RelativeLayout>

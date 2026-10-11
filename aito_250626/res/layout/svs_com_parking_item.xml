@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ll_item_parking_collection" android:background="@drawable/svs_com_left_bg" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/svs_com_car_normal_txt_size" android:textStyle="bold" android:textColor="@color/svs_com_black" android:id="@id/tv_city_poi_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLength="500" android:layout_marginEnd="16.0dp" android:layout_toStartOf="@id/ll_right_item" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_right_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_alignParentEnd="true">
+                <TextView android:textSize="@dimen/svs_com_car_time_txt_size" android:textColor="@color/svs_com_black_60alpha" android:id="@id/tv_distance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="500" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_current_position_tag" android:background="@drawable/svs_com_c4_black_6alpha_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svs_com_location_icon_with_slope" android:paddingHorizontal="5.0dp" />
+                    <TextView android:textSize="@dimen/svs_com_car_time_txt_size" android:textColor="@color/svs_com_black_60alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/svs_com_current_location" android:paddingEnd="5.0dp" android:paddingVertical="2.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dp">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svs_com_parking_spots" />
+            <TextView android:textSize="@dimen/svs_com_car_time_txt_size" android:textColor="@color/svs_com_black_60alpha" android:ellipsize="end" android:id="@id/tv_total_parking_spots" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="500" android:layout_marginStart="9.0dp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svs_com_available_layer" />
+            <TextView android:textSize="@dimen/svs_com_car_time_txt_size" android:textColor="@color/svs_com_black_60alpha" android:ellipsize="end" android:id="@id/tv_available_layer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="500" android:layout_marginStart="8.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/svs_com_black_10alpha" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="16.0dp" />
+</LinearLayout>

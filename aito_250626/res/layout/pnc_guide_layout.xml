@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/guide_float_layout_bg" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12" android:layout_marginBottom="@dimen/font20"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="14.0sp" android:textColor="#e6ffffff" android:id="@id/tip_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12" android:maxLines="1" android:singleLine="true" android:layout_centerVertical="true" android:fontFamily="@string/emui_text_font_family_regular" android:layout_toStartOf="@id/button_layout" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/button_layout" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_alignParentEnd="true">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/button_text" android:background="@drawable/guide_float_button_bg" android:layout_width="wrap_content" android:layout_height="@dimen/font28" android:layout_marginRight="@dimen/font12" android:maxWidth="@dimen/font72" android:minWidth="@dimen/font56" android:maxLines="1" android:singleLine="true" android:fontFamily="@string/emui_text_font_family_medium" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/close_imageView" android:layout_width="@dimen/font16" android:layout_height="@dimen/font16" android:src="@drawable/ic_login_cancel" android:scaleType="center" android:layout_marginEnd="@dimen/font12" />
+    </LinearLayout>
+</RelativeLayout>

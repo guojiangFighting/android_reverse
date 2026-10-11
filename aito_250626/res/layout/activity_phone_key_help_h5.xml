@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/emui_color_subbg" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/user_key_setting_title" android:layout_width="match_parent" android:layout_height="@dimen/hwappbarpattern_height" android:layout_marginStart="-8.0dp" layout="@layout/hwappbarpattern_title_item_layout" />
+    <Space android:id="@id/view_first" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="3.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/front_view" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="7.0">
+        <com.huawei.uikit.hwprogressbar.widget.HwProgressBar android:layout_gravity="center_horizontal" android:id="@id/loading" android:layout_width="@dimen/font72" android:layout_height="@dimen/font72" style="@style/Widget.Emui.HwProgressBar.Large" />
+        <RelativeLayout android:id="@id/no_content_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/error_hiv" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_120" android:src="@drawable/ic_topic_no_post_tips" android:layout_centerHorizontal="true" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_tertiary" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:text="@string/xcar_app_text_content_maintaining" android:layout_below="@id/error_hiv" android:layout_centerHorizontal="true" android:fontFamily="@string/emui_text_font_family_regular" />
+        </RelativeLayout>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/content_view" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font18" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_subtitle2" android:textColor="@color/emui_text_primary" android:id="@id/Phone_Brand_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:fontFamily="@string/emui_text_font_family_medium" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_toggle" android:textColor="@color/emui_text_primary" android:id="@id/Phone_img_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" />
+            <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font24" app:cardCornerRadius="@dimen/font16" app:hwAdvancedCardViewClickAnimationEnable="false">
+                <com.huawei.uikit.hwrecyclerview.widget.HwRecyclerView android:id="@id/Hfive_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/font16" android:layout_marginStart="@dimen/font12" android:layout_marginEnd="@dimen/font12" />
+            </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

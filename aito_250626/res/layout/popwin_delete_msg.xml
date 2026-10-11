@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:background="@drawable/whitefillet" android:layout_width="@dimen/dp_156" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font5" android:layout_marginBottom="@dimen/font5" android:layout_marginEnd="@dimen/font16" app:cardCornerRadius="@dimen/font16" app:cardElevation="@dimen/font5" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_subtitle2" android:layout_gravity="center_horizontal" android:id="@id/tv_delete_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font17" android:layout_marginBottom="@dimen/font19" android:text="@string/delete" android:layout_marginStart="@dimen/font16" style="@style/textColorPrimaryAndSizeSubtitle1" />
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</LinearLayout>

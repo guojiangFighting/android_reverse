@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/item_card_view" android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="0.0dp" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:id="@id/line_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font24">
+                <LinearLayout android:orientation="vertical" android:id="@id/charge_one_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24" android:layout_alignParentLeft="true">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_12" android:textColor="@color/new_emui_text_secondary" android:ellipsize="end" android:id="@id/charge_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2" android:minHeight="@dimen/font48">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font36_empower" android:textColor="@color/new_emui_text_primary" android:ellipsize="end" android:id="@id/charge_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@string/emui_text_font_family_medium" />
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_12" android:textColor="@color/new_emui_text_secondary" android:ellipsize="end" android:id="@id/charge_value_unit" android:paddingBottom="@dimen/font9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                    </LinearLayout>
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_16" android:textColor="@color/new_emui_text_primary" android:ellipsize="end" android:id="@id/charge_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font22" android:text="" android:maxLines="1" android:fontFamily="@string/emui_text_font_family_medium" />
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_12" android:textColor="@color/new_emui_text_secondary" android:ellipsize="end" android:id="@id/charge_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:text="" android:maxLines="1" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/charge_two_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:layout_centerVertical="true">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font21_empower" android:textColor="@color/new_emui_text_primary" android:ellipsize="end" android:id="@id/charge_status_one" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:maxLines="1" />
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_12" android:textColor="@color/new_emui_text_secondary" android:ellipsize="end" android:id="@id/charge_des_one" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:text="" android:maxLines="1" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24" android:layout_alignParentRight="true">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_10" android:textColor="@color/new_emui_text_secondary" android:ellipsize="end" android:gravity="right" android:id="@id/charge_type_des" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/font16" android:layout_marginBottom="@dimen/font2" android:text="" android:maxLines="1" />
+                    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="right" android:id="@id/charge_img" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <com.huawei.uikit.phone.hwbutton.widget.HwButton android:textSize="@dimen/font_sp_12" android:textColor="@color/new_emui_text_primary" android:layout_gravity="right" android:id="@id/charge_operate" android:background="@drawable/bg_card_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/font16" android:minWidth="@dimen/baseui_dp_106" android:minHeight="@dimen/font28" android:fontFamily="@string/emui_text_font_family_medium" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwbubblelayout.widget.HwBubbleLayout android:layout_gravity="center_horizontal" android:id="@id/bubble_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dp" app:hwArrowDirection="bottom" app:hwArrowPosition="0.0dp" app:hwArrowStartLocation="positive" app:hwColumnEnabled="true" style="@style/Widget.Emui.HwBubbleLayout.Light">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dp" android:paddingTop="10.0dp" android:paddingRight="16.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="14.0sp" android:textColor="@color/emui_primary_inverse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_touch_icon_customize" />
+        </LinearLayout>
+    </com.huawei.uikit.phone.hwbubblelayout.widget.HwBubbleLayout>
+</RelativeLayout>

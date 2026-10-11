@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/item_card_view" android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="0.0dp" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:id="@id/line_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font24">
+                <LinearLayout android:orientation="vertical" android:id="@id/charge_recommend_station_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24" android:layout_toLeftOf="@id/card_home_charge_btn_ly" android:layout_marginEnd="@dimen/baseui_dp_16">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:textColor="@color/new_emui_text_secondary" android:ellipsize="end" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xcar_app_text_recommend_station_tip" android:maxLines="1" />
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font18" android:textColor="@color/black" android:ellipsize="end" android:id="@id/recommend_station_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp12" android:minHeight="48.0dp" android:text="" android:maxLines="2" android:fontFamily="@string/emui_text_font_family_medium" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font18">
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/dp14" android:textColor="@color/black" android:ellipsize="end" android:id="@id/charging_sub_ac_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_no_use_charging" android:maxLines="1" android:fontFamily="@string/emui_text_font_family_medium" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font10" android:textColor="@color/new_emui_text_secondary" android:ellipsize="end" android:id="@id/dc_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_2" android:text="@string/xcar_app_text_ac" android:maxLines="1" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/ac_count_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/font24">
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/dp14" android:textColor="@color/black" android:ellipsize="end" android:id="@id/charging_sub_communicating_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_no_use_charging" android:maxLines="1" android:fontFamily="@string/emui_text_font_family_medium" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font10" android:textColor="@color/new_emui_text_secondary" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_2" android:text="@string/xcar_app_text_communicating" android:maxLines="1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/card_home_charge_btn_ly" android:layout_width="138.0dp" android:layout_height="wrap_content" android:layout_alignTop="@id/charge_recommend_station_layout" android:layout_alignParentRight="true">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_10" android:textColor="@color/new_emui_text_secondary" android:ellipsize="end" android:gravity="center" android:id="@id/charge_type_des" android:layout_width="113.0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font5" android:maxLines="1" />
+                    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/charge_img" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_80" />
+                    <com.huawei.uikit.phone.hwbutton.widget.HwButton android:textSize="@dimen/font_sp_12" android:textColor="@color/new_emui_text_primary" android:id="@id/charge_operate" android:background="@drawable/bg_card_btn" android:layout_width="@dimen/baseui_dp_106" android:layout_height="@dimen/font28" android:layout_marginTop="@dimen/font2" android:minWidth="@dimen/baseui_dp_106" android:minHeight="@dimen/font28" android:text="@string/xcar_app_text_goto_charging" android:fontFamily="@string/emui_text_font_family_medium" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</LinearLayout>

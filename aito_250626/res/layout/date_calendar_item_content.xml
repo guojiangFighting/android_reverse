@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <app.huawei.auto.timeselector.SquareImageView android:id="@id/tv_content_bg" android:background="@drawable/ic_bg_selected" android:layout_width="@dimen/font36" android:layout_height="@dimen/font36" android:layout_marginTop="6.0dp" android:layout_marginBottom="6.0dp" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" />
+    <app.huawei.auto.timeselector.SquareTextView android:textSize="@dimen/font_sp_14" android:textStyle="bold" android:textColor="@color/emui_color_primary" android:gravity="center" android:id="@id/tv_content" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" android:layout_marginStart="4.0dp" android:layout_marginEnd="4.0dp" />
+    <app.huawei.auto.timeselector.SquareImageView android:id="@id/tv_content_big_bg" android:layout_width="@dimen/font48" android:layout_height="@dimen/font48" />
+</RelativeLayout>

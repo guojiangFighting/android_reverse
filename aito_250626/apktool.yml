@@ -1,0 +1,17 @@
+version: 3.0.3
+apkFileName: aito_250626.apk
+usesFramework:
+  ids:
+  - 1
+resourcesInfo:
+  packageId: 127
+  packageName: app.huawei.auto
+doNotCompress:
+- arsc
+- gif
+- jpg
+- ogg
+- png
+- so
+- webp
+- res/raw/amap_style_extra.data

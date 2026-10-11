@@ -1,0 +1,12 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+option java_package = "com.huawei.ads.rpa.net.proto";
+
+package RtsaMsgs;
+
+message RmtCtrlTaskRej {
+    uint32 currentTask = 1;
+    uint32 targetTask = 2;
+    uint32 rejectReason = 3;
+}

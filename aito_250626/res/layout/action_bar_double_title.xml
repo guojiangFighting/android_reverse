@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/action_bar" android:background="#0a59f7" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_space" android:layout_width="match_parent" android:layout_height="20.0dp" />
+    <RelativeLayout android:id="@id/ll_bar" android:layout_width="match_parent" android:layout_height="45.0dp">
+        <ImageView android:id="@id/left_tv_common" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/common_search_back" android:layout_centerVertical="true" android:layout_marginStart="12.0dp" />
+        <ImageView android:id="@id/img_close" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_activity_close" android:layout_centerVertical="true" android:layout_marginStart="5.0dp" android:layout_toEndOf="@id/left_tv_common" />
+        <com.egaosu.h5activeaar.view.MarqueeTextView android:textSize="18.0sp" android:textColor="#fff" android:ellipsize="marquee" android:id="@id/title_tv_common" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180.0dp" android:text="e高速" android:scrollHorizontally="true" android:singleLine="true" android:layout_centerInParent="true" android:marqueeRepeatLimit="marquee_forever" />
+        <ProgressBar android:id="@id/pb_refresh_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="20.0dp" android:indeterminate="true" android:layout_toLeftOf="@id/title_tv_common" android:layout_centerVertical="true" style="?android:progressBarStyleSmall" />
+        <TextView android:textColor="#fff" android:id="@id/right_tv_common" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="完成" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/right_iv2_common" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

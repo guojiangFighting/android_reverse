@@ -1,0 +1,49 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+import "Point.proto";
+
+package NaviMsgs;
+
+option java_package = "com.huawei.ads.uavp.servicecommon.bean.proto";
+option java_outer_classname = "PbAvpGuidePathResult";
+
+enum E_AvpGuidePathType {
+    PATH_TYPE_AVP = 0;              // avp单路线
+    PATH_TYPE_URBUN_AVP_START = 1;  // 点到点起始路线
+    PATH_TYPE_URBUN_AVP_GOAL = 2;   // 点到点终点路线
+    PATH_TYPE_URBUN_AVP_MIDDLE = 3; // 点到点起终点连接路线
+}
+
+message AvpGuideAvpRoad {
+    uint64 roadId = 1;   // 道路id
+    uint32 length = 2;   // 道路长度(0.1米)
+    uint32 layer = 3;    // 楼层信息 13 14 1314等
+}
+
+message AvpGuideRoutePoint {
+    KyberMsgs.Point coord = 1;     // 坐标点的坐标 [目前z值仅在avp场景会使用]
+    uint64 roadId = 2;             // 道路id
+}
+
+message AvpGuidePathSection {
+    uint32 startLinkIdx = 1;                       // 起始道路在RouteLink中的索引
+    uint32 endLinkIdx = 2;                         // 终点道路在RouteLink中的索引
+    uint32 startOffset = 3;                        // units: 0.1m (起始道路不在section中的长度)
+    uint32 goalOffset = 4;                         // units: 0.1m (终点道路不在section中的长度)
+    repeated AvpGuideAvpRoad roads = 5;            // 道路规划结果
+    repeated AvpGuideRoutePoint points = 6;        // 路点 含 layer
+    repeated uint64 roadIds = 7;                   // 道路规划结果roadid
+    KyberMsgs.Point startPoint = 8;
+    KyberMsgs.Point endPoint = 9;
+}
+
+message AvpGuidePathResult {
+    uint32 pathId = 1;                          // path id
+    uint32 dist = 2;                            // uints: 0.1m 路线总长度
+    uint32 eta = 3;                             // units: second 到达时长
+    uint32 pathType = 4;                        // 见E_AvpGuidePathType
+    string mapId= 5;                            // 地图id
+    string mapVersion = 6;                      // 地图版本号
+    repeated AvpGuidePathSection sections = 7;  // 路段信息 当前无途经点 每路线仅有一个section
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/fl_veh_model_root_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/fl_veh_model" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_skeleton" android:layout_width="match_parent" android:layout_height="260.0dp" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_charge_hood" android:layout_width="match_parent" android:layout_height="260.0dp" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_trunk" android:layout_width="match_parent" android:layout_height="260.0dp" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_right_rear_door" android:layout_width="match_parent" android:layout_height="260.0dp" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_right_rear_window" android:layout_width="match_parent" android:layout_height="260.0dp" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_right_front_door" android:layout_width="match_parent" android:layout_height="260.0dp" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_right_front_window" android:layout_width="match_parent" android:layout_height="260.0dp" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_left_rear_door" android:layout_width="match_parent" android:layout_height="260.0dp" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_left_rear_window" android:layout_width="match_parent" android:layout_height="260.0dp" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_left_front_door" android:layout_width="match_parent" android:layout_height="260.0dp" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_left_front_window" android:layout_width="match_parent" android:layout_height="260.0dp" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_sunroof" android:layout_width="match_parent" android:layout_height="260.0dp" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+            <ImageView android:id="@id/iv_front_windshield" android:layout_width="match_parent" android:layout_height="260.0dp" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_frond_trunk" android:layout_width="match_parent" android:layout_height="260.0dp" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_lamp" android:layout_width="match_parent" android:layout_height="260.0dp" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/rl_veh_model_download" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_260" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+            <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/iv_default_car" android:layout_width="@dimen/dp_360" android:layout_height="@dimen/font160" android:layout_marginBottom="@dimen/font6" android:src="@drawable/download_car_default" android:layout_above="@id/progress_button" android:layout_centerHorizontal="true" />
+            <com.huawei.uikit.phone.hwprogressbutton.widget.HwProgressButton android:id="@id/progress_button" android:layout_width="@dimen/font108" android:layout_height="@dimen/font28" android:layout_marginBottom="@dimen/dp_34" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Widget.Emui.HwProgressButton.Normal.Light" />
+            <TextView android:id="@id/tv_on_click" android:background="@color/transparent" android:layout_width="@dimen/font108" android:layout_height="@dimen/font28" android:layout_marginBottom="@dimen/dp_34" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

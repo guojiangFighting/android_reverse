@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.huawei.auto.im.ui.chat.photo.view.SquareLayout android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_album" android:drawableTop="@drawable/icon_camera" android:drawablePadding="@dimen/font4" android:layout_centerInParent="true" style="@style/textColorPrimaryAndSizeBody3" />
+    <View android:id="@id/white_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="4.0dp" />
+    <app.huawei.auto.im.ui.chat.photo.view.PhotoGridImageView android:id="@id/photo_image_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/sns_default_pic" android:scaleType="centerCrop" android:layout_below="@id/white_view" />
+</app.huawei.auto.im.ui.chat.photo.view.SquareLayout>

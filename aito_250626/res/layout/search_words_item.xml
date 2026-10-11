@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/words_layout" android:background="@drawable/vehicle_service" android:layout_width="match_parent" android:layout_height="@dimen/font28" android:minWidth="@dimen/font48" android:paddingStart="@dimen/font8" android:paddingEnd="@dimen/font8"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:id="@id/search_words_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/search_words_img" android:layout_width="@dimen/font16" android:layout_height="@dimen/font16" android:src="@drawable/ic_search_hot" android:layout_toRightOf="@id/search_words_tv" android:layout_marginStart="@dimen/font2" />
+</LinearLayout>

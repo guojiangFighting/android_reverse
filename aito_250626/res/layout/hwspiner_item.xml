@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/veh_item_rl" android:paddingTop="@dimen/font12" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/adv" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/emui_corner_radius_large" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/carInfo_lay" android:paddingLeft="@dimen/font1" android:paddingRight="@dimen/font12" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_128" android:paddingVertical="@dimen/font16">
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/car_status_hiv" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_60" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font4" android:layout_toRightOf="@id/car_status_hiv" android:layout_centerVertical="true">
+                    <RelativeLayout android:id="@id/name_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_primary" android:ellipsize="end" android:id="@id/Car_Name_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@string/emui_text_font_family_regular" />
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_master_caption_1" android:textColor="@color/emui_functional_blue" android:gravity="center_vertical" android:id="@id/my_car_default_label_vehcile" android:background="@drawable/my_car_default_shape" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/font16_empower" android:layout_marginLeft="@dimen/font4" android:text="@string/xcar_app_text_default_content" android:layout_toRightOf="@id/Car_Name_id" android:layout_centerVertical="true" android:fontFamily="@string/emui_text_font_family_regular" android:paddingHorizontal="@dimen/font4" />
+                    </RelativeLayout>
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/emui_color_secondary" android:id="@id/Car_Howl_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:lineSpacingExtra="@dimen/font2" android:fontFamily="@string/emui_text_font_family_regular" />
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/emui_color_secondary" android:id="@id/Car_Six_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2" android:fontFamily="@string/emui_text_font_family_regular" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/carInfError" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-14.0dp" android:layout_marginBottom="@dimen/font24" android:layout_below="@id/carInfo_lay">
+                <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/carErrorInfo_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:src="@drawable/ic_network_img_14" android:layout_centerVertical="true" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_text_primary" android:id="@id/carErrorInfo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_toRightOf="@id/carErrorInfo_img" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/hwappbarpattern_title_item_layout" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/gridview" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/title" />
+    <include android:id="@id/load_progress_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font56" android:layout_below="@id/title" android:layout_alignTop="@id/gridview" android:layout_alignBottom="@id/gridview" android:layout_alignParentBottom="true" layout="@layout/xcar_loading_view" />
+</RelativeLayout>

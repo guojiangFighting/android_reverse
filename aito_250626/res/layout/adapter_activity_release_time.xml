@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:textColor="@color/new_emui_text_tertiary" android:id="@id/online_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginEnd="@dimen/font8" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:textColor="@color/new_emui_text_tertiary" android:id="@id/ip_source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_regular" />
+</LinearLayout>

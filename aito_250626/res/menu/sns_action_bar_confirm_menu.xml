@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_confirm" android:id="@id/sns_menu_ab_confirm" android:title="@string/xcar_app_button_ok" android:showAsAction="always" />
+</menu>

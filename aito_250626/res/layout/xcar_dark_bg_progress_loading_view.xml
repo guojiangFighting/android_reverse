@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/progress_layout" android:background="@drawable/loading_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_140" android:minHeight="@dimen/dp_140"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwprogressbar.widget.HwProgressBar android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:layout_centerHorizontal="true" app:hwFillColor="@color/emui_white" style="@style/Widget.Emui.HwProgressBar.Large" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_text_secondary_inverse" android:id="@id/mHW_Loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="@string/xcar_app_text_loading" android:layout_below="@id/progress" android:layout_centerInParent="true" android:layout_centerVertical="true" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginStart="@dimen/font8" android:layout_marginEnd="@dimen/font8" />
+</RelativeLayout>

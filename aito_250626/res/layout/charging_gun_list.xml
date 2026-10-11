@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/charging_sorting_recycler" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+    <com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout android:id="@id/charging_detail_refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/font8" android:layout_below="@id/charging_sorting_recycler">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/charging_gun_recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font16" android:layout_marginRight="@dimen/font16" android:layout_marginBottom="@dimen/font4" />
+    </com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/empty_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/charging_sorting_recycler">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/empty_image" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_120" android:src="@drawable/ic_xcar_search_no_result" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/charge_empty_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:text="@string/xcar_app_text_charge_map_gun_error_info" style="@style/textColorTertiaryAndSizeBody2" />
+    </LinearLayout>
+    <include android:id="@id/loading_view_id" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/charging_sorting_recycler" layout="@layout/xcar_loading_layout" />
+</RelativeLayout>

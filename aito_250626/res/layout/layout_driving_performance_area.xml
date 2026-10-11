@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#1affffff" app:cardCornerRadius="@dimen/font16" app:hwAdvancedCardViewClickAnimationEnable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwimageview.widget.HwImageView android:background="@drawable/drivingcard_scale_background" android:layout_width="match_parent" android:layout_height="@dimen/dp_200" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/font16" android:layout_marginVertical="@dimen/font16">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_16" android:textColor="@color/color_driving_report_white_alph86" android:layout_gravity="left" android:id="@id/tv_drive_performance_title" android:layout_marginBottom="16.5dp" android:text="@string/xcar_app_text_drive_report_drive_type_title" style="@style/driving_report_tv_style" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#0dffffff" app:cardCornerRadius="@dimen/font8" app:hwAdvancedCardViewClickAnimationEnable="false">
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_14" android:layout_gravity="center" android:id="@id/tv_rapid_accelerate" android:paddingTop="@dimen/font10" android:text="@string/xcar_app_text_drive_report_drive_type_speed_up" style="@style/driving_report_callout_tv_style" />
+                        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ll_rapid_accelerate_times" android:paddingTop="@dimen/font4" android:paddingBottom="@dimen/font10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_rapid_accelerate_num" style="@style/driving_report_tv_style" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:id="@id/tv_rapid_accelerate_unit" style="@style/driving_report_tv_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font8" android:layout_weight="1.0">
+                <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#0dffffff" app:cardCornerRadius="@dimen/font8" app:hwAdvancedCardViewClickAnimationEnable="false">
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_14" android:layout_gravity="center" android:id="@id/tv_rapid_decelerate" android:paddingTop="@dimen/font10" android:text="@string/xcar_app_text_drive_report_drive_type_slow_down" style="@style/driving_report_callout_tv_style" />
+                        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ll_rapid_decelerate_times" android:paddingTop="@dimen/font4" android:paddingBottom="@dimen/font10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_rapid_decelerate_num" style="@style/driving_report_tv_style" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:id="@id/tv_rapid_decelerate_unit" style="@style/driving_report_tv_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/font8">
+                <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#0dffffff" app:cardCornerRadius="@dimen/font8" app:hwAdvancedCardViewClickAnimationEnable="false">
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_14" android:layout_gravity="center" android:id="@id/tv_sharp_turn" android:paddingTop="@dimen/font10" android:text="@string/xcar_app_text_drive_report_drive_type_turn" style="@style/driving_report_callout_tv_style" />
+                        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ll_sharp_turn_times" android:paddingTop="@dimen/font4" android:paddingBottom="@dimen/font10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_sharp_turn_num" style="@style/driving_report_tv_style" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:id="@id/tv_sharp_turn_unit" style="@style/driving_report_tv_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/font8" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#0dffffff" app:cardCornerRadius="@dimen/font8" app:hwAdvancedCardViewClickAnimationEnable="false">
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_14" android:layout_gravity="center" android:id="@id/tv_brake_suddenly" android:paddingTop="@dimen/font10" android:text="@string/xcar_app_text_drive_report_drive_type_brake" style="@style/driving_report_callout_tv_style" />
+                        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ll_brake_suddenly_times" android:paddingTop="@dimen/font4" android:paddingBottom="@dimen/font10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_brake_suddenly_num" style="@style/driving_report_tv_style" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:id="@id/tv_brake_suddenly_unit" style="@style/driving_report_tv_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font8" android:layout_weight="1.0">
+                <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#0dffffff" app:cardCornerRadius="@dimen/font8" app:hwAdvancedCardViewClickAnimationEnable="false">
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_14" android:layout_gravity="center" android:id="@id/tv_low_battery" android:paddingTop="@dimen/font10" android:text="@string/xcar_app_text_drive_report_drive_type_low_pow_go" style="@style/driving_report_callout_tv_style" />
+                        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ll_low_battery_times" android:paddingTop="@dimen/font4" android:paddingBottom="@dimen/font10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_low_battery_num" style="@style/driving_report_tv_style" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:id="@id/tv_low_battery_unit" style="@style/driving_report_tv_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font8" android:layout_weight="1.0">
+                <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#0dffffff" app:cardCornerRadius="@dimen/font8" app:hwAdvancedCardViewClickAnimationEnable="false">
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_14" android:layout_gravity="center" android:id="@id/tv_trip_speeding" android:paddingTop="@dimen/font10" android:text="@string/xcar_app_text_drive_report_drive_type_itinerary_speed" style="@style/driving_report_callout_tv_style" />
+                        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ll_trip_speeding_times" android:paddingTop="@dimen/font4" android:paddingBottom="@dimen/font10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_trip_speeding_num" style="@style/driving_report_tv_style" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:id="@id/tv_trip_speeding_unit" style="@style/driving_report_tv_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>

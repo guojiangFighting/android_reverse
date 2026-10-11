@@ -1,0 +1,33 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+import "Pose.proto";
+
+package NaviMsgs;
+
+option java_package = "com.huawei.ads.uavp.servicecommon.bean.proto";
+option java_outer_classname = "PbAvpGuideRequestPoint";
+
+enum E_AvpGuideRoutePointType {
+    AVP_GUIDE_POINT_TYPE_START = 0;      // 起点
+    AVP_GUIDE_POINT_TYPE_WAY_POINT = 1;  // 途经点
+    AVP_GUIDE_POINT_TYPE_GOAL = 2;       // 终点
+}
+
+enum E_AvpGuideRoutePointScene {
+    AVP_GUIDE_POINT_SCENE_DEFAULT_PARK = 0;   // 坐标点在默认车位内
+    AVP_GUIDE_POINT_SCENE_SELECT_PARK = 1;    // 坐标点在手动选择的车位内
+    AVP_GUIDE_POINT_SCENES_NOT_PARK = 2;      // 坐标点不在车位内
+    AVP_GUIDE_POINT_INVALID = 3;              // 坐标点无效,行泊一体场景会触发漫游
+    AVP_GUIDE_POINT_SCENE_ENTRY_IN = 4;       // 坐标点为入口
+    AVP_GUIDE_POINT_SCENE_ENTRY_OUT = 5;      // 坐标点为出口
+}
+
+message AvpGuideRequestPoint {
+    uint32 type = 1;               // 见E_AvpGuideRoutePointType
+    uint32 scene = 2;              // 见E_AvpGuideRoutePointScene
+    KyberMsgs.Pose coord = 3;     // 坐标点的坐标 [目前z值仅在avp场景会使用]
+    double heading = 4;            // 请求消息可不填 正东方向为0,逆时针方向, unit: rad, 取值范围: [0, Pi],顺时针方向, unit: rad, 取值范围: [0, -Pi]
+    repeated uint64 linkIds = 5;   // 请求消息可不填 路点匹配到的道路ID列表 坐标点有明确的道路id时填写
+    string layer = 6;              // 当前坐标点所在的层信息,为空表示无有效值 当前没用到,后续优化用
+}

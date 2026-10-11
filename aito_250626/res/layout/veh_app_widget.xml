@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/incl_veh_app_widget_2_4" android:visibility="gone" layout="@layout/layout_veh_app_widget_2_4" />
+    <include android:id="@id/incl_veh_app_widget_bind_2_4" android:visibility="visible" layout="@layout/layout_veh_app_widget_bind_2_4" />
+</RelativeLayout>

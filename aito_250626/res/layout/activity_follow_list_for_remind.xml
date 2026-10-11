@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/remind_follow_list_root" android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/remind_appbar" android:background="@color/appbar_color" android:layout_width="match_parent" android:layout_height="@dimen/font40" app:elevation="@dimen/dp_0">
+        <include android:id="@id/remind_follow_list_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/hwappbarpattern_height" layout="@layout/hwappbarpattern_title_item_layout" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout android:id="@id/remind_scrollview_search" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:layout_below="@id/remind_appbar">
+        <com.huawei.uikit.phone.hwsearchview.widget.HwSearchView android:id="@id/remind_follow_searchiew_id" android:layout_width="match_parent" android:layout_height="@dimen/font56" app:queryHint="@string/xcar_app_text_remind_search_text" style="@style/Widget.Emui.HwSearchView.White" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/remind_follow_list_recycler_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_below="@id/remind_follow_searchiew_id" android:nestedScrollingEnabled="false" />
+    </RelativeLayout>
+</RelativeLayout>

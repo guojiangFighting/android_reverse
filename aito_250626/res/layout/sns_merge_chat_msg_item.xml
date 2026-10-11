@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font12" android:textColor="@color/emui_color_text_secondary" android:id="@id/merge_chat_msg_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_regular" />
+    <TextView android:textSize="@dimen/font12" android:textColor="@color/emui_color_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" : " android:fontFamily="@string/emui_text_font_family_regular" />
+    <TextView android:id="@id/merge_chat_msg_content" android:text="" style="@style/sns_merge_transmit_message_item" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/font14" />
+    <padding android:left="@dimen/use_button_hor_padding" android:top="@dimen/use_button_ver_padding" android:right="@dimen/use_button_hor_padding" android:bottom="@dimen/use_button_ver_padding" />
+    <stroke android:width="@dimen/use_button_background_stroke_width" android:color="@color/point_use_button_stroke_color" />
+</shape>

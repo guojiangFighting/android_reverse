@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/emui_drawable_corner_radius_card" android:topRightRadius="@dimen/emui_drawable_corner_radius_card" />
+    <stroke android:width="@dimen/emui_drawable_focus_outline_width" android:color="@color/emui_control_focused_outline" />
+</shape>

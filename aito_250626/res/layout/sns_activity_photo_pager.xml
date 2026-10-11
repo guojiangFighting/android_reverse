@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/photo_contentView" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <app.huawei.auto.im.ui.widget.SNSViewPager android:id="@id/view_pager" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/view_bottom_edit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/layout_image_select" android:paddingLeft="@dimen/emui_dimens_max_start" android:paddingRight="@dimen/emui_dimens_max_end" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/sns_address_recycle_max_height">
+            <com.huawei.uikit.hwrecyclerview.widget.HwRecyclerView android:id="@id/recycleview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/sns_chat_encryption_tip_padding_top_bottom" android:layout_marginBottom="@dimen/sns_chat_encryption_tip_padding_left_right" />
+        </RelativeLayout>
+        <Space android:id="@id/bottom_top_space" android:layout_width="0.0dp" android:layout_height="@dimen/font16" />
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:gravity="center" android:id="@id/bt_send" android:tag="css/.title" android:layout_width="wrap_content" android:layout_height="@dimen/font28" android:layout_marginBottom="@dimen/font20" android:text="@string/xcar_app_button_send" android:layout_below="@id/bottom_top_space" android:layout_alignParentRight="true" android:layout_marginEnd="@dimen/font16" style="@style/Widget.Emui.HwButton.Emphasize.Light" />
+    </RelativeLayout>
+    <include layout="@layout/sns_photo_pager_actionbar" />
+</RelativeLayout>

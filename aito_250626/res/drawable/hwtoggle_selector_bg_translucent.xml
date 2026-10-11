@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector android:enterFadeDuration="@integer/hwanimations_hover_animation_duration" android:exitFadeDuration="@integer/hwanimations_hover_animation_duration">
+            <item android:state_enabled="true" android:state_checked="true" android:drawable="@drawable/hwtoggle_checked_bg_translucent" />
+            <item android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/hwtoggle_checked_disable_bg_translucent" />
+            <item android:state_enabled="true" android:state_checked="false" android:drawable="@drawable/hwtoggle_normal_bg_translucent" />
+            <item android:state_enabled="false" android:state_checked="false" android:drawable="@drawable/hwtoggle_normal_disable_bg_translucent" />
+            <item android:drawable="@drawable/hwtoggle_normal_bg_translucent" />
+        </selector>
+    </item>
+    <item>
+        <selector android:enterFadeDuration="@integer/hwanimations_hover_animation_duration" android:exitFadeDuration="@integer/hwanimations_hover_animation_duration">
+            <item android:state_pressed="true" android:drawable="@drawable/hwtoggle_normal_pressed_bg_translucent" />
+        </selector>
+    </item>
+</layer-list>

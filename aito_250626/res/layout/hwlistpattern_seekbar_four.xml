@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.phone.hwlistpattern.widget.HwUrLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/hwlistpattern_margin_s" android:paddingBottom="@dimen/hwlistpattern_margin_s" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/emui_dimens_max_start" android:paddingEnd="@dimen/emui_dimens_max_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/hwlistpattern_seekbar_icon_left" android:layout_width="@dimen/hwlistpattern_seekbar_icon_24" android:layout_height="@dimen/hwlistpattern_seekbar_icon_24" />
+    <com.huawei.uikit.phone.hwseekbar.widget.HwSeekBar android:id="@id/hwlistpattern_seekbar" android:layout_width="0.0dp" android:layout_height="@dimen/hwlistpattern_seekbar_height" android:layout_weight="1.0" android:showText="true" style="@style/Widget.Emui.HwSeekBar" />
+    <ImageView android:id="@id/hwlistpattern_seekbar_icon_right" android:layout_width="@dimen/hwlistpattern_seekbar_icon_24" android:layout_height="@dimen/hwlistpattern_seekbar_icon_24" />
+</com.huawei.uikit.phone.hwlistpattern.widget.HwUrLinearLayout>

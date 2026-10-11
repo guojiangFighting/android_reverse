@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.phone.hwbottomsheet.widget.HwBottomSheet android:id="@id/vehicle_bottom_sheet_new" android:layout_width="match_parent" android:layout_height="match_parent" app:hwAnchorPoint="0.0" app:hwDragView="@id/bottom_sheet" app:hwForceShowIndicateEnable="false" app:hwHeightGap="0.0dp" app:hwInitialState="hidden" app:hwScrollableView="@id/rv_calendar" app:hwSheetHeight="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:orientation="vertical" android:id="@id/main_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/bottom_sheet" android:background="@drawable/bg_bottom_sheet" android:paddingTop="@dimen/font24" android:focusable="false" android:visibility="visible" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_time_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font20">
+                <TextView android:textSize="@dimen/sp_20" android:textStyle="bold" android:textColor="@color/emui_color_primary" android:id="@id/tv_select_time_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_calendar_title_select_date" android:layout_marginStart="@dimen/font16" />
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center_vertical" android:id="@id/iv_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dr_detail" android:layout_marginStart="@dimen/font16" android:layout_toEndOf="@id/tv_select_time_title" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font10" android:layout_below="@id/layout_time_title" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <TextView android:textColor="@color/new_emui_text_tertiary" android:gravity="center" android:layout_marginTop="@dimen/font18" android:layout_marginBottom="@dimen/font8" android:text="@string/xcar_app_text_calendar_sunday" android:layout_weight="1.0" style="@style/calendar_week" />
+                <TextView android:textColor="@color/new_emui_text_tertiary" android:gravity="center" android:layout_marginTop="@dimen/font18" android:layout_marginBottom="@dimen/font8" android:text="@string/xcar_app_text_calendar_monday" android:layout_weight="1.0" style="@style/calendar_week" />
+                <TextView android:textColor="@color/new_emui_text_tertiary" android:gravity="center" android:layout_marginTop="@dimen/font18" android:layout_marginBottom="@dimen/font8" android:text="@string/xcar_app_text_calendar_tuesday" android:layout_weight="1.0" style="@style/calendar_week" />
+                <TextView android:textColor="@color/new_emui_text_tertiary" android:gravity="center" android:layout_marginTop="@dimen/font18" android:layout_marginBottom="@dimen/font8" android:text="@string/xcar_app_text_calendar_wednesday" android:layout_weight="1.0" style="@style/calendar_week" />
+                <TextView android:textColor="@color/new_emui_text_tertiary" android:gravity="center" android:layout_marginTop="@dimen/font18" android:layout_marginBottom="@dimen/font8" android:text="@string/xcar_app_text_calendar_thursday" android:layout_weight="1.0" style="@style/calendar_week" />
+                <TextView android:textColor="@color/new_emui_text_tertiary" android:gravity="center" android:layout_marginTop="@dimen/font18" android:layout_marginBottom="@dimen/font8" android:text="@string/xcar_app_text_calendar_friday" android:layout_weight="1.0" style="@style/calendar_week" />
+                <TextView android:textColor="@color/new_emui_text_tertiary" android:gravity="center" android:layout_marginTop="@dimen/font18" android:layout_marginBottom="@dimen/font8" android:text="@string/xcar_app_text_calendar_saturday" android:layout_weight="1.0" style="@style/calendar_week" />
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/view_constraintLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginBottom="16.0dp" android:layout_below="@id/layout_title" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_calendar" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintHeight_default="wrap" app:layout_constraintHeight_max="420.0dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</com.huawei.uikit.phone.hwbottomsheet.widget.HwBottomSheet>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_marginRight="@dimen/font16" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rel_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_subtitle3" android:textColor="@color/black" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/sns_look_more_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font13" android:layout_marginBottom="@dimen/font13" android:maxLines="2" android:fontFamily="@string/emui_text_font_family_medium" android:paddingEnd="@dimen/emui_dimens_max_end" style="@style/Widget.Emui.HwDialogPattern.DialogSubTitle2" />
+    </RelativeLayout>
+    <ImageView android:id="@id/arrow_imageview" android:background="@drawable/ic_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" android:backgroundTint="@color/crossuikit_color_fourth" />
+</RelativeLayout>

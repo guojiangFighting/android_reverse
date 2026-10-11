@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="@dimen/appgallery_hwtoolbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/hiappbase_arrow_layout" android:background="@drawable/hwappbarpattern_selector_item_bg" android:layout_width="@dimen/sns_list_height_48" android:layout_height="@dimen/sns_list_height_48" android:layout_centerVertical="true" android:contentDescription="@string/xcar_app_button_back" android:layout_marginStart="@dimen/appgallery_default_padding_start" android:layout_marginEnd="4.0dp" android:layout_alignParentStart="true">
+        <ImageView android:id="@id/back_imageview" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/sns_cancel_selector" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/title_text_nodata_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_s" android:layout_toEndOf="@id/hiappbase_arrow_layout">
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="20.0dp" android:gravity="start|center" android:id="@id/title_text_nodata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_app_bar_album_pick_count_zero" app:hwAutoSizeMinTextSize="@dimen/appgallery_text_size_body2" app:hwAutoSizeStepGranularity="1.0sp" style="@style/AppGallery.Widget.Toolbar.Title" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/sns_action_bar_end_layout" android:background="@drawable/hwappbarpattern_selector_item_bg" android:layout_width="@dimen/sns_list_height_48" android:layout_height="@dimen/sns_list_height_48" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/sns_popview_margin_12" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/sns_action_bar_end_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_comfirm" />
+    </LinearLayout>
+</RelativeLayout>

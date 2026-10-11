@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/no_net_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/lin_net_button">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/no_data_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/no_net_imageview" android:layout_width="72.0dp" android:layout_height="72.0dp" android:src="@drawable/sns_ic_no_wlan" android:tint="@color/sns_color_fourth" />
+            <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_text_secondary" android:id="@id/no_net_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/emui_dimens_max_start" android:layout_marginRight="@dimen/emui_dimens_max_end" android:text="@string/xcar_app_text_sns_network_error_retry" android:layout_marginStart="@dimen/emui_dimens_max_start" android:layout_marginEnd="@dimen/emui_dimens_max_end" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout android:id="@id/lin_net_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/emui_dimens_element_vertical_large" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:hwColumnType="button_type">
+        <Button android:id="@id/set_net_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_button_set_networking" style="@style/Widget.Emui.HwButton" />
+    </com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout>
+</RelativeLayout>

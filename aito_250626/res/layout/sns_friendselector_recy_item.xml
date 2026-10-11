@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/font40" android:layout_height="wrap_content" android:maxHeight="@dimen/sns_address_recycle_max_height" android:minHeight="@dimen/sns_list_height_72" android:layout_marginStart="@dimen/font16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/contact_guide_imageview1" android:layout_width="@dimen/sns_chat_list_item_business_card_head_size" android:layout_height="@dimen/sns_chat_list_item_business_card_head_size" android:layout_marginTop="@dimen/font4" android:src="@drawable/sns_menu_single_chat_manager_normal" android:layout_centerHorizontal="true" />
+    <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/font12" android:textColor="@color/emui_color_text_primary" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/item_tv" android:layout_width="@dimen/font40" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_marginBottom="@dimen/sns_address_recycle_text_margin_bottom" android:maxLines="1" android:layout_below="@id/contact_guide_imageview1" android:layout_centerHorizontal="true" android:fontFamily="@string/emui_text_font_family_regular" />
+</RelativeLayout>

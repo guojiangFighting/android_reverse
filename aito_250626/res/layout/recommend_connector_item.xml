@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/item_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/baseui_dp_12" app:cardBackgroundColor="@color/emui_white" app:cardCornerRadius="@dimen/baseui_dp_16" app:hwAdvancedCardViewClickAnimationEnable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/baseui_dp_12">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="end" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_14" android:maxLines="1" style="@style/textColorPrimaryAndSizeBody1AndMedium" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/baseui_dp_2" android:layout_marginBottom="@dimen/baseui_dp_15">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_gun_number" style="@style/textColorSecondaryAndSizeBody2" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="start" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.huawei.uikit.phone.hwbutton.widget.HwButton android:id="@id/charge_now" android:layout_width="@dimen/baseui_dp_72" android:layout_height="@dimen/baseui_dp_28" android:text="@string/xcar_app_button_charge_now" android:layout_marginStart="@dimen/baseui_dp_8" android:layout_marginEnd="@dimen/baseui_dp_12" style="@style/Widget.Emui.HwButton.Light" />
+    </LinearLayout>
+</com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>

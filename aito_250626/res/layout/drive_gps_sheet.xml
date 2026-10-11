@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/drive_test_rr_gps_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/drive_gps_rl_navigation" android:layout_width="wrap_content" android:layout_height="@dimen/font56">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/drive_store_back" android:visibility="visible" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:layout_marginTop="@dimen/font16" android:src="@drawable/hwsearchview_ic_public_back" android:layout_centerVertical="true" android:alpha="@dimen/emui_primary_content_alpha" android:layout_marginStart="@dimen/font16" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center" android:id="@id/drive_test_tv_gps_nearby" android:layout_width="wrap_content" android:layout_height="26.0dp" android:layout_marginTop="@dimen/font14" android:text="@string/xcar_app_text_test_nearby_store" android:layout_toRightOf="@id/drive_store_back" android:layout_centerVertical="true" android:layout_marginStart="@dimen/font16" style="@style/textColorPrimaryAndSizeHeadline8AndMedium" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center" android:id="@id/drive_gps_tv_all_store" android:layout_width="@dimen/baseui_dp_58" android:layout_height="@dimen/font19" android:layout_marginTop="@dimen/font18" android:text="@string/xcar_app_text_test_all_shop" android:layout_toLeftOf="@id/drive_gps_img_right" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/font4" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:gravity="center" android:id="@id/drive_gps_img_right" android:layout_width="@dimen/font12" android:layout_height="@dimen/font24" android:layout_marginTop="@dimen/font16" android:src="@drawable/drive_test_icon_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:alpha="@dimen/emui_tertiary_content_alpha" android:layout_marginEnd="@dimen/font16" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/empty_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/drive_gps_rl_navigation">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/my_orders_charge_empty_iv" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_120" android:src="@drawable/icon_mine_empty" android:layout_above="@id/my_orders_charge_empty_tv" android:layout_centerInParent="true" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/my_orders_charge_empty_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/xcar_app_text_no_store" android:layout_centerInParent="true" style="@style/textColorTertiaryAndSizeBody2" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/drive_gps_ll_center_tips" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center_horizontal" android:layout_width="120.0dp" android:layout_height="120.0dp" android:src="@drawable/drive_gps_icon_location" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_drive_gps_location_failure" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/xcar_app_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_refresh" style="@style/textColorLinkAndSizeBody2AndFamilyMedium" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/drive_gps_rl_navigation">
+        <ListView android:id="@id/drive_gps_listview" android:visibility="invisible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/drive_gps_divider" android:dividerHeight="1.0dp" android:overScrollMode="never" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+        <com.huawei.uikit.phone.hwscrollbarview.widget.HwScrollbarView android:id="@id/drive_gps_scrollbar" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <include android:id="@id/loadding_view" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_view" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/xcar_emui_bottomsheet_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <app.huawei.auto.base.view.StatusBarView android:id="@id/status_bar_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView android:paddingLeft="@dimen/font16" android:paddingRight="@dimen/font16" android:paddingBottom="@dimen/font72" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_below="@id/status_bar_view">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/pay_success_image" android:layout_width="@dimen/dp_64" android:layout_height="@dimen/dp_64" android:layout_marginTop="@dimen/font72" android:src="@drawable/ic_circle_success" android:layout_centerHorizontal="true" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/pay_success_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font48" android:text="@string/xcar_app_text_charging_completed" android:layout_below="@id/pay_success_image" android:layout_centerHorizontal="true" style="@style/textColorPrimaryAndSizeLine8AndFamilyRegular" />
+            <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/topic_list_hacv" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="88.0dp" android:layout_below="@id/pay_success_tip" app:cardCornerRadius="@dimen/emui_corner_radius_large" app:hwAdvancedCardViewClickAnimationEnable="false">
+                <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/font12" android:paddingTop="@dimen/font4" android:paddingRight="@dimen/font12" android:paddingBottom="@dimen/font4" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/font56">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/text_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_start_time" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeBody1" />
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="right" android:id="@id/detail_pile_start" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font8" android:layout_toRightOf="@id/text_start" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/textColorSecondaryAndSizeBody2" />
+                        <View android:background="@drawable/ic_horizontal_driver_bg" android:layout_width="match_parent" android:layout_height="@dimen/font_px_1" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/font56">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/text_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_end_time" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeBody1" />
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="right" android:id="@id/detail_pile_end" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font8" android:layout_toRightOf="@id/text_end" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/textColorSecondaryAndSizeBody2" />
+                        <View android:background="@drawable/ic_horizontal_driver_bg" android:layout_width="match_parent" android:layout_height="@dimen/font_px_1" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/font56">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/text_pile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_charging_supply_time" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeBody1" />
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="right" android:id="@id/detail_pile_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font8" android:layout_toRightOf="@id/text_pile" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/textColorSecondaryAndSizeBody2" />
+                        <View android:background="@drawable/ic_horizontal_driver_bg" android:layout_width="match_parent" android:layout_height="@dimen/font_px_1" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/font56">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/text_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_charging_capacity" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeBody1" />
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="right" android:id="@id/detail_pile_capacity1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font8" android:layout_toRightOf="@id/text_class" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/textColorSecondaryAndSizeBody2" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+        </RelativeLayout>
+    </ScrollView>
+    <com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnLinearLayout android:gravity="center_horizontal" android:id="@id/charging_hcll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font16" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:hwColumnType="button_type">
+        <com.huawei.uikit.phone.hwbutton.widget.HwButton android:id="@id/end_hbtn" android:layout_width="wrap_content" android:layout_height="@dimen/font40" android:text="@string/xcar_app_button_shutdown" android:onClick="onClick" />
+    </com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnLinearLayout>
+</RelativeLayout>

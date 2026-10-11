@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_150" android:layout_marginTop="@dimen/font8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/hwCard_id" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/font8" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" app:cardCornerRadius="@dimen/font16" app:hwAdvancedCardViewClickAnimationEnable="false" style="@style/Widget.Emui.HwAdvancedCardView.Light">
+        <RelativeLayout android:id="@id/my_car_relative_layout" android:paddingBottom="@dimen/font19" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/car_name_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:layout_marginStart="@dimen/font16" android:layout_toStartOf="@id/my_vehicle_image_rights" android:layout_alignParentStart="true">
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font18" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="left" android:id="@id/my_car_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_exclusive_rights" style="@style/textColorPrimaryAndDimensTertiaryAndFamilyRegular" />
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:textColor="@color/white" android:ellipsize="end" android:id="@id/vehicle_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_4" android:maxLines="2" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/to_exclusive" android:layout_width="wrap_content" android:layout_height="@dimen/font24" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/font16">
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:textColor="@color/white" android:id="@id/item_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:background="@drawable/ic_click_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/item_number" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/baseui_dp_4" />
+            </RelativeLayout>
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/my_vehicle_image_rights" android:layout_width="162.0dp" android:layout_height="@dimen/baseui_dp_81" android:layout_marginTop="42.0dp" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

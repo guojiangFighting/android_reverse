@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/reply_scroll" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font24" android:textColor="@color/emui_color_text_primary" android:id="@id/tv_reply" android:paddingLeft="@dimen/font24" android:paddingTop="@dimen/font16" android:paddingRight="@dimen/font24" android:paddingBottom="@dimen/font16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:fontFamily="@string/emui_text_font_family_regular" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

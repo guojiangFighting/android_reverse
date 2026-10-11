@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_hovered="true">
+        <shape>
+            <solid android:color="@color/emui_control_hover" />
+            <corners android:radius="@dimen/emui_corner_radius_mediums" />
+        </shape>
+    </item>
+    <item android:state_pressed="true" android:drawable="@drawable/hwspinner_list_selector_background_pressed" />
+</selector>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <app.huawei.auto.base.view.StatusBarView android:id="@id/status_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_marginTop="@dimen/font8" android:layout_marginRight="@dimen/font16" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/font4" android:layout_marginBottom="@dimen/font4" android:layout_marginHorizontal="@dimen/font4">
+            <RelativeLayout android:id="@id/speaker_rl" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:paddingStart="8.0dp" android:paddingEnd="8.0dp">
+                <View android:layout_alignParentBottom="true" style="@style/item_divider" />
+                <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/speaker_check" android:background="@drawable/ic_privacy_checkbox_selector" android:focusable="false" android:clickable="false" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:checked="false" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_speaker_play_back" android:layout_centerVertical="true" style="@style/textSizeBody1AndColorPrimary" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/handset_rl" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:paddingStart="8.0dp" android:paddingEnd="8.0dp">
+                <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/handset_check" android:background="@drawable/ic_privacy_checkbox_selector" android:focusable="false" android:clickable="false" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:checked="false" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_handset_play_back" android:layout_centerVertical="true" style="@style/textSizeBody1AndColorPrimary" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</LinearLayout>

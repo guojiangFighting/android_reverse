@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwbubblelayout.widget.HwBubbleLayout android:id="@id/charge_bubble_type" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_marginStart="@dimen/font24" android:layout_marginEnd="@dimen/font34" app:hwArrowDirection="top" app:hwArrowStartLocation="negative" style="@style/Widget.Emui.HwBubbleLayout">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_button2" android:textColor="@color/emui_primary_inverse" android:id="@id/charge_rule_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:layout_marginBottom="@dimen/font16" android:text="@string/xcar_app_text_departure_charge_pop_tip" android:layout_centerInParent="true" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+    </com.huawei.uikit.phone.hwbubblelayout.widget.HwBubbleLayout>
+</RelativeLayout>

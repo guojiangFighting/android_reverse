@@ -1,0 +1,28 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+option java_package = "com.huawei.ads.rpa.net.proto";
+
+package RtsaMsgs;
+
+import "AdsVersion.proto";
+
+enum VehicleDataId {
+  VDID_NONE = 0;
+  VDID_LOCATION = 1;
+  VDID_BASIC_STATE = 2;
+  VDID_FSM_STATE = 3;
+  VDID_APA_PLANNING = 4;
+}
+
+message VersionReq {
+  uint32 currentMajorVer = 1;
+  uint32 currentMinorVer = 2;
+}
+
+message VehicleDataNotify {
+  repeated uint32 dataIds = 1; // 数据ID
+  repeated uint32 datalens = 2; // 数据长度
+  bytes data = 3; // 数据内容，pb编码
+  repeated Version  functionVersion = 4;
+}

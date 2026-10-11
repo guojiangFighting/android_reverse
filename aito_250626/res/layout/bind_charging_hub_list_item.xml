@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_rel" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/content_state_des" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" app:cardBackgroundColor="@color/emui_card_panel_bg" app:cardCornerRadius="@dimen/emui_corner_radius_small" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font6" android:layout_marginTop="@dimen/font16" android:layout_marginRight="@dimen/font6" android:layout_marginBottom="@dimen/font16">
+            <RelativeLayout android:id="@id/rel_title" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_button1" android:textColor="@color/emui_color_primary" android:ellipsize="end" android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/font32" android:maxLines="1" />
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/img_set" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:src="@drawable/charging_hub_set" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:layout_below="@id/rel_title">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/emui_color_tertiary" android:ellipsize="end" android:id="@id/txt_authority" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/emui_color_tertiary" android:ellipsize="end" android:id="@id/txt_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/emui_color_tertiary" android:ellipsize="end" android:id="@id/txt_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="2" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:layout_below="@id/ll_address">
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/img_hub" android:layout_width="100.0dp" android:layout_height="100.0dp" android:src="@drawable/home_charging_hub" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font8" android:layout_marginTop="@dimen/font2" android:layout_toRightOf="@id/img_hub">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_primary" android:id="@id/txt_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_secondary" android:id="@id/txt_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

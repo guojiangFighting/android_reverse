@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_marginStart="@dimen/font8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/font12" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:id="@id/tv_tab" android:background="@drawable/sort_tabs" android:layout_width="wrap_content" android:layout_height="@dimen/font28" android:maxLines="1" android:paddingHorizontal="@dimen/font8" />
+</RelativeLayout>

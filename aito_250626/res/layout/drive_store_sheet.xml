@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/drive_store_ll_root" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/drive_pc_rl_title" android:layout_width="wrap_content" android:layout_height="@dimen/dp_60">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/dp_60" android:layout_centerInParent="true">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/drive_img_store_back" android:layout_width="wrap_content" android:layout_height="24.0dp" android:layout_marginLeft="@dimen/font16" android:src="@drawable/hwsearchview_ic_public_back" android:layout_centerVertical="true" android:alpha="@dimen/emui_primary_content_alpha" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center" android:id="@id/drive_rv_store_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_marginRight="@dimen/font16" android:text="@string/xcar_app_text_test_all_shop" android:layout_toRightOf="@id/drive_img_store_back" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeHeadline8AndMedium" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/drive_pc_rl_title" android:paddingStart="@dimen/font16" android:paddingEnd="@dimen/font16">
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/drive_ll_province_city" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24" android:layout_marginBottom="@dimen/font8">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColorHint="@color/new_emui_text_primary" android:id="@id/test_tv_province" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/xcar_app_text_select_province" style="@style/textColorSecondaryAndSizeBody2AndFamilyMedium" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColorHint="@color/new_emui_text_primary" android:id="@id/test_tv_city" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font24" android:hint="@string/xcar_app_text_select_city" style="@style/textColorPrimaryAndSizeBody2AndFontFamilyMediumAndHintColorSecondary" />
+            </LinearLayout>
+            <ListView android:id="@id/drive_test_ll_province_city" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:layout_below="@id/drive_ll_province_city" />
+            <ListView android:id="@id/drive_test_lv_store" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/drive_gps_divider" android:dividerHeight="1.0dp" android:layout_below="@id/drive_ll_province_city" android:overScrollMode="never" />
+            <com.huawei.uikit.phone.hwscrollbarview.widget.HwScrollbarView android:id="@id/drive_test_store_scroll" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/drive_ll_province_city" />
+            <com.huawei.uikit.phone.hwalphaindexerlistview.widget.HwAlphaIndexerListView android:gravity="top" android:id="@id/drive_pc_alpha_index_bar" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/font24" android:layout_alignParentRight="true" app:hwLabelShadowEnabled="false" app:hwSupportCompactMode="true" />
+            <ListView android:id="@id/drive_test_ll_gps_listview" android:visibility="invisible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/drive_gps_divider" android:dividerHeight="1.0dp" android:overScrollMode="never" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

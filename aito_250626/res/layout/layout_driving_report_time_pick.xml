@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:background="@drawable/shape_dr_half_round_20" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/font36" android:layout_marginVertical="@dimen/font10">
+        <RelativeLayout android:id="@id/layout_area_week" android:background="@drawable/shape_dr_half_round_14" android:layout_width="@dimen/font60" android:layout_height="@dimen/font28" android:layout_marginLeft="5.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="@color/black" android:id="@id/tv_week_btn" android:padding="@dimen/font4" android:text="@string/xcar_app_button_week_report" android:layout_centerInParent="true" style="@style/driving_report_tv_style" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_area_month" android:layout_width="@dimen/font60" android:layout_height="@dimen/font28" android:layout_marginRight="5.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="@color/white" android:id="@id/tv_month_btn" android:padding="@dimen/font4" android:text="@string/xcar_app_button_month_report" android:layout_centerInParent="true" style="@style/driving_report_tv_style" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/font48">
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="12.0sp" android:textColor="#deffffff" android:gravity="center" android:id="@id/tv_date_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawablePadding="8.0dp" android:layout_centerInParent="true" android:drawableEnd="@drawable/ic_dr_down" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/iv_left_last" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_dr_left_last" android:paddingStart="@dimen/font16" android:paddingEnd="@dimen/font16" android:layout_alignParentStart="true" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/iv_right_next" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_dr_right_next" android:paddingStart="@dimen/font16" android:paddingEnd="@dimen/font16" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

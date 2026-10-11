@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/video_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hwlistpattern_item_icon_right_height_16" android:layout_marginBottom="@dimen/font8" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/video_cardview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:cardBackgroundColor="@color/emui_card_panel_bg" app:cardCornerRadius="@dimen/emui_corner_radius_small" app:hwAdvancedCardViewClickAnimationEnable="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <app.huawei.auto.base.view.video.VideoPlayerView android:id="@id/video_player_view" android:layout_width="match_parent" android:layout_height="match_parent" app:player_layout_id="@layout/exo_play_item_view_post" />
+            <ImageView android:id="@id/video_preview_image" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/MediaPreViewImage" />
+            <ImageButton android:layout_gravity="center" android:id="@id/video_play_button" android:visibility="gone" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:src="@drawable/ic_exo_play" style="@style/ExoMediaButton.Play2" />
+            <include layout="@layout/video_uploading_layout" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/vidoe_upload_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/vidoe_upload_error_image" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:layout_marginTop="@dimen/dp_60" android:src="@drawable/ic_public_detail" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="@color/color_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:text="@string/xcar_app_text_click_retry" style="@style/textColorTertiaryAndSizeBody3" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/video_item_delete" android:visibility="visible" android:clipChildren="false" android:layout_width="@dimen/font18" android:layout_height="@dimen/font18" android:src="@drawable/ic_public_delete" android:translationX="-4.0dp" android:translationY="4.0dp" android:layout_alignParentEnd="true" app:layout_constraintEnd_toEndOf="@id/video_cardview" app:layout_constraintTop_toTopOf="@id/video_cardview" />
+</androidx.constraintlayout.widget.ConstraintLayout>

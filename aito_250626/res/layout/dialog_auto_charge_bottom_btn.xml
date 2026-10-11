@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="56.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="16.0dp" android:textColor="#0a59f7" android:gravity="center" android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="40.0dp" android:text="@string/xcar_app_button_cancel" android:layout_weight="1.0" android:fontFamily="@string/emui_text_font_family_medium" />
+    <View android:layout_gravity="center_vertical" android:id="@id/btn_line" android:background="#33000000" android:layout_width="0.5dp" android:layout_height="24.0dp" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="16.0dp" android:textColor="#0a59f7" android:gravity="center" android:id="@id/agree" android:layout_width="wrap_content" android:layout_height="40.0dp" android:text="@string/xcar_app_button_confirm" android:layout_weight="1.0" android:fontFamily="@string/emui_text_font_family_medium" />
+</androidx.appcompat.widget.LinearLayoutCompat>

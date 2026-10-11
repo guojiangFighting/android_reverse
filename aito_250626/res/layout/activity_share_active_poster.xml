@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff656565" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/share_title_bar" layout="@layout/hwappbarpattern_title_item_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/rl_share" android:background="@drawable/share_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/font56">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="20.0sp" android:textColor="#ff000000" android:id="@id/share_title_htv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font18" android:text="@string/xcar_app_text_share_to_other" android:layout_marginStart="@dimen/font16" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/type_item_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_bottomsheet_close" android:layout_centerInParent="true" android:layout_marginEnd="@dimen/font16" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/type_item_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font12" android:overScrollMode="never" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font16" android:layout_marginTop="@dimen/font8" android:layout_marginRight="@dimen/font16" android:layout_marginBottom="@dimen/font24" android:layout_above="@id/rl_share" android:layout_below="@id/share_title_bar">
+        <app.huawei.auto.base.view.RoundedRectLinearLayout android:id="@id/poster_parent" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

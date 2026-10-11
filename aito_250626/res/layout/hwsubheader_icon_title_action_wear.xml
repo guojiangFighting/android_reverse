@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/hwsubheader_layout_background" android:background="@color/emui_color_bg" android:paddingTop="@dimen/hwsubheader_padding_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/emui_dimens_max_start" android:paddingEnd="@dimen/hwsubheader_action_end"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/hwsubheader_icon_left" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" app:tint="@color/ota_text_gray_color" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_text_secondary" android:ellipsize="end" android:id="@id/hwsubheader_title_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:fontFamily="@string/emui_text_font_family_medium" android:textAlignment="viewStart" android:layout_marginStart="@dimen/hwsubheader_margin_m" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/hwsubheader_icon_right" android:layout_width="@dimen/font18" android:layout_height="@dimen/font18" android:layout_marginStart="@dimen/dp4" />
+    </LinearLayout>
+    <com.huawei.uikit.phone.hwbutton.widget.HwButton android:textSize="@dimen/emui_text_size_body2" android:ellipsize="end" android:id="@id/hwsubheader_action_right" android:layout_width="wrap_content" android:layout_height="@dimen/hwsubheader_action_height" android:maxLines="2" android:fontFamily="@string/emui_text_font_family_medium" android:paddingStart="@dimen/hwsubheader_action_padding" android:paddingEnd="@dimen/hwsubheader_action_padding" style="@style/Widget.Emui.HwButton.Borderless" />
+</LinearLayout>

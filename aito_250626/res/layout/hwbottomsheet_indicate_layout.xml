@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/sheet_indicate_container" android:layout_width="match_parent" android:layout_height="@dimen/hwbottomsheet_indicate_height">
+        <com.huawei.uikit.hwbottomsheet.widget.HwDragImageView android:layout_gravity="center_horizontal" android:id="@id/sheet_indicate" android:background="@drawable/hwbottomsheet_indicate_background" android:layout_width="@dimen/hwbottomsheet_indicate_width" android:layout_height="match_parent" />
+    </FrameLayout>
+</FrameLayout>

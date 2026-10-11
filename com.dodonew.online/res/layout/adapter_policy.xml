@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/option_txt_color" android:id="@id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <EditText android:textSize="13.0sp" android:textColor="@color/option_txt_color" android:gravity="center" android:id="@id/et_other_money" android:background="@drawable/btn_border_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="40.0dp" android:hint="其他金额" android:inputType="number" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/favorite_icon_view" android:layout_width="@dimen/font16" android:layout_height="@dimen/font16" android:src="@drawable/un_favorite_icon_drawable" android:scaleType="centerCrop" android:layout_centerVertical="true" android:alpha="@dimen/emui_secondary_content_alpha" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_caption1" android:textColor="@color/new_emui_text_secondary" android:gravity="center_vertical" android:id="@id/favorite_count_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginStart="@dimen/font4" android:layout_toEndOf="@id/favorite_icon_view" />
+</merge>

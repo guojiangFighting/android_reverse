@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_content" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/content_pic" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/emui_corner_radius_small" app:hwAdvancedCardViewClickAnimationEnable="false" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/iv_special_topic" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="#18181a" android:ellipsize="end" android:id="@id/tv_special_topic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxLines="2" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/content_pic" />
+</androidx.constraintlayout.widget.ConstraintLayout>

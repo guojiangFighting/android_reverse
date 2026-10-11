@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/hwradiobutton_size" android:width="@dimen/hwradiobutton_size" android:autoMirrored="true" android:viewportWidth="0.96" android:viewportHeight="0.96"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:pivotX="0.48" android:pivotY="0.48" android:scaleX="1.0" android:scaleY="1.0">
+        <path android:name="box_hover" android:fillColor="@color/emui_control_hover_translucent" android:pathData="M0.48,0 a0.48,0.48 0 0 1 0,0.96 a0.48,0.48 0 0 1 0,-0.96 a0,0 0 0                               0 0,0z" />
+    </group>
+    <path android:fillColor="@color/emui_switch_outline_off_translucent" android:pathData="M0.48,0.28 a0.20,0.20 0 0 1 0,0.40 a0.20,0.20 0 0 1 0,-0.40 v0.02 a0.18,0.18 0 0 0 0,0.36                           a0.18,0.18 0 0 0 0,-0.36z" />
+    <path android:name="path_inner_bg" android:fillColor="@color/emui_switch_bg_off_translucent" android:pathData="M0.48,0.28 a0.20,0.20 0 0 1 0,0.40 a0.20,0.20 0 0 1 0,-0.40z" />
+</vector>

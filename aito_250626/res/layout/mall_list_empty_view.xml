@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/community_title_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="4.0" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="-60.0dp" android:layout_weight="6.0">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/empty_image" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_120" android:src="@drawable/location_search_empty" android:layout_centerHorizontal="true" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_tertiary" android:id="@id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:text="@string/xcar_app_text_load_no_prd" android:layout_below="@id/empty_image" android:layout_centerHorizontal="true" android:fontFamily="@string/emui_text_font_family_regular" />
+    </RelativeLayout>
+</LinearLayout>

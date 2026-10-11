@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/colorPrimary" android:gravity="center_vertical" android:id="@id/tv_label" android:padding="10.0dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/order_detail_pay_information" android:layout_alignParentTop="true" />
+    <ScrollView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/tv_label">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_order_netBar" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" style="@style/UserInfoViewStyle_">
+                <TextView android:text="@string/order_netBar" style="@style/TextViewWrapStyle" />
+                <TextView android:id="@id/tv_order_netBar" android:layout_marginLeft="20.0dp" style="@style/OrderInfoTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" style="@style/UserInfoViewStyle_">
+                <TextView android:text="@string/order_table" style="@style/TextViewWrapStyle" />
+                <TextView android:id="@id/tv_order_table" android:layout_marginLeft="20.0dp" style="@style/OrderInfoTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" style="@style/UserInfoViewStyle_">
+                <TextView android:text="@string/order_date" style="@style/TextViewWrapStyle" />
+                <TextView android:id="@id/tv_order_date" android:layout_marginLeft="20.0dp" style="@style/OrderInfoTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" style="@style/UserInfoViewStyle_">
+                <TextView android:text="@string/order_hour" style="@style/TextViewWrapStyle" />
+                <TextView android:id="@id/tv_order_hour" android:layout_marginLeft="20.0dp" style="@style/OrderInfoTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" style="@style/UserInfoViewStyle_">
+                <TextView android:text="@string/order_hour_money" style="@style/TextViewWrapStyle" />
+                <TextView android:id="@id/tv_order_hour_money" android:layout_marginLeft="20.0dp" style="@style/OrderInfoTextStyle" />
+            </LinearLayout>
+            <View android:background="@color/background" android:layout_width="match_parent" android:layout_height="10.0dp" />
+            <EditText android:textSize="14.0sp" android:id="@id/et_order_information" android:background="@drawable/white_bg" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/order_detail_information" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:background="@drawable/white_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:text="@string/order_pay_money" style="@style/UserLabelTextViewStyle" />
+            <TextView android:id="@id/tv_order_pay_money" style="@style/UserInfoTextStyle" />
+        </RelativeLayout>
+        <Button android:textColor="@color/white" android:id="@id/btn_pay" android:background="@drawable/btn_vote_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:text="确认支付" />
+    </LinearLayout>
+</RelativeLayout>

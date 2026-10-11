@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@color/white" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+            <TextView android:text="@string/user_head_img" style="@style/UserLabelTextStyle" />
+            <ImageView android:id="@id/iv_user_head" android:layout_width="@dimen/user_img_height" android:layout_height="@dimen/user_img_height" android:layout_marginRight="20.0dp" android:src="@drawable/default_head" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/view_user_name" android:layout_marginTop="10.0dp" android:onClick="editorUser" style="@style/UserInfoViewStyle">
+            <TextView android:text="@string/user_name" style="@style/UserLabelTextStyle" />
+            <TextView android:id="@id/tv_user_name" style="@style/UserInfoTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/view_user_sex" android:onClick="editorUser" style="@style/UserInfoViewStyle">
+            <TextView android:text="@string/user_sex" style="@style/UserLabelTextStyle" />
+            <TextView android:id="@id/tv_user_sex" style="@style/UserInfoTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/view_user_age" android:onClick="editorUser" style="@style/UserInfoViewStyle">
+            <TextView android:text="@string/user_birth" style="@style/UserLabelTextStyle" />
+            <TextView android:id="@id/tv_user_birth" style="@style/UserInfoTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/view_user_mobile" android:layout_marginTop="10.0dp" style="@style/UserInfoViewStyle">
+            <TextView android:text="@string/user_mobile" style="@style/UserLabelTextStyle" />
+            <TextView android:id="@id/tv_user_mobile" style="@style/UserInfoTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/view_user_QQ" style="@style/UserInfoViewStyle">
+            <TextView android:text="@string/user_QQ" style="@style/UserLabelTextStyle" />
+            <TextView android:id="@id/tv_user_QQ" style="@style/UserInfoTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/view_user_weChat" style="@style/UserInfoViewStyle">
+            <TextView android:text="@string/user_weChat" style="@style/UserLabelTextStyle" />
+            <TextView android:id="@id/tv_user_weChat" style="@style/UserInfoTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/view_user_city" android:layout_marginTop="10.0dp" android:onClick="editorUser" style="@style/UserInfoViewStyle">
+            <TextView android:text="@string/user_city" style="@style/UserLabelTextStyle" />
+            <TextView android:id="@id/tv_user_city" style="@style/UserInfoTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/view_user_address" android:layout_marginTop="10.0dp" style="@style/UserInfoViewStyle">
+            <TextView android:text="@string/user_address" style="@style/UserLabelTextStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

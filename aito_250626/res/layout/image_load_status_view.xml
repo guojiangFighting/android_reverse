@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/view_second" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwprogressbar.widget.HwProgressBar android:id="@id/loadding_hpb" android:layout_width="@dimen/font72" android:layout_height="@dimen/font72" android:layout_centerHorizontal="true" style="@style/Widget.Emui.HwProgressBar.Large.Dark" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_text_secondary_inverse" android:layout_gravity="center_horizontal" android:id="@id/loading_tips_htv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:text="@string/xcar_app_text_loading" android:layout_below="@id/loadding_hpb" android:layout_centerHorizontal="true" android:fontFamily="@string/emui_text_font_family_regular" />
+</RelativeLayout>

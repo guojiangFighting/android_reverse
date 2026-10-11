@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/textSize16" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/conn_item_more_list" android:padding="@dimen/padding10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/interconnection_more_text_disconnect" />
+    <View android:id="@id/conn_item_divider" android:background="@drawable/conn_more_divider" android:visibility="gone" android:layout_width="@dimen/interconnection_more_divider_length" android:layout_height="@dimen/divider_size" />
+</com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout>

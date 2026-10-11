@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/hwswitch_height" android:width="@dimen/hwswitch_height" android:viewportWidth="0.24" android:viewportHeight="0.24"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:name="stroke" android:fillColor="@color/emui_color_primary" android:pathData="M 0.12,0.01 a 0.11,0.11 0 1 0 0,0.22 a 0.11,0.11 0 1 0 0,-0.22z" android:fillAlpha="0.05" />
+    <path android:name="thumb" android:fillColor="@color/emui_color_fg_inverse" android:pathData="M 0.12,0.02 a 0.1,0.1 0 1 0 0,0.2 a 0.1,0.1 0 1 0 0,-0.2z" />
+</vector>

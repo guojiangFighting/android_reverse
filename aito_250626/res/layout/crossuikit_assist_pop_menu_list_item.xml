@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/menu_item_container" android:paddingLeft="@dimen/emui_dimens_element_horizontal_large" android:paddingRight="@dimen/emui_dimens_element_horizontal_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/crossuikit_popwindow_min_width" android:paddingStart="@dimen/emui_dimens_element_horizontal_large" android:paddingEnd="@dimen/emui_dimens_element_horizontal_large"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_text_primary" android:gravity="center_vertical" android:id="@id/menu_item_tv" android:layout_width="wrap_content" android:layout_height="@dimen/crossuikit_list_height_48" android:singleLine="true" />
+        <ImageView android:id="@id/menu_item_redtip" android:background="@drawable/sns_icon_redtip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_toRightOf="@id/menu_item_tv" android:layout_centerVertical="true" android:layout_marginStart="4.0dp" android:layout_toEndOf="@id/menu_item_tv" />
+    </RelativeLayout>
+    <ImageView android:id="@id/diliver_line" android:visibility="invisible" android:layout_width="match_parent" style="@style/crossuikit_divider_style" />
+</LinearLayout>

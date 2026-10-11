@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/card_title" layout="@layout/hwsubheader_title_more_grid" />
+    <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/card_poster" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:scaleType="centerCrop" android:layout_below="@id/card_title" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/master_top_mask" android:layout_width="match_parent" android:layout_height="@dimen/hot_card_master_height" android:layout_alignTop="@id/card_poster" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textColor="@color/hor_card_master_title_color" android:ellipsize="end" android:id="@id/master_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:maxLines="1" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginStart="@dimen/font20" android:layout_marginEnd="@dimen/font20" />
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textColor="@color/emui_text_primary_inverse" android:ellipsize="end" android:id="@id/master_subTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2" android:maxLines="1" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginStart="@dimen/font20" android:layout_marginEnd="@dimen/font20" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/card_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:layout_below="@id/card_poster" />
+</RelativeLayout>

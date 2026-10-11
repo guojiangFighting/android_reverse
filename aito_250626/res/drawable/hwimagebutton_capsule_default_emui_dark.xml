@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/emui_corner_radius_button_small" />
+            <solid android:color="@color/hwimagebutton_selector_handup_bg_color_dark" />
+        </shape>
+    </item>
+    <item>
+        <selector>
+            <item android:state_window_focused="false" android:drawable="@android:color/transparent" />
+            <item android:state_pressed="true" android:drawable="@drawable/hwimagebutton_capsule_pressed_layer_dark" />
+            <item android:state_focused="true" android:state_enabled="true" android:drawable="@android:color/transparent" />
+            <item android:state_focused="true" android:state_enabled="false" android:drawable="@android:color/transparent" />
+            <item android:drawable="@drawable/hwimagebutton_capsule_pressed_layer_dark" android:state_hovered="true" />
+            <item android:state_focused="true" android:drawable="@android:color/transparent" />
+            <item android:state_enabled="true" android:drawable="@android:color/transparent" />
+            <item android:drawable="@android:color/transparent" />
+        </selector>
+    </item>
+</layer-list>

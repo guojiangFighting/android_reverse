@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:paddingTop="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/check_step_icon" android:padding="3.0dp" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/img_check_passed" android:layout_alignParentLeft="true" />
+    <RelativeLayout android:id="@id/check_step_progressbar" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="@dimen/text_size_common_14" android:typeface="sans" android:textStyle="normal" android:textColor="@color/grey_common" android:gravity="start" android:layout_gravity="start|center" android:id="@id/check_step_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:text="@string/prepare_auth_check_success" android:singleLine="true" />
+</RelativeLayout>

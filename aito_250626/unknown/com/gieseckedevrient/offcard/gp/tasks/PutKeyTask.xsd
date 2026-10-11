@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0"
+        xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0"
+        xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified">
+
+  <include schemaLocation="GpKeySetTypes.xsd"/>
+
+  <import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="CommonTypes.xsd"/>
+
+  <complexType name="PutKeyTaskType">
+    <sequence>
+	    <choice>
+	      <element name="GpSecureChannelBaseKeySet" type="ogpt:GpSecureChannelBaseKeySetType"/>
+	      <element name="GpSecureChannelKeySet" type="ogpt:GpSecureChannelKeySetType"/>
+	      <element name="GpSecureChannel03KeySet" type="ogpt:GpSecureChannel03KeySetType"/>
+	      <element name="VisaSecureChannelKeySet" type="ogpt:VisaSecureChannelKeySetType"/>
+	      <element name="GpDesDapVerificationKeySet" type="ogpt:GpDesDapVerificationKeySetType"/>
+	      <element name="GpRsaPrivateCrtKeySet" type="ogpt:GpRsaPrivateCrtKeySetType"/>
+	      <element name="GpRsaDapVerificationKeySet" type="ogpt:GpRsaDapVerificationKeySetType"/>
+	      <element name="GpDelegatedManagementKeySet" type="ogpt:GpDelegatedManagementKeySetType"/>
+	      <element name="GpReceiptKeySet" type="ogpt:GpReceiptKeySetType"/>
+	      <element name="GpGenericKeySet" type="ogpt:GpGenericKeySetType"/>
+	      <element name="EtsiDesDapKeySet" type="ogpt:EtsiDesDapKeySetType"/>
+	      <element name="OtaKeySet" type="ogpt:OtaKeySetType"/>
+	      <element name="GpConfidentialLoadingKeySet" type="ogpt:GpConfidentialLoadingKeySetType"/>
+	      <element name="GpDataEncryptionKeySet" type="ogpt:GpDataEncryptionKeySetType"/>
+	      <element name="GpAesDataEncryptionKeySet" type="ogpt:GpAesDataEncryptionKeySetType"/>
+	      <element name="GpPskTlsKeySet" type="ogpt:GpPskTlsKeySetType"/>
+	      <element name="GpDelegatedManagementDesKeySet" type="ogpt:GpDelegatedManagementDesKeySetType"/>
+	    </choice>
+	    <choice minOccurs="0">
+	      <element name="GpDataEncryptionKeySet" type="ogpt:GpDataEncryptionKeySetType"/>
+	      <element name="GpAesDataEncryptionKeySet" type="ogpt:GpAesDataEncryptionKeySetType"/>
+	    </choice>
+    </sequence>
+    <attribute name="Name" type="string" use="optional"/>
+    <attribute name="OldVersion" type="oct:EncodingHex1Byte" default="00" use="optional"/>
+  </complexType>
+</schema>

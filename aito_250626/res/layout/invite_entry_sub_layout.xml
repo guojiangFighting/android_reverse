@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:background="@drawable/invite_friend_graint_bg" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="8.0dp" android:paddingEnd="8.0dp">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="10.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/invite_hint_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:fontFamily="@string/emui_text_font_family_medium" />
+    </RelativeLayout>
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center_vertical" android:id="@id/image_view" android:layout_width="22.0dp" android:layout_height="18.0dp" android:src="@drawable/invite_logo" android:layout_marginStart="-11.0dp" />
+</LinearLayout>

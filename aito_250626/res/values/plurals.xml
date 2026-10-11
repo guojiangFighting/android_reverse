@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Fast forward %d second</item>
+        <item quantity="other">Fast forward %d seconds</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Rewind %d second</item>
+        <item quantity="other">Rewind %d seconds</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="page_progress">
+        <item quantity="zero">Page %1$d</item>
+        <item quantity="one">Page %1$d</item>
+        <item quantity="two">Page %1$d</item>
+        <item quantity="many">Page %1$d</item>
+        <item quantity="other">Page %1$d</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="one">%d star</item>
+        <item quantity="other">%d stars</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="zero">of %1$d</item>
+        <item quantity="one">of %1$d</item>
+        <item quantity="two">of %1$d</item>
+        <item quantity="many">of %1$d</item>
+        <item quantity="other">of %1$d</item>
+    </plurals>
+    <plurals name="xcar_app_app_bar_my_cars_count">
+        <item quantity="other">我的车辆（%d）</item>
+    </plurals>
+    <plurals name="xcar_app_count_hour">
+        <item quantity="other">%d小时</item>
+    </plurals>
+    <plurals name="xcar_app_count_unit">
+        <item quantity="other">%d次</item>
+    </plurals>
+    <plurals name="xcar_app_hours">
+        <item quantity="other">小时</item>
+    </plurals>
+    <plurals name="xcar_app_text_album_count">
+        <item quantity="other">%d 张照片</item>
+    </plurals>
+    <plurals name="xcar_app_text_bind_number">
+        <item quantity="other">%s辆</item>
+    </plurals>
+    <plurals name="xcar_app_text_charge_notice_count">
+        <item quantity="other">[%s条]</item>
+    </plurals>
+    <plurals name="xcar_app_text_charging_detail_amount_show">
+        <item quantity="other">¥%1$s（%2$s积分）</item>
+    </plurals>
+    <plurals name="xcar_app_text_charging_point_amount">
+        <item quantity="other">%s积分</item>
+    </plurals>
+    <plurals name="xcar_app_text_charging_stopped_hour_time">
+        <item quantity="other">已停%1$s小时%2$s分钟</item>
+    </plurals>
+    <plurals name="xcar_app_text_charging_stopped_time">
+        <item quantity="other">已停%s分钟</item>
+    </plurals>
+    <plurals name="xcar_app_text_comment_content_count">
+        <item quantity="other">%d 条评论</item>
+    </plurals>
+    <plurals name="xcar_app_text_day_input">
+        <item quantity="other">%s天</item>
+    </plurals>
+    <plurals name="xcar_app_text_hours_early">
+        <item quantity="other">%d小时前</item>
+    </plurals>
+    <plurals name="xcar_app_text_integral_convert_amount">
+        <item quantity="other">使用%1$s积分，可抵扣充电费¥%2$s</item>
+    </plurals>
+    <plurals name="xcar_app_text_integral_pay_number">
+        <item quantity="other">积分支付（共%s积分）</item>
+    </plurals>
+    <plurals name="xcar_app_text_message_picked_num">
+        <item quantity="other">已选择 %d 项</item>
+    </plurals>
+    <plurals name="xcar_app_text_mil_day_input">
+        <item quantity="other">%1$s  (剩余%2$s天)</item>
+    </plurals>
+    <plurals name="xcar_app_text_minute_show">
+        <item quantity="other">%s分钟</item>
+    </plurals>
+    <plurals name="xcar_app_text_minutes_early">
+        <item quantity="other">%d分钟前</item>
+    </plurals>
+    <plurals name="xcar_app_text_mt_mil_day_input">
+        <item quantity="other">%1$d km/%2$d天</item>
+    </plurals>
+    <plurals name="xcar_app_text_mt_mil_day_input_range_extender">
+        <item quantity="other">%1$d km/%2$d天 (%3$s)</item>
+    </plurals>
+    <plurals name="xcar_app_text_order_point_amount">
+        <item quantity="other">%d积分</item>
+    </plurals>
+    <plurals name="xcar_app_text_read_time">
+        <item quantity="other">%s 次浏览</item>
+    </plurals>
+    <plurals name="xcar_app_text_sadeCode_error_remaining">
+        <item quantity="other">安全码输入错误，剩余%d次</item>
+    </plurals>
+    <plurals name="xcar_app_text_second_input">
+        <item quantity="other">%s秒</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_confirm_delete">
+        <item quantity="other">是否删除 %d 条消息？</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_delete_group_member_info">
+        <item quantity="other">确定删除 %d 位群成员？</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_group_member_counts">
+        <item quantity="other">%1$s 人</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_group_member_counts_transmit">
+        <item quantity="other">(%1$s人)</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_msg_unread_count">
+        <item quantity="other">%1$s条</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_photo_chosed_num">
+        <item quantity="other">已选择 %1$s 项</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_photo_nums">
+        <item quantity="other">%1$s 张照片</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_receive_msg">
+        <item quantity="other">%1$s发来%2$s</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_receive_msg_contact_counts">
+        <item quantity="other">%1$s 个联系人</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_receive_msg_counts">
+        <item quantity="other">%1$s条消息</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_search_conversation_count_result">
+        <item quantity="other">%1$s 条相关聊天记录</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_search_user_europe_result">
+        <item quantity="other">找到 %1$s 个联系人</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_search_user_result">
+        <item quantity="other">找到 %1$s 个好友</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_selected_user_max_num">
+        <item quantity="other">最多能选 %d 人</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_selected_user_num">
+        <item quantity="other">已选择 %d 人</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_share_textmsg_too_long">
+        <item quantity="other">文本过长，已自动截取前 %1$s 个字符</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_transmit_img_too_long">
+        <item quantity="other">一次最多发送 %1$s 张图片</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_transmit_multi_file">
+        <item quantity="other">[文件] 已选 %1$s 个，</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_transmit_multi_image">
+        <item quantity="other">[图片] %1$s 张</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_transmit_multi_msg">
+        <item quantity="other">[逐条转发] 共 %1$s 条消息</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_transmit_txt_too_long">
+        <item quantity="other">一次最多发送 %1$s 个字</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_unread_msg_counts">
+        <item quantity="other">%1$s 条新消息</item>
+    </plurals>
+    <plurals name="xcar_app_text_sns_voice_timeout_hint">
+        <item quantity="other">"%d''后停止录音"</item>
+    </plurals>
+    <plurals name="xcar_app_text_test_drive_data">
+        <item quantity="other">%1$s公里，耗时%2$s分钟</item>
+    </plurals>
+    <plurals name="xcar_app_text_topic_participatecnt">
+        <item quantity="other">%s次参与</item>
+    </plurals>
+    <plurals name="xcar_app_text_vehicle_item_count">
+        <item quantity="other">共 %d 项</item>
+    </plurals>
+    <plurals name="xcar_app_text_video_over_num">
+        <item quantity="other">支持最多选择%d个视频</item>
+    </plurals>
+    <plurals name="xcar_app_text_watch_all_replied">
+        <item quantity="other">查看全部%d条回复</item>
+    </plurals>
+    <plurals name="xcar_app_text_watch_count_by_topic_no_public_item">
+        <item quantity="other">%s浏览</item>
+    </plurals>
+    <plurals name="xcar_app_text_watch_count_by_topic_pgc_item">
+        <item quantity="other">%s播放</item>
+    </plurals>
+    <plurals name="xcar_app_toast_article_photo_limit">
+        <item quantity="other">正文最多添加%d张图片</item>
+    </plurals>
+    <plurals name="xcar_app_toast_camera_over_num">
+        <item quantity="other">最多只能选择%d张照片</item>
+    </plurals>
+    <plurals name="xcar_app_toast_feed_back_photo_over_num">
+        <item quantity="other">最多只能选择%d张照片或视频</item>
+    </plurals>
+    <plurals name="xcar_app_toast_safe_code_error_remain_times">
+        <item quantity="other">安全码输入错误，还可以试%s次</item>
+    </plurals>
+    <plurals name="xcar_app_toast_stroke_record_wrong_time_tips2">
+        <item quantity="other">时间跨度最大为%d天</item>
+    </plurals>
+</resources>

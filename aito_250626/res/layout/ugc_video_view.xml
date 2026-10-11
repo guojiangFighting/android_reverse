@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ugc_vodeo_layout" android:background="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/list_view_root" android:layout_width="match_parent" android:layout_height="match_parent">
+        <app.huawei.auto.base.view.video.VideoPlayerView android:id="@id/play_video_view" android:layout_width="match_parent" android:layout_height="match_parent" app:player_layout_id="@layout/exo_play_list_view" app:player_preview_layout_id="@layout/simple_exo_default_preview" />
+    </FrameLayout>
+    <View android:id="@id/upload_mask_layout" android:background="@color/ugc_image_upload_fail" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:gravity="center" android:id="@id/video_error_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font6" android:layout_below="@id/ugc_image_error" android:layout_centerHorizontal="true">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:layout_gravity="center" android:id="@id/ugc_vodeo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_text_app_video_upload_fail_tip" style="@style/textColorWhiteAndSizeOverLineAndFamilyMedium" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_button_fail_retry" style="@style/textColorWhiteAndSizeOverLineAndFamilyMedium" />
+        </LinearLayout>
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/ugc_image_error" android:visibility="visible" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:src="@drawable/ic_public_detail_ugc" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/cancel_video_upload" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:layout_marginTop="@dimen/font12" android:src="@drawable/ic_public_delete" android:layout_marginEnd="@dimen/font12" android:layout_alignParentEnd="true" />
+    <com.huawei.uikit.phone.hwprogressbar.widget.HwProgressBar android:id="@id/video_load_progress" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:progress="0" android:layout_centerInParent="true" app:hwFillColor="@color/timeBar_buffered_color" app:hwProgressBarRingTrackColor="@color/video_load_background_color" app:hwProgressBarRingWidth="4.0dp" style="@style/Widget.Emui.HwProgressBar.FilledRing" />
+</RelativeLayout>

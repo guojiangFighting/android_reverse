@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@drawable/svs_layer_card_corner" android:layout_width="match_parent" android:layout_height="176.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.ads.carsearch.view.excview.LoadingBar android:id="@id/loadingBar" android:layout_width="75.0dp" android:layout_height="75.0dp" android:layout_marginTop="34.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/svs_com_car_normal_txt_size" android:textColor="@color/svs_main_txt_color" android:id="@id/calcRouteMention" android:layout_width="wrap_content" android:layout_height="22.0dp" android:text="@string/svs_com_calc_route_running" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/loadingBar" />
+    <TextView android:layout_width="wrap_content" android:layout_height="19.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/calcRouteMention" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/hwbutton_focus_status_stroke_radius_small" />
+    <stroke android:width="@dimen/hwbutton_focus_status_stroke_width" android:color="@color/emui_control_focused_outline_translucent" />
+</shape>

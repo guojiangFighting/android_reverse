@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:id="@id/footer_hcll" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:minHeight="@dimen/hwlistpattern_preferreditem_heightsmall" app:hwColumnType="button_type"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwbutton.widget.HwButton android:textSize="@dimen/font16" android:id="@id/control_hb" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/font40" android:text="@string/xcar_app_text_add_phone_number" android:layout_weight="1.0" android:fontFamily="@string/emui_text_font_family_medium" style="@style/Widget.Emui.HwButton.Light" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="55.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/shape_bg_radius_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="2.0dp">
+        <TextView android:textSize="20.0dp" android:textColor="@color/floor_name_tv_color" android:layout_gravity="center" android:id="@id/tv_floor_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="500" />
+    </FrameLayout>
+    <TextView android:textSize="14.0dp" android:textColor="@color/theme_color_title_primary" android:gravity="center_vertical" android:id="@id/tv_parking_name" android:background="@drawable/drawable_bg_half_c24_swhite_2" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="48.0dp" android:maxLength="500" android:paddingStart="36.0dp" android:paddingEnd="12.0dp" android:layout_marginStart="-24.0dp" />
+</LinearLayout>

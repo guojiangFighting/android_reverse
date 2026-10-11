@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/top_container" android:paddingBottom="@dimen/font8" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:layout_marginHorizontal="@dimen/font16">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font16" android:textColor="@color/black" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_recommended_topics" android:fontFamily="@string/emui_text_font_family_medium" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="@color/black" android:id="@id/more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_more_title" android:layout_marginEnd="@dimen/font2" app:layout_constraintBottom_toBottomOf="@id/title" app:layout_constraintEnd_toStartOf="@id/arrow" app:layout_constraintTop_toTopOf="@id/title" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_public_arrow_rights" app:layout_constraintBottom_toBottomOf="@id/title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.huawei.uikit.phone.hwrecyclerview.widget.HwRecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/top_container" />
+</RelativeLayout>

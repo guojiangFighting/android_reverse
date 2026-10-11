@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="95.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:background="@drawable/svs_com_white_bg_corners" android:layout_width="match_parent" android:layout_height="35.0dp" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/svs_com_black" android:gravity="center" android:id="@id/txt_condition" android:layout_width="50.0dp" android:layout_height="20.0dp" android:layout_marginTop="7.0dp" android:layout_marginStart="35.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/pic_condition" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="6.0dp" android:layout_marginStart="6.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.huawei.ads.carsearch.view.tips.TriangleDownView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dp" android:layout_marginStart="36.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

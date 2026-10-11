@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">ਤੇਜ਼ੀ ਨਾਲ %d ਸਕਿੰਟ ਅੱਗੇ ਕਰੋ</item>
+        <item quantity="other">ਤੇਜ਼ੀ ਨਾਲ %d ਸਕਿੰਟ ਅੱਗੇ ਕਰੋ</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d ਸਕਿੰਟ ਪਿੱਛੇ ਕਰੋ</item>
+        <item quantity="other">%d ਸਕਿੰਟ ਪਿੱਛੇ ਕਰੋ</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d ਨਵੀਂ ਸੂਚਨਾ</item>
+        <item quantity="other">%d ਨਵੀਆਂ ਸੂਚਨਾਵਾਂ</item>
+    </plurals>
+    <plurals name="page_progress">
+        <item quantity="one">ਪੰਨਾ %1$d</item>
+        <item quantity="other">ਪੰਨਾ %1$d</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="one">%d ਸਟਾਰ</item>
+        <item quantity="other">%d ਸਟਾਰ</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="one">%1$d ਵਿੱਚੋਂ</item>
+        <item quantity="other">%1$d ਵਿੱਚੋਂ</item>
+    </plurals>
+</resources>

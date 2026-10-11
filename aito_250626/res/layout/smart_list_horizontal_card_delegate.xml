@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#99f1f3f5" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/font8" />
+    <include android:id="@id/community_topiclist_title" layout="@layout/hwsubheader_title_more_grid" />
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/font8" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_card_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

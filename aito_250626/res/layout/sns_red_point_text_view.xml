@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/font10" android:textColor="@color/sns_big_red_point_text_view" android:gravity="center" android:id="@id/text_count" android:background="@drawable/sns_circle_red_bg" android:layout_width="wrap_content" android:layout_height="@dimen/font20" android:minWidth="@dimen/font20" android:minHeight="@dimen/font20" android:includeFontPadding="false" android:textAlignment="gravity"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,140 @@
+════════════════════════════════════════════════════════════════
+  reapk  ·  Android 逆向静态速览 (Androguard)
+════════════════════════════════════════════════════════════════
+
+[基本信息]
+  APK          : F:\Android_reverse\pro_aito\com.dodonew.online.apk
+  package      : com.dodonew.online
+  appName      : 嘟嘟牛在线
+  version      : 2.3 (230)
+  min/target   : 11 / 20
+  Application  : com.dodonew.online.DodonewOnlineApplication
+  LAUNCHER     : com.dodonew.online.ui.StartActivity
+  allowBackup  : true   debuggable: -   cleartext: -
+  DEX/类数量   : (已跳过，去掉 --light 可启用)
+
+[壳/加固启发式]
+  结论: 未见明显壳特征（或特征不足）
+  (无命中信号)
+
+[权限]  共 20
+  (默认隐藏 info 级，共藏 8 条；加 -v 查看全部)
+  [critical] android.permission.READ_SMS
+             → 读短信，验证码/隐私敏感
+  [critical] android.permission.RECEIVE_SMS
+             → 收短信广播
+  [high    ] android.permission.ACCESS_COARSE_LOCATION
+             → 粗略定位
+  [high    ] android.permission.ACCESS_FINE_LOCATION
+             → 精确定位，查定位 SDK / 地图 Key
+  [high    ] android.permission.CALL_PHONE
+             → 直接拨号
+  [high    ] android.permission.CAMERA
+             → 相机，扫码/上传场景
+  [high    ] android.permission.READ_PHONE_STATE
+             → 读设备标识，常配合加固/风控
+  [high    ] android.permission.SYSTEM_ALERT_WINDOW
+             → 悬浮窗，可被滥用
+  [medium  ] android.permission.CHANGE_NETWORK_STATE
+             → 改网络状态
+  [medium  ] android.permission.CHANGE_WIFI_STATE
+             → 改 WiFi，少见业务需求
+  [medium  ] android.permission.GET_TASKS
+             → 读任务栈（旧权限）
+  [medium  ] android.permission.WRITE_EXTERNAL_STORAGE
+             → 写存储，关注落地文件/缓存
+
+[自定义 permission]
+  com.dodonew.online.permission.MIPUSH_RECEIVE  protectionLevel=0x00000003
+
+[组件]  共 64
+  — activity: 57 (exported≈7)
+    [EXP] com.dodonew.online.ui.StartActivity
+           * LAUNCHER 入口 Activity
+           * 导出组件：优先检查是否可被外部唤起
+           filter: action=[android.intent.action.MAIN] category=[android.intent.category.LAUNCHER] 
+    [EXP] com.dodonew.online.ui.GamePlayActivity
+           * 导出组件：优先检查是否可被外部唤起
+           filter: action=[-] category=[android.intent.category.DEFAULT, android.intent.category.BROWSABLE] 
+    [EXP] com.dodonew.online.ui.PlayVideoActivity
+           * 导出组件：优先检查是否可被外部唤起
+           filter: action=[-] category=[android.intent.category.DEFAULT, android.intent.category.BROWSABLE] 
+    [EXP] com.mob.tools.MobUIShell
+           * Deep Link / URL Scheme 入口
+           * 导出组件：优先检查是否可被外部唤起
+           filter: action=[android.intent.action.VIEW] category=[android.intent.category.BROWSABLE, android.intent.category.DEFAULT] scheme=tencent1104219088
+           filter: action=[com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY] category=[android.intent.category.DEFAULT] 
+    [EXP] com.tencent.tauth.AuthActivity
+           launchMode=2
+           * Deep Link / URL Scheme 入口
+           * 导出组件：优先检查是否可被外部唤起
+           filter: action=[android.intent.action.VIEW] category=[android.intent.category.BROWSABLE] scheme=tencent1104219088
+    [EXP] com.dodonew.online.wxapi.WXEntryActivity
+           * Deep Link / URL Scheme 入口
+           * 导出组件：优先检查是否可被外部唤起
+           * 微信回调入口
+           filter: action=[android.intent.action.VIEW] category=[android.intent.category.DEFAULT] scheme=wxe759af68c4898c4a
+    [EXP] com.dodonew.online.wxapi.WXPayEntryActivity
+           * 导出组件：优先检查是否可被外部唤起
+           * 微信回调入口
+    [   ] com.alipay.sdk.app.H5PayActivity
+           * 支付宝相关组件
+    [   ] com.alipay.sdk.auth.AuthActivity
+           * 支付宝相关组件
+  — service: 4 (exported≈1)
+    [   ] com.xiaomi.push.service.XMPushService
+           process=:pushservice
+           * 小米推送相关
+    [EXP] com.xiaomi.mipush.sdk.PushMessageHandler
+           * 导出组件：优先检查是否可被外部唤起
+           * 小米推送相关
+    [   ] com.xiaomi.mipush.sdk.MessageHandleService
+           * 小米推送相关
+  — receiver: 3 (exported≈2)
+    [EXP] com.dodonew.online.receiver.XiaoMiPushReceiver
+           * 导出组件：优先检查是否可被外部唤起
+           * 小米推送相关
+           filter: action=[com.xiaomi.mipush.RECEIVE_MESSAGE] category=[-] 
+           filter: action=[com.xiaomi.mipush.ERROR] category=[-] 
+    [EXP] com.xiaomi.push.service.receivers.NetworkStatusReceiver
+           * 导出组件：优先检查是否可被外部唤起
+           * 小米推送相关
+           filter: action=[android.net.conn.CONNECTIVITY_CHANGE] category=[android.intent.category.DEFAULT] 
+    [   ] com.xiaomi.push.service.receivers.PingReceiver
+           process=:pushservice
+           * 小米推送相关
+           filter: action=[com.xiaomi.push.PING_TIMER] category=[-] 
+
+[meta-data]
+  UMENG_APPKEY = 54b5d5f6fd98c5c91f0011fa
+  UMENG_CHANNEL = baidu
+  com.amap.api.v2.apikey = c5e4afee43c52bb00e2df9039d4aa470
+
+[Deep Link / Scheme]
+  tencent1104219088://
+  wxe759af68c4898c4a://
+
+[识别到的第三方 SDK]
+  - 腾讯 OpenSDK
+  - 小米推送 MiPush
+  - 腾讯 QQ/OpenSDK
+  - 支付宝 SDK
+  - Mob/ShareSDK
+  - 高德地图/定位
+  - 友盟统计/反馈
+
+[Native .so]  共 3
+  lib/armeabi/libgdinamapv4sdk752.so
+  lib/armeabi/libgdinamapv4sdk752ex.so
+  lib/armeabi/libumeng_opustool.so
+
+[建议下一步（逆向）]
+  1. 正常包：先看 Application `com.dodonew.online.DodonewOnlineApplication` 与 LAUNCHER `com.dodonew.online.ui.StartActivity`
+  2. 检查 10 个导出组件的 intent-filter / permission 保护
+  3. 高危权限 8 个：结合代码交叉引用确认真实用途
+  4. Manifest meta-data 含 3 个可疑 Key/渠道字段，注意是否硬编码
+  5. Deep Link 2 条：验证是否可外部伪造唤起
+  6. allowBackup=true：可关注备份导出数据面
+  7. 第三方 SDK：腾讯 OpenSDK、小米推送 MiPush、腾讯 QQ/OpenSDK、支付宝 SDK、Mob/ShareSDK、高德地图/定位、友盟统计/反馈
+  8. 含 3 个 .so，按需用 IDA/Ghidra 跟 JNI
+

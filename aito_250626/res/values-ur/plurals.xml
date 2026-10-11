@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">%d سیکنڈ تیزی سے فارورڈ کریں</item>
+        <item quantity="other">%d سیکنڈز تیزی سے فارورڈ کریں</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d سیکنڈ ریوائنڈ کریں</item>
+        <item quantity="other">%d سیکنڈز ریوائنڈ کریں</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d نئی اطلاع</item>
+        <item quantity="other">%d نئی اطلاعات</item>
+    </plurals>
+    <plurals name="page_progress">
+        <item quantity="one">صفحہ %1$d</item>
+        <item quantity="other">صفحہ %1$d</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="one">%d ستارہ</item>
+        <item quantity="other">%d ستارے</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="one">کا %1$d</item>
+        <item quantity="other">کے %1$d</item>
+    </plurals>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="2.0dp" android:width="4.0dp" android:viewportWidth="4.0" android:viewportHeight="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#8cce85" android:pathData="M4,0C2.86945,1.33333 2.21833,2 2.04662,2C1.87492,2 1.19271,1.33333 -0,0L4,0Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$ic_bubble_angle__0" android:pathData="M4,0C2.86945,1.33333 2.21833,2 2.04662,2C1.87492,2 1.19271,1.33333 -0,0L4,0Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+</vector>

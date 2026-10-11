@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_header" />
+    <android.support.v4.view.ViewPager android:id="@id/viewpager" android:paddingLeft="5.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="70.0dp" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="70.0dp">
+        <TextView android:textSize="10.0sp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/order_information" />
+        <Button android:textColor="@color/white" android:id="@id/btn_order" android:background="@drawable/btn_vote_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="3.0dp" android:text="预定" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

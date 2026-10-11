@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/baseui_dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <app.huawei.auto.base.view.StatusBarView android:id="@id/charging_secvice_title" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/order_stats_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/select_time_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/baseui_dp_40" android:paddingEnd="@dimen/baseui_dp_8">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="end" android:id="@id/select_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/textColorPrimaryAndSizeBody1AndMedium" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/triangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_spinner" android:layout_toRightOf="@id/select_time" android:layout_centerVertical="true" android:layout_marginStart="@dimen/baseui_dp_8" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="end|center" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:ellipsize="end" android:id="@id/pay_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_software_item_default" android:singleLine="true" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:ellipsize="end" android:id="@id/refund_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_software_item_default" android:singleLine="true" android:layout_marginStart="@dimen/baseui_dp_12" android:layout_toEndOf="@id/pay_amount" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.huawei.uikit.phone.hwsubtab.widget.HwSubTabWidget android:gravity="start" android:id="@id/pay_orders_tab_widget" android:background="@color/emui_color_subbg" android:layout_width="wrap_content" android:layout_height="wrap_content" app:hwSubTabItemMargin="@dimen/font8" />
+    <com.huawei.uikit.phone.hwviewpager.widget.HwViewPager android:id="@id/pay_orders_vp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/pay_orders_tab_widget" android:overScrollMode="never" />
+</LinearLayout>

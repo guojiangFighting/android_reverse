@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Emui.HwCheckBox.Normal" />
+    <ViewStub android:id="@id/time_line_viewstub" android:layout="@layout/sns_chat_time_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="-3.0dp" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/sns_messages_left_checkbox_margin">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/checkbox_status_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/head_pic_layout" android:layout_alignParentEnd="true">
+            <CheckBox android:gravity="center" android:id="@id/checkbox_status_btn" android:padding="0.0dp" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/sns_chat_list_item_checkbox_size" android:layout_height="@dimen/sns_chat_list_item_checkbox_size" android:layout_marginStart="@dimen/font16" style="@style/Widget.Emui.HwCheckBox.Normal" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/head_pic_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/content_container">
+            <TextView android:id="@id/head_pic_placeholder" android:layout_width="4.0dp" android:layout_height="1.0dp" />
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/sns_group_head_layout" style="@style/sns_left_chat_view_head_margin" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/content_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toStartOf="@id/checkbox_status_layout" android:layout_toEndOf="@id/head_pic_layout">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <app.huawei.auto.im.ui.widget.CustomFontTextView android:gravity="start|bottom" android:id="@id/chat_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:includeFontPadding="false" style="@style/sns_chat_left_name_style" />
+                <include layout="@layout/sns_im_announcement_common" />
+            </LinearLayout>
+            <include android:layout_gravity="center_vertical" android:id="@id/addition_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/sns_chat_left_addition_layout" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

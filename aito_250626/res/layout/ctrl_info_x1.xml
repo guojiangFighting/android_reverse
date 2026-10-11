@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rda_hint_info" android:background="@drawable/background_white_radius_8_x1" android:layout_width="match_parent" android:layout_height="102.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="100.0dp" android:layout_marginRight="12.0dp">
+        <LinearLayout android:orientation="vertical" android:id="@id/ctrl_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginStart="24.0dp">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/text_size_common_20" android:typeface="sans" android:textStyle="bold" android:textColor="@color/x1_black" android:gravity="start|center" android:id="@id/ctrl_title" android:layout_width="wrap_content" android:layout_height="30.0dp" android:text="@string/widget_title_drive_valid" />
+                <ImageView android:id="@id/bluetooth_connect_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="3.0dp" android:layout_marginBottom="3.0dp" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_common_14" android:typeface="sans" android:textStyle="normal" android:textColor="@color/x1_black" android:gravity="start" android:id="@id/ctrl_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/rda_stop_msg_v1" android:alpha="0.6017" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rda_gear" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_centerVertical="true" android:layout_marginEnd="24.0dp" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/gear_circle" android:background="@drawable/shape_circle_gray" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_common_26" android:typeface="sans" android:textStyle="bold" android:textColor="@color/x1_black" android:gravity="center" android:id="@id/gear_state" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/park_gear" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

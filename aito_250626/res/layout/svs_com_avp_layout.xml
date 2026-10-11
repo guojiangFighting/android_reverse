@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.ads.carsearch.view.excview.LoadingBar android:layout_gravity="center" android:id="@id/loading_avp" android:visibility="visible" android:layout_width="72.0dp" android:layout_height="72.0dp" android:layout_marginBottom="42.0dp" />
+    <TextView android:textSize="16.0dp" android:textColor="@color/svs_secondary_txt_color" android:layout_gravity="center" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:layout_marginBottom="40.0dp" android:text="@string/svs_com_avp_loading_message" android:textFontWeight="500" />
+</FrameLayout>

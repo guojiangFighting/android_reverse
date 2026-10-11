@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/sns_single_chat_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <TextView android:textSize="14.0dp" android:textColor="@color/sns_chat_manager_actionbar_title" android:ellipsize="middle" android:gravity="center_horizontal" android:id="@id/sns_chat_user_name" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dp" android:singleLine="true" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/sns_chat_manager_actionbar_title" android:ellipsize="middle" android:gravity="center_horizontal" android:id="@id/sns_chat_group_nike_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxWidth="@dimen/sns_conversation_name_max_width" android:maxEms="20" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/sns_single_chat_isSilence" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_ic_ring_off" android:layout_toRightOf="@id/sns_single_chat_layout" android:layout_centerVertical="true" android:layout_toEndOf="@id/sns_single_chat_layout" />
+    <LinearLayout android:id="@id/sns_layout_manager" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/xcar_app_text_sns_single_chat_info" android:layout_marginEnd="6.0dp" android:layout_alignParentEnd="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/sns_chat_manager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_ic_public_more" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/my_settings_title_l" layout="@layout/mine_hwappbarpattern_navigation_icon_layout" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/mine_authorized_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xcar_app_text_please_provide_mobile_number" android:layout_below="@id/my_settings_title_l" style="@style/textColorPrimaryAndTextSizeHeadLin8AndFontFamilyMedium" />
+    <com.huawei.uikit.phone.hwedittext.widget.HwEditText android:id="@id/mine_please_enter_phone" android:background="@color/mine_while_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/xcar_app_text_please_enter_a_mobile_number" android:layout_below="@id/mine_authorized_name" />
+    <View android:id="@id/mine_number_dashed_line" android:background="@color/mine_number_dashed_line_color" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="@dimen/font8" android:layout_below="@id/mine_please_enter_phone" />
+    <com.huawei.uikit.hwbutton.widget.HwButton android:textColor="#0a59f7" android:gravity="center" android:background="@drawable/roundedcorners" android:layout_width="158.0dp" android:layout_height="@dimen/font40" android:layout_marginBottom="@dimen/font20" android:text="@string/xcar_app_button_next_step" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginEnd="@dimen/font12" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+</RelativeLayout>

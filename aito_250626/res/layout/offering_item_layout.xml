@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/prd_card" android:background="@color/emui_card_panel_bg" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="0.0dp" app:hwAdvancedCardViewClickAnimationEnable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/prd_img" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="@color/emui_text_primary" android:ellipsize="end" android:id="@id/prd_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:maxLines="1" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginEnd="@dimen/font12" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:textColor="@color/emui_text_Color_Link" android:ellipsize="end" android:id="@id/prd_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:maxLines="1" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginEnd="@dimen/font12" />
+    </LinearLayout>
+</com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>

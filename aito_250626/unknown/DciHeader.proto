@@ -1,0 +1,14 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+option java_package = "com.huawei.ads.rpa.net.proto";
+
+package RtsaMsgs;
+
+message Header {
+  uint32 seq = 1;
+  uint64 stamp = 2;       // 管理面时间
+  // string frame_id = 3;
+  string uuid = 4;        // 云端填写，车端反填
+  string accoutId = 5;
+}

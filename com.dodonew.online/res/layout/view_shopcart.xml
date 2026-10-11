@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/option_txt_color" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="0.6">
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_total_price" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/btn_pay" android:background="@color/colorPrimary" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/shop_pay" android:layout_weight="0.4" />
+    </LinearLayout>
+</FrameLayout>

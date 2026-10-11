@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/result_icon_hiv" android:layout_width="56.0dp" android:layout_height="56.0dp" android:src="@drawable/ic_public_todo_filled" android:layout_centerHorizontal="true" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="20.0sp" android:textColor="@color/new_emui_text_primary" android:id="@id/result_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/xcar_app_text_order_status_confirmed" android:layout_below="@id/result_icon_hiv" android:layout_centerHorizontal="true" android:fontFamily="@string/emui_text_font_family_regular" />
+    <com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:hwColumnType="button_type">
+        <com.huawei.uikit.phone.hwbutton.widget.HwButton android:layout_gravity="center_horizontal" android:id="@id/return_hbt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24" android:layout_marginBottom="16.0dp" android:text="@string/xcar_app_button_back" style="@style/Widget.Emui.HwButton.Light" />
+    </com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout>
+</RelativeLayout>

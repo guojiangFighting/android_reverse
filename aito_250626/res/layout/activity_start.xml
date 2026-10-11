@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText android:textSize="15.0sp" android:textColor="#333" android:id="@id/edit" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="15898860955" android:hint="请输入手机号" android:inputType="phone" />
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="跳转webH5" android:onClick="OpenH5" />
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="弹窗" android:onClick="dialog" />
+    <EditText android:textSize="15.0sp" android:textColor="#333" android:id="@id/edit_url" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:hint="请输入链接" />
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="跳转webH5" android:onClick="OpenH5Url" />
+</LinearLayout>

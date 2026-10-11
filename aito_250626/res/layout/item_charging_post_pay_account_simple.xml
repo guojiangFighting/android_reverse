@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/account_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dp" app:layout_constraintBottom_toBottomOf="@id/account_icon" app:layout_constraintStart_toEndOf="@id/account_icon" app:layout_constraintTop_toTopOf="@id/account_icon" style="@style/textColorSecondaryAndSizeBody3" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="10.0dp" android:textColor="#06c361" android:gravity="center" android:id="@id/account_flag" android:background="@drawable/bg_flag_need_confirm" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="16.0dp" android:text="@string/xcar_app_text_need_confirm" android:layout_marginStart="4.0dp" app:layout_constraintBottom_toBottomOf="@id/account_icon" app:layout_constraintStart_toEndOf="@id/account_name" app:layout_constraintTop_toTopOf="@id/account_icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

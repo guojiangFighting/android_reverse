@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_version" android:background="@drawable/view_selector" android:paddingTop="50.0dp" android:paddingBottom="50.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_app" />
+            <TextView android:id="@id/tv_about_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="嘟嘟牛在线 V2.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_set_service" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" style="@style/UnderLineViewStyle_">
+            <TextView android:text="@string/set_service" android:drawableLeft="@drawable/icon_service" android:drawableRight="@drawable/my_right" android:drawablePadding="10.0dp" style="@style/SetTextViewMatchStyle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_set_agreement" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" style="@style/UnderLineViewStyle_">
+            <TextView android:text="@string/set_agreement" android:drawableLeft="@drawable/icon_agreement" android:drawableRight="@drawable/my_right" android:drawablePadding="10.0dp" style="@style/SetTextViewMatchStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:layout_alignParentBottom="true">
+        <TextView android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_company" />
+    </LinearLayout>
+</RelativeLayout>

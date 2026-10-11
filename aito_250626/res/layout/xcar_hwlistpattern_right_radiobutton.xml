@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwradiobutton.widget.HwRadioButton android:textColor="@color/new_emui_text_secondary" android:id="@id/phoneno_radio_hrb" android:layout_width="match_parent" android:layout_height="@dimen/hwlistpattern_item_right_element_height" android:checked="true" android:layout_alignParentRight="true" android:fontFamily="@string/emui_text_font_family_regular" android:textDirection="ltr" android:layoutDirection="rtl" android:layout_marginStart="@dimen/emui_dimens_default_start" style="@style/Widget.Emui.HwRadioButton" />
+</RelativeLayout>

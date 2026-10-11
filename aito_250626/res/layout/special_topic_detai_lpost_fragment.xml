@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/linear_group" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </androidx.core.widget.NestedScrollView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+    <include android:visibility="gone" layout="@layout/xcar_loading_layout" />
+    <include android:visibility="gone" layout="@layout/xcar_error_layout" />
+    <include android:visibility="gone" layout="@layout/x_car_empty_view" />
+    <View android:id="@id/rv_capture_btn" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/dp_0" android:soundEffectsEnabled="false" />
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/ugc_image" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/iamge_load_card" android:background="@color/ugc_image_upload_fail" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/ugc_image_load" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.huawei.uikit.phone.hwprogressbar.widget.HwProgressBar android:layout_gravity="center" android:id="@id/image_wait_progress" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:layout_centerInParent="true" app:hwFillColor="@color/white" app:hwProgressBarRingTrackColor="@color/video_load_background_color" app:hwProgressBarRingWidth="@dimen/font2" style="@style/Widget.Emui.HwProgressBar.FilledRing" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/image_error_layout" android:background="@color/ugc_image_upload_fail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/ugc_image_error" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:layout_marginBottom="6.0dp" android:src="@drawable/ic_public_detail_ugc" android:layout_centerInParent="true" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_image_upload_fail_tip" android:layout_below="@id/ugc_image_error" android:layout_centerHorizontal="true" style="@style/textColorWhiteAndSizeOverLineAndFamilyMedium" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/image_mask_layout" android:background="@color/ugc_image_upload_fail" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/ugc_image_delete" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:layout_marginTop="@dimen/font12" android:layout_marginRight="@dimen/font12" android:src="@drawable/ic_public_delete" android:layout_alignParentRight="true" />
+</RelativeLayout>

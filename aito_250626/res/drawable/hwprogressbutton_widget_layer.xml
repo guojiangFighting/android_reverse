@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:paddingMode="stack"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_enabled="false">
+                <nine-patch android:src="@drawable/hwprogressbutton_btn_disable_bg" android:tint="@color/emui_accent" />
+            </item>
+            <item>
+                <nine-patch android:src="@drawable/hwprogressbutton_btn_normal_bg" android:tint="@color/emui_accent" />
+            </item>
+        </selector>
+    </item>
+    <item>
+        <selector android:enterFadeDuration="@integer/hwanimations_hover_animation_duration" android:exitFadeDuration="@integer/hwanimations_hover_animation_duration">
+            <item android:state_pressed="true" android:drawable="@drawable/hwprogressbutton_btn_pressed" />
+            <item android:drawable="@android:color/transparent" />
+        </selector>
+    </item>
+</layer-list>

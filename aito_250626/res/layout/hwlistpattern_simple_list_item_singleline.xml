@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_selector_text_primary" android:gravity="center_vertical" android:id="@id/hwlistpattern_text" android:paddingTop="@dimen/hwlistpattern_margin_m" android:paddingBottom="@dimen/hwlistpattern_margin_m" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/hwlistpattern_preferreditem_heightsmall" android:singleLine="true" android:textDirection="locale" android:paddingStart="@dimen/emui_dimens_max_start" android:paddingEnd="@dimen/emui_dimens_max_end"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

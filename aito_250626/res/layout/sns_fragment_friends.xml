@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/sns_no_friend_team_layout" />
+    <app.huawei.auto.im.ui.widget.FastSearchRecycleView android:id="@id/sns_fast_search_list" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

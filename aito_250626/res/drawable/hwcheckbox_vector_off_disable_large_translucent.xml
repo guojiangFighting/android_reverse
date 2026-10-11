@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/hwcheckbox_large_size" android:width="@dimen/hwcheckbox_large_size" android:alpha="@dimen/emui_disabled_alpha" android:viewportWidth="48.0" android:viewportHeight="48.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/emui_switch_outline_off_translucent" android:pathData="M30.0008,14C32.2095,14 34,15.7925 34,17.9992L34,30.0008C34,32.2095 32.2075,34 30.0008,34                           L17.9992,34C15.7905,34 14,32.2075 14,30.0008L14,17.9992C14,15.7905 15.7925,14 17.9992,14                           L30.0008,14ZM29.7403,15 L18.2597,15C16.4578,15 15,16.4594 15,18.2597L15,18.2597L15,29.7403                           C15,31.5422 16.4594,33 18.2597,33L18.2597,33 L29.7403,33C31.5422,33 33,31.5406 33,29.7403                           L33,29.7403L33,18.2597C33,16.4578 31.5406,15 29.7403,15L29.7403,15Z" />
+    <path android:name="path_inner_bg" android:fillColor="@color/emui_switch_bg_off_translucent" android:pathData="M14,17.9992C14,15.7905 15.7925,14 17.9992,14L30.0008,14C32.2095,14 34,15.7925 34,17.9992                           L34,30.0008C34,32.2095 32.2075,34 30.0008,34L17.9992,34C15.7905,34 14,32.2075 14,30.0008                           L14,17.9992Z" />
+</vector>

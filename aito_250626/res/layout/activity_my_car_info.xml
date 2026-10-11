@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/mine_my_car_title_l" layout="@layout/mine_hwappbarpattern_navigation_icon_layout" />
+    <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/my_car_info_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_marginBottom="@dimen/font4" android:layout_below="@id/mine_my_car_title_l" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" app:cardCornerRadius="@dimen/font16" app:hwAdvancedCardViewClickAnimationEnable="false" style="@style/Widget.Emui.HwAdvancedCardView.Light">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/font4" android:layout_marginBottom="@dimen/font4" android:layout_marginStart="@dimen/font12" android:layout_marginEnd="@dimen/font12">
+            <RelativeLayout android:id="@id/car_name_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17.0dp" android:layout_marginBottom="@dimen/font12">
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:id="@id/tv_car_name_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_vehicle_display_name" style="@style/textColorPrimaryAndSizeBody1AndFamilyRegular" />
+                <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/font5" android:layout_toStartOf="@id/car_icon1" android:layout_toEndOf="@id/tv_car_name_tag">
+                    <com.huawei.uikit.hwtextview.widget.HwTextView android:textColor="@color/emui_color_secondary" android:id="@id/car_name_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+                </LinearLayout>
+                <ImageView android:id="@id/car_icon1" android:layout_marginTop="-2.0dp" android:src="@drawable/icon_public_arrow_right" android:layout_alignParentEnd="true" style="@style/car_info_right_arrow" />
+            </RelativeLayout>
+            <View android:id="@id/line1" style="@style/item_divider" />
+            <RelativeLayout android:id="@id/car_status_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:layout_marginBottom="@dimen/font12">
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_real_name_authentication_status" style="@style/textColorPrimaryAndSizeBody1AndFamilyRegular" />
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:textColor="@color/emui_color_secondary" android:id="@id/car_status_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+            </RelativeLayout>
+            <View android:id="@id/line2" style="@style/item_divider" />
+            <RelativeLayout android:id="@id/car_type_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:layout_marginBottom="@dimen/font12">
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:id="@id/car_type_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_car_model" android:layout_alignParentStart="true" style="@style/textColorPrimaryAndSizeBody1AndFamilyRegular" />
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:textColor="@color/emui_color_secondary" android:gravity="end" android:id="@id/car_type_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/font5" android:layout_toEndOf="@id/car_type_num" android:layout_alignParentEnd="true" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+            </RelativeLayout>
+            <View android:id="@id/line3" style="@style/item_divider" />
+            <RelativeLayout android:id="@id/car_color_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:layout_marginBottom="@dimen/font12">
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_car_color" style="@style/textColorPrimaryAndSizeBody1AndFamilyRegular" />
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:textColor="@color/emui_color_secondary" android:id="@id/car_color_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+            </RelativeLayout>
+            <View android:id="@id/line4" style="@style/item_divider" />
+            <RelativeLayout android:id="@id/car_plateNo_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:layout_marginBottom="@dimen/font12">
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_license_plate_number" style="@style/textColorPrimaryAndSizeBody1AndFamilyRegular" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <com.huawei.uikit.hwtextview.widget.HwTextView android:textColor="@color/emui_color_secondary" android:id="@id/car_plateNo_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+                    <ImageView android:id="@id/car_icon2" android:layout_marginTop="-2.0dp" android:src="@drawable/icon_public_arrow_right" android:layout_toRightOf="@id/car_name_value" style="@style/car_info_right_arrow" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:id="@id/line5" style="@style/item_divider" />
+            <RelativeLayout android:id="@id/car_vin_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:layout_marginBottom="@dimen/font12">
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_vehicle_no" style="@style/textColorPrimaryAndSizeBody1AndFamilyRegular" />
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:textColor="@color/emui_color_secondary" android:id="@id/car_vin_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+    <com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:hwColumnType="button_type">
+        <com.huawei.uikit.phone.hwbutton.widget.HwButton android:gravity="center" android:id="@id/car_button" android:layout_width="wrap_content" android:layout_height="@dimen/font40" android:layout_marginBottom="@dimen/font16" android:text="@string/xcar_app_button_veh_unbind" android:layout_centerHorizontal="true" style="@style/Widget.Emui.HwButton.Light" />
+    </com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/mine_my_car_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="8.0">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/mine_my_car_empty_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_mine_empty" android:layout_centerInParent="true" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/vehicle_ac_appointments_empty_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/xcar_app_text_no_bind_or_authorized_vehicle" android:layout_below="@id/mine_my_car_empty_iv" android:layout_centerInParent="true" style="@style/textColorTertiaryAndSizeBody2" />
+        </RelativeLayout>
+        <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="2.0" />
+    </LinearLayout>
+</RelativeLayout>

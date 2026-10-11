@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0" xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0" targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0" elementFormDefault="qualified">
+    <xs:import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="CommonTypes.xsd"/>    
+    
+     <xs:simpleType name="ContentTypeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="application/vnd.etsi.scp.command-data;version=1.0"/>
+            <xs:enumeration value="application/vnd.globalplatform.card-content-mgt;version=1.0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="HttpResponseParametersType">
+         <xs:sequence>
+                 <xs:element name="ChunkEncoding"  type="xs:boolean"/>
+                 <xs:element name="ChunkSize"  type="xs:integer"/>
+                 <xs:element name="ContentType"  type="ogpt:ContentTypeType"/>
+                 <xs:element name="DefiniteLengthCoding"  type="xs:boolean"/>
+                 <xs:element name="Protocol"  type="xs:string"/>
+                 <xs:element name="TargetApplicationAid"  type="oct:EncodingAidHex" minOccurs="0"/>
+                 <xs:element name="AdministrationUri"  type="xs:string"/>
+         </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

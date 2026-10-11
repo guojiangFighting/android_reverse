@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/item_title" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:layout_marginHorizontal="@dimen/font16" layout="@layout/hwsubheader_title_more_grid" />
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:layout_marginHorizontal="@dimen/baseui_dp_16" app:cardCornerRadius="@dimen/font8">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_products" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</LinearLayout>

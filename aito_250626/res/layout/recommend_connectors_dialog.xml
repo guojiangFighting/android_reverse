@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="match_parent" app:cardBackgroundColor="#f3f3f3" app:cardCornerRadius="@dimen/baseui_dp_24" app:hwAdvancedCardViewClickAnimationEnable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/title_layout" android:layout_width="match_parent" android:layout_height="@dimen/font56">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp14" android:text="@string/xcar_app_text_confirm_recommend_connector" android:layout_marginStart="@dimen/baseui_dp_24" style="@style/textColorPrimaryAndSizeHeadline8AndMedium" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_bottomsheet_close" android:layout_centerInParent="true" android:layout_marginEnd="@dimen/font16" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="end" android:id="@id/station_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_8" android:layout_marginBottom="@dimen/baseui_dp_8" android:maxLines="1" android:layout_below="@id/title_layout" android:layout_marginStart="@dimen/baseui_dp_24" style="@style/textColorPrimaryAndSizeBody1AndFamilyMedium" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/connectors" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/baseui_dp_4" android:layout_below="@id/station_name" android:overScrollMode="never" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+    </RelativeLayout>
+</com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>

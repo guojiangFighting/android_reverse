@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="wrap_content" android:layout_height="match_parent" app:cardCornerRadius="@dimen/font8" app:hwAdvancedCardViewClickAnimationEnable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/card_poster" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:id="@id/title_layout" android:layout_width="match_parent" android:layout_height="@dimen/hot_card_item_title_height">
+            <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:textColor="@color/emui_text_primary_inverse" android:ellipsize="end" android:id="@id/card_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font6" android:maxLines="2" android:minLines="2" android:lineSpacingExtra="@dimen/font3" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginStart="@dimen/font8" android:layout_marginEnd="@dimen/font8" />
+            <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:textColor="@color/emui_text_primary_inverse" android:ellipsize="end" android:id="@id/card_subTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2" android:maxLines="1" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginStart="@dimen/font8" android:layout_marginEnd="@dimen/font8" />
+        </LinearLayout>
+    </LinearLayout>
+</com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>

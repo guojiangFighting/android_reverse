@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/drive_store_ll_root" android:background="@drawable/shell_frame_layer" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/all_outside_img" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/shell_frame_layer" />
+    <RelativeLayout android:id="@id/all_lay" android:background="@drawable/servicer_select_front_bg" android:layout_width="match_parent" android:layout_height="390.0dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@id/drive_pc_rl_title" android:layout_width="wrap_content" android:layout_height="@dimen/dp_60">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/dp_60" android:layout_centerInParent="true">
+                    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/drive_img_store_back" android:layout_width="wrap_content" android:layout_height="24.0dp" android:layout_marginLeft="@dimen/font16" android:src="@drawable/hwsearchview_ic_public_back" android:layout_centerVertical="true" android:alpha="@dimen/emui_primary_content_alpha" />
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center" android:id="@id/drive_rv_store_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_marginRight="@dimen/font16" android:text="@string/xcar_app_text_all_service_locations" android:layout_toRightOf="@id/drive_img_store_back" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeHeadline8AndMedium" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/drive_pc_rl_title" android:paddingStart="@dimen/font16">
+                <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/drive_ll_province_city" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_marginTop="@dimen/font24" android:layout_marginBottom="@dimen/font8">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColorHint="@color/new_emui_text_primary" android:id="@id/test_tv_province" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/xcar_app_text_select_province" style="@style/textColorSecondaryAndSizeBody2AndFamilyMedium" />
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColorHint="@color/new_emui_text_primary" android:id="@id/test_tv_city" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font24" android:hint="@string/xcar_app_text_select_city" style="@style/textColorSecondaryAndSizeBody2AndFamilyMedium" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/drive_ll_province_city">
+                        <RelativeLayout android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:layout_weight="1.0">
+                            <com.huawei.uikit.hwrecyclerview.widget.HwRecyclerView android:id="@id/drive_test_lv_store" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+                            <com.huawei.uikit.hwrecyclerview.widget.HwRecyclerView android:id="@id/drive_test_ll_province_city" android:layout_width="match_parent" android:layout_height="match_parent" />
+                        </RelativeLayout>
+                        <app.huawei.auto.tangram.select.AZWaveSideBarView android:id="@id/index_bar" android:layout_width="@dimen/font24" android:layout_height="match_parent" android:layout_toRightOf="@id/drive_test_ll_province_city" android:layout_alignParentRight="true" app:BarViewBackgroundColor="@color/transparent" app:HintRectRadius="@dimen/font12" app:barPadding="4.0dp" app:defaultTextSize="@dimen/font12" app:hintRectColor="#e0e4f5" app:hintShape="circle" app:hintTextColor="#254ff7" app:hintTextSize="@dimen/font20" app:selectTextColor="#254ff7" app:selectTextSize="@dimen/font12" app:strokeColor="@color/transparent" app:textColor="#99000000" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/drive_ll_province_city">
+                        <com.huawei.uikit.hwrecyclerview.widget.HwRecyclerView android:id="@id/show_all_rec" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/drive_ll_province_city" android:overScrollMode="never" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+                    </LinearLayout>
+                    <include android:id="@id/subscribe_location_errorview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/drive_ll_province_city" layout="@layout/servicer_subscribe_location_errorview" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

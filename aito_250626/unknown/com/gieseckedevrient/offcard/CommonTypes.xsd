@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.gi-de.com/offcard/commontypes/1.0"
+        xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified">
+  <!--
+  ######################################################################################
+    Common types typlib                                        OffCard API Version 1.0
+  ######################################################################################
+  -->
+
+  <!-- Applet type -->
+  <simpleType name="AppletType">
+    <restriction base="string">
+      <enumeration value="Applet"/>
+      <enumeration value="SecurityDomain"/>
+      <enumeration value="IssuerSecurityDomain"/>
+    </restriction>
+  </simpleType>
+
+  <!-- Application Identifier (AID) type -->
+  <complexType name="AidType">
+    <simpleContent>
+      <extension base="oct:EncodingAidHex">
+        <attribute name="Name" type="string" use="optional"/>
+      </extension>
+    </simpleContent>
+  </complexType>
+
+  <!-- AES key type -->
+  <complexType name="AesKeyType">
+    <simpleContent>
+      <extension base="oct:AesKeyValueType">
+        <attribute name="Name" type="string"/>
+      </extension>
+    </simpleContent>
+  </complexType>
+
+  <!-- DES key type -->
+  <complexType name="DesKeyType">
+    <simpleContent>
+      <extension base="oct:EncodingHex8Byte">
+        <attribute name="Name" type="string"/>
+      </extension>
+    </simpleContent>
+  </complexType>
+
+  <!-- DES ede key type -->
+  <complexType name="DesEdeKeyType">
+    <simpleContent>
+      <extension base="oct:DesEdeKeyValueType">
+        <attribute name="Name" type="string"/>
+      </extension>
+    </simpleContent>
+  </complexType>
+
+  <!-- DES ede key type (112 bit) -->
+  <complexType name="DesEde2KeyType">
+    <simpleContent>
+      <extension base="oct:EncodingHex16Byte">
+        <attribute name="Name" type="string"/>
+      </extension>
+    </simpleContent>
+  </complexType>
+
+  <!-- DES ede key type (168 bit) -->
+  <complexType name="DesEde3KeyType">
+    <simpleContent>
+      <extension base="oct:EncodingHex24Byte">
+        <attribute name="Name" type="string"/>
+      </extension>
+    </simpleContent>
+  </complexType>
+
+  <!-- AES key value type (128, 192 or 256 bit keys) -->
+  <simpleType name="AesKeyValueType">
+    <union memberTypes="oct:EncodingHex16Byte oct:EncodingHex24Byte oct:EncodingHex32Byte"/>
+  </simpleType>
+
+  <!-- DES any key value type (56, 112 or 168 bit keys) -->
+  <simpleType name="DesAnyKeyValueType">
+    <union memberTypes="oct:EncodingHex8Byte oct:EncodingHex16Byte oct:EncodingHex24Byte"/>
+  </simpleType>
+
+  <!-- DES ede key value type (112 or 168 bit keys) -->
+  <simpleType name="DesEdeKeyValueType">
+    <union memberTypes="oct:EncodingHex16Byte oct:EncodingHex24Byte"/>
+  </simpleType>
+  
+  <!-- 
+  DES any key value type (56, 112 or 168 bit keys) 
+  AES key value type (128, 192 or 256 bit keys)
+  -->
+  <simpleType name="DesAesKeyValueType">
+    <union memberTypes="oct:EncodingHex8Byte oct:EncodingHex16Byte oct:EncodingHex24Byte oct:EncodingHex32Byte"/>
+  </simpleType>
+
+  <!-- "Encodings" -->
+
+  <!-- Single hex byte value -->
+  <simpleType name="EncodingHexByte">
+    <restriction base="token">
+      <pattern value="[a-fA-F0-9]{2}" />
+    </restriction>
+  </simpleType>
+
+  <!-- Arbitrary number of hex bytes  -->
+  <simpleType name="EncodingHexUnlimitedByte">
+    <list itemType="oct:EncodingHexByte"/>
+  </simpleType>
+
+  <!-- 1 hex bytes -->
+  <simpleType name="EncodingHex1Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="1" />
+    </restriction>
+  </simpleType>
+
+  <!-- 1-2 hex bytes -->
+  <simpleType name="EncodingHex1_2Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+    <minLength value="1" />
+    <maxLength value="2" />
+    </restriction>
+  </simpleType>
+
+  <!-- 1-3 hex bytes -->
+  <simpleType name="EncodingHex1_3Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+    <minLength value="1" />
+    <maxLength value="3" />
+    </restriction>
+  </simpleType>
+
+  <!-- 1-4 hex bytes -->
+  <simpleType name="EncodingHex1_4Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <minLength value="1" />
+      <maxLength value="4" />
+    </restriction>
+  </simpleType>
+
+  <!-- 2 hex bytes -->
+  <simpleType name="EncodingHex2Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="2" />
+    </restriction>
+  </simpleType>
+
+  <!-- 3 hex bytes -->
+  <simpleType name="EncodingHex3Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="3" />
+    </restriction>
+  </simpleType>
+
+  <!-- 4 hex bytes -->
+  <simpleType name="EncodingHex4Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="4" />
+    </restriction>
+  </simpleType>
+
+  <!-- 5 hex bytes -->
+  <simpleType name="EncodingHex5Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="5" />
+    </restriction>
+  </simpleType>
+
+  <!-- 6 hex bytes -->
+  <simpleType name="EncodingHex6Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="6" />
+    </restriction>
+  </simpleType>
+
+  <!-- 7 hex bytes -->
+  <simpleType name="EncodingHex7Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="7" />
+    </restriction>
+  </simpleType>
+
+  <!-- 8 hex bytes -->
+  <simpleType name="EncodingHex8Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="8" />
+    </restriction>
+  </simpleType>
+
+  <!-- 9 hex bytes -->
+  <simpleType name="EncodingHex9Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="9" />
+    </restriction>
+  </simpleType>
+
+  <!-- 10 hex bytes -->
+  <simpleType name="EncodingHex10Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="10" />
+    </restriction>
+  </simpleType>
+
+  <!-- 12 hex bytes -->
+  <simpleType name="EncodingHex12Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="12" />
+    </restriction>
+  </simpleType>
+
+  <!-- 16 hex bytes -->
+  <simpleType name="EncodingHex16Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="16" />
+    </restriction>
+  </simpleType>
+
+  <!-- 20 hex bytes -->
+  <simpleType name="EncodingHex20Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="20" />
+    </restriction>
+  </simpleType>
+
+  <!-- 24 hex bytes -->
+  <simpleType name="EncodingHex24Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="24" />
+    </restriction>
+  </simpleType>
+
+  <!-- 32 hex bytes -->
+  <simpleType name="EncodingHex32Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="32" />
+    </restriction>
+  </simpleType>
+  
+  <!-- 64 hex bytes -->
+  <simpleType name="EncodingHex64Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="64" />
+    </restriction>
+  </simpleType>
+
+  <!-- 128 hex bytes -->
+  <simpleType name="EncodingHex128Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="128" />
+    </restriction>
+  </simpleType>
+
+<!-- 192 hex bytes -->
+  <simpleType name="EncodingHex192Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="192" />
+    </restriction>
+  </simpleType>
+
+<!-- 256 hex bytes -->
+  <simpleType name="EncodingHex256Byte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="256" />
+    </restriction>
+  </simpleType>
+
+  <!-- AID hex bytes -->
+  <simpleType name="EncodingAidHex">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <minLength value="5" />
+      <maxLength value="16" />
+    </restriction>
+  </simpleType>
+
+  <!-- 8 or 128 DAP signature hex bytes -->
+  <simpleType name="EncodingDapSignatureHex">
+    <union memberTypes="oct:EncodingHex8Byte oct:EncodingHex64Byte oct:EncodingHex128Byte oct:EncodingHex192Byte oct:EncodingHex256Byte"/>
+  </simpleType>
+  
+  <!-- 128 Token hex bytes -->
+  <simpleType name="EncodingTokenHex">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+      <length value="128"/>
+    </restriction>
+  </simpleType>
+
+  <simpleType name="EncodingHexCommandApduByte">
+    <restriction base="oct:EncodingHexUnlimitedByte">
+    <minLength value="4" />
+    </restriction>
+  </simpleType>
+
+  <!-- Single hex byte pattern value -->
+  <simpleType name="EncodingHexByteXPattern">
+    <restriction base="token">
+      <pattern value="[a-fA-F0-9X]{2}" />
+    </restriction>
+  </simpleType>
+
+  <!-- Arbitrary number of byte patterns  -->
+  <simpleType name="EncodingHexUnlimitedByteXPattern">
+    <list itemType="oct:EncodingHexByteXPattern"/>
+  </simpleType>
+
+</schema>

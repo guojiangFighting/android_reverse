@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/my_orders_place" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/x_car_empty_with_action_view" />
+    <include android:id="@id/service_load_progress" android:visibility="gone" layout="@layout/xcar_loading_layout" />
+    <include android:id="@id/error_layout" android:visibility="gone" layout="@layout/xcar_error_layout" />
+</RelativeLayout>

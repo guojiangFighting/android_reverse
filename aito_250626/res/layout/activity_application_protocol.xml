@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <app.huawei.auto.base.view.StatusBarView android:id="@id/status_bar_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/app_about_us_hacv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_marginStart="@dimen/hwlistpattern_item_icon_right_height_16" android:layout_marginEnd="@dimen/hwlistpattern_item_icon_right_height_16" app:cardCornerRadius="@dimen/emui_corner_radius_card" app:contentPaddingBottom="@dimen/font4" app:contentPaddingTop="@dimen/font4" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/application_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</LinearLayout>

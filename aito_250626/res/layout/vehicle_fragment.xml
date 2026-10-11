@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/emui_color_subbg" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/iv_vehicle_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <include android:id="@id/load_progress_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/xcar_loading_view" />
+    <RelativeLayout android:id="@id/vehicle_rl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/vehicle_title" layout="@layout/title_item" />
+        <View android:id="@id/view_id" android:layout_width="@dimen/font40" android:layout_height="@dimen/font10" android:layout_marginTop="@dimen/font12" />
+        <RelativeLayout android:id="@id/veh_status_ui" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/tips_layout">
+            <com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout android:id="@id/vehicle_swipe" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.huawei.uikit.phone.hwrecyclerview.widget.HwRecyclerView android:id="@id/vehicle_hrv" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+            </com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout>
+            <include android:id="@id/incl_repair_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/vehicle_repair_mode_layout" />
+        </RelativeLayout>
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center_vertical" android:id="@id/vehicle_notification_pop" android:background="@drawable/notify_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_5" android:drawablePadding="@dimen/font8" android:layout_below="@id/vehicle_title" android:drawableStart="@drawable/notify_red_point_veh_fragment" android:layout_marginStart="@dimen/font16" style="@style/textColorSecondaryAndSizeBody3" />
+        <FrameLayout android:id="@id/tips_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-24.0dp" android:layout_below="@id/vehicle_title" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+            <app.huawei.auto.base.view.BaseNoInternetTips android:id="@id/drive_no_internet_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <app.huawei.auto.vehicle.ui.views.AITOServiceNoLoginTips android:id="@id/drive_aito_service_no_login_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <app.huawei.auto.vehicle.ui.views.VehOfflineModeTips android:id="@id/veh_offline_mode_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <app.huawei.auto.vehicle.ui.views.VehNoScanChargeTips android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/no_scan_charge_tips" android:background="@drawable/new_user_login_layout_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12" android:layout_marginBottom="@dimen/font20" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <View android:id="@id/top_padding" android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="0.0dp" />
+    <include layout="@layout/xcar_charg_loading_view" />
+</FrameLayout>

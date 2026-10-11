@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_position_one" android:layout_width="match_parent" android:layout_height="200.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_size_common_14" android:typeface="sans" android:textStyle="normal" android:textColor="@color/base_white" android:ellipsize="end" android:gravity="center" android:id="@id/txt_view_position_one_des" android:layout_width="92.0dp" android:layout_height="32.0dp" android:maxWidth="80.0dp" android:text="@string/closer_car_txt_desc" android:maxLines="1" app:layout_constraintEnd_toEndOf="@id/img_position_one" app:layout_constraintStart_toStartOf="@id/img_position_one" app:layout_constraintTop_toTopOf="@id/img_position_one" />
+</androidx.constraintlayout.widget.ConstraintLayout>

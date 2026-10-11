@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/charging_service_hacv" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/font8" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/charging_map_view_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/charging_service_mapview_null" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/charging_service_map_view_null" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/charging_status_ll" android:background="@drawable/ic_map_status" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/charging_service_mapview_null" android:layout_centerHorizontal="true" android:layout_marginVertical="@dimen/font16" />
+                <app.huawei.auto.banner.bannerview.ChargeMapBannerView android:id="@id/banner_view" android:background="@color/default_pic_light_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <app.huawei.auto.service.views.ChargeCardBannerView android:id="@id/banner_view_charging" android:background="@color/default_pic_light_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/font4" android:paddingEnd="@dimen/font4">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/scan_charge_htv" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/xcar_app_text_scan_code_charging" android:drawableTop="@drawable/ic_scan_code_charge" android:layout_weight="1.0" style="@style/textColorSecondaryAndSizeBody3AndDraw" />
+                <View android:layout_gravity="center_vertical" android:background="@drawable/ic_driver_bg" android:layout_width="@dimen/font_px_1" android:layout_height="@dimen/font24" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/best_site_htv" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/xcar_app_grid_best_site" android:drawableTop="@drawable/ic_best_site" android:layout_weight="1.0" style="@style/textColorSecondaryAndSizeBody3AndDraw" />
+                <View android:layout_gravity="center_vertical" android:background="@drawable/ic_driver_bg" android:layout_width="@dimen/font_px_1" android:layout_height="@dimen/font24" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/charging_older_htv" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/xcar_app_grid_my_charge" android:drawableTop="@drawable/ic_my_charge" android:layout_weight="1.0" style="@style/textColorSecondaryAndSizeBody3AndDraw" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

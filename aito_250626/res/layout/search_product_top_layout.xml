@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/font56"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/search_lay_bg" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="16.0dp">
+        <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/search_page_search_small" android:layout_width="@dimen/font16" android:layout_height="@dimen/font16" android:src="@drawable/ic_search" android:layout_centerVertical="true" android:alpha="0.6" android:layout_marginStart="@dimen/font12" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/font8" android:layout_marginEnd="12.0dp" android:layout_toEndOf="@id/search_page_search_small">
+            <com.huawei.uikit.phone.hwedittext.widget.HwEditText android:textSize="@dimen/font16" android:textColor="#18181a" android:textColorHint="#606060" android:id="@id/search_page_search_edit" android:paddingTop="0.0dp" android:paddingBottom="0.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/font12" android:hint="@string/xcar_app_text_remind_search_text" android:singleLine="true" android:layout_weight="9.8" android:imeOptions="actionSearch" style="@style/Widget.Emui.HwEditText.Space.Dark" />
+            <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/search_page_cancel_small" android:visibility="gone" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_cancel_small" android:alpha="0.6" android:paddingStart="@dimen/font5" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

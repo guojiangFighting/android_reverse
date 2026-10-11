@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/card_root_layout" android:layout_width="match_parent" android:layout_height="@dimen/baseui_dp_158"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/part_one" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/img_one" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/img_one_fold" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_one" style="@style/textview_oneplustwocard" />
+    </RelativeLayout>
+    <View android:layout_width="@dimen/baseui_dp_12" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/part_two" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/img_two" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/img_two_fold" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_two" style="@style/textview_oneplustwocard" />
+        </RelativeLayout>
+        <View android:layout_width="match_parent" android:layout_height="@dimen/baseui_dp_12" />
+        <RelativeLayout android:id="@id/part_three" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/img_three" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/img_three_fold" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_three" style="@style/textview_oneplustwocard" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

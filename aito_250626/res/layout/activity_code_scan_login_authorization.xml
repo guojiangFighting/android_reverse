@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="@dimen/font24" android:layout_marginEnd="@dimen/font24">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_width="@dimen/font72" android:layout_height="@dimen/font72" android:src="@drawable/code_scan_auth" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8">
+            <LinearLayout android:gravity="center" android:layout_width="@dimen/font16" android:layout_height="@dimen/font16" android:layout_marginRight="@dimen/font4">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_middle_point_symbol" style="@style/textColorSecondaryAndSizeBody2" />
+            </LinearLayout>
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_scan_login_info" style="@style/textColorSecondaryAndSizeBody2" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4">
+            <LinearLayout android:gravity="center" android:layout_width="@dimen/font16" android:layout_height="@dimen/font16" android:layout_marginRight="@dimen/font4">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_middle_point_symbol" style="@style/textColorSecondaryAndSizeBody2" />
+            </LinearLayout>
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_used_after_successful_login" style="@style/textColorSecondaryAndSizeBody2" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4">
+            <LinearLayout android:gravity="center" android:layout_width="@dimen/font16" android:layout_height="@dimen/font16" android:layout_marginRight="@dimen/font4">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_middle_point_symbol" style="@style/textColorSecondaryAndSizeBody2" />
+            </LinearLayout>
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_confirm_qr_code" style="@style/textColorSecondaryAndSizeBody2" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnLinearLayout android:gravity="center" android:id="@id/columnLinearlayout" android:paddingLeft="@dimen/font16" android:paddingRight="@dimen/font16" android:layout_width="match_parent" android:layout_height="@dimen/font72" android:layout_alignParentBottom="true">
+        <com.huawei.uikit.phone.hwbutton.widget.HwButton android:textSize="@dimen/font16" android:gravity="center" android:id="@id/auth_cacle" android:layout_width="wrap_content" android:layout_height="@dimen/font40" android:layout_marginRight="@dimen/font12" android:text="@string/xcar_app_button_cancel" android:layout_weight="1.0" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginEnd="@dimen/hwlistpattern_item_margin_12" style="@style/Widget.Emui.HwButton.Light" />
+        <com.huawei.uikit.phone.hwbutton.widget.HwButton android:textSize="@dimen/font16" android:gravity="center" android:id="@id/auth_login" android:layout_width="wrap_content" android:layout_height="@dimen/font40" android:text="@string/xcar_app_button_login" android:layout_weight="1.0" android:fontFamily="@string/emui_text_font_family_medium" style="@style/Widget.Emui.HwButton.Emphasize.Light" />
+    </com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnLinearLayout>
+</RelativeLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.phone.hwspinner.widget.HwSpinner android:id="@id/hwlistpattern_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/emui_dimens_text_horizontal" style="@style/Widget.Emui.HwSpinner"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

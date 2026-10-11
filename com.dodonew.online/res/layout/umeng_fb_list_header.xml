@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@id/view_color" android:background="@color/blue_" android:layout_width="5.0dp" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/white" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="16.0sp" android:textColor="@color/option_txt_color" android:id="@id/umeng_fb_reply_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/umeng_fb_reply_content_default" android:textIsSelectable="true" />
+            <TextView android:textColor="@color/gray" android:id="@id/umeng_fb_reply_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/umeng_fb_reply_date_default" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="1.0px" />
+</RelativeLayout>

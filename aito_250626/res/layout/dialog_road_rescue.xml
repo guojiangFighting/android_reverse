@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/font12" android:layout_marginEnd="@dimen/font12" app:cardCornerRadius="@dimen/hwlistpattern_seekbar_margin_20" app:hwAdvancedCardViewClickAnimationEnable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/font24" android:layout_marginEnd="@dimen/font24">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_headline8" android:textColor="@color/emui_text_primary" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/baseui_dp_56" android:text="@string/xcar_app_text_select_road_rescue_phone" android:fontFamily="@string/emui_text_font_family_medium" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rVPhone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center" android:id="@id/hwTVCancel" android:layout_width="match_parent" android:layout_height="@dimen/baseui_dp_56" android:layout_marginTop="@dimen/baseui_dp_8" android:text="@string/xcar_app_button_cancel" style="@style/textColorBlueAndSizeBody1AndMedium" />
+    </LinearLayout>
+</com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>

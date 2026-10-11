@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Előretekerés %d másodperccel</item>
+        <item quantity="other">Előretekerés %d másodperccel</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Visszatekerés %d másodperccel</item>
+        <item quantity="other">Visszatekerés %d másodperccel</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d új értesítés</item>
+        <item quantity="other">%d új értesítés</item>
+    </plurals>
+    <plurals name="page_progress">
+        <item quantity="one">%1$d. oldal</item>
+        <item quantity="other">%1$d. oldal</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="one">%d csillag</item>
+        <item quantity="other">%d csillag</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="one">/%1$d</item>
+        <item quantity="other">/%1$d</item>
+    </plurals>
+</resources>

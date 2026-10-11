@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/hwsubheader_layout_background" android:background="@color/emui_color_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/hwsubheader_item_single_min_height" android:paddingStart="@dimen/emui_dimens_default_start" android:paddingEnd="@dimen/hwsubheader_action_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/hwsubheader_padding_s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/hwsubheader_margin_s">
+        <com.huawei.uikit.phone.hwspinner.widget.HwSpinner android:gravity="center_vertical" android:layout_gravity="start" android:id="@id/hwsubheader_spinner_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_medium" />
+    </LinearLayout>
+    <com.huawei.uikit.phone.hwbutton.widget.HwButton android:textSize="@dimen/emui_text_size_body2" android:ellipsize="end" android:id="@id/hwsubheader_action_right" android:layout_width="wrap_content" android:layout_height="@dimen/hwsubheader_action_height" android:layout_marginBottom="@dimen/hwsubheader_action_outline_space" android:maxLines="2" android:fontFamily="@string/emui_text_font_family_medium" android:paddingStart="@dimen/hwsubheader_action_padding" android:paddingEnd="@dimen/hwsubheader_action_padding" style="@style/Widget.Emui.HwButton.Borderless" />
+</LinearLayout>

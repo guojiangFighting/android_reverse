@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwbubblelayout.widget.HwBubbleLayout android:id="@id/bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" app:hwArrowDirection="top" app:hwArrowStartLocation="positive" style="@style/Widget.Emui.HwBubbleLayout">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="@color/white" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/font16" android:layout_marginVertical="@dimen/font12" android:lineHeight="@dimen/font19" />
+    </com.huawei.uikit.phone.hwbubblelayout.widget.HwBubbleLayout>
+</FrameLayout>

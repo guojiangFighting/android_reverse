@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/hotpot_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/bar_title" android:background="@color/colorPrimary" android:paddingLeft="15.0dp" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:layout_alignParentTop="true">
+        <TextView android:textSize="14.0sp" android:textColor="@drawable/white_color_selector" android:id="@id/bar_top_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地区" android:drawableRight="@drawable/pull_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/bar_top_right" android:background="@drawable/search_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/rg_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_toLeftOf="@id/bar_top_right" android:layout_toRightOf="@id/bar_top_city" android:layout_centerVertical="true">
+            <RadioButton android:id="@id/rb_bar_recommend" android:background="@drawable/rb_border_left_selector" android:checked="true" android:text="@string/bar_recommend" style="@style/BarRadiobuttonStyle" />
+            <RadioButton android:id="@id/rb_bar_welfare" android:background="@drawable/rb_border_right_selector" android:text="@string/bar_welfare" style="@style/BarRadiobuttonStyle" />
+        </RadioGroup>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/view_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/bar_title" />
+</RelativeLayout>

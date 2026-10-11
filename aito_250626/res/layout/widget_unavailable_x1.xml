@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/widget_rda_unavailable" android:background="@drawable/background_white_radius_8_x1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" android:layout_alignParentStart="true">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="24.0dp" android:layout_marginStart="24.0dp">
+            <TextView android:textSize="@dimen/text_size_common_24" android:typeface="sans" android:textStyle="bold" android:textColor="@color/x1_black" android:gravity="start|center" android:layout_gravity="center_vertical" android:id="@id/rda_unavailable_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rda_unavailable_title" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/bluetooth_connect_icon_warn" android:layout_width="24.0dp" android:layout_height="wrap_content" android:src="@drawable/icon_bluetooth_connected" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_common_14" android:typeface="sans" android:textStyle="normal" android:textColor="@color/x1_grey" android:gravity="start" android:layout_gravity="start|center" android:id="@id/rda_unavailable_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="24.0dp" android:text="@string/rda_unavailable_msg_v1" android:layout_marginStart="24.0dp" android:layout_marginEnd="18.0dp" />
+    </LinearLayout>
+</RelativeLayout>

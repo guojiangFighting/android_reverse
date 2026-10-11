@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/emui_corner_radius_button_small" />
+            <solid android:color="@color/hwbutton_selector_color_default_emui" />
+        </shape>
+    </item>
+    <item>
+        <selector android:enterFadeDuration="@integer/hwanimations_hover_animation_duration" android:exitFadeDuration="@integer/hwanimations_hover_animation_duration">
+            <item android:state_pressed="true" android:drawable="@drawable/hwbutton_default_small_emui_pressed_layer" />
+            <item android:drawable="@android:color/transparent" />
+        </selector>
+    </item>
+</layer-list>

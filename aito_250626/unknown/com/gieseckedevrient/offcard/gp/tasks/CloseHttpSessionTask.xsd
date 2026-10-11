@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0" elementFormDefault="qualified">
+    <complexType name="CloseHttpSessionTaskType">
+        <attribute name="Name" type="string" use="optional"/>
+    </complexType>
+</schema>

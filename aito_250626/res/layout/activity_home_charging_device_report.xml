@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/id_fa_color_sub_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <app.huawei.auto.base.view.StatusBarView android:id="@id/status_bar_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_gravity="center" android:id="@id/device_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_below="@id/status_bar_view" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" app:cardBackgroundColor="@color/emui_card_panel_bg" app:cardCornerRadius="@dimen/emui_corner_radius_large" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <RelativeLayout android:paddingLeft="@dimen/font12" android:paddingTop="@dimen/font4" android:paddingRight="@dimen/font12" android:paddingBottom="@dimen/font4" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/device_fault_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:text="@string/xcar_app_text_home_charge_fault_log" style="@style/textColorPrimaryAndSizeBody1AndFamilyMedium" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/txt_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginBottom="@dimen/font12" android:text="@string/xcar_app_text_latest_fault_query_tip" android:layout_below="@id/device_fault_log" style="@style/textColorSecondaryAndSizeBody2" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/iamge_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hwsubheader_ic_public_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:alpha="0.4" />
+        </RelativeLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    <include android:id="@id/loadding_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/xcar_charging_hub_loadding_view" />
+</RelativeLayout>

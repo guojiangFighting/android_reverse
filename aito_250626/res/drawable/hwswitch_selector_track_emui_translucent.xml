@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/hwswitch_cheked_disable_emui_translucent" />
+    <item android:state_enabled="false" android:state_checked="false" android:drawable="@drawable/hwswitch_unchecked_disable_emui_translucent" />
+    <item android:state_checked="true" android:id="@id/switch_checked_translucent" android:drawable="@drawable/hwswitch_checked_bg_translucent" />
+    <item android:id="@id/switch_unchecked_translucent" android:drawable="@drawable/hwswitch_unchecked_bg_translucent" />
+    <transition android:drawable="@drawable/hwswitch_track_off2on_translucent" android:toId="@id/switch_checked_translucent" android:fromId="@id/switch_unchecked_translucent" />
+    <transition android:drawable="@drawable/hwswitch_track_on2off_translucent" android:toId="@id/switch_unchecked_translucent" android:fromId="@id/switch_checked_translucent" />
+</animated-selector>

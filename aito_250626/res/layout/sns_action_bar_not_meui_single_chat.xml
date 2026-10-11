@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rel_main" android:layout_width="match_parent" android:layout_height="@dimen/sns_list_height_56"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/sns_action_bar_start_layout" android:background="@drawable/hwappbarpattern_selector_item_bg" android:layout_width="@dimen/sns_list_height_48" android:layout_height="@dimen/sns_list_height_48" android:layout_centerVertical="true" android:contentDescription="@string/xcar_app_button_back" android:layout_marginStart="@dimen/sns_common_margin_8dp" android:layout_marginEnd="4.0dp" android:layout_alignParentStart="true">
+        <ImageView android:id="@id/sns_action_bar_start_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/back" android:tint="@color/appgallery_text_color_primary" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/sns_action_bar_middle_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/sns_action_bar_end_layout" android:layout_toRightOf="@id/sns_action_bar_start_layout" android:layout_centerVertical="true" android:layout_toStartOf="@id/sns_action_bar_end_layout" android:layout_toEndOf="@id/sns_action_bar_start_layout">
+        <LinearLayout android:orientation="vertical" android:id="@id/sns_single_chat_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/sns_toolbar_menu_padding" android:textColor="@color/emui_color_text_primary" android:ellipsize="middle" android:id="@id/sns_chat_user_name" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dp" android:singleLine="true" android:fontFamily="@string/emui_text_font_family_medium" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/sns_color_text_primary" android:ellipsize="middle" android:gravity="center_horizontal" android:id="@id/sns_chat_group_nike_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxEms="20" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/sns_single_chat_isSilence" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_ic_ring_off" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/sns_action_bar_end_layout" android:background="@drawable/hwappbarpattern_selector_item_bg" android:layout_width="@dimen/sns_list_height_48" android:layout_height="@dimen/sns_list_height_48" android:layout_centerVertical="true" android:contentDescription="@string/xcar_app_text_sns_single_chat_info" android:layout_marginEnd="@dimen/sns_popview_margin_12" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/sns_action_bar_end_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+    </LinearLayout>
+</RelativeLayout>

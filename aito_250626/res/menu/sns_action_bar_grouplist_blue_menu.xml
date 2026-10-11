@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/sns_add_selector" android:id="@id/menu_add_group" android:title="@string/xcar_app_text_sns_build_group" android:showAsAction="always" android:iconTint="@color/sns_color_primary" />
+</menu>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/video_show_back" android:background="@color/black" android:layout_width="match_parent" android:layout_height="640.0dp">
+        <app.huawei.auto.base.view.video.VideoPlayerView android:layout_gravity="center" android:id="@id/video_play_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:player_layout_id="@layout/exo_play_view_choose_frame" />
+    </FrameLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/font40" android:layout_marginBottom="@dimen/font24" android:layout_above="@id/setting_cardview" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+        <ImageView android:id="@id/video_pause_button" android:visibility="visible" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:src="@drawable/ic_exo_play" />
+        <ImageView android:id="@id/video_play_button" android:visibility="gone" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:src="@drawable/ic_exo_pause" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="@dimen/font14" android:textColor="@color/white" android:id="@id/video_position_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_default_time_show" />
+            <TextView android:textSize="@dimen/font14" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" />
+            <TextView android:textSize="@dimen/font14" android:id="@id/vidoe_duration_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_default_time_show" style="@style/ExoMediaDuration" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/title_bar" android:layout_width="match_parent" android:layout_height="@dimen/font48">
+        <ImageView android:id="@id/cancel_page" android:layout_width="@dimen/font48" android:layout_height="match_parent" android:src="@drawable/ic_public_cancel_dark" android:scaleType="centerInside" android:layout_centerVertical="true" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/finish_page_ok" android:layout_width="@dimen/font48" android:layout_height="@dimen/font48" android:src="@drawable/ic_public_ok_dark" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/font6_5" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/setting_cardview" android:background="@drawable/video_frame_card_shape" android:layout_width="match_parent" android:layout_height="176.0dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/select_video_frame" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.huawei.uikit.phone.hwsubtab.widget.HwSubTabWidget android:id="@id/select_subTabLayout_video" android:background="@android:color/transparent" android:clickable="false" android:layout_width="match_parent" android:layout_height="@dimen/font56" app:hwSubTabItemMargin="@dimen/font21" app:hwSubTabItemTextSize="@dimen/font16" style="@style/Widget.Emui.HwSubTabBar.Light" />
+            <app.huawei.auto.community.views.NoMoveViewPager android:id="@id/select_viewPagerLayout_video" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/video_frame_setting" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="@dimen/dp_96" android:layout_height="@dimen/dp_96" android:layout_marginTop="@dimen/font40" android:layout_centerHorizontal="true" app:cardCornerRadius="@dimen/font12">
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/video_frame_setting_image" android:layout_width="@dimen/dp_96" android:layout_height="@dimen/dp_96" android:src="@color/black" android:scaleType="centerCrop" />
+                <View android:background="@color/show_color" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.huawei.uikit.hwtextview.widget.HwTextView android:textColor="@color/emui_text_primary_inverse" android:id="@id/video_frame_setting_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_button_setting" style="@style/textColorPrimaryAndSizeBody2AndFamilyRegular" />
+                    <com.huawei.uikit.hwtextview.widget.HwTextView android:textColor="@color/emui_text_primary_inverse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_front_cover" style="@style/textColorPrimaryAndSizeBody2AndFamilyRegular" />
+                </LinearLayout>
+            </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

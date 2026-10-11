@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/share_charging_root_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#191b1e" android:paddingTop="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/user_avatars_image" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginLeft="16.0dp" android:src="@drawable/mine_portrait" android:scaleType="fitCenter" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="20.0dp" android:textColor="#ffffff" android:ellipsize="end" android:id="@id/user_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="16.0dp" android:maxLines="1" android:fontFamily="@string/emui_text_font_family_medium" android:lineHeight="27.0dp" />
+    </LinearLayout>
+    <RelativeLayout android:background="#191b1e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/driving_report_share_bg" android:scaleType="centerInside" android:layout_alignParentTop="true" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/driving_report_content_bg" android:background="@drawable/driving_report_activity_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="126.0dp" android:layout_alignParentTop="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/driving_report_content" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="166.0dp" android:paddingHorizontal="@dimen/font16">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font30" android:textStyle="bold" android:textColor="@color/emui_primary_inverse" android:gravity="center" android:id="@id/charge_poster_title_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xcar_app_text_charging_statistic" style="@style/driving_report_callout_tv_style" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:textColor="#99ffffff" android:gravity="center" android:id="@id/tv_day_interval" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" style="@style/driving_report_callout_tv_style" />
+            <include layout="@layout/charging_statistic_data_view" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center" android:id="@id/charge_eb_img" android:layout_width="100.0dp" android:layout_height="15.0dp" android:layout_marginTop="24.0dp" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="@color/color_driving_report_white_alph30" android:layout_gravity="center" android:id="@id/tv_dr_statistics_tip" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/xcar_app_text_full_week_statistics_tip" style="@style/driving_report_callout_tv_style" />
+        </LinearLayout>
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

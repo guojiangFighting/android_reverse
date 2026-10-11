@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/act_base_color" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvRight" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font16" android:overScrollMode="never" />
+    <include android:id="@id/no_rights" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/no_owner_rights" />
+    <include android:id="@id/rights_activate_progress_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/rights_activate_load_view" />
+    <include android:id="@id/exclusive_rights_title" layout="@layout/mine_hwappbarpattern_navigation_title_layout" />
+</RelativeLayout>

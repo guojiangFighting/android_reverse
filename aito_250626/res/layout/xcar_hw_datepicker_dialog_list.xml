@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/font48"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/layout_text" android:layout_width="wrap_content" android:layout_height="@dimen/font48">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_gravity="center_vertical" android:id="@id/date_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_monday" />
+    </LinearLayout>
+    <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/date_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="style/Widget.Emui.CheckBox.Large" />
+</RelativeLayout>

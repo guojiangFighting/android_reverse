@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="#f1f3f5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/list_container" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toTopOf="@id/add_invoice_title_btn" app:layout_constraintTop_toBottomOf="@id/top_space">
+        <com.huawei.uikit.hwrecyclerview.widget.HwRecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <app.huawei.auto.base.view.StatusBarView android:id="@id/top_space" android:background="#f1f3f5" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_content_view" android:background="#f1f3f5" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/icon_no_invoice_content_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_no_invoice_content" />
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="14.0dp" android:textColor="#99000000" android:id="@id/icon_no_invoice_content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:text="@string/xcar_app_text_icon_no_invoice_content" />
+    </LinearLayout>
+    <com.huawei.uikit.phone.hwbutton.widget.HwButton android:gravity="center" android:id="@id/add_invoice_title_btn" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="@dimen/baseui_dp_16" android:layout_marginBottom="@dimen/font16" android:text="@string/xcar_app_button_add_title_invoice_list" android:layout_marginStart="90.0dp" android:layout_marginEnd="90.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/list_container" style="@style/Widget.Emui.HwButton.Emphasize" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rel_main" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/sns_revoke_message_dialog_dark_bg" android:layout_width="140.0dp" android:layout_height="140.0dp" android:layout_centerInParent="true" android:alpha="0.95">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.huawei.uikit.phone.hwprogressbar.widget.HwProgressBar android:layout_gravity="center_horizontal" android:id="@id/progressBar" android:layout_width="@dimen/sns_list_height_56" android:layout_height="@dimen/sns_list_height_56" app:hwFillColor="@color/sns_emui_white" style="@style/Widget.Emui.HwAdvancedCardView.Light" />
+            <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/appgallery_text_size_body2" android:textColor="@color/emui_text_secondary_inverse" android:ellipsize="marquee" android:layout_gravity="center_horizontal" android:id="@id/text_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_feedback_sdk_common_12dp" android:text="@string/xcar_app_text_sns_recalling_message" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginStart="@dimen/sns_common_margin_8dp" android:layout_marginEnd="@dimen/sns_common_margin_8dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

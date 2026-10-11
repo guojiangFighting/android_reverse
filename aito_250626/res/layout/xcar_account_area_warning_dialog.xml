@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/loading_view" android:background="@color/id_fa_color_sub_background" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/font24" android:paddingEnd="@dimen/font24"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="56.0dp" android:text="@string/xcar_app_dialog_title_hint" style="@style/textColorPrimaryAndSizeHeadline8AndMedium" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xcar_app_text_account_area_warn_tip" style="@style/textColorPrimaryAndSizeCaptionAndFamilyRegular" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" style="@style/textColorSecondaryAndSizeOverLineAndFamilyRegular" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center" android:id="@id/tv_know" android:layout_width="match_parent" android:layout_height="@dimen/baseui_dp_40" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:text="@string/xcar_app_button_knowed" android:layout_below="@id/tv_content" style="@style/textColorLinkAndCaptionAndFamilyMedium" />
+</LinearLayout>

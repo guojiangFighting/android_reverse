@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/baseui_dp_6" android:width="@dimen/baseui_dp_6" />
+    <corners android:radius="@dimen/baseui_dp_6" />
+    <solid android:color="@color/color_red_point" />
+</shape>

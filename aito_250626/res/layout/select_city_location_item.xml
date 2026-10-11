@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/city_item_hint_tv" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前城市" />
+    <com.huawei.ads.uavp.sdksource.widget.DrawableTextView android:textSize="14.0dp" android:textColor="#0a59f7" android:id="@id/cur_city_name_tv" android:background="@drawable/svg_bg_cur_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="上海" android:drawablePadding="2.0dp" android:paddingHorizontal="16.0dp" android:paddingVertical="5.0dp" />
+</LinearLayout>

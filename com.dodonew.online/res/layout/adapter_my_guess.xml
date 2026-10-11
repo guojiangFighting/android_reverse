@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/option_txt_color" android:id="@id/tv_myguess_game" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.3" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/option_txt_color" android:id="@id/tv_myguess_team" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.5" />
+            <TextView android:gravity="right" android:id="@id/tv_myguess_status" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.2" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+            <TextView android:text="时间:" style="@style/GrayTextStyle" />
+            <TextView android:id="@id/tv_myguess_order_time" android:layout_marginLeft="10.0dp" style="@style/GrayTextStyle" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+            <TextView android:id="@id/tv_myguess_my_result_label" android:text="我猜:" style="@style/GrayTextStyle" />
+            <TextView android:id="@id/tv_myguess_my_result" android:layout_marginLeft="10.0dp" android:layout_toRightOf="@id/tv_myguess_my_result_label" style="@style/GrayTextStyle" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_below="@id/tv_myguess_my_result_label">
+                <TextView android:id="@id/tv_myguess_result_label" android:text="开奖:" style="@style/GrayTextStyle" />
+                <TextView android:id="@id/tv_myguess_result" android:layout_marginLeft="10.0dp" style="@style/GrayTextStyle" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_myguess_result_status" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

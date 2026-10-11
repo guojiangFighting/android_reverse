@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwsubheader.widget.HwSubHeader android:id="@id/sub" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:layout_marginBottom="@dimen/font4">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="#606162" android:gravity="center_vertical" android:id="@id/details_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hwsubheader_margin_safety_top" android:layout_marginBottom="@dimen/hwsubheader_padding_bottom" style="@style/textColorAndSizeSubtitle3AndFamilyMedium" />
+    </com.huawei.uikit.phone.hwsubheader.widget.HwSubHeader>
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/sub" app:cardCornerRadius="@dimen/emui_corner_radius_card" app:contentPaddingBottom="@dimen/font4" app:contentPaddingTop="@dimen/font4" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.huawei.uikit.hwrecyclerview.widget.HwRecyclerView android:orientation="vertical" android:id="@id/change_privacy_statement_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+        </LinearLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

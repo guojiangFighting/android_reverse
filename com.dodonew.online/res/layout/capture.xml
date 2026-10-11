@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/preview_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.dodonew.online.widget.zxing.ViewfinderView android:id="@id/viewfinder_view" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="14.0sp" android:layout_gravity="center|bottom" android:id="@id/status_view" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

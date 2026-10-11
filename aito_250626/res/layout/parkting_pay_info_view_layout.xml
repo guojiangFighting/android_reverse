@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="bottom" android:id="@id/order_info_title" android:paddingTop="@dimen/baseui_dp_8" android:paddingBottom="@dimen/baseui_dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/hwsubheader_item_single_min_height" android:text="@string/xcar_app_text_pay_info" style="@style/textColorPrimaryAndSizeBody1AndMedium" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/pay_info_recycler" android:focusable="false" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</merge>

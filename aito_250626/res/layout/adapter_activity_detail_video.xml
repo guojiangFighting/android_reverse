@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/detail_video" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/content_pic_cv" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/video_cover_image_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/image_video" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:src="@drawable/icon_play" app:layout_constraintBottom_toBottomOf="@id/video_cover_image_view" app:layout_constraintEnd_toEndOf="@id/video_cover_image_view" app:layout_constraintStart_toStartOf="@id/video_cover_image_view" app:layout_constraintTop_toTopOf="@id/video_cover_image_view" />
+        <FrameLayout android:id="@id/activity_video" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

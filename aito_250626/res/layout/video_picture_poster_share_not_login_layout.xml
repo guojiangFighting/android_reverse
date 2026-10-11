@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:background="@color/act_base_color" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/iv_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <RelativeLayout android:id="@id/layout_tou" android:layout_width="wrap_content" android:layout_height="@dimen/dp_104" android:layout_below="@id/iv_img">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/iv_vedeo_picture_qr_code" android:layout_width="@dimen/font56" android:layout_height="@dimen/font56" android:layout_marginLeft="@dimen/font16" android:layout_marginTop="@dimen/font24" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font29" android:layout_toRightOf="@id/iv_vedeo_picture_qr_code">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_primary" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_brand_eng" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginStart="@dimen/font16" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/emui_color_secondary" android:id="@id/tv_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_press_qrcode_to_check_detail" android:layout_below="@id/title" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginStart="@dimen/font16" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_header" android:layout_width="@dimen/font42" android:layout_height="@dimen/font42" android:layout_marginTop="@dimen/font31" android:layout_marginRight="@dimen/font16" android:src="@drawable/ic_logo_poster" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

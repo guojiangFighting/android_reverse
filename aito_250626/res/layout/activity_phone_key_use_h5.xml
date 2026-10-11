@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/emui_color_subbg" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/user_key_setting_title" android:layout_width="match_parent" android:layout_height="@dimen/hwappbarpattern_height" android:layout_marginStart="-8.0dp" layout="@layout/hwappbarpattern_title_item_layout" />
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font18" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_subtitle2" android:textColor="@color/emui_text_primary" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:fontFamily="@string/emui_text_font_family_medium" />
+            <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font24" app:cardCornerRadius="@dimen/font16" app:hwAdvancedCardViewClickAnimationEnable="false">
+                <com.huawei.uikit.hwrecyclerview.widget.HwRecyclerView android:id="@id/Hfive_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/font16" android:layout_marginStart="@dimen/font12" android:layout_marginEnd="@dimen/font12" />
+            </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

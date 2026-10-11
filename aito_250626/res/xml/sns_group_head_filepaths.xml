@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <authority name="${applicationId}.sns.fileprovider">
+        <external-cache-path name="sns_cache" path="audio_cache" />
+        <external-files-path name="sns_file" path="Huawei" />
+        <external-files-path name="sns_file_image" path="image" />
+    </authority>
+</paths>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:interpolator="@interpolator/cubic_bezier_interpolator_type_20_90" android:ordering="sequentially"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="together">
+        <objectAnimator android:duration="1" android:valueFrom="M0.48,0.28 a0.20,0.20 0 0 1 0,0.40 a0.20,0.20 0 0 1 0,-0.40 v0.20 a0,0 0 0 0 0,0 a0,0 0                                0 0 0,0z" android:valueTo="M0.48,0.28 a0.20,0.20 0 0 1 0,0.40 a0.20,0.20 0 0 1 0,-0.40 v0.20 a0,0 0 0 0 0,0 a0,0 0 0                              0 0,0z" android:valueType="pathType" android:propertyName="pathData" />
+        <objectAnimator android:duration="@integer/hwradiobutton_animation_duration" android:valueFrom="@color/emui_accent_translucent" android:valueTo="@color/emui_switch_outline_off_translucent" android:propertyName="fillColor" />
+    </set>
+    <objectAnimator android:duration="@integer/hwradiobutton_animation_duration" android:valueFrom="M0.48,0.28 a0.20,0.20 0 0 1 0,0.40 a0.20,0.20 0 0 1 0,-0.40 v0.20 a0,0 0 0 0 0,0 a0,0 0 0 0                            0,0z" android:valueTo="M0.48,0.28 a0.20,0.20 0 0 1 0,0.40 a0.20,0.20 0 0 1 0,-0.40 v0.02 a0.18,0.18 0 0 0 0,0.36                          a0.18,0.18 0 0 0 0,-0.36z" android:valueType="pathType" android:propertyName="pathData" />
+</set>

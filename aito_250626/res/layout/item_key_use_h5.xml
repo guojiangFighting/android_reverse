@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_toggle" android:id="@id/h5rcy_txt" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:fontFamily="@string/emui_text_font_family_medium" />
+    <com.huawei.uikit.hwimageview.widget.HwImageView android:layout_gravity="center_horizontal" android:id="@id/h5rcy_img" android:background="@drawable/key_use_shape_h5" android:padding="@dimen/font1" android:visibility="visible" android:layout_width="204.0dp" android:layout_height="408.0dp" android:layout_marginTop="@dimen/font12" app:hwClipToOutline="true" />
+</LinearLayout>

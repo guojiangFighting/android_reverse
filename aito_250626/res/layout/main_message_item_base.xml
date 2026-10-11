@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout0" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="end" android:id="@id/msg_server_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_system_notice" android:maxLines="1" android:layout_marginEnd="@dimen/font16" android:layout_toStartOf="@id/tv_time_notice0" android:layout_alignParentStart="true" style="@style/textColorPrimaryAndSizeBody1AndFamilyRegular" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="@color/new_emui_text_tertiary" android:id="@id/tv_time_notice0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/textColorTertiaryAndTextSizeBody3AndFamilyRegular" />
+    </RelativeLayout>
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="@color/emui_color_secondary" android:ellipsize="end" android:id="@id/msg_server_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2" android:maxLines="1" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+</LinearLayout>

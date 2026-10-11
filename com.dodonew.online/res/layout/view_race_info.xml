@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/view_race" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_race_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="S5八强赛 11:00" android:singleLine="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="18.0sp" android:id="@id/tv_race_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1:1" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0sp" android:id="@id/tv_race_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在进行中" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

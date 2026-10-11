@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/container" android:background="@color/emui_color_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout android:id="@id/refresh_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font56">
+        <com.huawei.uikit.phone.hwrecyclerview.widget.HwRecyclerView android:id="@id/topic_list_hrv" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" android:paddingHorizontal="@dimen/font16" />
+    </com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout>
+    <RelativeLayout android:id="@id/sort_container" android:background="@color/white" android:paddingBottom="@dimen/font16" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/font56" android:paddingHorizontal="@dimen/font16">
+        <RadioGroup android:orientation="horizontal" android:id="@id/radio_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24">
+            <RadioButton android:textSize="@dimen/font12" android:textColor="@color/emui_color_primary" android:gravity="center" android:id="@id/sort_default" android:background="@drawable/checkbox_selector" android:layout_width="@dimen/font72" android:layout_height="@dimen/font28" android:checked="true" android:button="@null" android:text="@string/xcar_app_text_comprehensive_sorting" />
+            <RadioButton android:textSize="@dimen/font12" android:textColor="@color/emui_color_primary" android:gravity="center" android:id="@id/sort_by_time" android:background="@drawable/checkbox_selector" android:layout_width="@dimen/font72" android:layout_height="@dimen/font28" android:button="@null" android:text="@string/xcar_app_text_sort_by_release_time" android:layout_marginStart="@dimen/font8" />
+            <RadioButton android:textSize="@dimen/font12" android:textColor="@color/emui_color_primary" android:gravity="center" android:id="@id/sort_by_count" android:background="@drawable/checkbox_selector" android:layout_width="@dimen/font72" android:layout_height="@dimen/font28" android:button="@null" android:text="@string/xcar_app_text_sort_by_join_count" android:layout_marginStart="@dimen/font8" />
+        </RadioGroup>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/font8" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:layout_alignParentBottom="true">
+            <com.huawei.uikit.phone.hwbutton.widget.HwButton android:textColor="#0a59f7" android:id="@id/cancel" android:background="@drawable/hwbutton_witeh" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/xcar_app_button_cancel" android:layout_weight="1.0" style="@style/Widget.Emui.HwButton.Emphasize.Translucent" />
+            <com.huawei.uikit.phone.hwbutton.widget.HwButton android:id="@id/confirm" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/xcar_app_button_ok" android:layout_weight="1.0" android:layout_marginStart="@dimen/font12" style="@style/Widget.Emui.HwButton.Emphasize.Light" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@id/top_container" layout="@layout/topic_search_layout" />
+    <include android:id="@id/search_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/font56" android:layout_marginHorizontal="@dimen/font16" layout="@layout/search_top_layout" />
+</RelativeLayout>

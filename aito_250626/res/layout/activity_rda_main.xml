@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/epa_context" android:background="@color/ads_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/epa_car_video" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:id="@id/epa_car_ani" android:background="@color/ads_background" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" />
+    <FrameLayout android:id="@id/epa_state_tips_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" />
+    <include layout="@layout/epa_top" />
+    <LinearLayout android:gravity="center" android:layout_width="58.0dp" android:layout_height="58.0dp" android:layout_marginTop="39.0dp" android:layout_marginEnd="@dimen/ads_margin" android:layout_alignParentEnd="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.huawei.ads.ddi.dialog.ui.DdiButton android:id="@id/epa_ddi_button" android:background="@drawable/background_back_radius" android:layout_width="48.0dp" android:layout_height="48.0dp" android:elevation="5.0dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

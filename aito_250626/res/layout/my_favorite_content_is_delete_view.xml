@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="@dimen/dp_64" android:layout_height="@dimen/dp_64" android:src="@drawable/icon_mine_empty" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:textColor="@color/textColorTertiary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:text="@string/xcar_app_toast_content_is_delete" android:fontFamily="@string/emui_text_font_family_regular" />
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/font12" />
+</LinearLayout>

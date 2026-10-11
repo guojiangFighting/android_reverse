@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/hwswitch_cheked_disable_emui_dark" />
+    <item android:state_enabled="false" android:state_checked="false" android:drawable="@drawable/hwswitch_unchecked_disable_emui_dark" />
+    <item android:state_checked="true" android:id="@id/switch_checked_dark" android:drawable="@drawable/hwswitch_checked_bg_dark" />
+    <item android:id="@id/switch_unchecked_dark" android:drawable="@drawable/hwswitch_unchecked_bg_dark" />
+    <transition android:drawable="@drawable/hwswitch_track_off2on_dark" android:toId="@id/switch_checked_dark" android:fromId="@id/switch_unchecked_dark" />
+    <transition android:drawable="@drawable/hwswitch_track_on2off_dark" android:toId="@id/switch_unchecked_dark" android:fromId="@id/switch_checked_dark" />
+</animated-selector>

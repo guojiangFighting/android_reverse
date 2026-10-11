@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/hwdialogpattern_padding_horizontal" android:paddingEnd="@dimen/hwdialogpattern_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="0.0dp" android:layout_height="@dimen/hwdialogpattern_padding_top" />
+    <com.huawei.uikit.phone.hwedittext.widget.HwEditText android:gravity="center_vertical" android:id="@id/hwdialogpattern_input1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hwdialogpattern_edittext_magin_horizontal" android:layout_marginBottom="@dimen/hwdialogpattern_edittext_magin_horizontal" style="@style/Widget.Emui.HwEditText.Linear" />
+    <com.huawei.uikit.phone.hwedittext.widget.HwEditText android:gravity="center_vertical" android:id="@id/hwdialogpattern_input2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hwdialogpattern_edittext_magin_horizontal" android:layout_marginBottom="@dimen/hwdialogpattern_edittext_magin_horizontal" style="@style/Widget.Emui.HwEditText.Linear" />
+    <Space android:layout_width="0.0dp" android:layout_height="@dimen/hwdialogpattern_padding_bottom" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingRight="@dimen/font16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/font16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.hwprogressbar.widget.HwProgressBar android:layout_gravity="end" android:id="@id/chat_pic_progress" android:visibility="gone" android:layout_width="@dimen/font32" android:layout_height="@dimen/font32" android:layout_centerVertical="true" style="@style/Widget.Emui.HwProgressBar.Large" />
+    <ImageView android:layout_gravity="end" android:id="@id/chat_message_repeat_btn" android:background="@color/act_base_color" android:padding="4.0dp" android:visibility="gone" android:layout_width="@dimen/font32" android:layout_height="@dimen/font32" android:src="@drawable/sns_list_sms_failed" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+    <ImageView android:layout_gravity="end" android:id="@id/chat_message_unread" android:visibility="gone" android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/sns_ic_dot_unread" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+</RelativeLayout>

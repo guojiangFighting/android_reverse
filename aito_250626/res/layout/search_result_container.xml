@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwrecyclerview.widget.HwRecyclerView android:id="@id/search_result" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" android:paddingStart="@dimen/common_padding" android:paddingEnd="@dimen/common_padding" app:layout_constraintTop_toTopOf="parent" />
+    <ViewStub android:id="@id/empty_view_stub" android:layout="@layout/search_result_empty" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/no_result_view_stub" android:layout="@layout/search_no_result" android:layout_width="match_parent" android:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

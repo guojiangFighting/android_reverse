@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.huawei.auto.base.view.MyRelativeLayout android:id="@id/activity_help_customer" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/my_help_customer_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/my_help_customer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-10.0dp" layout="@layout/hwappbarpattern_title_item_layout" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/my_help_customer_title">
+        <RelativeLayout android:id="@id/help_customer_linear" android:paddingBottom="@dimen/font8" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginLeft="@dimen/font16" android:layout_marginRight="@dimen/font16">
+            <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_text_primary" android:id="@id/hv_textView_question_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_frequently_asked_questions" android:layout_alignParentBottom="true" android:fontFamily="@string/emui_text_font_family_medium" />
+        </RelativeLayout>
+        <app.huawei.auto.mine.ui.activity.StreamView android:id="@id/help_customer_streamview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_marginRight="@dimen/font16" />
+        <View android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="8.0dp" android:layout_marginTop="@dimen/font16" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/customer_loading_layout" android:background="@color/white" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/my_help_customer_title">
+        <com.huawei.uikit.hwprogressbar.widget.HwProgressBar android:layout_width="@dimen/font72" android:layout_height="@dimen/font72" android:layout_above="@id/text_loading" android:layout_centerInParent="true" />
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:id="@id/text_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:text="@string/xcar_app_text_loading" android:layout_centerInParent="true" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+    </RelativeLayout>
+    <include android:id="@id/help_customer_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/my_help_customer_title" android:layout_centerInParent="true" layout="@layout/mine_error_view" />
+</app.huawei.auto.base.view.MyRelativeLayout>

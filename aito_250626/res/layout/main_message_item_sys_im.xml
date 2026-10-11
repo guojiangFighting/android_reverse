@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_root" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relativeLayout" android:clipChildren="false" android:layout_width="@dimen/font48" android:layout_height="@dimen/font48" android:layout_marginTop="@dimen/font12" android:layout_centerHorizontal="true">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_item_system_icon" />
+        <app.huawei.auto.base.view.RedPointTextView android:id="@id/msg_sys_badge" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4.0dp" android:layout_alignParentRight="true" android:layout_marginEnd="-4.0dp" />
+        <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/notice_select_hcb" android:visibility="gone" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/Widget.Emui.HwCheckBox.Small" />
+    </RelativeLayout>
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:ellipsize="end" android:id="@id/msg_server_title" android:layout_width="wrap_content" android:layout_height="@dimen/font40" android:layout_marginTop="@dimen/font12" android:text="@string/xcar_app_text_system_notice" android:maxLines="1" android:layout_below="@id/relativeLayout" android:layout_centerHorizontal="true" style="@style/textColorPrimaryAndSizeBody1AndFamilyRegular" />
+</RelativeLayout>

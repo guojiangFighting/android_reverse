@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">I-fast forward nang %d segundo</item>
+        <item quantity="other">I-fast forward nang %d na segundo</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">I-rewind nang %d segundo</item>
+        <item quantity="other">I-rewind nang %d na segundo</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d bagong notification</item>
+        <item quantity="other">%d na bagong notification</item>
+    </plurals>
+    <plurals name="page_progress">
+        <item quantity="one">Page %1$d</item>
+        <item quantity="other">Page %1$d</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="one">%d bituin</item>
+        <item quantity="other">%d (na) bituin</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="one">ng %1$d</item>
+        <item quantity="other">ng %1$d</item>
+    </plurals>
+</resources>

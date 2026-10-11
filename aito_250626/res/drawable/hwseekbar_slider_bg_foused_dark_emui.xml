@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/hwseekbar_acetate_color" />
+    <size android:height="@dimen/hwseekbar_slider_fouced_bg_height" />
+    <stroke android:width="@dimen/hwseekbar_slider_focused_stroke_width" android:color="@color/emui_control_focused_outline_dark" />
+    <corners android:topLeftRadius="@dimen/hwseekbar_slider_radius_l_12" android:topRightRadius="@dimen/hwseekbar_slider_radius_l_12" android:bottomLeftRadius="@dimen/hwseekbar_slider_radius_l_12" android:bottomRightRadius="@dimen/hwseekbar_slider_radius_l_12" />
+</shape>

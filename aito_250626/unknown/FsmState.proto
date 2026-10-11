@@ -1,0 +1,19 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+option java_package = "com.huawei.ads.rpa.net.proto";
+
+package RtsaMsgs;
+
+message FsmState {
+  uint32 rpaAuthorized = 1;   // 0 未授权，1 授权，apamission=离车即走/rpaselctmode!=0，则表示授权，否则为未授权
+  uint32 rpaState = 2;    // 0:off,1:standby,active,pause,abort,finish
+  uint32 parkingMode = 3;     // 0:None/1:泊入/2:泊出
+  uint32 rdaState = 4;     // 0:off,1:standby,forward,backward,abort,finish
+
+  repeated uint32 funcUnavlReasons = 5;   // 1 FCT_UNAVL_VEHICLE_INACTIVE 类推, 最多19个
+  repeated uint32 funcCnclReasons = 6;    // 1 CNCL_SYSTEM_FAILURE 类推，最多8个
+  repeated uint32 funcPauseReasons = 7;  // 1 STEP_GAS 类推，最多7个
+  uint32 isEpaMode = 8;                  // 0:false 1:true
+  uint32 parkingResult = 9;              // 0:None,1:运行中,2:成功,3:退出
+}

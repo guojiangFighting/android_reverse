@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/hwlistpattern_margin_l" android:paddingBottom="@dimen/hwlistpattern_margin_l" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/hwlistpattern_three_line_height" android:paddingStart="@dimen/emui_dimens_max_start" android:paddingEnd="@dimen/emui_dimens_default_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/hwlistpattern_icon" android:layout_width="@dimen/hwlistpattern_item_left_image_width_64" android:layout_height="@dimen/hwlistpattern_item_left_image_height_64" />
+    <LinearLayout android:gravity="top" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/hwlistpattern_margin_l" android:layout_marginEnd="@dimen/hwlistpattern_margin_m">
+            <TextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_selector_text_primary" android:ellipsize="end" android:id="@id/hwlistpattern_text1" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="@string/emui_text_font_family_regular" android:textDirection="locale" />
+            <TextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_selector_text_secondary" android:id="@id/hwlistpattern_text2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/emui_dimens_text_vertical" android:singleLine="true" android:fontFamily="@string/emui_text_font_family_regular" android:textDirection="locale" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/emui_dimens_text_vertical">
+                <TextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_selector_text_secondary" android:id="@id/hwlistpattern_text3" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:fontFamily="@string/emui_text_font_family_regular" android:textDirection="locale" />
+                <ImageView android:layout_width="@dimen/hwlistpattern_item_icon_right_width_16" android:layout_height="@dimen/hwlistpattern_item_icon_right_height_16" android:src="@drawable/hwlistpattern_arrow_down" android:layout_marginStart="@dimen/hwlistpattern_margin_s" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/hwlistpattern_only_right_button" />
+    </LinearLayout>
+</LinearLayout>

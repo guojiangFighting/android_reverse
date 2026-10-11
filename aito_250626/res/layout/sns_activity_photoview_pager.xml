@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/photoview_all" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <app.huawei.auto.im.ui.widget.SNSViewPager android:id="@id/pager" android:layout_width="match_parent" android:layout_height="match_parent" android:rotation="@integer/sns_viewpager_rotation" />
+    <ImageView android:id="@id/bottom_image_background" android:background="@drawable/sns_photo_pager_shape_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/center_view" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignLeft="@id/center_view" android:layout_alignParentRight="true" android:layout_alignStart="@id/center_view" android:layout_alignParentEnd="true" style="@style/TextContainer">
+        <TextView android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/welcomeLargeTextStyle" />
+        <TextView android:id="@id/description" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/welcomeNormalTextStyle" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/parallax_frame" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignRight="@id/center_view" android:layout_alignParentLeft="true" android:layout_alignEnd="@id/center_view" android:layout_alignParentStart="true" />
+</RelativeLayout>

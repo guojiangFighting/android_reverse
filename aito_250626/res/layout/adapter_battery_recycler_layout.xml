@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/text_layout" android:layout_width="match_parent" android:layout_height="@dimen/font48"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_master_body_1" android:textColor="@color/emui_color_text_primary" android:ellipsize="end" android:gravity="start" android:layout_gravity="center_vertical" android:id="@id/text_monday" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:fontFamily="@string/emui_text_font_family_medium" android:textDirection="locale" app:hwAutoSizeMinTextSize="@dimen/hwtimepicker_alert_dialog_title_min_text_size" app:hwAutoSizeStepGranularity="1.0dp" />
+    <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/checkbox_monday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:translationX="@dimen/font14" android:layout_marginStart="@dimen/font16" />
+    <View android:id="@id/view" android:background="@drawable/ic_horizontal_driver_bg" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" android:alpha="0.2" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/sns_list_height_72" android:paddingStart="@dimen/font16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_head" android:layout_width="@dimen/sns_chat_list_item_business_card_head_size" android:layout_height="@dimen/sns_chat_list_item_business_card_head_size" android:layout_centerVertical="true" />
+    <com.huawei.uikit.hwcheckbox.widget.HwCheckBox android:id="@id/checkbox_status_btn" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/Widget.Emui.HwCheckBox" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/emui_dimens_text_margin_fourth" android:layout_marginBottom="@dimen/emui_dimens_text_margin_fourth" android:layout_centerVertical="true" android:layout_marginStart="@dimen/emui_dimens_element_horizontal_large" android:layout_marginEnd="@dimen/emui_dimens_element_vertical_middle" android:layout_toStartOf="@id/checkbox_status_btn" android:layout_toEndOf="@id/image_head">
+        <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_text_primary" android:ellipsize="end" android:id="@id/txt_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:fontFamily="@string/emui_text_font_family_regular" android:textAlignment="viewStart" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp">
+            <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/emui_color_text_secondary" android:id="@id/subtip_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/emui_color_text_secondary" android:ellipsize="end" android:id="@id/txt_extra" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/bottom_line" android:layout_width="match_parent" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/sns_item_margin_end" android:layout_toEndOf="@id/image_head" android:layout_alignStart="@id/image_head" style="@style/crossuikit_divider_style" />
+</RelativeLayout>

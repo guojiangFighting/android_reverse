@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/hwcheckbox_hovered_bg_small_dark" />
+    <item android:gravity="center">
+        <selector>
+            <item android:state_focused="true" android:state_window_focused="true" android:drawable="@drawable/hwcheckbox_focused_bg_small_dark" />
+        </selector>
+    </item>
+    <item>
+        <animated-selector>
+            <item android:state_enabled="false" android:state_checked="true" android:id="@id/disable_checked" android:drawable="@drawable/hwcheckbox_vector_on_disable_small_dark" />
+            <item android:state_enabled="false" android:state_checked="false" android:id="@id/disable_unchecked" android:drawable="@drawable/hwcheckbox_vector_off_disable_small_dark" />
+            <item android:state_checked="true" android:id="@id/checked" android:drawable="@drawable/hwcheckbox_vector_on_small_dark" />
+            <item android:state_checked="false" android:id="@id/unchecked" android:drawable="@drawable/hwcheckbox_vector_off_small_dark" />
+            <transition android:id="@id/off2on" android:drawable="@drawable/hwcheckbox_off2on_small_dark" android:toId="@id/checked" android:fromId="@id/unchecked" />
+            <transition android:id="@id/on2off" android:drawable="@drawable/hwcheckbox_on2off_small_dark" android:toId="@id/unchecked" android:fromId="@id/checked" />
+        </animated-selector>
+    </item>
+</layer-list>

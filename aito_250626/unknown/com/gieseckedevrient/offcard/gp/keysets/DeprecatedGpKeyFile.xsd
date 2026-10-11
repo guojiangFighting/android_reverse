@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="CommonTypes.xsd"/>
+
+  <xsd:element name="KeySets">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="KeySet" type="GpKeySetType" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:complexType name="GpKeySetType">
+    <xsd:sequence>
+      <xsd:element name="Key" type="GpKeyType" maxOccurs="unbounded"/>
+    </xsd:sequence>
+    <xsd:attributeGroup ref="GpKeySetAttributes"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="GpKeyType">
+    <xsd:sequence>
+      <xsd:element name="KeyComponent" type="GpKeyComponentType" maxOccurs="unbounded"/>
+    </xsd:sequence>
+    <xsd:attributeGroup ref="GpKeyAttributes"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="GpKeyComponentType">
+    <xsd:simpleContent>
+      <xsd:extension base="oct:EncodingHexUnlimitedByte">
+        <xsd:attribute name="Name" type="xsd:string" use="optional"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+
+  <!-- Attribute types -->
+
+  <xsd:attributeGroup name="GpKeyAttributes">
+    <xsd:attribute name="SpecificName" type="xsd:token" use="required"/>
+    <xsd:attribute name="Type" type="xsd:token" use="required"/>
+    <xsd:attribute name="Name" type="xsd:string" use="optional"/>
+  </xsd:attributeGroup>
+  
+  <xsd:attributeGroup name="GpKeySetAttributes">
+    <xsd:attribute name="SpecificName" type="xsd:token" use="required"/>
+    <xsd:attribute name="Version" type="oct:EncodingHex1Byte" use="optional"/>
+    <xsd:attribute name="Index" type="oct:EncodingHex1Byte" use="optional"/>
+    <xsd:attribute name="Aid" type="oct:EncodingAidHex" use="optional"/>
+    <xsd:attribute name="Name" type="xsd:string" use="optional"/>
+  </xsd:attributeGroup>
+
+</xsd:schema>

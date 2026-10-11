@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rpa="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/ads_warning_tips" />
+        <LinearLayout android:orientation="vertical" android:id="@id/two_button_widget_info_and_btn_lv" android:background="@color/base_white" android:paddingTop="16.0dp" android:paddingBottom="40.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/two_button_widget_info_lv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ads_margin" android:layout_marginRight="@dimen/ads_margin">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="16.0dp">
+                    <com.huawei.ads.rpacommon.rpa.ui.rpactrl.CirclePgBar android:id="@id/two_button_widget_progress" android:visibility="gone" android:layout_width="46.0dp" android:layout_height="46.0dp" rpa:ringProgressColor="@color/ads_circle_pg_color" rpa:ringWidth="4.0dp" />
+                    <TextView android:textSize="@dimen/text_size_common_24" android:textStyle="bold" android:textColor="@color/common_black" android:gravity="center" android:id="@id/two_button_widget_status_text" android:visibility="gone" android:layout_width="46.0dp" android:layout_height="46.0dp" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16.0dp" android:typeface="sans" android:textColor="@color/common_black" android:gravity="start" android:id="@id/two_button_widget_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_pause_park" android:textFontWeight="600" />
+                        <ImageView android:id="@id/two_button_widget_bluetooth_status_img" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="10.0dp" android:src="@drawable/icon_bluetooth_connected_common" android:adjustViewBounds="true" android:layout_toRightOf="@id/two_button_widget_title" />
+                        <View android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/two_button_widget_time_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentEnd="true">
+                            <ImageView android:layout_gravity="center_vertical" android:id="@id/two_button_widget_time_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/img_time" />
+                            <TextView android:textSize="@dimen/text_size_common_14" android:typeface="sans" android:textStyle="normal" android:textColor="@color/time_color" android:gravity="start" android:layout_gravity="start|center" android:id="@id/two_button_widget_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/text_size_common_14" android:typeface="sans" android:textStyle="normal" android:textColor="@color/progress_bg_color_common" android:gravity="start" android:id="@id/two_button_widget_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/widget_info_park_pause" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/two_button_widget_left_and_right_lv" android:layout_width="match_parent" android:layout_height="@dimen/ads_rpa_common_two_button_height" android:layout_marginTop="20.0dp" android:paddingStart="@dimen/ads_margin" android:paddingEnd="@dimen/ads_margin">
+                <com.huawei.ads.rpacommon.rpa.ui.rpactrl.pubbtn.StateBtnBase android:gravity="center" android:id="@id/two_button_widget_left_btn" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" rpa:tv_drawable_padding="10.0dp" rpa:tv_textColor="@color/button_blue_common" rpa:tv_text_size="16.0dp" />
+                <View android:layout_width="15.0dp" android:layout_height="1.0dp" />
+                <RelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                    <com.huawei.ads.rpacommon.rpa.ui.rpactrl.pubbtn.StateBtnBase android:gravity="center" android:id="@id/two_button_widget_right_btn" android:background="@drawable/selector_state_btn_enable_common" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentEnd="true" rpa:tv_drawable_padding="10.0dp" rpa:tv_textColor="@color/base_white" rpa:tv_text_size="16.0dp" />
+                    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/two_button_loadingbar" android:background="@drawable/btn_baic_disable" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/two_button_loading_hw" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <RelativeLayout android:id="@id/two_button_loading_parent_lv" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginRight="6.0dp" />
+                            <TextView android:textSize="@dimen/text_size_common_16" android:textColor="#ffffff" android:gravity="start" android:id="@id/two_button_loading_destext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ads_rpa_common_widget_btn_loading" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/two_button_loading_widgets" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ProgressBar android:id="@id/two_button_widget_loading_icon" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginRight="6.0dp" />
+                            <TextView android:textSize="@dimen/text_size_common_16" android:textColor="#ffffff" android:gravity="start" android:id="@id/two_button_widget_loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_btn_changan_loading" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rpa_park_finish_layout_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="24.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

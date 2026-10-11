@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<drawable app:hwHoveredColor="@color/emui_control_hover_translucent" class="com.huawei.uikit.animations.drawable.HwHoverAndPressAnimatedDrawable"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <size android:height="@dimen/hwcheckbox_small_size" android:width="@dimen/hwcheckbox_small_size" />
+    <corners android:radius="@dimen/hwcheckbox_small_radius_size" />
+</drawable>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dp" android:width="24.0dp" android:autoMirrored="true" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/sns_audio_ply_btn_color" android:pathData="M19.2253,14.2929L8.2451,20.5991C7.0478,21.2867 5.5197,20.8736 4.8321,19.6763C4.6145,19.2974 4.5,18.8681 4.5,18.4312L4.5,5.8188C4.5,4.4381 5.6193,3.3188 7,3.3188C7.4369,3.3188 7.8662,3.4333 8.2451,3.6509L19.2253,9.9571C20.4226,10.6447 20.8358,12.1728 20.1481,13.3701C19.9277,13.754 19.6092,14.0724 19.2253,14.2929Z" android:strokeColor="@color/sns_audio_ply_btn_color" android:strokeWidth="1.0" android:fillType="evenOdd" />
+</vector>

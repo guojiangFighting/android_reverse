@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/mine_list_bg" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:paddingStart="8.0dp" android:paddingEnd="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="16.0sp" android:id="@id/security_manager_list_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_event_notification_switch_title" android:layout_centerVertical="true" android:alpha="0.9" style="@style/textSizeBody1AndColorPrimary" />
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/security_manager_list_right_arrow" android:layout_width="12.0dp" android:layout_height="24.0dp" android:src="@drawable/icon_public_arrow_right" android:layout_centerVertical="true" android:alpha="0.2" android:layout_alignParentEnd="true" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_secondary" android:id="@id/my_settings_list_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/security_manager_list_right_arrow" />
+    <View android:id="@id/my_settings_list_line" android:background="#000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" android:alpha="0.2" android:layout_alignStart="@id/security_manager_list_text" android:layout_alignEnd="@id/security_manager_list_right_arrow" />
+</RelativeLayout>

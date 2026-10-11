@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dodonew.online.widget.MultiStateView android:id="@id/msv_guess_detail" android:layout_width="match_parent" android:layout_height="match_parent" app:msv_loadingView="@layout/view_load_web" app:msv_emptyView="@layout/view_empty" app:msv_errorView="@layout/view_error" app:msv_viewState="loading"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dodonew.online.view.RaceView android:id="@id/raceView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <com.dodonew.online.view.GuessDetailView android:id="@id/guessDetailView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/raceView" />
+    </RelativeLayout>
+</com.dodonew.online.widget.MultiStateView>

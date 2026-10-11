@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/ugc_card_cover" android:layout_width="match_parent" android:layout_height="match_parent" app:cardBackgroundColor="@color/ugc_cover_color" app:cardCornerRadius="@dimen/emui_corner_radius_clicked" app:hwAdvancedCardViewClickAnimationEnable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/cover_image_layout" android:visibility="gone" android:clipChildren="false" android:layout_width="@dimen/font46" android:layout_height="match_parent" android:layout_marginStart="@dimen/font8" android:layout_marginEnd="4.0dp">
+            <RelativeLayout android:layout_width="@dimen/font40" android:layout_height="40.0dp" android:layout_centerVertical="true">
+                <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true" app:cardCornerRadius="@dimen/emui_corner_radius_subtab" app:hwAdvancedCardViewClickAnimationEnable="false">
+                    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/cover_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+                </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+                <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/cover_load_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true" app:cardBackgroundColor="@color/fa_color_icon_thirth" app:cardCornerRadius="@dimen/emui_corner_radius_subtab" app:hwAdvancedCardViewClickAnimationEnable="false">
+                    <com.huawei.uikit.phone.hwprogressbar.widget.HwProgressBar android:layout_gravity="center" android:id="@id/cover_wait_progress" android:layout_width="@dimen/dp_15" android:layout_height="@dimen/dp_15" android:layout_centerInParent="true" android:layout_centerHorizontal="true" app:hwFillColor="@color/white" app:hwProgressBarRingTrackColor="@color/video_load_background_color" app:hwProgressBarRingWidth="@dimen/font2" style="@style/Widget.Emui.HwProgressBar.FilledRing" />
+                </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+                <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/cover_error_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:cardBackgroundColor="@color/fa_color_icon_thirth" app:cardCornerRadius="@dimen/emui_corner_radius_subtab" app:hwAdvancedCardViewClickAnimationEnable="false">
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_upload_fail" style="@style/textColorWhiteAndTextSizeDefaultAndFamilyRegular" />
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/xcar_app_text_click_retry" style="@style/textColorWhiteAndTextSizeDefaultAndFamilyRegular" />
+                    </LinearLayout>
+                </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+            </RelativeLayout>
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/cover_delete_image" android:visibility="gone" android:clipChildren="false" android:layout_width="@dimen/font14" android:layout_height="@dimen/font14" android:layout_marginTop="@dimen/font2" android:src="@drawable/ic_public_delete" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center_vertical" android:id="@id/cover_add_image" android:layout_width="@dimen/font16" android:layout_height="@dimen/font16" android:src="@drawable/ic_ugc_title_add" android:layout_marginStart="@dimen/font12" android:layout_marginEnd="@dimen/font8" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_gravity="center_vertical" android:id="@id/cover_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_customize_article_cover_tip" style="@style/textColorSecondaryAndSizeBody2" />
+    </LinearLayout>
+</com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>

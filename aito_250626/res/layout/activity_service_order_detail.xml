@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/booking_details_title" layout="@layout/mine_hwappbarpattern_navigation_icon_layout" />
+    <ScrollView android:id="@id/scroll_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/booking_details_title" android:overScrollMode="never">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font20" android:id="@id/order_state" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:layout_marginBottom="@dimen/font4" android:text="@string/xcar_app_text_completed" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginStart="@dimen/font16" />
+            <app.huawei.auto.mine.view.WorkOrderDetailContainer android:orientation="vertical" android:id="@id/container" android:paddingBottom="@dimen/font24" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/order_state" />
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/evaluation_container" android:background="@color/emui_color_subbg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="88.0dp" android:layout_alignParentBottom="true">
+        <com.huawei.uikit.phone.hwbutton.widget.HwButton android:textSize="@dimen/font16" android:gravity="center" android:id="@id/evaluation" android:layout_width="188.0dp" android:layout_height="@dimen/font40" android:layout_centerInParent="true" style="@style/Widget.Emui.HwButton.Light" />
+    </RelativeLayout>
+    <include android:id="@id/load_progress_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/booking_details_title" layout="@layout/tab_load_view" />
+    <include android:id="@id/network_error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/booking_details_title" layout="@layout/servicer_subscribe_network_errorview" />
+    <include android:id="@id/request_error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/booking_details_title" layout="@layout/servicer_subscribe_message_errorview" />
+</RelativeLayout>

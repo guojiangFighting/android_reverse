@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/grp_mem_change" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/time_line_viewstub" android:layout="@layout/sns_chat_time_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/mem_change_tip_layout" android:background="@color/transparent" android:paddingLeft="@dimen/emui_dimens_text_margin_fifth" android:paddingRight="@dimen/emui_dimens_text_margin_fifth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_marginBottom="@dimen/font4" android:paddingStart="@dimen/emui_dimens_text_margin_fifth" android:paddingEnd="@dimen/emui_dimens_text_margin_fifth" android:layout_marginStart="@dimen/sns_chat_tips_margin" android:layout_marginEnd="@dimen/sns_chat_tips_margin">
+        <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/dp12" android:textColor="@color/emui_color_text_tertiary" android:gravity="start" android:layout_gravity="center_horizontal" android:id="@id/sns_tip_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:breakStrategy="simple" android:hyphenationFrequency="none" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/sns_alertdialog_shape" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:paddingStart="@dimen/font12" android:paddingEnd="@dimen/font12"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/padding_xl" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_subtitle1" android:textColor="@color/emui_color_text_primary" android:gravity="start|center" android:id="@id/sns_custom_dialog_title" android:paddingBottom="@dimen/padding_xl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12" android:fontFamily="sans-serif-medium" android:textDirection="locale" android:layoutDirection="locale" android:breakStrategy="simple" android:hyphenationFrequency="none" />
+        <TextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_text_secondary" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/sns_custom_dialog_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12" android:fontFamily="@string/emui_text_font_family_regular" />
+    </LinearLayout>
+    <View android:id="@id/sns_custom_dialog_horizontal_line" android:visibility="gone" android:layout_width="match_parent" style="@style/crossuikit_divider_style" />
+    <include layout="@layout/sns_custom_button_layout" />
+</LinearLayout>

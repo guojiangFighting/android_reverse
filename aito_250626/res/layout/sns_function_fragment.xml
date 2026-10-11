@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/common_fragment_layout_id" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_root" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/search_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/sns_local_search_layout" />
+        </FrameLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/search_container">
+            <com.huawei.uikit.hwrecyclerview.widget.HwRecyclerView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@id/common_recycleview" android:paddingTop="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:dividerHeight="0.0dp" />
+            <com.huawei.uikit.hwscrollbarview.widget.HwScrollbarView android:id="@id/sns_scrollbar" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/Widget.Emui.HwScrollbarView" />
+        </RelativeLayout>
+        <app.huawei.auto.im.ui.widget.NoNetworkLayout android:id="@id/network_error_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" layout="@layout/sns_search_item" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/sns_black_60_percent" android:id="@id/add_friend_hint" android:paddingTop="12.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sns_common_margin_24" android:layout_marginRight="@dimen/sns_common_margin_24" android:layout_marginStart="@dimen/sns_common_margin_24" android:layout_marginEnd="@dimen/sns_common_margin_24" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/no_search_result_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@id/no_result_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

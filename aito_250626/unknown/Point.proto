@@ -1,0 +1,15 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+package KyberMsgs;
+
+option java_package = "com.huawei.ads.uavp.servicecommon.bean.proto";
+option java_outer_classname = "PbPoint";
+
+message Point {
+    double x = 1;
+    double y = 2;
+    double z = 3;
+    bytes IV = 4;                //random iv
+    bytes encryptXYZ = 5;        //encrypt x,y,z to encryptXYZ 256bit
+}

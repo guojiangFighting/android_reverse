@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_app_domain_white_list">
+        <item>m.vmall.com</item>
+        <item>privacy.consumer.huawei.com</item>
+        <item>tips-drcn.platform.dbankcloud.cn</item>
+        <item>tips-p01-drcn.dbankcdn.cn</item>
+        <item>consumer.huawei.com</item>
+        <item>cloud.huawei.com</item>
+        <item>lbs.amap.com</item>
+        <item>mclient.alipay.com</item>
+        <item>wx.tenpay.com</item>
+        <item>open.alipay.com</item>
+        <item>www.jiguang.cn</item>
+        <item>www.chinaunicom.com</item>
+        <item>auto.huawei.com</item>
+        <item>user.95516.com</item>
+        <item>opendocs.alipay.com</item>
+        <item>www.fmsh.com</item>
+        <item>ihelp.jd.com</item>
+        <item>eid.cn</item>
+        <item>oaid_setting</item>
+        <item>more</item>
+        <item>support.google.com</item>
+        <item>www.huawei.com</item>
+        <item>www.adobe.com</item>
+        <item>help.opera.com</item>
+        <item>support.apple.com</item>
+        <item>support.mozilla.org</item>
+        <item>support.microsoft.com</item>
+        <item>www.aboutcookies.org</item>
+        <item>www.abchina.com</item>
+        <item>m.icbc.com.cn</item>
+        <item>www.cmbchina.com</item>
+        <item>wallet.95516.com</item>
+        <item>render.alipay.com</item>
+        <item>m.weibo.cn</item>
+        <item>privacy.qq.com</item>
+        <item>www.huawei.com</item>
+        <item>aboutcookies.org</item>
+        <item>pay.weixin.qq.com</item>
+        <item>vmall.huisoubao.com</item>
+        <item>vmall-m.aihuisou.com</item>
+        <item>toc.exocr.com</item>
+        <item>developers.weixin.qq.com</item>
+        <item>finance.huawei.com</item>
+        <item>payment.vmall.com</item>
+        <item>eso.dbankcloud.com</item>
+        <item>omp.dbankcloud.com</item>
+        <item>aito.auto</item>
+        <item>cmp-ft.cmiov.com</item>
+        <item>cmp.cmiov.com</item>
+        <item>aitoapp.uopes.cn</item>
+        <item>cdn.uopes.cn</item>
+        <item>omp.uopes.cn</item>
+        <item>support.weixin.qq.com</item>
+        <item>digitalpower.huawei.com</item>
+        <item>ug-drcn.media.dbankcloud.cn</item>
+        <item>cashier.vmall.com</item>
+        <item>legal.cloud.huawei.com</item>
+        <item>legal.cloud.huawei.com.cn</item>
+        <item>petalpay.cloud.huawei.com</item>
+    </string-array>
+    <string-array name="delete">
+        <item>@string/xcar_app_button_delete</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="file_download_event">
+        <item>@string/xcar_app_text_sns_download_local</item>
+        <item>@string/xcar_app_text_share</item>
+    </string-array>
+    <string-array name="group_application_1_item">
+        <item>@string/xcar_app_button_delete</item>
+    </string-array>
+    <array name="huawei_module_network_services" />
+    <string-array name="ivcs_log_blacklist">
+        <item>iccid</item>
+        <item>imsi</item>
+        <item>eid</item>
+        <item>euiccId</item>
+        <item>msisdn</item>
+        <item>imei</item>
+        <item>sn</item>
+        <item>serialNo</item>
+        <item>uin</item>
+        <item>engineNo</item>
+        <item>vin</item>
+        <item>plateNo</item>
+        <item>name</item>
+        <item>accountId</item>
+        <item>gender</item>
+        <item>sex</item>
+        <item>phone</item>
+        <item>phoneNumber</item>
+        <item>phoneNo</item>
+        <item>country</item>
+        <item>province</item>
+        <item>city</item>
+        <item>county</item>
+        <item>id</item>
+        <item>model</item>
+        <item>locationMessage</item>
+        <item>resDownloadUrl</item>
+        <item>longitude</item>
+        <item>latitude</item>
+        <item>address</item>
+        <item>password</item>
+        <item>email</item>
+        <item>token</item>
+        <item>device</item>
+        <item>appId</item>
+        <item>clientId</item>
+        <item>deviceId</item>
+        <item>accountId</item>
+        <item>accessToken</item>
+        <item>refreshToken</item>
+        <item>remoteControlToken</item>
+        <item>pushToken</item>
+        <item>clientSecret</item>
+        <item>deviceModel</item>
+        <item>birth</item>
+        <item>poiLongitude</item>
+        <item>poiLatitude</item>
+        <item>poiAddress</item>
+        <item>uid</item>
+        <item>rcToken</item>
+        <item>phoneNum</item>
+        <item>smsCode</item>
+        <item>authorizationId</item>
+        <item>rtid</item>
+        <item>getAvatarUrl</item>
+        <item>comment</item>
+        <item>ivcsId</item>
+        <item>safeCode</item>
+        <item>oldSafeCode</item>
+        <item>ownerId</item>
+        <item>signature</item>
+        <item>avatarUrl</item>
+        <item>userToken</item>
+        <item>mac</item>
+        <item>dkey</item>
+        <item>cardInfo</item>
+        <item>keyId</item>
+        <item>contactPhone</item>
+        <item>contactName</item>
+        <item>orderNo</item>
+        <item>plateNo</item>
+        <item>userId</item>
+        <item>destUserId</item>
+        <item>devId</item>
+        <item>vehicleId</item>
+        <item>vehicleIdStr</item>
+        <item>customerName</item>
+        <item>customerPhone</item>
+        <item>csrContent</item>
+        <item>cert</item>
+        <item>issuerCert</item>
+        <item>subCA</item>
+    </string-array>
+    <string-array name="message_announcement_long_click_item">
+        <item>@string/xcar_app_button_delete</item>
+        <item>@string/xcar_app_text_sns_multi_choice</item>
+        <item>@string/xcar_app_text_im_reply</item>
+    </string-array>
+    <string-array name="message_assistant_html_long_click_item">
+        <item>@string/xcar_app_button_delete</item>
+        <item>@string/xcar_app_text_sns_multi_choice</item>
+    </string-array>
+    <string-array name="message_assistant_other_long_click_item">
+        <item>@string/xcar_app_text_sns_transmit</item>
+        <item>@string/xcar_app_button_delete</item>
+        <item>@string/xcar_app_text_sns_multi_choice</item>
+    </string-array>
+    <string-array name="message_card_long_click_item">
+        <item>@string/xcar_app_text_sns_transmit</item>
+        <item>@string/xcar_app_text_sns_recall</item>
+        <item>@string/xcar_app_button_delete</item>
+        <item>@string/xcar_app_text_sns_multi_choice</item>
+        <item>@string/xcar_app_text_im_reply</item>
+    </string-array>
+    <string-array name="message_file_has_download_long_click_item">
+        <item>@string/xcar_app_text_sns_transmit</item>
+        <item>@string/xcar_app_text_sns_recall</item>
+        <item>@string/xcar_app_button_delete</item>
+        <item>@string/xcar_app_text_sns_multi_choice</item>
+    </string-array>
+    <string-array name="message_link_long_click_item">
+        <item>@string/xcar_app_text_sns_transmit</item>
+        <item>@string/xcar_app_text_sns_recall</item>
+        <item>@string/xcar_app_button_delete</item>
+        <item>@string/xcar_app_text_sns_multi_choice</item>
+    </string-array>
+    <string-array name="message_other_long_click_item">
+        <item>@string/xcar_app_button_delete</item>
+        <item>@string/xcar_app_text_sns_multi_choice</item>
+    </string-array>
+    <string-array name="message_pic_long_click_item">
+        <item>@string/xcar_app_text_sns_transmit</item>
+        <item>@string/xcar_app_text_sns_recall</item>
+        <item>@string/xcar_app_button_delete</item>
+        <item>@string/xcar_app_text_sns_multi_choice</item>
+        <item>@string/xcar_app_text_im_reply</item>
+    </string-array>
+    <string-array name="message_text_long_click_item">
+        <item>@string/xcar_app_text_copy</item>
+        <item>@string/xcar_app_text_sns_transmit</item>
+        <item>@string/xcar_app_text_sns_recall</item>
+        <item>@string/xcar_app_button_delete</item>
+        <item>@string/xcar_app_text_sns_multi_choice</item>
+        <item>@string/xcar_app_text_im_reply</item>
+    </string-array>
+    <string-array name="message_text_long_click_item_translate">
+        <item>@string/xcar_app_text_copy</item>
+        <item>@string/xcar_app_text_sns_transmit</item>
+        <item>@string/xcar_app_text_sns_recall</item>
+        <item>@string/xcar_app_text_sns_original</item>
+        <item>@string/xcar_app_button_delete</item>
+        <item>@string/xcar_app_text_sns_multi_choice</item>
+    </string-array>
+    <string-array name="message_voice_loudspeaker_long_click_item">
+        <item>@string/xcar_app_text_sns_recall</item>
+        <item>@string/xcar_app_button_delete</item>
+        <item>@string/xcar_app_text_sns_voice_play_by_loudspeaker</item>
+        <item>@string/xcar_app_text_sns_multi_choice</item>
+        <item>@string/xcar_app_text_im_reply</item>
+    </string-array>
+    <string-array name="message_voice_telephone_receiver_long_click_item">
+        <item>@string/xcar_app_text_sns_recall</item>
+        <item>@string/xcar_app_button_delete</item>
+        <item>@string/xcar_app_text_sns_voice_play_by_telephone_receiver</item>
+        <item>@string/xcar_app_text_sns_multi_choice</item>
+        <item>@string/xcar_app_text_im_reply</item>
+    </string-array>
+    <array name="networkkit_httpdns_anycastip_array" />
+    <string-array name="qrcode_page_menu">
+        <item>@string/xcar_app_text_sns_transmit</item>
+    </string-array>
+    <string-array name="remove_set_read_vest_dialog_item">
+        <item>@string/xcar_app_text_sns_set_conversation_isread</item>
+        <item>@string/xcar_app_text_sns_remove_conversation</item>
+    </string-array>
+    <string-array name="remove_vest_dialog_item">
+        <item>@string/xcar_app_text_sns_remove_conversation</item>
+    </string-array>
+    <string-array name="set_conversation_0_0_item">
+        <item>@string/xcar_app_text_sns_set_conversation_top</item>
+        <item>@string/xcar_app_text_sns_remove_conversation</item>
+    </string-array>
+    <string-array name="set_conversation_0_1_item">
+        <item>@string/xcar_app_text_sns_cancel_conversation_top</item>
+        <item>@string/xcar_app_text_sns_remove_conversation</item>
+    </string-array>
+    <string-array name="set_conversation_1_0_item">
+        <item>@string/xcar_app_text_sns_set_conversation_isread</item>
+        <item>@string/xcar_app_text_sns_set_conversation_top</item>
+        <item>@string/xcar_app_text_sns_remove_conversation</item>
+    </string-array>
+    <string-array name="set_conversation_1_1_item">
+        <item>@string/xcar_app_text_sns_set_conversation_isread</item>
+        <item>@string/xcar_app_text_sns_cancel_conversation_top</item>
+        <item>@string/xcar_app_text_sns_remove_conversation</item>
+    </string-array>
+    <string-array name="set_conversation_2_0_item">
+        <item>@string/xcar_app_text_sns_settop_assist</item>
+        <item>@string/xcar_app_text_sns_remove_conversation</item>
+    </string-array>
+    <string-array name="set_conversation_2_1_item">
+        <item>@string/xcar_app_text_sns_cancel_conversation_top</item>
+        <item>@string/xcar_app_text_sns_remove_conversation</item>
+    </string-array>
+    <string-array name="set_conversation_3_0_item">
+        <item>@string/xcar_app_text_sns_set_conversation_isread</item>
+        <item>@string/xcar_app_text_sns_settop_assist</item>
+        <item>@string/xcar_app_text_sns_remove_conversation</item>
+    </string-array>
+    <string-array name="set_conversation_3_1_item">
+        <item>@string/xcar_app_text_sns_set_conversation_isread</item>
+        <item>@string/xcar_app_text_sns_cancel_conversation_top</item>
+        <item>@string/xcar_app_text_sns_remove_conversation</item>
+    </string-array>
+    <string-array name="sns_ctrl_message">
+        <item>api://mediaschedulerui/IVideoSyncCalledOnline/videoSyncCalledOnline</item>
+        <item>api://mediaschedulerui/IVoiceSyncCalledOnline/voiceSyncCalledOnline</item>
+    </string-array>
+    <string-array name="sns_link_conference_message">
+        <item>ui://conference/Conference</item>
+        <item>ui://conference/LinkJoinConf</item>
+        <item>ui://Course/liveCourseDetail</item>
+        <item>ui://LiveService/LivecastPage</item>
+        <item>ui://h5url</item>
+        <item>api://LiveService/IQueryLivecast/queryLiveCast</item>
+        <item>ui://Course/PublicClass</item>
+    </string-array>
+    <string-array name="sns_link_multimedia_message">
+        <item>api://mediaschedulerui/ICallActivity/callActivity</item>
+    </string-array>
+    <string-array name="sns_live_ctrl_message">
+        <item>api://mediaschedulerui/IVideoAckCalledOnline/videoAckCalledOnline</item>
+        <item>api://mediaschedulerui/IReceiveCallActivity/receiveCallActivity</item>
+        <item>api://mediaschedulerui/IVoiceAckCalledOnline/voiceAckCalledOnline</item>
+        <item>api://mediaschedulerui/IDealCallStatus/dealCallStatus</item>
+    </string-array>
+    <string-array name="xcar_app_text_pay_stats_time">
+        <item>近一年</item>
+        <item>近半年</item>
+        <item>近三个月</item>
+        <item>上月</item>
+        <item>本月</item>
+    </string-array>
+    <string-array name="xcar_app_week_strs">
+        <item>@string/xcar_app_text_seventh_day_week</item>
+        <item>@string/xcar_app_text_first_day_week</item>
+        <item>@string/xcar_app_text_second_day_week</item>
+        <item>@string/xcar_app_text_third_day_week</item>
+        <item>@string/xcar_app_text_fourth_day_week</item>
+        <item>@string/xcar_app_text_fifth_day_week</item>
+        <item>@string/xcar_app_text_sixth_day_week</item>
+    </string-array>
+</resources>

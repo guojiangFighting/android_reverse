@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#f6f7f9" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font24" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/hwappbarpattern_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:minHeight="@dimen/hwappbarpattern_height" android:text="@string/xcar_app_title_service" android:maxLines="2" app:hwAutoSizeMinTextSize="@dimen/font18" app:hwAutoSizeStepGranularity="@dimen/hwappbarpattern_step_granularity" style="@style/Widget.Emui.HwAppbarPattern.TextAppearance.Title" />
+    <com.huawei.uikit.phone.hwsubheader.widget.HwSubHeader android:id="@id/service_hsh" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font16" android:layout_below="@id/hwappbarpattern_title" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+</LinearLayout>

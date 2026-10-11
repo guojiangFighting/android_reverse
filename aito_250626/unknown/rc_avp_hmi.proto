@@ -1,0 +1,373 @@
+// [START declaration]
+syntax = "proto3";
+package rc_avp.hmi;
+import "rc_avp_description.proto";
+option java_package = "com.huawei.ads.carsearch.proto.hmi";
+option java_outer_classname = "RcAvpHmi";
+// [END declaration]
+
+// [START messages]
+
+message Patch {
+  repeated UnitedBoundary boundaries = 1;
+  repeated UnitedLane lanes = 2;
+  repeated UnitedRoad roads = 3;
+  repeated UnitedStopLine stoplines = 4;
+  repeated UnitedIntersection intersections = 5;
+  repeated UnitedCrosswalk crosswalks = 6;
+  repeated UnitedRoadmarking roadmarking = 7;
+  repeated UnitedTrafficLight trafficlights = 8;
+  repeated UnitedObstacle obstacles = 9;
+  repeated UnitedTollArea tollarea = 10;
+  repeated UnitedParkingSpot parkingspots = 11;
+  repeated UnitedWheelStopper wheelstoppers = 12;
+  repeated UnitedParkingArea parkingareas = 13;
+  repeated UnitedPole poles = 14;
+  repeated UnitedTrafficSign trafficsigns = 15;
+  repeated TboxStrength tboxstrength = 16;
+  repeated Grid grid = 17;
+  repeated HeatMap heatmap = 18;
+  repeated RoadSignal roadsignal = 19;
+
+  UnitedPatch unitedpatch = 300;                                     // 考虑兼容性，将一体化后的新规格在老规格的后面全部再加一遍。
+}
+
+message UnitedPatch {
+  repeated UnitedBoundary boundaries = 1;                         // 边界线，HMI暂无数据输出
+  repeated UnitedLane lanes = 2;                                  // 车道线，暂无数据输出
+  repeated UnitedRoad roads = 3;                                  // 渲染道路
+  repeated UnitedStopLine stoplines = 4;                          // 停止线，暂无数据输出
+  repeated UnitedIntersection intersections = 5;                  // 路口，HMI暂无数据输出
+  repeated UnitedCrosswalk crosswalks = 6;                        // 人行横道，HMI暂无数据输出
+  repeated UnitedRoadmarking roadmarking = 7;                     // 地面标识，HMI暂无数据输出
+  repeated UnitedTrafficLight trafficlights = 8;                  // 交通灯，暂无数据输出
+  repeated UnitedObstacle obstacles = 9;                          // 障碍物，暂无数据输出
+  repeated UnitedTollArea tollarea = 10;                          // 收费站，暂无数据输出
+  repeated UnitedParkingSpot parkingspots = 11;                   // 停车位
+  repeated UnitedWheelStopper wheelstoppers = 12;                 // 轮挡
+  repeated UnitedParkingArea parkingareas = 13;                   // 停车围栏，暂无数据输出
+  repeated UnitedPole poles = 14;                                 // 杆状物，暂无数据输出
+  repeated UnitedTrafficSign trafficsigns = 15;                   // 交通牌，暂无数据输出
+  repeated UnitedWall walls = 16;                                 // 墙
+  repeated UnitedPillar pillars = 17;                             // 立柱
+  repeated UnitedAvpKeyPoint avpkeypoints = 18;                   // 电梯口收费口
+  repeated UnitedDisplayConfig displayconfigs = 19;               // 用于地图比例尺放大后
+  repeated UnitedGate gates = 20;                                 // 闸机，暂无数据输出
+  repeated VectorRoad vectorRoads = 21;                           // 矢量道路
+  repeated VectorLane vectorLanes = 23;                           // 矢量Lane
+}
+
+message Point {
+  double x = 1;
+  double y = 2;
+  double z = 3;
+}
+
+message VectorRoad {
+  uint32 id = 1;
+  repeated Point points = 2;
+  repeated int32 layers = 3;                            // 分层信息
+  bool isBothWay = 4;                                   // 是否双向道路
+  uint32 length = 5;                                    // 道路长度
+  uint32 roadType = 6;                                  // 道路类型
+  repeated uint32 prevRoadsId = 7;                      // 前驱道路
+  repeated uint32 nextRoadsId = 8;                      // 后继道路
+  repeated uint32 oppositeRoadsId = 9;                  // 对向道路
+  repeated uint32 lanesId = 10;                         // 道路包含的车道
+}
+
+message VectorLane {
+  uint32 id = 1;
+  repeated Point points = 2;
+  repeated int32 layers = 3;                            // 分层信息
+  uint32 length = 4;                                    // 车道长度
+  uint32 laneType = 5;                                  // 车道类型
+  uint32 roadId = 6;                                    // 车道所属道路
+  repeated uint32 prevLanesId = 7;                      // 前驱车道
+  repeated uint32 nextLanesId = 8;                      // 后继车道
+}
+
+message UnitedBoundary {
+  uint32 id = 1;
+  repeated Point points = 2;
+  uint32 isolationType = 3;
+  uint32 lineType = 4;
+  uint32 length = 5;
+  uint32 geoconfidence = 6;             // 不使用，暂无数据输出
+  uint32 isolationmovable = 7;          // 不使用，暂无数据输出
+  repeated int32 layers = 8;
+}
+// Lane整体不使用，暂无数据输出
+message UnitedLane {
+  uint32 id = 1;
+  repeated Point points = 2;
+  uint32 vehicleType = 3;
+  uint32 laneType = 4;
+  bool canStraight = 5;
+  bool canTurnLeft = 6;
+  bool canTurnRight = 7;
+  bool canUTurn = 8;
+  // cm
+  uint32 length = 9;
+  uint32 leftBoundId = 10;
+  uint32 rightBoundId = 11;
+  uint32 roadId = 12;
+  uint32 sequence = 13;
+  bool   isIntersectionLane = 14; 
+  bool   isIntersectionInLane = 15;
+  bool   isIntersectionOutLane = 16;
+  uint64 intersectionId = 17;
+  repeated uint64 prevLanesId = 18;
+  repeated uint64 nextLanesId = 19;
+  uint64 stoplinesId = 20;
+  repeated uint64 roadmarkingsId = 21;
+  UnitedSpeedLimit speedlimit = 22;
+  repeated uint64 trafficlightsId = 23;
+  repeated uint64 obstaclesId = 24;
+  repeated uint64 trafficsignId = 25;
+  repeated Restriction restriction = 26;
+  uint32 currentTurn = 27;
+  repeated int32 layers = 28;
+}
+
+message Restriction {
+  uint32 vehicleType = 1;
+  uint32 timePeriodType = 2;
+  uint32 restrictionTimeType = 3;
+  bool restrictionStraight = 4;
+  bool restrictionLeftTurn = 5;
+  bool restrictionRightTurn = 6;
+  bool restrictionUTurn = 7;
+  uint32 startTime = 8;
+  uint32 endTime = 9;
+}
+
+
+message UnitedRoad {
+  uint32 id = 1;
+  repeated Point points = 2;
+  uint32 roadType = 3;
+  uint32 roadClass = 4;                                      // 不使用，暂无数据输出
+  uint32 leftBoundId = 5;                                    // 不使用，暂无数据输出
+  uint32 rightBoundId = 6;                                   // 不使用，暂无数据输出
+  uint32 length = 7;
+  bool isBothway = 8;
+  repeated uint64 prevRoadsId = 9;                           // 前驱道路，暂无数据输出
+  repeated uint64 nextRoadsId = 10;                          // 后继道路，暂无数据输出
+  repeated uint64 oppositeRoadsId = 11;                      // 不使用，暂无数据输出
+  repeated uint64 intersectionOppositeRoadsId = 12;          // 不使用，暂无数据输出
+  repeated uint64 crosswalksId = 13;                         // 不使用，暂无数据输出
+  uint64 tollareasId = 14;                                    // 不使用，暂无数据输出
+  repeated uint32 lanesId = 15;                               // 不使用，暂无数据输出
+  repeated uint64 parkingspotsId = 16;                        // 不使用，暂无数据输出
+  repeated int32 layers = 17;
+  repeated uint64 vectorRoadsId = 18;                        // 关联的矢量数据的roadid
+}
+
+// 当前不使用，暂无数据输出
+message UnitedSpeedLimit {
+  uint32 startLength = 1;
+  uint32 endLength = 2;
+  uint32 maxSpeed = 3;
+  uint32 dataSource = 4;
+  repeated int32 layers = 5;
+}
+// 当前不使用，后续可能使用，暂无数据输出
+message UnitedStopLine {
+  uint32 id = 1;
+  repeated Point points = 2;
+  uint32 Type = 3;
+  repeated uint64 relatedLanesId = 4;
+  repeated int32 layers = 5;
+}
+
+message UnitedIntersection {
+  uint32 id = 1;
+  repeated Point points = 2;
+  repeated uint64 relatedLanesId = 3;                        // 当前不使用，暂无数据输出
+  repeated uint64 relatedInLanesId = 4;                      // 当前不使用，暂无数据输出
+  repeated uint64 relatedOutLanesId = 5;                     // 当前不使用，暂无数据输出
+  repeated uint64 relatedObstaclesId = 6;                    // 当前不使用，暂无数据输出
+  repeated int32 layers = 7;
+}
+
+message UnitedCrosswalk {
+  uint32 id = 1;
+  repeated Point points = 2;
+  repeated uint64 relatedRoadsId = 3;                        // 暂无数据输出
+  repeated int32 layers = 4;
+}
+
+// 当前不使用，暂无数据输出
+message UnitedRoadmarking {
+  uint32 id = 1;
+  repeated Point points = 2;
+  uint32 type = 3;
+  repeated uint64 relatedlaneId = 4;
+  repeated int32 layers = 5;
+}
+
+// 当前不使用，暂无数据输出
+message UnitedTrafficLight {
+  uint32 id = 1;
+  repeated Point points = 2;
+  uint32 height = 3;
+  bool isHybrid = 4;
+  bool hasCountdownLight = 5;
+  uint32 lightType = 6;
+  uint32 bulbNum = 7;
+  float heading = 8;
+  repeated uint32 lightbulbType = 9;
+  repeated uint64 relatedLanesId = 10;
+  repeated int32 layers = 11;
+}
+
+message UnitedWall {
+  uint32 id = 1;
+  repeated Point points = 2;
+  repeated int32 layers = 3;
+}
+
+message UnitedPillar {
+  uint32 id = 1;
+  repeated Point points = 2;
+  repeated int32 layers = 3;
+}
+
+// 当前不使用，暂无数据输出
+message UnitedObstacle {
+  uint32 id = 1;
+  repeated Point points = 2;
+  bool   traversable = 3;
+  uint32 movable = 4;
+  repeated uint64 relatedIntersectionId = 5;
+  repeated uint64 relatedLaneId = 6;
+  repeated int32 layers = 7;
+}
+
+message UnitedAvpKeyPoint {
+  uint32 id = 1;
+  repeated Point points = 2;
+  uint32 type = 3;
+  repeated int32 layers = 4;
+}
+
+// 当前不使用，暂无数据输出
+message UnitedTollArea {
+  uint32 id = 1;
+  repeated Point points = 2;
+  repeated uint64 inRoadId = 3;
+  repeated uint64 outRoadId = 4;
+  repeated int32 layers = 5;
+}
+
+message UnitedParkingArea {
+  uint32 id = 1;
+  repeated Point points = 2;
+  uint32 type = 3;
+  repeated uint64 inRoadId = 4;		  // 当前不使用，暂无数据输出
+  repeated uint64 outRoadId = 5;		// 当前不使用，暂无数据输出
+  repeated int32 layers = 6;
+}
+
+message UnitedParkingSpot {
+  uint32 id = 1;
+  repeated Point points = 2;
+  uint32 parkAreaId = 3;             // 当前不使用，暂无数据输出
+  uint32 stopperId = 4;              // 关联的轮挡
+  uint64 relatedRoadId = 5;          // 当前不使用，暂无数据输出
+  string parkArea = 6;               // 分区
+  string spotNumber = 7;             // 车位编号
+  uint32 spotType = 8;
+  repeated int32 layers = 9;         // [0,0]L0层  [1,1]B1层 [0,1] 两层之间的坡道
+}
+
+message UnitedWheelStopper {
+  uint32 id = 1;
+  repeated Point points = 2;
+  repeated int32 layers = 3;
+}
+// 当前不使用，暂无数据输出
+message UnitedPole {
+  uint32 id = 1;
+  repeated Point points = 2;
+  // cm
+  uint32 height = 3;
+  uint32 type = 4;
+  repeated int32 layers = 5;
+}
+// 当前不使用，暂无数据输出
+message UnitedTrafficSign {
+  uint32 id = 1;
+  repeated Point points = 2;
+  // cm
+  uint32 height = 3;
+  uint32 type = 4;
+  repeated uint64 relatedLaneId = 5;
+  repeated int32 layers = 6;
+}
+// 暂无数据输出
+message UnitedGate {
+  uint32 id = 1;
+  repeated Point points = 2;
+  uint32 width = 3;
+  float heading = 4;
+  repeated int32 layers = 5;
+}
+
+message UnitedDisplayConfig {
+  uint32 id = 1;
+  uint32 displayFloor = 2;   // 展示比例下限,单位是米,目前有1,2,5,10,20,默认比例尺是2,如果值是5,代表在大于等于5的比例尺中可以展示
+  repeated int32 layers = 3;
+}
+
+message UnitedBumper {
+  uint32 id = 1;
+  repeated Point points = 2;
+  uint32 type = 3;
+  repeated uint32 floors = 4;
+}
+
+// 兼容老规格，不使用，暂无数据输出
+message TboxStrength {
+  uint32 id = 1;
+  uint32 time = 2;
+  uint32 siteId = 3;
+  uint32 cellId = 4;
+  uint32 mcc = 5;
+  uint32 mnc = 6;
+  uint32 rat = 7;
+  uint32 rsrp = 8;
+  uint32 sinr = 9;
+  uint32 frequency = 10;
+  uint32 pci = 11;
+  uint32 strength = 12;
+};
+// 兼容老规格，不使用，暂无数据输出
+message Grid {
+  uint32 id = 1;
+  repeated Point points = 2;
+  double width = 3;
+  double length = 4;
+  uint32 layer = 5;
+  uint32 strength = 6;  // summary
+  repeated TboxStrength strengths = 7;
+};
+// 兼容老规格，不使用，暂无数据输出
+message HeatMap {
+  uint32 id = 1;
+  repeated Grid grids = 2;
+};
+// 兼容老规格，不使用，暂无数据输出
+message RoadSignalPoint {
+  uint32 index = 1;
+  uint32 strength = 2;
+};
+// 兼容老规格，不使用，暂无数据输出
+message RoadSignal{
+  uint32 id = 1;     // same to road id
+  repeated RoadSignalPoint signalPoints = 2;
+};
+
+
+// [END messages]

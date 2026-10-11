@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#f1f3f5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/digital_key_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-8.0dp" layout="@layout/hwappbarpattern_title_item_layout" />
+        <com.huawei.uikit.phone.hwsubtab.widget.HwSubTabWidget android:id="@id/digital_key_subtab" android:background="#f1f3f5" android:layout_width="match_parent" android:layout_height="wrap_content" app:hwSubTabIndicatorColor="#0a59f7" app:hwSubTabItemMargin="8.0dp" style="@style/Widget.Emui.HwSubTabBar.Light" />
+        <com.huawei.uikit.phone.hwviewpager.widget.HwViewPager android:id="@id/digital_key_pager" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+    </LinearLayout>
+    <include android:id="@id/loadding_view" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/xcar_loadding_view_vehicle" />
+</RelativeLayout>

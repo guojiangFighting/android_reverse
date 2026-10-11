@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/simple_top" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/video_mask_bottom_shape" android:layout_width="match_parent" android:layout_height="@dimen/dp_140" android:layout_alignParentBottom="true" />
+    <View android:background="@drawable/video_mask_shape" android:layout_width="match_parent" android:layout_height="@dimen/dp_80" android:layout_marginTop="-24.0dp" />
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/exo_play" android:visibility="gone" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:layout_marginBottom="@dimen/dp_60" android:src="@drawable/ic_exo_play" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/font16" android:layout_alignParentStart="true" style="@style/ExoMediaButton.Play2" />
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/exo_pause" android:visibility="gone" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:layout_marginBottom="@dimen/dp_60" android:src="@drawable/ic_exo_pause" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/font16" android:layout_alignParentStart="true" style="@style/ExoMediaButton.Pause2" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="67.0dp" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/font16" android:layout_alignParentEnd="true">
+        <TextView android:textSize="@dimen/font14" android:id="@id/exo_position" style="@style/ExoMediaCurrPosition" />
+        <TextView android:textSize="@dimen/font14" android:text="/" style="@style/ExoMediaCurrPosition" />
+        <TextView android:textSize="@dimen/font14" android:id="@id/exo_duration" style="@style/ExoMediaDuration" />
+    </LinearLayout>
+</RelativeLayout>

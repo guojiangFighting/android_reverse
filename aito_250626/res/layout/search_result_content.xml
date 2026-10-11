@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:id="@id/space" android:layout_width="match_parent" android:layout_height="@dimen/search_result_item_margin" />
+    <RelativeLayout android:id="@id/image_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/space" android:layout_marginEnd="@dimen/common_padding">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/title_image" android:layout_width="@dimen/search_result_image_width" android:layout_height="@dimen/search_result_image_width" android:src="@drawable/search_result_image_default_bg" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/play" android:layout_width="@dimen/search_result_play_icon_width" android:layout_height="@dimen/search_result_play_icon_width" android:src="@drawable/ic_public__playstart__big" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/content_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/search_result_item_margin" android:minHeight="@dimen/search_result_image_width" android:layout_toRightOf="@id/image_container" android:layout_below="@id/space">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="@color/black" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" app:layout_constraintTop_toTopOf="parent" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:textColor="@color/search_result_subtitle_color" android:ellipsize="end" android:id="@id/content" android:paddingTop="@dimen/font4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@id/title" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:layout_below="@id/content" android:layout_alignParentBottom="true">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/avatar" android:visibility="gone" android:layout_width="@dimen/font16" android:layout_height="@dimen/font16" android:src="@drawable/mine_portrait" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/font8" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:textColor="@color/emui_color_text_secondary" android:ellipsize="end" android:id="@id/location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:layout_toEndOf="@id/avatar" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@drawable/ic_horizontal_driver_bg" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_below="@id/content_container" />
+</RelativeLayout>

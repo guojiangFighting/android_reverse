@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/hwswitch_checked_bg_translucent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="inner_border" android:animation="@animator/hwswitch_track_border_2_off_translucent" />
+    <target android:name="track_bg" android:animation="@animator/hwswitch_track_2_off_translucent" />
+</animated-vector>

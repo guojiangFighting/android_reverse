@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/item_card_view" android:background="@drawable/hwlistdrawable_rectangle_bg" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/emui_corner_radius_large" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <RelativeLayout android:paddingTop="@dimen/font16" android:paddingBottom="@dimen/font16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/font12" android:paddingEnd="@dimen/font32">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_primary" android:id="@id/item_record_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font4" android:fontFamily="@string/emui_text_font_family_regular" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_primary" android:id="@id/item_record_power" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:fontFamily="@string/emui_text_font_family_medium" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_secondary" android:ellipsize="end" android:id="@id/item_record_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font2" android:singleLine="true" android:layout_below="@id/item_record_time" android:fontFamily="@string/emui_text_font_family_regular" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_secondary" android:id="@id/item_record_time_degrees" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/item_record_name" android:fontFamily="@string/emui_text_font_family_regular" />
+        </RelativeLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</LinearLayout>

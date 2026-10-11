@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center_vertical" android:id="@id/drive_alpha_index_list_item_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/font48" style="@style/textColorPrimaryAndSizeBody1AndMedium" />
+    <View android:id="@id/drive_alpha_index_list_item_view" android:background="@color/emui_color_divider_horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.20000005dp" android:layout_marginEnd="@dimen/font24" />
+    <RelativeLayout android:id="@id/drive_test_rl_store_alpha" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/font52">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/drive_alpha_index_list_item_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font8" android:layout_alignParentBottom="true" style="@style/textColorSecondaryAndSizeSubTitle3" />
+    </RelativeLayout>
+</LinearLayout>

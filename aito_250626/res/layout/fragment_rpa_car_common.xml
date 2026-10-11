@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/widget_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ads_apa_car_model" android:layout_width="135.0dp" android:layout_height="250.0dp" android:layout_marginTop="252.0dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/animation_view" android:layout_width="@dimen/rpa_design_width" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/animation_view_next" android:layout_width="@dimen/rpa_design_width" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_width="1.0dp" android:layout_height="0.0dp" android:layout_weight="5.0" />
+        <include android:layout_width="@dimen/ads_rpa_common_park_direction_width" android:layout_height="@dimen/ads_rpa_common_park_direction_height" android:layout_centerInParent="true" layout="@layout/env_ani_direction_common" />
+        <View android:layout_width="1.0dp" android:layout_height="0.0dp" android:layout_weight="9.0" />
+    </LinearLayout>
+</RelativeLayout>

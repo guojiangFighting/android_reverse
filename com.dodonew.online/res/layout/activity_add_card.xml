@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="请输入上网账号和密码" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/white_bg" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_account" />
+        <EditText android:textSize="15.0sp" android:textColorHint="@color/option_txt_color" android:id="@id/et_online_account" android:background="@drawable/under_divider_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:hint="请输入上网账号" android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/white_bg" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_pwd" />
+        <EditText android:textSize="15.0sp" android:textColorHint="@color/option_txt_color" android:gravity="center_vertical" android:id="@id/et_online_pwd" android:background="@drawable/under_divider_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:hint="请输入上网密码" android:inputType="textPassword" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/view_add_card_area" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="请选择所在区域和网吧" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/white_bg" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_province" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/option_txt_color" android:gravity="center_vertical" android:id="@id/tv_online_province" android:background="@drawable/under_view_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="请选择地区" android:drawableRight="@drawable/my_right" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/white_bg" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_bind_net" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/option_txt_color" android:gravity="center_vertical" android:id="@id/tv_online_bind_net" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="请选择网吧" android:drawableRight="@drawable/my_right" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="绑定使用更方便" />
+    <Button android:textColor="@color/white" android:id="@id/btn_bind" android:background="@drawable/btn_vote_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="立即绑定" />
+</LinearLayout>

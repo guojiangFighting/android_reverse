@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator android:duration="@integer/hwcheckbox_animation_duration" android:valueFrom="@color/emui_accent_translucent" android:valueTo="@color/emui_switch_bg_off_translucent" android:propertyName="fillColor"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" app:hwAdvancedCardViewClickAnimationEnable="false" style="@style/Widget.Emui.HwAdvancedCardView.Light"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="#fff1f3f5" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/selected_more_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:layout_marginBottom="@dimen/sns_address_more_recycle_margin_down" android:paddingHorizontal="@dimen/font16">
+            <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_text_primary" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/xcar_app_text_sns_has_selected" android:maxLines="1" android:fontFamily="@string/emui_text_font_family_medium" android:layout_alignParentStart="true" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/selected_more_button" android:visibility="gone" android:layout_width="120.0dp" android:layout_height="match_parent" android:layout_alignParentEnd="true">
+                <ImageView android:id="@id/for_more_arrow" android:background="@drawable/ic_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/emui_dimens_text_vertical" android:layout_alignParentEnd="true" android:backgroundTint="@color/crossuikit_color_fourth" />
+                <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_text_secondary" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/xcar_app_text_more_title" android:fontFamily="@string/emui_text_font_family_medium" android:layout_toStartOf="@id/for_more_arrow" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/select_mem_rv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font4" />
+    </LinearLayout>
+</com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>

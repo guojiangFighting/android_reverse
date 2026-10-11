@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view_charging_statistic" android:background="@color/color_driving_report_activity_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/charging_statistic_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/hwappbarpattern_height" layout="@layout/layout_title_driving_report" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/charging_statistic_title_bar">
+        <androidx.core.widget.NestedScrollView android:id="@id/sv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:background="@drawable/driving_report_activity_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/charging_statistic_content" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="88.0dp" android:layout_alignParentTop="true" android:paddingHorizontal="@dimen/font16">
+                    <include layout="@layout/charging_statistic_data_view" />
+                    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center" android:id="@id/charge_eb_img" android:layout_width="100.0dp" android:layout_height="15.0dp" android:layout_marginTop="12.0dp" />
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="@color/color_driving_report_white_alph30" android:layout_gravity="center" android:id="@id/tv_dr_statistics_tip" android:layout_marginTop="@dimen/font4" android:layout_marginBottom="10.0dp" android:text="@string/xcar_app_text_full_week_statistics_tip" style="@style/driving_report_callout_tv_style" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+        <include android:id="@id/incl_dr_time_pick_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/layout_driving_report_time_pick" />
+        <include android:id="@id/no_data_area" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/incl_dr_time_pick_view" layout="@layout/no_data_layout" />
+        <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/incl_dr_time_pick_view" layout="@layout/driving_report_unexception_layout" />
+    </RelativeLayout>
+    <include android:visibility="gone" layout="@layout/driving_report_loadding_view_box" />
+    <include android:id="@id/v_share_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/driving_report_poster_loadding_view" />
+    <app.huawei.auto.timeselector.DateSelector android:id="@id/dateSelector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <app.huawei.auto.timeselector.MonthSelector android:id="@id/monthSelector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

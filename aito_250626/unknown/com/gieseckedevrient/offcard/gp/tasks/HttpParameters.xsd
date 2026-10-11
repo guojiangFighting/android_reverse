@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0" xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0" elementFormDefault="qualified">
+    <xs:import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="CommonTypes.xsd"/>
+    <xs:include schemaLocation="OtaTasks.xsd"/>
+    <xs:include schemaLocation="TriggerSmsParameters.xsd"/>
+    <xs:include schemaLocation="HttpResponseParameters.xsd"/>
+    <xs:complexType name="HttpParametersType">
+        <xs:sequence>
+            <xs:element name="HttpResponseParameters" type="ogpt:HttpResponseParametersType" minOccurs="0"/>
+            <xs:element name="OtaKeySet" type="ogpt:OtaKeySetType" minOccurs="0"/>
+            <xs:element name="OtaParameters" type="ogpt:OtaParametersType" minOccurs="0"/>
+            <xs:element name="TriggerSmsParameters" type="ogpt:TriggerSmsParametersType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

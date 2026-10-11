@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/chat_message_repeat_btn" android:background="@color/act_base_color" android:visibility="gone" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:layout_marginLeft="@dimen/font16" android:layout_marginRight="@dimen/font16" android:src="@drawable/sns_list_sms_failed" android:scaleType="centerCrop" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+</LinearLayout>

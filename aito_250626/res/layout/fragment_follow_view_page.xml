@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout android:id="@id/follow_hsrl" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/follow_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+    </com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout>
+    <include android:id="@id/follow_error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/follow_error_view" />
+    <include android:id="@id/follow_empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/follow_empty_view" />
+    <include android:id="@id/follow_loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/follow_loading_view" />
+    <app.huawei.auto.base.view.BaseNoInternetLayout android:id="@id/follow_no_network_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

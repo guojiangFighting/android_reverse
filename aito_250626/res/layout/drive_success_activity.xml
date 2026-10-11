@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout android:background="@color/id_fa_color_sub_background" android:layout_width="match_parent" android:layout_height="match_parent" app:hwColumnType="button_type"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/user_guide_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/hwappbarpattern_height" layout="@layout/hwappbarpattern_title_item_layout" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dp" android:layout_below="@id/user_guide_title_bar" android:layout_centerHorizontal="true">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center_horizontal" android:background="@drawable/drive_success_icon_hook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:backgroundTint="@color/emui_color_4" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hwlistpattern_item_icon_right_height_24" android:text="@string/xcar_app_text_drive_success_submit" style="@style/textColorPrimaryAndSizeHeadline8AndFamilyRegular" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/xcar_app_text_drive_success_wait_sure" style="@style/textColorSecondaryAndSizeBody3" />
+    </LinearLayout>
+    <com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:hwColumnType="button_type">
+        <com.huawei.uikit.phone.hwbutton.widget.HwButton android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/drive_success_check_btn" android:layout_width="wrap_content" android:layout_height="@dimen/font40" android:layout_marginBottom="@dimen/font16" android:text="@string/xcar_app_button_drive_success_check_btn" android:layout_centerHorizontal="true" style="@style/Widget.Emui.HwButton.Light" />
+    </com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout>
+</com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dr_sum_area" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/dr_car_bg" android:layout_width="424.0dp" android:layout_height="212.0dp" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/sum_text_area" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font8">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font24" android:id="@id/total_odo" android:layout_marginTop="@dimen/font24" android:text="202.4KM" style="@style/driving_report_tv_style" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_marginTop="@dimen/font2" android:text="@string/xcar_app_text_total_mileage" style="@style/driving_report_callout_tv_style" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font24" android:id="@id/trip_day_num" android:layout_marginTop="@dimen/font20" style="@style/driving_report_tv_style" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_marginTop="@dimen/font2" android:text="@string/xcar_app_text_total_days" style="@style/driving_report_callout_tv_style" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="@color/blue_317AF7" android:gravity="center" android:id="@id/view_all_trips_tv" android:layout_marginTop="@dimen/font24" android:text="@string/xcar_app_text_jump_to_driving_record" style="@style/driving_report_callout_tv_style" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/bubble_type_odo_rank_tip" android:background="@drawable/driving_report_bubble_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_below="@id/sum_text_area">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="14.0dp" android:textColor="@color/emui_primary_inverse" android:gravity="center" android:id="@id/dr_rank_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="19.5dp" android:layout_alignParentTop="true" style="@style/driving_report_callout_tv_style" />
+    </RelativeLayout>
+</RelativeLayout>

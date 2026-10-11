@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/video_load_color" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/exo_player_replay_img" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:src="@drawable/ic_exo_play" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/exo_player_replay_btn_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:text="@string/xcar_app_button_exo_play_replay" android:layout_below="@id/exo_player_replay_img" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

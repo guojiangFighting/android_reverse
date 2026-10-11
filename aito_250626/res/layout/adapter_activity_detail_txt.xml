@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/detail_txt_htv" android:background="@android:color/transparent" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/textColorSecondaryAndSizeBody2"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

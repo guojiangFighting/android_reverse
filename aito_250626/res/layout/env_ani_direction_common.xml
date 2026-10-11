@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/env_directions" android:layout_width="@dimen/ads_rpa_common_park_direction_width" android:layout_height="@dimen/ads_rpa_common_park_direction_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/straight_dir" android:visibility="gone" android:layout_width="@dimen/ads_rpa_common_ani_direction_image_width_height" android:layout_height="@dimen/ads_rpa_common_ani_direction_image_width_height" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/vleft_dir" android:visibility="gone" android:layout_width="@dimen/ads_rpa_common_ani_direction_image_width_height" android:layout_height="@dimen/ads_rpa_common_ani_direction_image_width_height" android:layout_alignParentTop="true" android:layout_marginStart="12.0dp" android:layout_alignParentStart="true" />
+        <ImageView android:id="@id/vright_dir" android:visibility="gone" android:layout_width="@dimen/ads_rpa_common_ani_direction_image_width_height" android:layout_height="@dimen/ads_rpa_common_ani_direction_image_width_height" android:layout_alignParentTop="true" android:layout_marginEnd="12.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="47.0dp">
+        <ImageView android:id="@id/hleft_dir" android:visibility="gone" android:layout_width="@dimen/ads_rpa_common_ani_direction_image_width_height" android:layout_height="@dimen/ads_rpa_common_ani_direction_image_width_height" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+        <ImageView android:id="@id/hright_dir" android:visibility="gone" android:layout_width="@dimen/ads_rpa_common_ani_direction_image_width_height" android:layout_height="@dimen/ads_rpa_common_ani_direction_image_width_height" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/straight_dir_back" android:visibility="gone" android:layout_width="@dimen/ads_rpa_common_ani_direction_image_width_height" android:layout_height="@dimen/ads_rpa_common_ani_direction_image_width_height" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/vright_dir_back" android:visibility="gone" android:layout_width="@dimen/ads_rpa_common_ani_direction_image_width_height" android:layout_height="@dimen/ads_rpa_common_ani_direction_image_width_height" android:layout_marginEnd="12.0dp" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/vleft_dir_back" android:visibility="gone" android:layout_width="@dimen/ads_rpa_common_ani_direction_image_width_height" android:layout_height="@dimen/ads_rpa_common_ani_direction_image_width_height" android:layout_marginStart="12.0dp" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon_view" android:visibility="gone" android:layout_width="@dimen/font32" android:layout_height="@dimen/font32" android:src="@drawable/hwbutton_default_emui" android:layout_marginEnd="@dimen/font16" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/root_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font22" android:layout_marginBottom="@dimen/font22">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/real_total_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_medium" style="@style/textColorPrimaryAndSizeBody1AndMedium" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/original_total_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/font4" style="@style/textColorTertiaryAndSizeBody3NoMargin" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_unit_degrees" style="@style/textColorTertiaryAndSizeBody3NoMargin" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_electricity_price" android:layout_marginEnd="@dimen/font4" style="@style/textColorTertiaryAndSizeBody3NoMargin" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/real_electricity_price" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textColorTertiaryAndSizeBody3NoMargin" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/original_electricity_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/font4" style="@style/textColorTertiaryAndSizeBody3NoMargin" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_unit_degrees" style="@style/textColorTertiaryAndSizeBody3NoMargin" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_service_charge" android:layout_marginEnd="@dimen/font4" style="@style/textColorTertiaryAndSizeBody3NoMargin" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/real_service_price" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textColorTertiaryAndSizeBody3NoMargin" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/original_service_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/font4" style="@style/textColorTertiaryAndSizeBody3NoMargin" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/charg_service_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_unit_degrees" style="@style/textColorTertiaryAndSizeBody3NoMargin" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:id="@id/charg_current_time" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textColorPrimaryAndSizeBody1AndMedium" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_gravity="center_horizontal" android:id="@id/charg_current_period" android:background="@drawable/charg_current_time" android:paddingLeft="@dimen/font4" android:paddingRight="@dimen/font4" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2" android:text="@string/xcar_app_text_current_time_period" style="@style/textColorLinkAndSizeCaptionAndFamilyMedium" />
+    </LinearLayout>
+    <View android:id="@id/bottom_line" android:background="@color/recue_phone_divide_line" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_below="@id/root_view" />
+</RelativeLayout>

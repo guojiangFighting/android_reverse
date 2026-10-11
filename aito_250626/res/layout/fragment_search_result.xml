@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/emui_color_bg_floating" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwsubtab.widget.HwSubTabWidget android:id="@id/tab_layout" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/font16" app:hwSubTabItemTextSize="@dimen/font16" />
+    <View android:background="@drawable/background_gradient" android:layout_width="@dimen/font24" android:layout_height="wrap_content" android:layout_alignTop="@id/tab_layout" android:layout_alignBottom="@id/tab_layout" android:layout_alignParentEnd="true" />
+    <com.huawei.uikit.phone.hwviewpager.widget.HwViewPager android:id="@id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/tab_layout" android:overScrollMode="never" />
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/search_loading_view" />
+    <ViewStub android:id="@id/empty_view_stub" android:layout="@layout/search_result_empty" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/no_net_view_stub" android:layout="@layout/search_no_network_connect" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

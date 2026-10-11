@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator android:duration="@integer/hwswitch_animation_duration" android:valueFrom="@color/switch_track_off_bg_emui" android:valueTo="@color/emui_accent" android:propertyName="fillColor"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/search_page_layout" android:background="@color/emui_color_bg_floating" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/load_progress_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/search_load_view" />
+    <RelativeLayout android:id="@id/search_page_lay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/search_page_top_layout" android:layout_width="match_parent" android:layout_height="@dimen/font56" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" layout="@layout/search_top_layout" />
+        <ScrollView android:id="@id/search_page_scrollview" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/search_page_top_layout" android:overScrollMode="never" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/search_page_top_layout">
+                <RelativeLayout android:id="@id/search_page_history_layout" android:layout_width="match_parent" android:layout_height="@dimen/font40" android:layout_marginTop="@dimen/font8">
+                    <app.huawei.auto.community.views.search.ChildRecyclerView android:id="@id/search_page_history_rec" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:overScrollMode="never" android:layout_marginEnd="@dimen/font12" android:layout_toStartOf="@id/search_history_clear" />
+                    <View android:background="@drawable/background_gradient" android:layout_width="@dimen/font24" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="-24.0dp" android:layout_marginEnd="@dimen/font12" android:layout_toStartOf="@id/search_history_clear" />
+                    <com.huawei.uikit.hwtextview.widget.HwTextView android:id="@id/search_history_clear" android:background="@drawable/hwappbarpattern_selector_item_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_all_clear" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/textColorFocusedAndSizeBody2" />
+                </RelativeLayout>
+                <app.huawei.auto.community.views.search.SearchHotWordView android:id="@id/hot_word" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_below="@id/search_page_history_layout" />
+                <RelativeLayout android:id="@id/search_page_hot_spot_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_below="@id/hot_word">
+                    <com.huawei.uikit.hwsubheader.widget.HwSubHeader android:id="@id/search_hot_spot_title" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:layout_alignParentRight="true" style="@style/textColorPrimaryAndSizeBody1AndFamilyMedium" />
+                    <com.huawei.uikit.hwrecyclerview.widget.HwRecyclerView android:id="@id/search_hot_spot_rcy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font40" android:layout_below="@id/search_hot_spot_title" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+        <FrameLayout android:id="@id/search_result_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/search_page_top_layout" />
+        <RelativeLayout android:id="@id/search_contact_scroll" android:background="@color/emui_color_bg_floating" android:paddingTop="@dimen/font4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/search_page_top_layout" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/search_contact_recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+            <include android:id="@id/suggest_loading_layout" layout="@layout/suggest_load_view" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/emui_corner_radius_button" />
+    <solid android:color="@color/hwbutton_default_disable_translucent" />
+    <stroke android:width="@dimen/hwbutton_bg_stroke_width_translucent" android:color="@color/hwbutton_color_emui_disable_translucent" />
+</shape>

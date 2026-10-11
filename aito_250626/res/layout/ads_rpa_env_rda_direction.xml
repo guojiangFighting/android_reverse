@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/env_directions" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/drive_forward" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginBottom="52.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="60.0dp" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/drive_back" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginBottom="52.0dp" android:layout_alignParentBottom="true" android:layout_marginEnd="60.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

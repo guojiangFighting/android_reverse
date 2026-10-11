@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/msg_notify_rl" android:layout_width="wrap_content" android:layout_height="@dimen/hwappbarpattern_icon_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/msg_notify_rl_layout" android:background="@drawable/hwappbarpattern_selector_item_bg" android:layout_width="@dimen/font48" android:layout_height="@dimen/font48" android:layout_marginEnd="@dimen/font4">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/mine_top_notification" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:src="@drawable/icon_mine_ring" android:scaleType="centerInside" android:layout_centerInParent="true" />
+        <com.huawei.uikit.phone.hweventbadge.widget.HwEventBadge android:id="@id/hweventbadge_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-7.0dp" android:layout_alignTop="@id/mine_top_notification" android:layout_marginEnd="-3.0dp" android:layout_alignEnd="@id/mine_top_notification" app:hwEventBadgeBackgroundColor="@color/red" app:hwEventBadgeDotSize="@dimen/font16" app:hwEventBadgeMode="text" />
+    </RelativeLayout>
+</RelativeLayout>

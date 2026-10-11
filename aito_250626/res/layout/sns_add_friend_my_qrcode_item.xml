@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|bottom" android:orientation="horizontal" android:id="@id/item_qrcode_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_text_secondary" android:gravity="center" android:id="@id/qrcode_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/qrcode_image" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="@dimen/sns_card_elements_margin_s" android:tint="@color/sns_color_secondary" android:layout_marginStart="@dimen/sns_card_elements_margin_s" />
+</LinearLayout>

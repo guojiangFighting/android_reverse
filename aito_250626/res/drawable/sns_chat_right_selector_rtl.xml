@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/sns_chat_right_background_pressed_rtl" />
+    <item android:state_pressed="true" android:drawable="@drawable/sns_chat_right_background_normal_rtl" />
+    <item android:drawable="@drawable/sns_chat_right_background_normal_rtl" />
+</selector>

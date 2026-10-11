@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="page_progress">
+        <item quantity="other">ཁག་ %1$d པ།</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="other">སྐར་མ་ %d</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="other">ཁྱོན་ཁག་ %1$d ཡོད།</item>
+    </plurals>
+</resources>

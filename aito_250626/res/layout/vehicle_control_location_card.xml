@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="@dimen/baseui_dp_8" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:orientation="horizontal" android:id="@id/location_card_header" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/baseui_dp_12" android:layout_marginTop="@dimen/baseui_dp_12">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/location_icon" android:layout_width="@dimen/baseui_dp_24" android:layout_height="@dimen/baseui_dp_24" android:layout_marginRight="@dimen/baseui_dp_8" android:src="@drawable/icon_vehicle_location" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_primary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2" android:text="@string/xcar_app_text_veh_location" android:fontFamily="@string/emui_text_font_family_regular" />
+                <TextView android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/emui_color_secondary" android:id="@id/distance_and_movestatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_8" android:text="@string/xcar_app_text_software_item_default" android:lines="1" android:fontFamily="@string/emui_text_font_family_regular" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

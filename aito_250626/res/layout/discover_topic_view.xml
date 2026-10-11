@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/community_topiclist_title" layout="@layout/hwsubheader_title_more_grid" />
+    <com.huawei.uikit.phone.hwsubheader.widget.HwSubHeader android:id="@id/community_hsh" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" android:contextClickable="true" />
+</LinearLayout>

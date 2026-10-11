@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/hwtimepicker_alert_dialog_inset" android:insetRight="@dimen/hwtimepicker_alert_dialog_inset" android:insetTop="@dimen/hwtimepicker_alert_dialog_inset" android:insetBottom="@dimen/hwtimepicker_alert_dialog_inset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <corners android:radius="@dimen/emui_corner_radius_dialog" />
+        <solid android:color="@color/emui_dialog_bg_translucent" />
+    </shape>
+</inset>

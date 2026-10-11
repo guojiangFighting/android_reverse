@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/hwdivider_horizontal_color_emui" />
+    <size android:height="@dimen/font24" android:width="@dimen/font_px_1" />
+</shape>

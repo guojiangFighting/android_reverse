@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:color="?hwFloatingButtonBgColor" android:alpha="@dimen/emui_disabled_alpha" />
+    <item android:state_focused="false" android:state_pressed="true" android:color="?hwFloatingButtonPressedColor" />
+    <item android:state_focused="true" android:color="?hwFloatingButtonPressedColor" />
+    <item android:color="?hwFloatingButtonPressedColor" android:state_hovered="true" />
+    <item android:color="?hwFloatingButtonBgColor" />
+</selector>

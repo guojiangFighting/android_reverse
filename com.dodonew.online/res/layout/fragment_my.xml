@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="?actionBarSize">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/divider" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@drawable/shape_title_btn" android:layout_width="match_parent" android:layout_height="10.0dp" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/view_my_info" android:background="@drawable/item_normal_selector" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/my_img" android:layout_width="80.0dp" android:layout_height="@dimen/user_img_height" android:src="@drawable/default_head" />
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/option_txt_color" android:id="@id/tv_my_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无信息" />
+                    <TextView android:textColor="@color/gray" android:id="@id/tv_my_mobile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_below="@id/tv_my_name" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/my_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@drawable/shape_title_btn" android:layout_width="match_parent" android:layout_height="5.0dp" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/view_my_card" style="@style/MyButtonLinearLayoutStyle">
+                    <TextView android:textColor="@color/option_txt_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_member_card" />
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/gray" android:id="@id/tv_my_card_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/view_my_mall" android:layout_marginLeft="1.0px" style="@style/MyButtonLinearLayoutStyle">
+                    <TextView android:textColor="@color/option_txt_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_score_shop" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/gray" android:id="@id/tv_my_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/view_my_ticket" android:layout_marginLeft="1.0px" style="@style/MyButtonLinearLayoutStyle">
+                    <TextView android:textColor="@color/option_txt_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_coupon" />
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/gray" android:id="@id/tv_my_ticket_count" android:layout_width="wrap_content" android:layout_height="wrap_content" /> />
+</FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@drawable/shape_title_btn" android:layout_width="match_parent" android:layout_height="10.0dp" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/view_my_order" style="@style/UnderLineViewStyle">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_order" android:layout_centerVertical="true" />
+                <TextView android:textColor="@color/option_txt_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/my_order" android:layout_centerVertical="true" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/my_order_label" android:drawableRight="@drawable/my_right" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <View android:background="@drawable/shape_title_btn" android:layout_width="match_parent" android:layout_height="10.0dp" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/view_my_guess" style="@style/UnderLineViewStyle">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_guess" android:layout_centerVertical="true" />
+                <TextView android:textColor="@color/option_txt_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/my_guess" android:drawableRight="@drawable/my_right" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <View style="@style/DividerStyle" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/view_my_active" style="@style/UnderLineViewStyle">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_active" android:layout_centerVertical="true" />
+                <TextView android:textColor="@color/option_txt_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/my_active" android:layout_centerVertical="true" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/my_active_label" android:drawableRight="@drawable/my_right" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <View style="@style/DividerStyle" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/view_my_collection" style="@style/UnderLineViewStyle">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_collection" android:layout_centerVertical="true" />
+                <TextView android:textColor="@color/option_txt_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/my_collection" android:drawableRight="@drawable/my_right" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <View android:background="@drawable/shape_title_btn" android:layout_width="match_parent" android:layout_height="10.0dp" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/view_my_set" style="@style/UnderLineViewStyle">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_set" android:layout_centerVertical="true" />
+                <TextView android:textColor="@color/option_txt_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/my_set" android:drawableRight="@drawable/my_right" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <View style="@style/DividerStyle" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

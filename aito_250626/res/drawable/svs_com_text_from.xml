@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/svs_search_box_circular_bead" />
+    <solid android:color="#f0f0f0" />
+    <size android:height="7.0dp" android:width="38.0dp" />
+</shape>

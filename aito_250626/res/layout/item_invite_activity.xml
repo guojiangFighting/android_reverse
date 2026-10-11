@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#f1f3f5" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/content_pic_cv" android:layout_width="match_parent" android:layout_height="114.0dp" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/emui_corner_radius_large" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <RelativeLayout android:paddingLeft="@dimen/font12" android:paddingRight="@dimen/font12" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/card_image" android:layout_width="120.0dp" android:layout_height="90.0dp" android:layout_marginTop="@dimen/font12" android:layout_marginBottom="12.0dp" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/emui_corner_radius_small" app:hwAdvancedCardViewClickAnimationEnable="false">
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/activity_image" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+            <RelativeLayout android:paddingTop="@dimen/font16" android:paddingBottom="@dimen/font16" android:layout_width="match_parent" android:layout_height="114.0dp" android:layout_marginLeft="8.0dp" android:layout_toRightOf="@id/card_image">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="end" android:id="@id/activity_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/textColorPrimaryAndSizeLargeModelAndFamilyMedium" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="bottom" android:id="@id/activity_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/textColorSecondaryAndSizeCaption" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

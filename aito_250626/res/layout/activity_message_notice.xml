@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#f1f3f5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/my_settings_title_l" layout="@layout/mine_hwappbar_message_notice__layout" />
+    <com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout android:id="@id/refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/my_settings_title_l">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/delete_area" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/font56" android:layout_alignParentBottom="true">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/dynamic_delete_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_90">
+                    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center" android:id="@id/btn_delete" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:src="@drawable/btn_delete_selector" />
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_chart1" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font3" android:text="@string/delete" style="@style/textColorPrimaryAndSizeBody3AndMedium" />
+                </LinearLayout>
+                <Space android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/dynamic_select_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_90">
+                    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center" android:id="@id/btn_pick_all" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:src="@drawable/btn_pick_selector" />
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_chart1" android:layout_gravity="center" android:id="@id/dynamic_select_btn_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font3" android:text="@string/xcar_app_text_pick_all" style="@style/textColorPrimaryAndSizeBody3AndMedium" />
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/message_notice_rv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/delete_area" android:layout_alignParentTop="true" android:overScrollMode="never" />
+        </RelativeLayout>
+    </com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout>
+    <include android:id="@id/load_progress_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/my_settings_title_l" layout="@layout/xcar_loading_view" />
+    <include android:id="@id/error_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/my_settings_title_l" layout="@layout/xcar_error_view" />
+    <include android:id="@id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/my_settings_title_l" layout="@layout/msg_empty_view" />
+</RelativeLayout>

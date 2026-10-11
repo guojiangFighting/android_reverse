@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_64"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="16.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/charging_station_name_htv" android:layout_width="match_parent" android:layout_height="@dimen/font22" android:layout_marginTop="@dimen/font10" android:maxLines="1" style="@style/textColorPrimaryAndSizeBody2" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/charging_station_location_htv" android:layout_width="match_parent" android:layout_height="19.0dp" android:layout_marginTop="@dimen/font2" android:maxLines="1" android:layout_below="@id/charging_station_name_htv" style="@style/textColorSecondaryAndSizeBody2" />
+    <View android:id="@id/line" android:background="@drawable/divider" android:layout_width="match_parent" android:layout_height="2.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

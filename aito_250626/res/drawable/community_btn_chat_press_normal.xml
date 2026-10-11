@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="6.0dp" />
+    <solid android:color="@color/sns_audio_normal_btn_bg_color" />
+    <size android:height="100.0dp" android:width="100.0dp" />
+</shape>

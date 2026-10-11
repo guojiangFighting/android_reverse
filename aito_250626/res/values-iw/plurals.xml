@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">הרצה %d שניות קדימה</item>
+        <item quantity="two">הרצה %d שניות קדימה</item>
+        <item quantity="other">הרצה %d שניות קדימה</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">הרצה %d שניות אחורה</item>
+        <item quantity="two">הרצה %d שניות אחורה</item>
+        <item quantity="other">הרצה %d שניות אחורה</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">התראה חדשה אחת (%d)</item>
+        <item quantity="two">%d התראות חדשות</item>
+        <item quantity="many">%d התראות חדשות</item>
+        <item quantity="other">%d התראות חדשות</item>
+    </plurals>
+    <plurals name="page_progress">
+        <item quantity="one">עמוד %1$d</item>
+        <item quantity="two">עמוד %1$d</item>
+        <item quantity="many">עמוד %1$d</item>
+        <item quantity="other">עמוד %1$d</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="one">כוכב %d</item>
+        <item quantity="two">%d כוכבים</item>
+        <item quantity="many">%d כוכבים</item>
+        <item quantity="other">%d כוכבים</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="one">מתוך %1$d</item>
+        <item quantity="two">מתוך %1$d</item>
+        <item quantity="many">מתוך %1$d</item>
+        <item quantity="other">מתוך %1$d</item>
+    </plurals>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_30"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ll_address_popupwindow" android:layout_width="@dimen/dp_380" android:layout_height="@dimen/font48">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_primary" android:gravity="center_vertical" android:id="@id/select_district" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:text="北京" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginStart="@dimen/font16" />
+    </LinearLayout>
+</LinearLayout>

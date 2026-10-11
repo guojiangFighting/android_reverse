@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="48.0dp" android:width="104.0dp" android:viewportWidth="104.0" android:viewportHeight="48.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$seat_ctrl_btn_bg_both__0" android:pathData="M24,0L80,0A24,24 0,0 1,104 24L104,24A24,24 0,0 1,80 48L24,48A24,24 0,0 1,0 24L0,24A24,24 0,0 1,24 0z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillAlpha="0.9" android:fillType="evenOdd" />
+    <path android:fillColor="#00000000" android:pathData="M52,14L52,34" android:strokeColor="#000000" android:strokeWidth="0.5" android:strokeLineCap="square" android:strokeAlpha="0.2" android:fillAlpha="0.2" android:fillType="evenOdd" />
+</vector>

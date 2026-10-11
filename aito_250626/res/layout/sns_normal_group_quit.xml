@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout android:layout_gravity="center_horizontal" android:id="@id/common_bottom_linear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/emui_dimens_default_top" android:layout_marginBottom="@dimen/emui_dimens_default_top" app:hwColumnType="button_type">
+        <Button android:textColor="@color/emui_functional_red" android:id="@id/button_delete_quit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_button_sns_normal_group_delete_quit" style="@style/Widget.Emui.HwButton" />
+    </com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout>
+</RelativeLayout>

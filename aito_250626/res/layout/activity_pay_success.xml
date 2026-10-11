@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/pay_success_title" layout="@layout/charginggun_hwappbarpattern_navigation_icon_layout" />
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/pay_success_image" android:layout_width="@dimen/font56" android:layout_height="@dimen/font56" android:layout_marginTop="102.0dp" android:src="@drawable/ic_circle_success" android:layout_centerHorizontal="true" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font20" android:textColor="@color/emui_color_text_primary" android:id="@id/pay_success_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24" android:text="@string/xcar_app_text_pay_success_tips" android:layout_below="@id/pay_success_image" android:layout_centerHorizontal="true" android:fontFamily="@string/emui_text_font_family_medium" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:text="@string/xcar_app_text_pay_success_refund_tips" android:layout_below="@id/pay_success_tip" android:layout_centerHorizontal="true" style="@style/textColorSecondaryAndSizeBody2" />
+    <com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnLinearLayout android:gravity="center_horizontal" android:id="@id/charging_hcll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font32" android:layout_marginBottom="@dimen/font16" android:layout_below="@id/check_layout" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:hwColumnType="button_type">
+        <com.huawei.uikit.phone.hwbutton.widget.HwButton android:id="@id/pay_success_hbtn" android:layout_width="wrap_content" android:layout_height="@dimen/font40" android:text="@string/xcar_app_button_knowed" android:onClick="onClick" />
+    </com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnLinearLayout>
+</RelativeLayout>

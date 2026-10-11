@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_hovered="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/emui_control_hover_translucent" />
+            <corners android:radius="@dimen/emui_corner_radius_clicked" />
+        </shape>
+    </item>
+    <item android:state_pressed="true" android:drawable="@drawable/hwappbarpattern_press_shape_translucent" />
+</selector>

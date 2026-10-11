@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.huawei.auto.base.view.MyRelativeLayout android:orientation="vertical" android:id="@id/parent_view" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/phone_verify_title">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/black" android:id="@id/enter_verify_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_please_enter_erification_code" android:fontFamily="@string/emui_text_font_family_regular" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_functional_blue" android:id="@id/get_verifycode" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_button_get_code" android:fontFamily="@string/emui_text_font_family_medium" android:layout_alignParentEnd="true" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_functional_blue" android:id="@id/phone_verify_code_count_down" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.4" android:fontFamily="@string/emui_text_font_family_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_secondary" android:id="@id/phone_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_the_verification_code_sented_to_the_mobile_number" android:fontFamily="@string/emui_text_font_family_regular" />
+        </RelativeLayout>
+        <app.huawei.auto.base.beans.CodeEditView android:gravity="center_horizontal" android:id="@id/codeEditView_phone_verify" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:focusedByDefault="false" app:borderNum="6" app:borderSize="40" app:equalDivided="true" app:isSecret="false" app:textColor="@color/emui_color_primary" app:textSize="20" />
+    </LinearLayout>
+    <include android:id="@id/phone_verify_title" layout="@layout/mine_hwappbarpattern_navigation_icon_layout" />
+</app.huawei.auto.base.view.MyRelativeLayout>

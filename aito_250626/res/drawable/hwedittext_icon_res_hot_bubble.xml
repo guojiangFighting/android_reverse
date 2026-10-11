@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/hwedittext_default_bubble_hovered_or_pressed_emui" android:left="@dimen/hwedittext_icon_padding_size" android:top="@dimen/hwedittext_icon_padding_size" android:right="@dimen/hwedittext_icon_padding_size" android:bottom="@dimen/hwedittext_icon_padding_size" />
+    <item android:left="@dimen/hwedittext_icon_padding_size" android:top="@dimen/hwedittext_icon_padding_size" android:right="@dimen/hwedittext_icon_padding_size" android:bottom="@dimen/hwedittext_icon_padding_size">
+        <selector>
+            <item android:state_focused="true" android:state_window_focused="true" android:drawable="@drawable/hwedittext_default_bubble_focus_emui" />
+        </selector>
+    </item>
+</layer-list>

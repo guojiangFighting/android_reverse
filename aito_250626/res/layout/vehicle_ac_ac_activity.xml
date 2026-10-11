@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ac_cabin_rl" android:background="@color/id_fa_color_sub_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/ac_cabin_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/default_ac_image_cherry_and_baic" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/blowing_animation" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" app:lottie_autoPlay="true" app:lottie_fileName="blow/X1BlowingAnimation.json" app:lottie_imageAssetsFolder="blow/images/" app:lottie_loop="true" />
+    <RelativeLayout android:id="@id/ac_cabin_temp_rl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="135.0dp">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="48.0sp" android:id="@id/ac_cabin_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_default_ac_temp_value" android:layout_centerInParent="true" style="@style/textColorPrimaryAndSizeHeadline4" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="°" android:layout_toEndOf="@id/ac_cabin_temp" style="@style/textColorPrimaryAndSizeHeadline4" />
+    </RelativeLayout>
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/car_temperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_car_temperature" android:layout_below="@id/ac_cabin_temp_rl" android:layout_centerHorizontal="true" style="@style/textColorSecondaryAndSizeBody3" />
+    <ScrollView android:id="@id/scroll_view" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@id/translucent_view" android:layout_width="match_parent" android:layout_height="191.0dp" />
+            <include layout="@layout/vehicle_ac_card_view" />
+            <ViewStub android:id="@id/fragrance_view_stub" android:layout="@layout/vehicle_ac_fragrance_card" android:layout_width="match_parent" android:layout_height="@dimen/dp_107" android:layout_marginBottom="@dimen/font16" android:layout_marginHorizontal="@dimen/font16" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

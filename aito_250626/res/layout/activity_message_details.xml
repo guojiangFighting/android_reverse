@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="#dee2e6" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll_layout" android:layout_width="0.0dp" android:layout_height="0.0dp" android:overScrollMode="never" app:layout_constraintBottom_toTopOf="@id/comment_root_view" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@id/head_view_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/head_image_view" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/photorv" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:id="@id/drive_location_ll_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/hwappbarpattern_height" layout="@layout/mine_hwappbar_message_details__layout" />
+    <LinearLayout android:gravity="center" android:id="@id/comment_root_view" android:layout_width="match_parent" android:layout_height="70.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_secondary" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/details_edittext" android:background="@drawable/comment_tip_tv_card_bg_shape" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/font50" android:text="@string/xcar_app_text_post_detail_comment_tip_content" android:layout_weight="7.0" android:fontFamily="@string/emui_text_font_family_regular" android:paddingStart="@dimen/font12" android:paddingEnd="@dimen/font12" android:layout_marginStart="16.0dp" />
+        <LinearLayout android:layout_width="0.0dp" android:layout_height="@dimen/font48" android:layout_marginLeft="@dimen/font16" android:layout_weight="3.0">
+            <LinearLayout android:gravity="center" android:id="@id/linjv" android:layout_width="35.0dp" android:layout_height="@dimen/font48">
+                <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:src="@drawable/ic_comments_number" />
+                    <com.huawei.uikit.hwtextview.widget.HwTextView android:layout_width="@dimen/font20" android:layout_height="@dimen/font10" android:layout_marginTop="-3.0dp" android:layout_marginRight="-1.0dp" android:text="155" android:layout_alignParentRight="true" style="@style/textColorPrimaryAndSize8fpAndFamilyMedium" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="35.0dp" android:layout_height="@dimen/font48" android:layout_marginLeft="@dimen/font24" android:layout_marginRight="@dimen/font16" android:layout_toRightOf="@id/linjv">
+                <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/details_Like_it" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:src="@drawable/ic_public_thumbsup" />
+                    <com.huawei.uikit.hwtextview.widget.HwTextView android:layout_width="@dimen/font20" android:layout_height="@dimen/font10" android:layout_marginTop="-3.0dp" android:layout_marginRight="-1.0dp" android:text="155" android:layout_alignParentRight="true" style="@style/textColorPrimaryAndSize8fpAndFamilyMedium" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

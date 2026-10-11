@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/hwswitch_track_thumb_padding" android:top="@dimen/hwswitch_track_thumb_padding" android:right="@dimen/hwswitch_track_thumb_padding" android:bottom="@dimen/hwswitch_track_thumb_padding">
+        <shape android:shape="oval">
+            <solid android:color="@color/hwswitch_color_fg_inverse_disable" />
+        </shape>
+    </item>
+</layer-list>

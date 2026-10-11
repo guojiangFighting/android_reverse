@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/sns_alertdialog_shape" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" android:paddingStart="@dimen/padding_xl" android:paddingEnd="@dimen/padding_xl"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" layout="@layout/sns_dialog_view_with_checkbox" />
+    <include android:layout_width="match_parent" android:layout_height="56.0dp" layout="@layout/sns_custom_button_layout" />
+</LinearLayout>

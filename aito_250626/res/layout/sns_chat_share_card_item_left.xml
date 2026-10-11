@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/dp12" android:paddingBottom="@dimen/dp4" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp12" android:paddingEnd="@dimen/dp12"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon_card_view" android:layout_width="40.0dp" android:layout_height="40.0dp" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/emui_dimens_element_horizontal_large">
+            <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/dp14" android:textColor="@color/emui_color_text_primary" android:ellipsize="end" android:id="@id/share_title_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:breakStrategy="simple" />
+            <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/dp12" android:ellipsize="end" android:id="@id/share_des_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="match_parent" android:layout_marginTop="@dimen/font8" style="@style/crossuikit_divider_style" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+        <ImageView android:id="@id/share_user_icon_view" android:layout_width="@dimen/dp12" android:layout_height="@dimen/dp12" android:src="@drawable/icon_camera" android:layout_marginEnd="@dimen/font8" />
+        <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/font8" android:textColor="@color/emui_color_text_tertiary" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@id/share_user_name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="120.0dp" android:text="@string/brand_eng" android:fontFamily="@string/emui_text_font_family_regular" android:breakStrategy="simple" android:hyphenationFrequency="none" style="@style/sns_chat_card_name_right_style" />
+    </LinearLayout>
+</LinearLayout>

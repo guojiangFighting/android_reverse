@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/gray" android:gravity="center" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/find_pwd_information_code" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/white_bg" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_mobile" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray" android:gravity="center_vertical" android:id="@id/tv_mobile" android:background="@drawable/under_divider_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="1322334678" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/white_bg" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/register_code" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+            <Button android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/btn_get_code" android:background="@drawable/btn_grey" android:layout_width="wrap_content" android:layout_height="@dimen/guess_choose_btn_height" android:layout_marginLeft="5.0dp" android:text="@string/restart_get_code" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <EditText android:textSize="14.0sp" android:textColorHint="@color/gray" android:id="@id/et_verification_code" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="请输入验证码" android:layout_toLeftOf="@id/btn_get_code" android:layout_centerVertical="true" android:inputType="text" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

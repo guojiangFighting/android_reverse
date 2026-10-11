@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/emui_color_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_hot_activities" android:background="@color/emui_color_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/top_container" layout="@layout/activity_search_layout" />
+        <com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout android:id="@id/community_hsrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/top_container">
+            <com.huawei.uikit.phone.hwrecyclerview.widget.HwRecyclerView android:id="@id/activity_list_hrv" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+        </com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout>
+        <include android:id="@id/error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/top_container" layout="@layout/community_no_network_connect" />
+    </RelativeLayout>
+</RelativeLayout>

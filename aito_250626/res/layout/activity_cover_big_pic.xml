@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/emui_color_subbg" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/font48">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/cancel_page" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:layout_marginTop="@dimen/font12" android:src="@drawable/ic_public_cancel" android:layout_marginStart="@dimen/font12" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/finish_page_ok" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:layout_marginTop="@dimen/font12" android:src="@drawable/ic_public_ok" android:layout_marginEnd="@dimen/font12" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textStyle="bold" android:id="@id/photo_provider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="76.0dp" android:text="@string/xcar_app_text_clip_image_hint" android:layout_centerHorizontal="true" style="@style/textColorPrimaryAndSizeBody1AndFamilyMedium" />
+    <app.huawei.auto.base.view.photoview.ClipViewLayout android:id="@id/clip_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="19.0dp" android:layout_below="@id/photo_provider" app:clipBorderWidth="1.0dp" app:clipType="rectangle" app:mHorizontalPadding="24.0dp" app:mVerticalPadding="45.0dp" />
+    <include android:id="@id/load_progress_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font56" android:layout_alignTop="@id/preview_gallery" android:layout_alignBottom="@id/preview_gallery" android:layout_alignParentBottom="true" layout="@layout/xcar_loading_view" />
+    <View android:layout_width="match_parent" android:layout_height="@dimen/dp_80" />
+</RelativeLayout>

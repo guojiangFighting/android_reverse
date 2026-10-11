@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="98.0dp" android:layout_height="43.0dp">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/seat_btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/seat_ctrl_btn_bg_both" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/hot_animation" android:visibility="visible" android:layout_width="25.0dp" android:layout_height="25.0dp" app:lottie_autoPlay="false" app:lottie_fileName="seatHot03.json" app:lottie_loop="false" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/vent_animation" android:visibility="visible" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginStart="21.0dp" app:lottie_autoPlay="false" app:lottie_fileName="seatVent03.json" app:lottie_loop="false" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

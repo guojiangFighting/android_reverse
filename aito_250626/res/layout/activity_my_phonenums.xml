@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/constraintlayout" android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/mine_my_car_title_ls" layout="@layout/mine_hwappbarpattern_navigation_icon_layout" />
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/content_hacv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:overScrollMode="never" android:layout_marginHorizontal="@dimen/font16" app:cardBackgroundColor="@color/emui_card_panel_bg" app:cardCornerRadius="@dimen/emui_corner_radius_card" app:hwAdvancedCardViewClickAnimationEnable="false" app:layout_constraintTop_toBottomOf="@id/mine_my_car_title_ls">
+        <com.huawei.uikit.phone.hwsubheader.widget.HwSubHeader android:id="@id/show_phonenums_hsh" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    <com.huawei.uikit.phone.hwbutton.widget.HwButton android:textSize="@dimen/font16_empower" android:gravity="center" android:id="@id/next_step_hb" android:layout_width="@dimen/dp_180" android:layout_height="@dimen/font40" android:layout_marginBottom="16.0dp" android:text="@string/xcar_app_button_next_step" android:fontFamily="@string/emui_text_font_family_medium" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/Widget.Emui.HwButton.Light" />
+</androidx.constraintlayout.widget.ConstraintLayout>

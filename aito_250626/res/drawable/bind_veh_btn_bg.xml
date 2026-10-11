@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient android:startColor="#323743" android:endColor="#5c5d6a" android:angle="45.0" />
+            <corners android:radius="@dimen/font20" />
+        </shape>
+    </item>
+    <item android:gravity="left" android:drawable="@drawable/bind_veh_left" />
+    <item android:gravity="right" android:drawable="@drawable/bind_veh_right" />
+</layer-list>

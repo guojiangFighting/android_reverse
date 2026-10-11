@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/vpd_com_shape_corners_radius_bg" />
+    <solid android:color="@color/vpd_com_shape_solid_color_bg" />
+</shape>

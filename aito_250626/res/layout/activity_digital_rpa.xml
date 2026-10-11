@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/digital_key_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="-8.0dp" layout="@layout/hwappbarpattern_title_item_layout" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/baseui_dp_24">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <app.huawei.auto.vehicle.ui.views.RPAViewPage android:id="@id/rpa_view_page" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:layout_marginHorizontal="@dimen/baseui_dp_24" />
+            <com.huawei.uikit.phone.hwdotspageindicator.widget.HwDotsPageIndicator android:layout_gravity="center_horizontal" android:id="@id/rpa_dots_space" android:layout_width="wrap_content" android:layout_height="32.0dp" app:hwSelectedDotColor="#266efb" app:hwUnselectedDotColor="#33bdbdbd" style="@style/Widget.Emui.HwDotsPageIndicator.Translucent" />
+            <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/one_click_parking_layout" android:paddingTop="@dimen/baseui_dp_24" android:paddingBottom="@dimen/baseui_dp_4" android:layout_width="match_parent" android:layout_height="@dimen/font72" android:layout_marginTop="@dimen/baseui_dp_24" android:layout_marginHorizontal="@dimen/baseui_dp_24" app:cardCornerRadius="@dimen/emui_corner_radius_card" app:hwAdvancedCardViewClickAnimationEnable="false">
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/baseui_dp_12" android:paddingEnd="@dimen/baseui_dp_12">
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/font56">
+                        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_selector_text_primary" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/font22" android:text="@string/xcar_app_text_one_click_parking" android:singleLine="true" android:fontFamily="@string/emui_text_font_family_regular" />
+                            <TextView android:textSize="@dimen/font_sp_14" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/font19" android:text="@string/xcar_app_text_one_click_parking_explanation" android:singleLine="true" android:fontFamily="@string/emui_text_font_family_regular" />
+                        </LinearLayout>
+                        <com.huawei.uikit.phone.hwprogressbar.widget.HwProgressBar android:layout_gravity="center_vertical" android:id="@id/parking_progress" android:visibility="gone" android:layout_width="@dimen/baseui_dp_24" android:layout_height="@dimen/baseui_dp_24" android:layout_alignParentEnd="true" style="@style/Widget.Emui.HwProgressBar.Large" />
+                        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center_vertical" android:id="@id/parking_enter_icon" android:layout_width="12.0dp" android:layout_height="24.0dp" android:src="@drawable/icon_public_arrow_right" android:layout_alignParentRight="true" android:alpha="0.2" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+            <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/straight_line_parking_layout" android:paddingBottom="@dimen/baseui_dp_4" android:layout_width="match_parent" android:layout_height="@dimen/font72" android:layout_marginTop="@dimen/baseui_dp_12" android:layout_marginHorizontal="@dimen/baseui_dp_24" app:cardCornerRadius="@dimen/emui_corner_radius_card" app:hwAdvancedCardViewClickAnimationEnable="false">
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/baseui_dp_12" android:paddingEnd="@dimen/baseui_dp_12">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/layout_status" android:layout_width="match_parent" android:layout_height="@dimen/font56">
+                        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_selector_text_primary" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/font22" android:text="@string/xcar_app_text_straight_line_parking" android:singleLine="true" android:fontFamily="@string/emui_text_font_family_regular" />
+                            <TextView android:textSize="@dimen/font_sp_14" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/font19" android:text="@string/xcar_app_text_straight_line_parking_explanation" android:singleLine="true" android:fontFamily="@string/emui_text_font_family_regular" />
+                        </LinearLayout>
+                        <com.huawei.uikit.phone.hwprogressbar.widget.HwProgressBar android:layout_gravity="center_vertical" android:id="@id/straight_progress" android:visibility="gone" android:layout_width="@dimen/baseui_dp_24" android:layout_height="@dimen/baseui_dp_24" android:layout_alignParentEnd="true" style="@style/Widget.Emui.HwProgressBar.Large" />
+                        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center_vertical" android:id="@id/straight_enter_icon" android:layout_width="12.0dp" android:layout_height="24.0dp" android:src="@drawable/icon_public_arrow_right" android:layout_alignParentRight="true" android:alpha="0.2" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

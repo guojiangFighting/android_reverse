@@ -1,0 +1,18 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+option java_package = "com.huawei.ads.rpa.net.proto";
+
+package RtsaMsgs;
+
+import "RtsaRpaCtrlCmd.proto";
+import "RtsaRdaCtrlCmd.proto";
+
+message RtsaRmtCtrlCmd {
+    RpaCtrlCmd rpaCtrlCmd = 1;
+    RdaCtrlCmd rdaCtrlCmd = 2;
+    uint32 channelSelection = 3; // 1:未知;2:是;3:否
+    uint32 heartBeat = 4; // 0. offline, 1. online, 2. invalid
+    uint32 heartbeatCnt = 5; // 多通道对齐SN，心跳报文固定 0
+    uint32 accessId = 6;
+}

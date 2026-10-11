@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/main" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" layout="@layout/ctrl_info_x1" />
+    <RelativeLayout android:gravity="center|bottom" android:id="@id/widget_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/widget_rda_sys_prepare_x1" />
+        <include layout="@layout/widget_unavailable_x1" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

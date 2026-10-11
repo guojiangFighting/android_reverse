@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/cl_bottom" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:id="@id/root_linear_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <app.huawei.auto.mall.views.banner.MallProductDetailBannerView android:id="@id/banner_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <include android:id="@id/mall_product_detail_cd_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/baseui_dp_72" layout="@layout/mall_product_detail_cd_view" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/sp_20" android:textColor="@color/emui_black" android:ellipsize="end" android:id="@id/product_name_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_price" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font17" android:textColor="#0a59f7" android:id="@id/price_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginEnd="@dimen/dp4" />
+                <app.huawei.auto.tangram.StrikeThruTextView android:textSize="@dimen/font14" android:textColor="@color/emui_color_secondary" android:id="@id/origin_price_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginEnd="@dimen/font8" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/bonus_point_icon_view" android:layout_width="@dimen/font18" android:layout_height="@dimen/font18" android:src="@drawable/ic_bonus_point_icon" android:layout_marginEnd="@dimen/dp4" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="@color/emui_appbar_title_off" android:id="@id/bonus_point_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_medium" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/product_tags_recycler" android:paddingTop="@dimen/font16" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="-2.5dp" android:overScrollMode="never" />
+            <app.huawei.auto.mall.views.MallProductDetailSelectedView android:id="@id/selected_product_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font13" />
+            <app.huawei.auto.mall.views.MallServiceTitleContentView android:id="@id/mall_service_title_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <View android:background="#0d000000" android:layout_width="match_parent" android:layout_height="@dimen/font8" android:layout_marginBottom="@dimen/font8" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <app.huawei.auto.mall.views.MallProDetailCheckView android:layout_gravity="center" android:orientation="horizontal" android:id="@id/cl_bottom" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/font72" android:layout_alignParentBottom="true" />
+    <include android:id="@id/loadding_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/xcar_poster_loadding_view" />
+</RelativeLayout>

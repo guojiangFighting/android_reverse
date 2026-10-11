@@ -1,0 +1,38 @@
+
+// [START declaration]
+syntax = "proto3";
+package rc_avp.avpinfo;
+option java_package = "com.huawei.ads.carsearch.proto.avpinfo";
+option java_outer_classname = "RcAvpAvpinfo";
+import "rc_avp_description.proto";
+import "rc_avp_vector.proto";
+// [END declaration]
+
+
+// [START messages]
+
+message Patch {
+  repeated PatchAvpInfo patches = 1;
+}
+
+message PatchAvpInfo {
+  uint64 patchId = 1;
+  repeated rc_avp.data.EntryInfo entryinfos = 2;                             // 入口点信息 gcj02
+  repeated rc_avp.description.CoorTrans trans = 3;                           // 30w坐标转换关系   mapInfo.json
+  rc_avp.description.UNMannedInfo unmanedInfo = 4;                           // 无人avp激活信息   预留不激活
+  uint64 updateTime = 5;                                                     // hmi地图最后更新时间，填入编译时间
+
+  double avpLength = 6;                                                      // avp内路线长度
+  bool hasChargingSpot = 7;                                                  // 是否有充电车位
+  bool hasElevatorEntry = 8;                                                 // 是否有电梯口
+  bool hasStairEntry = 9;                                                    // 是否有楼梯口
+  repeated AVPLayerInfo avpLayerInfos = 10;                                  // avp楼层信息
+  repeated rc_avp.description.ParkingArea parkingAreas = 11;                 // 停车场分层围栏
+}
+
+message AVPLayerInfo {
+  sint32 availableLayer = 1;                                                 // avp可用楼层
+  uint32 parkingspotNumber = 2;                                              // 相应楼层车位总数
+}
+
+// [END messages]

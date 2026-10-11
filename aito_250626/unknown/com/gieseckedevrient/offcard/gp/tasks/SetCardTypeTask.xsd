@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0"
+    xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0" xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0"
+    xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <import namespace="http://www.gi-de.com/offcard/commontypes/1.0"
+        schemaLocation="CommonTypes.xsd" />
+
+    <complexType name="SetCardTypeTaskType">
+        <sequence>
+            <element name="CardProperties" type="ogpt:CardPropertiesType"
+                minOccurs="0" />
+            <element name="IsdProperties" type="ogpt:SdPropertiesType"
+                minOccurs="0" />
+            <element name="SsdProperties" type="ogpt:SdPropertiesType"
+                minOccurs="0" />
+        </sequence>
+        <attribute name="Name" type="string" use="optional" />
+        <attribute name="Type" use="required">
+            <simpleType>
+                <restriction base="string">
+                    <enumeration value="UniversimCallistoPro"/>
+                    <enumeration value="UniversimDraco"/>
+                    <enumeration value="ProxsimLibra"/>
+                    <enumeration value="ProxsimTaurus"/>
+                    <enumeration value="SmartsimAvior"/>
+                    <enumeration value="SmartsimArgo"/>
+                    <enumeration value="SmartsimV30"/>
+                    <enumeration value="SmartsimCxLeo"/>
+                    <enumeration value="SmartsimCxScorpiusStep1"/>
+                    <enumeration value="SmartsimCxScorpiusStep2"/>
+                    <enumeration value="SmartsimCxScorpiusStep3"/>
+                    <enumeration value="SmartsimCxCygnus"/>
+                    <enumeration value="SmartsimCxeSE"/>
+                    
+                    <enumeration value="ConvegoJoin21"/>
+                    <enumeration value="ConvegoJoin33"/>
+                    <enumeration value="ConvegoJoin332"/>
+                    <enumeration value="ConvegoJoin341"/>
+                    <enumeration value="ConvegoJoin342"/>
+                    <enumeration value="SmartCafeExpert40"/>
+                    <enumeration value="ConvegoJoin401"/>
+                    <enumeration value="ConvegoJoin41Se"/>
+                    <enumeration value="ConvegoJoin442"/>
+                    <enumeration value="SmartCafeExpert21"/>
+                    <enumeration value="SmartCafeExpert22"/>
+                    <enumeration value="SmartCafeExpert32"/>
+                    <enumeration value="SmartCafeExpert50"/>
+                    <enumeration value="SmartCafeExpert51"/>
+                    <enumeration value="SmartCafeExpert60"/>
+                    <enumeration value="SmartCafeExpert70"/>
+                    
+                    <enumeration value="GlobalPlatform201"/>
+                    <enumeration value="GlobalPlatform211"/>
+                    <enumeration value="GlobalPlatform22"/>
+                </restriction>
+            </simpleType>
+        </attribute>
+        <attribute name="TypeName" type="string" use="optional" />
+        <attribute name="Log" type="boolean" use="optional"
+            default="false" />
+    </complexType>
+    <complexType name="CardPropertiesType">
+        <sequence>
+            <element name="DesAlgorithmId" type="oct:EncodingHex1Byte"
+                minOccurs="0" />
+        </sequence>
+    </complexType>
+
+    <complexType name="SdPropertiesType">
+        <sequence>
+            <element name="Property" minOccurs="0" maxOccurs="unbounded">
+                <complexType>
+                    <simpleContent>
+                        <extension base="token">
+                            <attribute name="Name" type="string" />
+                        </extension>
+                    </simpleContent>
+                </complexType>
+            </element>
+        </sequence>
+    </complexType>
+
+</schema>

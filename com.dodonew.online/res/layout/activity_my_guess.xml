@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/under_divider_bg" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="我的竞猜" style="@style/GrayTextStyle" />
+        <TextView android:id="@id/tv_guess_total" android:layout_marginLeft="20.0dp" android:text="0胜0负" style="@style/BlackTextStyle" />
+        <TextView android:id="@id/tv_guess_win_rate" android:layout_marginLeft="10.0dp" android:text=" 胜率0% " style="@style/GrayTextStyle" />
+    </LinearLayout>
+    <com.dodonew.online.widget.MultiStateView android:id="@id/multiStateView" android:layout_width="match_parent" android:layout_height="match_parent" app:msv_loadingView="@layout/view_load_web" app:msv_emptyView="@layout/view_empty" app:msv_errorView="@layout/view_error" app:msv_viewState="loading"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+        <include layout="@layout/view_recyclerview_refresh" />
+    </com.dodonew.online.widget.MultiStateView>
+</LinearLayout>

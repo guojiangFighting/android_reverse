@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dodonew.online.widget.MultiStateView android:id="@id/multiStateView" android:layout_width="match_parent" android:layout_height="match_parent" app:msv_loadingView="@layout/view_loading" app:msv_emptyView="@layout/view_empty" app:msv_errorView="@layout/view_error" app:msv_viewState="loading"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/adapter_ticket" />
+        <Button android:textColor="@color/white" android:id="@id/btn_get_ticket" android:background="@drawable/btn_red" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="立即领取" />
+        <LinearLayout android:orientation="vertical" android:id="@id/view_get_ticket_rule" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10.0dp">
+            <TextView android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="领取规则" />
+            <TextView android:background="@color/white" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/rule_get_ticket" />
+        </LinearLayout>
+    </LinearLayout>
+</com.dodonew.online.widget.MultiStateView>

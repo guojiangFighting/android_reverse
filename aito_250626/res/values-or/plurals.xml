@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="page_progress">
+        <item quantity="one">ପୃଷ୍ଠା %1$d</item>
+        <item quantity="other">ପୃଷ୍ଠା %1$d</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="one">%dଟି ତାରକା</item>
+        <item quantity="other">%dଟି ତାରକା</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="one">%1$dର</item>
+        <item quantity="other">%1$dର</item>
+    </plurals>
+</resources>

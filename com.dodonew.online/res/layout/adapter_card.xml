@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dodonew.online.widget.swipelayout.SwipeLayout android:id="@id/swipe" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@id/view_item_right" android:tag="Bottom3" android:background="@color/colorPrimary" android:layout_width="60.0dp" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" android:weightSum="10.0">
+            <TextView android:textColor="@color/white" android:id="@id/tv_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unBind" />
+        </LinearLayout>
+        <android.support.v7.widget.CardView android:orientation="vertical" android:id="@id/view_card_contanier" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" card_view:cardBackgroundColor="@color/precent_a" card_view:cardCornerRadius="5.0dp" card_view:cardElevation="2.0dp"
+          xmlns:card_view="http://schemas.android.com/apk/res-auto">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_card_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:src="@drawable/bg_vip" android:layout_alignParentRight="true" />
+                <FrameLayout android:orientation="vertical" android:background="@drawable/bg_card" android:paddingLeft="10.0dp" android:paddingTop="20.0dp" android:paddingRight="10.0dp" android:paddingBottom="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="22.0sp" android:textColor="@color/white" android:id="@id/tv_card_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="潮流网吧" />
+                    <TextView android:textStyle="italic" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@id/tv_card_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="32424324234242" />
+                </FrameLayout>
+                <FrameLayout android:orientation="vertical" android:background="@drawable/bg_card" android:paddingLeft="10.0dp" android:paddingTop="20.0dp" android:paddingRight="10.0dp" android:paddingBottom="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="right" android:id="@id/tv_card_type" android:background="@drawable/btn_yellow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="会员卡" />
+                    <TextView android:textSize="16.0sp" android:textStyle="italic" android:textColor="@color/white" android:layout_gravity="right|bottom" android:id="@id/tv_accountBalance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥33.00" />
+                </FrameLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </com.dodonew.online.widget.swipelayout.SwipeLayout>
+</LinearLayout>

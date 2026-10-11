@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/xcar_emui_bottomsheet_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/my_phonenums_simple_list_item_singleline" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/font12" android:layout_above="@id/return_hbt_hcrl" android:layout_below="@id/hwlistpattern_text" android:overScrollMode="never" />
+    <com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout android:orientation="vertical" android:id="@id/return_hbt_hcrl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:hwColumnType="button_type">
+        <com.huawei.uikit.phone.hwbutton.widget.HwButton android:enabled="false" android:layout_gravity="center_horizontal" android:id="@id/return_hbt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24" android:layout_marginBottom="16.0dp" android:text="@string/xcar_app_button_submit" style="@style/Widget.Emui.HwButton.Emphasize" />
+    </com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout>
+</RelativeLayout>

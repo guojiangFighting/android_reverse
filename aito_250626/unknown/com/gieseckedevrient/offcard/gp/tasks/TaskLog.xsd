@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0"
+        xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0"
+        xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified">
+
+  <import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="CommonTypes.xsd"/>
+
+  <element name="TaskLog" type="ogpt:TaskLogType"/>
+  
+  <complexType name="TaskLogType">
+    <sequence>
+      <element name="Task" type="ogpt:TaskType" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+    <attribute name="Date" type="string" use="optional"/>
+  </complexType>
+  
+  <complexType name="TaskType">
+    <sequence>
+      <element name="Info" type="string"/>
+      <element name="Result" type="string" minOccurs="0"/>
+      <element name="Error" type="string" minOccurs="0"/>
+      <group ref="ogpt:ApduGroup" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+    <attribute name="Time" type="integer" use="optional"/>
+  </complexType>
+
+  <group name="ApduGroup">
+    <sequence>
+      <element name="CommandApdu" type="ogpt:ApduType"/>
+      <element name="ResponseApdu" type="ogpt:ApduType" minOccurs="0"/>
+    </sequence>
+  </group>
+
+  <complexType name="ApduType">
+    <simpleContent>
+      <extension base="oct:EncodingHexUnlimitedByte">
+        <attribute name="Time" type="integer" use="optional"/>
+      </extension>
+    </simpleContent>
+  </complexType>
+
+</schema>

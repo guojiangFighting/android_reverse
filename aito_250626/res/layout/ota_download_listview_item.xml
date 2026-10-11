@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="14.0sp" android:textColor="@color/ota_text_gray_color" android:id="@id/ota_installing_list_item_text" android:paddingBottom="@dimen/font8" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_regular" />
+</RelativeLayout>

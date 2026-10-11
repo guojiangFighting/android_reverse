@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:id="@id/space" android:layout_width="match_parent" android:layout_height="@dimen/search_result_item_margin" />
+    <RelativeLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/space">
+        <app.huawei.auto.base.beans.RoundImageView android:id="@id/icon" android:layout_width="@dimen/search_result_user_icon_width" android:layout_height="@dimen/search_result_user_icon_width" android:src="@drawable/mine_portrait" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/font8" android:layout_marginEnd="@dimen/font8" android:layout_toStartOf="@id/follow" android:layout_toEndOf="@id/icon">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/user_name" android:padding="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+                <include layout="@layout/name_label_view" />
+            </LinearLayout>
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:textColor="@color/user_sign_text_color" android:ellipsize="end" android:id="@id/user_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2" android:maxLines="1" />
+        </LinearLayout>
+        <app.huawei.auto.base.view.FollowHwButton android:textColor="@color/text_follow_blue" android:id="@id/follow" android:layout_width="@dimen/search_result_user_button_width" android:layout_height="@dimen/search_result_user_button_height" android:text="@string/xcar_app_button_my_follow" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/Widget.Emui.HwButton.Small" />
+    </RelativeLayout>
+    <View android:background="@drawable/ic_horizontal_driver_bg" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/common_padding" android:layout_below="@id/container" />
+</RelativeLayout>

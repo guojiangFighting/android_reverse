@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/sns_merge_chat_item_parent">
+        <RelativeLayout android:id="@id/text_content" style="@style/sns_merge_chat_item_content">
+            <ImageView android:id="@id/merge_chat_friend_images" style="@style/sns_merge_chat_item_head_view" />
+            <app.huawei.auto.im.ui.widget.CustomFontTextView android:id="@id/merge_chat_friend_name" android:layout_toRightOf="@id/merge_chat_friend_images" android:layout_toStartOf="@id/merge_chat_time" android:layout_toEndOf="@id/merge_chat_friend_images" style="@style/sns_merge_chat_item_friend_name" />
+            <RelativeLayout android:id="@id/layout_conversation_content" android:layout_toRightOf="@id/merge_chat_friend_images" android:layout_toEndOf="@id/merge_chat_friend_images" style="@style/sns_merge_chat_content_detail">
+                <include layout="@layout/sns_item_merge_file_include" />
+            </RelativeLayout>
+            <app.huawei.auto.im.ui.widget.CustomFontTextView android:id="@id/merge_chat_time" style="@style/sns_merge_chat_item_time" />
+        </RelativeLayout>
+        <app.huawei.auto.im.ui.widget.DivideTextView android:id="@id/dividing_line" android:layout_below="@id/text_content" style="@style/sns_merge_chat_item_dividing_line" />
+    </RelativeLayout>
+</RelativeLayout>

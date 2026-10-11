@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/sns_card_radius_size" android:topRightRadius="2.0dp" android:bottomLeftRadius="@dimen/sns_card_radius_size" android:bottomRightRadius="@dimen/sns_card_radius_size" />
+    <solid android:color="@color/sns_chat_left_color" />
+</shape>

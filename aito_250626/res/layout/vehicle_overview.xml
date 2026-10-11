@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/alarm_notification" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.huawei.uikit.phone.hwsubheader.widget.HwSubHeader android:id="@id/alarm_notification_title" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_gravity="center" android:id="@id/alarm_notification_cv" android:layout_width="match_parent" android:layout_height="wrap_content" app:hwAdvancedCardViewClickAnimationEnable="false">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/alarm_notification_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="4.0dp" />
+        </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/charge_notification" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/alarm_notification">
+        <com.huawei.uikit.phone.hwsubheader.widget.HwSubHeader android:id="@id/charge_notification_title" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_gravity="center" android:id="@id/charge_notification_cv" android:layout_width="match_parent" android:layout_height="wrap_content" app:hwAdvancedCardViewClickAnimationEnable="false">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/charge_notification_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="4.0dp" />
+        </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/edition_notification" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/charge_notification">
+        <com.huawei.uikit.phone.hwsubheader.widget.HwSubHeader android:id="@id/edition_notification_title" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_gravity="center" android:id="@id/edition_notification_cv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:hwAdvancedCardViewClickAnimationEnable="false">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/edition_notification_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="4.0dp" />
+        </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ota_notification" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/edition_notification">
+        <com.huawei.uikit.phone.hwsubheader.widget.HwSubHeader android:id="@id/ota_notification_title" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_gravity="center" android:id="@id/ota_notification_cv" android:layout_width="match_parent" android:layout_height="wrap_content" app:hwAdvancedCardViewClickAnimationEnable="false">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/ota_notification_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="4.0dp" />
+        </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    </LinearLayout>
+    <include android:id="@id/none_notification" android:visibility="gone" layout="@layout/public_blank_page" />
+</RelativeLayout>

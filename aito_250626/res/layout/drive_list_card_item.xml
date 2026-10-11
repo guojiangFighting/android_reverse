@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/drive_list_card_view" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/emui_corner_radius_large" app:hwAdvancedCardViewClickAnimationEnable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/drive_list_ll_item_root" android:paddingBottom="@dimen/font24" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/hwlistpattern_item_margin_12" android:layout_marginEnd="@dimen/hwlistpattern_item_margin_12">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/drive_list_text_title" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:layout_marginTop="@dimen/font4" android:text="" android:maxLines="1" android:layout_toLeftOf="@id/drive_list_text_status" style="@style/textColorPrimaryAndSizeBody1AndMedium" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center_vertical" android:id="@id/drive_list_text_status" android:layout_width="wrap_content" android:layout_height="@dimen/font48" android:layout_marginLeft="@dimen/font16" android:layout_marginTop="@dimen/font4" android:layout_alignParentRight="true" style="@style/textColorWarningAndSizeBody2" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_width="match_parent" android:layout_height="1.0dp" android:src="#f2f2f2" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/hwlistpattern_item_icon_right_height_16">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center" android:layout_width="@dimen/hwlistpattern_item_icon_right_width_16" android:layout_height="@dimen/hwlistpattern_item_icon_right_height_16" android:layout_marginRight="@dimen/font8" android:src="@drawable/drive_list_item_gps" android:alpha="0.6" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="end" android:id="@id/drive_list_text_location" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8.0dp">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center" android:layout_width="@dimen/hwlistpattern_item_icon_right_width_16" android:layout_height="@dimen/hwlistpattern_item_icon_right_height_16" android:layout_marginRight="@dimen/font8" android:src="@drawable/drive_list_item_time" android:alpha="0.6" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/drive_list_text_time" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+        </LinearLayout>
+    </LinearLayout>
+</com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>

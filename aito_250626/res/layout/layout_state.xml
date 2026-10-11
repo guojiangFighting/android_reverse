@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_state" android:tag="layout/layout_state_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fl_state" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" bind:layout_constraintBottom_toBottomOf="parent" bind:layout_constraintEnd_toEndOf="parent" bind:layout_constraintStart_toStartOf="parent">
+        <include android:id="@id/component_state_include" layout="@layout/component_state" />
+        <include layout="@layout/component_calc_failure" />
+        <include layout="@layout/component_calc_loading" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

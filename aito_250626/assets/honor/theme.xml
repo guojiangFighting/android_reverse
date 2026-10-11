@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Huawei Technologies Co., Ltd. 2019-2019. All rights reserved.
+  -->
+
+<resources>
+   <color name="hwfloatingbutton_disabled_shadow_start">#4D00B0FF</color>
+   <color name="hwfloatingbutton_disabled_shadow_end">#4DFF00D0</color>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0" xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0" elementFormDefault="qualified">
+    <xs:import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="CommonTypes.xsd"/>
+    <xs:complexType name="TriggerSmsParametersType">
+        <xs:sequence>
+            <xs:element name="AdministrationHost" type="xs:string" minOccurs="0"/>
+            <xs:element name="AdministrationUri" type="xs:string" minOccurs="0"/>
+            <xs:element name="AgentId" type="xs:string" minOccurs="0"/>
+            <xs:element name="BufferSize" type="xs:integer" minOccurs="0"/>
+            <xs:element name="DestinationIpAddress" type="xs:string" minOccurs="0"/>
+            <xs:element name="KeyIdentifier" type="oct:EncodingHex1Byte" minOccurs="0"/>
+            <xs:element name="KeyVersion" type="oct:EncodingHex1Byte" minOccurs="0"/>
+            <xs:element name="NetworkAccessName" type="xs:string" minOccurs="0"/>
+            <xs:element name="Port" type="xs:integer" minOccurs="0"/>
+            <xs:element name="ProtocolType" type="oct:EncodingHex1Byte" minOccurs="0"/>
+            <xs:element name="PskIdentifier" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

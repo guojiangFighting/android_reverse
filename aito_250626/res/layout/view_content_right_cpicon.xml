@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/copy_content_hiv" android:background="@drawable/icon_veh_cp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="right" android:id="@id/copy_content_htv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/copy_content_hiv" style="@style/textColorSecondaryAndSizeBody2" />
+</RelativeLayout>

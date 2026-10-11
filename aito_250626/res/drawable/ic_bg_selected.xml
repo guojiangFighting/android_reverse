@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="250.0dp" android:topRightRadius="250.0dp" android:bottomLeftRadius="250.0dp" android:bottomRightRadius="250.0dp" />
+    <solid android:color="@color/emui_accent_pressed" />
+    <stroke android:width="2.0dp" android:color="@color/emui_accent_pressed" />
+</shape>

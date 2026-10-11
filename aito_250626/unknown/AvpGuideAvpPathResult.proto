@@ -1,0 +1,73 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+import "VpdMsgHeader.proto";
+import "AvpGuideRequestPoint.proto";
+import "AvpGuidePathResult.proto";
+
+package NaviMsgs;
+
+option java_package = "com.huawei.ads.uavp.servicecommon.bean.proto";
+option java_outer_classname = "PbAvpGuideAvpPathResult";
+
+enum E_AvpGuidePathResultErrorCode {
+    ERROR_CODE_NO_ERROR = 0; // 算路成功 无异常
+    ERROR_CODE_REQUEST_INVALID = 1; // 算路请求参数异常
+    ERROR_CODE_NO_ROUTE = 2; // 起终点匹配正常，但算路拓扑不通 可能是由于单向道路或者构图不完整导致
+    ERROR_CODE_SRC_MATCH_FAILED = 3; // 起点匹配道路失败
+    ERROR_CODE_DES_MATCH_FAILED = 4; // 终点匹配道路失败
+    ERROR_CODE_MATCHING_ERROR = 5; // 起终点匹配道路都成功 但是后续送到算路模块前根据拓扑以及其他逻辑滤除无效道路后 没有匹配结果
+    ERROR_CODE_CALC_FAILED = 6; // 起终点匹配正常，但算路失败 可能是算路逻辑内部错误 比如某些校验不符合导致路线被滤除 也可能是构图属性有问题 比如 遇到虚拟道路算路会当成算路不通处理
+    ERROR_CODE_MAP_API_ERROR = 7; // 数据服务接口拿不到地图数据
+    ERROR_CODE_TRANSFORM_POINT_ERROR = 8; // 道路路点有问题 比如形点小于2个等
+    ERROR_CODE_LANE_UNCONNECTED = 9; // 构图有问题，比如 lane的拓扑关系不存在
+    ERROR_CODE_CONSTRUCT_ROAD_FAILED = 10; // 构图有问题，数据服务里取到了Road 但是各种原因用不了，比如空指针之类的异常
+    ERROR_CODE_LANE_CHECK_FAILED = 11; // 构图有问题，比如 Road取不到对应的lane
+    ERROR_CODE_ENTRANCE_GUIDE_FAILED = 12; // 算路成功 但是由于引导点制作或者其他原因 后续没法引导
+    ERROR_CODE_LANE_ROUTES_FAILED = 13; // 构图有问题，比如 lane的拓扑关系不对或者与Road拓扑不自恰
+    ERROR_CODE_UNKNOWN = 14;
+    ERROR_CODE_ANGLE_REVERSE = 15; // 航向角问题
+    ERROR_CODE_HEADING_ERROR = 32; // 请行驶至正确车道后再试
+    ERROR_CODE_PATH_LENGTH_TOO_SHORT = 31; // 表示 算路起终点距离过短，放弃算路
+    ERROR_CODE_PATH_CROSSLAYER_BUT_STRATEGY_NOT_ALLOW = 33; // 表示 算路策略不允许跨层
+    ERROR_CODE_ROUTE_TOO_LONG = 101; // 路线规划失败
+}
+
+enum E_AvpGuidePathResultPlanMode {
+    AVP_GUIDE_MODE_OFFLINE = 0; // 离线算路
+    AVP_GUIDE_MODE_ONLINE = 1;  // 在线算路
+}
+
+enum E_AvpGuidePathResultGuideStatus {
+    AVP_GUIDE_STATUS_INIT = 0;          // 未算路或者没算路成功
+    AVP_GUIDE_STATUS_PATH_UNSELECT = 1; // 算路成功 但是还没有选择路线
+    AVP_GUIDE_STATUS_PATH_SELECT   = 2; // 算路成功 已经选择了路线
+}
+
+enum E_AvpGuidePathResultType {
+    AVP_GUIDE_NEW_ROUTE = 0;
+    AVP_GUIDE_AUTO_REROUTE = 1;
+    AVP_GUIDE_SINGLE_ROUTE = 2;
+    AVP_GUIDE_TRAFFIC_AUTOREROUTE = 3;
+    AVP_GUIDE_OTHER_ROUTE = 4;
+}
+
+enum E_AvpGuidePathResultScene {
+    PATH_RESULT_SCENE_AVP_QUERY = 0;     // 路线查询
+    PATH_RESULT_SCENE_AVP_SITE = 1;      // 定点
+    PATH_RESULT_SCENE_AVP_SUMMON = 2;    // 召回
+    PATH_RESULT_SCENE_AVP_ROAM = 3;      // 漫游
+    PATH_RESULT_SCENE_AVP_URBUN_AVP = 4; // 行泊一体
+}
+
+message AvpGuideAvpPathResult {
+    StdMsgs.Header header = 1;
+    string uuid = 2;
+    uint32 errorCode = 3;     // 见E_AvpGuidePathResultErrorCode
+    uint32 planMode = 4;      // 见E_AvpGuidePathResultPlanMode
+    uint32 guideStatus = 5;   // 见E_AvpGuidePathResultGuideStatus
+    uint32 type = 6;          // 见E_AvpGuidePathResultType
+    uint32 scene = 7;         // 见E_AvpGuidePathResultScene
+    repeated NaviMsgs.AvpGuideRequestPoint points = 8;  // 起点,途径地,终点信息, avp漫游模式只用设置起点, avp定点和召回模式只用设置起点和终点信息. 非路线查询 不用填坐标信息
+    repeated AvpGuidePathResult paths = 9; // 可能一条,也可能多条(默认第0条推荐,最多三条) 当前ads2.0只有一条
+}

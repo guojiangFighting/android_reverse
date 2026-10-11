@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="bottom" android:id="@id/resource_tv" android:paddingBottom="@dimen/font9" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:layout_marginBottom="@dimen/font8" android:text="@string/xcar_app_text_resource_characteristics" android:layout_marginEnd="@dimen/font4" style="@style/textColorAndSize14FpAndFontFamilyMedium" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/resource_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font4" android:layout_below="@id/resource_tv" />
+</RelativeLayout>

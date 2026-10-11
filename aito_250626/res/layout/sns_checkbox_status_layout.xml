@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/checkbox_status_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/head_pic_layout" android:layout_alignParentEnd="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/checkbox_status_btn" android:padding="0.0dp" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/sns_chat_list_item_checkbox_size" android:layout_height="@dimen/sns_chat_list_item_checkbox_size" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/font16" style="@style/Widget.Emui.HwCheckBox.Normal" />
+</RelativeLayout>

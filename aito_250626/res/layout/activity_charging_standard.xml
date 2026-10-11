@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <app.huawei.auto.base.view.StatusBarView android:id="@id/status_bar_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/advancedcardview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_marginTop="@dimen/font8" android:layout_marginRight="@dimen/font16" android:layout_below="@id/status_bar_view" app:cardBackgroundColor="@color/default_prd_color" app:cardCornerRadius="@dimen/font16" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/charging_gun_recycler" android:paddingTop="@dimen/font4" android:paddingBottom="@dimen/font4" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12" />
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_14" android:textColor="@color/new_emui_text_secondary" android:id="@id/price_desc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font28" android:layout_marginTop="@dimen/font12" android:layout_marginBottom="@dimen/font16" android:layout_below="@id/advancedcardview" />
+</RelativeLayout>

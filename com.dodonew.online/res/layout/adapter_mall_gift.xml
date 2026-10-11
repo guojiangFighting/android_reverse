@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:orientation="vertical" android:id="@id/view_card_contanier" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" card_view:cardBackgroundColor="@color/white" card_view:cardCornerRadius="5.0dp" card_view:cardElevation="2.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/iv_gift" android:layout_width="match_parent" android:layout_height="@dimen/dialog_height" android:src="@drawable/icon_app" android:scaleType="fitXY" />
+        <RelativeLayout android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@color/white" android:id="@id/btn_exchange" android:background="@drawable/btn_vote_selector" android:layout_width="50.0dp" android:layout_height="40.0dp" android:text="兑换" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btn_exchange" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/text_size_16" android:id="@id/tv_gift_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sdsd" android:singleLine="true" />
+                <TextView android:textColor="@color/colorPrimary" android:id="@id/tv_gift_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="sdsd" android:singleLine="true" android:drawableLeft="@drawable/icon_price" android:drawablePadding="5.0dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,2965 @@
+{
+  "provinces": [
+    {
+      "citys": [
+        {
+          "citysName": "石家庄市",
+          "citysAlias": "石家庄"
+        },
+        {
+          "citysName": "邯郸市",
+          "citysAlias": "邯郸"
+        },
+        {
+          "citysName": "唐山市",
+          "citysAlias": "唐山"
+        },
+        {
+          "citysName": "保定市",
+          "citysAlias": "保定"
+        },
+        {
+          "citysName": "秦皇岛市",
+          "citysAlias": "秦皇岛"
+        },
+        {
+          "citysName": "邢台市",
+          "citysAlias": "邢台"
+        },
+        {
+          "citysName": "张家口市",
+          "citysAlias": "张家口"
+        },
+        {
+          "citysName": "承德市",
+          "citysAlias": "承德"
+        },
+        {
+          "citysName": "沧州市",
+          "citysAlias": "沧州"
+        },
+        {
+          "citysName": "廊坊市",
+          "citysAlias": "廊坊"
+        },
+        {
+          "citysName": "衡水市",
+          "citysAlias": "衡水"
+        },
+        {
+          "citysName": "辛集市",
+          "citysAlias": "辛集"
+        },
+        {
+          "citysName": "晋州市",
+          "citysAlias": "晋州"
+        },
+        {
+          "citysName": "新乐市",
+          "citysAlias": "新乐"
+        },
+        {
+          "citysName": "遵化市",
+          "citysAlias": "遵化"
+        },
+        {
+          "citysName": "迁安市",
+          "citysAlias": "迁安"
+        },
+        {
+          "citysName": "霸州市",
+          "citysAlias": "霸州"
+        },
+        {
+          "citysName": "三河市",
+          "citysAlias": "三河"
+        },
+        {
+          "citysName": "定州市",
+          "citysAlias": "定州"
+        },
+        {
+          "citysName": "涿州市",
+          "citysAlias": "涿州"
+        },
+        {
+          "citysName": "安国市",
+          "citysAlias": "安国"
+        },
+        {
+          "citysName": "高碑店市",
+          "citysAlias": "高碑店"
+        },
+        {
+          "citysName": "泊头市",
+          "citysAlias": "泊头"
+        },
+        {
+          "citysName": "任丘市",
+          "citysAlias": "任丘"
+        },
+        {
+          "citysName": "黄骅市",
+          "citysAlias": "黄骅"
+        },
+        {
+          "citysName": "河间市",
+          "citysAlias": "河间"
+        },
+        {
+          "citysName": "冀州市",
+          "citysAlias": "冀州"
+        },
+        {
+          "citysName": "深州市",
+          "citysAlias": "深州"
+        },
+        {
+          "citysName": "南宫市",
+          "citysAlias": "南宫"
+        },
+        {
+          "citysName": "沙河市",
+          "citysAlias": "沙河"
+        },
+        {
+          "citysName": "武安市",
+          "citysAlias": "武安"
+        }
+      ],
+      "provinceName": "河北省",
+      "provinceAlias": "河北"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "太原市",
+          "citysAlias": "太原"
+        },
+        {
+          "citysName": "大同市",
+          "citysAlias": "大同"
+        },
+        {
+          "citysName": "朔州市",
+          "citysAlias": "朔州"
+        },
+        {
+          "citysName": "阳泉市",
+          "citysAlias": "阳泉"
+        },
+        {
+          "citysName": "长治市",
+          "citysAlias": "长治"
+        },
+        {
+          "citysName": "晋城市",
+          "citysAlias": "晋城"
+        },
+        {
+          "citysName": "忻州市",
+          "citysAlias": "忻州"
+        },
+        {
+          "citysName": "吕梁市",
+          "citysAlias": "吕梁"
+        },
+        {
+          "citysName": "晋中市",
+          "citysAlias": "晋中"
+        },
+        {
+          "citysName": "临汾市",
+          "citysAlias": "临汾"
+        },
+        {
+          "citysName": "运城市",
+          "citysAlias": "运城"
+        },
+        {
+          "citysName": "古交市",
+          "citysAlias": "古交"
+        },
+        {
+          "citysName": "潞城市",
+          "citysAlias": "潞城"
+        },
+        {
+          "citysName": "高平市",
+          "citysAlias": "高平"
+        },
+        {
+          "citysName": "原平市",
+          "citysAlias": "原平"
+        },
+        {
+          "citysName": "孝义市",
+          "citysAlias": "孝义"
+        },
+        {
+          "citysName": "汾阳市",
+          "citysAlias": "汾阳"
+        },
+        {
+          "citysName": "介休市",
+          "citysAlias": "介休"
+        },
+        {
+          "citysName": "侯马市",
+          "citysAlias": "侯马"
+        },
+        {
+          "citysName": "霍州市",
+          "citysAlias": "霍州"
+        },
+        {
+          "citysName": "永济市",
+          "citysAlias": "永济"
+        },
+        {
+          "citysName": "河津市",
+          "citysAlias": "河津"
+        }
+      ],
+      "provinceName": "山西省",
+      "provinceAlias": "山西"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "呼和浩特市",
+          "citysAlias": "呼和浩特"
+        },
+        {
+          "citysName": "包头市",
+          "citysAlias": "包头"
+        },
+        {
+          "citysName": "乌海市",
+          "citysAlias": "乌海"
+        },
+        {
+          "citysName": "赤峰市",
+          "citysAlias": "赤峰"
+        },
+        {
+          "citysName": "呼伦贝尔市",
+          "citysAlias": "呼伦贝尔"
+        },
+        {
+          "citysName": "通辽市",
+          "citysAlias": "通辽"
+        },
+        {
+          "citysName": "乌兰察布市",
+          "citysAlias": "乌兰察布"
+        },
+        {
+          "citysName": "鄂尔多斯市",
+          "citysAlias": "鄂尔多斯"
+        },
+        {
+          "citysName": "巴彦淖尔市",
+          "citysAlias": "巴彦淖尔"
+        },
+        {
+          "citysName": "满洲里市",
+          "citysAlias": "满洲里"
+        },
+        {
+          "citysName": "扎兰屯市",
+          "citysAlias": "扎兰屯"
+        },
+        {
+          "citysName": "牙克石市",
+          "citysAlias": "牙克石"
+        },
+        {
+          "citysName": "根河市",
+          "citysAlias": "根河"
+        },
+        {
+          "citysName": "额尔古纳市",
+          "citysAlias": "额尔古纳"
+        },
+        {
+          "citysName": "乌兰浩特市",
+          "citysAlias": "乌兰浩特"
+        },
+        {
+          "citysName": "阿尔山市",
+          "citysAlias": "阿尔山"
+        },
+        {
+          "citysName": "霍林郭勒市",
+          "citysAlias": "霍林郭勒"
+        },
+        {
+          "citysName": "锡林浩特市",
+          "citysAlias": "锡林浩特"
+        },
+        {
+          "citysName": "二连浩特市",
+          "citysAlias": "二连浩特"
+        },
+        {
+          "citysName": "丰镇市",
+          "citysAlias": "丰镇"
+        },
+        {
+          "citysName": "阿拉善盟",
+          "citysAlias": "阿拉善"
+        },
+        {
+          "citysName": "锡林郭勒盟",
+          "citysAlias": "锡盟"
+        },
+        {
+          "citysName": "兴安盟",
+          "citysAlias": "兴安"
+        }
+      ],
+      "provinceName": "内蒙古自治区",
+      "provinceAlias": "内蒙古"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "沈阳市",
+          "citysAlias": "沈阳"
+        },
+        {
+          "citysName": "大连市",
+          "citysAlias": "大连"
+        },
+        {
+          "citysName": "朝阳市",
+          "citysAlias": "朝阳"
+        },
+        {
+          "citysName": "阜新市",
+          "citysAlias": "阜新"
+        },
+        {
+          "citysName": "铁岭市",
+          "citysAlias": "铁岭"
+        },
+        {
+          "citysName": "抚顺市",
+          "citysAlias": "抚顺"
+        },
+        {
+          "citysName": "本溪市",
+          "citysAlias": "本溪"
+        },
+        {
+          "citysName": "辽阳市",
+          "citysAlias": "辽阳"
+        },
+        {
+          "citysName": "鞍山市",
+          "citysAlias": "鞍山"
+        },
+        {
+          "citysName": "丹东市",
+          "citysAlias": "丹东"
+        },
+        {
+          "citysName": "营口市",
+          "citysAlias": "营口"
+        },
+        {
+          "citysName": "盘锦市",
+          "citysAlias": "盘锦"
+        },
+        {
+          "citysName": "锦州市",
+          "citysAlias": "锦州"
+        },
+        {
+          "citysName": "葫芦岛市",
+          "citysAlias": "葫芦岛"
+        },
+        {
+          "citysName": "新民市",
+          "citysAlias": "新民"
+        },
+        {
+          "citysName": "瓦房店市",
+          "citysAlias": "瓦房店"
+        },
+        {
+          "citysName": "庄河市",
+          "citysAlias": "庄河"
+        },
+        {
+          "citysName": "北票市",
+          "citysAlias": "北票"
+        },
+        {
+          "citysName": "凌源市",
+          "citysAlias": "凌源"
+        },
+        {
+          "citysName": "调兵山市",
+          "citysAlias": "调兵山"
+        },
+        {
+          "citysName": "开原市",
+          "citysAlias": "开原"
+        },
+        {
+          "citysName": "灯塔市",
+          "citysAlias": "灯塔"
+        },
+        {
+          "citysName": "海城市",
+          "citysAlias": "海城"
+        },
+        {
+          "citysName": "凤城市",
+          "citysAlias": "凤城"
+        },
+        {
+          "citysName": "东港市",
+          "citysAlias": "东港"
+        },
+        {
+          "citysName": "大石桥市",
+          "citysAlias": "大石桥"
+        },
+        {
+          "citysName": "盖州市",
+          "citysAlias": "盖州"
+        },
+        {
+          "citysName": "凌海市",
+          "citysAlias": "临海"
+        },
+        {
+          "citysName": "北镇市",
+          "citysAlias": "北镇"
+        },
+        {
+          "citysName": "兴城市",
+          "citysAlias": "兴城"
+        }
+      ],
+      "provinceName": "辽宁省",
+      "provinceAlias": "辽宁"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "长春市",
+          "citysAlias": "长春"
+        },
+        {
+          "citysName": "吉林市"
+        },
+        {
+          "citysName": "白城市",
+          "citysAlias": "白城"
+        },
+        {
+          "citysName": "松原市",
+          "citysAlias": "松原"
+        },
+        {
+          "citysName": "四平市",
+          "citysAlias": "四平"
+        },
+        {
+          "citysName": "辽源市",
+          "citysAlias": "辽源"
+        },
+        {
+          "citysName": "通化市",
+          "citysAlias": "通化"
+        },
+        {
+          "citysName": "白山市",
+          "citysAlias": "白山"
+        },
+        {
+          "citysName": "德惠市",
+          "citysAlias": "德惠"
+        },
+        {
+          "citysName": "榆树市",
+          "citysAlias": "榆树"
+        },
+        {
+          "citysName": "磐石市",
+          "citysAlias": "磐石"
+        },
+        {
+          "citysName": "蛟河市",
+          "citysAlias": "蛟河"
+        },
+        {
+          "citysName": "桦甸市",
+          "citysAlias": "桦甸"
+        },
+        {
+          "citysName": "舒兰市",
+          "citysAlias": "舒兰"
+        },
+        {
+          "citysName": "洮南市",
+          "citysAlias": "洮南"
+        },
+        {
+          "citysName": "大安市",
+          "citysAlias": "大安"
+        },
+        {
+          "citysName": "双辽市",
+          "citysAlias": "双辽"
+        },
+        {
+          "citysName": "公主岭市",
+          "citysAlias": "公主岭"
+        },
+        {
+          "citysName": "梅河口市",
+          "citysAlias": "梅河口"
+        },
+        {
+          "citysName": "集安市",
+          "citysAlias": "集安"
+        },
+        {
+          "citysName": "临江市",
+          "citysAlias": "临江"
+        },
+        {
+          "citysName": "延吉市",
+          "citysAlias": "延吉"
+        },
+        {
+          "citysName": "图们市",
+          "citysAlias": "图们"
+        },
+        {
+          "citysName": "敦化市",
+          "citysAlias": "敦化"
+        },
+        {
+          "citysName": "珲春市",
+          "citysAlias": "珲春"
+        },
+        {
+          "citysName": "龙井市",
+          "citysAlias": "龙井"
+        },
+        {
+          "citysName": "和龙市",
+          "citysAlias": "和龙"
+        },
+        {
+          "citysName": "扶余市",
+          "citysAlias": "扶余"
+        },
+        {
+          "citysName": "延边朝鲜族自治州",
+          "citysAlias": "延边"
+        }
+      ],
+      "provinceName": "吉林省",
+      "provinceAlias": "吉林"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "哈尔滨市",
+          "citysAlias": "哈尔滨"
+        },
+        {
+          "citysName": "齐齐哈尔市",
+          "citysAlias": "齐齐哈尔"
+        },
+        {
+          "citysName": "黑河市",
+          "citysAlias": "黑河"
+        },
+        {
+          "citysName": "大庆市",
+          "citysAlias": "大庆"
+        },
+        {
+          "citysName": "伊春市",
+          "citysAlias": "伊春"
+        },
+        {
+          "citysName": "鹤岗市",
+          "citysAlias": "鹤岗"
+        },
+        {
+          "citysName": "佳木斯市",
+          "citysAlias": "佳木斯"
+        },
+        {
+          "citysName": "双鸭山市",
+          "citysAlias": "双鸭山"
+        },
+        {
+          "citysName": "七台河市",
+          "citysAlias": "七台河"
+        },
+        {
+          "citysName": "鸡西市",
+          "citysAlias": "鸡西"
+        },
+        {
+          "citysName": "牡丹江市",
+          "citysAlias": "牡丹江"
+        },
+        {
+          "citysName": "绥化市",
+          "citysAlias": "绥化"
+        },
+        {
+          "citysName": "尚志市",
+          "citysAlias": "尚志"
+        },
+        {
+          "citysName": "五常市",
+          "citysAlias": "五常"
+        },
+        {
+          "citysName": "讷河市",
+          "citysAlias": "讷河"
+        },
+        {
+          "citysName": "北安市",
+          "citysAlias": "北安"
+        },
+        {
+          "citysName": "五大连池市",
+          "citysAlias": "五大连池"
+        },
+        {
+          "citysName": "铁力市",
+          "citysAlias": "铁力"
+        },
+        {
+          "citysName": "同江市",
+          "citysAlias": "同江"
+        },
+        {
+          "citysName": "富锦市",
+          "citysAlias": "富锦"
+        },
+        {
+          "citysName": "虎林市",
+          "citysAlias": "虎林"
+        },
+        {
+          "citysName": "密山市",
+          "citysAlias": "密山"
+        },
+        {
+          "citysName": "绥芬河市",
+          "citysAlias": "绥芬河"
+        },
+        {
+          "citysName": "海林市",
+          "citysAlias": "海林"
+        },
+        {
+          "citysName": "宁安市",
+          "citysAlias": "宁安"
+        },
+        {
+          "citysName": "安达市",
+          "citysAlias": "安达"
+        },
+        {
+          "citysName": "肇东市",
+          "citysAlias": "肇东"
+        },
+        {
+          "citysName": "海伦市",
+          "citysAlias": "海伦"
+        },
+        {
+          "citysName": "穆棱市",
+          "citysAlias": "穆棱"
+        },
+        {
+          "citysName": "东宁市",
+          "citysAlias": "东宁"
+        },
+        {
+          "citysName": "抚远市",
+          "citysAlias": "抚远"
+        },
+        {
+          "citysName": "大兴安岭地区",
+          "citysAlias": "大兴安岭"
+        }
+      ],
+      "provinceName": "黑龙江省",
+      "provinceAlias": "黑龙江"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "南京市",
+          "citysAlias": "南京"
+        },
+        {
+          "citysName": "徐州市",
+          "citysAlias": "徐州"
+        },
+        {
+          "citysName": "连云港市",
+          "citysAlias": "连云港"
+        },
+        {
+          "citysName": "宿迁市",
+          "citysAlias": "宿迁"
+        },
+        {
+          "citysName": "淮安市",
+          "citysAlias": "淮安"
+        },
+        {
+          "citysName": "盐城市",
+          "citysAlias": "盐城"
+        },
+        {
+          "citysName": "扬州市",
+          "citysAlias": "扬州"
+        },
+        {
+          "citysName": "泰州市",
+          "citysAlias": "泰州"
+        },
+        {
+          "citysName": "南通市",
+          "citysAlias": "南通"
+        },
+        {
+          "citysName": "镇江市",
+          "citysAlias": "镇江"
+        },
+        {
+          "citysName": "常州市",
+          "citysAlias": "常州"
+        },
+        {
+          "citysName": "无锡市",
+          "citysAlias": "无锡"
+        },
+        {
+          "citysName": "苏州市",
+          "citysAlias": "苏州"
+        },
+        {
+          "citysName": "常熟市",
+          "citysAlias": "常熟"
+        },
+        {
+          "citysName": "张家港市",
+          "citysAlias": "张家港"
+        },
+        {
+          "citysName": "太仓市",
+          "citysAlias": "太仓"
+        },
+        {
+          "citysName": "昆山市",
+          "citysAlias": "昆山"
+        },
+        {
+          "citysName": "江阴市",
+          "citysAlias": "江阴"
+        },
+        {
+          "citysName": "宜兴市",
+          "citysAlias": "宜兴"
+        },
+        {
+          "citysName": "溧阳市",
+          "citysAlias": "溧阳"
+        },
+        {
+          "citysName": "扬中市",
+          "citysAlias": "扬中"
+        },
+        {
+          "citysName": "句容市",
+          "citysAlias": "句容"
+        },
+        {
+          "citysName": "丹阳市",
+          "citysAlias": "丹阳"
+        },
+        {
+          "citysName": "如皋市",
+          "citysAlias": "如皋"
+        },
+        {
+          "citysName": "海门市",
+          "citysAlias": "海门"
+        },
+        {
+          "citysName": "启东市",
+          "citysAlias": "启东"
+        },
+        {
+          "citysName": "高邮市",
+          "citysAlias": "高邮"
+        },
+        {
+          "citysName": "仪征市",
+          "citysAlias": "仪征"
+        },
+        {
+          "citysName": "兴化市",
+          "citysAlias": "兴化"
+        },
+        {
+          "citysName": "泰兴市",
+          "citysAlias": "泰兴"
+        },
+        {
+          "citysName": "靖江市",
+          "citysAlias": "靖江"
+        },
+        {
+          "citysName": "东台市",
+          "citysAlias": "东台"
+        },
+        {
+          "citysName": "邳州市",
+          "citysAlias": "邳州"
+        },
+        {
+          "citysName": "新沂市",
+          "citysAlias": "新沂"
+        }
+      ],
+      "provinceName": "江苏省",
+      "provinceAlias": "江苏"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "杭州市",
+          "citysAlias": "杭州"
+        },
+        {
+          "citysName": "宁波市",
+          "citysAlias": "宁波"
+        },
+        {
+          "citysName": "湖州市",
+          "citysAlias": "湖州"
+        },
+        {
+          "citysName": "嘉兴市",
+          "citysAlias": "嘉兴"
+        },
+        {
+          "citysName": "舟山市",
+          "citysAlias": "舟山"
+        },
+        {
+          "citysName": "绍兴市",
+          "citysAlias": "绍兴"
+        },
+        {
+          "citysName": "衢州市",
+          "citysAlias": "衢州"
+        },
+        {
+          "citysName": "金华市",
+          "citysAlias": "金华"
+        },
+        {
+          "citysName": "台州市",
+          "citysAlias": "台州"
+        },
+        {
+          "citysName": "温州市",
+          "citysAlias": "温州"
+        },
+        {
+          "citysName": "丽水市",
+          "citysAlias": "丽水"
+        },
+        {
+          "citysName": "临安市",
+          "citysAlias": "临安"
+        },
+        {
+          "citysName": "建德市",
+          "citysAlias": "建德"
+        },
+        {
+          "citysName": "慈溪市",
+          "citysAlias": "慈溪"
+        },
+        {
+          "citysName": "余姚市",
+          "citysAlias": "余姚"
+        },
+        {
+          "citysName": "平湖市",
+          "citysAlias": "平湖"
+        },
+        {
+          "citysName": "海宁市",
+          "citysAlias": "海宁"
+        },
+        {
+          "citysName": "桐乡市",
+          "citysAlias": "桐乡"
+        },
+        {
+          "citysName": "诸暨市",
+          "citysAlias": "诸暨"
+        },
+        {
+          "citysName": "嵊州市",
+          "citysAlias": "嵊州"
+        },
+        {
+          "citysName": "江山市",
+          "citysAlias": "江山"
+        },
+        {
+          "citysName": "兰溪市",
+          "citysAlias": "兰溪"
+        },
+        {
+          "citysName": "永康市",
+          "citysAlias": "永康"
+        },
+        {
+          "citysName": "义乌市",
+          "citysAlias": "义乌"
+        },
+        {
+          "citysName": "东阳市",
+          "citysAlias": "东阳"
+        },
+        {
+          "citysName": "临海市",
+          "citysAlias": "临海"
+        },
+        {
+          "citysName": "温岭市",
+          "citysAlias": "温岭"
+        },
+        {
+          "citysName": "瑞安市",
+          "citysAlias": "瑞安"
+        },
+        {
+          "citysName": "乐清市",
+          "citysAlias": "乐清"
+        },
+        {
+          "citysName": "龙泉市",
+          "citysAlias": "龙泉"
+        }
+      ],
+      "provinceName": "浙江省",
+      "provinceAlias": "浙江"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "合肥市",
+          "citysAlias": "合肥"
+        },
+        {
+          "citysName": "芜湖市",
+          "citysAlias": "芜湖"
+        },
+        {
+          "citysName": "蚌埠市",
+          "citysAlias": "蚌埠"
+        },
+        {
+          "citysName": "淮南市",
+          "citysAlias": "淮南"
+        },
+        {
+          "citysName": "马鞍山市",
+          "citysAlias": "马鞍山"
+        },
+        {
+          "citysName": "淮北市",
+          "citysAlias": "淮北"
+        },
+        {
+          "citysName": "铜陵市",
+          "citysAlias": "铜陵"
+        },
+        {
+          "citysName": "安庆市",
+          "citysAlias": "安庆"
+        },
+        {
+          "citysName": "黄山市",
+          "citysAlias": "黄山"
+        },
+        {
+          "citysName": "滁州市",
+          "citysAlias": "滁州"
+        },
+        {
+          "citysName": "阜阳市",
+          "citysAlias": "阜阳"
+        },
+        {
+          "citysName": "宿州市",
+          "citysAlias": "宿州"
+        },
+        {
+          "citysName": "六安市",
+          "citysAlias": "六安"
+        },
+        {
+          "citysName": "亳州市",
+          "citysAlias": "亳州"
+        },
+        {
+          "citysName": "池州市",
+          "citysAlias": "池州"
+        },
+        {
+          "citysName": "宣城市",
+          "citysAlias": "宣城"
+        },
+        {
+          "citysName": "巢湖市",
+          "citysAlias": "巢湖"
+        },
+        {
+          "citysName": "桐城市",
+          "citysAlias": "桐城"
+        },
+        {
+          "citysName": "天长市",
+          "citysAlias": "天长"
+        },
+        {
+          "citysName": "明光市",
+          "citysAlias": "明光"
+        },
+        {
+          "citysName": "界首市",
+          "citysAlias": "界首"
+        },
+        {
+          "citysName": "宁国市",
+          "citysAlias": "宁国"
+        }
+      ],
+      "provinceName": "安徽省",
+      "provinceAlias": "安徽"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "厦门市",
+          "citysAlias": "厦门"
+        },
+        {
+          "citysName": "福州市",
+          "citysAlias": "福州"
+        },
+        {
+          "citysName": "南平市",
+          "citysAlias": "南平"
+        },
+        {
+          "citysName": "三明市",
+          "citysAlias": "三明"
+        },
+        {
+          "citysName": "莆田市",
+          "citysAlias": "莆田"
+        },
+        {
+          "citysName": "泉州市",
+          "citysAlias": "泉州"
+        },
+        {
+          "citysName": "漳州市",
+          "citysAlias": "漳州"
+        },
+        {
+          "citysName": "龙岩市",
+          "citysAlias": "龙岩"
+        },
+        {
+          "citysName": "宁德市",
+          "citysAlias": "宁德"
+        },
+        {
+          "citysName": "福清市",
+          "citysAlias": "福清"
+        },
+        {
+          "citysName": "邵武市",
+          "citysAlias": "邵武"
+        },
+        {
+          "citysName": "武夷山市",
+          "citysAlias": "武夷山"
+        },
+        {
+          "citysName": "建瓯市",
+          "citysAlias": "建瓯"
+        },
+        {
+          "citysName": "永安市",
+          "citysAlias": "永安"
+        },
+        {
+          "citysName": "石狮市",
+          "citysAlias": "石狮"
+        },
+        {
+          "citysName": "晋江市",
+          "citysAlias": "晋江"
+        },
+        {
+          "citysName": "南安市",
+          "citysAlias": "南安"
+        },
+        {
+          "citysName": "龙海市",
+          "citysAlias": "龙海"
+        },
+        {
+          "citysName": "漳平市",
+          "citysAlias": "漳平"
+        },
+        {
+          "citysName": "福安市",
+          "citysAlias": "福安"
+        },
+        {
+          "citysName": "福鼎市",
+          "citysAlias": "福鼎"
+        }
+      ],
+      "provinceName": "福建省",
+      "provinceAlias": "福建"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "南昌市",
+          "citysAlias": "南昌"
+        },
+        {
+          "citysName": "九江市",
+          "citysAlias": "九江"
+        },
+        {
+          "citysName": "景德镇市",
+          "citysAlias": "景德镇"
+        },
+        {
+          "citysName": "鹰潭市",
+          "citysAlias": "鹰潭"
+        },
+        {
+          "citysName": "新余市",
+          "citysAlias": "新余"
+        },
+        {
+          "citysName": "萍乡市",
+          "citysAlias": "萍乡"
+        },
+        {
+          "citysName": "赣州市",
+          "citysAlias": "赣州"
+        },
+        {
+          "citysName": "上饶市",
+          "citysAlias": "上饶"
+        },
+        {
+          "citysName": "抚州市",
+          "citysAlias": "抚州"
+        },
+        {
+          "citysName": "宜春市",
+          "citysAlias": "宜春"
+        },
+        {
+          "citysName": "吉安市",
+          "citysAlias": "吉安"
+        },
+        {
+          "citysName": "瑞昌市",
+          "citysAlias": "瑞昌"
+        },
+        {
+          "citysName": "共青城市",
+          "citysAlias": "共青城"
+        },
+        {
+          "citysName": "乐平市",
+          "citysAlias": "乐平"
+        },
+        {
+          "citysName": "瑞金市",
+          "citysAlias": "瑞金"
+        },
+        {
+          "citysName": "德兴市",
+          "citysAlias": "德兴"
+        },
+        {
+          "citysName": "丰城市",
+          "citysAlias": "丰城"
+        },
+        {
+          "citysName": "樟树市",
+          "citysAlias": "樟树"
+        },
+        {
+          "citysName": "高安市",
+          "citysAlias": "高安"
+        },
+        {
+          "citysName": "井冈山市",
+          "citysAlias": "井冈山"
+        },
+        {
+          "citysName": "贵溪市",
+          "citysAlias": "贵溪"
+        }
+      ],
+      "provinceName": "江西省",
+      "provinceAlias": "江西"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "济南市",
+          "citysAlias": "济南"
+        },
+        {
+          "citysName": "青岛市",
+          "citysAlias": "青岛"
+        },
+        {
+          "citysName": "聊城市",
+          "citysAlias": "聊城"
+        },
+        {
+          "citysName": "德州市",
+          "citysAlias": "德州"
+        },
+        {
+          "citysName": "东营市",
+          "citysAlias": "东营"
+        },
+        {
+          "citysName": "淄博市",
+          "citysAlias": "淄博"
+        },
+        {
+          "citysName": "潍坊市",
+          "citysAlias": "潍坊"
+        },
+        {
+          "citysName": "烟台市",
+          "citysAlias": "烟台"
+        },
+        {
+          "citysName": "威海市",
+          "citysAlias": "威海"
+        },
+        {
+          "citysName": "日照市",
+          "citysAlias": "日照"
+        },
+        {
+          "citysName": "临沂市",
+          "citysAlias": "临沂"
+        },
+        {
+          "citysName": "枣庄市",
+          "citysAlias": "枣庄"
+        },
+        {
+          "citysName": "济宁市",
+          "citysAlias": "济宁"
+        },
+        {
+          "citysName": "泰安市",
+          "citysAlias": "泰安"
+        },
+        {
+          "citysName": "莱芜市",
+          "citysAlias": "莱芜"
+        },
+        {
+          "citysName": "滨州市",
+          "citysAlias": "滨州"
+        },
+        {
+          "citysName": "菏泽市",
+          "citysAlias": "菏泽"
+        },
+        {
+          "citysName": "胶州市",
+          "citysAlias": "胶州"
+        },
+        {
+          "citysName": "即墨市",
+          "citysAlias": "即墨"
+        },
+        {
+          "citysName": "平度市",
+          "citysAlias": "平度"
+        },
+        {
+          "citysName": "莱西市",
+          "citysAlias": "莱西"
+        },
+        {
+          "citysName": "临清市",
+          "citysAlias": "临清"
+        },
+        {
+          "citysName": "乐陵市",
+          "citysAlias": "乐陵"
+        },
+        {
+          "citysName": "禹城市",
+          "citysAlias": "禹城"
+        },
+        {
+          "citysName": "安丘市",
+          "citysAlias": "安丘"
+        },
+        {
+          "citysName": "昌邑市",
+          "citysAlias": "昌邑"
+        },
+        {
+          "citysName": "高密市",
+          "citysAlias": "高密"
+        },
+        {
+          "citysName": "青州市",
+          "citysAlias": "青州"
+        },
+        {
+          "citysName": "诸城市",
+          "citysAlias": "诸城"
+        },
+        {
+          "citysName": "寿光市",
+          "citysAlias": "寿光"
+        },
+        {
+          "citysName": "栖霞市",
+          "citysAlias": "栖霞"
+        },
+        {
+          "citysName": "海阳市",
+          "citysAlias": "海阳"
+        },
+        {
+          "citysName": "龙口市",
+          "citysAlias": "龙口"
+        },
+        {
+          "citysName": "莱阳市",
+          "citysAlias": "莱阳"
+        },
+        {
+          "citysName": "莱州市",
+          "citysAlias": "莱州"
+        },
+        {
+          "citysName": "蓬莱市",
+          "citysAlias": "蓬莱"
+        },
+        {
+          "citysName": "招远市",
+          "citysAlias": "招远"
+        },
+        {
+          "citysName": "荣成市",
+          "citysAlias": "荣成"
+        },
+        {
+          "citysName": "乳山市",
+          "citysAlias": "乳山"
+        },
+        {
+          "citysName": "滕州市",
+          "citysAlias": "滕州"
+        },
+        {
+          "citysName": "曲阜市",
+          "citysAlias": "曲阜"
+        },
+        {
+          "citysName": "邹城市",
+          "citysAlias": "邹城"
+        },
+        {
+          "citysName": "新泰市",
+          "citysAlias": "新泰"
+        },
+        {
+          "citysName": "肥城市",
+          "citysAlias": "肥城"
+        }
+      ],
+      "provinceName": "山东省",
+      "provinceAlias": "山东"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "郑州市",
+          "citysAlias": "郑州"
+        },
+        {
+          "citysName": "开封市",
+          "citysAlias": "开封"
+        },
+        {
+          "citysName": "洛阳市",
+          "citysAlias": "洛阳"
+        },
+        {
+          "citysName": "平顶山市",
+          "citysAlias": "平顶山"
+        },
+        {
+          "citysName": "安阳市",
+          "citysAlias": "安阳"
+        },
+        {
+          "citysName": "鹤壁市",
+          "citysAlias": "鹤壁"
+        },
+        {
+          "citysName": "新乡市",
+          "citysAlias": "新乡"
+        },
+        {
+          "citysName": "焦作市",
+          "citysAlias": "焦作"
+        },
+        {
+          "citysName": "濮阳市",
+          "citysAlias": "濮阳"
+        },
+        {
+          "citysName": "许昌市",
+          "citysAlias": "许昌"
+        },
+        {
+          "citysName": "漯河市",
+          "citysAlias": "漯河"
+        },
+        {
+          "citysName": "三门峡市",
+          "citysAlias": "三门峡"
+        },
+        {
+          "citysName": "南阳市",
+          "citysAlias": "南阳"
+        },
+        {
+          "citysName": "商丘市",
+          "citysAlias": "商丘"
+        },
+        {
+          "citysName": "周口市",
+          "citysAlias": "周口"
+        },
+        {
+          "citysName": "驻马店市",
+          "citysAlias": "驻马店"
+        },
+        {
+          "citysName": "信阳市",
+          "citysAlias": "信阳"
+        },
+        {
+          "citysName": "荥阳市",
+          "citysAlias": "荥阳"
+        },
+        {
+          "citysName": "新郑市",
+          "citysAlias": "新郑"
+        },
+        {
+          "citysName": "登封市",
+          "citysAlias": "登封"
+        },
+        {
+          "citysName": "新密市",
+          "citysAlias": "新密"
+        },
+        {
+          "citysName": "偃师市",
+          "citysAlias": "偃师"
+        },
+        {
+          "citysName": "孟州市",
+          "citysAlias": "孟州"
+        },
+        {
+          "citysName": "沁阳市",
+          "citysAlias": "沁阳"
+        },
+        {
+          "citysName": "卫辉市",
+          "citysAlias": "卫辉"
+        },
+        {
+          "citysName": "辉县市",
+          "citysAlias": "辉县"
+        },
+        {
+          "citysName": "林州市",
+          "citysAlias": "林州"
+        },
+        {
+          "citysName": "禹州市",
+          "citysAlias": "禹州"
+        },
+        {
+          "citysName": "长葛市",
+          "citysAlias": "长葛"
+        },
+        {
+          "citysName": "舞钢市",
+          "citysAlias": "舞钢"
+        },
+        {
+          "citysName": "义马市",
+          "citysAlias": "义马"
+        },
+        {
+          "citysName": "灵宝市",
+          "citysAlias": "灵宝"
+        },
+        {
+          "citysName": "项城市",
+          "citysAlias": "项城"
+        },
+        {
+          "citysName": "巩义市",
+          "citysAlias": "巩义"
+        },
+        {
+          "citysName": "邓州市",
+          "citysAlias": "邓州"
+        },
+        {
+          "citysName": "永城市",
+          "citysAlias": "永城"
+        },
+        {
+          "citysName": "汝州市",
+          "citysAlias": "汝州"
+        },
+        {
+          "citysName": "济源市",
+          "citysAlias": "济源"
+        }
+      ],
+      "provinceName": "河南省",
+      "provinceAlias": "河南"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "武汉市",
+          "citysAlias": "武汉"
+        },
+        {
+          "citysName": "十堰市",
+          "citysAlias": "十堰"
+        },
+        {
+          "citysName": "襄阳市",
+          "citysAlias": "襄阳"
+        },
+        {
+          "citysName": "荆门市",
+          "citysAlias": "荆门"
+        },
+        {
+          "citysName": "孝感市",
+          "citysAlias": "孝感"
+        },
+        {
+          "citysName": "黄冈市",
+          "citysAlias": "黄冈"
+        },
+        {
+          "citysName": "鄂州市",
+          "citysAlias": "鄂州"
+        },
+        {
+          "citysName": "黄石市",
+          "citysAlias": "黄石"
+        },
+        {
+          "citysName": "咸宁市",
+          "citysAlias": "咸宁"
+        },
+        {
+          "citysName": "荆州市",
+          "citysAlias": "荆州"
+        },
+        {
+          "citysName": "宜昌市",
+          "citysAlias": "宜昌"
+        },
+        {
+          "citysName": "随州市",
+          "citysAlias": "随州"
+        },
+        {
+          "citysName": "丹江口市",
+          "citysAlias": "丹江口"
+        },
+        {
+          "citysName": "老河口市",
+          "citysAlias": "老河口"
+        },
+        {
+          "citysName": "枣阳市",
+          "citysAlias": "枣阳"
+        },
+        {
+          "citysName": "宜城市",
+          "citysAlias": "宜城"
+        },
+        {
+          "citysName": "钟祥市",
+          "citysAlias": "钟祥"
+        },
+        {
+          "citysName": "汉川市",
+          "citysAlias": "汉川"
+        },
+        {
+          "citysName": "应城市",
+          "citysAlias": "应城"
+        },
+        {
+          "citysName": "安陆市",
+          "citysAlias": "安陆"
+        },
+        {
+          "citysName": "广水市",
+          "citysAlias": "广水"
+        },
+        {
+          "citysName": "麻城市",
+          "citysAlias": "麻城"
+        },
+        {
+          "citysName": "武穴市",
+          "citysAlias": "武穴"
+        },
+        {
+          "citysName": "大冶市",
+          "citysAlias": "大冶"
+        },
+        {
+          "citysName": "赤壁市",
+          "citysAlias": "赤壁"
+        },
+        {
+          "citysName": "石首市",
+          "citysAlias": "石首"
+        },
+        {
+          "citysName": "洪湖市",
+          "citysAlias": "洪湖"
+        },
+        {
+          "citysName": "松滋市",
+          "citysAlias": "松滋"
+        },
+        {
+          "citysName": "宜都市",
+          "citysAlias": "宜都"
+        },
+        {
+          "citysName": "枝江市",
+          "citysAlias": "枝江"
+        },
+        {
+          "citysName": "当阳市",
+          "citysAlias": "当阳"
+        },
+        {
+          "citysName": "恩施市"
+        },
+        {
+          "citysName": "利川市",
+          "citysAlias": "利川"
+        },
+        {
+          "citysName": "仙桃市",
+          "citysAlias": "仙桃"
+        },
+        {
+          "citysName": "天门市",
+          "citysAlias": "天门"
+        },
+        {
+          "citysName": "潜江市",
+          "citysAlias": "潜江"
+        },
+        {
+          "citysName": "恩施土家族苗族自治州",
+          "citysAlias": "恩施"
+        }
+      ],
+      "provinceName": "湖北省",
+      "provinceAlias": "湖北"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "长沙市",
+          "citysAlias": "长沙"
+        },
+        {
+          "citysName": "衡阳市",
+          "citysAlias": "衡阳"
+        },
+        {
+          "citysName": "张家界市",
+          "citysAlias": "张家界"
+        },
+        {
+          "citysName": "常德市",
+          "citysAlias": "常德"
+        },
+        {
+          "citysName": "益阳市",
+          "citysAlias": "益阳"
+        },
+        {
+          "citysName": "岳阳市",
+          "citysAlias": "岳阳"
+        },
+        {
+          "citysName": "株洲市",
+          "citysAlias": "株洲"
+        },
+        {
+          "citysName": "湘潭市",
+          "citysAlias": "湘潭"
+        },
+        {
+          "citysName": "郴州市",
+          "citysAlias": "郴州"
+        },
+        {
+          "citysName": "永州市",
+          "citysAlias": "永州"
+        },
+        {
+          "citysName": "邵阳市",
+          "citysAlias": "邵阳"
+        },
+        {
+          "citysName": "怀化市",
+          "citysAlias": "怀化"
+        },
+        {
+          "citysName": "娄底市",
+          "citysAlias": "娄底"
+        },
+        {
+          "citysName": "耒阳市",
+          "citysAlias": "耒阳"
+        },
+        {
+          "citysName": "常宁市",
+          "citysAlias": "常宁"
+        },
+        {
+          "citysName": "浏阳市",
+          "citysAlias": "浏阳"
+        },
+        {
+          "citysName": "津市市",
+          "citysAlias": "津市"
+        },
+        {
+          "citysName": "沅江市",
+          "citysAlias": "沅江"
+        },
+        {
+          "citysName": "汨罗市",
+          "citysAlias": "汨罗"
+        },
+        {
+          "citysName": "临湘市",
+          "citysAlias": "临湘"
+        },
+        {
+          "citysName": "醴陵市",
+          "citysAlias": "醴陵"
+        },
+        {
+          "citysName": "湘乡市",
+          "citysAlias": "湘乡"
+        },
+        {
+          "citysName": "韶山市",
+          "citysAlias": "韶山"
+        },
+        {
+          "citysName": "资兴市",
+          "citysAlias": "资兴"
+        },
+        {
+          "citysName": "武冈市",
+          "citysAlias": "武冈"
+        },
+        {
+          "citysName": "洪江市",
+          "citysAlias": "洪江"
+        },
+        {
+          "citysName": "冷水江市",
+          "citysAlias": "冷水江"
+        },
+        {
+          "citysName": "涟源市",
+          "citysAlias": "涟源"
+        },
+        {
+          "citysName": "吉首市",
+          "citysAlias": "吉首"
+        },
+        {
+          "citysName": "湘西土家族苗族自治州",
+          "citysAlias": "湘西"
+        }
+      ],
+      "provinceName": "湖南省",
+      "provinceAlias": "湖南"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "广州市",
+          "citysAlias": "广州"
+        },
+        {
+          "citysName": "深圳市",
+          "citysAlias": "深圳"
+        },
+        {
+          "citysName": "清远市",
+          "citysAlias": "清远"
+        },
+        {
+          "citysName": "韶关市",
+          "citysAlias": "韶关"
+        },
+        {
+          "citysName": "河源市",
+          "citysAlias": "河源"
+        },
+        {
+          "citysName": "梅州市",
+          "citysAlias": "梅州"
+        },
+        {
+          "citysName": "潮州市",
+          "citysAlias": "潮州"
+        },
+        {
+          "citysName": "汕头市",
+          "citysAlias": "汕头"
+        },
+        {
+          "citysName": "揭阳市",
+          "citysAlias": "揭阳"
+        },
+        {
+          "citysName": "汕尾市",
+          "citysAlias": "汕尾"
+        },
+        {
+          "citysName": "惠州市",
+          "citysAlias": "惠州"
+        },
+        {
+          "citysName": "东莞市",
+          "citysAlias": "东莞"
+        },
+        {
+          "citysName": "珠海市",
+          "citysAlias": "珠海"
+        },
+        {
+          "citysName": "中山市",
+          "citysAlias": "中山"
+        },
+        {
+          "citysName": "江门市",
+          "citysAlias": "江门"
+        },
+        {
+          "citysName": "佛山市",
+          "citysAlias": "佛山"
+        },
+        {
+          "citysName": "肇庆市",
+          "citysAlias": "肇庆"
+        },
+        {
+          "citysName": "云浮市",
+          "citysAlias": "云浮"
+        },
+        {
+          "citysName": "阳江市",
+          "citysAlias": "阳江"
+        },
+        {
+          "citysName": "茂名市",
+          "citysAlias": "茂名"
+        },
+        {
+          "citysName": "湛江市",
+          "citysAlias": "湛江"
+        },
+        {
+          "citysName": "英德市",
+          "citysAlias": "英德"
+        },
+        {
+          "citysName": "连州市",
+          "citysAlias": "连州"
+        },
+        {
+          "citysName": "乐昌市",
+          "citysAlias": "乐昌"
+        },
+        {
+          "citysName": "南雄市",
+          "citysAlias": "南雄"
+        },
+        {
+          "citysName": "兴宁市",
+          "citysAlias": "兴宁"
+        },
+        {
+          "citysName": "普宁市",
+          "citysAlias": "普宁"
+        },
+        {
+          "citysName": "陆丰市",
+          "citysAlias": "陆丰"
+        },
+        {
+          "citysName": "恩平市",
+          "citysAlias": "恩平"
+        },
+        {
+          "citysName": "台山市",
+          "citysAlias": "台山"
+        },
+        {
+          "citysName": "开平市",
+          "citysAlias": "开平"
+        },
+        {
+          "citysName": "鹤山市",
+          "citysAlias": "鹤山"
+        },
+        {
+          "citysName": "四会市",
+          "citysAlias": "四会"
+        },
+        {
+          "citysName": "罗定市",
+          "citysAlias": "罗定"
+        },
+        {
+          "citysName": "阳春市",
+          "citysAlias": "阳春"
+        },
+        {
+          "citysName": "化州市",
+          "citysAlias": "化州"
+        },
+        {
+          "citysName": "信宜市",
+          "citysAlias": "信宜"
+        },
+        {
+          "citysName": "高州市",
+          "citysAlias": "高州"
+        },
+        {
+          "citysName": "吴川市",
+          "citysAlias": "吴川"
+        },
+        {
+          "citysName": "廉江市",
+          "citysAlias": "廉江"
+        },
+        {
+          "citysName": "雷州市",
+          "citysAlias": "雷州"
+        }
+      ],
+      "provinceName": "广东省",
+      "provinceAlias": "广东"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "南宁市",
+          "citysAlias": "南宁"
+        },
+        {
+          "citysName": "桂林市",
+          "citysAlias": "桂林"
+        },
+        {
+          "citysName": "柳州市",
+          "citysAlias": "柳州"
+        },
+        {
+          "citysName": "梧州市",
+          "citysAlias": "梧州"
+        },
+        {
+          "citysName": "贵港市",
+          "citysAlias": "贵港"
+        },
+        {
+          "citysName": "玉林市",
+          "citysAlias": "玉林"
+        },
+        {
+          "citysName": "钦州市",
+          "citysAlias": "钦州"
+        },
+        {
+          "citysName": "北海市",
+          "citysAlias": "北海"
+        },
+        {
+          "citysName": "防城港市",
+          "citysAlias": "防城港"
+        },
+        {
+          "citysName": "崇左市",
+          "citysAlias": "崇左"
+        },
+        {
+          "citysName": "百色市",
+          "citysAlias": "百色"
+        },
+        {
+          "citysName": "河池市",
+          "citysAlias": "河池"
+        },
+        {
+          "citysName": "来宾市",
+          "citysAlias": "来宾"
+        },
+        {
+          "citysName": "贺州市",
+          "citysAlias": "贺州"
+        },
+        {
+          "citysName": "岑溪市",
+          "citysAlias": "岑溪"
+        },
+        {
+          "citysName": "桂平市",
+          "citysAlias": "桂平"
+        },
+        {
+          "citysName": "北流市",
+          "citysAlias": "北流"
+        },
+        {
+          "citysName": "东兴市",
+          "citysAlias": "东兴"
+        },
+        {
+          "citysName": "凭祥市",
+          "citysAlias": "凭祥"
+        },
+        {
+          "citysName": "宜州市",
+          "citysAlias": "宜州"
+        },
+        {
+          "citysName": "合山市",
+          "citysAlias": "合山"
+        },
+        {
+          "citysName": "靖西市",
+          "citysAlias": "靖西"
+        }
+      ],
+      "provinceName": "广西壮族自治区",
+      "provinceAlias": "广西"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "海口市",
+          "citysAlias": "海口"
+        },
+        {
+          "citysName": "三亚市",
+          "citysAlias": "三亚"
+        },
+        {
+          "citysName": "三沙市",
+          "citysAlias": "三沙"
+        },
+        {
+          "citysName": "儋州市",
+          "citysAlias": "儋州"
+        },
+        {
+          "citysName": "文昌市",
+          "citysAlias": "文昌"
+        },
+        {
+          "citysName": "琼海市",
+          "citysAlias": "琼海"
+        },
+        {
+          "citysName": "万宁市",
+          "citysAlias": "万宁"
+        },
+        {
+          "citysName": "东方市",
+          "citysAlias": "东方"
+        },
+        {
+          "citysName": "五指山市",
+          "citysAlias": "五指山"
+        }
+      ],
+      "provinceName": "海南省",
+      "provinceAlias": "海南"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "成都市",
+          "citysAlias": "成都"
+        },
+        {
+          "citysName": "广元市",
+          "citysAlias": "广元"
+        },
+        {
+          "citysName": "绵阳市",
+          "citysAlias": "绵阳"
+        },
+        {
+          "citysName": "德阳市",
+          "citysAlias": "德阳"
+        },
+        {
+          "citysName": "南充市",
+          "citysAlias": "南充"
+        },
+        {
+          "citysName": "广安市",
+          "citysAlias": "广安"
+        },
+        {
+          "citysName": "遂宁市",
+          "citysAlias": "遂宁"
+        },
+        {
+          "citysName": "内江市",
+          "citysAlias": "内江"
+        },
+        {
+          "citysName": "乐山市",
+          "citysAlias": "乐山"
+        },
+        {
+          "citysName": "自贡市",
+          "citysAlias": "自贡"
+        },
+        {
+          "citysName": "泸州市",
+          "citysAlias": "泸州"
+        },
+        {
+          "citysName": "宜宾市",
+          "citysAlias": "宜宾"
+        },
+        {
+          "citysName": "攀枝花市",
+          "citysAlias": "攀枝花"
+        },
+        {
+          "citysName": "巴中市",
+          "citysAlias": "巴中"
+        },
+        {
+          "citysName": "达州市",
+          "citysAlias": "达州"
+        },
+        {
+          "citysName": "资阳市",
+          "citysAlias": "资阳"
+        },
+        {
+          "citysName": "眉山市",
+          "citysAlias": "眉山"
+        },
+        {
+          "citysName": "雅安市",
+          "citysAlias": "雅安"
+        },
+        {
+          "citysName": "崇州市",
+          "citysAlias": "崇州"
+        },
+        {
+          "citysName": "邛崃市",
+          "citysAlias": "邛崃"
+        },
+        {
+          "citysName": "都江堰市",
+          "citysAlias": "都江堰"
+        },
+        {
+          "citysName": "彭州市",
+          "citysAlias": "彭州"
+        },
+        {
+          "citysName": "江油市",
+          "citysAlias": "江油"
+        },
+        {
+          "citysName": "什邡市",
+          "citysAlias": "什邡"
+        },
+        {
+          "citysName": "广汉市",
+          "citysAlias": "广汉"
+        },
+        {
+          "citysName": "绵竹市",
+          "citysAlias": "绵竹"
+        },
+        {
+          "citysName": "阆中市",
+          "citysAlias": "阆中"
+        },
+        {
+          "citysName": "华蓥市",
+          "citysAlias": "华蓥"
+        },
+        {
+          "citysName": "峨眉山市",
+          "citysAlias": "峨眉山"
+        },
+        {
+          "citysName": "万源市",
+          "citysAlias": "万源"
+        },
+        {
+          "citysName": "简阳市",
+          "citysAlias": "简阳"
+        },
+        {
+          "citysName": "西昌市",
+          "citysAlias": "西昌"
+        },
+        {
+          "citysName": "康定市",
+          "citysAlias": "康定"
+        },
+        {
+          "citysName": "马尔康市",
+          "citysAlias": "马尔康"
+        },
+        {
+          "citysName": "阿坝藏族羌族自治州",
+          "citysAlias": "阿坝"
+        },
+        {
+          "citysName": "甘孜藏族自治州",
+          "citysAlias": "甘孜"
+        },
+        {
+          "citysName": "凉山彝族自治州",
+          "citysAlias": "凉山"
+        }
+      ],
+      "provinceName": "四川省",
+      "provinceAlias": "四川"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "贵阳市",
+          "citysAlias": "贵阳"
+        },
+        {
+          "citysName": "六盘水市",
+          "citysAlias": "六盘水"
+        },
+        {
+          "citysName": "遵义市",
+          "citysAlias": "遵义"
+        },
+        {
+          "citysName": "安顺市",
+          "citysAlias": "安顺"
+        },
+        {
+          "citysName": "毕节市",
+          "citysAlias": "毕节"
+        },
+        {
+          "citysName": "铜仁市",
+          "citysAlias": "铜仁"
+        },
+        {
+          "citysName": "清镇市",
+          "citysAlias": "清镇"
+        },
+        {
+          "citysName": "赤水市",
+          "citysAlias": "赤水"
+        },
+        {
+          "citysName": "仁怀市",
+          "citysAlias": "仁怀"
+        },
+        {
+          "citysName": "凯里市",
+          "citysAlias": "凯里"
+        },
+        {
+          "citysName": "都匀市",
+          "citysAlias": "都匀"
+        },
+        {
+          "citysName": "兴义市",
+          "citysAlias": "兴义"
+        },
+        {
+          "citysName": "福泉市",
+          "citysAlias": "福泉"
+        },
+        {
+          "citysName": "黔西南布依族苗族自治州",
+          "citysAlias": "黔西南"
+        },
+        {
+          "citysName": "黔东南苗族侗族自治州",
+          "citysAlias": "黔东南"
+        },
+        {
+          "citysName": "黔南布依族苗族自治州",
+          "citysAlias": "黔南"
+        }
+      ],
+      "provinceName": "贵州省",
+      "provinceAlias": "贵州"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "昆明市",
+          "citysAlias": "昆明"
+        },
+        {
+          "citysName": "曲靖市",
+          "citysAlias": "曲靖"
+        },
+        {
+          "citysName": "玉溪市",
+          "citysAlias": "玉溪"
+        },
+        {
+          "citysName": "丽江市",
+          "citysAlias": "丽江"
+        },
+        {
+          "citysName": "昭通市",
+          "citysAlias": "昭通"
+        },
+        {
+          "citysName": "普洱市",
+          "citysAlias": "普洱"
+        },
+        {
+          "citysName": "临沧市",
+          "citysAlias": "临沧"
+        },
+        {
+          "citysName": "保山市",
+          "citysAlias": "保山"
+        },
+        {
+          "citysName": "安宁市",
+          "citysAlias": "安宁"
+        },
+        {
+          "citysName": "宣威市",
+          "citysAlias": "宣威"
+        },
+        {
+          "citysName": "芒市",
+          "citysAlias": "芒"
+        },
+        {
+          "citysName": "瑞丽市",
+          "citysAlias": "瑞丽"
+        },
+        {
+          "citysName": "大理市"
+        },
+        {
+          "citysName": "楚雄市"
+        },
+        {
+          "citysName": "个旧市",
+          "citysAlias": "个旧"
+        },
+        {
+          "citysName": "开远市",
+          "citysAlias": "开远"
+        },
+        {
+          "citysName": "蒙自市",
+          "citysAlias": "蒙自"
+        },
+        {
+          "citysName": "弥勒市",
+          "citysAlias": "弥勒"
+        },
+        {
+          "citysName": "景洪市",
+          "citysAlias": "景洪"
+        },
+        {
+          "citysName": "文山市"
+        },
+        {
+          "citysName": "香格里拉市",
+          "citysAlias": "香格里拉"
+        },
+        {
+          "citysName": "腾冲市",
+          "citysAlias": "腾冲市"
+        },
+        {
+          "citysName": "楚雄彝族自治州",
+          "citysAlias": "楚雄"
+        },
+        {
+          "citysName": "大理白族自治州",
+          "citysAlias": "大理"
+        },
+        {
+          "citysName": "德宏傣族景颇族自治州",
+          "citysAlias": "德宏"
+        },
+        {
+          "citysName": "迪庆藏族自治州",
+          "citysAlias": "迪庆"
+        },
+        {
+          "citysName": "红河哈尼族彝族自治州",
+          "citysAlias": "红河"
+        },
+        {
+          "citysName": "怒江傈僳族自治州",
+          "citysAlias": "怒江"
+        },
+        {
+          "citysName": "文山壮族苗族自治州",
+          "citysAlias": "文山"
+        },
+        {
+          "citysName": "西双版纳傣族自治州",
+          "citysAlias": "西双版纳"
+        }
+      ],
+      "provinceName": "云南省",
+      "provinceAlias": "云南"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "西安市",
+          "citysAlias": "西安"
+        },
+        {
+          "citysName": "延安市",
+          "citysAlias": "延安"
+        },
+        {
+          "citysName": "铜川市",
+          "citysAlias": "铜川"
+        },
+        {
+          "citysName": "渭南市",
+          "citysAlias": "渭南"
+        },
+        {
+          "citysName": "咸阳市",
+          "citysAlias": "咸阳"
+        },
+        {
+          "citysName": "宝鸡市",
+          "citysAlias": "宝鸡"
+        },
+        {
+          "citysName": "汉中市",
+          "citysAlias": "汉中"
+        },
+        {
+          "citysName": "榆林市",
+          "citysAlias": "榆林"
+        },
+        {
+          "citysName": "商洛市",
+          "citysAlias": "商洛"
+        },
+        {
+          "citysName": "安康市",
+          "citysAlias": "安康"
+        },
+        {
+          "citysName": "韩城市",
+          "citysAlias": "韩城"
+        },
+        {
+          "citysName": "华阴市",
+          "citysAlias": "华阴"
+        },
+        {
+          "citysName": "兴平市",
+          "citysAlias": "兴平"
+        }
+      ],
+      "provinceName": "陕西省",
+      "provinceAlias": "陕西"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "兰州市",
+          "citysAlias": "兰州"
+        },
+        {
+          "citysName": "嘉峪关市",
+          "citysAlias": "嘉峪关"
+        },
+        {
+          "citysName": "金昌市",
+          "citysAlias": "金昌"
+        },
+        {
+          "citysName": "白银市",
+          "citysAlias": "白银"
+        },
+        {
+          "citysName": "天水市",
+          "citysAlias": "天水"
+        },
+        {
+          "citysName": "酒泉市",
+          "citysAlias": "酒泉"
+        },
+        {
+          "citysName": "张掖市",
+          "citysAlias": "张掖"
+        },
+        {
+          "citysName": "武威市",
+          "citysAlias": "武威"
+        },
+        {
+          "citysName": "庆阳市",
+          "citysAlias": "庆阳"
+        },
+        {
+          "citysName": "平凉市",
+          "citysAlias": "平凉"
+        },
+        {
+          "citysName": "定西市",
+          "citysAlias": "定西"
+        },
+        {
+          "citysName": "陇南市",
+          "citysAlias": "陇南"
+        },
+        {
+          "citysName": "玉门市",
+          "citysAlias": "玉门"
+        },
+        {
+          "citysName": "敦煌市",
+          "citysAlias": "敦煌"
+        },
+        {
+          "citysName": "临夏市"
+        },
+        {
+          "citysName": "合作市",
+          "citysAlias": "合作"
+        },
+        {
+          "citysName": "甘南藏族自治州",
+          "citysAlias": "甘南"
+        },
+        {
+          "citysName": "临夏回族自治州",
+          "citysAlias": "临夏"
+        }
+      ],
+      "provinceName": "甘肃省",
+      "provinceAlias": "甘肃"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "西宁市",
+          "citysAlias": "西宁"
+        },
+        {
+          "citysName": "海东市",
+          "citysAlias": "海东"
+        },
+        {
+          "citysName": "格尔木市",
+          "citysAlias": "格尔木"
+        },
+        {
+          "citysName": "德令哈市",
+          "citysAlias": "德令哈"
+        },
+        {
+          "citysName": "玉树市"
+        },
+        {
+          "citysName": "果洛藏族自治州",
+          "citysAlias": "果洛"
+        },
+        {
+          "citysName": "海北藏族自治州",
+          "citysAlias": "海北"
+        },
+        {
+          "citysName": "海南藏族自治州",
+          "citysAlias": "海南州"
+        },
+        {
+          "citysName": "海西蒙古族藏族自治州",
+          "citysAlias": "海西"
+        },
+        {
+          "citysName": "黄南藏族自治州",
+          "citysAlias": "黄南"
+        },
+        {
+          "citysName": "玉树藏族自治州",
+          "citysAlias": "玉树"
+        }
+      ],
+      "provinceName": "青海省",
+      "provinceAlias": "青海"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "拉萨市",
+          "citysAlias": "拉萨"
+        },
+        {
+          "citysName": "日喀则市",
+          "citysAlias": "日喀则"
+        },
+        {
+          "citysName": "昌都市",
+          "citysAlias": "昌都"
+        },
+        {
+          "citysName": "林芝市",
+          "citysAlias": "林芝"
+        },
+        {
+          "citysName": "山南市",
+          "citysAlias": "山南"
+        },
+        {
+          "citysName": "阿里地区",
+          "citysAlias": "阿里"
+        },
+        {
+          "citysName": "那曲市",
+          "citysAlias": "那曲"
+        }
+      ],
+      "provinceName": "西藏自治区",
+      "provinceAlias": "西藏"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "银川市",
+          "citysAlias": "银川"
+        },
+        {
+          "citysName": "石嘴山市",
+          "citysAlias": "石嘴山"
+        },
+        {
+          "citysName": "吴忠市",
+          "citysAlias": "吴忠"
+        },
+        {
+          "citysName": "中卫市",
+          "citysAlias": "中卫"
+        },
+        {
+          "citysName": "固原市",
+          "citysAlias": "固原"
+        },
+        {
+          "citysName": "灵武市",
+          "citysAlias": "灵武"
+        },
+        {
+          "citysName": "青铜峡市",
+          "citysAlias": "青铜峡"
+        }
+      ],
+      "provinceName": "宁夏回族自治区",
+      "provinceAlias": "宁夏"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "北京市",
+          "citysAlias": "北京"
+        }
+      ],
+      "provinceName": "北京市",
+      "provinceAlias": "北京"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "天津市",
+          "citysAlias": "天津"
+        }
+      ],
+      "provinceName": "天津市",
+      "provinceAlias": "天津"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "上海市",
+          "citysAlias": "上海"
+        }
+      ],
+      "provinceName": "上海市",
+      "provinceAlias": "上海"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "重庆市",
+          "citysAlias": "重庆"
+        }
+      ],
+      "provinceName": "重庆市",
+      "provinceAlias": "重庆"
+    },
+    {
+      "citys": [
+        {
+          "citysName": "乌鲁木齐市",
+          "citysAlias": "乌鲁木齐"
+        },
+        {
+          "citysName": "克拉玛依市",
+          "citysAlias": "克拉玛依"
+        },
+        {
+          "citysName": "吐鲁番市",
+          "citysAlias": "吐鲁番"
+        },
+        {
+          "citysName": "哈密市",
+          "citysAlias": "哈密"
+        },
+        {
+          "citysName": "喀什市"
+        },
+        {
+          "citysName": "阿克苏市"
+        },
+        {
+          "citysName": "和田市"
+        },
+        {
+          "citysName": "阿图什市",
+          "citysAlias": "阿图什"
+        },
+        {
+          "citysName": "阿拉山口市",
+          "citysAlias": "阿拉山口"
+        },
+        {
+          "citysName": "博乐市",
+          "citysAlias": "博乐"
+        },
+        {
+          "citysName": "昌吉市"
+        },
+        {
+          "citysName": "阜康市",
+          "citysAlias": "阜康"
+        },
+        {
+          "citysName": "库尔勒市",
+          "citysAlias": "库尔勒"
+        },
+        {
+          "citysName": "伊宁市",
+          "citysAlias": "伊宁"
+        },
+        {
+          "citysName": "奎屯市",
+          "citysAlias": "奎屯"
+        },
+        {
+          "citysName": "塔城市"
+        },
+        {
+          "citysName": "乌苏市",
+          "citysAlias": "乌苏"
+        },
+        {
+          "citysName": "阿勒泰市"
+        },
+        {
+          "citysName": "霍尔果斯市",
+          "citysAlias": "霍尔果斯"
+        },
+        {
+          "citysName": "石河子市",
+          "citysAlias": "石河子"
+        },
+        {
+          "citysName": "阿拉尔市",
+          "citysAlias": "阿拉尔"
+        },
+        {
+          "citysName": "图木舒克市",
+          "citysAlias": "图木舒克"
+        },
+        {
+          "citysName": "五家渠市",
+          "citysAlias": "五家渠"
+        },
+        {
+          "citysName": "北屯市",
+          "citysAlias": "北屯"
+        },
+        {
+          "citysName": "铁门关市",
+          "citysAlias": "铁门关"
+        },
+        {
+          "citysName": "双河市",
+          "citysAlias": "双河"
+        },
+        {
+          "citysName": "可克达拉市",
+          "citysAlias": "可克达拉"
+        },
+        {
+          "citysName": "昆玉市",
+          "citysAlias": "昆玉"
+        },
+        {
+          "citysName": "阿克苏地区",
+          "citysAlias": "阿克苏"
+        },
+        {
+          "citysName": "阿勒泰地区",
+          "citysAlias": "阿勒泰"
+        },
+        {
+          "citysName": "巴音郭楞蒙古自治州",
+          "citysAlias": "巴州"
+        },
+        {
+          "citysName": "博尔塔拉蒙古自治州",
+          "citysAlias": "博州"
+        },
+        {
+          "citysName": "昌吉回族自治州",
+          "citysAlias": "昌吉"
+        },
+        {
+          "citysName": "和田地区",
+          "citysAlias": "和田"
+        },
+        {
+          "citysName": "喀什地区",
+          "citysAlias": "喀什"
+        },
+        {
+          "citysName": "克孜勒苏柯尔克孜自治州",
+          "citysAlias": "克州"
+        },
+        {
+          "citysName": "塔城地区",
+          "citysAlias": "塔城"
+        },
+        {
+          "citysName": "伊犁哈萨克自治州",
+          "citysAlias": "伊犁"
+        }
+      ],
+      "provinceName": "新疆维吾尔自治区",
+      "provinceAlias": "新疆"
+    }
+  ]
+}

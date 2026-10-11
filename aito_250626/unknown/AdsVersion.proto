@@ -1,0 +1,14 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+option java_package = "com.huawei.ads.rpa.net.proto";
+
+package RtsaMsgs;
+
+
+message Version {
+  string bizType = 1;
+  uint32 maxMajorVer = 2;
+  uint32 maxMinorVer = 3;
+  uint32 minMajorVer = 4;
+  uint32 minMinorVer = 5;
+}

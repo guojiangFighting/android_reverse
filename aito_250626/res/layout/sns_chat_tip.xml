@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/sns_tip_layout" android:background="@color/transparent" android:paddingLeft="@dimen/emui_dimens_text_margin_fifth" android:paddingTop="@dimen/emui_dimens_text_margin_fifth" android:paddingRight="@dimen/emui_dimens_text_margin_fifth" android:paddingBottom="@dimen/emui_dimens_text_margin_fifth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" android:paddingStart="@dimen/emui_dimens_text_margin_fifth" android:paddingEnd="@dimen/emui_dimens_text_margin_fifth" android:layout_marginStart="@dimen/sns_chat_tips_margin" android:layout_marginEnd="@dimen/sns_chat_tips_margin">
+        <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/dp12" android:textColor="@color/emui_color_text_tertiary" android:gravity="start" android:layout_gravity="center_horizontal" android:id="@id/sns_tip_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:breakStrategy="simple" android:hyphenationFrequency="none" />
+    </LinearLayout>
+</RelativeLayout>

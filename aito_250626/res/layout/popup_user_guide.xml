@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/user_guide_rl" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/font16">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/user_guide_hiv" android:background="@drawable/popup_user_guide_normal_bg" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <Space android:id="@id/user_guide_space" android:layout_width="match_parent" android:layout_height="@dimen/font12" android:layout_alignBottom="@id/user_guide_hiv" />
+        <app.huawei.auto.drive.ui.view.TextViewGravity android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/emui_color_fg_inverse" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/user_guide_htv" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="2" android:includeFontPadding="false" android:layout_above="@id/user_guide_space" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginHorizontal="@dimen/font32" />
+    </RelativeLayout>
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/user_guide_lav" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" />
+</RelativeLayout>

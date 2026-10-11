@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/hwtextarrowpreference_arrow_widget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/hwtextarrowpreference_arrow_padding_start" app:srcCompat="@drawable/hwtextarrowpreference_ic_arrow_right"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

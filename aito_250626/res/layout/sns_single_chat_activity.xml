@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.huawei.auto.im.ui.widget.ResizeLayout android:id="@id/chat_main" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/commute_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rel_main">
+        <com.huawei.uikit.hwscrollbarview.widget.HwScrollbarView android:id="@id/sns_scrollbar" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentEnd="true" style="@style/Widget.Emui.HwScrollbarView" />
+        <FrameLayout android:id="@id/sns_fl_message_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <include layout="@layout/sns_audio_play_mode_banner" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chat_message_unread_tools" android:background="@drawable/sns_unread_msg_tools_bg" android:paddingLeft="18.0dp" android:paddingRight="13.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginRight="-1.0dp" android:layout_alignParentRight="true" android:paddingStart="18.0dp" android:paddingEnd="13.0dp" android:layout_marginEnd="-1.0dp" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/chat_message_unread_icon" android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/sns_ic_chat_top_normal" android:tint="@color/sns_color_primary" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/crossuikit_text_color_accent" android:gravity="center_vertical" android:id="@id/chat_message_unread_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chat_message_back_reply" android:background="@drawable/sns_unread_msg_tools_bg" android:paddingLeft="18.0dp" android:paddingRight="8.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-1.0dp" android:layout_marginBottom="16.0dp" android:layout_above="@id/bottom_root" android:layout_alignParentRight="true" android:paddingStart="18.0dp" android:paddingEnd="8.0dp" android:layout_marginEnd="-1.0dp" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/chat_back_reply_icon" android:layout_width="12.0dp" android:layout_height="24.0dp" android:src="@drawable/im_quotation_arrow" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="14.0dp" android:textColor="@color/crossuikit_text_color_accent" android:gravity="center_vertical" android:id="@id/chat_back_reply_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/xcar_app_text_im_back_to_reference" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginStart="8.0dp" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/sns_team_chat_scoll_view" android:paddingTop="@dimen/sns_team_chat_scoll_view_paddingtop" android:paddingBottom="@dimen/sns_team_chat_scoll_view_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/sns_team_chat_scoll_view_height" android:layout_above="@id/bottom_root" />
+        <app.huawei.auto.im.ui.group.view.GroupNoticeView android:id="@id/group_notice_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/bottom_root" />
+        <RelativeLayout android:id="@id/bottom_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <app.huawei.auto.im.ui.chat.view.InputModView android:id="@id/input_mod" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <app.huawei.auto.im.ui.group.view.GroupNotSendMessageView android:id="@id/not_send" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <app.huawei.auto.im.ui.chat.view.MessageForwardAndDeleteMenuView android:id="@id/message_share_and_delete" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <app.huawei.auto.im.ui.group.view.IMGroupInviteNotifyView android:id="@id/new_notify" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/rel_main" />
+    <include layout="@layout/sns_action_bar_not_meui_single_chat" />
+</app.huawei.auto.im.ui.widget.ResizeLayout>

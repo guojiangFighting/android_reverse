@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_width="@dimen/baseui_dp_18" android:layout_height="@dimen/baseui_dp_18" android:layout_marginLeft="@dimen/font12" android:src="@drawable/charge_icon_white_in_circle" android:scaleType="center" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="#e6ffffff" android:id="@id/rec_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/baseui_dp_8" android:layout_marginRight="@dimen/font12" android:text="@string/xcar_app_text_veh_charge_rec_tip" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" android:layout_toLeftOf="@id/login_layout" android:fontFamily="@string/emui_text_font_family_regular" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:textColor="@color/white" android:gravity="center" android:id="@id/go_no_scan_charge_btn" android:background="@drawable/new_user_login_bg" android:layout_width="@dimen/font72" android:layout_height="@dimen/font28" android:layout_marginRight="@dimen/font12" android:text="@string/xcar_app_text_goto_charging" android:maxLines="1" android:singleLine="true" android:fontFamily="@string/emui_text_font_family_medium" />
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/close_no_scan_charge_img" android:layout_width="@dimen/baseui_dp_16" android:layout_height="@dimen/baseui_dp_16" android:layout_marginRight="@dimen/font12" android:src="@drawable/ic_login_cancel" android:scaleType="center" />
+</merge>

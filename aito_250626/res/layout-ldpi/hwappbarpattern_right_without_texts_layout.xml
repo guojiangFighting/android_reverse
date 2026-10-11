@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:id="@id/hwappbarpattern_right_texts_layout" android:paddingBottom="@dimen/hwappbarpattern_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/hwappbarpattern_width" android:minHeight="@dimen/hwappbarpattern_height" android:paddingStart="@dimen/emui_dimens_max_start" android:paddingEnd="@dimen/emui_dimens_max_end"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_headline7" android:textColor="@color/emui_appbar_title_dark" android:ellipsize="end" android:id="@id/hwappbarpattern_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/hwappbarpattern_without_texts_max_width" android:maxLines="1" android:fontFamily="@string/emui_text_font_family_medium" android:layout_alignParentStart="true" app:hwAutoSizeMinTextSize="@dimen/emui_text_size_headline8" app:hwAutoSizeStepGranularity="1.0sp" />
+</RelativeLayout>

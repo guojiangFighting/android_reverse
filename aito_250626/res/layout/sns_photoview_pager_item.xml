@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <app.huawei.auto.im.ui.chat.photo.view.DragView android:layout_gravity="center" android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_gravity="start|bottom" android:id="@id/sns_orig_tip" android:layout_width="wrap_content" android:layout_height="@dimen/sns_list_height_56" android:layout_marginStart="@dimen/sns_common_padding_24" android:layout_marginEnd="@dimen/sns_common_padding_24">
+        <RelativeLayout android:id="@id/sns_orig_progress_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/sns_progress" android:layout_alignBottom="@id/sns_progress" android:layout_centerVertical="true" android:layout_alignStart="@id/sns_progress" android:layout_alignEnd="@id/sns_progress">
+            <ProgressBar android:id="@id/sns_orig_progress" android:layout_width="match_parent" android:layout_height="match_parent" android:progressDrawable="@drawable/sns_progress_org_image_horizontal" style="?android:progressBarStyleHorizontal" />
+            <app.huawei.auto.im.ui.widget.CustomFontTextView android:textColor="@color/sns_white" android:gravity="center" android:id="@id/sns_orig_num_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/dp14" android:textColor="@color/emui_text_primary_inverse" android:ellipsize="end" android:gravity="center" android:id="@id/sns_progress" android:background="@drawable/sns_bg_send_picture_has_select" android:padding="@dimen/sns_empty_data_tip_marginTop" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="150.0dp" android:lines="1" android:layout_centerVertical="true" android:fontFamily="@string/emui_text_font_family_medium" />
+    </RelativeLayout>
+</FrameLayout>

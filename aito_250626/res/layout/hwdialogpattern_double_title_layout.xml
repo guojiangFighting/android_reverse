@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/hwdialogpattern_title_padding_top" android:paddingBottom="@dimen/hwdialogpattern_title_padding_top" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_headline7" android:ellipsize="end" android:id="@id/hwdialogpattern_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:textAlignment="viewStart" app:hwAutoSizeMinTextSize="@dimen/hwdialogpattern_text_size_auto_minsize" app:hwAutoSizeStepGranularity="1.0sp" style="@style/Widget.Emui.HwDialogPattern.DialogWindowTitle" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/hwdialogpattern_summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" app:hwAutoSizeMinTextSize="@dimen/hwdialogpattern_text_size_auto_minsize_small" app:hwAutoSizeStepGranularity="1.0sp" style="@style/Widget.Emui.HwDialogPattern.DialogSubTitle" />
+</LinearLayout>

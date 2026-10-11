@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_view" android:background="@color/id_fa_color_sub_background" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/topicdetail_title" layout="@layout/xcar_hwappbarpattern_navigation_icon_layout_with_progress" />
+    <app.huawei.auto.base.view.XCarWebView android:id="@id/webview_load_swv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/topicdetail_title" android:overScrollMode="never" />
+    <FrameLayout android:id="@id/load_status_root_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/topicdetail_title">
+        <app.huawei.auto.base.view.BaseNoInternetLayout android:id="@id/h5_no_internet_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <include android:id="@id/h5_load_progress_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/xcar_loading_view" />
+        <include android:id="@id/h5_error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/xcar_error_view" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/pay_loading_layout" android:background="@color/id_fa_color_sub_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/topicdetail_title">
+        <com.huawei.uikit.hwprogressbar.widget.HwProgressBar android:layout_width="@dimen/font72" android:layout_height="@dimen/font72" android:layout_above="@id/text_loading" android:layout_centerInParent="true" />
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:id="@id/text_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:text="@string/xcar_app_text_pay_loading_text" android:layout_centerInParent="true" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+    </RelativeLayout>
+</RelativeLayout>

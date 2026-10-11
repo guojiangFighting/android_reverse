@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/preview_gallery" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" />
+    <View android:id="@id/video_detail_gradient_bg_top" android:background="@drawable/shape_video_gradient_bg_top" android:layout_width="match_parent" android:layout_height="@dimen/dp_100" />
+    <View android:id="@id/video_detail_gradient_bg_bottom" android:background="@drawable/shape_video_gradient_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_150" android:layout_alignParentBottom="true" />
+    <include android:id="@id/video_picture_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/hwappbarpattern_height" layout="@layout/hwappbarpattern_title_item_layout" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="14.0sp" android:gravity="center" android:id="@id/photo_provider" android:background="@drawable/big_image_brackcolor" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/font28" android:layout_below="@id/video_picture_title_bar" android:layout_centerHorizontal="true" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" style="@style/textColorPrimaryAndSizeLine8AndRegular" />
+    <LinearLayout android:orientation="vertical" android:id="@id/video_detail_info_ll" android:paddingBottom="@dimen/baseui_dp_24" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:paddingStart="@dimen/font16" android:paddingEnd="@dimen/font16">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/dp12" android:textColor="@color/new_emui_white_text_secondary" android:gravity="center" android:id="@id/video_category_name_tv" android:background="@drawable/shape_video_tab_bg" android:layout_width="wrap_content" android:layout_height="@dimen/font24" android:text="" android:fontFamily="@string/emui_text_font_family_medium" android:paddingStart="@dimen/baseui_dp_6" android:paddingEnd="@dimen/baseui_dp_6" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/baseui_fontsize_body_16" android:textColor="@color/white" android:id="@id/video_name_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_4" android:text="" android:fontFamily="@string/emui_text_font_family_regular" />
+    </LinearLayout>
+    <app.huawei.auto.base.view.BaseEmptyView android:id="@id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@id/load_progress_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/image_load_status_view" />
+    <include android:id="@id/share_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/driving_report_poster_loadding_view" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/param_ll" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/param_rel" android:paddingTop="@dimen/font17" android:paddingBottom="@dimen/font17" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/param_icon" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:layout_centerVertical="true" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_primary" android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:text="安装申请" android:layout_toRightOf="@id/param_icon" android:fontFamily="@string/emui_text_font_family_regular" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/update_reminder_iv" android:visibility="gone" android:layout_width="6.0dp" android:layout_height="6.0dp" android:src="@drawable/hub_update_reminder_ponit" android:layout_centerVertical="true" android:layout_marginStart="8.0dp" android:layout_marginEnd="16.0dp" android:layout_toEndOf="@id/txt_name" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_button2" android:textColor="@color/emui_color_secondary" android:id="@id/txt_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:text="" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/arrow_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font4" android:src="@drawable/icon_public_arrow_right" android:layout_centerVertical="true" android:alpha="0.2" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/view_divider" android:background="#000000" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" android:alpha="0.2" />
+</LinearLayout>

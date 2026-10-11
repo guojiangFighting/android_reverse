@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/vehicle_endurance_view" layout="@layout/vehicle_endurance_layout" />
+    <include android:id="@id/vehicle_charge_service_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" layout="@layout/vehicle_charge_service_layout" />
+    <include android:id="@id/incl_vehicle_model_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/vehicle_endurance_view" layout="@layout/vehicle_model_progress_layout" />
+    <include android:id="@id/incl_vehicle_control_cards" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/vehicle_control_view" layout="@layout/vehicle_control_card_layout" />
+    <include android:id="@id/incl_vehicle_control_menu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/incl_vehicle_control_cards" layout="@layout/vehicle_control_menu_layout" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_12" android:layout_below="@id/incl_vehicle_control_menu" android:layout_alignParentBottom="true" android:layout_marginHorizontal="@dimen/baseui_dp_16">
+        <app.huawei.auto.vehicle.ui.views.OnePlusTwoCardView android:id="@id/one_plus_two_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font12" />
+    </LinearLayout>
+    <include android:id="@id/incl_status_description_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/incl_vehicle_model_progress" layout="@layout/vehicle_status_description_layout" />
+    <include android:id="@id/vehicle_control_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/incl_status_description_layout" layout="@layout/xcar_view_car_control_model" />
+</RelativeLayout>

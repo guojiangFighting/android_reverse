@@ -1,0 +1,104 @@
+// [START declaration]
+syntax = "proto3";
+package rc_avp.mobile;
+option java_package = "com.huawei.ads.carsearch.proto.mobile";
+option java_outer_classname = "RcAvpMobile";
+import "rc_avp_hmi.proto";
+// [END declaration]
+
+
+// [START messages]
+
+message Patch {
+  repeated sint32 floor = 1; // 所有楼层信息
+  repeated Road_ road = 2;   // 道路信息，用于车导航
+  repeated ParkingSpot_ parkingSpot = 3; // 停车位信息
+  repeated Obstacle_ obstacles = 4; // 障碍物信息:墙、柱子等
+  repeated TollArea_ tollarea = 5; // 当前用于标记电梯口信息
+  repeated ZoomOutDisplayConfig_ zoomOutDisplayConfig = 6; // 用于地图比例尺放大后,设置可视化的配置参数
+  repeated Roadmarking_ roadmarking = 7; // 减速带信息
+  repeated Lane_ lane = 8; // 步行导航lane
+
+  repeated Road_ originRoad = 9;         // 来源于0.dat 矢量road
+
+  sint32 groundLayer = 50; // 地面层, 例：15表示地面层
+  repeated sint32 unmannedLayer = 51; // 支持无人AVP的楼层，-2: B2, -1: B1, 0: L1, 1: L2
+  repeated sint32 splitArray = 52; // hmi用于计算楼层信息采用的编码，从hmi_info.json中取出透传至手机侧
+  
+  string version = 100; // avp云端融合算法版本号, AVP.xxx 来自latest-version.txt
+  
+  rc_avp.hmi.UnitedPatch unitedpatch = 300;   // 考虑兼容性，将一体化后的新规格在老规格的后面全部再加一遍。
+}
+
+message Point {
+  double x = 1;
+  double y = 2;
+  double z = 3;
+}
+
+message Road_ {
+  repeated Point point = 1;  // 几何形点
+  uint32 id = 2;              // 道路 id
+  repeated sint32 floor = 3;  // 所在楼层
+  bool isBothway = 4;         // 是否双向路
+}
+
+message ParkingSpot_ {
+  repeated Point point = 1;      // 几何形点
+  uint32 id = 2;                  // 停车位id
+  repeated sint32 floor = 3;      // 楼层信息
+  uint32 parkAreaId = 4;          //  分区信息B1-B10对应(1-10) , F1-F10(对应11-20)
+  uint32 stopperId = 5;           //  车位号
+  uint64 relatedRoadId = 6;       //  充电车位标识  1是充电车位，0不是充电车位
+}
+
+// 当前不使用
+message Obstacle_ {
+  uint32 id = 1;         // ->  id +layer信息
+  repeated Point points = 2;  // 几何形点
+  bool   traversable = 3;  // 是否可穿行
+  uint32 movable = 4;    // ->   1 墙  2 柱子
+  repeated uint64 relatedIntersectionId = 5;  // 关联的路口id
+  repeated uint64 relatedLaneId = 6;  // 关联的lane_id
+  repeated sint32 floor = 7;  // 所在楼层
+}
+// TollArea废弃，由新增的AvpKeyPoint代替
+message TollArea_ {
+  uint32 id = 1;    //  id +layer信息
+  repeated Point points = 2;  // 几何形点
+  repeated uint64 inRoadId = 3;  // 进 road id
+  repeated uint64 outRoadId = 4; // 出 raod id
+  repeated sint32 floor = 5;  // 所在楼层
+}
+
+message ZoomOutDisplayConfig_ {
+  uint32 id = 1; // ParkingSport的id
+  uint32 zoomOutDisplayFloor = 2; // 地图比例
+  repeated sint32 floor = 3;  // 当前楼层信息
+  // 展示比例下限,单位是米,目前有1,2,5,10,20,默认比例尺是2,如果值是5,代表在大于等于5的比例尺中可以展示
+}
+
+// Roadmarking废弃，由新增的减速带Bumper代替
+message Roadmarking_ {
+  uint32 id = 1;     // id + layer
+  repeated Point points = 2;  // 5个点
+  uint32 type = 3;  // 类型
+  repeated uint64 relatedlaneId = 4;
+  repeated sint32 floor = 5;  // 所在楼层
+}
+
+message Lane_ {
+  repeated Point point =1;  // 几何形点
+  uint32 id  = 2;  // lane id
+  double length = 3;  // lane 长度
+  repeated sint32 floor = 4;  // 所在楼层
+  repeated uint64 prevLanesId = 5;  // 前续lane id
+  repeated uint64 nextLanesId = 6;  // 后继lane id
+  bool   isIntersectionLane = 7;  // 是否路口lane
+  uint64 intersectionId = 8;  // 路口id
+  uint32 currentTurn = 9;
+  repeated uint64 oppositeRoadsId = 10;
+  uint32 roadType = 11;  // 道路类型
+}
+
+// [END messages]

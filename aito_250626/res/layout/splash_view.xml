@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/splash_img" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/bt_jump_time" android:background="@drawable/btn_gray_shape" android:layout_width="wrap_content" android:layout_height="@dimen/font24" android:layout_marginTop="44.0dp" android:layout_marginEnd="@dimen/font16" android:paddingHorizontal="@dimen/font12" android:paddingVertical="@dimen/font4" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center" android:id="@id/ll_jump_tips" android:background="@drawable/btn_bottom_gray_shape" android:layout_width="248.0dp" android:layout_height="@dimen/font52" android:layout_marginBottom="@dimen/dp_64" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_button_click_to_detail" android:drawablePadding="@dimen/font4" app:drawableEndCompat="@drawable/splash_arrow_right" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

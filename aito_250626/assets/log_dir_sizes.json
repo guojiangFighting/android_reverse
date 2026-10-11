@@ -1,0 +1,44 @@
+{
+  "logs": [
+    {
+      "logName": "app",
+      "maxSize": 100
+    },
+    {
+      "logName": "cloud",
+      "maxSize": 50
+    },
+    {
+      "logName": "sdklog",
+      "maxSize": 50
+    },
+    {
+      "logName": "vklog",
+      "maxSize": 50
+    },
+    {
+      "logName": "rpalog",
+      "maxSize": 50
+    },
+    {
+      "logName": "Log",
+      "maxSize": 50
+    },
+    {
+      "logName": "adsrpalog",
+      "maxSize": 50
+    },
+    {
+      "logName": "uavp",
+      "maxSize": 50
+    },
+    {
+      "logName": "cabinconn",
+      "maxSize": 50
+    },
+    {
+      "logName": "livertsa",
+      "maxSize": 50
+    }
+  ]
+}

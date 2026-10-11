@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:background="@color/transparent" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.stephentuso.welcome.ui.view.WelcomeScreenBackgroundView android:id="@id/background_view" android:background="#2c809f" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="?welcomeLayoutFitsSystemWindows" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <View android:layout_width="match_parent" style="?attr/welcomeDividerStyle" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/button_skip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="?welcomeButtonSkipText" style="?attr/welcomeButtonSkipStyle" />
+                <ImageButton android:id="@id/button_prev" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/welcomeButtonPrevStyle" />
+            </FrameLayout>
+            <com.stephentuso.welcome.ui.view.WelcomeScreenViewPagerIndicator android:id="@id/pager_indicator" android:layout_width="0.0dp" android:layout_height="20.0dp" android:layout_weight="1.0" style="?attr/welcomeIndicatorStyle" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/button_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="?welcomeButtonDoneText" style="?attr/welcomeButtonDoneStyle" />
+                <ImageButton android:id="@id/button_next" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/welcomeButtonNextStyle" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

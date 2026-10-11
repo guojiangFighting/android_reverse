@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/svs_com_history_clear_normal_bt" />
+            <corners android:radius="60.0dp" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/svs_com_history_clear_pressed_bt" />
+            <corners android:radius="60.0dp" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/hwradiobutton_checked_dark_bg"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="radiobutton" android:animation="@animator/hwradiobutton_touch_scale" />
+    <target android:name="radiobtn_inter" android:animation="@animator/hwradiobutton_scale_exit" />
+    <target android:name="radiobtn_bg" android:animation="@animator/hwradiobutton_bg_exit_dark" />
+    <target android:name="path_inner_bg" android:animation="@animator/hwradiobutton_inner_bg_2_off_dark" />
+</animated-vector>

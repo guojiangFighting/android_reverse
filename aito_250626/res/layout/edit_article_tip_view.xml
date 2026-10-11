@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/retry_card" android:layout_width="match_parent" android:layout_height="match_parent" app:cardBackgroundColor="#ffe1d9" app:cardCornerRadius="@dimen/emui_corner_radius_card" app:hwAdvancedCardViewClickAnimationEnable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/tip_iv" android:layout_width="@dimen/font16" android:layout_height="@dimen/font16" android:src="@drawable/ugc_article_reject_iv" android:layout_centerVertical="true" android:layout_marginStart="@dimen/font12" android:layout_alignParentStart="true" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="#e94b2a" android:ellipsize="end" android:gravity="start" android:id="@id/tip_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" android:layout_centerVertical="true" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginStart="@dimen/font8" android:layout_marginEnd="@dimen/font8" android:layout_toStartOf="@id/tip_delete" android:layout_toEndOf="@id/tip_iv" style="@style/textColorSecondaryAndSizeBody2" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/tip_delete" android:layout_width="@dimen/font16" android:layout_height="@dimen/font16" android:src="@drawable/ugc_article_reject_delete" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/font12" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>

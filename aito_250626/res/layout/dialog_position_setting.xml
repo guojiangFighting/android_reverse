@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout android:orientation="vertical" android:background="@drawable/shape_dialog" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin24dp" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/margin24dp">
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/textSize16" android:textColor="@color/black" android:gravity="center" android:id="@id/user_guide_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/open_position_text" />
+    </com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout>
+    <com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout android:gravity="center" android:padding="@dimen/padding16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin8dp" android:layout_marginHorizontal="@dimen/margin24dp">
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_button1" android:textStyle="bold" android:textColor="@color/emeraldblue" android:gravity="center" android:id="@id/position_cancel" android:background="@drawable/bg_item" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" />
+        <View android:layout_gravity="center" android:id="@id/divider" android:background="@color/divide_grey" android:layout_width="0.5dp" android:layout_height="24.0dp" />
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_button1" android:textStyle="bold" android:textColor="@color/emeraldblue" android:gravity="center" android:id="@id/position_setting" android:background="@drawable/bg_item" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/open_position_setting" android:layout_weight="1.0" />
+    </com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout>
+</com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout>

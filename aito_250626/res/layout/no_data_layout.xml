@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/no_data_view" android:background="@color/color_driving_report_activity_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/no_data_group" android:paddingBottom="350.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="@color/emui_text_tertiary_inverse" android:id="@id/vehicle_ac_appointments_empty_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/xcar_app_text_vehicle_drive_report_nullData_tip" android:layout_above="@id/this_week_or_month_no_data_tips_tv" android:layout_centerInParent="true" style="@style/textColorTertiaryAndSizeBody2" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/driving_report_empty_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_mine_empty" android:layout_above="@id/vehicle_ac_appointments_empty_tv" android:layout_centerInParent="true" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="@color/emui_text_tertiary_inverse" android:id="@id/this_week_or_month_no_data_tips_tv" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/xcar_app_text_vehicle_drive_report_nullData_cur_week_or_month" android:layout_alignParentBottom="true" android:layout_centerInParent="true" style="@style/textColorSecondaryAndSizeBody3AndFamilyRegular" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.ads.carsearch.view.cardview.VehicleSdNaviCardView android:id="@id/vehicle_sd_navi_card" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.huawei.ads.carsearch.view.cardview.SdPlanRouteErrorCardView android:id="@id/vehicle_sd_plan_route_err" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

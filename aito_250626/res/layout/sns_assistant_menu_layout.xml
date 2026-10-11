@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_menu_container" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sns_assistant_line" android:visibility="gone" android:layout_width="match_parent" style="@style/crossuikit_divider_style" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:id="@id/keyboard_up_layout" android:background="@drawable/sns_selector_assist_menu_item" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginStart="@dimen/emui_dimens_text_margin_fourth">
+                <ImageView android:id="@id/keyboard_up" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/sns_ic_menu_keyboard_on" android:tint="@color/sns_color_primary" android:contentDescription="@string/xcar_app_text_sns_button_keyboard" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/chat_menu_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

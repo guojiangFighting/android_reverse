@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="page_progress">
+        <item quantity="zero">पेज %1$d</item>
+        <item quantity="one">पेज %1$d</item>
+        <item quantity="two">पेज %1$d</item>
+        <item quantity="few">पेज %1$d</item>
+        <item quantity="many">पेज %1$d</item>
+        <item quantity="other">पेज %1$d</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="zero">%d स्टार</item>
+        <item quantity="one">%d स्टार</item>
+        <item quantity="two">%d स्टार</item>
+        <item quantity="few">%d स्टार</item>
+        <item quantity="many">%d स्टार</item>
+        <item quantity="other">%d स्टार</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="zero">%1$d मे</item>
+        <item quantity="one">%1$d मे</item>
+        <item quantity="two">%1$d मे</item>
+        <item quantity="few">%1$d मे</item>
+        <item quantity="many">%1$d मे</item>
+        <item quantity="other">%1$d मे</item>
+    </plurals>
+</resources>

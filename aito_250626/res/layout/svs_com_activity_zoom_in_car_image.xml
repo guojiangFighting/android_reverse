@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/svs_com_black_100alpha" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/svs_com_gradient_background" android:layout_width="match_parent" android:layout_height="@dimen/svs_zoom_image_title_height" android:elevation="2.0dp">
+        <ImageButton android:id="@id/button_back" android:background="@drawable/svs_float_btn_corner" android:layout_width="@dimen/svs_com_btn_back_size" android:layout_height="@dimen/svs_com_btn_back_size" android:layout_marginLeft="@dimen/svs_page_leave_bank" android:src="@drawable/svs_com_icon_go_back" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <com.huawei.ads.ddi.dialog.ui.DdiButton android:id="@id/svs_zoom_ddi_button" android:background="@drawable/svs_float_btn_corner" android:layout_width="@dimen/svs_com_btn_back_size" android:layout_height="@dimen/svs_com_btn_back_size" android:layout_marginRight="@dimen/svs_page_leave_bank" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        <HorizontalScrollView android:id="@id/hsv" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" android:layout_marginStart="@dimen/svs_zoom_image_title_margin_start" android:layout_marginEnd="@dimen/svs_zoom_image_title_margin_start">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_hor" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignLeft="@id/hsv" />
+        </HorizontalScrollView>
+    </RelativeLayout>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/vp" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="-2.0dp" />
+</RelativeLayout>

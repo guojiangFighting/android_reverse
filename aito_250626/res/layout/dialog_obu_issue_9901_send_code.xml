@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/parent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/circle_corners_white_color_yuan8" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@id/img_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginRight="20.0dp" android:src="@mipmap/icon_pop_window_close" />
+        <TextView android:textSize="16.0sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="短信验证" />
+        <TextView android:textSize="14.0sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="为确保激活的准确性，请输入短信验证码" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:paddingStart="20.0dp" android:paddingEnd="20.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ETC预留手机号" />
+            <TextView android:textSize="15.0sp" android:textColor="#333333" android:gravity="center_vertical" android:id="@id/tv_telephone" android:background="@null" android:paddingLeft="20.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="60.0dp" android:hint="************" android:singleLine="true" />
+        </LinearLayout>
+        <View android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" style="@style/line" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60.0dp" android:paddingStart="20.0dp" android:paddingEnd="20.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="验证码" />
+            <EditText android:textSize="15.0sp" android:textColor="#333333" android:textColorHint="#666666" android:id="@id/et_code" android:background="@null" android:layout_width="0.0dp" android:layout_height="wrap_content" android:hint="请输入短信验证码" android:singleLine="true" android:layout_weight="1.0" android:inputType="number" android:paddingEnd="20.0dp" android:layout_marginStart="10.0dp" />
+            <TextView android:textColor="#0a59f7" android:id="@id/tv_send_code_again" android:background="@drawable/circle_corners_theme_white_color_yuan5" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取验证码" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" />
+        </LinearLayout>
+        <View android:layout_marginTop="10.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" style="@style/line" />
+        <TextView android:id="@id/tv_button_function" android:layout_marginTop="30.0dp" android:layout_marginBottom="30.0dp" android:text="继续激活" style="@style/tv_button" />
+    </LinearLayout>
+</FrameLayout>

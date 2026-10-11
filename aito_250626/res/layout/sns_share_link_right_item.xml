@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Emui.HwCheckBox.Normal" />
+    <ViewStub android:id="@id/time_line_viewstub" android:layout="@layout/sns_chat_time_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="-3.0dp" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_chat_message_spacing_size">
+        <include layout="@layout/sns_checkbox_status_layout" />
+        <include android:layout_gravity="center_vertical" android:id="@id/addition_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/content_container" android:layout_alignBottom="@id/content_container" android:layout_toStartOf="@id/content_container" layout="@layout/sns_chat_right_addition_layout" />
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/content_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toStartOf="@id/head_pic_layout">
+            <LinearLayout android:orientation="vertical" android:id="@id/msg_item_view" android:background="@drawable/sns_chat_right_socity_msg_selector" android:paddingLeft="@dimen/emui_dimens_element_horizontal_large" android:paddingTop="12.0dp" android:paddingRight="@dimen/emui_dimens_element_horizontal_large" android:paddingBottom="@dimen/emui_dimens_text_margin_fourth" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/emui_dimens_element_horizontal_large" android:paddingEnd="@dimen/emui_dimens_element_horizontal_large">
+                <include layout="@layout/sns_share_link_item_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <include android:id="@id/head_pic_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/content_container" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" layout="@layout/sns_group_head_layout" style="@style/sns_right_chat_view_head_margin" />
+    </RelativeLayout>
+</LinearLayout>

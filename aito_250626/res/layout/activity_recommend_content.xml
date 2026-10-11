@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <app.huawei.auto.base.view.StatusBarView android:id="@id/recommend_content_sbv" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_subtitle1" android:textColor="@color/emui_text_primary" android:id="@id/html_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font24" android:layout_below="@id/recommend_content_sbv" android:layout_centerInParent="true" android:fontFamily="@string/emui_text_font_family_medium" />
+    <app.huawei.auto.base.view.XCarWebView android:id="@id/web_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/html_title" android:layout_marginHorizontal="@dimen/font16" />
+</RelativeLayout>

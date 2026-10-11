@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="wrap_content" android:layout_height="@dimen/font40" android:layout_margin="@dimen/font8" app:cardCornerRadius="@dimen/emui_corner_radius_popwindow" app:cardElevation="@dimen/font4" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="@dimen/font6">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_button2" android:textColor="@color/emui_color_primary" android:gravity="center_vertical" android:id="@id/replying_tv" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/xcar_app_text_reply" android:paddingStart="@dimen/font12" android:paddingEnd="@dimen/font12" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_button2" android:textColor="@color/emui_color_primary" android:gravity="center_vertical" android:id="@id/duplicating_tv" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/xcar_app_text_copy" android:paddingStart="@dimen/font12" android:paddingEnd="@dimen/font12" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_button2" android:textColor="@color/emui_color_primary" android:gravity="center_vertical" android:id="@id/delete_item" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/xcar_app_button_delete" android:paddingStart="@dimen/font12" android:paddingEnd="@dimen/font12" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_button2" android:textColor="@color/emui_color_primary" android:gravity="center_vertical" android:id="@id/report_item_tv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/xcar_app_text_complain_text" android:paddingStart="@dimen/font12" android:paddingEnd="@dimen/font12" />
+        </LinearLayout>
+    </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+</FrameLayout>

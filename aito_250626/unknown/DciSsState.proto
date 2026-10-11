@@ -1,0 +1,12 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+option java_package = "com.huawei.ads.rpa.net.proto";
+
+package RtsaMsgs;
+
+message SsState {
+  uint32 vehicle_powermode = 1;
+  uint32 ss_state = 2;
+  uint32 ads_mode = 3;
+}

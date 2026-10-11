@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwradiobutton.widget.HwRadioButton android:textSize="@dimen/font14" android:textColor="@color/fa_color" android:id="@id/shop_according_appointment" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:button="@null" android:text="@string/xcar_app_text_shop_according_to_appointment" android:drawableRight="@drawable/hwradiobutton_selector_emui" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginStart="@dimen/font12" style="@style/Widget.Emui.HwRadioButton" />
+    <View android:id="@id/view_line" android:background="@color/color_line_f2f2f2" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginStart="@dimen/font12" android:layout_marginEnd="@dimen/font12" />
+</LinearLayout>

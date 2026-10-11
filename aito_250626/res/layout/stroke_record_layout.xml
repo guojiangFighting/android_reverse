@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linear_older_bd" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_44">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_subtitle2" android:textColor="@color/emui_color_text_primary" android:id="@id/stroke_data_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.5dp" android:text="2022年9月11日" android:layout_alignParentBottom="true" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" android:layout_alignParentStart="true" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.5dp" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" android:layout_alignParentEnd="true">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/emui_color_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_stroke_record_odo_title" android:fontFamily="@string/emui_text_font_family_regular" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/color_text_count" android:id="@id/today_small_meter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="23" android:fontFamily="@string/emui_text_font_family_medium" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/color_text_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="km" android:fontFamily="@string/emui_text_font_family_regular" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.huawei.uikit.hwrecyclerview.widget.HwRecyclerView android:orientation="vertical" android:id="@id/stroke_record_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+    </LinearLayout>
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="@color/emui_color_tertiary" android:gravity="center" android:id="@id/load_no_more_view" android:layout_width="match_parent" android:layout_height="@dimen/font19" android:layout_marginTop="@dimen/font8" android:layout_marginBottom="@dimen/font16" android:text="@string/xcar_app_text_load_no_more_no_more" android:layout_below="@id/stroke_hwre_rv" android:layout_centerHorizontal="true" android:fontFamily="@string/emui_text_font_family_regular" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/vehicle_is_serviced_layout" android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/status_img" android:layout_width="@dimen/font32" android:layout_height="@dimen/font32" android:layout_marginTop="@dimen/font32" android:src="@drawable/vehicle_ic_repair" android:layout_centerHorizontal="true" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font16" android:textColor="@color/new_emui_text_secondary" android:id="@id/vehicle_being_serviced" android:layout_width="wrap_content" android:layout_height="@dimen/font22" android:layout_marginTop="@dimen/font8" android:text="@string/xcar_app_text_veh_repairing" android:layout_below="@id/status_img" android:layout_centerHorizontal="true" android:fontFamily="@string/emui_text_font_family_medium" style="@style/textColorSecondaryAndSizeCaption1" />
+    <include android:id="@id/incl_repair_vehicle_model" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/vehicle_being_serviced" android:layout_centerHorizontal="true" layout="@layout/vehicle_model_layout" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_140" android:layout_marginBottom="@dimen/font16" android:layout_alignParentBottom="true" android:layout_marginHorizontal="@dimen/baseui_dp_16">
+        <app.huawei.auto.vehicle.ui.views.OnePlusTwoCardView android:id="@id/one_plus_two_repairmode_layout" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

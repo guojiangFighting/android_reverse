@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/charging_error_layout" android:background="@color/id_fa_color_sub_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/image_ununited" android:background="@drawable/ic_eorrornetwork" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_120" android:layout_marginTop="194.0dp" android:layout_centerHorizontal="true" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="#888484" android:gravity="center" android:id="@id/txt_msg" android:layout_width="328.0dp" android:layout_height="38.0dp" android:layout_marginTop="322.0dp" android:text="@string/xcar_app_text_device_is_not_connected_msg_list" android:layout_centerHorizontal="true" />
+</RelativeLayout>

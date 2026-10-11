@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view_driving_reporter" android:background="@color/color_driving_report_activity_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/drive_reporter_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/hwappbarpattern_height" layout="@layout/layout_title_driving_report" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/drive_reporter_title_bar">
+        <androidx.core.widget.NestedScrollView android:id="@id/sv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:background="@drawable/driving_report_activity_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/driving_report_content" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="88.0dp" android:layout_alignParentTop="true" android:paddingHorizontal="@dimen/font16">
+                    <include layout="@layout/layout_driving_report_sum_area" />
+                    <include android:layout_gravity="center" android:id="@id/driving_pie_chart_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" layout="@layout/driving_pie_chart_layout" />
+                    <include android:layout_gravity="center" android:id="@id/smart_driving_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" layout="@layout/smart_driving_card_layout" />
+                    <include android:layout_gravity="center" android:id="@id/driving_bar_chart_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_12" layout="@layout/driving_bar_chart_layout" />
+                    <include android:id="@id/driving_electric_line_chart_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_12" layout="@layout/driving_electric_line_chart_card" />
+                    <include android:id="@id/driving_oil_line_chart_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_12" layout="@layout/driving_oil_line_chart_card" />
+                    <RelativeLayout android:id="@id/driving_performance_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_12">
+                        <include layout="@layout/layout_driving_performance_area" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_12">
+                        <include layout="@layout/layout_driving_report_highest_area" />
+                    </RelativeLayout>
+                    <LinearLayout android:gravity="left|center" android:orientation="vertical" android:background="@drawable/driving_report_safe_tip_bg" android:paddingLeft="@dimen/font16" android:layout_width="match_parent" android:layout_height="94.0dp" android:layout_marginTop="@dimen/font12">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tips" style="@style/driving_report_callout_tv_style" />
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="end" android:id="@id/tv_dr_safetip" android:layout_marginTop="@dimen/font4" android:text="@string/xcar_app_text_safe_tip_default" android:maxLines="2" style="@style/driving_report_tv_style" />
+                    </LinearLayout>
+                    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center" android:background="@drawable/ic_driving_report_aito" android:layout_width="99.0dp" android:layout_height="@dimen/font14" android:layout_marginTop="@dimen/font24" />
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="@color/color_driving_report_white_alph30" android:layout_gravity="center" android:id="@id/tv_dr_statistics_tip" android:layout_marginTop="@dimen/font4" android:text="@string/xcar_app_text_full_week_statistics_tip" style="@style/driving_report_callout_tv_style" />
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="@color/color_driving_report_white_alph30" android:layout_gravity="center" android:layout_marginTop="@dimen/font4" android:layout_marginBottom="@dimen/font16" android:text="@string/xcar_app_text_beta_version" style="@style/driving_report_callout_tv_style" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+        <include android:id="@id/incl_dr_time_pick_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/layout_driving_report_time_pick" />
+        <include android:id="@id/no_data_area" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/incl_dr_time_pick_view" layout="@layout/no_data_layout" />
+        <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/incl_dr_time_pick_view" layout="@layout/driving_report_unexception_layout" />
+    </RelativeLayout>
+    <include android:visibility="gone" layout="@layout/driving_report_loadding_view_box" />
+    <include android:id="@id/v_share_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/driving_report_poster_loadding_view" />
+    <app.huawei.auto.timeselector.DateSelector android:id="@id/dateSelector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <app.huawei.auto.timeselector.MonthSelector android:id="@id/monthSelector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

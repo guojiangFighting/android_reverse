@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:background="@drawable/hwlistdrawable_rectangle_bg" android:clickable="false" android:layout_width="match_parent" android:layout_height="@dimen/font50" android:layout_marginTop="@dimen/font12" app:cardCornerRadius="@dimen/emui_corner_radius_large" app:hwAdvancedCardViewClickAnimationEnable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/item_record_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font18" android:layout_centerVertical="true" style="@style/textColorBlackAndSizeBody1AndFamilyMedium" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/item_record_time_degrees" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font16" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/textColorSecondaryAndSizeBody2AndFamilyMedium" />
+    </RelativeLayout>
+</com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>

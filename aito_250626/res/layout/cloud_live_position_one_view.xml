@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/cloud_live_one_layout" android:background="@drawable/position_bg" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginBottom="8.0dp" android:layout_weight="1.0" android:layout_marginStart="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="@color/white" android:layout_gravity="center" android:id="@id/cloud_live_one_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_front" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

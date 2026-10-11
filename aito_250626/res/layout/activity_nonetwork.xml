@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/my_charging_hub_title_l" layout="@layout/home_charging_hub_navigation_icon_layout" />
+    <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/image_ununited" android:background="@drawable/ic_eorrornetwork" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_120" android:layout_marginTop="194.0dp" android:layout_centerHorizontal="true" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="#888484" android:gravity="center" android:id="@id/error_tv" android:layout_width="328.0dp" android:layout_height="38.0dp" android:layout_marginTop="322.0dp" android:text="@string/xcar_app_text_no_connect_network_please_check" android:layout_centerHorizontal="true" />
+</RelativeLayout>

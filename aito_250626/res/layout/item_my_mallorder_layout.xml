@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/emui_card_panel_bg" app:hwAdvancedCardViewClickAnimationEnable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/card_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_marginRight="@dimen/font16" android:layout_marginBottom="@dimen/font12" app:cardBackgroundColor="@color/emui_card_panel_bg" app:cardCornerRadius="@dimen/emui_corner_radius_large" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/font12" android:paddingBottom="@dimen/font12" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/font12">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="@color/color_foreground_secondary_alpha" android:id="@id/tv_mall_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_regular" android:layout_alignParentStart="true" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="@color/new_emui_text_primary" android:id="@id/tv_mall_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_medium" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <View android:background="@color/color_line_d8d8d8" android:layout_width="match_parent" android:layout_height="@dimen/font_px_0_5" android:layout_marginTop="@dimen/font11_5" android:layout_marginBottom="@dimen/font12_5" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/hwcardview" android:layout_width="@dimen/font72" android:layout_height="@dimen/font72" android:layout_marginEnd="@dimen/font8" app:cardBackgroundColor="#e5e6e8" app:cardCornerRadius="@dimen/font8" app:hwAdvancedCardViewClickAnimationEnable="false">
+                    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center" android:id="@id/iv_mall_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+                </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="@color/new_emui_text_primary" android:ellipsize="end" android:id="@id/tv_mall_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:fontFamily="@string/emui_text_font_family_medium" />
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="@color/color_foreground_secondary_alpha" android:ellipsize="end" android:id="@id/tv_mall_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:maxLines="1" android:fontFamily="@string/emui_text_font_family_regular" />
+                </LinearLayout>
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="#0a59f7" android:id="@id/tv_mall_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginStart="@dimen/font16" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/older_number_view" android:layout_width="match_parent" android:layout_height="@dimen/font19" android:layout_marginTop="@dimen/font12">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="@color/color_foreground_secondary_alpha" android:id="@id/older_number_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_regular" />
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/order_number_copy" android:layout_width="@dimen/font16" android:layout_height="@dimen/font16" android:src="@drawable/ic_public_copy_order" android:layout_marginStart="@dimen/font4" />
+            </LinearLayout>
+            <View android:background="@color/color_line_d8d8d8" android:layout_width="match_parent" android:layout_height="@dimen/font_px_0_5" android:layout_marginTop="@dimen/font11_5" android:layout_marginBottom="@dimen/font16_5" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="@color/new_emui_text_primary" android:id="@id/order_total_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_order_total_text" android:fontFamily="@string/emui_text_font_family_regular" android:layout_toStartOf="@id/order_total_price" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="#0a59f7" android:id="@id/order_total_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_medium" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+</LinearLayout>

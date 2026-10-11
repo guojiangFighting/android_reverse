@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/emui_corner_radius_inputbox" />
+    <solid android:color="@color/emui_inputbox_subbg" />
+    <stroke android:width="@dimen/hwedittext_bubble_error_stroke_width" android:color="@color/hwedittext_bubble_error_stroke_color" />
+</shape>

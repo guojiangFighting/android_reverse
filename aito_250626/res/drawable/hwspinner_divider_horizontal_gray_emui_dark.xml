@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/emui_color_divider_horizontal_dark" android:left="@dimen/hwspinner_item_start_end" android:right="@dimen/hwspinner_item_start_end" />
+</layer-list>

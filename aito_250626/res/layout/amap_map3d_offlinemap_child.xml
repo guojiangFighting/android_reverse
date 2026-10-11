@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="40.0dp">
+        <TextView android:textSize="@dimen/amap_map3d_font_32" android:textColor="#333333" android:id="@id/amap_map3d_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="35.0dp" android:layout_marginBottom="35.0dp" android:text="北京" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/amap_map3d_download_status_layout" android:layout_width="wrap_content" android:layout_height="35.0dp" android:layout_marginRight="15.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/amap_map3d_font_24" android:textColor="#898989" android:gravity="center_vertical" android:id="@id/amap_map3d_download_progress_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dp" />
+            <ImageView android:gravity="center_vertical" android:id="@id/amap_map3d_download_status_image" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/amap_map3d_down" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/amap_map3d_font_24" android:textColor="#777777" android:id="@id/amap_map3d_name_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:text="总大小" android:layout_toLeftOf="@id/amap_map3d_download_status_layout" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.amap.api.maps.offlinemap.DownloadProgressView android:id="@id/amap_map3d_progress" android:background="#fafafa" android:visibility="gone" android:layout_width="match_parent" android:layout_height="10.0dp" android:layout_alignParentBottom="true" app:amap_map3d_progressColor="#0994fe" app:amap_map3d_progressText="50%" app:amap_map3d_progressTextColor="#0994fe" app:amap_map3d_progressTextSize="8.0sp" />
+</RelativeLayout>

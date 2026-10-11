@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/drive_test_rl_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwviewpager.widget.HwViewPager android:id="@id/drive_test_vp" android:nextFocusDown="@id/drive_hw_dots_appoint" android:layout_width="match_parent" android:layout_height="600.0dp" android:overScrollMode="never" app:layout_constraintTop_toTopOf="parent" />
+    <include android:id="@id/drive_test_ll_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/hwappbarpattern_title_item_layout" />
+    <ImageView android:id="@id/blur_bitmap_view" android:layout_width="match_parent" android:layout_height="0.0dp" android:foreground="@drawable/drive_test_shadow" android:scaleType="centerCrop" android:layout_below="@id/drive_hw_dots_appoint" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/drive_hw_dots_appoint" />
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/drive_test_montage" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/shell_frame_layer" />
+    <com.huawei.uikit.phone.hwdotspageindicator.widget.HwDotsPageIndicator android:id="@id/drive_hw_dots_appoint" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="360.0dp" app:hwIsAutoPlay="true" app:hwUnselectedDotColor="#33ffffff" app:layout_constraintBottom_toBottomOf="parent" style="@style/Widget.Emui.HwDotsPageIndicator.Translucent" />
+    <com.huawei.uikit.phone.hwbottomsheet.widget.HwBottomSheet android:id="@id/drive_test_bottom_sheet" android:background="@drawable/drive_test_bg_bottom" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" app:hwDragContentView="@id/drive_store_ll_root" app:hwDragView="@id/drive_fl_drag_view" app:hwForceShowIndicateEnable="false" app:hwHeightGap="0.0dp" app:hwIndicateEnable="false" app:hwInitialState="anchored" app:hwLayoutType="layout_overlay" app:layout_constraintBottom_toBottomOf="parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:orientation="vertical" android:id="@id/drive_fl_drag_view" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/drive_store_sheet" />
+            <include layout="@layout/drive_gps_sheet" />
+        </FrameLayout>
+    </com.huawei.uikit.phone.hwbottomsheet.widget.HwBottomSheet>
+    <app.huawei.auto.drive.ui.view.TestDriveModelSelectView android:id="@id/test_drive_model_select_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

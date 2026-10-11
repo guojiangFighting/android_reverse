@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/aito_service_no_login_tips" android:layout_width="match_parent" android:layout_height="wrap_content" app:hwAdvancedCardViewClickAnimationEnable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/veh_tip_bg_color" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/no_network_exception" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_exception_prompt" android:layout_centerVertical="true" android:layout_marginStart="@dimen/font12" android:layout_marginEnd="@dimen/font16" />
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/hwedittext_color_error" android:id="@id/no_network_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_veh_offline_mode_tips" android:layout_toRightOf="@id/no_network_exception" android:layout_centerVertical="true" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginEnd="@dimen/font16" />
+    </RelativeLayout>
+</com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#1affffff" app:cardCornerRadius="@dimen/font16" app:hwAdvancedCardViewClickAnimationEnable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwimageview.widget.HwImageView android:background="@drawable/drivingcard_scale_background" android:layout_width="match_parent" android:layout_height="@dimen/dp_200" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/font16" android:layout_marginVertical="@dimen/font16">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font16" android:textColor="@color/color_driving_report_white_alph86" android:layout_gravity="left" android:id="@id/tv_hightest_title" android:layout_marginBottom="16.5dp" android:text="@string/xcar_app_text_driving_report_title_hightest_week" style="@style/driving_report_tv_style" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/area_with_max_speed" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="false" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" app:cardBackgroundColor="#0dffffff" app:cardCornerRadius="@dimen/font8" app:hwAdvancedCardViewClickAnimationEnable="false">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_width="@dimen/font48" android:layout_height="@dimen/font48" android:layout_marginTop="@dimen/font1" android:src="@drawable/ic_max_acc" />
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:text="@string/xcar_app_text_driving_report_title_max_speed" style="@style/driving_report_callout_tv_style" />
+                    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font20" android:id="@id/tv_highest_speed" android:text="112.2" style="@style/driving_report_tv_style" />
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:text="km/h" style="@style/driving_report_tv_style" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+            <View android:layout_width="@dimen/font8" android:layout_height="1.0dp" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font4" app:cardBackgroundColor="#0dffffff" app:cardCornerRadius="@dimen/font8" app:hwAdvancedCardViewClickAnimationEnable="false">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/iv_longestTime" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:layout_marginLeft="@dimen/font16" android:layout_marginTop="@dimen/dp_34" android:layout_marginBottom="@dimen/dp_34" android:src="@drawable/ic_longest_timer" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font14">
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_longest_time_callout" android:paddingBottom="@dimen/font4" android:text="@string/xcar_app_text_driving_report_title_longest_time" style="@style/driving_report_callout_tv_style" />
+                            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/longest_time_area" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_longest_time_hour" android:text="4" style="@style/driving_report_tv_style" />
+                                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:id="@id/tv_longest_time_hour_unit" android:text="h " style="@style/driving_report_tv_style" />
+                                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_longest_time_minute" android:text="26" style="@style/driving_report_tv_style" />
+                                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:id="@id/tv_longest_time_minute_unit" android:text="min" style="@style/driving_report_tv_style" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+                <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" app:cardBackgroundColor="#0dffffff" app:cardCornerRadius="@dimen/font8" app:hwAdvancedCardViewClickAnimationEnable="false">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/iv_longestOdo" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:layout_marginLeft="@dimen/font16" android:layout_marginTop="@dimen/dp_34" android:layout_marginBottom="@dimen/dp_34" android:src="@drawable/ic_longest_mileage" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_longest_odo_callout" android:paddingBottom="@dimen/font4" android:layout_marginLeft="@dimen/font14" android:text="@string/xcar_app_text_driving_report_title_longest_odo" style="@style/driving_report_callout_tv_style" />
+                            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/longest_odo_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font14">
+                                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_longest_odo" android:text="86.8" style="@style/driving_report_tv_style" />
+                                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:text="km" style="@style/driving_report_tv_style" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/area_without_max_speed" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="false" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:cardBackgroundColor="#0dffffff" app:cardCornerRadius="@dimen/font8" app:hwAdvancedCardViewClickAnimationEnable="false">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/iv_x1_longestTime" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:layout_marginLeft="@dimen/font16" android:layout_marginTop="@dimen/dp_34" android:layout_marginBottom="@dimen/dp_34" android:src="@drawable/ic_longest_timer" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font14">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_x1_longest_time_callout" android:paddingBottom="@dimen/font4" android:text="@string/xcar_app_text_driving_report_title_longest_time" style="@style/driving_report_callout_tv_style" />
+                        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/x1_longest_time_area" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_x1_longest_time_hour" android:text="4" style="@style/driving_report_tv_style" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:id="@id/tv_x1_longest_time_hour_unit" android:text="h " style="@style/driving_report_tv_style" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_x1_longest_time_minute" android:text="26" style="@style/driving_report_tv_style" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:id="@id/tv_x1_longest_time_minute_unit" android:text="min" style="@style/driving_report_tv_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+            <View android:layout_width="8.0dp" android:layout_height="8.0dp" />
+            <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="false" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" app:cardBackgroundColor="#0dffffff" app:cardCornerRadius="@dimen/font8" app:hwAdvancedCardViewClickAnimationEnable="false">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/iv_x1_longestOdo" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:layout_marginTop="@dimen/dp_34" android:layout_marginBottom="@dimen/dp_34" android:src="@drawable/ic_longest_mileage" android:layout_marginStart="@dimen/font16" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font14">
+                        <TextView android:id="@id/tv_x1_longest_odo_callout" android:paddingBottom="@dimen/font4" android:text="@string/xcar_app_text_driving_report_title_longest_odo" style="@style/driving_report_callout_tv_style" />
+                        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/x1_longest_odo_area" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_x1_longest_odo" android:text="86.8" style="@style/driving_report_tv_style" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:text="km" style="@style/driving_report_tv_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+        </LinearLayout>
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="@color/blue_317AF7" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_hightest_to_record" android:layout_marginTop="@dimen/font16" android:text="@string/xcar_app_text_jump_to_driving_record" style="@style/driving_report_callout_tv_style" />
+    </LinearLayout>
+</com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/card_title" layout="@layout/hwsubheader_title_more_grid" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/card_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:layout_marginBottom="@dimen/font12" />
+</LinearLayout>

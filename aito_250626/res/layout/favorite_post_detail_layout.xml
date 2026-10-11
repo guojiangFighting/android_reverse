@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/font48" android:layout_height="@dimen/font48"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/favorite_icon_view" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:src="@drawable/un_favorite_icon_drawable" android:layout_centerInParent="true" />
+    <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font8" android:textColor="@color/emui_color_text_primary" android:id="@id/favorite_count_view" android:layout_width="wrap_content" android:layout_height="@dimen/font10" android:layout_marginTop="@dimen/font8" android:minWidth="@dimen/font20" android:textAlignment="viewStart" android:layout_alignParentEnd="true" />
+</RelativeLayout>

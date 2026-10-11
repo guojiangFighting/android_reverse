@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/album_id_rl" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:background="@color/emui_color_subbg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_album" android:drawableTop="@drawable/icon_camera" android:drawablePadding="@dimen/font4" android:layout_centerInParent="true" style="@style/textColorPrimaryAndSizeBody3" />
+</RelativeLayout>

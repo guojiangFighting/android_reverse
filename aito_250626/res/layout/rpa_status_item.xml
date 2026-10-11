@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_8"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/status_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/status_image" android:visibility="gone" android:layout_width="@dimen/baseui_dp_18" android:layout_height="@dimen/baseui_dp_18" android:src="@drawable/ic_seat_hot_bg1" />
+        <com.huawei.uikit.hwprogressbar.widget.HwProgressBar android:id="@id/load_progress" android:layout_width="@dimen/baseui_dp_18" android:layout_height="@dimen/baseui_dp_18" android:layout_centerHorizontal="true" style="@style/Widget.Emui.HwProgressBar.Large" />
+    </RelativeLayout>
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_remote_parking_authorized" android:layout_marginStart="@dimen/baseui_dp_8" android:layout_toEndOf="@id/status_layout" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dodonew.online.view.TipsView android:id="@id/view_tips" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:isClick="true" />
+    <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/rg_main" android:background="@drawable/rg_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RadioButton android:id="@id/rb_main_home" android:checked="true" android:text="@string/tab_home" android:drawableTop="@drawable/rb_home_selector" style="@style/MainRadiobuttonStyle" />
+        <RadioButton android:id="@id/rb_main_netbar" android:text="@string/tab_netbar" android:drawableTop="@drawable/rb_netbar_selector" style="@style/MainRadiobuttonStyle" />
+        <RadioButton android:id="@id/rb_main_my" android:text="@string/tab_my" android:drawableTop="@drawable/rb_my_selector" style="@style/MainRadiobuttonStyle" />
+    </RadioGroup>
+    <FrameLayout android:id="@id/view_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/rg_main" android:layout_below="@id/view_tips" />
+</RelativeLayout>

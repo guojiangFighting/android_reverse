@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_layout" android:background="@drawable/item_bg_bind_veh_model" android:layout_width="match_parent" android:layout_height="@dimen/baseui_dp_108" android:layout_marginBottom="@dimen/baseui_dp_12" android:layout_marginHorizontal="@dimen/baseui_dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/icon_shadow" android:background="@drawable/brand_icon_shadow" android:layout_width="@dimen/baseui_dp_96" android:layout_height="@dimen/baseui_dp_96" android:layout_centerVertical="true" android:layout_marginHorizontal="@dimen/baseui_dp_6">
+        <ImageView android:layout_gravity="center" android:id="@id/car_icon" android:layout_width="@dimen/baseui_dp_60" android:layout_height="@dimen/baseui_dp_60" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/icon_shadow" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/font16" android:textColor="@color/black" android:id="@id/car_brand_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textColorSecondaryAndSizeBody3AndMedium" />
+    </LinearLayout>
+</RelativeLayout>

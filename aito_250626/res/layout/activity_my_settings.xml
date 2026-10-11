@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <app.huawei.auto.base.view.StatusBarView android:id="@id/my_settings_title_l" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="72.0dp" android:layout_below="@id/my_settings_title_l">
+        <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:hwAdvancedCardViewClickAnimationEnable="false">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/my_settings_rv_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:overScrollMode="never" android:layout_marginStart="4.0dp" android:layout_marginEnd="4.0dp" />
+        </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:hwColumnType="button_type">
+            <com.huawei.uikit.phone.hwbutton.widget.HwButton android:layout_gravity="center_horizontal" android:id="@id/vehicle_ac_appointments_new_btn" android:layout_width="wrap_content" android:layout_height="40.0dp" android:layout_marginBottom="@dimen/emui_dimens_dialog_bottom" android:text="@string/xcar_app_button_logout" style="@style/Widget.Emui.HwButton.Warning.Light" />
+        </com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

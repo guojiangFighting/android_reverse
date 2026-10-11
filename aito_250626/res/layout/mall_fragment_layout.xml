@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/id_fa_color_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/topic_view_pager" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <View android:id="@id/title_bar_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/font80" />
+    <RelativeLayout android:id="@id/tab_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24">
+        <com.huawei.uikit.phone.hwsubtab.widget.HwSubTabWidget android:gravity="start" android:id="@id/tab_widget_mall" android:background="@color/emui_toolbar_subbg_translucent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="-8.0dp" android:layout_marginEnd="@dimen/font56" app:hwSubTabItemActivedTextSize="@dimen/font24" app:tabMode="scrollable" style="@style/Widget.Emui.HwSubTabBar.Headline.Light" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="end" android:id="@id/search_mall" android:background="@drawable/hwappbarpattern_selector_item_bg" android:padding="12.0dp" android:layout_width="@dimen/font48" android:layout_height="@dimen/font48" android:layout_marginTop="@dimen/font7" android:scaleType="centerInside" android:layout_marginEnd="4.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <app.huawei.auto.base.view.BaseStatusLayout android:id="@id/base_status_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

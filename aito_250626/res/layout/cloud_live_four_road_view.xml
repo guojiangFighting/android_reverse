@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/cloud_live_vehicle_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/vehicle_cloud_live_bg" android:rotation="90.0" />
+    <RelativeLayout android:gravity="center" android:id="@id/lay_cloud_live_vehicle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/cloud_live_vehicle" android:layout_width="64.0dp" android:layout_height="132.0dp" android:src="@drawable/ic_cloud_live_car" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@id/left_vehicle_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginEnd="@dimen/font50" android:layout_toStartOf="@id/lay_cloud_live_vehicle">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center" android:id="@id/left_vehicle" android:layout_width="@dimen/font28" android:layout_height="@dimen/font28" android:src="@drawable/ic_left_vehicle" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center" android:id="@id/left_vehicle_selected" android:visibility="gone" android:layout_width="@dimen/font28" android:layout_height="@dimen/font28" android:src="@drawable/ic_left_vehicle_selected" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/top_vehicle_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font28" android:layout_above="@id/lay_cloud_live_vehicle" android:layout_centerInParent="true">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center" android:id="@id/top_vehicle" android:visibility="visible" android:layout_width="@dimen/font28" android:layout_height="@dimen/font36" android:src="@drawable/ic_top_vehicle" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center" android:id="@id/top_vehicle_selected" android:layout_width="@dimen/font28" android:layout_height="@dimen/font36" android:src="@drawable/ic_top_vehicle_selected" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/down_vehicle_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font28" android:layout_below="@id/lay_cloud_live_vehicle" android:layout_centerInParent="true">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center" android:id="@id/down_vehicle" android:visibility="visible" android:layout_width="@dimen/font28" android:layout_height="@dimen/font36" android:src="@drawable/ic_down_vehicle" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center" android:id="@id/down_vehicle_selected" android:visibility="gone" android:layout_width="@dimen/font28" android:layout_height="@dimen/font36" android:src="@drawable/ic_down_vehicle_selected" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/right_vehicle_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="@dimen/font50" android:layout_toEndOf="@id/lay_cloud_live_vehicle">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center" android:id="@id/right_vehicle" android:visibility="visible" android:layout_width="@dimen/font28" android:layout_height="@dimen/font28" android:src="@drawable/ic_right_vehicle" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center" android:id="@id/right_vehicle_selected" android:visibility="gone" android:layout_width="@dimen/font28" android:layout_height="@dimen/font28" android:src="@drawable/ic_right_vehicle_selected" />
+    </RelativeLayout>
+</RelativeLayout>

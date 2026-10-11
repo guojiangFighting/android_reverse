@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/drawable_bg_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="@string/obtain_location_permission" android:maxLength="500" android:layout_marginHorizontal="20.0dp" />
+    <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@android:color/black" android:layout_gravity="center_horizontal" android:id="@id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/obtain_permission_message" android:maxLength="500" android:layout_marginHorizontal="20.0dp" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginTop="20.0dp">
+        <TextView android:textSize="14.0dp" android:textColor="#ff0a59f7" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_cancel" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/not_yet" android:maxLength="500" android:layout_weight="1.0" android:paddingVertical="11.0dp" />
+        <View android:layout_gravity="center" android:background="#bfbfbf" android:layout_width="1.0dp" android:layout_height="34.0dp" />
+        <TextView android:textSize="14.0dp" android:textColor="#ff0a59f7" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_confirm" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="设置" android:maxLength="500" android:layout_weight="1.0" android:paddingVertical="11.0dp" />
+    </LinearLayout>
+</LinearLayout>

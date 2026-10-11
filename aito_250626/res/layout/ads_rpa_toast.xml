@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/ads_rpa_shape_toast_bg" android:paddingTop="@dimen/ads_rpa_toast_layout_padding_top" android:paddingBottom="@dimen/ads_rpa_toast_layout_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/ads_rpa_toast_layout_padding_start" android:paddingEnd="@dimen/ads_rpa_toast_layout_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_common_14" android:textColor="@color/ads_rpa_toast_text_color" android:id="@id/ads_rpa_toast_text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

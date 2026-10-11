@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0" xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0" elementFormDefault="qualified">
+    <import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="CommonTypes.xsd"/>
+    <!-- Global Platform key set types -->
+    <complexType name="GpSecureChannelBaseKeySetType">
+        <sequence>
+            <element name="SecureChannelBaseKey" type="ogpt:GpDesEdeKeyType"/>
+        </sequence>
+        <attributeGroup ref="ogpt:GpKeySetAttributes"/>
+    </complexType>
+    <complexType name="GpSecureChannelKeySetType">
+        <sequence>
+            <element name="SecureChannelEncKey" type="ogpt:GpDesEdeKeyType"/>
+            <element name="SecureChannelMacKey" type="ogpt:GpDesEdeKeyType"/>
+            <element name="DataEncryptionKey" type="ogpt:GpDesEdeKeyType" minOccurs="0"/>
+        </sequence>
+        <attributeGroup ref="ogpt:GpKeySetAttributes"/>
+    </complexType>
+    <complexType name="GpSecureChannel03KeySetType">
+        <sequence>
+            <element name="SecureChannelEncKey" type="ogpt:GpAesKeyType"/>
+            <element name="SecureChannelMacKey" type="ogpt:GpAesKeyType"/>
+            <element name="DataEncryptionKey" type="ogpt:GpAesKeyType" minOccurs="0"/>
+        </sequence>
+        <attributeGroup ref="ogpt:GpKeySetAttributes"/>
+    </complexType>
+    <complexType name="VisaSecureChannelKeySetType">
+        <sequence>
+            <element name="MasterKey" type="ogpt:VisaSecretKeyType"/>
+        </sequence>
+        <attributeGroup ref="ogpt:GpKeySetAttributes"/>
+        <attribute name="DerivationKeyType" type="ogpt:VisaMasterDerivationKeyTypeType" use="optional"/>
+        <attribute name="Transformation" type="ogpt:VisaMasterTransformationType" use="optional"/>
+    </complexType>
+    <complexType name="GpDesDapVerificationKeySetType">
+        <sequence>
+            <element name="DapVerificationKey" type="ogpt:DesDapVerificationKeyType"/>
+        </sequence>
+        <attributeGroup ref="ogpt:GpKeySetAttributes"/>
+    </complexType>
+    <complexType name="GpRsaDapVerificationKeySetType">
+        <sequence>
+            <element name="DapVerificationKey" type="ogpt:GpRsaKeyType"/>
+        </sequence>
+        <attributeGroup ref="ogpt:GpKeySetAttributes"/>
+    </complexType>
+    <complexType name="GpRsaPrivateCrtKeySetType">
+        <sequence>
+            <element name="RsaCrtKey" type="ogpt:RsaCrtKeyType"/>
+        </sequence>
+        <attributeGroup ref="ogpt:GpKeySetAttributes"/>
+    </complexType>
+    <complexType name="GpDelegatedManagementKeySetType">
+        <sequence>
+            <element name="DelegatedManagementKey" type="ogpt:GpRsaKeyType"/>
+            <element name="ReceiptKey" type="ogpt:GpDesEdeKeyType" minOccurs="0"/>
+        </sequence>
+        <attributeGroup ref="ogpt:GpKeySetAttributes"/>
+    </complexType>
+    <complexType name="GpDelegatedManagementDesKeySetType">
+        <sequence>
+            <element name="DelegatedManagementKey" type="ogpt:GpDesEdeKeyType"/>
+            <element name="ReceiptKey" type="ogpt:GpDesEdeKeyType" minOccurs="0"/>
+        </sequence>
+        <attributeGroup ref="ogpt:GpKeySetAttributes"/>
+    </complexType>
+    <complexType name="GpReceiptKeySetType">
+        <sequence>
+            <element name="ReceiptKey" type="ogpt:GpDesEdeKeyType"/>
+        </sequence>
+        <attributeGroup ref="ogpt:GpKeySetAttributes"/>
+    </complexType>
+    <complexType name="GpGenericKeySetType">
+        <sequence>
+            <element name="Key" type="ogpt:GpGenericKeyType" maxOccurs="unbounded"/>
+        </sequence>
+        <attributeGroup ref="ogpt:GpKeySetAttributes"/>
+    </complexType>
+    <complexType name="EtsiDesDapKeySetType">
+        <sequence>
+            <element name="DapKey" type="ogpt:GpDesEdeKeyType"/>
+        </sequence>
+        <attributeGroup ref="ogpt:GpKeySetAttributes"/>
+    </complexType>
+    <complexType name="OtaKeySetType">
+        <sequence>
+            <element name="CipherKey" type="ogpt:OtaCipherKeyType"/>
+            <element name="CheckKey" type="ogpt:OtaCheckKeyType"/>
+            <element name="DataEncryptionKey" type="ogpt:OtaDataEncryptionKeyType" minOccurs="0"/>
+            <element name="Spi" type="oct:EncodingHex2Byte"/>
+            <element name="Tar" type="oct:EncodingHex3Byte" minOccurs="0"/>
+            <element name="Counter" type="oct:EncodingHex5Byte" minOccurs="0"/>
+            <element name="CcLength" type="oct:EncodingHexByte" minOccurs="0"/>
+        </sequence>
+        <attributeGroup ref="ogpt:GpKeySetAttributes"/>
+        <attribute name="Type" type="oct:AppletType" use="optional"/>
+    <attribute name="KeyType" type="oct:EncodingHex1Byte" use="optional"/>
+    </complexType>
+    <complexType name="OtaKeySetAidType">
+        <sequence>
+            <element name="CipherKey" type="ogpt:OtaCipherKeyType"/>
+            <element name="CheckKey" type="ogpt:OtaCheckKeyType"/>
+            <element name="DataEncryptionKey" type="ogpt:OtaDataEncryptionKeyType" minOccurs="0"/>
+            <element name="Spi" type="oct:EncodingHex2Byte"/>
+            <element name="Tar" type="oct:EncodingHex3Byte"/>
+            <element name="Counter" type="oct:EncodingHex5Byte" minOccurs="0"/>
+            <element name="CcLength" type="oct:EncodingHexByte" minOccurs="0"/>
+        </sequence>
+        <attributeGroup ref="ogpt:GpKeySetAidAttributes"/>
+        <attribute name="Type" type="oct:AppletType" use="optional"/>
+    <attribute name="KeyType" type="oct:EncodingHex1Byte" use="optional"/>
+    </complexType>
+    <complexType name="GpConfidentialLoadingKeySetType">
+        <sequence>
+            <element name="ConfidentialLoadingKey" type="ogpt:GpDesEdeKeyType"/>
+        </sequence>
+        <attributeGroup ref="ogpt:GpKeySetAttributes"/>
+    </complexType>
+    <complexType name="GpAesConfidentialLoadingKeySetType">
+        <sequence>
+            <element name="AesConfidentialLoadingKey" type="ogpt:GpAesKeyType"/>
+        </sequence>
+        <attributeGroup ref="ogpt:GpKeySetAttributes"/>
+    </complexType>
+    <complexType name="GpDataEncryptionKeySetType">
+        <sequence>
+            <element name="DataEncryptionKey" type="ogpt:GpDesAnyKeyType"/>
+        </sequence>
+        <attributeGroup ref="ogpt:GpKeySetAttributes"/>
+    </complexType>
+    <complexType name="GpAesDataEncryptionKeySetType">
+        <sequence>
+            <element name="DataEncryptionKey" type="ogpt:GpAesKeyType"/>
+        </sequence>
+        <attributeGroup ref="ogpt:GpKeySetAttributes"/>
+    </complexType>
+    <complexType name="GpPskTlsKeySetType">
+        <choice>
+            <element name="PskTlsKey" type="ogpt:PskTlsKeySetType"/>
+        </choice>
+        <attributeGroup ref="ogpt:GpKeySetAttributes"/>
+        <attribute name="UniqueName" use="optional"/>
+    </complexType>
+    <complexType name="PskTlsKeySetType">
+        <complexContent>
+            <extension base="ogpt:GpSecretKeyType">
+                <attribute name="CipherSuiteType" type="ogpt:CipherSuiteType" use="required"/>
+            </extension>
+        </complexContent>
+    </complexType>
+    <simpleType name="CipherSuiteType">
+        <restriction base="string">
+            <enumeration value="3DES_EDE_CBC_SHA"/>
+            <enumeration value="AES128_CBC_SHA"/>
+            <enumeration value="NULL_SHA"/>
+            <enumeration value="AES128_CBC_SHA256"/>
+            <enumeration value="NULL_SHA256"/>
+        </restriction>
+    </simpleType>
+    <!-- Global Platform key types -->
+    <complexType name="GpDesAnyKeyType">
+        <choice>
+            <element name="DesKey" type="oct:DesKeyType"/>
+            <element name="DesEdeKey" type="oct:DesEde2KeyType"/>
+        </choice>
+    </complexType>
+    <complexType name="GpDesEdeKeyType">
+        <sequence>
+            <element name="DesEdeKey" type="oct:DesEde2KeyType"/>
+        </sequence>
+    </complexType>
+    <complexType name="GpAesKeyType">
+        <sequence>
+            <element name="AesKey" type="oct:AesKeyType"/>
+        </sequence>
+    </complexType>
+    <complexType name="GpSecretKeyType">
+        <choice>
+            <element name="AesKey" type="oct:AesKeyType"/>
+            <element name="DesKey" type="oct:DesKeyType"/>
+            <element name="DesEdeKey" type="oct:DesEdeKeyType"/>
+        </choice>
+    </complexType>
+    <complexType name="VisaSecretKeyType">
+        <complexContent>
+            <extension base="ogpt:GpSecretKeyType">
+                <attribute name="KeyDivData" type="oct:EncodingHex10Byte" use="optional"/>
+                <attribute name="Type" type="ogpt:VisaMasterKeyTypeType" use="required"/>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="DesDapVerificationKeyType">
+        <complexContent>
+            <extension base="ogpt:GpDesEdeKeyType">
+                <attribute name="Algorithm" type="ogpt:DesDapVerificationAlgorithmType" use="required"/>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="GpRsaKeyType">
+        <choice>
+            <element name="RsaPublicKey" type="ogpt:RsaPublicKeyType"/>
+            <element name="RsaPrivateKey" type="ogpt:RsaPrivateKeyType"/>
+            <element name="RsaKey" type="ogpt:RsaKeyType"/>
+            <element name="RsaCrtKey" type="ogpt:RsaCrtKeyType"/>
+        </choice>
+    </complexType>
+    <complexType name="GpGenericKeyType">
+        <sequence>
+            <element name="Component" type="ogpt:GpGenericKeyComponentType" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    <complexType name="GpGenericKeyComponentType">
+        <simpleContent>
+            <extension base="oct:EncodingHexUnlimitedByte">
+                <attribute name="TypeCoding" type="oct:EncodingHexByte" use="required"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <complexType name="OtaCipherKeyType">
+        <sequence>
+            <element name="KeyValue" type="oct:DesAesKeyValueType"/>
+        </sequence>
+        <attribute name="Kic" type="oct:EncodingHexByte" use="required"/>
+    </complexType>
+    <complexType name="OtaCheckKeyType">
+        <sequence>
+            <element name="KeyValue" type="oct:DesAesKeyValueType"/>
+        </sequence>
+        <attribute name="Kid" type="oct:EncodingHexByte" use="required"/>
+    </complexType>
+    <complexType name="OtaDataEncryptionKeyType">
+        <sequence>
+            <element name="KeyValue" type="oct:DesAesKeyValueType"/>
+        </sequence>
+    </complexType>
+    <!-- RSA key types -->
+    <complexType name="RsaPublicKeyType">
+        <sequence>
+            <element name="Modulus" type="oct:EncodingHexUnlimitedByte"/>
+            <element name="PublicExponent" type="oct:EncodingHexUnlimitedByte"/>
+        </sequence>
+        <attribute name="Name" type="string" use="optional"/>
+    </complexType>
+    <complexType name="RsaPrivateKeyType">
+        <sequence>
+            <element name="Modulus" type="oct:EncodingHexUnlimitedByte"/>
+            <element name="PrivateExponent" type="oct:EncodingHexUnlimitedByte"/>
+        </sequence>
+        <attribute name="Name" type="string" use="optional"/>
+    </complexType>
+    <complexType name="RsaKeyType">
+        <sequence>
+            <element name="Modulus" type="oct:EncodingHexUnlimitedByte"/>
+            <element name="PublicExponent" type="oct:EncodingHexUnlimitedByte"/>
+            <element name="PrivateExponent" type="oct:EncodingHexUnlimitedByte"/>
+        </sequence>
+        <attribute name="Name" type="string" use="optional"/>
+    </complexType>
+    <!-- RsaCrtKey mandatory p, q, dp, dq -->
+    <complexType name="RsaCrtMandatoryKeyType">
+        <sequence>
+            <element name="Modulus" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+            <element name="PublicExponent" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+            <element name="PrivateExponent" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+            <element name="PrimeP" type="oct:EncodingHexUnlimitedByte"/>
+            <element name="PrimeQ" type="oct:EncodingHexUnlimitedByte"/>
+            <element name="PrimeExponentP" type="oct:EncodingHexUnlimitedByte"/>
+            <element name="PrimeExponentQ" type="oct:EncodingHexUnlimitedByte"/>
+            <element name="InverseP" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+            <element name="InverseQ" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+        </sequence>
+        <attribute name="Name" type="string" use="optional"/>
+    </complexType>
+    <!-- RsaCrtKey all components optional -->
+    <complexType name="RsaCrtKeyType">
+        <sequence>
+            <element name="Modulus" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+            <element name="PublicExponent" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+            <element name="PrivateExponent" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+            <element name="PrimeP" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+            <element name="PrimeQ" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+            <element name="PrimeExponentP" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+            <element name="PrimeExponentQ" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+            <element name="InverseP" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+            <element name="InverseQ" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+        </sequence>
+        <attribute name="Name" type="string" use="optional"/>
+    </complexType>
+    <!-- Attribute types -->
+    <simpleType name="DapVerificationAlgorithmType">
+        <restriction base="token">
+            <enumeration value="DESede"/>
+            <enumeration value="DESretail"/>
+            <enumeration value="RSA"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="DesDapVerificationAlgorithmType">
+        <restriction base="token">
+            <enumeration value="DESede"/>
+            <enumeration value="DESretail"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="VisaMasterKeyTypeType">
+        <restriction base="string">
+            <enumeration value="ISK"/>
+            <enumeration value="KMC"/>
+            <enumeration value="CMK"/>
+            <enumeration value="CMK/xMK"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="VisaMasterDerivationKeyTypeType">
+        <restriction base="oct:EncodingHexByte">
+            <enumeration value="80"/>
+            <enumeration value="88"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="VisaMasterTransformationType">
+        <restriction base="string">
+            <enumeration value="DESede/ECB/NoPadding"/>
+            <enumeration value="AES/ECB/NoPadding"/>
+        </restriction>
+    </simpleType>
+    <attributeGroup name="GpKeySetAttributes">
+        <attribute name="Version" type="oct:EncodingHex1Byte" use="optional" default="00"/>
+        <attribute name="Identifier" type="oct:EncodingHex1Byte" use="optional" default="00"/>
+        <attribute name="Aid" type="oct:EncodingAidHex" use="optional"/>
+        <attribute name="Name" type="string" use="optional"/>
+    </attributeGroup>
+    <attributeGroup name="GpKeySetAidAttributes">
+        <attribute name="Version" type="oct:EncodingHex1Byte" use="optional" default="00"/>
+        <attribute name="Identifier" type="oct:EncodingHex1Byte" use="optional" default="00"/>
+        <attribute name="Aid" type="oct:EncodingAidHex" use="required"/>
+        <attribute name="Name" type="string" use="optional"/>
+    </attributeGroup>
+</schema>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font16" android:layout_marginStart="@dimen/font12" android:layout_marginEnd="@dimen/font12" app:cardCornerRadius="@dimen/font24" app:hwAdvancedCardViewClickAnimationEnable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/font24" android:layout_marginEnd="@dimen/font24">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/font56" android:text="@string/xcar_app_text_change_cover" style="@style/textColorPrimaryAndSizeHeadline8" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center_vertical" android:id="@id/tv_take_photo" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:text="@string/xcar_app_button_photograph" style="@style/textColorPrimaryAndSizeBody1" />
+        <com.huawei.uikit.phone.hwedittext.widget.HwIconTextLayout android:layout_width="match_parent" android:layout_height="1.0dp" app:hwShapeMode="linear" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center_vertical" android:id="@id/tv_open_album" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:text="@string/xcar_app_menu_item_photo_album" style="@style/textColorPrimaryAndSizeBody1" />
+        <com.huawei.uikit.phone.hwedittext.widget.HwIconTextLayout android:id="@id/line" android:layout_width="match_parent" android:layout_height="1.0dp" app:hwShapeMode="linear" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center_vertical" android:id="@id/tv_default" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:text="@string/xcar_app_text_use_default_cover" style="@style/textColorPrimaryAndSizeBody1" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center|top" android:id="@id/tv_cancel" android:paddingTop="@dimen/font9" android:layout_width="match_parent" android:layout_height="@dimen/font56" android:layout_marginTop="@dimen/font8" android:text="@string/xcar_app_button_cancel" style="@style/textColorBlueAndSizeBody1" />
+    </LinearLayout>
+</com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:id="@id/view_guess" android:background="@drawable/list_item_selector" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/view_team_left" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.3">
+            <include layout="@layout/view_team" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/view_race_contanier" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_weight="0.4">
+            <include layout="@layout/view_race_info" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/view_team_right" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_weight="0.3">
+            <include layout="@layout/view_team" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

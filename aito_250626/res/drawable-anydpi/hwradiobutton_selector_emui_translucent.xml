@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/hwradiobutton_hovered_bg_translucent" />
+    <item android:gravity="center">
+        <selector>
+            <item android:state_focused="true" android:state_window_focused="true" android:drawable="@drawable/hwradiobutton_focused_bg_translucent" />
+        </selector>
+    </item>
+    <item>
+        <animated-selector>
+            <item android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/hwradiobutton_checked_disable_translucent_bg" />
+            <item android:state_enabled="false" android:state_checked="false" android:drawable="@drawable/hwradiobutton_unchecked_disable_translucent_bg" />
+            <item android:state_checked="true" android:id="@id/checked" android:drawable="@drawable/hwradiobutton_checked_translucent_bg" />
+            <item android:id="@id/unchecked" android:drawable="@drawable/hwradiobutton_unchecked_translucent_bg" />
+            <transition android:drawable="@drawable/hwradiobutton_off2on_translucent" android:toId="@id/checked" android:fromId="@id/unchecked" />
+            <transition android:drawable="@drawable/hwradiobutton_on2off_translucent" android:toId="@id/unchecked" android:fromId="@id/checked" />
+        </animated-selector>
+    </item>
+</layer-list>

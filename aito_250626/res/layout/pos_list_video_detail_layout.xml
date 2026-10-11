@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/root" android:background="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/rl_video_list" android:background="@android:color/black" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/preview_imagemiddle" style="@style/MediaPreViewImage" />
+        <ImageButton android:id="@id/exo_previewplay" android:src="@drawable/ic_exo_play" style="@style/ExoMediaButton.PlayList2" />
+    </RelativeLayout>
+</FrameLayout>

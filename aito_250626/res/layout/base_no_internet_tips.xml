@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/no_network_tips" android:layout_width="match_parent" android:layout_height="48.0dp" app:hwAdvancedCardViewClickAnimationEnable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/veh_tip_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/no_network_exception" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_exception_prompt" android:layout_centerVertical="true" android:layout_marginStart="@dimen/font12" android:layout_marginEnd="@dimen/font16" />
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/hwedittext_color_error" android:id="@id/no_network_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_toast_no_network" android:layout_toRightOf="@id/no_network_exception" android:layout_centerVertical="true" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginEnd="@dimen/font16" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/font12" android:layout_alignParentEnd="true">
+            <com.huawei.uikit.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_set_networking" android:layout_toLeftOf="@id/no_network_right" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/font4" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/no_network_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_public_arrow_right" android:layout_centerVertical="true" android:alpha="0.2" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>

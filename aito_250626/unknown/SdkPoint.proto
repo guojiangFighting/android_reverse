@@ -1,0 +1,15 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+option java_package = "com.huawei.ads.carsearch.proto";
+
+package SdkMsgs;
+
+message Point {
+    reserved 4, 5;
+    double x = 1;
+    double y = 2;
+    double z = 3;
+    // bytes IV = 4;                //random iv
+    // bytes encryptXYZ = 5;        //encrypt x,y,z to encryptXYZ 256bit
+}

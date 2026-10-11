@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_public_input_scan" android:enabled="false" android:shortcutId="shortcut_scan" android:shortcutShortLabel="@string/xcar_app_text_shortcut_scan" android:shortcutLongLabel="@string/xcar_app_text_shortcut_scan" android:shortcutDisabledMessage="@string/xcar_app_text_shortcut_disabled_message">
+        <categories android:name="android.shortcut.conversation" />
+        <intent android:targetPackage="app.huawei.auto" android:action="android.intent.action.VIEW" android:targetClass="app.huawei.auto.privacyagreement.PrivacyAgreementActivity">
+            <extra android:name="operate_cmd" android:value="shortcut_scan" />
+        </intent>
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_public_sound_shortcut" android:enabled="false" android:shortcutId="shortcut_flash_and_whistle" android:shortcutShortLabel="@string/xcar_app_text_car_flash_whistle" android:shortcutLongLabel="@string/xcar_app_text_car_flash_whistle" android:shortcutDisabledMessage="@string/xcar_app_text_shortcut_disabled_message">
+        <categories android:name="android.shortcut.conversation" />
+        <intent android:targetPackage="app.huawei.auto" android:action="android.intent.action.VIEW" android:targetClass="app.huawei.auto.privacyagreement.PrivacyAgreementActivity">
+            <extra android:name="operate_cmd" android:value="shortcut_flash_and_whistle" />
+        </intent>
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_car_ac" android:enabled="false" android:shortcutId="shortcut_open_ac" android:shortcutShortLabel="@string/xcar_app_text_shortcut_open_ac" android:shortcutLongLabel="@string/xcar_app_text_shortcut_open_ac" android:shortcutDisabledMessage="@string/xcar_app_text_shortcut_disabled_message">
+        <categories android:name="android.shortcut.conversation" />
+        <intent android:targetPackage="app.huawei.auto" android:action="android.intent.action.VIEW" android:targetClass="app.huawei.auto.privacyagreement.PrivacyAgreementActivity">
+            <extra android:name="operate_cmd" android:value="shortcut_open_ac" />
+        </intent>
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_veh_control" android:enabled="false" android:shortcutId="shortcut_veh_ctrl" android:shortcutShortLabel="@string/xcar_app_text_vehicle_control" android:shortcutLongLabel="@string/xcar_app_text_vehicle_control" android:shortcutDisabledMessage="@string/xcar_app_text_shortcut_disabled_message">
+        <categories android:name="android.shortcut.conversation" />
+        <intent android:targetPackage="app.huawei.auto" android:action="android.intent.action.VIEW" android:targetClass="app.huawei.auto.privacyagreement.PrivacyAgreementActivity">
+            <extra android:name="operate_cmd" android:value="shortcut_veh_ctrl" />
+        </intent>
+    </shortcut>
+</shortcuts>

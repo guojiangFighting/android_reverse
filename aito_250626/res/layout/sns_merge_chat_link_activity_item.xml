@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/sns_merge_chat_item_parent">
+        <RelativeLayout android:id="@id/text_content" style="@style/sns_merge_chat_item_content">
+            <ImageView android:id="@id/merge_chat_friend_images" style="@style/sns_merge_chat_item_head_view" />
+            <app.huawei.auto.im.ui.widget.CustomFontTextView android:id="@id/merge_chat_friend_name" android:layout_toRightOf="@id/merge_chat_friend_images" android:layout_toStartOf="@id/merge_chat_time" android:layout_toEndOf="@id/merge_chat_friend_images" style="@style/sns_merge_chat_item_friend_name" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_conversation_content" android:background="@drawable/sns_chat_left_selector" android:paddingLeft="@dimen/emui_dimens_element_horizontal_large" android:paddingTop="12.0dp" android:paddingRight="@dimen/emui_dimens_element_horizontal_large" android:paddingBottom="@dimen/emui_dimens_text_margin_fourth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/merge_chat_friend_images" android:layout_below="@id/merge_chat_friend_name" android:layout_centerVertical="true" android:paddingStart="@dimen/emui_dimens_element_horizontal_large" android:paddingEnd="@dimen/emui_dimens_element_horizontal_large" android:layout_toEndOf="@id/merge_chat_friend_images">
+                <TextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_text_primary" android:ellipsize="end" android:gravity="start" android:id="@id/merge_chat_share_msg_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:text="" android:maxLines="3" />
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="0.0dp">
+                    <ImageView android:id="@id/merge_chat_share_msg_pic" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginLeft="@dimen/emui_dimens_element_horizontal_large" android:src="@drawable/sns_link_load_failed_img" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/emui_dimens_element_horizontal_large" android:layout_alignParentEnd="true" />
+                    <TextView android:textSize="@dimen/emui_master_caption_2" android:textColor="@color/emui_color_text_secondary" android:ellipsize="end" android:id="@id/merge_chat_share_msg_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:maxLines="3" android:layout_toLeftOf="@id/merge_chat_share_msg_pic" android:layout_alignParentLeft="true" android:layout_toStartOf="@id/merge_chat_share_msg_pic" android:layout_alignParentStart="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <app.huawei.auto.im.ui.widget.CustomFontTextView android:id="@id/merge_chat_time" style="@style/sns_merge_chat_item_time" />
+        </RelativeLayout>
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/dividing_line" android:layout_below="@id/text_content" style="@style/sns_merge_chat_item_dividing_line" />
+    </RelativeLayout>
+</RelativeLayout>

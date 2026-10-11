@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/font16" android:paddingEnd="@dimen/font16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_infor_left" android:layout_width="88.0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" style="@style/ColorPrimaryAndSizeBody2AndFamilyRegular" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="right" android:id="@id/tv_infor_right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_marginStart="@dimen/font16" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+</LinearLayout>

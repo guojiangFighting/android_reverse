@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#f1f3f5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/comment_back_item" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/comment_root_view" android:layout_below="@id/title" android:overScrollMode="never" />
+    <FrameLayout android:id="@id/comment_root_view" android:layout_width="match_parent" android:layout_height="@dimen/font56" android:layout_alignParentBottom="true" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp">
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_secondary" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/input_content_tv" android:background="@drawable/comment_tip_tv_card_bg_shape" android:layout_width="match_parent" android:layout_height="@dimen/font40" android:text="@string/xcar_app_text_post_detail_comment_tip_content" android:fontFamily="@string/emui_text_font_family_regular" android:paddingStart="@dimen/font12" android:paddingEnd="@dimen/font12" />
+    </FrameLayout>
+</RelativeLayout>

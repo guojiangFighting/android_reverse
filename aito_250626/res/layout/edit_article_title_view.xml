@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/font48"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwedittext.widget.HwEditText android:textSize="24.0sp" android:textStyle="normal" android:textColor="@color/emui_color_primary" android:textColorHint="@color/emui_color_secondary" android:gravity="top" android:id="@id/ugc_edit_title" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/xcar_app_text_add_title" android:maxLength="100" android:fontFamily="emui_text_font_family_regular" android:paddingStart="@dimen/dp_0" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_caption" android:textColor="@color/text_color_tertiary" android:gravity="bottom" android:layout_gravity="right" android:id="@id/ugc_edit_title_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.5dp" android:minHeight="@dimen/font16" android:text="0/100" android:layout_below="@id/ugc_edit_title" android:layout_alignParentRight="true" />
+    <View android:id="@id/delete_line" android:background="#33000000" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_below="@id/ugc_edit_title_number" />
+</RelativeLayout>

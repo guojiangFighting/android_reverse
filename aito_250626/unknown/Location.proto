@@ -1,0 +1,53 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+option java_package = "com.huawei.ads.rpa.net.proto";
+
+package RtsaMsgs;
+
+message OcrObject {
+  string slotNum = 1;    // 车位
+  string areaInfo = 2 ;  // 区域
+  string floorInfo = 3;  // 楼层
+}
+
+message VehicleLocation {
+  PoseWithCovariance poseMap = 1;
+  PoseWithCovariance poseLLA = 2;
+  string avp_map_string = 3;
+  OcrObject ocr_text = 4;
+  uint32 poseMapWorkState = 5;
+  uint32 poseLlaWorkState = 6;
+  uint32 userType = 7;
+  string userToken = 8;
+}
+
+message PoseEncrypt {
+  bytes IV = 1;                //random iv
+  bytes encryptXYZ = 2;        //encrypt pose.position.x,pose.position.y,pose.position.z to encryptXYZ 256bit
+}
+
+message PoseWithCovariance {
+  Pose pose = 1;
+  repeated float covariance = 2;
+  PoseEncrypt poseEncrypt = 3;
+}
+
+message Pose {
+  Point position = 1;
+  Quaternion orientation = 2;
+}
+
+message Point {
+  reserved 4, 5;
+  double x = 1;
+  double y = 2;
+  double z = 3;
+}
+
+message Quaternion {
+  double x = 1;
+  double y = 2;
+  double z = 3;
+  double w = 4;
+}

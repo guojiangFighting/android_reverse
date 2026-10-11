@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/mine_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font16" android:layout_below="@id/mine_authorized_details" app:cardCornerRadius="@dimen/font16" app:hwAdvancedCardViewClickAnimationEnable="false" style="@style/Widget.Emui.HwAdvancedCardView.Light">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/new_emui_text_primary" android:layout_gravity="center_horizontal" android:id="@id/text_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font24" android:layout_marginTop="@dimen/hwdialogpattern_content_padding_top" android:layout_marginRight="@dimen/font24" android:text="@string/xcar_app_text_submitted_successfully" android:layout_centerHorizontal="true" app:hwAutoSizeMinTextSize="@dimen/hwtimepicker_alert_dialog_button_text_size" app:hwAutoSizeStepGranularity="1.0sp" style="@style/textColorPrimaryAndSizeHeadline8AndMedium" />
+            <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_marginRight="@dimen/font16">
+                <com.huawei.uikit.phone.hwbutton.widget.HwButton android:textSize="@dimen/font16" android:gravity="center" android:id="@id/min_confirms" android:layout_width="180.0dp" android:layout_height="@dimen/font40" android:layout_marginTop="@dimen/font10" android:text="@string/xcar_app_button_ok" android:layout_centerHorizontal="true" style="@style/Widget.Emui.HwButton.Borderless.Light" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+</LinearLayout>

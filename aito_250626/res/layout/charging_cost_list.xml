@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/advancedcardview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_marginTop="@dimen/font8" android:layout_marginRight="@dimen/font16" app:cardCornerRadius="@dimen/font16" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/charging_gun_recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font12" android:layout_marginTop="@dimen/font4" android:layout_marginRight="@dimen/font12" android:layout_marginBottom="@dimen/font4" />
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_14" android:textColor="@color/new_emui_text_secondary" android:id="@id/cost_desc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font28" android:layout_marginTop="@dimen/font12" android:layout_marginBottom="@dimen/font24" android:layout_below="@id/advancedcardview" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/empty_image" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_120" android:src="@drawable/icon_mine_empty" android:layout_centerInParent="true" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/charge_empty_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:text="@string/xcar_app_text_no_charging_gun" android:layout_below="@id/empty_image" android:layout_centerHorizontal="true" style="@style/textColorTertiaryAndSizeBody2" />
+    </LinearLayout>
+</RelativeLayout>

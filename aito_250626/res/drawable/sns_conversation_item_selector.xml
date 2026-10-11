@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="0.0dp" android:right="0.0dp">
+        <selector>
+            <item android:state_pressed="true" android:drawable="@drawable/hwlistdrawable_round_rectangle_card_bg" />
+            <item>
+                <color android:color="@color/sns_translucent" />
+            </item>
+        </selector>
+    </item>
+</layer-list>

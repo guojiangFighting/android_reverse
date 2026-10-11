@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dodonew.online.widget.MultiStateView android:id="@id/multiStateView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" app:msv_loadingView="@layout/view_load_web" app:msv_emptyView="@layout/view_empty" app:msv_errorView="@layout/view_error" app:msv_viewState="loading"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_wrv_refresh" />
+</com.dodonew.online.widget.MultiStateView>

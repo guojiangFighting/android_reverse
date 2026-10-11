@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <app.huawei.auto.base.view.StatusBarView android:id="@id/charging_comments_title" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/ad_card_comment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_marginTop="@dimen/font4" android:layout_marginRight="@dimen/font16" app:cardCornerRadius="@dimen/font16" app:hwAdvancedCardViewClickAnimationEnable="false" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/charging_comments_title">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rl_user_comments" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp4" android:layout_marginBottom="@dimen/dp12" android:layout_marginStart="@dimen/font4" android:layout_marginEnd="@dimen/font12" />
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rl_comments_view" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ad_card_comment" />
+    <app.huawei.auto.base.view.BaseStatusLayout android:id="@id/status_layout" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/charging_comments_title" />
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_gray_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

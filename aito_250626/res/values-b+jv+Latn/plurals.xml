@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="page_progress">
+        <item quantity="other">Kaca %1$d</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="other">%d lintang</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="other">saka %1$d</item>
+    </plurals>
+</resources>

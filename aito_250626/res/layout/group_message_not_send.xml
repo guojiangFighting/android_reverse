@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff1f3f5" android:layout_width="match_parent" android:layout_height="@dimen/font56"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/group_not_send_divider" android:layout_width="match_parent" style="@style/crossuikit_divider_style" />
+    <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:layout_marginBottom="@dimen/font24" android:layout_below="@id/group_not_send_divider">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/iv_error" android:layout_width="@dimen/dp_15" android:layout_height="@dimen/dp_15" android:src="@drawable/ic_group_not_send" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/font4" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="#ff5c5c5c" android:id="@id/tv_group_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_group_quit_cannot_sent" android:layout_toEndOf="@id/iv_error" style="@style/textColorSecondaryAndSizeBody3AndFamilyRegular" />
+    </RelativeLayout>
+</RelativeLayout>

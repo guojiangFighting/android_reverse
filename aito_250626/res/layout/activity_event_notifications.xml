@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.hwrecyclerview.widget.HwRecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/event_notifications_sbv" android:overScrollMode="never" />
+    <app.huawei.auto.base.view.StatusBarView android:id="@id/event_notifications_sbv" android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/notifications_setting_loading" android:background="@color/fa_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

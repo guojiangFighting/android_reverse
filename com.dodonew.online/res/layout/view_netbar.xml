@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/bar_top" android:background="@drawable/list_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/bar_area" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="0.5">
+            <TextView android:textColor="@color/gray" android:gravity="center" android:id="@id/bar_area_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bar_area" android:drawableRight="@drawable/more_selector" android:drawablePadding="5.0dp" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/h_divider" />
+        <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/bar_sort" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="0.5">
+            <TextView android:textColor="@color/gray" android:gravity="center" android:id="@id/bar_sort_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bar_sort" android:drawableRight="@drawable/more_selector" android:drawablePadding="5.0dp" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.dodonew.online.widget.MultiStateView android:id="@id/multiStateView" android:layout_width="match_parent" android:layout_height="match_parent" app:msv_loadingView="@layout/view_load_web" app:msv_emptyView="@layout/view_empty" app:msv_errorView="@layout/view_error" app:msv_viewState="loading">
+        <include layout="@layout/view_recyclerview_refresh" />
+    </com.dodonew.online.widget.MultiStateView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.huawei.auto.im.ui.chat.photo.view.SquareLayout android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@drawable/sns_selector_assist_menu_item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/white_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="4.0dp" />
+    <app.huawei.auto.im.ui.chat.photo.view.PhotoGridImageView android:id="@id/photo_image_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/sns_default_pic" android:scaleType="centerCrop" android:layout_below="@id/white_view" />
+    <View android:id="@id/white_album" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/white_view" />
+    <LinearLayout android:gravity="end|bottom" android:id="@id/sns_photo_select_layout" android:paddingBottom="6.0dp" android:focusable="false" android:layout_width="42.0dp" android:layout_height="42.0dp" android:layout_below="@id/white_view" android:layout_alignBottom="@id/photo_image_view" android:paddingEnd="6.0dp" android:layout_alignEnd="@id/photo_image_view">
+        <CheckBox android:textSize="14.0dp" android:textColor="@color/emui_text_primary_inverse" android:gravity="center" android:id="@id/sns_photo_select_cb" android:background="@drawable/sns_pic_item_check_selector" android:focusable="false" android:layout_width="@dimen/font20" android:layout_height="@dimen/font20" android:button="@null" />
+    </LinearLayout>
+</app.huawei.auto.im.ui.chat.photo.view.SquareLayout>

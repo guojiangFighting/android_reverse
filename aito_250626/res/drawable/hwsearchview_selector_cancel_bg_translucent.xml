@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/hwsearchview_cancel_hovered_or_pressed_translucent" android:left="@dimen/hwsearchview_stroke_width_size" android:top="@dimen/hwsearchview_stroke_width_size" android:right="@dimen/hwsearchview_stroke_width_size" android:bottom="@dimen/hwsearchview_stroke_width_size" />
+    <item android:left="@dimen/hwsearchview_stroke_width_size" android:top="@dimen/hwsearchview_stroke_width_size" android:right="@dimen/hwsearchview_stroke_width_size" android:bottom="@dimen/hwsearchview_stroke_width_size">
+        <selector>
+            <item android:state_focused="true" android:state_window_focused="true" android:drawable="@drawable/hwsearchview_cancel_focused_translucent" />
+        </selector>
+    </item>
+</layer-list>

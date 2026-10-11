@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/id_fa_color_sub_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/digital_key_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="-8.0dp" layout="@layout/hwappbarpattern_title_item_layout" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/baseui_dp_320" android:layout_marginTop="@dimen/dp_180">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_width="@dimen/baseui_dp_320" android:layout_height="@dimen/baseui_dp_320" android:src="@drawable/ic_rpa_finish_background" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/veh_image" android:layout_width="220.0dp" android:layout_height="257.0dp" android:src="@drawable/rpa_topview" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/check_end_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginHorizontal="@dimen/baseui_dp_12" app:cardCornerRadius="@dimen/baseui_dp_8" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_14" android:layout_marginHorizontal="@dimen/baseui_dp_24">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="20.0sp" android:id="@id/main_end_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_parking_end" android:fontFamily="@string/emui_text_font_family_medium" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_14" android:id="@id/sub_end_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_parking_timeout" android:layout_below="@id/main_end_text" android:layout_marginVertical="@dimen/baseui_dp_8" />
+            <com.huawei.uikit.phone.hwbutton.widget.HwButton android:layout_gravity="center_horizontal" android:id="@id/back_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xcar_app_button_back" android:layout_below="@id/sub_end_text" android:layout_marginVertical="@dimen/baseui_dp_16" style="@style/Widget.Emui.HwButton.Emphasize.Light" />
+        </RelativeLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

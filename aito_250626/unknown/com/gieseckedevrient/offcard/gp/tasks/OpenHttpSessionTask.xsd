@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0" xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0" elementFormDefault="qualified">
+    <import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="CommonTypes.xsd"/>
+    <include schemaLocation="HttpParameters.xsd"/>
+    <complexType name="OpenHttpSessionTaskType">
+        <sequence>
+            <element name="HttpParameters" type="ogpt:HttpParametersType"/>
+        </sequence>
+        <attribute name="Name" type="string" use="optional"/>
+        <attribute name="UpdateCounter" type="boolean" use="optional"/>
+    </complexType>
+</schema>

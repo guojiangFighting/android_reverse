@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <nine-patch android:src="@drawable/hwseekbar_tip_single_dark_bg" android:tint="@color/emui_accent_dark" />
+    </item>
+</selector>

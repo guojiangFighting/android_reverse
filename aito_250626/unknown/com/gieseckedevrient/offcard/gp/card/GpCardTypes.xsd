@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.gi-de.com/offcard/gpcardtypes/1.0"
+        xmlns:ogpct="http://www.gi-de.com/offcard/gpcardtypes/1.0"
+        xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified">
+  <import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="CommonTypes.xsd"/>
+  <!--
+  #############################################################################
+    GlobalPlatform card types XML property file       OffCard API Version 1.0
+    
+    Instance document sample (mandatory namespace decl omitted):
+    <CardTypes>
+      <CardType Id="JavaSimCard" Name="Java SIM card">
+        <Info>Combined 3G and GSM phase 2+ JavaCard 2.2</Info>
+        <CplcData>
+          <Pattern>42 50 00 0X A0 0A</Pattern>
+          <Pattern>XX XX XX XX A1 01</Pattern>
+        </CplcData>
+        <Implementation>
+          <IssuerSecurityDomain>
+            <Aid>A0 00 00 00 03 00 00 00</Aid>
+            <Class>com.gieseckedevrient.offcard.gp.Isd</Class>
+          </IssuerSecurityDomain>
+          <SecurityDomains>
+            <Class>com.gieseckedevrient.offcard.gp.Sd</Class>
+          </SecurityDomains>
+        </Implementation>
+      </CardType>
+      ...
+    <CardTypes>
+  #############################################################################
+  -->
+  <element name="CardTypes">
+    <complexType>
+      <sequence>
+        <element name="CardType" type="ogpct:GpCardType" minOccurs="0" maxOccurs="unbounded"/>
+      </sequence>
+    </complexType>
+  </element>
+  
+  <complexType name="GpCardType">
+    <sequence>
+      <element name="Info" type="string" minOccurs="0"/>
+      <element name="CplcData" type="ogpct:GpCardTypeCplcDataType"/>
+      <element name="Implementation" type="ogpct:GpCardTypeImplementationType"/>
+    </sequence>
+    <attribute name="Id" type="token" use="required"/>
+    <attribute name="Name" type="string" use="required"/>
+  </complexType>
+
+  <complexType name="GpCardTypeCplcDataType">
+    <sequence>
+      <element name="Pattern" type="oct:EncodingHexUnlimitedByteXPattern" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+
+  <complexType name="GpCardTypeImplementationType">
+    <sequence>
+      <element name="IssuerSecurityDomain" type="ogpct:GpCardTypeIsdType"/>
+      <element name="SecurityDomains" type="ogpct:GpCardTypeSdsType" minOccurs="0"/>
+      <element name="CardProperties" type="ogpct:GpCardTypePropertiesType" minOccurs="0"/>
+    </sequence>
+  </complexType>
+  
+  <complexType name="GpCardTypeIsdType">
+    <sequence>
+      <element name="Aid" type="oct:EncodingAidHex"/>
+      <element name="Class" type="token"/>
+      <element name="Properties" type="ogpct:SdPropertiesType" minOccurs="0"/>
+    </sequence>
+  </complexType>
+  
+  <complexType name="GpCardTypePropertiesType">
+    <sequence>
+      <element name="DesAlgorithmId" type="oct:EncodingHex1Byte" minOccurs="0"/>
+    </sequence>
+  </complexType>
+  
+  <complexType name="GpCardTypeSdsType">
+    <sequence>
+      <element name="Class" type="token"/>
+      <element name="Properties" type="ogpct:SdPropertiesType" minOccurs="0"/>
+    </sequence>
+  </complexType>
+  
+  <complexType name="SdPropertiesType">
+    <sequence>
+      <element name="Property" minOccurs="0" maxOccurs="unbounded">
+        <complexType>
+       	  <simpleContent>
+            <extension base="token">
+         	  <attribute name="Name" type="string"/>
+       		</extension>
+       	  </simpleContent>
+       	</complexType>
+      </element>
+    </sequence>
+  </complexType>
+</schema>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/location_city" android:drawablePadding="5.0dp" />
+        <TextView android:textColor="@drawable/pop_txt_color_selector" android:gravity="center" android:id="@id/city_location_tv" android:background="@drawable/city_border_selector" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/location_now" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/city_group_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+        <TextView android:textColor="@color/gray" android:gravity="center_vertical" android:id="@id/city_group_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/city_hot" android:drawablePadding="6.0dp" />
+        <com.dodonew.online.widget.MGridView android:id="@id/mgv_hot_city" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:horizontalSpacing="10.0dp" android:verticalSpacing="10.0dp" android:numColumns="3" />
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="5.0dp" />
+</LinearLayout>

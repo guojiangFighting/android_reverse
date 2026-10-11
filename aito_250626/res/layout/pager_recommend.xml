@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:background="@color/emui_white" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout android:id="@id/community_hsrl" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <app.huawei.auto.base.view.CustomCoordinatorLayout android:id="@id/cl_recommend" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/app_bar_layout" android:background="#00000000" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp" app:layout_behavior="app.huawei.auto.base.view.CustomAppbarLayoutBehavior" app:layout_scrollFlags="scroll|enterAlways">
+                <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:contentScrim="#00000000" app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:id="@id/rl_banner" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                            <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <app.huawei.auto.banner.bannerview.DiscoverBannerView android:id="@id/banner_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                            </androidx.core.widget.NestedScrollView>
+                            <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <app.huawei.auto.banner.bannerview.BannerView android:id="@id/fold_screen_banner" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                            </androidx.core.widget.NestedScrollView>
+                        </RelativeLayout>
+                        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font10" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/rl_banner">
+                            <app.huawei.auto.base.view.NestedScrollableHost android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <androidx.recyclerview.widget.RecyclerView android:id="@id/quick_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                            </app.huawei.auto.base.view.NestedScrollableHost>
+                        </androidx.core.widget.NestedScrollView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_view_label" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_marginEnd="@dimen/font16">
+                    <com.google.android.material.tabs.TabLayout android:orientation="horizontal" android:id="@id/post_recycler_view_label" android:visibility="visible" android:fadingEdgeLength="@dimen/font22" android:layout_width="wrap_content" android:layout_height="@dimen/font40" android:requiresFadingEdge="horizontal" android:layout_marginStart="8.0dp" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/barrier" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:tabMinWidth="@dimen/font24" app:tabPaddingEnd="8.0dp" app:tabPaddingStart="8.0dp" app:tabTextAppearance="@style/tabTextStyle" style="@style/tabStyle" />
+                    <androidx.constraintlayout.widget.Barrier android:id="@id/barrier" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="start" app:constraint_referenced_ids="iv_sort" />
+                    <ImageView android:id="@id/iv_sort" android:visibility="gone" android:layout_width="@dimen/font30" android:layout_height="match_parent" android:src="@drawable/ic_filter" android:paddingStart="@dimen/font8" android:paddingEnd="@dimen/font2" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <app.huawei.auto.base.view.ViewPager2Container android:layout_width="match_parent" android:layout_height="match_parent">
+                    <androidx.viewpager2.widget.ViewPager2 android:id="@id/rec_post_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </app.huawei.auto.base.view.ViewPager2Container>
+            </FrameLayout>
+        </app.huawei.auto.base.view.CustomCoordinatorLayout>
+    </com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout>
+    <include android:id="@id/no_content_view_community" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/center_empty_status" />
+    <include android:id="@id/load_progress_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/center_load_view" />
+    <include android:id="@id/error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/center_no_network_connect" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="@dimen/emui_dimens_element_horizontal_large"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon_card" android:layout_width="40.0dp" android:layout_height="40.0dp" />
+        <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_text_primary" android:ellipsize="marquee" android:id="@id/card_name" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/emui_dimens_element_horizontal_large" android:singleLine="true" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginStart="@dimen/emui_dimens_element_horizontal_large" android:breakStrategy="simple" android:hyphenationFrequency="none" />
+    </LinearLayout>
+    <ImageView android:layout_width="match_parent" android:layout_marginTop="@dimen/font8" style="@style/crossuikit_divider_style" />
+    <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/font8" android:textColor="@color/emui_color_text_tertiary" android:ellipsize="marquee" android:id="@id/title" android:paddingTop="@dimen/dp4" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="120.0dp" android:text="@string/xcar_app_text_sns_chat_list_vcard" android:fontFamily="@string/emui_text_font_family_regular" android:breakStrategy="simple" android:hyphenationFrequency="none" style="@style/sns_chat_card_name_right_style" />
+</LinearLayout>

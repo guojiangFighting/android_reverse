@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.gi-de.com/offcard/aidnames/1.0"
+        xmlns:oan="http://www.gi-de.com/offcard/aidnames/1.0"
+        xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified">
+  <import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="CommonTypes.xsd"/>
+  <!--
+  #####################################################################
+    Aid-name mapping xml property file        OffCard API Version 1.0
+    
+    Instance document sample (mandatory namespace decl omitted):
+    <AidNames>
+      <Aid Name="org.globalplatform">A0 00 00 01 51 00</Aid>
+      <Aid Name="visa.openplatform">A0 00 00 00 03 00 00</Aid>
+    <AidNames>
+  #####################################################################
+  -->
+  <element name="AidNames">
+    <complexType>
+      <sequence>
+        <element name="Aid" type="oct:AidType" minOccurs="0" maxOccurs="unbounded"/>
+      </sequence>
+    </complexType>
+  </element>
+</schema>

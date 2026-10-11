@@ -1,0 +1,11 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+option java_package = "com.huawei.ads.rpa.net.proto";
+
+package RtsaMsgs;
+
+message VehicleBasicState {
+  float speed = 1;
+  uint32 gear = 2;   // 档位
+}

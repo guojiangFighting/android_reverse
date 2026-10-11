@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/service_subscribe_title" layout="@layout/mine_hwappbarpattern_navigation_icon_layout" />
+    <RelativeLayout android:id="@id/service_views" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/service_subscribe_title">
+        <LinearLayout android:orientation="vertical" android:id="@id/service_subscribe_firlay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font14">
+            <RelativeLayout android:id="@id/mine_select_icon" android:background="@drawable/mine_list_bg" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:layout_marginEnd="2.0dp">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_current_vehicle" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/textColorPrimaryAndSizeBody1" />
+            </RelativeLayout>
+            <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/emui_corner_radius_large" app:hwAdvancedCardViewClickAnimationEnable="false">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/carInfo_lay" android:paddingRight="@dimen/font12" android:layout_width="match_parent" android:layout_height="136.0dp" android:paddingVertical="@dimen/font16">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_toRightOf="@id/car_status_hiv" android:layout_centerVertical="true">
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="end" android:id="@id/Car_Name_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/textSizeBody1AndColorPrimary" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_secondary" android:id="@id/Car_number_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:fontFamily="@string/emui_text_font_family_regular" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_secondary" android:id="@id/Car_Six_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_regular" />
+                        </LinearLayout>
+                        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/car_status_hiv" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_60" android:layout_centerVertical="true" android:layout_marginStart="@dimen/font12" />
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="center" android:id="@id/car_msg_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="136.0dp">
+                        <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/car_msf_empty" android:layout_width="@dimen/dp_78" android:layout_height="@dimen/dp_78" android:src="@drawable/ic_topic_no_post_tips" android:layout_centerHorizontal="true" />
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center" android:id="@id/car_msf_empty_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/car_msf_empty" style="@style/textColorPrimaryAndSizeBody3" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/service_subscribe_seclay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font26" android:layout_below="@id/service_subscribe_firlay" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font14">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.5dp" android:text="@string/xcar_app_text_select_an_appointment_type" style="@style/textColorPrimaryAndSizeBody1" />
+            <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/emui_corner_radius_large" app:hwAdvancedCardViewClickAnimationEnable="false">
+                <com.huawei.uikit.hwrecyclerview.widget.HwRecyclerView android:id="@id/servicer_rec" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:layout_marginBottom="@dimen/font8" android:layout_marginStart="@dimen/font8" android:layout_marginEnd="@dimen/font8" />
+            </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/service_subscribe_tirlay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font26" android:layout_below="@id/service_subscribe_seclay" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.5dp" android:text="@string/xcar_app_text_select_service_location" style="@style/textColorPrimaryAndSizeBody1" />
+            <RelativeLayout android:id="@id/select_service_storefront" android:background="@drawable/mine_list_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center_vertical" android:id="@id/service_location_tv" android:layout_width="wrap_content" android:layout_height="@dimen/font48" android:text="@string/xcar_app_text_please_select" android:layout_alignParentStart="true" style="@style/textColorPrimaryAndSizeBody2" />
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/service_location_select_icon" android:visibility="visible" android:layout_width="12.0dp" android:layout_height="24.0dp" android:src="@drawable/icon_public_arrow_right" android:layout_centerVertical="true" android:alpha="0.2" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <com.huawei.uikit.phone.hwbutton.widget.HwButton android:id="@id/service_sub_next" android:layout_width="@dimen/dp_188" android:layout_height="@dimen/font40" android:layout_marginBottom="@dimen/font16" android:text="@string/xcar_app_button_next_step" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Widget.Emui.HwButton.Emphasize.Light" />
+    </RelativeLayout>
+    <include android:id="@id/load_progress_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/service_subscribe_title" layout="@layout/tab_load_view" />
+    <include android:id="@id/subscribe_message_errorview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/service_subscribe_title" layout="@layout/servicer_subscribe_message_errorview" />
+    <include android:id="@id/subscribe_network_errorview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/service_subscribe_title" layout="@layout/servicer_subscribe_network_errorview" />
+    <include android:id="@id/select_location" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/select_service_location_view" />
+    <include android:id="@id/drive_store_sheet" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/service_all_store_view" />
+</RelativeLayout>

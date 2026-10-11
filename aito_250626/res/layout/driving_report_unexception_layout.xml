@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/empty_view" android:background="@color/color_driving_report_activity_bg" android:paddingBottom="@dimen/baseui_dp_84" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="8.0">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/mine_my_car_empty_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_mine_empty" android:layout_centerInParent="true" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="@color/emui_text_tertiary_inverse" android:id="@id/vehicle_ac_appointments_empty_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/xcar_app_text_no_data_content" android:layout_below="@id/mine_my_car_empty_iv" android:layout_centerInParent="true" style="@style/textColorTertiaryAndSizeBody2" />
+    </RelativeLayout>
+    <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="2.0" />
+</LinearLayout>

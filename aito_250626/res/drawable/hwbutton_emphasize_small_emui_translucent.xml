@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_enabled="false" android:drawable="@drawable/hwbutton_emphasize_small_emui_disable_drawable_translucent" />
+            <item android:drawable="@drawable/hwbutton_emphasize_small_emui_drawable_translucent" />
+        </selector>
+    </item>
+    <item>
+        <selector android:enterFadeDuration="@integer/hwanimations_hover_animation_duration" android:exitFadeDuration="@integer/hwanimations_hover_animation_duration">
+            <item android:state_pressed="true" android:drawable="@drawable/hwbutton_emphasize_small_emui_pressed_layer_translucent" />
+            <item android:drawable="@android:color/transparent" />
+        </selector>
+    </item>
+</layer-list>

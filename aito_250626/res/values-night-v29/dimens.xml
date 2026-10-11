@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="emui_divider_alpha">0.1</dimen>
+    <dimen name="emui_highlight_bg_alpha">0.4</dimen>
+    <dimen name="emui_primary_content_alpha">0.86</dimen>
+    <dimen name="emui_tips_bg_alpha">0.1</dimen>
+    <dimen name="hwprogressbar_alpha">0.86</dimen>
+    <dimen name="hwprogressbar_alpha_spacious">0.6</dimen>
+    <dimen name="id_fa_alpha_content_primary">0.86</dimen>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/sns_popup_view" android:background="@drawable/sns_image_bubble_bg" android:layout_width="68.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:test="http://schemas.android.com/apk/res-auto">
+    <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="11.0sp" android:textColor="@color/sns_black_65_percent" android:layout_gravity="center_horizontal" android:layout_width="60.0dp" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" android:text="@string/xcar_app_text_sns_recent_pic_info" android:layout_marginStart="4.0dp" android:layout_marginEnd="4.0dp" />
+    <app.huawei.auto.im.ui.chat.view.ChatPopImageView android:layout_gravity="center_horizontal" android:id="@id/rencent_img" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginLeft="4.0dp" android:layout_marginTop="@dimen/sns_input_pop_image_top" android:layout_marginRight="4.0dp" android:layout_marginBottom="@dimen/sns_input_pop_image_bottom" android:scaleType="centerCrop" android:layout_marginStart="4.0dp" android:layout_marginEnd="4.0dp" test:circle="false" test:radius="3.0dp" />
+</LinearLayout>

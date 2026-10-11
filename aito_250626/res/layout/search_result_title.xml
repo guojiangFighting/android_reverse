@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/font8" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:id="@id/space" android:layout_width="match_parent" android:layout_height="@dimen/font2" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/font40">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font16" android:ellipsize="end" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerInParent="true" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginEnd="@dimen/common_padding" android:layout_toStartOf="@id/arrow" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_public_arrow_rights" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

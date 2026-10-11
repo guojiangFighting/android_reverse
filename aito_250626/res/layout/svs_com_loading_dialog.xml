@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/svs_pop_dialog_corner" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.ads.carsearch.view.excview.LoadingBar android:layout_width="match_parent" android:layout_height="80.0dp" />
+    <TextView android:textSize="16.0dp" android:textColor="@color/svs_main_txt_color" android:gravity="center" android:layout_gravity="center" android:id="@id/text_content" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/svs_com_calc_route_running" />
+</LinearLayout>

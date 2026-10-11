@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:layout_gravity="center" android:id="@id/hwCardView" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_64" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" android:layout_marginVertical="@dimen/font8" app:cardCornerRadius="16.0dp" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_16" android:layout_gravity="center" android:id="@id/no_vehicle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_no_vehicle_available" />
+            <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font_sp_16" android:textColor="#0a59f7" android:layout_gravity="center" android:id="@id/tvToBind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_button_add_phone" android:fontFamily="@string/emui_text_font_family_medium" android:layout_toEndOf="@id/no_vehicle" />
+        </RelativeLayout>
+    </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

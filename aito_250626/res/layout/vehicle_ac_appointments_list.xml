@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/reserved_charging_hacv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_marginBottom="3.0dp" android:layout_marginHorizontal="16.0dp" app:cardCornerRadius="@dimen/emui_corner_radius_card" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:layout_marginBottom="@dimen/font16" android:paddingStart="@dimen/font12" android:paddingEnd="@dimen/font12">
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_status" android:layout_width="match_parent" android:layout_height="@dimen/font56" android:layout_marginTop="@dimen/font4">
+                <include android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="3.0" layout="@layout/xcar_hwlistpattern_two_line_left_24" />
+                <include android:id="@id/xcar_huaweiswitch" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="-5.0dp" android:layout_weight="1.0" layout="@layout/hwlistpattern_only_right_switch" />
+            </LinearLayout>
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/vehicle_ac_temperature" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xcar_app_text_air_conditoner_default_temprature" android:layout_below="@id/layout_status" style="@style/textColorSecondaryAndSizeBody2" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/vehicle_seat_hot" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xcar_app_text_seat_hot" android:layout_below="@id/vehicle_ac_temperature" style="@style/textColorSecondaryAndSizeBody2" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/vehicle_seat_vent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xcar_app_text_seat_ventilation" android:layout_below="@id/vehicle_seat_hot" style="@style/textColorSecondaryAndSizeBody2" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/vehicle_ac_function" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xcar_app_text_air_circulation" android:layout_below="@id/vehicle_seat_vent" style="@style/textColorSecondaryAndSizeBody2" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/vehicle_ac_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xcar_app_text_default_ac_start_time" android:layout_below="@id/vehicle_ac_function" style="@style/textColorSecondaryAndSizeBody2" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/vehicle_ac_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xcar_app_text_third_day_week" android:layout_below="@id/vehicle_ac_time" style="@style/textColorSecondaryAndSizeBody2" />
+        </RelativeLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/tv_delete" android:layout_width="@dimen/font56" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_public_deletes" />
+    </LinearLayout>
+</LinearLayout>

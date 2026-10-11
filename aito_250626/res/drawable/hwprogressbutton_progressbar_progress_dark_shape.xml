@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clip
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <solid android:color="@color/hwprogressbutton_selector_progressbar_progress_dark" />
+        <corners android:radius="@dimen/emui_corner_radius_button_small" />
+    </shape>
+</clip>

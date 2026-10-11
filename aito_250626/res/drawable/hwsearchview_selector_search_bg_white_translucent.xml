@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_enabled="false" android:drawable="@drawable/hwsearchview_shape_enabled_white_translucent" />
+            <item android:drawable="@drawable/hwsearchview_shape_normal_white_translucent" />
+        </selector>
+    </item>
+    <item android:drawable="@drawable/hwsearchview_shape_hovered_or_pressed_white_translucent" />
+</layer-list>

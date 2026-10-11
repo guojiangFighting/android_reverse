@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/recode_time_lv_size" android:width="@dimen/recode_time_lv_size" />
+    <corners android:radius="@dimen/recode_time_lv_radius" />
+    <solid android:color="#0d2d4980" />
+</shape>

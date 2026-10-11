@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator android:duration="@integer/hwswitch_animation_duration" android:valueFrom="0.0f" android:valueTo="0.5f" android:valueType="floatType" android:propertyName="strokeAlpha"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

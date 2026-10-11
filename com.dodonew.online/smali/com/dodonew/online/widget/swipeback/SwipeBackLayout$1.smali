@@ -1,0 +1,14 @@
+.class synthetic Lcom/dodonew/online/widget/swipeback/SwipeBackLayout$1;
+.super Ljava/lang/Object;
+.source "SwipeBackLayout.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dodonew/online/widget/swipeback/SwipeBackLayout;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1008
+    name = null
+.end annotation

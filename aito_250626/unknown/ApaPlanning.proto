@@ -1,0 +1,25 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+option java_package = "com.huawei.ads.rpa.net.proto";
+
+package RtsaMsgs;
+
+message TargetParkingSpot {
+  uint32 id = 1;
+  uint32 type = 2;               // 水平车位、垂直车位
+  uint32 source = 3;             // 0x0:None 0x1:camera 0x2:lidar 0x3:mixed机械车位
+  repeated float points = 4;     // (x,y),(x,y),(x,y),(x,y) 4个角点车体坐标
+}
+
+message ApaPlanning {
+  uint32 parkingMode = 1;     // 0:None/1:泊入/2:泊出
+  float remainDistance = 2;  // 剩余距离  -- RDA
+  float remainPercentTotal = 3;   // [0,100] 激活时填写
+  uint32 parkInterruptDuration = 4;   // 0 ~ 30s 暂停时填写
+  uint32 currentParkinDir = 5;       // 当前泊入方式：0:None/1:车头/2:车尾
+  uint32 currentParkoutDir = 6;       // 当前选择的泊车方向
+  // 0 bit: 水平向左,1 bit: 水平向右,2 bit: 垂直向前,3 bit: 垂直向左前,4 bit: 垂直向右前,5 bit: 垂直向左后,6 bit: 垂直向右后,7 bit: 垂直向后
+  uint32 availableParkoutDirs = 7;    // 泊出激活前:可用的泊出方向，泊入或泊车激活后填写0
+  TargetParkingSpot targetSpot = 8;     // 泊入目标车位 或 泊出自车所在车位
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/editor_cursor_light" />
+    <size android:height="@dimen/hwedittext_cursor_height" android:width="@dimen/hwedittext_cursor_width" />
+    <corners android:radius="@dimen/hwedittext_cursor_radius" />
+</shape>

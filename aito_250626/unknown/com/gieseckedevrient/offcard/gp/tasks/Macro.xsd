@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0" elementFormDefault="qualified">
+	<include schemaLocation="AuthenticateTask.xsd"/>
+	<include schemaLocation="EncapsulatedSCP03Task.xsd"/>
+	<include schemaLocation="CloseEncapsulatedSCP03Task.xsd"/>
+	<include schemaLocation="ChannelTasks.xsd"/>
+	<include schemaLocation="DataTasks.xsd"/>
+	<include schemaLocation="DeleteTasks.xsd"/>
+	<include schemaLocation="LoadInstallTasks.xsd"/>
+	<include schemaLocation="OtaTasks.xsd"/>
+	<include schemaLocation="PinTasks.xsd"/>
+	<include schemaLocation="PutKeyTask.xsd"/>
+	<include schemaLocation="ReportTask.xsd"/>
+	<include schemaLocation="SelectAppletTask.xsd"/>
+	<include schemaLocation="SendApduTask.xsd"/>
+	<include schemaLocation="SetCardTypeTask.xsd"/>
+	<include schemaLocation="StatusTasks.xsd"/>
+	
+	<!--OTA HTTP extensions, schema files are duplicated from httpota module-->
+    <include schemaLocation="CloseHttpSessionTask.xsd"/>
+	<include schemaLocation="OpenHttpSessionTask.xsd"/>
+    
+	
+	<complexType name="MacroType">
+		<sequence>
+			<element name="Description" type="string" minOccurs="0"/>
+			<element name="Tasks" type="ogpt:TasksType"/>
+		</sequence>
+		<attribute name="Name" type="string"/>
+	</complexType>
+	<complexType name="TasksType">
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element name="AuthenticateTask" type="ogpt:AuthenticateTaskType"/>
+			<element name="EncapsulatedSCP03Task" type="ogpt:EncapsulatedSCP03TaskType"/>
+			<element name="CloseEncapsulatedSCP03Task" type="ogpt:CloseEncapsulatedSCP03TaskType"/>
+			<element name="ChangePinTask" type="ogpt:ChangePinTaskType"/>
+			<element name="CloseOtaSessionTask" type="ogpt:CloseOtaSessionTaskType"/>
+			<element name="DeleteTask" type="ogpt:DeleteTaskType"/>
+			<element name="DeleteCardComponentTask" type="ogpt:DeleteCardComponentTaskType"/>
+			<element name="DeleteKeyTask" type="ogpt:DeleteKeyTaskType"/>
+			<element name="DisconnectCardTask" type="ogpt:DisconnectCardTaskType"/>
+			<element name="GetDataTask" type="ogpt:GetDataTaskType"/>
+			<element name="GetFreeSpaceTask" type="ogpt:GetFreeSpaceTaskType"/>
+			<element name="GetKeyInformationTask" type="ogpt:GetKeyInformationTaskType"/>
+			<element name="GetStatusTask" type="ogpt:GetStatusTaskType"/>
+			<element name="InstallForExtraditionTask" type="ogpt:InstallForExtraditionTaskType"/>
+			<element name="InstallForInstallTask" type="ogpt:InstallForInstallTaskType"/>
+			<element name="InstallForAliasTask" type="ogpt:InstallForAliasTaskType"/>
+			<element name="InstallForPersonalizationTask" type="ogpt:InstallForPersonalizationTaskType"/>
+			<element name="LoadPackageTask" type="ogpt:LoadPackageTaskType"/>
+			<element name="MakeSelectableTask" type="ogpt:MakeSelectableTaskType"/>
+			<element name="OpenOtaSessionTask" type="ogpt:OpenOtaSessionTaskType"/>
+			<element name="OtaScriptTask" type="ogpt:OtaScriptTaskType"/>
+			<element name="PutDataTask" type="ogpt:PutDataTaskType"/>
+			<element name="PutKeyTask" type="ogpt:PutKeyTaskType"/>
+			<element name="ResetCardTask" type="ogpt:ResetCardTaskType"/>
+			<element name="ReportTask" type="ogpt:ReportTaskType"/>
+			<element name="SelectAppletTask" type="ogpt:SelectAppletTaskType"/>
+			<element name="SendApduTask" type="ogpt:SendApduTaskType"/>
+			<element name="SendBytesTask" type="ogpt:SendBytesTaskType"/>
+			<element name="SetCardTypeTask" type="ogpt:SetCardTypeTaskType"/>
+			<element name="SetStatusTask" type="ogpt:SetStatusTaskType"/>
+			<element name="StoreDataTask" type="ogpt:StoreDataTaskType"/>
+			<element name="UnblockPinTask" type="ogpt:UnblockPinTaskType"/>
+			<element name="UpdateDataTask" type="ogpt:UpdateDataTaskType"/>
+			<element name="UpdateRegistryTask" type="ogpt:UpdateRegistryTaskType"/>
+			<element name="UpdateRegistryOpenTask" type="ogpt:UpdateRegistryOpenTaskType"/>
+			
+		    <!--OTA HTTP extensions, schema files are duplicated from httpota module-->
+            <element name="CloseHttpSessionTask" type="ogpt:CloseHttpSessionTaskType"/>
+			<element name="OpenHttpSessionTask" type="ogpt:OpenHttpSessionTaskType"/>
+		</choice>
+	</complexType>
+</schema>

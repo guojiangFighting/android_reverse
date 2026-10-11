@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="theme_image_switcher_layout_height">300.0dp</dimen>
+</resources>

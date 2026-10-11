@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/simple_top" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/sb_parent_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="34.0dp" android:layout_alignParentBottom="true">
+        <SeekBar android:id="@id/exo_progress_big" android:paddingTop="15.5dp" android:paddingBottom="15.5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="-15.0dp" android:layout_marginRight="-15.0dp" android:layout_centerVertical="true" style="@style/CustomSeekbarStyle" />
+    </RelativeLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/ll_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font16" android:layout_above="@id/sb_parent_layout" android:layout_centerHorizontal="true">
+        <TextView android:textSize="20.0sp" android:textColor="#ffffff" android:id="@id/exo_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="/ " android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffffff" android:id="@id/exo_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:text="1231" android:layout_centerVertical="true" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/exo_play" android:visibility="gone" android:src="@drawable/ic_exo_play" style="@style/ExoMediaButton.Play2" />
+    <androidx.media3.ui.DefaultTimeBar android:id="@id/exo_progress" android:paddingBottom="@dimen/font16" android:layout_alignParentBottom="true" style="@style/ExoMediaTimeBar_in_community_video_detail" />
+</RelativeLayout>

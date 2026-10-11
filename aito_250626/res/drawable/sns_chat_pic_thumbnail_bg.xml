@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/sns_chat_pic_radius" />
+    <stroke android:width="@dimen/sns_chat_pic_thumbnail_stroke_width" android:color="@color/sns_chat_img_back" />
+    <solid android:color="@color/crossuikit_color_fourth" />
+</shape>

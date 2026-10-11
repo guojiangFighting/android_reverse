@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/view_pay_bottom" android:background="@color/white" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="10.0sp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pay_information" />
+        <Button android:textColor="@color/white" android:id="@id/btn_pay" android:background="@drawable/btn_vote_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="立即支付" />
+    </LinearLayout>
+    <ScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/view_pay_bottom">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/view_pay_area" android:background="@drawable/under_view_selector" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_area" />
+                <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/tv_pay_city" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="请选择所在区域" android:drawableRight="@drawable/my_right" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/under_view_selector" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_account" />
+                <EditText android:textSize="14.0sp" android:textColorHint="@color/gray" android:id="@id/et_pay_account" android:background="@drawable/transfer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:hint="请输入上网账号" android:inputType="text" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/view_pay_net" android:background="@drawable/under_view_selector" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_net" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/option_txt_color" android:gravity="center_vertical" android:id="@id/tv_pay_netbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="请选择充值网吧" android:drawableRight="@drawable/my_right" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pay_choose_money" />
+            <com.dodonew.online.widget.MultiStateView android:id="@id/multiStateView" android:layout_width="match_parent" android:layout_height="wrap_content" app:msv_loadingView="@layout/view_loading" app:msv_emptyView="@layout/view_empty" app:msv_errorView="@layout/view_no_usewxpay" app:msv_viewState="content">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.dodonew.online.widget.MGridView android:id="@id/mgv_pay" android:background="@color/white" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:horizontalSpacing="8.0dp" android:verticalSpacing="8.0dp" android:numColumns="3" />
+                    <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="1.0px" />
+                    <RelativeLayout android:id="@id/view_pay_ticket" android:background="@drawable/under_view_selector" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/option_txt_color" android:id="@id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网费券" android:layout_centerVertical="true" />
+                        <TextView android:id="@id/tv_user_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="(请选择网费券)" android:layout_toRightOf="@id/tv_label" android:layout_centerVertical="true" />
+                        <com.dodonew.online.widget.SmoothCheckBox android:layout_gravity="right|center" android:id="@id/scb_user_ticket" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:can_click="false" />
+                        <TextView android:textColor="@color/option_txt_color" android:id="@id/tv_ticket_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/scb_user_ticket" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:background="@drawable/under_divider_bg" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/option_txt_color" android:id="@id/tv_pay_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="实际支付金额:" android:layout_centerVertical="true" />
+                        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@id/tv_pay_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥0" android:layout_toRightOf="@id/tv_pay_label" android:layout_centerVertical="true" />
+                        <TextView android:textSize="16.0sp" android:textColor="@color/option_txt_color" android:id="@id/tv_get_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:text="得0元网费" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.dodonew.online.widget.MultiStateView>
+            <TextView android:textSize="12.0sp" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pay_choose_way" />
+            <RelativeLayout android:id="@id/view_pay_weChat" android:background="@drawable/under_view_selector" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信支付" android:drawableLeft="@drawable/icon_wechat" android:drawablePadding="5.0dp" />
+                <com.dodonew.online.widget.SmoothCheckBox android:layout_gravity="right|center" android:id="@id/scb_wechat" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:can_click="false" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/view_pay_zfb" android:background="@drawable/under_view_selector" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付宝" android:drawableLeft="@drawable/icon_zfb" android:drawablePadding="5.0dp" />
+                <com.dodonew.online.widget.SmoothCheckBox android:layout_gravity="right|center" android:id="@id/scb_zfb" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:can_click="false" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

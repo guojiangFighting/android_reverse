@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">წინ გადახვევა %d წამით</item>
+        <item quantity="other">წინ გადახვევა %d წამით</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">უკან გადახვევა %d წამით</item>
+        <item quantity="other">უკან გადახვევა %d წამით</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d ახალი შეტყობინება</item>
+        <item quantity="other">%d ახალი შეტყობინება</item>
+    </plurals>
+    <plurals name="page_progress">
+        <item quantity="one">გვერდი %1$d</item>
+        <item quantity="other">გვერდი %1$d</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="one">%d ვარსკვლავი</item>
+        <item quantity="other">%d ვარსკვლავი</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="one">სულ %1$d</item>
+        <item quantity="other">სულ %1$d</item>
+    </plurals>
+</resources>

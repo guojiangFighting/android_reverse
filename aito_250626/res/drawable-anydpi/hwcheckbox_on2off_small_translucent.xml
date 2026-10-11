@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/hwcheckbox_vector_on_small_translucent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="box_inner_merged" android:animation="@animator/hwcheckbox_inner_anim_exit" />
+    <target android:name="path_on" android:animation="@animator/hwcheckbox_path_on_anim_exit" />
+    <target android:name="box_edge" android:animation="@animator/hwcheckbox_edge_anim_exit" />
+</animated-vector>

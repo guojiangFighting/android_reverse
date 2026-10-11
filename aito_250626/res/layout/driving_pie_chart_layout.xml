@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="#1affffff" app:hwAdvancedCardViewClickAnimationEnable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.huawei.uikit.hwimageview.widget.HwImageView android:background="@drawable/drivingcard_scale_background" android:layout_width="match_parent" android:layout_height="@dimen/dp_200" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/energy_consumption_analysis_layout" android:layout_width="192.0dp" android:layout_height="@dimen/font48" android:layout_marginLeft="@dimen/baseui_dp_16">
+            <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/baseui_dp_16" android:textColor="#dbffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_18" android:text="@string/xcar_app_text_energy_consumption_analysis" android:fontFamily="@string/emui_text_font_family_medium" />
+        </LinearLayout>
+        <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/energy_consumption_analysis_layout" android:layout_centerHorizontal="true" android:translationY="-20.0dp">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_width="210.0dp" android:layout_height="170.0dp" android:src="@drawable/dials" android:layout_centerInParent="true" />
+            <com.huawei.uikit.phone.hwchart.widget.HwChart android:id="@id/driving_hw_PieChart" android:layout_width="250.0dp" android:layout_height="wrap_content" android:layout_centerInParent="true" app:hwBarWidth="14.0dp" app:hwBlurAlpha="0.15" app:hwBlurOffsetX="3.0dp" app:hwBlurOffsetY="6.0dp" app:hwBlurRadius="8.0dp" app:hwChartBeginAngle="270" app:hwChartEndAngle="90" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/total_energy_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:translationY="-30.0dp">
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font10" android:textColor="#99ffffff" android:id="@id/total_energy_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_total_energy_consumption" android:layout_centerHorizontal="true" />
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font24" android:textColor="#ffffffff" android:gravity="center" android:id="@id/total_energy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="250.2" android:layout_below="@id/total_energy_text" android:layout_centerHorizontal="true" android:fontFamily="@string/emui_text_font_family_medium" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/chart_below_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="193.0dp">
+            <RelativeLayout android:gravity="center_horizontal" android:id="@id/chart_below_text_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.8">
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/electric_energy_img" android:layout_width="@dimen/baseui_dp_8" android:layout_height="@dimen/baseui_dp_8" android:src="@drawable/ic_dot_green" android:layout_centerVertical="true" />
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="#dbffffff" android:id="@id/electric_energy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font8" android:text="@string/xcar_app_text_electric_energy_consumption" android:layout_centerVertical="true" android:layout_toEndOf="@id/electric_energy_img" />
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="#ffffffff" android:id="@id/electric_energy_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/baseui_dp_4" android:text="--kWh" android:layout_centerVertical="true" android:layout_toEndOf="@id/electric_energy" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_horizontal" android:id="@id/chart_below_text_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/oil_energy_img" android:layout_width="@dimen/baseui_dp_8" android:layout_height="@dimen/baseui_dp_8" android:layout_marginTop="@dimen/font4" android:src="@drawable/ic_dot_blue" />
+                <RelativeLayout android:id="@id/oil_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font8" android:layout_toRightOf="@id/oil_energy_img">
+                    <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="#ffffffff" android:id="@id/oil_energy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_oil_energy_consumption" />
+                    <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="#dbffffff" android:id="@id/oil_energy_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font4" android:text="--L" android:layout_toEndOf="@id/oil_energy" />
+                </RelativeLayout>
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font10" android:textColor="#99ffffff" android:id="@id/oil_energy_conversion_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/xcar_app_text_oil_energy_conversion" android:layout_below="@id/oil_layout" android:layout_toEndOf="@id/oil_energy_img" />
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/fuel_Details" android:layout_width="@dimen/font12" android:layout_height="@dimen/font12" android:layout_marginLeft="@dimen/baseui_dp_4" android:layout_marginTop="@dimen/font1" android:src="@drawable/ic_public_detail" android:layout_below="@id/oil_layout" android:layout_toEndOf="@id/oil_energy_conversion_text" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/average_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24" android:layout_marginBottom="@dimen/font24" android:layout_below="@id/chart_below_text" android:layout_marginHorizontal="@dimen/font12">
+            <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="0.0dp" android:layout_height="@dimen/dp_64" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/font4" app:cardBackgroundColor="#0dffffff" app:cardCornerRadius="8.0dp" app:hwAdvancedCardViewClickAnimationEnable="false">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/baseui_fontsize_22">
+                        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font20" android:textColor="@color/white" android:id="@id/tv_avg_power" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:fontFamily="@string/emui_text_font_family_medium" />
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:textColor="@color/white" android:id="@id/driving_report_tv_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="kWh/100km" android:fontFamily="@string/emui_text_font_family_regular" />
+                    </LinearLayout>
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="#99ffffff" android:layout_marginTop="@dimen/font4" android:text="@string/xcar_app_text_mean_power" style="@style/driving_report_callout_tv_style" />
+                </LinearLayout>
+            </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+            <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/oil_average_card" android:layout_width="0.0dp" android:layout_height="@dimen/dp_64" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/font4" app:cardBackgroundColor="#0dffffff" app:cardCornerRadius="8.0dp" app:hwAdvancedCardViewClickAnimationEnable="false">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/avg_fuel_area" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/baseui_fontsize_22">
+                        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font20" android:textColor="@color/white" android:id="@id/tv_avg_fuel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:fontFamily="@string/emui_text_font_family_medium" />
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="L/100km" android:fontFamily="@string/emui_text_font_family_regular" />
+                    </LinearLayout>
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="#99ffffff" android:layout_marginTop="@dimen/font4" android:text="@string/xcar_text_app_mean_fuel" style="@style/driving_report_callout_tv_style" />
+                </LinearLayout>
+            </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/save_money_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font24" android:layout_below="@id/average_card">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_width="@dimen/font48" android:layout_height="@dimen/font48" android:src="@drawable/left_quotation_mark" android:layout_marginStart="@dimen/baseui_dp_16" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/page_bottom_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font16" android:textColor="#dbffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_compared_with_the_same_class_of_fuel_vehicles" />
+                <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/font20" android:textColor="#dbffffff" android:id="@id/tv_save_money" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_width="@dimen/font48" android:layout_height="@dimen/font48" android:src="@drawable/right_quotation_mark" android:layout_marginEnd="@dimen/baseui_dp_16" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>

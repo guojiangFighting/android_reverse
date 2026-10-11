@@ -1,0 +1,41 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+option java_package = "com.huawei.ads.rpa.net.proto";
+
+package RtsaMsgs;
+
+
+enum CloudResponseErrorCode {
+  // 证书同步/指令验签状态
+  CERT_SUCCESS = 0;  // 成功（不支持视频加密）
+  CERT_VERIFY_FAIL = 1; // 证书链校验失败
+  CERT_VIN_NOT_MATCH = 2;
+  CERT_SIG_VERIFY_FAIL = 3;
+  CERT_TS_VERIFY_FAIL = 4; // 指令时间戳校验异常
+  CERT_ABNORMAL = 5; //
+  CERT_OTHER = 6;
+  CERT_TIME_OUT = 7; // 超时（ADS云填充）
+  SUCCESS_WITH_VIDEO_FLAG = 8; // 成功（支持视频加密）
+  CERT_RESERVED = 9;
+
+  // 远控账号登陆
+  REMOTE_OK = 10; // 远控登陆成功
+  REMOTE_NOT_SUPPORT = 11; // 不支持类型（VAM返回）
+  REMOTE_INVALID_ID = 12; // 非法ID（VAM返回）
+  REMOTE_FAIL = 13; // 切换失败（VAM返回）
+  REMOTE_TIME_OUT = 14; // 切换超时
+  REMOTE_NO_PRIVACY = 15; // 远控账号未隐私授权
+  REMOTE_DRIVER_INCONSISTANT = 16; // 主驾有人且账号不一致
+  REMOTE_RESERVED = 17;
+}
+
+message CloudResponse {
+  uint32 messageId = 1;
+  string type = 2;
+  string resultStatus = 3;
+  string index = 4;
+  uint32 errorCode = 5;
+  uint32 remoteErrorCode = 6;
+  string transId = 7;
+}

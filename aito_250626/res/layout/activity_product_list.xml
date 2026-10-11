@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <app.huawei.auto.base.view.StatusBarView android:id="@id/status_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/status_bar">
+        <com.huawei.uikit.phone.hwsearchview.widget.HwSearchView android:id="@id/product_search_layout" android:layout_width="match_parent" android:layout_height="@dimen/font56" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:queryHint="@string/xcar_app_text_remind_search_text" />
+        <com.huawei.uikit.phone.hwrecyclerview.widget.HwRecyclerView android:id="@id/product_list_hrv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/product_search_layout" android:nestedScrollingEnabled="false" />
+        <include android:id="@id/product_search_no_data_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/product_search_layout" layout="@layout/search_no_result_view" />
+        <include android:id="@id/product_search_no_interent_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="16.0dp" android:layout_below="@id/product_search_layout" layout="@layout/network_instability" />
+        <include android:id="@id/product_search_error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/product_search_layout" layout="@layout/xcar_error_layout" />
+    </RelativeLayout>
+</RelativeLayout>

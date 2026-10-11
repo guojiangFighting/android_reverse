@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/emui_drawable_padding_s" android:right="@dimen/emui_drawable_padding_s">
+        <selector android:enterFadeDuration="@integer/hwanimations_hover_animation_duration" android:exitFadeDuration="@integer/hwanimations_hover_animation_duration">
+            <item android:drawable="@drawable/hwlistdrawable_round_rectangle_card_active_layer" android:state_activated="true" />
+            <item android:drawable="@android:color/transparent" />
+        </selector>
+    </item>
+    <item android:left="@dimen/emui_drawable_padding_s" android:right="@dimen/emui_drawable_padding_s">
+        <selector>
+            <item android:drawable="@android:color/transparent" android:state_activated="true" />
+            <item android:drawable="@drawable/hwlistdrawable_round_rectangle_card_hovered_or_pressed_layer" />
+        </selector>
+    </item>
+    <item android:left="@dimen/emui_drawable_padding_s" android:right="@dimen/emui_drawable_padding_s">
+        <selector>
+            <item android:state_focused="true" android:state_window_focused="true" android:drawable="@drawable/hwlistdrawable_round_rectangle_card_focus_layer" />
+            <item android:state_window_focused="true" android:state_selected="true" android:drawable="@drawable/hwlistdrawable_round_rectangle_card_focus_layer" />
+        </selector>
+    </item>
+</layer-list>

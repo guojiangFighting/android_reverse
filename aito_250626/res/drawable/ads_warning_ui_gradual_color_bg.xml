@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:topLeftRadius="@dimen/ads_epa_bg_corners_radius" android:topRightRadius="@dimen/ads_epa_bg_corners_radius" />
+            <solid android:color="@color/base_white" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:topLeftRadius="@dimen/ads_epa_bg_corners_radius" android:topRightRadius="@dimen/ads_epa_bg_corners_radius" />
+            <gradient android:startColor="@color/epa_tip_start_color" android:endColor="@color/epa_tip_end_color" android:angle="90.0" />
+        </shape>
+    </item>
+</layer-list>

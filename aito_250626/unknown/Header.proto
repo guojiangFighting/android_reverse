@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option optimize_for = LITE_RUNTIME;
+option java_package = "com.huawei.ads.carsearch.proto";
+package StdMsgs;
+
+message Header {
+  uint32 seq = 1;
+  uint64 stamp = 2;
+  string frame_id = 3;
+}

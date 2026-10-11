@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/item_normal_selector" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_divider" android:background="@color/divider_" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/view_divider">
+        <ImageView android:id="@id/iv_news_1" android:layout_width="0.0dp" android:layout_height="match_parent" android:src="@drawable/default_news" android:scaleType="centerCrop" android:layout_weight="0.33" />
+        <RelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="7.0dp" android:layout_weight="0.67">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/option_txt_color" android:id="@id/tv_news_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentTop="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/gray" android:id="@id/tv_news_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/result_view" android:id="@id/tv_news_origin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

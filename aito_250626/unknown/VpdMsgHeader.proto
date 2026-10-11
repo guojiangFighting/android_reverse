@@ -1,0 +1,16 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+package StdMsgs;
+
+option java_package = "com.huawei.ads.uavp.servicecommon.bean.proto";
+option java_outer_classname = "PbHeader";
+
+message Header {
+    uint32 seq = 1;
+    uint64 stamp = 2;
+    string frame_id = 3;
+    string uuid = 4;          // 消息的源头发送端填写，每次请求申请一个UUID，响应报文反填uuid。 重复uuid则丢弃。
+    string accoutId = 5;      // 手机端填写，用户账号。车端响应反填accountId。
+}
+

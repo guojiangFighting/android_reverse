@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_charge_service_entry" android:background="@drawable/charge_service_entry_bg" android:visibility="visible" android:layout_width="@dimen/dp_90" android:layout_height="@dimen/font24" android:layout_marginTop="@dimen/font5" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:background="@drawable/charge_service_entry_icon" android:layout_width="@dimen/font14" android:layout_height="@dimen/font14" android:layout_marginStart="@dimen/font8" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_charge_service" style="@style/textColorThirdAndSizeBody3AndRegular" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/img_charge_service_right" android:background="@drawable/charge_service_entry_right_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/font5" />
+        <com.huawei.uikit.phone.hwprogressbar.widget.HwProgressBar android:id="@id/hpb_charge_service_loading" android:visibility="gone" android:layout_width="@dimen/font16" android:layout_height="@dimen/font16" style="@style/Widget.Emui.HwProgressBar" />
+    </LinearLayout>
+</RelativeLayout>

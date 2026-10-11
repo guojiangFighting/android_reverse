@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/font1" android:color="@color/new_emui_text_secondary" />
+    <corners android:radius="@dimen/font4" />
+    <padding android:left="@dimen/font4" android:right="@dimen/font4" />
+</shape>

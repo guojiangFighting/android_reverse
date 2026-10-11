@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center" android:drawable="@drawable/hwbottomsheet_indicate_background_hovered" android:left="@dimen/hwbottomsheet_indicate_background_hor_margin" android:top="@dimen/hwbottomsheet_indicate_background_ver_margin" android:right="@dimen/hwbottomsheet_indicate_background_hor_margin" android:bottom="@dimen/hwbottomsheet_indicate_background_ver_margin" />
+    <item android:gravity="center" android:left="@dimen/hwbottomsheet_indicate_background_hor_margin" android:top="@dimen/hwbottomsheet_indicate_background_ver_margin" android:right="@dimen/hwbottomsheet_indicate_background_hor_margin" android:bottom="@dimen/hwbottomsheet_indicate_background_ver_margin">
+        <selector>
+            <item android:state_focused="true" android:state_window_focused="true" android:drawable="@drawable/hwbottomsheet_indicate_background_focused" />
+        </selector>
+    </item>
+</layer-list>

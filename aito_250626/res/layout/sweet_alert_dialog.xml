@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/loading" android:background="@drawable/circle_corners_5_white" android:paddingTop="10.0dp" android:layout_width="280.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/custom_image" android:visibility="gone" android:layout_width="45.0dp" android:layout_height="45.0dp" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+    <FrameLayout android:id="@id/error_frame" android:visibility="gone" android:layout_width="45.0dp" android:layout_height="45.0dp">
+        <View android:background="@drawable/sweet_error_circle" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:id="@id/error_x" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/sweet_error_center_x" android:scaleType="center" android:contentDescription="@string/app_name" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/success_frame" android:visibility="gone" android:layout_width="45.0dp" android:layout_height="45.0dp">
+        <View android:background="@drawable/sweet_success_bow" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <View android:layout_gravity="right" android:id="@id/mask_right" android:background="@android:color/white" android:layout_width="35.0dp" android:layout_height="80.0dp" android:layout_marginTop="-13.0dp" />
+        <View android:layout_gravity="left" android:id="@id/mask_left" android:background="@android:color/white" android:layout_width="21.0dp" android:layout_height="60.0dp" android:layout_marginLeft="-3.0dp" />
+        <View android:background="@drawable/sweet_success_circle" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.egaosu.h5activeaar.view.sweetdialog.SuccessTickView android:id="@id/success_tick" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/warning_frame" android:visibility="gone" android:layout_width="45.0dp" android:layout_height="45.0dp">
+        <View android:background="@drawable/sweet_warning_circle" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/sweet_warning_sigh" android:scaleType="center" android:contentDescription="@string/app_name" />
+    </FrameLayout>
+    <TextView android:textSize="15.0sp" android:textColor="#333" android:gravity="center" android:id="@id/title_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="Here is Message" android:maxLines="3" />
+    <TextView android:textSize="13.0sp" android:textColor="#666" android:gravity="center" android:id="@id/content_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" />
+    <View android:layout_marginTop="10.0dp" style="@style/line" />
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="14.0sp" android:textColor="@color/gray" android:id="@id/cancel_button" android:background="@null" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <View style="@style/vertical_line" />
+        <Button android:textSize="14.0sp" android:textColor="#0a59f7" android:id="@id/confirm_button" android:background="@null" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

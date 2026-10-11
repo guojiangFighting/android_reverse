@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_loading_progress_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/pb_loading" android:padding="4.0dp" android:layout_width="70.0dp" android:layout_height="70.0dp" style="?android:progressBarStyleLarge" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/sns_loading_progress_layout" android:gravity="center" android:id="@id/tv_loading_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="20.0dp" android:text="@string/xcar_app_text_loading" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+</LinearLayout>

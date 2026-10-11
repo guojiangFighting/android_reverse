@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/id_fa_color_sub_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <app.huawei.auto.base.view.StatusBarView android:id="@id/points_title" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+    <com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout android:id="@id/refresh_layout" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/points_title">
+        <com.huawei.uikit.phone.hwrecyclerview.widget.HwRecyclerView android:id="@id/points_list_rv" android:paddingBottom="@dimen/baseui_dp_4" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/baseui_dp_8" android:overScrollMode="never" android:layout_marginHorizontal="@dimen/font16" />
+    </com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/adv" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font12" app:cardCornerRadius="@dimen/emui_corner_radius_large" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <RelativeLayout android:id="@id/carInfo_lay" android:paddingLeft="@dimen/font1" android:paddingRight="@dimen/font16" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_128" android:paddingVertical="@dimen/font24">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/order_veh_img_hiv" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_60" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font4" android:layout_toRightOf="@id/order_veh_img_hiv" android:layout_centerVertical="true">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_primary" android:ellipsize="end" android:id="@id/order_veh_brand_htv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@string/emui_text_font_family_regular" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/emui_color_secondary" android:id="@id/order_code_htv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2" android:fontFamily="@string/emui_text_font_family_regular" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/emui_primary" android:ellipsize="end" android:id="@id/veh_gbom_htv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:maxLines="2" android:fontFamily="@string/emui_text_font_family_regular" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+</LinearLayout>

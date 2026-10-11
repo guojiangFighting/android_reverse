@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector android:enterFadeDuration="@integer/hwanimations_hover_animation_duration" android:exitFadeDuration="@integer/hwanimations_hover_animation_duration">
+            <item android:state_pressed="true">
+                <shape>
+                    <corners android:radius="@dimen/emui_corner_radius_small" />
+                    <solid android:color="@color/emui_clickeffic_default_color" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</layer-list>

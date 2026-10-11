@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/refund_orderId" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constrainedWidth="true" app:layout_constraintEnd_toStartOf="@id/order_id_copy" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_default="wrap" style="@style/textColorSecondaryAndSizeBody2" />
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/order_id_copy" android:layout_width="@dimen/baseui_dp_16" android:layout_height="@dimen/baseui_dp_16" android:layout_marginTop="@dimen/baseui_dp_2" android:src="@drawable/copy_img" android:layout_marginStart="@dimen/baseui_dp_4" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/refund_orderId" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

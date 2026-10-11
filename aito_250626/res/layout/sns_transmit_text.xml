@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font14" android:textColor="@color/emui_color_primary" android:id="@id/sns_content_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:fontFamily="@string/emui_text_font_family_regular" android:textAlignment="viewStart" />
+    <TextView android:textSize="@dimen/font14" android:textColor="@color/emui_color_primary" android:id="@id/sns_content_txt_sec" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_below="@id/sns_content_txt" android:fontFamily="@string/emui_text_font_family_regular" android:textAlignment="viewStart" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/sns_delete_text_color_emuifive" android:ellipsize="end" android:gravity="right" android:id="@id/sns_transmit_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_below="@id/sns_content_txt_sec" />
+</RelativeLayout>

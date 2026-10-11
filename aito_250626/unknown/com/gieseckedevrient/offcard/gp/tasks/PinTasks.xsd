@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0"
+        xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified">
+
+  <complexType name="ChangePinTaskType">
+    <attribute name="Name" type="string" use="optional"/>
+    <attribute name="NewPin" use="required">
+      <simpleType>
+        <restriction base="string">
+          <pattern value="[0-9]{4,12}" />
+        </restriction>
+      </simpleType>
+    </attribute>
+    <attribute name="RetryLimit" use="required">
+      <simpleType>
+        <restriction base="string">
+          <pattern value="([3-9])|(1[0-5])" />
+        </restriction>
+      </simpleType>
+    </attribute>
+  </complexType>
+  
+  <complexType name="UnblockPinTaskType">
+    <attribute name="Name" type="string" use="optional"/>
+  </complexType>
+  
+</schema>

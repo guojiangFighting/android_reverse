@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/hwlistpattern_preferreditem_height" android:paddingStart="@dimen/font12" android:paddingEnd="@dimen/font12">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="3.0" android:layout_marginEnd="@dimen/dp_64" layout="@layout/layout_xcar_hwlistpattern_two_line_left_img" />
+        <app.huawei.auto.base.view.NoCircleAnimationSwitch android:id="@id/xcar_hwappbarpattern_animationswitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

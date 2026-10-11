@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_post_image" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <app.huawei.auto.community.util.ResizableImageView android:id="@id/image_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="12.0sp" android:textColor="@color/opacity_40_black" android:gravity="center" android:id="@id/text_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_below="@id/image_view" android:lineSpacingMultiplier="1.2" android:layout_marginHorizontal="@dimen/font16" />
+</RelativeLayout>

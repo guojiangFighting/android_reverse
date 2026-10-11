@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/hwappbarpattern_layout_navigation_icon" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center" android:id="@id/hwappbarpattern_navigation_icon" android:background="@drawable/hwappbarpattern_selector_back_icon_bg" android:visibility="gone" android:layout_width="@dimen/hwappbarpattern_icon_size" android:layout_height="@dimen/hwappbarpattern_back_icon_size_height" android:src="@drawable/hwappbarpattern_selector_public_back" android:scaleType="centerInside" android:layout_marginStart="@dimen/emui_dimens_default_start" />
+</LinearLayout>

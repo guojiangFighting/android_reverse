@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/svs_pop_dialog_corner" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/svs_txt_regular" android:textColor="@color/svs_main_txt_color" android:gravity="start" android:id="@id/text_content" android:paddingTop="18.0dp" android:paddingBottom="24.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/svs_com_continue_search_or_not" android:paddingStart="24.0dp" android:paddingEnd="24.0dp" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/svs_txt_regular" android:textColor="@color/svs_white_bg_txt_brand_color" android:id="@id/continue_search_cancel" android:background="@drawable/svs_com_history_bt_selector" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/svs_com_permission_dialog_cancel" android:layout_weight="0.5" android:stateListAnimator="@null" />
+        <View android:background="@color/svs_reminder_card_split_line_color" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginTop="10.0dp" android:layout_marginBottom="5.0dp" />
+        <Button android:textSize="@dimen/svs_txt_regular" android:textColor="@color/svs_white_bg_txt_brand_color" android:id="@id/continue_search" android:background="@drawable/svs_com_history_bt_selector" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/svs_com_confirm" android:layout_weight="0.5" android:stateListAnimator="@null" />
+    </LinearLayout>
+</LinearLayout>

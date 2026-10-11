@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/white" android:id="@id/btn_onlinPlay" android:background="@drawable/btn_vote_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="报名参与" android:layout_alignParentBottom="true" />
+    <ScrollView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/btn_onlinPlay">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dodonew.online.widget.MWebView android:id="@id/mwv_detail" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:background="@drawable/shape_title_btn" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="活动奖励" />
+            <RelativeLayout android:id="@id/view_detail_coupon" android:background="@drawable/white_bg_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_vertical" android:id="@id/tv_detail_coupon" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:drawableLeft="@drawable/icon_bar_coupon" android:drawablePadding="5.0dp" />
+            </RelativeLayout>
+            <TextView android:background="@drawable/shape_title_btn" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="报名参与人数" />
+            <com.dodonew.online.widget.MGridView android:id="@id/mgv_play" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:horizontalSpacing="5.0dp" android:verticalSpacing="5.0dp" android:numColumns="7" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

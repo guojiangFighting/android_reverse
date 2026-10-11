@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/like_icon_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_unliked" android:scaleType="center" android:alpha="@dimen/emui_secondary_content_alpha" android:paddingEnd="4.0dp" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_caption1" android:textColor="@color/new_emui_text_secondary" android:gravity="center_vertical" android:id="@id/like_count_tv" android:layout_width="wrap_content" android:layout_height="match_parent" android:fontFamily="@string/emui_text_font_family_regular" android:layout_toEndOf="@id/like_icon_view" />
+</RelativeLayout>

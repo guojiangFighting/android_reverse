@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mRelativeLayout" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/font8" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/service_store_hiv" android:layout_width="match_parent" android:layout_height="@dimen/dp_200" android:src="@color/default_pic_light_color" android:scaleType="centerCrop" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/no_gps_root_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:layout_marginBottom="@dimen/font16" android:paddingStart="@dimen/font12" android:paddingEnd="@dimen/font12">
+                <com.huawei.uikit.hwprogressbar.widget.HwProgressBar android:id="@id/loading_view" android:visibility="gone" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" app:layout_constraintBottom_toBottomOf="@id/np_gps_tv" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/np_gps_tv" style="@style/Widget.Emui.HwProgressBar.Large" />
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/np_gps_image_view" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:src="@drawable/drive_list_item_gps" app:layout_constraintBottom_toBottomOf="@id/np_gps_tv" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/np_gps_tv" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_button1" android:textColor="@color/emui_color_secondary" android:id="@id/np_gps_tv" android:layout_width="0.0dp" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginStart="@dimen/font16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/np_gps_image_view" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <RelativeLayout android:layout_gravity="bottom" android:id="@id/store_root_view" android:paddingLeft="@dimen/font12" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:layout_marginBottom="@dimen/font16">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/store_distance_tv" android:layout_centerVertical="true">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/store_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textColorPrimaryAndSizeBody1" />
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/store_addr_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2" android:drawablePadding="0.0dp" android:layout_below="@id/store_name_tv" style="@style/textColorSecondaryAndSizeBody3" />
+                </LinearLayout>
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/store_distance_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/ic_store_distance" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="16.0dp" android:layout_marginEnd="@dimen/font12" style="@style/textColorSecondaryAndSizeBody3AndDrawNoMargin" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

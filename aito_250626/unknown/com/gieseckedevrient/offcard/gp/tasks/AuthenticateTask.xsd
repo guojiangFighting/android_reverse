@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0"
+        xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0"
+        xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified">
+
+  <include schemaLocation="GpKeySetTypes.xsd"/>
+
+  <import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="CommonTypes.xsd"/>
+
+  <complexType name="AuthenticateTaskType">
+    <choice>
+      <element name="GpSecureChannelBaseKeySet" type="ogpt:GpSecureChannelBaseKeySetType"/>
+      <element name="GpSecureChannelKeySet" type="ogpt:GpSecureChannelKeySetType"/>
+      <element name="GpSecureChannel03KeySet" type="ogpt:GpSecureChannel03KeySetType"/>
+      <element name="VisaSecureChannelKeySet" type="ogpt:VisaSecureChannelKeySetType"/>
+      <element name="Autodetection" type="ogpt:AutodetectionType"/>
+    </choice>
+    <attribute name="Name" type="string" use="optional"/>
+    <attribute name="SecurityLevel" use="required">
+      <simpleType>
+        <restriction base="string">
+          <enumeration value="00"/>
+          <enumeration value="01"/>
+          <enumeration value="03"/>
+          <!-- RFU enumeration value="11"/>
+          <enumeration value="13"/>
+          <enumeration value="33"/-->
+        </restriction>
+      </simpleType>
+    </attribute>
+  </complexType>
+  
+  <complexType name="AutodetectionType">
+    <attribute name="Version" type="oct:EncodingHex1Byte" default="00" use="optional"/>
+    <attribute name="Identifier" type="oct:EncodingHex1Byte" default="00" use="optional"/>
+  </complexType>
+  
+</schema>

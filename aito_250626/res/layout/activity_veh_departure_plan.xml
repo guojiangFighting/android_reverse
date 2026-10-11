@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/id_fa_color_sub_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/veh_departure_plan_title" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/hwappbarpattern_title_item_layout" />
+    <androidx.core.widget.NestedScrollView android:id="@id/nested_sc" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/column_rl" android:layout_below="@id/veh_departure_plan_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.huawei.uikit.hwimageview.widget.HwImageView android:layout_gravity="center_horizontal" android:id="@id/iv_default_car" android:layout_width="@dimen/dp_312" android:layout_height="@dimen/dp_234" android:src="@drawable/veh_departure_plan_icon" android:layout_centerHorizontal="true" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="14.0sp" android:textColor="@color/opacity_60_black" android:layout_gravity="center_horizontal" android:id="@id/tv_sentry_mode_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/font24" android:text="@string/xcar_app_text_departure_plan_tips" />
+            <include layout="@layout/veh_departure_plan_list_item" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_subtitle2" android:textColor="@color/new_emui_text_primary" android:id="@id/tv_departure_plan_title" android:paddingTop="@dimen/font24" android:paddingBottom="8.5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xcar_app_text_departure_reservation_plan" android:fontFamily="@string/emui_text_font_family_medium" android:paddingStart="@dimen/font16" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/veh_plan_recycler" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout android:orientation="vertical" android:id="@id/column_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:layout_marginBottom="@dimen/font16" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:hwColumnType="button_type">
+        <com.huawei.uikit.phone.hwbutton.widget.HwButton android:layout_gravity="center_horizontal" android:id="@id/departure_plan_create_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_button_departure_create_new_plan" style="@style/Widget.Emui.HwButton.Light" />
+    </com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout>
+    <include android:visibility="gone" layout="@layout/xcar_ota_loadding_view" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0"
+  xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0"
+  xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified">
+
+  <import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="CommonTypes.xsd" />
+
+  <complexType name="SelectAppletTaskType">
+    <sequence>
+      <element name="AppletInstanceAid" type="oct:EncodingAidHex" minOccurs="0" />
+    </sequence>
+    <attribute name="Name" type="string" use="optional"/>
+    <attribute name="Type" type="oct:AppletType" use="required"/>
+  </complexType>
+  
+</schema>

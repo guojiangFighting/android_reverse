@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.utils.widget.ImageFilterView android:id="@id/iv_vehicle_location" android:layout_width="match_parent" android:layout_height="0.0dp" android:scaleType="centerCrop" app:layout_constraintDimensionRatio="16:9" app:layout_constraintTop_toTopOf="parent" app:round="@dimen/radius_l" />
+</androidx.constraintlayout.widget.ConstraintLayout>

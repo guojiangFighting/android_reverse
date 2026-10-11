@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/no_friend" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/contact_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_ic_nopeople" />
+    <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_text_secondary" android:gravity="center_horizontal" android:id="@id/no_friend_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xcar_app_text_sns_no_match_friend" />
+</LinearLayout>

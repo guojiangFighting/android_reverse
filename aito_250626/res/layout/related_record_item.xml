@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/cardview_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_12" android:paddingHorizontal="@dimen/baseui_dp_12"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_14" android:text="@string/xcar_app_text_all_related_record" style="@style/textColorPrimaryAndSizeBody1AndFamilyRegular" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_2" android:layout_marginBottom="@dimen/baseui_dp_15" android:text="@string/xcar_app_text_all_related_record" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+    </LinearLayout>
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/baseui_dp_4" style="@style/textColorPrimaryActivatedAndSizeBody2AndRegular" />
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/arr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_public_arrow_right" android:alpha="0.2" />
+</LinearLayout>

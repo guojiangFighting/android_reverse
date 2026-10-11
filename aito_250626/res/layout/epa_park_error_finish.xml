@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/epa_error_finish_page" android:background="@color/base_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/epa_park_error_normal_finish_img" android:background="@drawable/background_blue_gradient" android:layout_width="match_parent" android:layout_height="512.0dp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp">
+        <TextView android:textSize="28.0dp" android:textColor="@color/base_black" android:id="@id/epa_park_finish_title" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="100.0dp" android:text="@string/epa_exit_title" android:textFontWeight="600" />
+        <TextView android:textSize="14.0dp" android:id="@id/epa_park_finish_msg" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginTop="6.0dp" android:text="@string/epa_exit_error_msg" />
+        <FrameLayout android:id="@id/epa_image_error_finish" android:background="@drawable/background_grey_radius_16" android:layout_width="match_parent" android:layout_height="426.0dp" android:layout_marginTop="27.0dp">
+            <FrameLayout android:id="@id/epa_image_found" android:background="@drawable/background_grey_radius_16" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/epa_image" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/epa_car_image" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/epa_image_not_found" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:id="@id/epa_image_not_found_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/epa_complete_load_fail" />
+                <TextView android:textColor="@color/epa_image_ensure" android:gravity="center" android:id="@id/epa_image_not_found_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/epa_loading_failed" android:layout_centerHorizontal="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/epa_image_loading" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <com.huawei.ads.sdk.epa.view.AdsProgressBar android:layout_width="72.0dp" android:layout_height="72.0dp" />
+                <TextView android:textSize="14.0dp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/epa_video_loading_msg" android:layout_centerHorizontal="true" android:textFontWeight="400" />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textSize="12.0dp" android:id="@id/epa_finish_time_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/epa_finish_time" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/svs_com_ads_rpa_finish_img_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/ads_rpa_finish" />
+    <ImageView android:id="@id/epa_park_error_unnormal_finish_img" android:background="@drawable/background_error_gradient" android:layout_width="match_parent" android:layout_height="512.0dp" />
+    <Button android:textSize="16.0dp" android:textColor="@color/ads_white_color" android:gravity="center" android:layout_gravity="bottom" android:id="@id/epa_back_btn" android:background="@drawable/ads_selector_btn_baic" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="96.0dp" android:layout_marginBottom="32.0dp" android:text="@string/widget_btn_back" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+    <Button android:textSize="16.0dp" android:textColor="@color/ads_white_color" android:gravity="center" android:layout_gravity="bottom" android:id="@id/jump_to_rda_view" android:background="@drawable/ads_selector_btn_baic" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="12.0dp" android:layout_marginBottom="32.0dp" android:text="@string/jump_to_rda" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+</FrameLayout>

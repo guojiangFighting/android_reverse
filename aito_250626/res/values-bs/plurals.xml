@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Premotavanje %d sekundu naprijed</item>
+        <item quantity="few">Premotavanje %d sekunde naprijed</item>
+        <item quantity="other">Premotavanje %d sekundi naprijed</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Premotavanje %d sekundu nazad</item>
+        <item quantity="few">Premotavanje %d sekunde nazad</item>
+        <item quantity="other">Premotavanje %d sekundi nazad</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d novo obavještenje</item>
+        <item quantity="few">%d nova obavještenja</item>
+        <item quantity="other">%d novih obavještenja</item>
+    </plurals>
+    <plurals name="page_progress">
+        <item quantity="one">Stranica %1$d</item>
+        <item quantity="few">Stranica %1$d</item>
+        <item quantity="other">Stranica %1$d</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="one">%d zvjezdica</item>
+        <item quantity="few">%d zvjezdice</item>
+        <item quantity="other">%d zvjezdica</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="one">od %1$d</item>
+        <item quantity="few">od %1$d</item>
+        <item quantity="other">od %1$d</item>
+    </plurals>
+</resources>

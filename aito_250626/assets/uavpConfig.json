@@ -1,0 +1,13 @@
+{
+  "gammaHost": "mobile.avp.gamma.adscloud.huawei.com",
+  "preProductHost": "mobile.avp.preprod.adscloud.huawei.com",
+  "productHost": "mobile.avp.adscloud.huawei.com",
+  "valetGammaHost": "api.gamma.adscloud.huawei.com",
+  "valetPreProductHost": "valet-parking.preprod.adscloud.huawei.com",
+  "valetProductHost": "valet-parking.adscloud.huawei.com",
+  "gammaWsHost": "mobile.avp.gamma.adscloud.huawei.com/mobile/uavp/webSocket",
+  "preWsHost": "mobile.avp.preprod.adscloud.huawei.com/mobile/uavp/webSocket",
+  "productWsHost": "mobile.avp.adscloud.huawei.com/mobile/uavp/webSocket",
+  "tsProdReferer": "https://cloud.keytop.cn",
+  "tsTestReferer": "https://ts.keytop.cn"
+}

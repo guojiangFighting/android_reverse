@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.dodonew.online" platformBuildVersionCode="23" platformBuildVersionName="6.0-2704002">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <permission android:name="com.dodonew.online.permission.MIPUSH_RECEIVE" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.dodonew.online.permission.MIPUSH_RECEIVE"/>
+    <application android:allowBackup="true" android:icon="@drawable/icon_app" android:label="@string/app_name" android:name="com.dodonew.online.DodonewOnlineApplication" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.dodonew.online.ui.StartActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dodonew.online.ui.AppGuideActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:launchMode="singleTask" android:name="com.dodonew.online.ui.GuideActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.dodonew.online.ui.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.dodonew.online.ui.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.dodonew.online.ui.RegisterActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.dodonew.online.ui.FindPasswordActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.dodonew.online.ui.GuessMoreActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.dodonew.online.ui.GuessDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:hardwareAccelerated="true" android:layerType="software" android:name="com.dodonew.online.ui.NewsDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.dodonew.online.ui.ActiveDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.dodonew.online.ui.FunctionActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.dodonew.online.ui.ShopActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.dodonew.online.ui.ScanActivity" android:screenOrientation="portrait" android:stateNotNeeded="true" android:theme="@style/AppTheme.MyTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.dodonew.online.ui.ChooseCityActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTask" android:name="com.dodonew.online.ui.SearchNetBarActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.dodonew.online.ui.NetbarDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.dodonew.online.ui.MapActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.dodonew.online.ui.OnlineDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.dodonew.online.ui.OrderBarActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.OrderPayActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.OrderRechargeDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.TicketActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.GetTicketActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.dodonew.online.ui.MyOrderActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.MyGuessActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.MyTicketActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.MyCardActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.MyAddCardActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.UserInfoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.ScoreMallActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.BindCardProvinceActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.dodonew.online.ui.PayActivity" android:screenOrientation="behind" android:theme="@style/AppTheme.MyTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.dodonew.online.ui.AddressActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.AddAddressActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.UserInfoEditorActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.BindMobileActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.OrderDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.ProvinceActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.SettingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.ScoreRecordActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.ExchangeRecordActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.MyCollectionActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.MyActiveActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:name="com.dodonew.online.ui.FeedbackActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.dodonew.online.ui.AboutActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:hardwareAccelerated="true" android:name="com.dodonew.online.ui.GamePlayActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dodonew.online.ui.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.MyTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:hardwareAccelerated="true" android:name="com.dodonew.online.ui.PlayVideoActivity" android:screenOrientation="sensor" android:theme="@style/AppTheme.MyTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.umeng.fb.ConversationActivity"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="54b5d5f6fd98c5c91f0011fa"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="baidu"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="c5e4afee43c52bb00e2df9039d4aa470"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mob.tools.MobUIShell" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent1104219088"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent1104219088"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.dodonew.online.wxapi.WXEntryActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxe759af68c4898c4a"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="true" android:name="com.dodonew.online.wxapi.WXPayEntryActivity" android:screenOrientation="portrait" android:theme="@style/TransparentDialog" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.auth.AuthActivity" android:screenOrientation="behind"/>
+        <service android:enabled="true" android:name="com.xiaomi.push.service.XMPushService" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <receiver android:exported="true" android:name="com.dodonew.online.receiver.XiaoMiPushReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/search_bar_contanier" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/netBar_search" android:background="@color/colorPrimary" android:paddingLeft="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@drawable/white_color_selector" android:gravity="center" android:id="@id/netBar_search_top_right" android:background="@drawable/top_cancel_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.dodonew.online.view.SearchView android:textSize="12.0sp" android:textColor="@color/option_txt_color" android:textColorHint="@color/gray" android:id="@id/netBar_search_searchview" android:background="@drawable/et_bg" android:paddingLeft="15.0dp" android:paddingTop="5.0dp" android:paddingRight="5.0dp" android:paddingBottom="5.0dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/netbat_search_hint" android:singleLine="true" android:drawableLeft="@drawable/icon_search" android:drawablePadding="10.0dp" android:layout_toLeftOf="@id/netBar_search_top_right" android:layout_centerVertical="true" android:imeOptions="actionSearch" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/view_hot" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/netBar_search">
+        <TextView android:background="@color/background" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="热门搜索" />
+        <com.dodonew.online.widget.MultiStateView android:id="@id/multiStateView" android:layout_width="match_parent" android:layout_height="wrap_content" app:msv_loadingView="@layout/view_loading" app:msv_emptyView="@layout/view_empty" app:msv_errorView="@layout/view_error" app:msv_viewState="loading">
+            <com.dodonew.online.widget.MGridView android:id="@id/mgv_hot" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:horizontalSpacing="5.0dp" android:verticalSpacing="5.0dp" android:numColumns="3" />
+        </com.dodonew.online.widget.MultiStateView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/view_hot">
+        <RelativeLayout android:background="@color/background" android:paddingLeft="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最近搜索" android:layout_centerVertical="true" />
+            <TextView android:id="@id/tv_record_clear" android:background="@drawable/click_selector" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="清除记录" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.dodonew.online.widget.MultiStateView android:id="@id/msv_recently" android:layout_width="match_parent" android:layout_height="wrap_content" app:msv_loadingView="@layout/view_loading" app:msv_emptyView="@layout/view_empty" app:msv_errorView="@layout/view_error" app:msv_viewState="loading">
+            <android.support.v7.widget.RecyclerView android:orientation="vertical" android:id="@id/rv_recently" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </com.dodonew.online.widget.MultiStateView>
+    </LinearLayout>
+</RelativeLayout>

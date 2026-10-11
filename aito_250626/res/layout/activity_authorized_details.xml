@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/id_fa_color_sub_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/mine_authorized_details" layout="@layout/mine_hwappbarpattern_navigation_icon_layout" />
+    <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/mine_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_marginBottom="@dimen/font12" android:layout_below="@id/mine_authorized_details" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" app:cardCornerRadius="@dimen/font16" app:hwAdvancedCardViewClickAnimationEnable="false" style="@style/Widget.Emui.HwAdvancedCardView.Light">
+        <RelativeLayout android:id="@id/mine_relative_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/font12" android:layout_marginEnd="@dimen/font12">
+            <RelativeLayout android:id="@id/mine_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/mine_name_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font16_empower" android:gravity="left" android:id="@id/mine_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/textColorPrimaryAndDimensTertiaryAndFamilyRegular" />
+                </LinearLayout>
+                <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/mine_image" android:layout_width="match_parent" android:layout_height="152.0dp" android:layout_marginTop="@dimen/font20" android:src="@drawable/drive_gps_icon_location" android:layout_below="@id/mine_name_layout" />
+                <RelativeLayout android:id="@id/mine_layout_binding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font12" android:layout_below="@id/mine_image">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14_empower" android:textColor="@color/emui_color_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_authorized_account" style="@style/textColorSecondaryAndChipsAndFamilyRegular" />
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14_empower" android:textColor="@color/emui_color_secondary" android:id="@id/mine_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" style="@style/textColorSecondaryAndChipsAndFamilyRegular" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/mine_layout1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font12" android:layout_below="@id/mine_layout_binding">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14_empower" android:textColor="@color/emui_color_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_authorization_effect_time" style="@style/textColorSecondaryAndChipsAndFamilyRegular" />
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14_empower" android:textColor="@color/emui_color_secondary" android:id="@id/mine_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" style="@style/textColorSecondaryAndChipsAndFamilyRegular" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+    <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font12" android:layout_below="@id/mine_detail" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" app:cardCornerRadius="@dimen/font16" app:hwAdvancedCardViewClickAnimationEnable="false" style="@style/Widget.Emui.HwAdvancedCardView.Light">
+        <RelativeLayout android:id="@id/my_car_relative_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/font12" android:layout_marginEnd="@dimen/font12">
+            <RelativeLayout android:id="@id/my_car_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font16_empower" android:gravity="center_vertical" android:id="@id/my_car_name" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:text="@string/xcar_appt_text_authorization_function_range" style="@style/textColorPrimaryAndDimensTertiaryAndFamilyRegular" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/mine_PermissionRv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font4" android:layout_below="@id/my_car_name" android:overScrollMode="never" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

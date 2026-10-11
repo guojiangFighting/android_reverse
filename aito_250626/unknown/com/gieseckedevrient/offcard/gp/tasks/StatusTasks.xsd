@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0"
+        xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0"
+        xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified">
+
+  <import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="CommonTypes.xsd"/>
+
+  <complexType name="GetStatusTaskType">
+    <sequence>
+      <element name="Aid" type="oct:EncodingAidHex" minOccurs="0"/>
+      <element name="SearchCriteria" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+    </sequence>
+    <attribute name="Name" type="string" use="optional"/>
+    <attribute name="Subset" type="ogpt:GetStatusSubsetType" use="required"/>
+  </complexType>
+  
+  <simpleType name="GetStatusSubsetType">
+    <restriction base="token">
+      <enumeration value="IssuerSecurityDomain" />
+      <enumeration value="SecurityDomains" />
+      <enumeration value="AppletsSecurityDomains" />
+      <enumeration value="Applets" />
+      <enumeration value="Packages" />
+      <enumeration value="PackagesAppletClasses" />
+    </restriction>
+  </simpleType>
+  
+  <complexType name="SetStatusTaskType">
+    <choice>
+      <element name="IssuerSecurityDomainStatus" type="ogpt:IssuerSecurityDomainStatusType"/>
+      <element name="AppletStatus" type="ogpt:AppletStatusType" />
+    </choice>
+    <attribute name="Name" type="string" use="optional"/>
+  </complexType>
+  
+  <complexType name="IssuerSecurityDomainStatusType">
+    <sequence>
+      <element name="Aid" type="oct:EncodingAidHex" minOccurs="0" />
+    </sequence>
+    <attribute name="Status" use="required">
+      <simpleType>
+        <restriction base="string">
+          <enumeration value="INITIALIZED"/>
+          <enumeration value="SECURED"/>
+          <enumeration value="LOCKED"/>
+          <enumeration value="TERMINATED"/>
+        </restriction>
+      </simpleType>
+    </attribute>
+  </complexType>
+  
+  <complexType name="AppletStatusType">
+    <sequence>
+      <element name="Aid" type="oct:EncodingAidHex" minOccurs="0" />
+    </sequence>
+    <attribute name="Status" use="required">
+      <simpleType>
+      	<union>
+      	  <simpleType>
+	        <restriction base="string">
+	          <enumeration value="INSTALLED"/>
+	          <enumeration value="SELECTABLE"/>
+	          <enumeration value="PERSONALIZED"/>
+	          <enumeration value="BLOCKED"/>
+	          <enumeration value="LOCKED"/>
+	          <enumeration value="LOCKED(INSTALLED)"/>
+	          <enumeration value="LOCKED(SELECTABLE)"/>
+	          <enumeration value="LOCKED(PERSONALIZED)"/>
+	        </restriction>
+      	  </simpleType>
+      	  <simpleType>
+        	<restriction base="string">
+              <pattern value="SPECIFIC_[0-7][0-9a-fA-F]"/>
+            </restriction>
+      	  </simpleType>
+      	  <simpleType>
+        	<restriction base="string">
+              <pattern value="LOCKED\(SPECIFIC\)_[8-9a-fA-F][0-9a-fA-F]"/>
+            </restriction>
+      	  </simpleType>
+      	</union>
+      </simpleType>
+    </attribute>
+  </complexType>
+  
+</schema>

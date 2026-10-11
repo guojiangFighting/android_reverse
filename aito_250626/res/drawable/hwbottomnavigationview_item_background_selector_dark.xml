@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/hwbottomnavigationview_item_background_hovered_or_pressed_dark" />
+    <item>
+        <selector>
+            <item android:state_focused="true" android:state_window_focused="true" android:drawable="@drawable/hwbottomnavigationview_item_background_focus_dark" />
+        </selector>
+    </item>
+</layer-list>

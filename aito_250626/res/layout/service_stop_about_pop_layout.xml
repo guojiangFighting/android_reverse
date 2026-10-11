@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="117.0dp" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="@dimen/font16" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font14" app:cardCornerRadius="@dimen/emui_corner_radius_card" app:cardElevation="@dimen/font4" app:hwAdvancedCardViewClickAnimationEnable="false" style="@style/Base.CardView">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/font4" android:paddingBottom="@dimen/font4" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/font16" android:paddingEnd="@dimen/font16">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/layout_service_about" android:layout_width="match_parent" android:layout_height="48.0dp">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xcar_app_text_service_about" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeCaptionAndFamilyRegular" />
+                <View android:background="#33000000" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/font32" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/layout_service_stop" android:layout_width="match_parent" android:layout_height="48.0dp">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xcar_app_button_service_stop" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeCaptionAndFamilyRegular" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

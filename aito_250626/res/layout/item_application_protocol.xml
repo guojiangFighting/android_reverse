@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/third_application_protocol_list" android:paddingTop="@dimen/font8" android:paddingBottom="@dimen/font8" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:layout_marginStart="@dimen/hwlistpattern_item_margin_12" android:layout_marginEnd="@dimen/hwlistpattern_item_margin_12">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="end" android:id="@id/protocol_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_third_application_protocol" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/font16" style="@style/textColorPrimaryAndSizeBody1" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hwlistpattern_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/protocol_line" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginStart="@dimen/hwlistpattern_item_margin_12" android:layout_marginEnd="@dimen/hwlistpattern_item_margin_12" />
+</LinearLayout>

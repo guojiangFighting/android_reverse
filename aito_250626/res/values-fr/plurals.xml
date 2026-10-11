@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Avancer de %d seconde</item>
+        <item quantity="other">Avancer de %d secondes</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Revenir en arrière de %d seconde</item>
+        <item quantity="other">Revenir en arrière de %d secondes</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nouvelle notification</item>
+        <item quantity="other">%d nouvelles notifications</item>
+    </plurals>
+    <plurals name="page_progress">
+        <item quantity="one">Page %1$d</item>
+        <item quantity="other">Page %1$d</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="one">%d étoile</item>
+        <item quantity="other">%d étoiles</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="one">sur %1$d</item>
+        <item quantity="other">sur %1$d</item>
+    </plurals>
+</resources>

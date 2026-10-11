@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout android:id="@id/community_hsrl" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <app.huawei.auto.base.view.CustomRecyclerView android:id="@id/post_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+        <include android:id="@id/no_content_view_community" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/center_empty_status" />
+        <include android:id="@id/no_content_view_login" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/dyna_empty_login_status" />
+    </com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout>
+    <include android:id="@id/error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/center_no_network_connect" />
+    <include android:id="@id/load_progress_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/center_load_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

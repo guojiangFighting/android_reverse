@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <app.huawei.auto.base.view.StatusBarView android:id="@id/status_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/wifi_rl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_below="@id/status_bar" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:cardCornerRadius="@dimen/emui_corner_radius_large" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16.0dp">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="16.0sp" android:id="@id/fingerprint_list_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_allow_non_wlan_playback" android:alpha="0.9" style="@style/textSizeBody1AndColorPrimary" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_secondary" android:id="@id/video_setting_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_play_video_and_audio_on_mobile_data_and_hotspots" android:layout_below="@id/fingerprint_list_text" android:fontFamily="@string/emui_text_font_family_regular" />
+            </RelativeLayout>
+            <com.huawei.uikit.phone.hwswitch.widget.HwSwitch android:id="@id/enable_net_switch" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_centerVertical="true" android:layout_marginEnd="2.0dp" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

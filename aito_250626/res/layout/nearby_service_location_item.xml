@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/nearby_service_lay" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_selector_text_primary" android:id="@id/nearby_service_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font10" android:fontFamily="@string/emui_text_font_family_medium" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_selector_text_secondary" android:id="@id/nearby_service_address" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/emui_dimens_text_vertical" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_selector_text_secondary" android:id="@id/nearby_service_distance" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/emui_dimens_text_vertical" android:textDirection="locale" />
+    <View android:id="@id/item_view" android:background="@drawable/ic_horizontal_driver_bg" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="@dimen/font16" />
+</LinearLayout>

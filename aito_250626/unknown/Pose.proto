@@ -1,0 +1,15 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+import "Point.proto";
+import "Quaternion.proto";
+
+package KyberMsgs;
+
+option java_package = "com.huawei.ads.uavp.servicecommon.bean.proto";
+option java_outer_classname = "PbPose";
+
+message Pose {
+    Point position = 1; // 位置
+    Quaternion orientation = 2; // 旋转（保留字段，暂未使用）
+}

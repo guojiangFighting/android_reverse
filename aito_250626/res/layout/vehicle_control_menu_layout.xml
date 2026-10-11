@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/vehicle_shortcut_control" android:paddingTop="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:cardCornerRadius="@dimen/baseui_dp_8" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:orientation="vertical" android:id="@id/bottom_menu_ll" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" android:layout_marginStart="4.0dp" android:layout_marginEnd="4.0dp">
+            <app.huawei.auto.vehicle.view.BottomMenuView android:id="@id/menu_digital_key" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="59.0dp" />
+            <app.huawei.auto.vehicle.view.BottomMenuView android:id="@id/menu_digital_rpa" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="59.0dp" />
+            <app.huawei.auto.vehicle.view.BottomMenuView android:id="@id/menu_uavp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="59.0dp" />
+            <app.huawei.auto.vehicle.view.BottomMenuView android:id="@id/menu_veh_sentry_mode" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="59.0dp" />
+            <app.huawei.auto.vehicle.view.BottomMenuView android:id="@id/menu_veh_cloud_live" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="59.0dp" />
+            <app.huawei.auto.vehicle.view.BottomMenuView android:id="@id/menu_veh_scene_mode" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="59.0dp" />
+            <app.huawei.auto.vehicle.view.BottomMenuView android:id="@id/menu_hi_scenario" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="59.0dp" />
+            <app.huawei.auto.vehicle.view.BottomMenuView android:id="@id/menu_departure_plan" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="59.0dp" />
+            <app.huawei.auto.vehicle.view.BottomMenuView android:id="@id/menu_warm_cooling_box" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="59.0dp" />
+            <app.huawei.auto.vehicle.view.BottomMenuView android:id="@id/menu_veh_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="59.0dp" />
+            <app.huawei.auto.vehicle.view.BottomMenuView android:id="@id/menu_driving_report" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="59.0dp" />
+            <app.huawei.auto.vehicle.view.BottomMenuView android:id="@id/menu_charging_statistic" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="59.0dp" />
+            <app.huawei.auto.vehicle.view.BottomMenuView android:id="@id/menu_ota_version" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="59.0dp" />
+        </LinearLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</LinearLayout>

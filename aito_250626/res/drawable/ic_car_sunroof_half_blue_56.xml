@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="@dimen/font56" android:width="@dimen/font56">
+        <shape>
+            <size android:height="@dimen/font56" android:width="@dimen/font56" />
+            <corners android:radius="@dimen/font56" />
+            <solid android:color="@color/emui_accent" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:drawable="@drawable/ic_car_sunroof_half_white_svg" />
+</layer-list>

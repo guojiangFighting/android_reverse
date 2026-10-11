@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:background="#f1f3f5" android:layout_width="match_parent" android:layout_height="96.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/iv_qr_code" android:layout_width="65.0dp" android:layout_height="65.0dp" android:layout_marginLeft="16.0dp" android:layout_marginTop="@dimen/font10" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24" android:layout_toRightOf="@id/iv_qr_code">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_primary" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_brand_eng" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginStart="16.0dp" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/emui_color_secondary" android:id="@id/tv_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_press_qrcode_to_check_detail" android:layout_below="@id/title" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginStart="16.0dp" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_header" android:layout_width="42.0dp" android:layout_height="42.0dp" android:layout_marginTop="@dimen/font26" android:layout_marginRight="16.0dp" android:src="@drawable/ic_logo_poster" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+</RelativeLayout>

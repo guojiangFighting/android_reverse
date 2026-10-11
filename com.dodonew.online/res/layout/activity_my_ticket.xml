@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/white" android:id="@id/btn_get_ticket" android:background="@drawable/btn_vote_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="去领取" android:layout_alignParentBottom="true" />
+    <com.dodonew.online.widget.MultiStateView android:id="@id/multiStateView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/btn_get_ticket" app:msv_loadingView="@layout/view_load_web" app:msv_emptyView="@layout/view_empty" app:msv_errorView="@layout/view_error" app:msv_viewState="loading"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+        <include layout="@layout/view_recyclerview_refresh" />
+    </com.dodonew.online.widget.MultiStateView>
+</RelativeLayout>

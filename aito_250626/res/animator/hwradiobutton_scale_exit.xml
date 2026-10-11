@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:interpolator="@interpolator/cubic_bezier_interpolator_type_20_90" android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:duration="@integer/hwradiobutton_animation_duration" android:valueFrom="1.0" android:valueTo="0.0" android:propertyName="scaleX" />
+    <objectAnimator android:duration="@integer/hwradiobutton_animation_duration" android:valueFrom="1.0" android:valueTo="0.0" android:propertyName="scaleY" />
+</set>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/my_car_layout_binding" android:layout_width="match_parent" android:layout_height="64.0sp">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="16.0sp" android:gravity="left" android:id="@id/mine_Remote_control" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_mine_remote_control" style="@style/textColorPrimaryAndDimensTertiaryAndFamilyRegular" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14_empower" android:textColor="@color/emui_color_secondary" android:id="@id/mine_Permission_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_use_remote_control" android:layout_below="@id/mine_Remote_control" style="@style/textColorSecondaryAndChipsAndFamilyRegular" />
+    </RelativeLayout>
+</RelativeLayout>

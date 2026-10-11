@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/publish_empty_layout" android:background="#f1f3f5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/empty_image" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_120" android:src="@drawable/icon_mine_empty" android:layout_centerInParent="true" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/no_empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_below="@id/empty_image" android:layout_centerHorizontal="true" style="@style/textColorTertiaryAndSizeBody2" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/empty_click_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/no_empty_text" android:layout_centerHorizontal="true" style="@style/textColorLinkAndSizeBody2AndFamilyMedium" />
+    </LinearLayout>
+</RelativeLayout>

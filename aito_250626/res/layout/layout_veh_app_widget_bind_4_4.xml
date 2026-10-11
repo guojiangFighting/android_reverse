@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/ic_bg_veh_widget_bind_4_4" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font16" android:textColor="@color/new_emui_text_primary" android:id="@id/tv_veh_widget_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="119.5dp" android:text="@string/xcar_app_text_veh_app_widget_bind_title" android:layout_above="@id/tv_veh_widget_bind_title_4_4" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/iv_veh_widget_bind_logo_4_4" android:visibility="gone" android:layout_width="70.0dp" android:layout_height="22.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/ic_veh_widget_aito_logo_2" android:layout_above="@id/tv_veh_widget_title" android:layout_alignStart="@id/tv_veh_widget_title" />
+    <TextView android:textSize="@dimen/font16" android:textColor="@color/new_emui_text_primary" android:gravity="center" android:id="@id/tv_veh_widget_bind_title_4_4" android:background="@drawable/ic_bg_veh_widget_fillet_3" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginBottom="24.0dp" android:text="@string/xcar_app_button_veh_app_widget_bind_btn_title" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:layout_marginStart="24.0dp" android:layout_marginEnd="24.0dp" />
+</RelativeLayout>

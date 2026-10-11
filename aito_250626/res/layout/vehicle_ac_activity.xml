@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <app.huawei.auto.vehicle.util.MyViewPager android:id="@id/vehicle_ac_vp" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+    <include android:id="@id/vehicle_ac_title_l" android:layout_width="match_parent" android:layout_height="@dimen/hwappbarpattern_height" android:layout_marginLeft="-8.0dp" layout="@layout/hwappbarpattern_title_item_layout" />
+    <com.huawei.uikit.phone.hwsubtab.widget.HwSubTabWidget android:id="@id/vehicle_ac_sub_tab" android:background="#00000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/vehicle_ac_title_l" app:hwSubTabItemMargin="8.0dp" style="@style/Widget.Emui.HwSubTabBar.Light" />
+    <include android:visibility="gone" layout="@layout/xcar_ota_loadding_view" />
+</RelativeLayout>

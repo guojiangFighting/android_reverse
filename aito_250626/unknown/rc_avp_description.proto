@@ -1,0 +1,48 @@
+
+// [START declaration]
+syntax = "proto3";
+package rc_avp.description;
+option java_package = "com.huawei.ads.carsearch.proto.description";
+option java_outer_classname = "RcAvpDescription";
+// [END declaration]
+
+// [START messages]
+message Patch {
+    repeated ParkingArea parkingAreas = 1;                 // 停车场分层围栏
+    repeated CoorTrans trans = 2;                          // 坐标转换关系
+    UNMannedInfo unmanedInfo = 3;                          // 无人avp激活信息
+}
+
+message Point {
+    double x = 1;
+    double y = 2;
+    double z = 3;
+}
+
+message UNMannedInfo {
+    bool canActivate = 1;                                  // 是否可激活
+    repeated int32 activateLayers = 2;                     // 可激活的楼层
+}
+
+message CoorTrans {
+  uint32 zoneId = 1;                                       // ZoneId utm度带
+  repeated double enuPoseQ = 2;                            // EnuPoseQ
+  repeated double enuPoseT = 3;                            // EnuPoseQ
+  repeated double avpPoseQ = 4;                            // AvpPoseQ
+  repeated double avpPoseT = 5;                            // AvpPoseQ
+  repeated double std = 6;                                 // Std
+}
+
+message ParkingArea {
+    uint32 id = 1;                                         // 停车场分层围栏编号
+    PolyPoints outer = 2;                                  // 停车场分层围栏几何
+    repeated PolyPoints inners = 3;                        // 停车场分层围栏几何
+    uint32 type = 4;                                       // 停车场分层围栏类型
+    float averageZ = 5;                                    // 停车场分层围栏平均高度
+    repeated int32 layers = 6;                             // 停车场分层围栏分层信息
+}
+
+message PolyPoints {
+    repeated Point points = 1;
+}
+// [END messages]

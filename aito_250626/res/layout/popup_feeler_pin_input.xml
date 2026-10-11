@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:id="@id/bar_loading" android:visibility="gone" android:layout_width="50.0dp" android:layout_height="50.0dp" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pin_input_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pin_input_title" />
+        <View android:background="@null" android:layout_width="match_parent" android:layout_height="10.0dp" />
+        <com.huawei.hmsauto.feeler.page.view.PinInputView android:layout_gravity="center" android:id="@id/pin_input_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="numberPassword" app:strokeBackground="@color/black" app:strokeHeight="50.0dp" app:strokeLength="6" app:strokePadding="5.0dp" app:strokeWidth="40.0dp" />
+        <View android:background="@null" android:layout_width="match_parent" android:layout_height="10.0dp" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="20.0sp" android:textColor="@color/emeraldblue" android:gravity="center" android:id="@id/pin_input_cancel" android:background="@null" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

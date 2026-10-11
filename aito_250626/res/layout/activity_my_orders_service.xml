@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/my_orders_service_l" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvBrand" android:paddingTop="@dimen/baseui_dp_8" android:paddingBottom="@dimen/baseui_dp_8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:overScrollMode="never" android:layout_marginStart="@dimen/baseui_dp_13" android:layout_marginEnd="@dimen/baseui_dp_13" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llServiceOrder" android:paddingTop="@dimen/baseui_dp_8" android:paddingBottom="@dimen/baseui_dp_8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12" android:layout_below="@id/rvBrand">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/serviceOrderRecyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+    </LinearLayout>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rvBrand" layout="@layout/x_car_empty_with_action_view" />
+    <include android:id="@id/service_load_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rvBrand" layout="@layout/xcar_loading_layout" />
+    <include android:id="@id/error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rvBrand" layout="@layout/xcar_error_layout" />
+    <include android:id="@id/service_network_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rvBrand" layout="@layout/order_network_errorview" />
+    <include android:id="@id/service_message_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rvBrand" layout="@layout/order_message_errorview" />
+</RelativeLayout>

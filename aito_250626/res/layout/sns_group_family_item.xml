@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/rel_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="70.0dp" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+        <LinearLayout android:id="@id/layout_group_new_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+            <ImageView android:layout_gravity="start|center" android:id="@id/image_head" android:background="@drawable/mine_portrait" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" />
+            <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/font14" android:textColor="@color/emui_color_text_primary" android:ellipsize="end" android:layout_gravity="start|center" android:id="@id/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:fontFamily="@string/emui_text_font_family_regular" android:textAlignment="viewStart" android:layout_marginStart="@dimen/emui_dimens_element_horizontal_large" />
+            <app.huawei.auto.im.ui.widget.CustomFontTextView android:layout_gravity="center_vertical" android:id="@id/text_tag" android:paddingTop="@dimen/sns_team_flag_padding" android:paddingBottom="@dimen/sns_team_flag_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_team_flag_padding" android:text="@string/xcar_app_text_sns_team" android:includeFontPadding="false" android:layout_marginStart="5.0dp" style="@style/sns_team_flag_style" />
+            <ImageView android:id="@id/image_arrow" android:background="@drawable/ic_next" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/emui_dimens_max_start" android:layout_marginEnd="@dimen/emui_dimens_max_end" android:backgroundTint="@color/crossuikit_color_fourth" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/sns_list_divider" android:layout_width="match_parent" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" style="@style/crossuikit_divider_style" />
+</RelativeLayout>

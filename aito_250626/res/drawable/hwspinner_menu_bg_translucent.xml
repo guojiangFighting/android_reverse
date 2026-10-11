@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/emui_dialog_bg_translucent" />
+    <corners android:radius="@dimen/emui_corner_radius_card" />
+    <padding android:top="@dimen/hwspinner_bg_padding" android:bottom="@dimen/hwspinner_bg_padding" />
+</shape>

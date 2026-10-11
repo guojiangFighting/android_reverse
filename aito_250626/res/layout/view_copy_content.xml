@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/copy_content_htv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font8" android:layout_toLeftOf="@id/copy_image" android:layout_toRightOf="@id/order_number" style="@style/textColorSecondaryAndSizeBody2" />
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center_vertical" android:id="@id/copy_content_hiv" android:background="@drawable/ic_public_copy" android:layout_width="@dimen/font14" android:layout_height="@dimen/font14" android:layout_marginLeft="@dimen/font4" android:layout_marginTop="1.0dp" android:layout_alignParentRight="true" />
+</LinearLayout>

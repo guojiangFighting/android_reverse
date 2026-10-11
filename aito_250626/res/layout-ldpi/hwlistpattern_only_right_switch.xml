@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.hwswitch.widget.HwSwitch android:gravity="center" android:id="@id/hwlistpattern_switch" android:layout_width="@dimen/hwlistpattern_item_right_element_width" android:layout_height="@dimen/hwlistpattern_item_right_element_height" android:layout_marginStart="@dimen/hwlistpattern_item_margin_left_10" android:layout_marginEnd="@dimen/hwlistpattern_item_margin_right_6" style="@style/Widget.Emui.HwSwitch"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

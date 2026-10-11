@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/node_status" android:layout_width="@dimen/baseui_dp_28" android:layout_height="@dimen/baseui_dp_28" android:src="@drawable/node_icon_done" app:layout_constraintEnd_toStartOf="@id/node_desc" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/node_line" android:background="@color/color_blueness" android:layout_width="@dimen/baseui_dp_1" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/node_desc" app:layout_constraintEnd_toEndOf="@id/node_status" app:layout_constraintStart_toStartOf="@id/node_status" app:layout_constraintTop_toBottomOf="@id/node_status" />
+    <LinearLayout android:orientation="vertical" android:id="@id/node_desc" android:paddingBottom="@dimen/baseui_dp_16" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="@dimen/baseui_dp_88" android:layout_marginStart="@dimen/baseui_dp_8" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/node_status" app:layout_constraintTop_toTopOf="parent">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="@color/emui_primary" android:id="@id/node_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textColorPrimaryAndSizeBody1" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/node_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_2" style="@style/textColorSecondaryAndSizeBody2" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/refund_orderId_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/refund_orderId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_feedback_refund_orderId" style="@style/textColorSecondaryAndSizeBody2" />
+            <LinearLayout android:orientation="vertical" android:id="@id/refund_orders" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/audit_result" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textColorSecondaryAndSizeBody2" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/audit_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textColorSecondaryAndSizeBody2" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

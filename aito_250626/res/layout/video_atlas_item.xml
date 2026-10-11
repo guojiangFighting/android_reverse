@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_root" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_primary" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="11" android:layout_alignParentStart="true" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_primary" android:id="@id/tv_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:fontFamily="@string/emui_text_font_family_medium" android:layout_toEndOf="@id/tv_title" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_tertiary" android:gravity="center" android:id="@id/tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_more_title" android:lines="1" android:drawableEnd="@drawable/drive_test_icon_right_arrow_forty" android:fontFamily="@string/emui_text_font_family_medium" android:layout_alignParentEnd="true" />
+    <com.huawei.uikit.phone.hwrecyclerview.widget.HwRecyclerView android:id="@id/recyclerview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font13" android:layout_below="@id/tv_title" android:overScrollMode="never" />
+</RelativeLayout>

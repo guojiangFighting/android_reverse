@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:androidhwext="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwedittext.widget.HwErrorTipTextLayout android:id="@id/error_text_layout" android:layout_width="match_parent" android:layout_height="wrap_content" androidhwext:hwErrorEnabled="true" androidhwext:hwShapeMode="linear" style="@style/Widget.Emui.HwErrorTipTextLayout">
+        <app.huawei.auto.im.ui.widget.ClearEditText android:textAppearance="?android:textAppearanceMedium" android:id="@id/username_edit" android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollHorizontally="true" android:capitalize="none" android:autoText="false" android:drawableRight="@drawable/sns_cancel_selector" style="@style/Widget.Emui.HwEditText.Linear" />
+    </com.huawei.uikit.hwedittext.widget.HwErrorTipTextLayout>
+    <TextView android:textSize="@dimen/font10" android:textColor="@color/emui_color_text_primary" android:id="@id/dialog_describe_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font5" />
+</LinearLayout>

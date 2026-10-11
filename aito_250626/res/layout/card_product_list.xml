@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="117.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/product_id_item" android:layout_width="match_parent" android:layout_height="100.0dp" android:layout_marginBottom="@dimen/font16" android:layout_marginStart="16.0dp">
+        <RelativeLayout android:id="@id/product_image_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/product_image" android:layout_width="76.0dp" android:layout_height="76.0dp" android:scaleType="centerCrop" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16.0dp" android:layout_marginStart="@dimen/font16">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/product_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:maxLines="2" android:layout_toLeftOf="@id/product_checked" android:layout_alignParentLeft="true" android:layout_marginEnd="12.0dp" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_below="@id/product_name" android:alpha="0.4" />
+            <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/product_checked" android:background="@drawable/ic_privacy_checkbox_selector" android:focusable="false" android:layout_width="24.0dp" android:layout_height="24.0dp" android:checked="false" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="17.0dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/bottom_line_view" android:background="@drawable/ic_horizontal_driver_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+</LinearLayout>

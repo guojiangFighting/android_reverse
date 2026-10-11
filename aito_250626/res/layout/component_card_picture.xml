@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/loc_com_cardView" android:tag="layout/component_card_picture_0" android:layout_width="match_parent" android:layout_height="wrap_content" bind:cardCornerRadius="24.0dp" bind:cardElevation="0.0dp" bind:layout_constraintTop_toTopOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/drawable_bg_half_c24_swhite" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0dp" android:textColor="@color/blue_main" android:gravity="center" android:id="@id/tv_load_failed" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/load_fail_retry" android:maxLength="500" android:drawablePadding="8.0dp" bind:drawableTopCompat="@drawable/svg_ic_avp_pic_load_failed" bind:layout_constraintBottom_toBottomOf="parent" bind:layout_constraintEnd_toEndOf="parent" bind:layout_constraintStart_toStartOf="parent" bind:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" bind:layout_constraintBottom_toBottomOf="parent" bind:layout_constraintEnd_toEndOf="parent" bind:layout_constraintStart_toStartOf="parent" bind:layout_constraintTop_toTopOf="parent">
+            <com.huawei.ads.uavp.sdksource.widget.HwLoadingProgressView android:id="@id/hws_loading" android:layout_width="72.0dp" android:layout_height="72.0dp" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0dp" android:textColor="@color/black_54alpha" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载…" android:maxLength="500" />
+        </LinearLayout>
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/loc_com_viewPager2" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:layout_gravity="center|bottom" android:orientation="horizontal" android:id="@id/loc_com_index_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" bind:layout_constraintBottom_toBottomOf="@id/loc_com_viewPager2" bind:layout_constraintEnd_toEndOf="@id/loc_com_viewPager2" bind:layout_constraintStart_toStartOf="@id/loc_com_viewPager2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.hwlistpattern.widget.HwUrLinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/hwlistpattern_seekbar_layout_height" android:paddingStart="@dimen/emui_dimens_max_start"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.hwlistpattern.widget.HwUrLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/hwlistpattern_margin_m" android:paddingEnd="@dimen/emui_dimens_max_end">
+        <ImageView android:id="@id/hwlistpattern_seekbar_icon_left" android:layout_width="@dimen/hwlistpattern_seekbar_icon_24" android:layout_height="@dimen/hwlistpattern_seekbar_icon_24" android:layout_marginEnd="@dimen/hwlistpattern_margin_l" />
+        <TextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_selector_text_primary" android:ellipsize="end" android:id="@id/hwlistpattern_seekbar_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@string/emui_text_font_family_regular" android:textDirection="locale" />
+    </com.huawei.uikit.hwlistpattern.widget.HwUrLinearLayout>
+    <com.huawei.uikit.hwseekbar.widget.HwSeekBar android:id="@id/hwlistpattern_seekbar" android:layout_width="match_parent" android:layout_height="@dimen/hwlistpattern_seekbar_height" android:layout_marginStart="@dimen/hwlistpattern_seekbar_margin_20" android:layout_marginEnd="@dimen/hwlistpattern_margin_s" android:showText="true" style="@style/Widget.Emui.HwSeekBar" />
+</com.huawei.uikit.hwlistpattern.widget.HwUrLinearLayout>

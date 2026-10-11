@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="page_progress">
+        <item quantity="zero">Whārangi %1$d</item>
+        <item quantity="one">Whārangi %1$d</item>
+        <item quantity="two">Whārangi %1$d</item>
+        <item quantity="few">Whārangi %1$d</item>
+        <item quantity="many">Whārangi %1$d</item>
+        <item quantity="other">Whārangi %1$d</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="zero">%d ngā whetū</item>
+        <item quantity="one">%d te whetū</item>
+        <item quantity="two">%d ngā whetū</item>
+        <item quantity="few">%d ngā whetū</item>
+        <item quantity="many">%d ngā whetū</item>
+        <item quantity="other">%d ngā whetū</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="zero">o te %1$d</item>
+        <item quantity="one">o te %1$d</item>
+        <item quantity="two">o te %1$d</item>
+        <item quantity="few">o te %1$d</item>
+        <item quantity="many">o te %1$d</item>
+        <item quantity="other">o te %1$d</item>
+    </plurals>
+</resources>

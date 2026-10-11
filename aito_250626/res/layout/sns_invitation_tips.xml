@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/appgallery_text_size_body3" android:textColor="@color/appgallery_text_color_tertiary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/emui_dimens_max_start" android:layout_marginTop="@dimen/sns_userdetial_margin_8dp" android:layout_marginRight="@dimen/emui_dimens_max_end" android:layout_marginBottom="@dimen/emui_dimens_default_bottom_fixed" android:text="@string/xcar_app_text_sns_accepting_invitation" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginStart="@dimen/emui_dimens_max_start" android:layout_marginEnd="@dimen/emui_dimens_max_end" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_order_account" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" style="@style/UserInfoViewStyle_">
+                <TextView android:text="@string/order_recharge_detail_account" style="@style/TextViewWrapStyle" />
+                <TextView android:id="@id/tv_order_detail_account" android:layout_marginLeft="20.0dp" style="@style/OrderInfoTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" style="@style/UserInfoViewStyle_">
+                <TextView android:text="@string/order_detail_number" android:minEms="3" style="@style/TextViewWrapStyle" />
+                <TextView android:id="@id/tv_order_detail_number" android:layout_marginLeft="20.0dp" style="@style/OrderInfoTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" style="@style/UserInfoViewStyle_">
+                <TextView android:text="@string/order_detail_pay_money" style="@style/TextViewWrapStyle" />
+                <TextView android:textColor="@color/colorPrimary" android:id="@id/tv_order_detail_pay_money" android:layout_marginLeft="20.0dp" style="@style/OrderInfoTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" style="@style/UserInfoViewStyle_">
+                <TextView android:text="@string/order_detail_deal_time" style="@style/TextViewWrapStyle" />
+                <TextView android:id="@id/tv_order_detail_deal_time" android:layout_marginLeft="20.0dp" style="@style/OrderInfoTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" style="@style/UserInfoViewStyle_">
+                <TextView android:text="@string/order_deal_status" style="@style/TextViewWrapStyle" />
+                <TextView android:id="@id/tv_order_detail_status" android:layout_marginLeft="20.0dp" style="@style/OrderInfoTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" style="@style/UserInfoViewStyle_">
+                <TextView android:text="备注" style="@style/TextViewWrapStyle" />
+                <TextView android:id="@id/tv_order_detail_remark" android:layout_marginLeft="20.0dp" style="@style/OrderInfoTextStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

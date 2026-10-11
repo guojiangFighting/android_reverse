@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwsubheader.widget.HwSubHeader android:id="@id/order_confirm_detai_hsh" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font72" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+    <com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnLinearLayout android:id="@id/bottom_btns" android:paddingTop="@dimen/font24" android:paddingBottom="@dimen/font16" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font11" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginHorizontal="@dimen/font16" app:hwColumnType="button_type">
+        <com.huawei.uikit.phone.hwbutton.widget.HwButton android:id="@id/contact_sales_hbtn" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/xcar_app_button_contact_sales_consultant" android:layout_weight="1.0" style="@style/Widget.Emui.HwButton.Light" />
+        <com.huawei.uikit.phone.hwbutton.widget.HwButton android:id="@id/confirm_hbtn" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/xcar_app_button_confirm" android:layout_weight="1.0" android:layout_marginStart="@dimen/font12" style="@style/Widget.Emui.HwButton.Emphasize.Light" />
+    </com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnLinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/base_status_view_layout" />
+</RelativeLayout>

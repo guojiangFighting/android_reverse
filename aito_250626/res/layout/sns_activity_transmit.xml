@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/sns_action_bar_not_meui" />
+    <include layout="@layout/sns_local_search_layout" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/create_new_chat_relative_layout" android:background="@drawable/hwlistdrawable_round_rectangle_card_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/sns_list_height_48" android:paddingStart="@dimen/font16" android:paddingEnd="@dimen/font16">
+            <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_text_primary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/emui_dimens_text_margin_fourth" android:layout_marginBottom="@dimen/emui_dimens_text_margin_fourth" android:text="@string/xcar_app_text_sns_creat_new_chat" android:layout_centerVertical="true" android:layout_toStartOf="@id/arrow_right_imageview1" />
+            <ImageView android:id="@id/arrow_right_imageview1" android:background="@drawable/ic_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" android:backgroundTint="@color/crossuikit_color_fourth" />
+        </RelativeLayout>
+        <View android:id="@id/divider_remark_layout" android:layout_width="match_parent" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" style="@style/crossuikit_divider_style" />
+        <RelativeLayout android:id="@id/choose_my_group_relative_layout" android:background="@drawable/hwlistdrawable_round_rectangle_card_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/sns_list_height_48" android:paddingStart="@dimen/font16" android:paddingEnd="@dimen/font16">
+            <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_text_primary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/emui_dimens_text_margin_fourth" android:layout_marginBottom="@dimen/emui_dimens_text_margin_fourth" android:text="@string/xcar_app_text_sns_choose_address_select_my_group" android:layout_centerVertical="true" android:layout_toStartOf="@id/arrow_right_imageview2" />
+            <ImageView android:id="@id/arrow_right_imageview2" android:background="@drawable/ic_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" android:backgroundTint="@color/crossuikit_color_fourth" />
+        </RelativeLayout>
+        <View android:layout_width="match_parent" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" style="@style/crossuikit_divider_style" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/transmit_list_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

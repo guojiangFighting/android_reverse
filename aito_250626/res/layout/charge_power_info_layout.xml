@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/baseui_dp_16" android:layout_marginEnd="@dimen/baseui_dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="16.0sp" android:textColor="@color/new_emui_text_secondary" android:id="@id/rate_power" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_medium" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_rated_power" style="@style/textColorSecondaryAndSizeBody2" />
+    </LinearLayout>
+    <View android:layout_gravity="center_vertical" android:background="#33000000" android:layout_width="0.5dp" android:layout_height="24.5dp" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="16.0sp" android:textColor="@color/new_emui_text_secondary" android:id="@id/rate_voltage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_medium" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_rated_voltage" style="@style/textColorSecondaryAndSizeBody2" />
+    </LinearLayout>
+    <View android:layout_gravity="center_vertical" android:background="#33000000" android:layout_width="0.5dp" android:layout_height="24.5dp" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="16.0sp" android:textColor="@color/new_emui_text_secondary" android:id="@id/rate_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_medium" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_rated_current" style="@style/textColorSecondaryAndSizeBody2" />
+    </LinearLayout>
+</LinearLayout>

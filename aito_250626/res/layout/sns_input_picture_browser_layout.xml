@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/sns_pic_browser_title" />
+    <RelativeLayout android:id="@id/content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:visibility="gone" layout="@layout/sns_loading_progress_layout" />
+        <RelativeLayout android:id="@id/data_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/view_bottom_edit">
+            <app.huawei.auto.im.ui.chat.photo.view.GridViewWithFooter android:id="@id/sns_picture_gridview" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:horizontalSpacing="@dimen/emui_dimens_text_vertical" android:verticalSpacing="@dimen/emui_dimens_text_vertical" style="@style/sns_album_activity_grid" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/no_data_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/no_data_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/no_data_imageview" android:layout_width="72.0dp" android:layout_height="72.0dp" android:src="@drawable/sns_ic_pic_selector" android:tint="@color/sns_color_thirdly" />
+                <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sns_common_margin_24" android:layout_marginRight="@dimen/sns_common_margin_24" android:text="@string/xcar_app_text_sns_no_pic" android:layout_marginStart="@dimen/sns_common_margin_24" android:layout_marginEnd="@dimen/sns_common_margin_24" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

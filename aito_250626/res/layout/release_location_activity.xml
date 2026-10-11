@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/emui_color_subbg" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwrecyclerview.widget.HwRecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/search_header_title_layout" android:overScrollMode="never" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/search_header_title_layout" android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="@dimen/font56">
+        <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/back_icon_view" android:background="@drawable/hwappbarpattern_selector_item_bg" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:src="@drawable/hwsearchview_ic_public_back" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_marginStart="7.0dp" />
+        <com.huawei.uikit.phone.hwsearchview.widget.HwSearchView android:id="@id/search_view" android:layout_width="match_parent" android:layout_height="@dimen/font56" android:layout_marginStart="5.0dp" android:layout_marginEnd="@dimen/font16" android:layout_toEndOf="@id/back_icon_view" app:queryHint="@string/xcar_app_text_search_nearby_location" style="@style/Widget.Emui.HwSearchView.White" />
+    </RelativeLayout>
+</RelativeLayout>

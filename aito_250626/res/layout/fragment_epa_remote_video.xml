@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/epa_video_state" android:background="@color/ads_background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/epa_video_frame" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/epa_main_car" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/epa_video_loading" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="100.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <com.huawei.ads.sdk.epa.view.AdsProgressBar android:layout_width="72.0dp" android:layout_height="72.0dp" android:layout_marginBottom="100.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="100.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:textSize="14.0dp" android:textColor="@color/epa_video_loading_color" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/epa_video_loading_msg" android:layout_centerHorizontal="true" android:textFontWeight="400" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

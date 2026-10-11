@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/hwtimepicker_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/hwtimepicker_ll" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.huawei.uikit.phone.hwadvancednumberpicker.widget.HwAdvancedNumberPicker android:gravity="center" android:id="@id/hwtimepicker_ampm" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" style="?hwAdvancedNumberPickerStyle" />
+            <com.huawei.uikit.phone.hwadvancednumberpicker.widget.HwAdvancedNumberPicker android:gravity="center" android:id="@id/hwtimepicker_hour" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" style="?hwAdvancedNumberPickerStyle" />
+            <com.huawei.uikit.phone.hwadvancednumberpicker.widget.HwAdvancedNumberPicker android:gravity="center" android:id="@id/hwtimepicker_minute" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" style="?hwAdvancedNumberPickerStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

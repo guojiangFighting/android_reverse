@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/hwdialogpattern_padding_top" />
+    <TextView android:id="@id/hwdialogpattern_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/hwdialogpattern_padding_horizontal" android:paddingEnd="@dimen/hwdialogpattern_padding_horizontal" style="@style/Widget.Emui.HwDialogPattern.DialogBody1" />
+    <include layout="@layout/hwdialogpattern_simple_checkbox" />
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/hwdialogpattern_padding_bottom" />
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0"
+        xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified">
+
+  <complexType name="DisconnectCardTaskType">
+    <attribute name="Name" type="string" use="optional"/>
+    <attribute name="Disposition" type="ogpt:DisconnectCardDispositionType" use="required"/>
+  </complexType>
+
+  <complexType name="ResetCardTaskType">
+    <attribute name="Name" type="string" use="optional"/>
+    <attribute name="Initialization" type="ogpt:ResetCardInitializationType" use="required"/>
+  </complexType>
+
+  <simpleType name="DisconnectCardDispositionType">
+    <restriction base="string">
+      <enumeration value="Leave" />
+      <enumeration value="Reset" />
+      <enumeration value="Unpower" />
+      <enumeration value="Eject" />
+    </restriction>
+  </simpleType>
+
+  <simpleType name="ResetCardInitializationType">
+    <restriction base="string">
+      <enumeration value="Leave" />
+      <enumeration value="Reset" />
+      <enumeration value="Unpower" />
+    </restriction>
+  </simpleType>
+  
+</schema>

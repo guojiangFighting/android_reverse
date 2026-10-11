@@ -1,0 +1,39 @@
+// [START declaration]
+syntax = "proto3";
+package proto;
+
+option java_package = "com.huawei.ads.location.bean.proto";
+option java_outer_classname = "ParkingCollectionProto";
+
+// [END declaration]
+
+
+// [START messages]
+
+message ParkingCollection {
+  int32 code = 1;           // 0正常, 其他失败
+  int32 total = 2;          // 停车场总个数
+  int32 pageSize = 3;       // 每页停车场个数，由接口入参控制
+  int32 totalPages = 4;     // 停车场分页个数，实时计算结果
+  string cityName = 5;      // 查询城市名  上海市
+  string cityCode = 6;      // 查询城市编码  A72
+  repeated ParkingInfo parkingInfos = 7;  // 按照searchLocation由近到远排序
+}
+message ParkingInfo {
+  uint64 patchId = 1;                   // patchId
+  string patchVersion = 2;              // patchVersion
+  string poiName = 3;                   // 停车场名字
+  repeated int32 availableLayers = 4;   // VPD可激活楼层
+  repeated string availableFloors = 5;  // 可用楼层 B1
+  int32 totalParkingSpots = 6;          // 当前停车场总车位数
+  int32 totalFloors = 7;                // 当前停车场可用AVP楼层总数
+  string distance = 8;                  // 手机位置到当前距离停车场距离且已拼接单位 例：2km
+  bool currentLocation = 9;             // 当前位置是否在当前停车场 使用mobileLocation进行判断
+  Point position = 10;                  // 停车场入口点(随机)
+}
+message Point {
+  double longitude = 1;
+  double latitude = 2;
+}
+
+// [END messages]

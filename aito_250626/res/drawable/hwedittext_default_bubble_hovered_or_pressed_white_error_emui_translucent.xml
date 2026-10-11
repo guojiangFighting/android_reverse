@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_hovered="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/emui_corner_radius_inputbox" />
+            <solid android:color="@color/emui_clickeffic_default_color_translucent" />
+            <stroke android:width="@dimen/hwedittext_bubble_error_stroke_width" android:color="@color/hwedittext_bubble_error_stroke_color_translucent" />
+        </shape>
+    </item>
+    <item android:state_pressed="true" android:drawable="@drawable/hwedittext_default_bubble_press_white_error_emui_translucent" />
+</selector>

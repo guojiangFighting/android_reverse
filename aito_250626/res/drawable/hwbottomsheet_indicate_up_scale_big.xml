@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/hwbottomsheet_indicate_up_with_anim"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="indicate_up" android:animation="@animator/hwbottomsheet_up_scale_big_animator" />
+</animated-vector>

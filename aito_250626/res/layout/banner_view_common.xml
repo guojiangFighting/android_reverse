@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewSwitcher android:id="@id/banner_viewSwitcher" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+        <include layout="@layout/banner_view_position_zero" />
+        <include layout="@layout/banner_view_position_one" />
+    </ViewSwitcher>
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/banner_point_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</merge>

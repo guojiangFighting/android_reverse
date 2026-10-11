@@ -1,0 +1,64 @@
+.class public final Lcom/dodonew/online/widget/zxing/decoding/FinishListener;
+.super Ljava/lang/Object;
+.source "FinishListener.java"
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/content/DialogInterface$OnCancelListener;
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field private final activityToFinish:Landroid/app/Activity;
+
+
+# direct methods
+.method public constructor <init>(Landroid/app/Activity;)V
+    .locals 0
+    .param p1, "activityToFinish"    # Landroid/app/Activity;
+
+    .prologue
+    .line 32
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 33
+    iput-object p1, p0, Lcom/dodonew/online/widget/zxing/decoding/FinishListener;->activityToFinish:Landroid/app/Activity;
+
+    .line 34
+    return-void
+.end method
+
+
+# virtual methods
+.method public onCancel(Landroid/content/DialogInterface;)V
+    .locals 0
+    .param p1, "dialogInterface"    # Landroid/content/DialogInterface;
+
+    .prologue
+    .line 37
+    invoke-virtual {p0}, Lcom/dodonew/online/widget/zxing/decoding/FinishListener;->run()V
+
+    .line 38
+    return-void
+.end method
+
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 0
+    .param p1, "dialogInterface"    # Landroid/content/DialogInterface;
+    .param p2, "i"    # I
+
+    .prologue
+    .line 41
+    invoke-virtual {p0}, Lcom/dodonew/online/widget/zxing/decoding/FinishListener;->run()V
+
+    .line 42
+    return-void
+.end method
+
+.method public run()V
+    .locals 0
+
+    .prologue
+    .line 46
+    return-void
+.end method

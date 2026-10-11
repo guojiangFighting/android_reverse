@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/carInfo_lay" android:paddingLeft="@dimen/font1" android:paddingRight="@dimen/font12" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_128"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/car_status_hiv" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_60" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_toRightOf="@id/car_status_hiv" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@id/name_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_primary" android:ellipsize="end" android:id="@id/Car_Name_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:maxEms="8" android:fontFamily="@string/emui_text_font_family_regular" />
+        </RelativeLayout>
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_secondary" android:id="@id/Car_Howl_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font6" android:fontFamily="@string/emui_text_font_family_regular" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_secondary" android:id="@id/Car_Six_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_regular" />
+    </LinearLayout>
+</RelativeLayout>

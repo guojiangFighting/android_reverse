@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwbubblelayout.widget.HwBubbleLayout android:id="@id/bubble_type" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_marginStart="@dimen/dp_44" android:layout_marginEnd="@dimen/font16" android:layout_alignParentEnd="true" app:hwArrowDirection="top" app:hwArrowStartLocation="negative" style="@style/Theme.Emui.HwBubbleLayout">
+        <app.huawei.auto.base.view.AdjustTextView android:textSize="@dimen/font14" android:textColor="@color/emui_primary_inverse" android:id="@id/info_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp12" android:layout_marginBottom="@dimen/dp12" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+    </com.huawei.uikit.phone.hwbubblelayout.widget.HwBubbleLayout>
+</RelativeLayout>

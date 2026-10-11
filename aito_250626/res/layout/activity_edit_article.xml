@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ugc_all" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/edit_article_title_layout" />
+    <app.huawei.auto.community.views.EditArticleBottomMenu android:id="@id/bottom_menu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <ScrollView android:id="@id/ugc_scroll" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@id/bottom_menu" android:layout_below="@id/title" android:paddingStart="@dimen/font16" android:paddingEnd="@dimen/font16">
+        <LinearLayout android:orientation="vertical" android:id="@id/ugc_scroll_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <app.huawei.auto.community.views.UGCCoverView android:id="@id/ugc_cover_view" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_marginTop="8.0dp" app:cardCornerRadius="@dimen/emui_corner_radius_clicked" app:hwAdvancedCardViewClickAnimationEnable="false" />
+            <app.huawei.auto.community.views.UGCTitleView android:id="@id/ugc_title_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:minHeight="@dimen/font48" />
+            <app.huawei.auto.community.views.UGCEditArticleView android:orientation="vertical" android:id="@id/ugc_edit_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24" />
+        </LinearLayout>
+    </ScrollView>
+    <androidx.cardview.widget.CardView android:id="@id/scroll_card" android:background="@color/white" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/font16" android:layout_alignParentEnd="true" android:translationZ="@dimen/font4" app:cardCornerRadius="@dimen/font20">
+        <com.huawei.uikit.hwimagebutton.widget.HwImageButton android:id="@id/scroll_btn" android:background="@drawable/ic_scroll_bottom" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:checked="true" android:button="@null" />
+    </androidx.cardview.widget.CardView>
+    <include android:id="@id/ugc_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/xcar_ota_loadding_view" />
+</RelativeLayout>

@@ -1,0 +1,294 @@
+
+// [START declaration]
+syntax = "proto3";
+package rc_avp.data;
+option java_package = "com.huawei.ads.carsearch.proto.data";
+option java_outer_classname = "RcAvpVector";
+// [END declaration]
+
+// [START messages]
+message Patch {
+    repeated Boundary boundaries = 1;                      // 边界线
+    repeated Lane lanes = 2;                               // 车道
+    repeated TrafficLight trafficlights = 3;               // 交通灯，RC需要，AVP暂不需要
+    repeated Road roads = 4;                               // 道路
+    repeated LocLine locLines = 5;                         // 定位线
+    repeated Pole poles = 6;                               // 杆状物
+    repeated TrafficSign trafficSigns = 7;                 // 交通标识
+    repeated RoadMarking roadMarkings = 8;                 // 地面标识
+    repeated Intersection intersections = 9;               // 路口
+    repeated CrossWalk crosswalks = 10;                    // 人行横道
+    repeated PatchConnectivity patchConnectivities = 11;   // patch连通性
+    repeated ReferencePath referencePaths = 12;            // 路口内refrence path
+    repeated Obstacle obstacles = 13;                      // 障碍物
+    repeated ParkingSpot parkingSpots = 14;                // 停车围栏，无数据输出
+    repeated ParkingArea parkingAreas = 15;                // 停车场
+    repeated AvpKeyPoint keyPoints = 16;                   // 电梯口
+    repeated WheelStopper wheelStoppers = 17;              // 轮档
+    repeated EntryInfo entryInfos = 18;                    // 入口信息
+    repeated Gate gates = 19;                              // 闸机
+}
+
+message Point {
+    double x = 1;
+    double y = 2;
+    double z = 3;
+}
+
+message Boundary {
+    uint32 id = 1;                                         // 边界编号
+    repeated Point points = 2;                             // 边界线几何
+    uint32 isolationType = 3;                              // 隔离类型
+    uint32 lineType = 4;                                   // 边界线类型
+    uint32 length = 5;                                     // 边界线长度
+    uint32 lineColor = 6;                                  // 边界线颜色
+    uint32 boundaryType = 7;                               //  规格3.10  0-车道边线 1-道路边线
+    repeated int32 layers = 8;                             // 分层信息
+}
+
+message Lane {
+    uint32 id = 1;                                         // 车道编号
+    repeated Point points = 2;                             // 车道中心线几何
+    uint32 vehicleType = 3;                                // 车辆类型 AVP借用
+    uint32 laneType = 4;                                   // 车道类型 AVP/RC统一
+    uint32 length = 5;                                     // 车道长度 cm
+    repeated uint32 leftBoundsId = 6;                      // 车道左边界
+    repeated uint32 rightBoundsId = 7;                     // 车道右边界
+    uint32 roadId = 8;                                     // 车道所属道路
+    bool isIntersectionInLane = 9;                         // 是否路口进入车道
+    bool isIntersectionOutLane = 10;                       // 是否路口退出车道
+    bool isThereStopLine = 11;                             // 末端是否有实体停止线
+    repeated uint32 prevLanesId = 12;                      // 前继车道
+    repeated uint32 nextLanesId = 13;                      // 后继车道
+    repeated uint32 leftLanesId = 14;                      // 左侧车道
+    repeated uint32 rightLanesId = 15;                     // 右侧车道
+    uint32 width = 16;                                     // 车道宽度，预留字段
+    repeated uint32 trafficLightsId = 17;                  // 关联红绿灯白名单
+    uint32 turnType = 18;                                  // 车道转向类型 AVP/RC统一
+    uint32 source = 19;                                    // lane来源
+    uint32 trustArea = 20;                                 // 白名单区域
+    uint32 confidence = 21;                                // 待转区lane置信度
+    repeated uint32 unRelatedLightsId = 22;                // 关联红绿灯黑名单
+    repeated int32 layers = 23;                            // 分层信息 AVP
+    bool isIntersectionLane = 24;                          // 是否为路口内车道 AVP
+    repeated ExperienceSpeed avpSpeedInfo = 25;            // AVP限速信息
+    uint32 blindAreaType = 26;                             // 盲区类型 AVP
+    repeated uint32 relatedGatesId = 27;                   // 关联的闸机
+}
+
+message RoadConnectivity {
+    uint32 toRoadId = 1;                                   // 连通的道路
+    uint32 connType = 2;                                   // 连通类型
+}
+
+message Road {
+    uint32 id = 1;                                         // 道路编号
+    repeated Point points = 2;                             // 道路几何
+    uint32 length = 3;                                     // 道路长度
+    repeated uint32 prevRoadsId = 4;                       // 前驱道路
+    repeated uint32 prevRoadsTurnType = 5;                 // 前驱道路转向类型
+    repeated uint32 nextRoadsId = 6;                       // 后继道路
+    repeated uint32 nextRoadsTurnType = 7;                 // 后继道路转向类型
+    repeated uint32 lanesId = 8;                           // 道路车道
+    repeated uint32 relatedTrafficlightsId = 9;            // 关联的红绿灯
+    repeated uint32 relatedLocLinesId = 10;                // 关联的定位线
+    repeated uint32 relatedPolesId = 11;                   // 关联的杆状物    
+    repeated uint32 relatedTrafficSignsId = 12;            // 关联的标牌
+    repeated uint32 relatedRoadMarkingsId = 13;            // 关联的地面标识
+    uint32 roadType = 14;                                  // 道路类型 AVP/RC统一
+    uint32 roadConfidence = 15;                            // 道路标识 0：未定义, 1：清晰road, 2：模糊road
+    repeated uint32 leftBoundsId = 16;                     // 道路左边界
+    repeated uint32 rightBoundsId = 17;                    // 道路右边界
+    repeated uint64 connectivitiesId =18;                  // patch之间topo连通关系
+    uint32 roadFlag = 19;                                  // 构图标识(未构全)
+    repeated RoadConnectivity roadConns = 20;              // road连通类型(直行H路口)
+    uint32 roadClass = 21;                                 // 道路等级
+    repeated int32 layers = 22;                            // 分层信息 AVP
+    bool isBothWay = 23;                                   // 是否双向道路 AVP
+    repeated uint32 oppositeRoadsId = 24;                  // 对向道路 AVP
+    repeated AvpSignalInfo signalInfos = 25;               // 道路信号(运营商) AVP
+}
+
+message TrafficLight {
+    uint32 id = 1;                                         // 交通灯编号
+    repeated Point points = 2;                             // 红绿灯几何
+    uint32 lightType = 3;                                  // 红绿灯类型
+    uint32 lightShape = 4;                                 // 红绿灯形状， 左、直、右、掉及组合
+    float heading = 5;                                     // 交通灯的朝向，范围0~ 2π
+    uint32 lightInfo = 6;                                  // 红绿灯语义信息
+    uint32 width = 7;                                      // 宽度
+    repeated TrafficLightRelativePos relativePos = 8;      // 相对位置关系，纵向位置关系 疑问：不需要灯组id，文档中描述是否正确
+    repeated uint32 relatedLanesId = 9;                    // 关联的laneid白名单
+    repeated uint32 unRelatedLanesId = 10;                 // 关联的laneid黑名单
+    repeated int32 layers = 11;                            // 分层信息 AVP
+}
+
+message TrafficLightRelativePos{
+    uint32 trafficLightGroup = 1;                          // 灯组
+    uint32 seqnum = 2;                                     // 红绿灯在灯组中的编号
+}
+
+message LocLine {
+    uint32 id = 1;                                         // 定位线编号
+    repeated Point points = 2;                             // 定位线几何  疑问：polyline是啥
+    uint32 type = 3;                                       // 定位线类型 curb fence 车道标线
+    repeated int32 layers = 4;                             // 分层信息 AVP
+}
+
+message Pole {
+    uint32 id = 1;                                         // 杆编号
+    repeated Point points = 2;                             // 杆状物中心点几何
+    uint32 type = 3;                                       // 杆类型
+    repeated int32 layers = 4;                             // 分层信息 AVP
+}
+
+message TrafficSign {
+    uint32 id = 1;                                         // 交通标识编号
+    repeated Point points = 2;                             // 交通标识几何
+    uint32 type = 3;                                       // 交通标识类型
+    float heading = 4;                                     // 交通标识朝向
+    uint32 width = 5;                                      // 交通标识宽度
+    repeated int32 layers = 6;                             // 分层信息 AVP
+}
+
+message RoadMarking {
+    uint32 id = 1;                                         // 地面标识编号
+    repeated Point points = 2;                             // 地面标识几何
+    uint32 type = 3;                                       // 地面标识类型
+    repeated int32 layers = 4;                             // 分层信息 AVP
+}
+
+message Intersection {
+    uint32 id = 1;                                         // 路口编号
+    repeated Point points = 2;                             // 路口面几何
+    repeated uint32 intersectionInLane = 3;                // 进入路口车道
+    repeated uint32 intersectionInRoad = 4;                // 进入路口道路
+    repeated uint32 intersectionOutLane = 5;               // 退出路口车道
+    repeated uint32 intersectionOutRoad    = 6;            // 退出路口道路
+    repeated uint32 crosswalksId    = 7;                   // 关联的人行横道
+    uint32 intersectionInRoadNum = 8;                      // 进入路口道路数量
+    uint32 intersectionOutRoadNum = 9;                     // 退出路口道路数量
+    uint32 relateNumConfidence = 10;                       // 路口关联进出道路数量可信度
+    uint32 type = 11;                                      // 路口类型 0：常规， 1：T字路口
+    repeated uint32 referencePath = 12;                    // 关联参考线
+    repeated uint32 obstaclesId = 13;                      // 关联障碍物
+    repeated int32 layers = 14;                            // 分层信息
+}
+
+message CrossWalk {
+    uint32 id = 1;                                         // 人行横道编号
+    repeated Point points = 2;                             // 人行横道几何
+    repeated int32 layers = 3;                             // 分层信息
+}
+
+message PatchConnectivity {
+    uint64 connectivityId = 1;                             // 连通关系编号
+    uint64 relatedPatchId = 2;                             // 关联PatchId
+    repeated RcPath2 currentRcPaths = 3;                   // 接边RC Road路径
+    uint32 direction = 4;                                  // 索引方向 0：未定义， 1：驶入patch， 2：驶出patch
+}
+
+message RcPath2 {
+    repeated uint32 roadsId = 1;                           // 当前patch连通到下一个patch的roadlist
+}
+
+message ReferencePath {
+    uint32 id = 1;                                         // 车道参考线ID
+    repeated Point points = 2;                             // 车道参考线几何
+    uint32 fromLaneId = 3;                                 // 驶入车道参考线ID
+    uint32 toLaneId = 4;                                   // 驶出车道参考线ID
+    uint32 toRoadId = 5;                                   // 驶出车道参考线ID
+    uint32 intersectionId = 6;                             // 关联的路口ID
+    uint32 source = 7;                                     // 信息来源
+    uint32 pathFlag = 8;                                   // 车流标识
+    repeated int32 layers = 9;                             // 分层信息
+}
+
+message Obstacle {
+    uint32 id = 1;                                         // 障碍物编号
+    repeated Point points = 2;                             // 障碍物几何
+    uint32 type = 3;                                       // 障碍物类型
+    uint32 confidence = 4;                                 // 障碍物置信度
+	uint32 source = 5;                                     // 障碍物数据来源
+    repeated int32 layers = 6;                             // 分层信息 AVP
+}
+
+message ExperienceSpeed {
+    uint32 id = 1;                                         // 经验限速编号
+    uint32 startLength = 2;                                // 限速起始位置
+    uint32 endLength = 3;                                  // 限速结束位置
+    uint32 maxSpeed = 4;                                   // 限速值
+    uint32 dataSource = 5;                                 // 信息来源
+    repeated int32 layers = 6;                             // 分层信息
+}
+
+message ParkingSpot {
+    uint32 id = 1;                                         // 停车位编号
+    repeated Point points = 2;                             // 停车位几何
+    string parkArea = 3;                                   // 分区
+    string spotNumber = 4;                                 // 车位编号
+    uint32 spotType    = 5;                                // 车位类型
+    repeated int32 layers = 6;                             // 分层信息
+    repeated uint32 wheelStoppersId = 7;                   // 关联的轮档编号
+}
+
+message ParkingArea {
+    uint32 id = 1;                                         // 停车场编号
+    repeated Point points = 2;                             // 停车场几何
+    uint32 type = 3;                                       // 停车场类型
+    float averageZ = 4;                                    // 平均高度
+    repeated int32 layers = 5;                             // 分层信息
+}
+
+message Bumper {
+    uint32 id = 1;                                         // 减速带编号
+    repeated Point points = 2;                             // 减速带几何
+    repeated uint32 relatedLanesId = 3;                    // 关联车道
+    repeated int32 layers = 4;                             // 分层信息
+}
+
+message WheelStopper {
+    uint32 id = 1;                                         // 轮档编号
+    repeated Point points = 2;                             // 轮档几何
+    repeated int32 layers = 3;                             // 分层信息
+}
+
+message BlindArea {
+    uint32 id = 1;                                         // 盲区编号
+    Point startGoordinate = 2;                             // 盲区起点坐标   是点？线？还是面？
+    Point endGoordinate = 3;                               // 盲区终点坐标   是点？线？还是面？
+    uint32 type = 4;                                       // 盲区类型
+    repeated int32 layers = 5;                             // 分层信息
+}
+
+message AvpKeyPoint {
+    uint32 id = 1;
+    repeated Point points = 2;
+    uint32 type = 3;
+    repeated int32 layers = 4;
+}
+
+message AvpSignalInfo {
+    uint32 id = 1;                                         // 信号编号
+    repeated uint32 intensities = 2;                       // 信号强度
+    repeated uint32 mncCarriers = 3;                       // 运营商
+    repeated int32 layers = 4;                             // 分层信息
+}
+
+message EntryInfo {
+    uint32 id = 1;                                         // 出入口编号
+    repeated Point points = 2;                             // 出入口点几何
+    repeated uint32 roadsId = 3;                           // 关联的道路，暂无数据
+    uint32 type = 4;                                       // 出入口类型
+    repeated int32 layers = 5;                             // 分层信息
+}
+
+message Gate {
+    uint32 id = 1;                                         // 闸机编号
+    repeated Point points = 2;                             // 闸机几何
+    repeated uint32 lanesId = 3;                           // 关联的车道
+    uint32 width = 4;                                      // 宽度
+    float heading = 5;                                     // 朝向
+    repeated int32 layers = 6;                             // 分层信息
+}
+// [END messages]

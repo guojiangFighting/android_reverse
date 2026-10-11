@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/incl_vehicle_model" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_15" android:layout_centerHorizontal="true" layout="@layout/vehicle_model_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/pb_text_area" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/bev_remain_power_area" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginStart="@dimen/baseui_dp_16">
+            <LinearLayout android:layout_gravity="start" android:orientation="horizontal" android:id="@id/bev_charging_text_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="center_vertical" android:id="@id/bev_electric_capacity" android:layout_width="wrap_content" android:layout_height="@dimen/font19" android:text="@string/xcar_app_text_status_charging" android:maxLines="1" style="@style/textColorSecondaryAndSizeBody2" />
+                <ImageView android:layout_gravity="bottom" android:id="@id/bev_charging_signal" android:visibility="gone" android:layout_width="@dimen/baseui_dp_8" android:layout_height="@dimen/baseui_dp_16" android:src="@drawable/icon_arrow_veh_charging" android:layout_marginStart="@dimen/baseui_dp_2" />
+            </LinearLayout>
+            <com.huawei.uikit.phone.hwprogressbar.widget.HwProgressBar android:layout_gravity="start" android:id="@id/bev_remain_power_pb" android:layout_width="72.0dp" android:layout_height="4.0dp" android:layout_marginTop="@dimen/baseui_dp_8" android:max="100" android:progress="0" android:progressTint="@color/color_35B949" app:hwFlickerColor="@color/color_progress_charging" style="@style/Widget.Emui.HwProgressBar.Horizontal" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/pb_layout_not_bev" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginStart="@dimen/font16">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_charging" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/baseui_dp_12">
+                <LinearLayout android:layout_gravity="start" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:gravity="start|center" android:id="@id/electricity_htv" android:layout_width="wrap_content" android:layout_height="@dimen/font19" android:minWidth="@dimen/font72" android:text="@string/xcar_app_text_vehicle_status_empty_electricity" android:maxLines="1" style="@style/textColorSecondaryAndSizeBody2" />
+                    <ImageView android:layout_gravity="bottom" android:id="@id/multi_charging_iv" android:visibility="gone" android:layout_width="@dimen/baseui_dp_8" android:layout_height="@dimen/baseui_dp_16" android:src="@drawable/icon_arrow_veh_charging" android:layout_marginStart="@dimen/baseui_dp_2" />
+                </LinearLayout>
+                <com.huawei.uikit.phone.hwprogressbar.widget.HwProgressBar android:layout_gravity="start" android:id="@id/electricity_hpb" android:layout_width="@dimen/baseui_dp_72" android:layout_height="@dimen/baseui_dp_4" android:layout_marginTop="@dimen/font8" android:max="100" android:progress="0" android:progressTint="@color/color_35B949" app:hwFlickerColor="@color/color_progress_charging" style="@style/Widget.Emui.HwProgressBar.Horizontal" />
+            </LinearLayout>
+            <View android:id="@id/space_12" android:visibility="visible" android:layout_width="@dimen/baseui_dp_12" android:layout_height="@dimen/baseui_dp_10" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:gravity="start|center" android:layout_gravity="start" android:id="@id/fuel_htv" android:layout_width="wrap_content" android:layout_height="@dimen/font19" android:minWidth="@dimen/font72" android:text="@string/xcar_app_text_vehicle_status_empty_fuel" android:maxLines="1" style="@style/textColorSecondaryAndSizeBody2" />
+                <com.huawei.uikit.phone.hwprogressbar.widget.HwProgressBar android:layout_gravity="start" android:id="@id/fuel_hpb" android:layout_width="@dimen/baseui_dp_72" android:layout_height="@dimen/font4" android:layout_marginTop="@dimen/font8" android:max="100" android:progress="0" android:progressTint="#0a59f7" style="@style/Widget.Emui.HwProgressBar.Horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

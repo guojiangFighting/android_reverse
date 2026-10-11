@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/font12" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/font8">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font16" android:ellipsize="end" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xcar_app_text_all_search" android:maxLines="1" android:layout_centerInParent="true" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginEnd="@dimen/common_padding" android:layout_toStartOf="@id/change" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="@color/color_blueness" android:id="@id/change" android:paddingTop="@dimen/font8" android:paddingBottom="@dimen/font8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_search_change" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <app.huawei.auto.community.views.search.FlowLayout android:id="@id/flow_layout" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

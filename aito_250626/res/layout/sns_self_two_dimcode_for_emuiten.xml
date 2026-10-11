@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scroll_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_self_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/emui_dimens_max_start" android:layout_marginRight="@dimen/emui_dimens_max_end" android:layout_marginStart="@dimen/emui_dimens_max_start" android:layout_marginEnd="@dimen/emui_dimens_max_end">
+            <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_headline7" android:textColor="@color/emui_color_text_primary" android:id="@id/text_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/emui_dimens_default_top" android:text="" android:fontFamily="@string/emui_text_font_family_medium" />
+            <app.huawei.auto.im.ui.widget.CustomFontTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_text_primary" android:id="@id/text_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/emui_dimens_element_vertical_middle" android:text="@string/xcar_app_text_sns_sweep_and_add_friend" />
+            <ImageView android:id="@id/image_two_dimcode" android:background="@color/sns_background_qrcode" android:layout_width="@dimen/sns_qrcode_size_for_ten" android:layout_height="@dimen/sns_qrcode_size_for_ten" android:layout_marginTop="@dimen/emui_dimens_default_top" android:layout_marginBottom="@dimen/sns_button_margin_bottom" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

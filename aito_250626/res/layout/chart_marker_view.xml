@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwbubblelayout.widget.HwBubbleLayout android:gravity="center" android:orientation="vertical" android:id="@id/marker_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:hwBubbleRadius="8.0dp">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="@dimen/font48" android:layout_marginHorizontal="@dimen/font8">
+            <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="10.0sp" android:textColor="#99ffffff" android:layout_gravity="center_horizontal" android:id="@id/time_marker_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="09/04" android:fontFamily="@string/emui_text_font_family_regular" />
+            <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/distance_marker_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13.5kWh" android:fontFamily="@string/emui_text_font_family_regular" />
+        </LinearLayout>
+    </com.huawei.uikit.phone.hwbubblelayout.widget.HwBubbleLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/oil_chart_marker_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font10" android:src="@drawable/ic_dot_blue_2" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/electric_chart_marker_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font10" android:src="@drawable/ic_dot_green_2" />
+</LinearLayout>

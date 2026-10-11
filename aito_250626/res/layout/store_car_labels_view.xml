@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_caption" android:textColor="@color/new_emui_text_tertiary" android:gravity="center" android:id="@id/labels_id" android:background="@drawable/store_car_type_bg" android:paddingTop="@dimen/font1" android:paddingBottom="@dimen/font1" android:layout_width="wrap_content" android:layout_height="@dimen/font16" android:layout_marginTop="@dimen/font4" android:fontFamily="@string/emui_text_font_family_regular" android:paddingStart="@dimen/font5" android:paddingEnd="@dimen/font5" android:layout_marginEnd="@dimen/font4"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,127 @@
+.class Lcom/dodonew/online/adapter/MyGuessAdapter$ViewHolder;
+.super Landroid/support/v7/widget/RecyclerView$ViewHolder;
+.source "MyGuessAdapter.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dodonew/online/adapter/MyGuessAdapter;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = "ViewHolder"
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/dodonew/online/adapter/MyGuessAdapter;
+
+.field tvGameName:Landroid/widget/TextView;
+
+.field tvMyGuessResult:Landroid/widget/TextView;
+
+.field tvOrderTime:Landroid/widget/TextView;
+
+.field tvRaceStatus:Landroid/widget/TextView;
+
+.field tvResult:Landroid/widget/TextView;
+
+.field tvResultStatus:Landroid/widget/TextView;
+
+.field tvTeamRace:Landroid/widget/TextView;
+
+
+# direct methods
+.method public constructor <init>(Lcom/dodonew/online/adapter/MyGuessAdapter;Landroid/view/View;)V
+    .locals 1
+    .param p1, "this$0"    # Lcom/dodonew/online/adapter/MyGuessAdapter;
+    .param p2, "itemView"    # Landroid/view/View;
+
+    .prologue
+    .line 48
+    iput-object p1, p0, Lcom/dodonew/online/adapter/MyGuessAdapter$ViewHolder;->this$0:Lcom/dodonew/online/adapter/MyGuessAdapter;
+
+    .line 49
+    invoke-direct {p0, p2}, Landroid/support/v7/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V
+
+    .line 50
+    const v0, 0x7f0d0174
+
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lcom/dodonew/online/adapter/MyGuessAdapter$ViewHolder;->tvGameName:Landroid/widget/TextView;
+
+    .line 51
+    const v0, 0x7f0d0175
+
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lcom/dodonew/online/adapter/MyGuessAdapter$ViewHolder;->tvTeamRace:Landroid/widget/TextView;
+
+    .line 52
+    const v0, 0x7f0d0176
+
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lcom/dodonew/online/adapter/MyGuessAdapter$ViewHolder;->tvRaceStatus:Landroid/widget/TextView;
+
+    .line 53
+    const v0, 0x7f0d0177
+
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lcom/dodonew/online/adapter/MyGuessAdapter$ViewHolder;->tvOrderTime:Landroid/widget/TextView;
+
+    .line 54
+    const v0, 0x7f0d0179
+
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lcom/dodonew/online/adapter/MyGuessAdapter$ViewHolder;->tvMyGuessResult:Landroid/widget/TextView;
+
+    .line 55
+    const v0, 0x7f0d017b
+
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lcom/dodonew/online/adapter/MyGuessAdapter$ViewHolder;->tvResult:Landroid/widget/TextView;
+
+    .line 56
+    const v0, 0x7f0d017c
+
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lcom/dodonew/online/adapter/MyGuessAdapter$ViewHolder;->tvResultStatus:Landroid/widget/TextView;
+
+    .line 57
+    return-void
+.end method

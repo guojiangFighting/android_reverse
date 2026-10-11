@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/hwedittext_default_linear_hovered_or_pressed_emui" android:left="@dimen/font16" android:right="@dimen/font16" />
+    <item android:left="0.0dp" android:right="0.0dp">
+        <selector>
+            <item android:state_focused="true" android:state_window_focused="true" android:drawable="@drawable/hwedittext_default_linear_actived_emui" />
+            <item android:drawable="@drawable/hwedittext_default_linear_emui" />
+        </selector>
+    </item>
+</layer-list>

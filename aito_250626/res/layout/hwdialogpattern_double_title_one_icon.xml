@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/hwdialogpattern_title_double_height" android:paddingStart="@dimen/hwdialogpattern_padding_horizontal" android:paddingEnd="@dimen/hwdialogpattern_icon_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/hwdialogpattern_double_title_layout" />
+    <ImageView android:id="@id/hwdialogpattern_icon1" android:background="@drawable/hwdialogpattern_selector_icon_bg" android:padding="@dimen/hwdialogpattern_icon_padding" android:focusable="true" android:clickable="true" android:layout_width="@dimen/hwdialogpattern_title_image_width" android:layout_height="@dimen/hwdialogpattern_title_image_width" android:tint="@color/emui_color_primary" android:layout_marginStart="@dimen/hwdialogpattern_margin_s" />
+</LinearLayout>

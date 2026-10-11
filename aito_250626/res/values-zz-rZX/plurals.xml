@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="page_progress">
+        <item quantity="zero">[PL_758275]_Page %1$d</item>
+        <item quantity="one">[PL_758277]_Page %1$d</item>
+        <item quantity="two">[PL_758285]_Page %1$d</item>
+        <item quantity="few">[PL_758284]_Page %1$d</item>
+        <item quantity="many">[PL_758280]_Page %1$d</item>
+        <item quantity="other">[PL_758283]_Page %1$d</item>
+    </plurals>
+    <plurals name="star_progress">
+        <item quantity="zero">[PL_700355]_%d stars</item>
+        <item quantity="one">[PL_700358]_%d star</item>
+        <item quantity="two">[PL_700356]_%d stars</item>
+        <item quantity="few">[PL_700353]_%d stars</item>
+        <item quantity="many">[PL_700354]_%d stars</item>
+        <item quantity="other">[PL_700357]_%d stars</item>
+    </plurals>
+    <plurals name="total_page">
+        <item quantity="zero">[PL_758279]_of %1$d</item>
+        <item quantity="one">[PL_758286]_of %1$d</item>
+        <item quantity="two">[PL_758282]_of %1$d</item>
+        <item quantity="few">[PL_758278]_of %1$d</item>
+        <item quantity="many">[PL_758276]_of %1$d</item>
+        <item quantity="other">[PL_758281]_of %1$d</item>
+    </plurals>
+</resources>

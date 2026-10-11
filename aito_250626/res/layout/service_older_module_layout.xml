@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linear_older_bd" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/emui_card_panel_bg" app:cardCornerRadius="@dimen/emui_corner_radius_large" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:orientation="vertical" android:id="@id/older_layout_lin" android:paddingTop="@dimen/baseui_dp_12" android:paddingBottom="@dimen/baseui_dp_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/baseui_dp_12">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_text_secondary" android:id="@id/service_time_older_time" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="@string/emui_text_font_family_regular" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_text_primary" android:id="@id/service_older_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/emui_text_font_family_medium" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_text_primary" android:ellipsize="end" android:id="@id/older_maintenance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseui_dp_12" android:maxLines="1" android:fontFamily="@string/emui_text_font_family_medium" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_secondary" android:id="@id/service_point" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:fontFamily="@string/emui_text_font_family_regular" />
+                <View android:id="@id/vDivider" android:background="@color/transparent_OD" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/baseui_dp_12" />
+                <com.huawei.uikit.phone.hwbutton.widget.HwButton android:textSize="@dimen/font12" android:layout_gravity="end" android:id="@id/evaluation_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/font28" android:layout_marginTop="@dimen/baseui_dp_12" android:minWidth="64.0dp" android:fontFamily="@string/emui_text_font_family_regular" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" style="@style/Widget.Emui.HwButton.Light" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</LinearLayout>

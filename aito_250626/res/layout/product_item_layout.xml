@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/card_default_bg" android:layout_width="112.0dp" android:layout_height="112.0dp" android:layout_marginStart="@dimen/font12"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_above="@id/product_name" android:layout_centerHorizontal="true" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="@color/new_emui_text_primary" android:ellipsize="end" android:id="@id/product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_above="@id/price" android:layout_marginHorizontal="@dimen/font12" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font10" android:textColor="@color/emui_text_Color_Link" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font8" android:layout_alignParentBottom="true" android:layout_marginHorizontal="@dimen/font12" />
+</RelativeLayout>

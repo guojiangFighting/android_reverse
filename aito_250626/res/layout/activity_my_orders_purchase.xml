@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/my_orders_purchase_l" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/purchasetrderView" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+    <include layout="@layout/x_car_empty_with_action_view" />
+    <include android:id="@id/load_progress" android:visibility="visible" layout="@layout/xcar_loading_layout" />
+    <include android:id="@id/purchase_no_network_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rvBrand" layout="@layout/order_network_errorview" />
+    <include android:id="@id/purchase_error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rvBrand" layout="@layout/order_message_errorview" />
+</RelativeLayout>

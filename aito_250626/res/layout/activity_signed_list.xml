@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/id_fa_color_sub_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/hwappbarpattern_height">
+        <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/signed_navigation_icon" android:background="@drawable/hwappbarpattern_selector_item_bg" android:layout_width="@dimen/hwappbarpattern_icon_size" android:layout_height="@dimen/hwappbarpattern_icon_size" android:src="@drawable/hwsearchview_ic_public_back" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_marginStart="4.0dp" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="end" android:layout_gravity="start" android:id="@id/signed_list_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_toRightOf="@id/signed_navigation_icon" android:layout_centerVertical="true" android:layout_marginStart="@dimen/hwappbarpattern_title_margin_start_with_icon" android:layout_marginEnd="@dimen/font16" app:hwAutoSizeMinTextSize="@dimen/hwappbarpattern_title_min_text_size" app:hwAutoSizeStepGranularity="@dimen/hwappbarpattern_step_granularity" style="@style/Widget.Emui.HwAppbarPattern.TextAppearance.Title" />
+    </RelativeLayout>
+    <com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout android:id="@id/signed_list_refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/title">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/signedRecycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/font4" android:overScrollMode="never" android:paddingStart="@dimen/font16" android:paddingEnd="@dimen/font16" />
+    </com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout>
+</RelativeLayout>

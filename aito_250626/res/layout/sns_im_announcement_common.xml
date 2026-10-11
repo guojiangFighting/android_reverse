@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/msg_item_view" android:background="@drawable/sns_im_link_bottom_white_item" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/link_title_top" android:paddingTop="@dimen/font10" android:paddingBottom="@dimen/font6" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/font12" android:paddingEnd="@dimen/font12">
+        <ImageView android:id="@id/link_pic" android:layout_width="@dimen/font24" android:layout_height="@dimen/font24" android:src="@drawable/sns_link_group_of_notice" android:scaleType="centerCrop" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font14" android:textColor="#000000" android:ellipsize="none" android:id="@id/announcement_msg_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_sns_group_announcement" android:singleLine="true" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginStart="@dimen/font4" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/link_content_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font12" android:layout_below="@id/link_title_top" android:layout_marginStart="@dimen/font12" android:layout_marginEnd="@dimen/font12">
+        <TextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_text_secondary" android:ellipsize="end" android:id="@id/announcement_msg_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="3" android:lineSpacingExtra="2.0dp" android:fontFamily="@string/emui_text_font_family_regular" />
+    </RelativeLayout>
+</RelativeLayout>

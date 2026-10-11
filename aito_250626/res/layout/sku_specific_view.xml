@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/font16" android:paddingEnd="@dimen/font16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <app.huawei.auto.mall.views.SkuSpecificationContainer android:orientation="vertical" android:id="@id/sku_specification" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/specifications_list_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/font48" android:layout_marginTop="@dimen/font24">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font16" android:textColor="@color/emui_primary" android:id="@id/specifications_list_title_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font18" android:text="@string/xcar_app_text_parameter_specifications" android:fontFamily="@string/emui_text_font_family_medium" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:overScrollMode="never" />
+        <View android:id="@id/bottom_line_view" android:background="@drawable/ic_horizontal_driver_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/font12" />
+    </app.huawei.auto.mall.views.SkuSpecificationContainer>
+</LinearLayout>

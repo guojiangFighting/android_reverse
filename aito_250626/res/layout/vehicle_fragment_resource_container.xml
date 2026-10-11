@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:background="@color/emui_color_subbg" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/download_resource_container_ing" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/vehicle_rl_load_ing" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.huawei.uikit.hwprogressindicator.widget.HwProgressIndicator android:id="@id/download_progress_indicator" android:layout_width="288.0dp" android:layout_height="288.0dp" android:layout_marginTop="@dimen/dp_100" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/font36" android:layout_marginEnd="@dimen/font36" app:hwFlickerEnable="false" style="@style/Widget.Emui.HwProgressIndicator.Large.Light" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_headline3" android:textColor="@color/emui_text_primary" android:id="@id/download_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200.0dp" android:text="@string/xcar_app_text_veh_default_int_value" android:layout_centerHorizontal="true" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="245.0dp" android:text="@string/xcar_app_text_percent_symbol" android:layout_toEndOf="@id/download_progress" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/vehicle_downLoad_ray_ing" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_below="@id/vehicle_rl_load_ing">
+                <com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:hwColumnType="button_type">
+                    <com.huawei.uikit.phone.hwbutton.widget.HwButton android:layout_gravity="center_horizontal" android:id="@id/btn_cancel_download" android:layout_width="wrap_content" android:layout_height="@dimen/font40" android:layout_marginTop="@dimen/font24" android:layout_marginBottom="24.0dp" android:text="@string/xcar_app_button_cancel_download" style="@style/Widget.Emui.HwButton.Light" />
+                </com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/download_resource_container_pre" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/vehicle_img" android:layout_width="288.0dp" android:layout_height="288.0dp" android:layout_marginTop="@dimen/dp_100" android:src="@drawable/ic_public_car" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/font36" android:layout_marginEnd="@dimen/font36" />
+            <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/vehicle_downLoad_ray_pre" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_below="@id/vehicle_img">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_text_primary" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                <com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tips" android:layout_centerHorizontal="true" app:hwColumnType="button_type">
+                    <com.huawei.uikit.phone.hwbutton.widget.HwButton android:layout_gravity="center_horizontal" android:id="@id/btn_download" android:layout_width="wrap_content" android:layout_height="@dimen/font40" android:layout_marginTop="@dimen/font24" android:layout_marginBottom="24.0dp" android:text="@string/xcar_app_button_download_now" style="@style/Widget.Emui.HwButton.Emphasize.Light" />
+                </com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

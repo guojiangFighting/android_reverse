@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/svs_com_white" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/svs_com_black" android:gravity="center_vertical" android:id="@id/city_item_hint_tv" android:background="@color/svs_com_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/svs_com_current_city" />
+    <TextView android:textSize="14.0dp" android:textColor="#0a59f7" android:id="@id/cur_city_name_tv" android:background="@drawable/svs_com_bg_cur_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/svs_com_shanghai_zh" android:drawablePadding="2.0dp" android:paddingHorizontal="16.0dp" android:paddingVertical="5.0dp" />
+</LinearLayout>

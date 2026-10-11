@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/hwdialogpattern_title_double_height" android:paddingStart="@dimen/hwdialogpattern_padding_horizontal" android:paddingEnd="@dimen/hwdialogpattern_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/hwdialogpattern_double_title_layout" />
+</FrameLayout>

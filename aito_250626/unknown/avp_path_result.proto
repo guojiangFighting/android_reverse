@@ -1,0 +1,106 @@
+// [START declaration]
+syntax = "proto3";
+package rc_avp.binary;
+option optimize_for = LITE_RUNTIME;
+
+option java_package = "com.huawei.ads.carsearch.proto.binary";
+
+// [END declaration]
+
+
+// [START messages]
+
+message AvpPathResults{
+  uint32 type = 1;                // 0:普通单个园区内 1:行泊一体
+  string reqId = 2;               // hmi传过来的id
+  uint32 errorCode = 3;
+  repeated AvpPathResult avpPathResults = 4; // 算路请求坐标跨园区时有多个
+  string sdPathId = 5;
+}
+
+message AvpPathResult{
+  string reqId = 1; // hmi传过来的id
+  uint32 errorCode = 2;
+  uint32 scene = 3; // 0:无效 1:定点 2:召回 3:漫游 4:designation
+  uint32 strategy = 4; // 0:默认 1:行人 2：车行 3:混合
+  uint32 parkType = 5; // 0:无效 1: 点点到点起始园区路线 2：点到点终点园区路线 3:点到点途经点园区路线
+  repeated AvpRequestPoint requestPoints = 6;
+  repeated PathResult pathResults = 7; // 目前只有一条路线,以后支持给出多条候选路线时 会存在多条的情况
+  AvpMapinfo avpMapinfo = 8;
+  uint32 routeType = 9; // 算路类型　0:新算路　1:自动重算路
+  uint32 pathResultPointType = 10; // 消息是否瘦身的标志 0:不瘦身 1:瘦身
+}
+
+message PathResult{
+  uint32 pathId = 1;
+  double dist = 2; // 路线总长度 0.1m
+  uint32 eta = 3; // second 到达时长
+  repeated PathSection pathSections = 4; // 目前没有途经点,后面有途经点时 会有多个section
+}
+
+message PathSection{
+  uint32 startLinkIdx = 1;                   // 起始道路在RouteLink中的索引
+  uint32 endLinkIdx = 2;                     //终点道路在RouteLink中的索引
+  uint32 startOffset = 3;                    // units: 0.1m (起始道路不在section中的长度)
+  uint32 goalOffset = 4;                     // units: 0.1m (终点道路不在section中的长度)
+  repeated AvpRoad roads = 5;                // 道路规划道路id结果
+  repeated RoutePoint points = 6;            // 路点 含 对应的道路id
+}
+
+message AvpRoad{
+  uint64 roadId = 1;               // 道路id
+  uint32 length = 2;               // 路线上的每道路长度(0.1米) 如果是开头和结束的第一根道路 是剪裁后的长度
+  uint32 layer = 3;                // 旧数据的层数
+  uint32 roadType = 4;              // 0: 普通道路 1:城区到AVP衔接道路 2:AVP到城区衔接道路
+  repeated MatchSdInfo matchSdInfos = 5;
+  string layerNew = 6;              // 楼层信息 0,0 -1,-1 0,-1等
+}
+
+message RoutePoint{
+  Coord3DDouble coord = 1;   // 坐标点的坐标 [目前z值仅在avp场景会使用]
+  uint64 roadId = 2;
+}
+
+message Coord3DDouble {
+  double lon = 1;
+  double lat = 2;
+  double z = 3;
+  double heading = 4; // 终点可不填
+}
+
+message AvpRequestPoint {
+  Coord3DDouble pose = 1;
+  uint32 type = 2; // 0:起点 1:途经点（目前无） 2:终点
+  uint32 scene = 3; // 0:坐标点在默认车位内 1:坐标点在手动选择的车位内 2:坐标点不在车位内
+  string layer = 4;                // 楼层信息 13 14 1314等
+  AvpMapinfo avpMapinfo = 5;
+  repeated MatchTopoLink matchTopoLinks = 6; // 用于ui接口可视化显示
+  repeated MatchTopoLink linkIds = 7; // 请求消息填写, 后续不能改动此字段,下游用于自校验
+}
+
+message MatchSdInfo {        //一个segment内的关联
+  uint64 sdPathId = 1;       // 在高德/百度路线pathId
+  int32 sdSegmentIndex = 2;   //路线sectionindex
+  int32 sdRoadIndex = 3;
+  double sdStartOffset = 4;
+  double sdEndOffset = 5;
+  double avpStartOffset = 6;
+  double avpEndOffset = 7;
+  bool hasTrafficLight = 8;
+}
+
+message AvpMapinfo {
+  uint64 patchId = 1;
+  string patchVersion = 2;
+  string mapName = 3;
+  string mapVersion = 4;
+  double minX = 5;
+  double minY = 6;
+  double maxX = 7;
+  double maxY = 8;
+}
+
+message MatchTopoLink {
+  uint64 id = 1;
+  double weight = 2; // 匹配代价，不包含剩余道路长度
+}

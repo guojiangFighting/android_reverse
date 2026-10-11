@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.huawei.auto.base.view.CustomRelativeLayout android:id="@id/community_layout" android:background="@color/xcar_emui_bottomsheet_bg" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/status_view" android:layout_width="match_parent" android:layout_height="@dimen/font52" />
+    <app.huawei.auto.base.view.ViewPager2Container android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/space">
+        <androidx.viewpager2.widget.ViewPager2 android:orientation="horizontal" android:id="@id/community_pager" android:visibility="visible" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+    </app.huawei.auto.base.view.ViewPager2Container>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/font56" android:layout_below="@id/community_title" layout="@layout/tab_search_layout" />
+    <Space android:id="@id/space" android:layout_width="match_parent" android:layout_height="@dimen/font56" android:layout_below="@id/community_title" />
+    <include android:id="@id/community_title" android:background="@color/white" layout="@layout/hwappbarpattern_title_item_layout_withnotify" />
+</app.huawei.auto.base.view.CustomRelativeLayout>

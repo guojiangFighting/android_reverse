@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/font12" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/new_emui_text_primary" android:id="@id/item_left_tv" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="3.5" android:fontFamily="@string/emui_text_font_family_regular" />
+    <include android:id="@id/item_right_rl" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="6.5" android:layout_marginStart="@dimen/font16" layout="@layout/view_copy_content_activity" />
+</LinearLayout>

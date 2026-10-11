@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.huawei.auto.base.view.SwipeMenuLayout android:orientation="horizontal" android:id="@id/swipe_menu_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_64" app:ios="false" app:leftSwipe="true" app:swipeEnable="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/card_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="16.0dp" app:cardCornerRadius="@dimen/font8" app:hwAdvancedCardViewClickAnimationEnable="false">
+            <RelativeLayout android:id="@id/rl_plan_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font16" android:layout_marginStart="@dimen/font12" android:layout_marginEnd="@dimen/font12">
+                <LinearLayout android:orientation="horizontal" android:id="@id/layout_status" android:layout_width="match_parent" android:layout_height="@dimen/font45_5" android:layout_marginTop="@dimen/font9">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="3.0">
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_selector_text_primary" android:id="@id/plan_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxEms="10" android:singleLine="true" android:fontFamily="@string/emui_text_font_family_medium" android:textDirection="locale" />
+                        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_caption1" android:textColor="@color/white" android:gravity="center" android:id="@id/plan_working_tv" android:background="@drawable/shape_departure_plan_working_bg" android:paddingTop="@dimen/baseui_dp_1" android:paddingBottom="@dimen/baseui_dp_1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/baseui_dp_16" android:text="@string/xcar_app_text_departure_status_running" android:singleLine="true" android:fontFamily="@string/emui_text_font_family_medium" android:paddingStart="@dimen/baseui_dp_4" android:paddingEnd="@dimen/baseui_dp_4" android:layout_marginStart="@dimen/baseui_dp_2" />
+                    </LinearLayout>
+                    <RelativeLayout android:gravity="right" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                        <app.huawei.auto.base.view.NoCircleAnimationSwitch android:gravity="right" android:id="@id/check_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-5.0dp" />
+                        <TextView android:id="@id/tv_check" android:layout_width="@dimen/font48" android:layout_height="match_parent" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:id="@id/split_line" android:background="@color/bottom_line_color" android:layout_width="match_parent" android:layout_height="@dimen/baseui_dp_1" android:layout_below="@id/layout_status" />
+                <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/plan_item_date_time_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font11_5" android:layout_below="@id/layout_status">
+                    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="end" android:id="@id/plan_item_date_time_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" android:layout_toStartOf="@id/image_arrow" style="@style/textColorSecondaryAndSizeBody2" />
+                    <ImageView android:id="@id/image_arrow" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_public_arrow_down" android:layout_alignParentRight="true" android:layout_marginStart="4.0dp" />
+                </RelativeLayout>
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/plan_item_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_below="@id/plan_item_date_time_view" android:layout_marginEnd="@dimen/font28" style="@style/textColorSecondaryAndSizeBody2" />
+            </RelativeLayout>
+        </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_delete_plan" android:layout_width="@dimen/font56" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_public_deletes" />
+    </LinearLayout>
+</app.huawei.auto.base.view.SwipeMenuLayout>

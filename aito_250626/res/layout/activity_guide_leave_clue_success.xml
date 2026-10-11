@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/id_fa_color_sub_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dp" android:layout_below="@id/user_guide_title_bar" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/font24" android:layout_marginEnd="@dimen/font24">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center_horizontal" android:background="@drawable/drive_success_icon_hook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:backgroundTint="@color/emui_color_4" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="20.0sp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hwlistpattern_item_icon_right_height_24" android:text="@string/xcar_app_text_drive_success_submit" style="@style/textColorPrimaryAndSizeHeadline8AndFamilyRegular" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/xcar_app_text_drive_success_wait_sure" style="@style/textColorSecondaryAndSizeBody3" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_gravity="center_horizontal" android:id="@id/page_auto_closed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/xcar_app_text_guide_leave_success_countdown" style="@style/textColorSecondaryAndSizeBody3" />
+    </LinearLayout>
+    <include android:id="@id/user_guide_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/hwappbarpattern_height" layout="@layout/hwappbarpattern_title_item_layout" />
+</RelativeLayout>

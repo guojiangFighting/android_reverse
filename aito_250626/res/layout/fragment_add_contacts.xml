@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/sns_local_search_layout" />
+    <com.huawei.uikit.phone.hwrecyclerview.widget.HwRecyclerView android:id="@id/recycler_view" android:saveEnabled="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:overScrollMode="never" />
+</LinearLayout>

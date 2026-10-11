@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.github.chrisbanes.photoview.PhotoView android:layout_gravity="center" android:id="@id/photoView" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_failed" android:background="@color/sns_img_proview_overdue" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_no_proview" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/imageView_error" android:padding="10.0dp" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_120" android:src="@drawable/im_pic_fail_icon" />
+            <app.huawei.auto.im.ui.widget.CustomFontTextView android:textColor="@color/textColorTertiary" android:layout_gravity="center_horizontal" android:id="@id/text_error_info" android:paddingLeft="@dimen/sns_emui_dimens_default_end" android:paddingRight="@dimen/sns_emui_dimens_default_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:text="@string/xcar_app_text_big_load_fail" android:fontFamily="@string/emui_text_font_family_regular" android:paddingStart="@dimen/sns_emui_dimens_default_end" android:paddingEnd="@dimen/sns_emui_dimens_default_end" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

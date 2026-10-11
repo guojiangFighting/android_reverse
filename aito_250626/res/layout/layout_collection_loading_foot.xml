@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.ads.uavp.sdksource.widget.HwLoadingProgressView android:id="@id/iv_loading" android:layout_width="30.0dp" android:layout_height="30.0dp" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/theme_color_title_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载..." android:maxLength="500" android:layout_marginStart="5.0dp" />
+</LinearLayout>

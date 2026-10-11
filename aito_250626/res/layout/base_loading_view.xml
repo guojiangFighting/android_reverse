@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:id="@id/loading_view" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:id="@id/view_first" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="4.0" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/loading_layout" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="6.0">
+        <com.huawei.uikit.hwprogressbar.widget.HwProgressBar android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-40.0dp" style="@style/Widget.Emui.HwProgressBar.Large" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_tertiary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_loading" android:fontFamily="@string/emui_text_font_family_regular" />
+    </LinearLayout>
+</merge>

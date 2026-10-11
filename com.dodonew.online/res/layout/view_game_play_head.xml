@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:orientation="vertical" android:id="@id/view_head_contanier" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_video" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+        </FrameLayout>
+        <RelativeLayout android:background="@color/black_transparent" android:padding="5.0dp" android:paddingLeft="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/tv_game_flowers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="ssss" android:layout_alignParentRight="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/tv_game_channel_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ssss" android:singleLine="true" android:layout_toLeftOf="@id/tv_game_flowers" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/iv_play" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_selector" />
+</FrameLayout>

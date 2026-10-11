@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dodonew.online.widget.swipelayout.SwipeLayout android:id="@id/swipe" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@id/view_item_right" android:tag="Bottom3" android:background="@color/colorPrimary" android:layout_width="60.0dp" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" android:weightSum="10.0">
+            <TextView android:id="@id/tv_right" android:background="@drawable/ic_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout android:background="@drawable/item_normal_selector" android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:id="@id/view_divider" android:background="@color/divider" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            <LinearLayout android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/view_divider">
+                <ImageView android:id="@id/iv_netbar" android:layout_width="0.0dp" android:layout_height="match_parent" android:src="@drawable/icon_netbar_logo" android:scaleType="fitXY" android:layout_weight="0.3" />
+                <RelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="7.0dp" android:layout_weight="0.7">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/view_bar_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                        <ImageView android:id="@id/iv_bar_order" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_bar_order" />
+                        <ImageView android:id="@id/iv_bar_pay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:src="@drawable/icon_bar_pay" />
+                        <ImageView android:id="@id/iv_bar_coupon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:src="@drawable/icon_bar_coupon" />
+                        <ImageView android:id="@id/iv_bar_wifi" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:src="@drawable/icon_wifi" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/option_txt_color" android:id="@id/tv_netbar_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/view_bar_pic" android:layout_alignParentTop="true" />
+                    <TextView android:id="@id/tv_netbar_address" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/gray" android:id="@id/tv_netbar_cost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/gray" android:id="@id/tv_netbar_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.dodonew.online.widget.swipelayout.SwipeLayout>
+</LinearLayout>

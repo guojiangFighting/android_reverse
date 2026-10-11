@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <app.huawei.auto.im.ui.widget.DialogImage android:id="@id/sns_transmit_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/emui_color_text_secondary" android:ellipsize="end" android:id="@id/sns_transmit_img_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:textAlignment="viewStart" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/sns_delete_text_color_emuifive" android:ellipsize="end" android:gravity="right" android:id="@id/sns_transmit_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_below="@id/sns_transmit_img_text" />
+</RelativeLayout>

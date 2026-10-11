@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.huawei.auto.im.ui.chat.view.InputLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/input_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="50.0dp" layout="@layout/sns_assistant_menu_layout" />
+        <include android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/sns_input_layout" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/chat_bottom_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/sns_chat_panel" />
+    </LinearLayout>
+</app.huawei.auto.im.ui.chat.view.InputLayout>

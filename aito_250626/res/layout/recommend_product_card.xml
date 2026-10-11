@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/font8" />
+    <include android:id="@id/Recommend_card_title" layout="@layout/hwsubheader_title_more_grid" />
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/font8" />
+    <com.huawei.uikit.phone.hwrecyclerview.widget.HwRecyclerView android:id="@id/rv_product_card_horizontal" android:paddingBottom="@dimen/font12" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+</LinearLayout>

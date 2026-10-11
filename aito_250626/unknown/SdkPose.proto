@@ -1,0 +1,14 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+option java_package = "com.huawei.ads.carsearch.proto";
+
+import "SdkPoint.proto";
+import "SdkQuaternion.proto";
+
+package SdkMsgs;
+
+message Pose {
+    Point position = 1;
+    Quaternion orientation = 2;
+}

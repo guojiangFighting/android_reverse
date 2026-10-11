@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="#f1f3f5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:cardBackgroundColor="#f1f3f5" app:cardCornerRadius="@dimen/font20" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="#f1f3f5" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hwlistpattern_item_margin_32" android:layout_marginBottom="@dimen/font20" android:layout_marginStart="@dimen/hwlistpattern_item_icon_right_height_16" android:layout_marginEnd="@dimen/hwlistpattern_item_icon_right_height_16">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_gravity="center" android:id="@id/photod_title" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/textColorPrimaryAndSizeHeadLine7AndFontFamilyMedium" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/font40" android:layout_marginBottom="@dimen/font40" android:layout_marginStart="@dimen/hwlistpattern_item_icon_right_height_16" android:layout_marginEnd="@dimen/hwlistpattern_item_icon_right_height_16">
+                <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:layout_marginRight="@dimen/hwlistpattern_item_margin_12" app:cardCornerRadius="@dimen/font20" app:hwAdvancedCardViewClickAnimationEnable="false">
+                    <LinearLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/photod_img" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:src="@drawable/people1" android:layout_marginEnd="@dimen/hwlistpattern_item_margin_12" />
+                    </LinearLayout>
+                </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+                <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.huawei.uikit.phone.hweventbadge.widget.HwEventBadge android:id="@id/photodetails_zx" android:layout_width="@dimen/font24" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font4" android:layout_toRightOf="@id/photod_xiaotitle" app:hwEventBadgeBackgroundColor="#06a0ff" app:hwEventBadgeDotSize="@dimen/font16" app:hwEventBadgeMode="dot" />
+                    <com.huawei.uikit.hwtextview.widget.HwTextView android:id="@id/photod_xiaotitle" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textColorPrimaryAndSizeOverLineAndFamilyRegular" />
+                    <com.huawei.uikit.hwtextview.widget.HwTextView android:id="@id/photod_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/textColorTertiaryAndSizeSubTitle3AndFamilyRegular" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12" android:layout_marginBottom="@dimen/font20">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_gravity="center" android:id="@id/photod_meassage" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12" android:layout_marginBottom="@dimen/font20">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_gravity="center" android:id="@id/photod_meassage2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12" android:layout_marginBottom="@dimen/font16">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:layout_gravity="center" android:id="@id/photod_meassage3" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/textColorSecondaryAndSizeBody2AndFamilyRegular" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12">
+                <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/photod_img2" android:layout_width="match_parent" android:layout_height="match_parent" android:adjustViewBounds="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</LinearLayout>

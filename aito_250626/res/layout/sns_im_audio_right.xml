@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/msg_item_view" android:background="@drawable/sns_chat_right_selector" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_paly_pause" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="2.0dp" android:layout_alignParentStart="true">
+        <ImageView android:id="@id/audio_play" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/sns_ic_public_play" />
+        <ImageView android:id="@id/audio_pause" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/sns_ic_public_pause" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/dp14" android:textColor="@color/emui_color_text_primary" android:id="@id/voice_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="2.0dp" android:layout_alignParentEnd="true" android:breakStrategy="simple" android:hyphenationFrequency="none" />
+    <SeekBar android:id="@id/seekbar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="3.0dp" android:progress="0" android:progressDrawable="@drawable/sns_selector_seekbar_bg" android:minHeight="3.0dp" android:thumb="@drawable/sns_shape_point_circular" android:thumbOffset="0.0dp" android:layout_toLeftOf="@id/voice_duration" android:layout_toRightOf="@id/layout_paly_pause" android:layout_centerVertical="true" android:paddingStart="0.0dp" android:paddingEnd="0.0dp" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/voice_duration" android:layout_toEndOf="@id/layout_paly_pause" />
+</RelativeLayout>

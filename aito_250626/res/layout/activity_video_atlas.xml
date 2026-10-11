@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/base_status_layout_stub" android:layout="@layout/base_status_view_layout" android:inflatedId="@id/base_status_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@id/video_atlas_title" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/hwappbarpattern_title_item_layout" />
+    <RelativeLayout android:id="@id/layout_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/video_atlas_title">
+        <com.huawei.uikit.phone.hwsubtab.widget.HwSubTabWidget android:id="@id/video_atlas_subTabWidget" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/font56" app:hwSubTabItemMargin="0.0dp" app:hwSubTabItemMinWidth="0.0dp" style="@style/Widget.Emui.HwSubTabBar.Light" />
+        <com.huawei.uikit.phone.hwviewpager.widget.HwViewPager android:id="@id/video_atlas_viewPager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/font2" android:layout_below="@id/video_atlas_subTabWidget" android:overScrollMode="never" />
+    </RelativeLayout>
+</RelativeLayout>

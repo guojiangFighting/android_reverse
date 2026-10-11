@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/hwsearchview_cursor_height" android:width="@dimen/hwsearchview_cursor_width" />
+    <solid android:color="@color/editor_cursor_light" />
+    <corners android:radius="@dimen/hwsearchview_cursor_corner" />
+</shape>

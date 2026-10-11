@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:paddingTop="@dimen/hwdialogpattern_content_padding_top" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/hwdialogpattern_padding_horizontal" android:paddingEnd="@dimen/hwdialogpattern_padding_horizontal">
+            <ImageView android:id="@id/hwdialogpattern_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:maxHeight="@dimen/hwdialogpattern_image_max_height" />
+            <TextView android:id="@id/hwdialogpattern_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/emui_dimens_element_vertical_large" style="@style/Widget.Emui.HwDialogPattern.DialogSubTitle2" />
+            <TextView android:id="@id/hwdialogpattern_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/emui_dimens_element_vertical_middle" style="@style/Widget.Emui.HwDialogPattern.DialogBody1" />
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/hwdialogpattern_widgetframe" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/hwdialogpattern_simple_checkbox" />
+    <Space android:layout_width="0.0dp" android:layout_height="@dimen/hwdialogpattern_padding_bottom" />
+</LinearLayout>

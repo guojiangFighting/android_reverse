@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/unbind_car_title_layout" layout="@layout/mine_hwappbarpattern_navigation_icon_layout" />
+    <include android:id="@id/unbind_car_reason_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/unbind_car_title_layout" layout="@layout/fragment_unbind_reason" />
+    <include android:id="@id/loadding_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/xcar_loadding_view" />
+</RelativeLayout>

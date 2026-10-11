@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="24.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center|top" android:id="@id/rpa_warning_img" android:visibility="gone" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginTop="16.0dp" android:src="@drawable/epa_not_available" android:layout_marginStart="@dimen/ads_margin" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginBottom="24.0dp" android:layout_marginStart="@dimen/ads_margin" android:layout_marginEnd="@dimen/ads_margin">
+                <TextView android:textSize="16.0dp" android:typeface="sans" android:textColor="@color/base_black" android:gravity="start" android:layout_gravity="center_vertical" android:id="@id/check_step_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/epa_title_sys_prepare" android:textFontWeight="600" />
+            </LinearLayout>
+            <ListView android:id="@id/check_prepare_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:listSelector="@color/transparent_common" android:divider="@null" android:layout_marginStart="@dimen/ads_margin" android:layout_marginEnd="@dimen/ads_margin" />
+            <TextView android:textSize="@dimen/text_size_common_14" android:typeface="sans" android:textStyle="normal" android:textColor="@color/base_black" android:gravity="start" android:id="@id/check_error_txt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/rda_unavailable_msg_v1" android:layout_marginStart="16.0dp" android:layout_marginEnd="18.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="@dimen/text_size_common_16" android:textColor="@color/base_white" android:gravity="center" android:id="@id/btn_retry" android:background="@drawable/ads_selector_btn_baic" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginBottom="12.0dp" android:text="@string/btn_retry" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/ads_rpa_common_one_button_margin_start" android:layout_marginEnd="@dimen/ads_rpa_common_one_button_margin_end" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/baseui_dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/veh_status_description_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center|bottom" android:orientation="horizontal" android:id="@id/veh_status_and_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/status_update_htv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_status_updating_dot" android:layout_marginEnd="@dimen/font3" style="@style/textColorSecondaryAndSizeCaption1" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ble_icon_llayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:gravity="center" android:id="@id/bluetooth_icon" android:layout_width="@dimen/font14" android:layout_height="@dimen/font14" android:src="@drawable/icon_vehicle_bluetooth" />
+                <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:gravity="center" android:id="@id/nfc_icon" android:layout_width="@dimen/baseui_dp_26" android:layout_height="@dimen/baseui_dp_14" android:src="@drawable/ic_public_nfc_no_connect01" android:layout_marginStart="@dimen/baseui_dp_4" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_license_tips" android:paddingTop="@dimen/baseui_dp_4" android:paddingBottom="@dimen/baseui_dp_4" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font8" android:textColor="@color/blue_317AF7" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/license_discount" android:background="@drawable/shape_product_discount_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/baseui_dp_14" android:text="@string/xcar_app_text_re_product_buy_limit" android:fontFamily="@string/emui_text_font_family_regular" android:layout_marginEnd="@dimen/baseui_dp_5" android:paddingHorizontal="@dimen/baseui_dp_4" />
+            <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/license_status_update_htv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="@style/textColorSecondaryAndSizeCaption1" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="end|center" android:id="@id/license_tips_icon" android:layout_width="@dimen/font14" android:layout_height="@dimen/font14" android:src="@drawable/ic_dr_detail" android:scaleType="fitCenter" android:layout_marginStart="@dimen/baseui_dp_1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

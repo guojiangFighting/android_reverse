@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:ogpt="http://www.gi-de.com/offcard/gptasks/1.0" xmlns:oct="http://www.gi-de.com/offcard/commontypes/1.0" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.gi-de.com/offcard/gptasks/1.0" elementFormDefault="qualified">
+	<import namespace="http://www.gi-de.com/offcard/commontypes/1.0" schemaLocation="../../CommonTypes.xsd"/>
+	<include schemaLocation="GpKeySetTypes.xsd"/>
+	<complexType name="LoadPackageTaskType">
+		<sequence>
+			<element name="PackageAid" type="oct:AidType" minOccurs="0"/>
+			<element name="CapFile" type="ogpt:CapFileType"/>
+			<element name="SecurityDomainAid" type="oct:EncodingAidHex" minOccurs="0"/>
+			<element name="LoadFileDataBlockHash" type="ogpt:LoadFileDataBlockHashType" minOccurs="0"/>
+			<group ref="ogpt:LoadParameterGroup" minOccurs="0"/>		
+			<group ref="ogpt:TokenGroup" minOccurs="0"/>
+			<group ref="ogpt:DapVerificationBlockGroup" minOccurs="0" maxOccurs="unbounded"/>
+			<choice>
+				<element name="GpConfidentialLoadingKeySet" type="ogpt:GpConfidentialLoadingKeySetType" minOccurs="0"/>
+				<element name="GpAesConfidentialLoadingKeySet" type="ogpt:GpAesConfidentialLoadingKeySetType" minOccurs="0"/>
+			</choice>
+		</sequence>
+		<attribute name="Name" type="string" use="optional"/>
+		<attribute name="DescriptorComponent" type="boolean" use="optional" default="false"/>
+		<attribute name="DebugComponent" type="boolean" use="optional" default="false"/>
+	</complexType>
+	<complexType name="InstallForInstallTaskType">
+		<sequence>
+			<element name="PackageAid" type="oct:EncodingAidHex" minOccurs="0"/>
+			<element name="AppletClassAid" type="oct:EncodingAidHex"/>
+			<element name="AppletInstanceAid" type="oct:EncodingAidHex"/>
+			<element name="Privileges" type="ogpt:PrivilegesType"/>
+			<group ref="ogpt:InstallParameterGroup" minOccurs="0"/>
+			<group ref="ogpt:TokenGroup" minOccurs="0"/>
+		</sequence>
+		<attribute name="Name" type="string" use="optional"/>
+		<attribute name="Selectable" type="boolean" default="true"/>
+		<attribute name="BerLengthCodec" type="boolean" use="optional"/>
+		<attribute name="GpVersion" type="string" use="optional"/>
+		<attribute name="PropertySet" type="string" use="optional"/>
+		<!-- GpVersion needed for backward compatibility to the JLoad 3.1.1.4.beta version -->
+		<!-- PropertySet needed for backward compatibility to the JLoad 3.1.1.5.beta version -->
+	</complexType>
+	<complexType name="InstallForAliasTaskType">
+		<sequence>
+			<element name="PackageAid" type="oct:EncodingAidHex" minOccurs="0"/>
+			<element name="AppletClassAid" type="oct:EncodingAidHex"/>
+			<element name="AppletInstanceAid" type="oct:EncodingAidHex"/>
+			<element name="AppletAliasAid" type="oct:EncodingAidHex"/>
+			<element name="Privileges" type="ogpt:PrivilegesType"/>
+			<element name="aliasParametersField" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+			<group ref="ogpt:InstallParameterGroup" minOccurs="0"/>
+			<group ref="ogpt:TokenGroup" minOccurs="0"/>
+		</sequence>
+		<attribute name="Name" type="string" use="optional"/>
+		<attribute name="Selectable" type="boolean" default="true"/>
+		<attribute name="BerLengthCodec" type="boolean" use="optional"/>
+		<attribute name="GpVersion" type="string" use="optional"/>
+		<attribute name="PropertySet" type="string" use="optional"/>
+		<!-- GpVersion needed for backward compatibility to the JLoad 3.1.1.4.beta version -->
+		<!-- PropertySet needed for backward compatibility to the JLoad 3.1.1.5.beta version -->
+	</complexType>
+	<complexType name="MakeSelectableTaskType">
+		<sequence>
+			<element name="AppletInstanceAid" type="oct:EncodingAidHex"/>
+			<!--For the MAKE SELECTABLE only the DEFAULT PRIVILEGE is allowed. An element will be used instead of the PRIVILAGE structure.-->
+			<element name="DefaultSelectedPrivileg" minOccurs="0"/>
+			<group ref="ogpt:TokenGroup" minOccurs="0"/>
+		</sequence>
+		<attribute name="Name" type="string" use="optional"/>
+	</complexType>
+	<complexType name="InstallForExtraditionTaskType">
+		<sequence>
+			<element name="SecurityDomainAid" type="oct:EncodingAidHex"/>
+			<element name="AppletInstanceAid" type="oct:EncodingAidHex"/>
+			<group ref="ogpt:TokenGroup" minOccurs="0"/>
+		</sequence>
+		<attribute name="Name" type="string" use="optional"/>
+	</complexType>
+	<complexType name="InstallForPersonalizationTaskType">
+		<sequence>
+			<element name="AppletInstanceAid" type="oct:EncodingAidHex"/>
+		</sequence>
+		<attribute name="Name" type="string" use="optional"/>
+	</complexType>
+	<complexType name="UpdateRegistryTaskType">
+		<sequence>
+			<element name="SecurityDomainAid" type="oct:EncodingAidHex" minOccurs="0"/>
+			<element name="AppletInstanceAid" type="oct:EncodingAidHex" minOccurs="0"/>
+			<element name="Privileges" type="ogpt:PrivilegesType" minOccurs="0"/>
+			<group ref="ogpt:RegistryUpdateParameterGroup" minOccurs="0"/>
+			<group ref="ogpt:TokenGroup" minOccurs="0"/>
+		</sequence>
+		<attribute name="Name" type="string" use="optional"/>
+		<attribute name="BerLengthCodec" type="boolean" use="optional"/>
+		<attribute name="GpVersion" type="string" use="optional"/>
+		<attribute name="PropertySet" type="string" use="optional"/>
+		<!-- GpVersion needed for backward compatibility to the JLoad 3.1.1.4.beta version -->
+		<!-- PropertySet needed for backward compatibility to the JLoad 3.1.1.5.beta version -->
+	</complexType>
+	<complexType name="UpdateRegistryOpenTaskType">
+		<sequence>
+			<element name="Privileges" type="ogpt:PrivilegesType" minOccurs="0"/>
+			<element name="ContactlessProtocolParameters" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+			<element name="RegistryUpdateParametersField" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+			<group ref="ogpt:TokenGroup" minOccurs="0"/>
+		</sequence>
+		<attribute name="Name" type="string" use="optional"/>
+	</complexType>
+	<complexType name="CapFileType">
+		<sequence>
+			<element name="Content" type="base64Binary" minOccurs="0"/>
+			<element name="CapFileHash" type="oct:EncodingHex20Byte" minOccurs="0"/>
+		</sequence>
+		<attribute name="Uri" type="string" use="optional"/>
+		<attribute name="Name" type="string" use="optional"/>
+		<attribute name="SpecificName" type="ogpt:CapFileSpecificType" use="optional"/>
+		<attribute name="ContentUpdate" type="ogpt:CapContentUpdateType" use="optional"/>
+	</complexType>
+	<simpleType name="LoadFileDataBlockHashType">
+		<restriction base="token">
+			<enumeration value="SHA1"/>
+			<enumeration value="SHA256"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="CapFileSpecificType">
+		<restriction base="token">
+			<enumeration value="CapFileParser"/>
+			<enumeration value="LoadFile"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="CapContentUpdateType">
+		<restriction base="token">
+			<enumeration value="Never"/>
+			<enumeration value="Advice"/>
+			<enumeration value="Automatic"/>
+		</restriction>
+	</simpleType>
+	<complexType name="PrivilegesType">
+		<sequence>
+			<element name="SecurityDomain" type="ogpt:SecurityDomainPrivilegeType" minOccurs="0"/>
+			<element name="CardLock" minOccurs="0"/>
+			<element name="CardTerminate" minOccurs="0"/>
+			<element name="DefaultSelected" minOccurs="0"/>
+			<element name="PinChangeCvmManagement" minOccurs="0"/>
+			<element name="TrustedPath" minOccurs="0"/>
+			<element name="TokenVerification" minOccurs="0"/>
+			<element name="GlobalDelete" minOccurs="0"/>
+			<element name="GlobalLock" minOccurs="0"/>
+			<element name="GlobalRegistry" minOccurs="0"/>
+			<element name="FinalApplication" minOccurs="0"/>
+			<element name="GlobalService" minOccurs="0"/>
+			<element name="ReceiptGeneration" minOccurs="0"/>
+			<element name="GlobalActivation" minOccurs="0"/>
+			<element name="ContactlessActivation" minOccurs="0"/>
+			<element name="ContactlessSelfActivation" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="SecurityDomainPrivilegeType">
+		<choice minOccurs="0">
+			<element name="DapVerification"/>
+			<element name="MandatedDapVerification"/>
+			<element name="DelegatedManagement"/>
+			<element name="DelegatedManagementDapVerification"/>
+			<element name="DelegatedManagementMandatedDapVerification"/>
+			<element name="AuthorizedManagement"/>
+			<element name="AuthorizedManagementDapVerification"/>
+			<element name="AuthorizedManagementMandatedDapVerification"/>
+		</choice>
+	</complexType>
+	<complexType name="DapVerificationBlockType">
+		<sequence>
+			<element name="SecurityDomainAid" type="oct:EncodingAidHex"/>
+			<element name="Signature" type="oct:EncodingDapSignatureHex"/>
+		</sequence>
+	</complexType>
+	<group name="DapVerificationBlockGroup">
+		<choice>
+			<element name="DapVerificationBlock" type="ogpt:DapVerificationBlockType"/>
+			<element name="GpDesDapVerificationKeySet" type="ogpt:GpDesDapVerificationKeySetType"/>
+			<element name="GpRsaDapVerificationKeySet" type="ogpt:GpRsaDapVerificationKeySetType"/>
+		</choice>
+	</group>
+	<group name="TokenGroup">
+		<choice>
+			<element name="Token" type="oct:EncodingTokenHex"/>
+			<element name="GpDelegatedManagementKeySet" type="ogpt:GpDelegatedManagementKeySetType"/>
+			<element name="GpDelegatedManagementDesKeySet" type="ogpt:GpDelegatedManagementDesKeySetType"/>
+		</choice>
+	</group>
+	<group name="LoadParameterGroup">
+		<sequence>
+			<element name="CodeSpace" type="oct:EncodingHex1_4Byte" minOccurs="0"/>
+			<element name="TransientSpace" type="oct:EncodingHex1_4Byte" minOccurs="0"/>
+			<element name="NonVolatileSpace" type="oct:EncodingHex1_4Byte" minOccurs="0"/>
+			<element name="LoadParametersField" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+		</sequence>
+	</group>
+	<group name="InstallParameterGroup">
+		<sequence>
+			<element name="TransientSpace" type="oct:EncodingHex1_4Byte" minOccurs="0"/>
+			<element name="NonVolatileSpace" type="oct:EncodingHex1_4Byte" minOccurs="0"/>
+			<element name="InstallParameter" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+			<group ref="ogpt:EtsiParameterGroup" minOccurs="0"/>
+			<element name="ContactlessProtocolParameters" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+			<element name="UserInteractionParameters" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+			<element name="AdditionalContactlessParameters" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+			<element name="CumulativeGrantedVolatileMemory" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+			<element name="CumulativeGrantedNonVolatileMemory" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+			<element name="ImplicitSelection" type="oct:EncodingHex1Byte" minOccurs="0"/>
+			<group ref="ogpt:NfcParameterGroup" minOccurs="0"/>
+			<element name="OtaSecurityContext" type="oct:EncodingHex1Byte" minOccurs="0"/>
+			<element name="RegisterWithBipController" minOccurs="0"/>
+			<element name="InstallParametersField" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+		</sequence>
+	</group>
+	<group name="RegistryUpdateParameterGroup">
+		<sequence>
+			<element name="ContactlessProtocolParameters" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+			<element name="UserInteractionParameters" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+			<element name="CumulativeGrantedVolatileMemory" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+			<element name="CumulativeGrantedNonVolatileMemory" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+			<group ref="ogpt:NfcParameterGroup" minOccurs="0"/>
+			<element name="RegistryUpdateParametersField" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+		</sequence>
+	</group>
+	<group name="EtsiParameterGroup">
+		<choice>
+			<sequence>
+				<element name="GsmSpecificParameterSet" type="ogpt:GsmSpecificParameterSetType" minOccurs="0"/>
+				<element name="GsmSpecificParameters" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+			</sequence>
+			<sequence>
+				<element name="UiccSystemSpecificParameterSet" type="ogpt:UiccSystemSpecificParameterSetType" minOccurs="0"/>
+				<element name="UiccSystemSpecificParameters" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+			</sequence>
+		</choice>
+	</group>
+	<complexType name="GsmSpecificParameterSetType">
+		<sequence>
+			<element name="AccessDomain" type="ogpt:AccessDomainType"/>
+			<element name="PriorityLevel" type="oct:EncodingHex1Byte"/>
+			<element name="MaxNumberOfTimers" type="oct:EncodingHex1Byte"/>
+			<element name="MaxMenuTextLength" type="oct:EncodingHex1Byte"/>
+			<element name="MenuEntries" type="ogpt:MenuEntriesType" minOccurs="0"/>
+			<sequence minOccurs="0">
+				<element name="MaxNumberOfChannels" type="oct:EncodingHex1Byte"/>
+				<element name="MinimumSecurityLevel" type="ogpt:MinimumSecurityLevelType" minOccurs="0"/>
+				<element name="TarValues" type="ogpt:TarValuesType" minOccurs="0"/>
+			</sequence>
+		</sequence>
+	</complexType>
+	<complexType name="UiccSystemSpecificParameterSetType">
+		<sequence>
+			<element name="UiccToolkitParameters" type="ogpt:UiccToolkitParametersType" minOccurs="0"/>
+			<element name="UiccAccessParameters" type="ogpt:UiccAccessParametersType" minOccurs="0"/>
+			<element name="UiccAdministrativeAccessParameters" type="ogpt:UiccAccessParametersType" minOccurs="0"/>
+			<element name="EtsiDesDapKeySet" type="ogpt:EtsiDesDapKeySetType" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="UiccToolkitParametersType">
+		<sequence>
+			<element name="PriorityLevel" type="oct:EncodingHex1Byte"/>
+			<element name="MaxNumberOfTimers" type="oct:EncodingHex1Byte"/>
+			<element name="MaxMenuTextLength" type="oct:EncodingHex1Byte"/>
+			<element name="MenuEntries" type="ogpt:MenuEntriesType" minOccurs="0"/>
+			<sequence minOccurs="0">
+				<element name="MaxNumberOfChannels" type="oct:EncodingHex1Byte"/>
+				<element name="MinimumSecurityLevel" type="ogpt:MinimumSecurityLevelType" minOccurs="0"/>
+				<element name="TarValues" type="ogpt:TarValuesType" minOccurs="0"/>
+				<element name="MaxNumberOfServices" type="oct:EncodingHex1Byte" minOccurs="0"/>
+			</sequence>
+			<choice minOccurs="0">
+				<element name="ToolkitDap" type="oct:EncodingHex8Byte"/>
+				<element name="EtsiDesDapKeySet" type="ogpt:EtsiDesDapKeySetType"/>
+			</choice>
+		</sequence>
+	</complexType>
+	<complexType name="UiccAccessParametersType">
+		<sequence>
+			<element name="UiccFileSystemAccess" type="ogpt:UiccFileSystemAccessType" minOccurs="0"/>
+			<element name="AdfAccess" type="ogpt:AdfAccessType" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="UiccFileSystemAccessType">
+		<sequence>
+			<element name="AccessDomain" type="ogpt:AccessDomainType"/>
+			<choice minOccurs="0">
+				<element name="AccessDomainDap" type="oct:EncodingHex8Byte"/>
+				<element name="EtsiDesDapKeySet" type="ogpt:EtsiDesDapKeySetType"/>
+			</choice>
+		</sequence>
+	</complexType>
+	<complexType name="AdfAccessType">
+		<sequence>
+			<element name="AdfAid" type="oct:EncodingAidHex"/>
+			<element name="AccessDomain" type="ogpt:AccessDomainType"/>
+			<choice minOccurs="0">
+				<element name="AccessDomainDap" type="oct:EncodingHex8Byte"/>
+				<element name="EtsiDesDapKeySet" type="ogpt:EtsiDesDapKeySetType"/>
+			</choice>
+		</sequence>
+	</complexType>
+	<complexType name="AccessDomainType">
+		<sequence>
+			<element name="Parameter" type="oct:EncodingHex1Byte"/>
+			<element name="Data" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="MenuEntriesType">
+		<sequence>
+			<element name="MenuEntry" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="Position" type="oct:EncodingHex1Byte"/>
+						<element name="Identifier" type="oct:EncodingHex1Byte"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="MinimumSecurityLevelType">
+		<sequence>
+			<element name="Parameter" type="oct:EncodingHex1Byte"/>
+			<element name="Data" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="TarValuesType">
+		<sequence>
+			<element name="TarValue" type="oct:EncodingHex3Byte" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<group name="NfcParameterGroup">
+		<sequence>
+			<element name="ProprietaryInformation" type="oct:EncodingHexUnlimitedByte" minOccurs="0"/>
+		</sequence>
+	</group>
+</schema>

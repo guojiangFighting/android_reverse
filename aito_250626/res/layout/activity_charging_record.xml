@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/id_fa_color_sub_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <app.huawei.auto.base.view.StatusBarView android:id="@id/status_bar_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/Vehicle_switching_id" android:layout_width="wrap_content" android:layout_height="@dimen/font40" android:layout_below="@id/status_bar_view" android:layout_centerVertical="true" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/record_date_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/font40">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/record_date_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2021年7月份" style="@style/textColorPrimaryAndSizeBody1AndFamilyMedium" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/font12" android:layout_height="@dimen/font12" android:src="@drawable/triangle" android:layout_toRightOf="@id/record_date_text" android:layout_marginStart="8.0dp" android:layout_marginEnd="@dimen/baseui_dp_8" />
+            <RelativeLayout android:gravity="end|center" android:id="@id/charge_statics_layout" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:ellipsize="end" android:id="@id/charge_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_software_item_default" android:singleLine="true" />
+                <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:ellipsize="end" android:id="@id/charge_power" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_software_item_default" android:singleLine="true" android:layout_marginStart="@dimen/baseui_dp_12" android:layout_toEndOf="@id/charge_count" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/record_pile_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/font40" android:layout_alignParentRight="true">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="end" android:id="@id/record_pile_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_not_available_bound" android:maxEms="7" android:singleLine="true" style="@style/textColorPrimaryAndSizeBody1AndFamilyMedium" />
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/font12" android:layout_height="@dimen/font12" android:src="@drawable/triangle" android:layout_toRightOf="@id/record_pile_text" android:layout_marginStart="8.0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/record_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:layout_below="@id/Vehicle_switching_id" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16" />
+    <include android:id="@id/error_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/status_bar_view" layout="@layout/charging_about_error_layout" />
+    <include android:id="@id/empty_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/Vehicle_switching_id" layout="@layout/charg_empty_view" />
+    <View android:id="@id/mask_view" android:background="@color/emui_color_fourth" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

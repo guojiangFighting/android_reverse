@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:id="@id/space" android:layout_width="match_parent" android:layout_height="@dimen/search_result_item_margin" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/content_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/search_result_item_margin" android:minHeight="@dimen/search_result_image_width" android:layout_below="@id/space" android:layout_toEndOf="@id/image_container">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="@color/black" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" app:layout_constraintTop_toTopOf="parent" style="@style/textColorPrimaryAndSizeBody2AndFamilyRegular" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="@color/search_result_subtitle_color" android:ellipsize="end" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:maxLines="2" android:layout_below="@id/title" style="@style/textColorLinkAndSizeBody3AndFamilySecondary" />
+    </RelativeLayout>
+    <View android:background="@drawable/ic_horizontal_driver_bg" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_below="@id/content_container" />
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/image_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/space" android:layout_marginEnd="@dimen/common_padding" app:cardCornerRadius="8.0dp">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/title_image" android:layout_width="@dimen/search_result_image_width" android:layout_height="@dimen/search_result_image_width" android:src="@color/default_pic_light_color" />
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

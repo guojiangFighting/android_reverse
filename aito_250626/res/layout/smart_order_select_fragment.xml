@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="#f1f3f5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout android:id="@id/pull_refresh_layout" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+    </com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout>
+    <ViewStub android:id="@id/base_status_layout_stub" android:layout="@layout/base_status_view_layout" android:inflatedId="@id/base_status_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@id/loadding_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/xcar_poster_loadding_view" />
+    <ViewStub android:id="@id/switch_order_error_stub" android:layout="@layout/base_status_view_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@id/loadding_view_order" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/xcar_poster_loadding_view" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font24" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/smart_title_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/hwappbarpattern_height" android:maxLines="2" android:paddingStart="@dimen/font16" app:hwAutoSizeMinTextSize="@dimen/font18" app:hwAutoSizeStepGranularity="@dimen/hwappbarpattern_step_granularity" style="@style/Widget.Emui.HwAppbarPattern.TextAppearance.Title" />
+    <app.huawei.auto.drive.ui.view.UserGuideView android:id="@id/user_guide_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="-60.0dp" android:adjustViewBounds="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

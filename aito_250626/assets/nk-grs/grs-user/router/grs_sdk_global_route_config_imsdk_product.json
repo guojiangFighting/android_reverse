@@ -1,0 +1,93 @@
+{
+	"applications": [],
+	"services": [
+		{
+			"name": "com.huawei.cloud.im",
+			"routeBy": "ser_country",
+			"servings": [
+				{
+					"countryGroup": "DR1",
+					"addresses": {
+						"trsServerUrl": "https://im-drcn.platform.dbankcloud.cn/TRSServer/GetRoute",
+						"ckmServerUrl": "https://sns-drcn.platform.dbankcloud.cn/SNS/",
+						"imServerUrl": "https://im-drcn.platform.dbankcloud.cn",
+						"imFileServerUrl": "https://im-file-drcn.platform.dbankcloud.cn",
+						"haReportUrl": "https://metrics1-drcn.dt.dbankcloud.cn:443",
+						"dmWebSocketUrl": "wss://userconnect-danmu-drcn.platform.dbankcloud.cn:10013",
+						"dmTcpUrl": "https://userconnect-danmu-drcn.platform.dbankcloud.cn:10012"
+					}
+				},
+				{
+					"countryGroup": "DR2",
+					"addresses": {
+						"trsServerUrl": "https://im-dra.platform.dbankcloud.com/TRSServer/GetRoute",
+						"ckmServerUrl": "https://sns-dra.platform.dbankcloud.com/SNS/",
+						"imServerUrl": "https://im-dra.platform.dbankcloud.com",
+						"imFileServerUrl": "https://im-file-dra.platform.dbankcloud.com",
+						"haReportUrl": "https://metrics-dra.dt.hicloud.com:6447"
+					}
+				},
+				{
+					"countryGroup": "DR3",
+					"addresses": {
+						"trsServerUrl": "https://im-dre.platform.dbankcloud.com/TRSServer/GetRoute",
+						"ckmServerUrl": "https://sns-dre.platform.dbankcloud.com/SNS/",
+						"imServerUrl": "https://im-dre.platform.dbankcloud.com",
+						"imFileServerUrl": "https://im-file-dre.platform.dbankcloud.com",
+						"haReportUrl": "https://metrics2.data.hicloud.com:6447"
+					}
+				},
+				{
+					"countryGroup": "DR4",
+					"addresses": {
+						"trsServerUrl": "https://im-drru.platform.dbankcloud.ru/TRSServer/GetRoute",
+						"ckmServerUrl": "https://sns-drru.platform.dbankcloud.ru/SNS/",
+						"imServerUrl": "https://im-drru.platform.dbankcloud.ru",
+						"imFileServerUrl": "https://im-file-drru.platform.dbankcloud.ru",
+						"haReportUrl": "https://metrics5.dt.dbankcloud.ru:6447"
+					}
+				}
+			],
+			"countryGroups": [
+				{
+					"id": "DR1",
+					"name": "China",
+					"countries": [
+						"CN"
+					],
+					"description": "China zone"
+				},
+				{
+					"id": "DR2",
+					"name": "Asian-African-Latin American",
+					"countries": ["AE","AF","AG","AI","AM","AO","AQ","AR","AS","AW","AZ","BB","BD","BF","BH","BI","BJ","BL","BM","BN","BO","BR","BS","BT","BV","BW","BY","BZ","CC","CD","CF","CG","CI","CK","CL","CM","CO","CR","CU","CV","CX","DJ","DM","DO","DZ","EC","EG","EH","ER","ET","FJ","FK","FM","GA","GD","GE","GF","GH","GM","GN","GP","GQ","GS","GT","GU","GW","GY","HK","HM","HN","HT","ID","IN","IO","IQ","JM","JO","JP","KE","KG","KH","KI","KM","KN","KP","KR","KW","KY","KZ","LA","LB","LC","LK","LR","LS","LY","MA","MG","MH","ML","MM","MN","MO","MP","MQ","MR","MS","MU","MV","MW","MX","MY","MZ","NA","NC","NE","NF","NG","NI","NP","NR","NU","OM","PA","PE","PF","PG","PH","PK","PN","PR","PS","PW","PY","QA","RE","RW","SA","SB","SC","SD","SG","SH","SL","SN","SO","SR","SS","ST","SV","SY","SZ","TC","TD","TF","TG","TH","TJ","TK","TL","TM","TN","TO","TT","TV","TW","TZ","UG","UY","UZ","VE","VG","VI","VN","VU","WF","WS","YE","YT","ZA","ZM","ZW"],
+					"description": "Asian-African-Latin American zone"
+				},
+				{
+					"id": "DR3",
+					"name": "Europe",
+					"countries": ["AD","AL","AN","AT","AU","AX","BA","BE","BG","BQ","CA","CH","CW","CY","CZ","DE","DK","EE","ES","FI","FO","FR","GB","GG","GI","GL","GR","HR","HU","IE","IL","IM","IS","IT","JE","LI","LT","LU","LV","MC","MD","ME","MF","MK","MT","NL","NO","NZ","PL","PM","PT","RO","RS","SE","SI","SJ","SK","SM","SX","TR","UA","UM","US","VA","VC","XK","YK"],
+					"description": "Europe zone"
+				},
+				{
+					"id": "DR4",
+					"name": "Russa",
+					"countries": [
+						"RU"
+					],
+					"description": "Russa zone"
+				},
+				{
+					"id": "DR5",
+					"name": "A2",
+					"countries": [
+						"IR"
+					],
+					"description": "A2 zone"
+				}
+			]
+		}
+	],
+	"countryGroups": [
+	]
+}

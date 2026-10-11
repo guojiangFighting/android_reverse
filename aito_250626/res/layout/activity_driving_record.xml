@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/id_fa_color_sub_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/stroke_title_include" layout="@layout/mine_hwappbarpattern_navigation_icon_layout" />
+    <LinearLayout android:gravity="start" android:orientation="horizontal" android:id="@id/start_time_end_ly" android:layout_width="match_parent" android:layout_height="@dimen/font32" android:layout_below="@id/stroke_title_include" android:paddingHorizontal="@dimen/baseui_dp_16">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:textColor="@color/emui_color_text_primary" android:gravity="center" android:id="@id/start_time_end_tv" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawablePadding="8.0dp" android:drawableEnd="@drawable/ic_down_black" android:fontFamily="@string/emui_text_font_family_medium" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/start_time_end_ly">
+        <com.huawei.uikit.hwrecyclerview.widget.HwRecyclerView android:orientation="vertical" android:id="@id/stroke_hwre_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:overScrollMode="never" android:nestedScrollingEnabled="false" />
+    </RelativeLayout>
+    <include android:id="@id/stroke_record_load_progress" android:visibility="gone" layout="@layout/driving_record_loadding_view_box" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/start_time_end_ly">
+        <include android:id="@id/stroke_record_error" android:visibility="gone" layout="@layout/driving_record_unexception_layout" />
+        <include android:id="@id/stroke_empty_page" android:visibility="gone" layout="@layout/x_car_empty_view" />
+    </LinearLayout>
+</RelativeLayout>

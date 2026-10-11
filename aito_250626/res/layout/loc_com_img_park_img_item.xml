@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/loc_com_car_img_view" android:layout_width="match_parent" android:layout_height="184.0dp" android:scaleType="centerCrop" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.huawei.ads.location.view.excview.BorderedTextView android:textSize="13.439972dp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/loc_com_car_img_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:maxLines="1" app:layout_constraintEnd_toEndOf="@id/loc_com_car_img_view" app:layout_constraintStart_toStartOf="@id/loc_com_car_img_view" app:layout_constraintTop_toTopOf="@id/loc_com_car_img_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

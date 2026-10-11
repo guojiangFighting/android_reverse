@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:layout_marginStart="@dimen/font12" android:layout_marginEnd="@dimen/font12" app:cardCornerRadius="@dimen/emui_corner_radius_large" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/font24" android:paddingEnd="@dimen/font24">
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font20" android:textStyle="bold" android:textColor="@color/new_emui_text_primary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="@dimen/font56" android:text="@string/xcar_app_dialog_title_please_select_brand" style="@style/textColorPrimaryAndSizeBody1" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/store_brand_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/hwtimepicker_alert_dialog_button_text_size" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cancel_btn" android:background="?android:selectableItemBackground" android:layout_width="match_parent" android:layout_height="@dimen/font40" android:layout_marginTop="8.0dp" android:layout_marginBottom="@dimen/font16" android:text="@string/xcar_app_button_cancel" android:maxLines="1" android:layout_weight="1.0" android:fontFamily="@string/emui_text_font_family_medium" android:paddingStart="@dimen/hwtimepicker_padding_m" android:paddingEnd="@dimen/hwtimepicker_padding_m" app:hwAutoSizeMinTextSize="@dimen/hwtimepicker_alert_dialog_button_text_size" style="@style/Widget.Emui.HwButton" />
+        </LinearLayout>
+    </com.huawei.uikit.hwadvancedcardview.widget.HwAdvancedCardView>
+</RelativeLayout>

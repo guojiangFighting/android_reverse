@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/app_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <RelativeLayout android:id="@id/guide_float_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View android:background="#cbeeeeee" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <com.huawei.uikit.phone.hwbottomnavigationview.widget.HwBottomNavigationView android:id="@id/app_hw_bottom_main" android:layout_width="match_parent" android:layout_height="wrap_content" app:hwBottomNavMenu="@menu/app_hw_menu_main" app:hwTintEnable="false" style="@style/Widget.Emui.HwBottomNavigationView.Light.Sub" />
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/aito_loadding_in_login" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="12.0dp" />
+            <solid android:color="@color/svs_com_white" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:topLeftRadius="12.0dp" android:topRightRadius="12.0dp" android:bottomLeftRadius="12.0dp" android:bottomRightRadius="12.0dp" />
+            <solid android:color="@color/svs_com_blue_to_smart_search_cardBack" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/item_picture_img" android:layout_width="@dimen/font108" android:layout_height="@dimen/font108" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/exo_player_replay_img" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:src="@drawable/ic_exo_play" android:layout_centerInParent="true" />
+</RelativeLayout>

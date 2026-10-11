@@ -1,0 +1,14 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+option java_package = "com.huawei.ads.carsearch.proto";
+
+import "SdkPose.proto";
+
+package SdkMsgs;
+
+message PoseWithCovariance {
+    reserved 2, 3;
+    Pose pose = 1;
+    // repeated float covariance = 2;
+    // PoseEncrypt poseEncrypt = 3;
+}

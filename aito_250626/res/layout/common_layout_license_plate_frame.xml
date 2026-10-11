@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="56.0dp">
+        <TextView android:textColor="@color/black" android:id="@id/item_code_iv1" android:background="@drawable/common_license_plate_selected" android:hint="省" android:layout_weight="1.0" android:layout_marginStart="14.0dp" android:layout_marginEnd="11.0dp" style="@style/common_license_plate_editStyle" />
+        <TextView android:textColor="@color/black" android:id="@id/item_code_iv2" android:background="@drawable/common_license_plate_not_selected" android:layout_weight="1.0" android:layout_marginEnd="7.0dp" style="@style/common_license_plate_editStyle" />
+        <ImageView android:background="@drawable/common_black_dot" android:layout_width="3.0dp" android:layout_height="3.0dp" android:contentDescription="dot" android:layout_marginEnd="7.0dp" />
+        <TextView android:textColor="@color/black" android:id="@id/item_code_iv3" android:background="@drawable/common_license_plate_not_selected" android:layout_weight="1.0" android:layout_marginEnd="11.0dp" style="@style/common_license_plate_editStyle" />
+        <TextView android:textColor="@color/black" android:id="@id/item_code_iv4" android:background="@drawable/common_license_plate_not_selected" android:layout_weight="1.0" android:layout_marginEnd="11.0dp" style="@style/common_license_plate_editStyle" />
+        <TextView android:textColor="@color/black" android:id="@id/item_code_iv5" android:background="@drawable/common_license_plate_not_selected" android:layout_weight="1.0" android:layout_marginEnd="11.0dp" style="@style/common_license_plate_editStyle" />
+        <TextView android:textColor="@color/black" android:id="@id/item_code_iv6" android:background="@drawable/common_license_plate_not_selected" android:layout_weight="1.0" android:layout_marginEnd="11.0dp" style="@style/common_license_plate_editStyle" />
+        <TextView android:textColor="@color/black" android:id="@id/item_code_iv7" android:background="@drawable/common_license_plate_not_selected" android:layout_weight="1.0" android:layout_marginEnd="11.0dp" style="@style/common_license_plate_editStyle" />
+        <TextView android:textColor="@color/black" android:id="@id/item_code_iv8" android:background="@drawable/common_license_plate_not_selected" android:layout_weight="1.0" android:layout_marginEnd="14.0dp" style="@style/common_license_plate_editStyle" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/red_warning" android:id="@id/item_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:scaleType="centerCrop" android:layout_marginStart="14.0dp" />
+</LinearLayout>

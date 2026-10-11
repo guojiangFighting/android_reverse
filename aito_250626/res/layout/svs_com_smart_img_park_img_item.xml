@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/car_img_view" android:layout_width="match_parent" android:layout_height="@dimen/svs_com_car_img_height" android:scaleType="centerCrop" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.huawei.ads.carsearch.viewmodel.BorderedTextView android:textSize="@dimen/svs_com_car_img_txt_size" android:textColor="@color/svs_com_white" android:gravity="center" android:id="@id/car_img_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/svs_com_car_img_top_margin" android:maxLines="1" app:layout_constraintEnd_toEndOf="@id/car_img_view" app:layout_constraintStart_toStartOf="@id/car_img_view" app:layout_constraintTop_toTopOf="@id/car_img_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

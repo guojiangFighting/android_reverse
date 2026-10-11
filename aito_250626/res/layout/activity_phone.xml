@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.huawei.auto.base.view.MyRelativeLayout android:id="@id/parent_view" android:background="@color/emui_color_subbg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/mine_my_car_title_ls" layout="@layout/mine_hwappbarpattern_navigation_icon_layout" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/mine_my_car_title_ls">
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font16" android:textColor="#000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/xcar_app_text_phone_title_car" android:fontFamily="@string/emui_text_font_family_medium" android:layout_marginHorizontal="16.0dp" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginHorizontal="16.0dp">
+            <com.huawei.uikit.phone.hwedittext.widget.HwEditText android:textSize="@dimen/font16" android:id="@id/edittext_space" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:hint="@string/xcar_app_text_phone_hw_edittext_car" android:maxLength="26" android:inputType="number" style="@style/Widget.Emui.HwEditText.Linear" />
+            <View android:id="@id/line" android:background="@color/black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@id/edittext_space" />
+            <com.huawei.uikit.hwimageview.widget.HwImageView android:id="@id/send_comment_icon" android:layout_width="16.0dp" android:layout_height="@dimen/font16" android:src="@drawable/ic_public_delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:layout_constraintEnd_toEndOf="parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.huawei.uikit.phone.hwbutton.widget.HwButton android:enabled="false" android:textSize="@dimen/font16" android:id="@id/phone_hwBut" android:layout_width="180.0dp" android:layout_height="@dimen/font40" android:layout_marginTop="@dimen/font24" android:layout_marginBottom="@dimen/font16" android:text="@string/xcar_app_button_next_step" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Widget.Emui.HwButton.Light" />
+</app.huawei.auto.base.view.MyRelativeLayout>

@@ -1,0 +1,153 @@
+.class Lcom/amap/api/mapcore/util/cg;
+.super Lcom/amap/api/mapcore/util/cj;
+.source "ExceptionLogUpDateProcessor.java"
+
+
+# static fields
+.field private static a:Z
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .prologue
+    .line 13
+    const/4 v0, 0x1
+
+    sput-boolean v0, Lcom/amap/api/mapcore/util/cg;->a:Z
+
+    return-void
+.end method
+
+.method protected constructor <init>(Landroid/content/Context;)V
+    .locals 0
+
+    .prologue
+    .line 16
+    invoke-direct {p0, p1}, Lcom/amap/api/mapcore/util/cj;-><init>(Landroid/content/Context;)V
+
+    .line 18
+    return-void
+.end method
+
+
+# virtual methods
+.method protected a()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 23
+    sget-object v0, Lcom/amap/api/mapcore/util/ci;->b:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method protected a(Landroid/content/Context;)Z
+    .locals 6
+
+    .prologue
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    .line 37
+    invoke-static {p1}, Lcom/amap/api/mapcore/util/bq;->m(Landroid/content/Context;)I
+
+    move-result v2
+
+    if-ne v2, v0, :cond_2
+
+    sget-boolean v2, Lcom/amap/api/mapcore/util/cg;->a:Z
+
+    if-eqz v2, :cond_2
+
+    .line 39
+    sput-boolean v1, Lcom/amap/api/mapcore/util/cg;->a:Z
+
+    .line 43
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    move-result-object v2
+
+    monitor-enter v2
+
+    .line 45
+    :try_start_0
+    new-instance v3, Lcom/amap/api/mapcore/util/da;
+
+    invoke-direct {v3, p1}, Lcom/amap/api/mapcore/util/da;-><init>(Landroid/content/Context;)V
+
+    .line 47
+    invoke-virtual {v3}, Lcom/amap/api/mapcore/util/da;->a()Lcom/amap/api/mapcore/util/dc;
+
+    move-result-object v4
+
+    .line 49
+    if-nez v4, :cond_0
+
+    .line 50
+    monitor-exit v2
+
+    .line 70
+    :goto_0
+    return v0
+
+    .line 52
+    :cond_0
+    invoke-virtual {v4}, Lcom/amap/api/mapcore/util/dc;->b()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1
+
+    .line 53
+    const/4 v1, 0x0
+
+    invoke-virtual {v4, v1}, Lcom/amap/api/mapcore/util/dc;->b(Z)V
+
+    .line 54
+    invoke-virtual {v3, v4}, Lcom/amap/api/mapcore/util/da;->a(Lcom/amap/api/mapcore/util/dc;)V
+
+    .line 64
+    monitor-exit v2
+
+    goto :goto_0
+
+    .line 68
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+
+    .line 66
+    :cond_1
+    :try_start_1
+    monitor-exit v2
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    move v0, v1
+
+    goto :goto_0
+
+    :cond_2
+    move v0, v1
+
+    .line 70
+    goto :goto_0
+.end method
+
+.method protected b()I
+    .locals 1
+
+    .prologue
+    .line 29
+    const/4 v0, 0x1
+
+    return v0
+.end method

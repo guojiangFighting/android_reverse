@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwviewpager.widget.HwViewPager android:id="@id/view_pager" android:nextFocusDown="@id/indicator_view" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" app:hwViewPagerSupportLoop="true" />
+    <com.huawei.uikit.phone.hwdotspageindicator.widget.HwDotsPageIndicator android:id="@id/indicator_view" android:layout_width="match_parent" android:layout_height="@dimen/hwdotspageindicator_total_height" android:layout_alignBottom="@id/view_pager" android:layout_centerHorizontal="true" app:hwIsAutoPlay="false" app:hwIsOperable="true" app:hwSelectedDotColor="@android:color/white" app:hwUnselectedDotColor="#33ffffff" style="@style/Widget.Emui.HwDotsPageIndicator.Translucent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+</merge>

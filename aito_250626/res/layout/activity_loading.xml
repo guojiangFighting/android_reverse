@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/projection_loading" android:layout_width="match_parent" android:layout_height="match_parent" android:onClick="onClick">
+        <com.huawei.uikit.hwprogressbar.widget.HwProgressBar android:id="@id/projection_progress_bar" android:layout_width="@dimen/width48dp" android:layout_height="@dimen/height48dp" style="@android:style/Widget.ProgressBar.Large" />
+        <com.huawei.uikit.hwtextview.widget.HwTextView android:textSize="@dimen/textSize14" android:textColor="@color/emui_color_text_secondary" android:gravity="center_horizontal" android:id="@id/projection_loading_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin16dp" android:layout_marginTop="@dimen/margin4dp" android:layout_marginRight="@dimen/margin16dp" android:text="@string/loading" android:maxLines="2" android:fontFamily="@string/emui_text_font_family_regular" />
+    </com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout>
+</com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout>

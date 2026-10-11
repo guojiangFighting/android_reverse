@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/my_orders_activities_l" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwrecyclerview.widget.HwRecyclerView android:id="@id/activity_order_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:overScrollMode="never" android:layout_marginHorizontal="@dimen/font16" />
+    <include layout="@layout/x_car_empty_view" />
+</RelativeLayout>

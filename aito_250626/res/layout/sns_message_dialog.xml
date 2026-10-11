@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/emui_dimens_element_horizontal_large" android:paddingTop="@dimen/emui_dimens_default_top" android:paddingRight="@dimen/emui_dimens_element_horizontal_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/emui_dimens_element_horizontal_large" android:paddingEnd="@dimen/emui_dimens_element_horizontal_large"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/emui_text_size_subtitle1" android:textColor="@color/emui_color_text_primary" android:gravity="center" android:id="@id/message_dialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.1" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/font23"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/linearlayout_pop" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/point_layout" android:layout_width="wrap_content" android:layout_height="@dimen/font10" android:layout_marginTop="@dimen/font6">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center_vertical" android:id="@id/iv_point" android:background="@drawable/timeline_green" android:layout_width="@dimen/font10" android:layout_height="@dimen/font10" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="@dimen/font10" android:layout_height="@dimen/font56" android:layout_marginTop="@dimen/font16">
+        <View android:layout_gravity="center_vertical" android:id="@id/v_line" android:background="#7f7c7c" android:layout_width="1.0dp" android:layout_height="@dimen/font56" android:alpha="0.4" />
+    </LinearLayout>
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="@color/emui_primary" android:layout_gravity="center" android:id="@id/txt_date_content" android:layout_width="wrap_content" android:layout_height="@dimen/font20" android:text="" android:layout_toRightOf="@id/linearlayout_pop" android:layout_marginStart="@dimen/font16" style="@style/textColorSecondaryAndSizeBody1AndFamilyRegular" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:ellipsize="end" android:id="@id/txt_date_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2" android:maxLines="2" android:layout_toRightOf="@id/linearlayout_pop" android:layout_below="@id/txt_date_content" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font12" style="@style/textColorAndTextSizeBody3AndFamilyRegular" />
+</RelativeLayout>

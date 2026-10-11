@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/more_configurations_view" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/set_distance_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:layout_centerHorizontal="true" android:paddingEnd="@dimen/font12">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+          xmlns:app="http://schemas.android.com/apk/res-auto">
+            <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/configuration_img" android:layout_width="0.0dp" android:layout_height="0.0dp" android:scaleType="centerCrop" app:layout_constraintDimensionRatio=" H,1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <View android:gravity="center" android:id="@id/back_view" android:background="@drawable/test_drive_back" android:layout_width="match_parent" android:layout_height="@dimen/font32" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textColor="#ffffff" android:gravity="center" android:id="@id/configuration_tv" android:paddingBottom="@dimen/font8" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/textColorAndTextSizeBody3AndFamilyRegular" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</RelativeLayout>

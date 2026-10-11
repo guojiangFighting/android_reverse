@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:state_window_focused="true" android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/hwcheckbox_on_disabled_focused_small_dark" />
+    <item android:state_focused="true" android:state_window_focused="true" android:state_enabled="false" android:state_checked="false" android:drawable="@drawable/hwcheckbox_off_disabled_focused_small_dark" />
+    <item android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/hwcheckbox_on_disable_dark_small" />
+    <item android:state_enabled="false" android:state_checked="false" android:drawable="@drawable/hwcheckbox_off_disable_dark_small" />
+    <item android:state_focused="true" android:state_window_focused="true" android:state_checked="true" android:id="@id/focused_checked" android:drawable="@drawable/hwcheckbox_on_focused_small_dark" />
+    <item android:state_focused="true" android:state_window_focused="true" android:state_checked="false" android:id="@id/focused_unchecked" android:drawable="@drawable/hwcheckbox_off_focused_small_dark" />
+    <item android:state_checked="true" android:id="@id/hover_checked" android:drawable="@drawable/hwcheckbox_on_hover_small_dark" android:state_hovered="true" />
+    <item android:state_checked="false" android:id="@id/hover_unchecked" android:drawable="@drawable/hwcheckbox_off_hover_small_dark" android:state_hovered="true" />
+    <item android:state_checked="true" android:id="@id/checked" android:drawable="@drawable/hwcheckbox_on_dark_small" />
+    <item android:id="@id/unchecked" android:drawable="@drawable/hwcheckbox_off_dark_small" />
+</selector>

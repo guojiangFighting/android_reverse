@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.uikit.phone.hwcardview.widget.HwCardView android:id="@id/hwcardview_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="32.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/hwcardview_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:id="@id/hwcardview_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="9.0dp" android:text="HwCardView is CardView  with EMUI blur background,  and same predefined pattern content layout. some pattern has textsizing feature.\nMaterial CardView is A FrameLayout with a rounded corner background and shadow\n\nNote: currently android use various implementation to show card like view : nofitication and mms" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+        <include layout="@layout/hwcardview_header_with_two_button" />
+        <include layout="@layout/hwcardview_footer_three_button" />
+    </LinearLayout>
+</com.huawei.uikit.phone.hwcardview.widget.HwCardView>

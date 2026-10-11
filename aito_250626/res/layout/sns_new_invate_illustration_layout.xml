@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/illustration_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_ic_search_app_empty_normal" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body2" android:textColor="@color/emui_color_text_secondary" android:gravity="center_horizontal" android:id="@id/text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sns_common_margin_24" android:layout_marginRight="@dimen/sns_common_margin_24" android:layout_marginStart="@dimen/sns_common_margin_24" android:layout_marginEnd="@dimen/sns_common_margin_24" />
+    </LinearLayout>
+    <com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout android:id="@id/bottom_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/emui_dimens_default_top" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:hwColumnType="button_type">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/btn_addfriend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_sns_title_add_friend" style="@style/Widget.Emui.HwButton" />
+    </com.huawei.uikit.hwcolumnlayout.widget.HwColumnLinearLayout>
+</RelativeLayout>

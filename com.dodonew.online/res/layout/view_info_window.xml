@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/custom_info_bubble" android:layout_width="200.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/badge" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginRight="5.0dp" android:src="@drawable/icon_app" android:scaleType="fitXY" android:layout_weight="0.4" />
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_weight="0.6">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ssdsd" android:singleLine="true" android:layout_alignParentTop="true" />
+        <TextView android:textColor="@color/gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/snippet" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="ssdsd" android:singleLine="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

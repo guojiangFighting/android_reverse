@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/baseui_dp_16" app:cardBackgroundColor="@color/emui_card_panel_bg" app:cardCornerRadius="@dimen/emui_corner_radius_small" app:hwAdvancedCardViewClickAnimationEnable="false">
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/feedback_pic" android:layout_width="@dimen/hwlistpattern_item_left_image_height_64" android:layout_height="@dimen/hwlistpattern_item_left_image_height_64" android:scaleType="centerCrop" />
+    </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+</FrameLayout>

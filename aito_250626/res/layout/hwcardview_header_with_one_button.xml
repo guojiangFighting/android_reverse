@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/hwcardview_padding_l" android:paddingEnd="@dimen/hwcardview_padding_m"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/hwcardview_icon" android:layout_width="@dimen/hwcardview_header_icon_width" android:layout_height="@dimen/hwcardview_header_icon_height" android:paddingStart="0.0dp" />
+        <LinearLayout android:layout_gravity="center" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/hwcardview_title_textsize" android:textColor="@color/emui_color_primary" android:gravity="start" android:layout_gravity="center" android:id="@id/hwcardview_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" android:textDirection="locale" android:layout_marginStart="@dimen/hwcardview_margin_m" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/hwcardview_action_expand" android:padding="@dimen/hwcardview_header_action_expand_padding" android:visibility="gone" android:layout_width="@dimen/hwcardview_header_action_info_width" android:layout_height="@dimen/hwcardview_header_action_info_height" />
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/hwcardview_action_more" android:background="@drawable/hwcardview_selector_button" android:padding="@dimen/hwcardview_header_action_more_padding" android:focusable="true" android:clickable="true" android:layout_width="@dimen/hwcardview_header_action_more_width" android:layout_height="@dimen/hwcardview_header_action_more_height" app:srcCompat="@drawable/hwcardview_header_action_more" />
+    </LinearLayout>
+</LinearLayout>

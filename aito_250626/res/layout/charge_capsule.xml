@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_vertical" android:id="@id/charging_animation" android:visibility="gone" android:layout_width="@dimen/font16" android:layout_height="@dimen/font16" android:layout_marginLeft="@dimen/font12" app:lottie_autoPlay="true" app:lottie_fileName="chongdian.json" app:lottie_imageAssetsFolder="image/" app:lottie_loop="true" />
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:layout_gravity="center_vertical" android:id="@id/capsule_icon" android:layout_width="@dimen/font16" android:layout_height="@dimen/font16" android:src="@drawable/icon_public_fail" android:scaleType="centerInside" android:layout_marginStart="@dimen/font12" />
+    <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/font12" android:textColor="@color/emui_color_secondary" android:id="@id/capsule_content" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_toRightOf="@id/charging_animation" android:layout_marginStart="@dimen/font8" />
+    <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/capsule_arrow" android:layout_width="@dimen/baseui_dp_8" android:layout_height="@dimen/baseui_dp_16" android:src="@drawable/ic_charging_detail_arrowhead" android:scaleType="centerInside" android:layout_marginStart="@dimen/font4" />
+</merge>

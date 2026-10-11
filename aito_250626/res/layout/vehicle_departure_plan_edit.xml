@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/id_fa_color_sub_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/vehicle_departure_plan_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/hwappbarpattern_height" layout="@layout/hwappbarpattern_title_item_layout" />
+    <com.huawei.uikit.hwscrollview.widget.HwScrollView android:orientation="vertical" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/ll_bottom_btn" android:layout_below="@id/vehicle_departure_plan_title_bar" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/font905" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:layout_marginStart="@dimen/font16" android:layout_marginEnd="@dimen/font16">
+            <include android:id="@id/departure_time_period_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/vehicle_departure_time_period" />
+            <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:background="@drawable/hwlistdrawable_rectangle_bg" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" app:cardCornerRadius="@dimen/emui_corner_radius_icon" app:hwAdvancedCardViewClickAnimationEnable="false">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:layout_marginBottom="@dimen/font4">
+                    <LinearLayout android:orientation="vertical" android:id="@id/air_temperature_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp">
+                        <RelativeLayout android:id="@id/air_temperature_layout_ll" android:layout_width="match_parent" android:layout_height="@dimen/font48">
+                            <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/departure_air_temperature_fun_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:translationX="@dimen/font14" android:layout_alignParentEnd="true" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_car_ac" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeBody1" />
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/departure_air_temperature_fun" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp">
+                            <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/ac_card_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <ImageView android:layout_gravity="center_vertical" android:id="@id/departure_card_temp_sub" android:focusable="true" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="@dimen/baseui_dp_28" android:layout_height="@dimen/baseui_dp_38" android:src="@drawable/ic_vehicle_minus" android:scaleType="center" android:layout_marginEnd="@dimen/baseui_dp_8" android:paddingHorizontal="@dimen/baseui_dp_8" android:paddingVertical="@dimen/baseui_dp_13" />
+                                <TextView android:textSize="28.0sp" android:textColor="@color/emui_color_primary" android:id="@id/departure_card_temp_number" android:layout_width="@dimen/baseui_dp_82" android:layout_height="@dimen/baseui_dp_38" android:fontFamily="@string/emui_text_font_family_medium" android:textAlignment="center" />
+                                <ImageView android:layout_gravity="center_vertical" android:id="@id/departure_card_temp_add" android:focusable="true" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="@dimen/baseui_dp_28" android:layout_height="@dimen/baseui_dp_38" android:src="@drawable/ic_vehicle_plus" android:scaleType="center" android:layout_marginStart="@dimen/baseui_dp_8" android:paddingHorizontal="@dimen/baseui_dp_8" android:paddingVertical="@dimen/baseui_dp_13" />
+                            </LinearLayout>
+                            <TextView android:textSize="@dimen/emui_text_size_body3" android:textColor="@color/emui_selector_text_secondary" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/departure_card_temp_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:text="@string/xcar_app_text_airconditioner_temperature" android:fontFamily="@string/emui_text_font_family_medium" android:textAlignment="center" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/air_purify_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_below="@id/air_temperature_layout">
+                        <View android:background="@color/bottom_line_color" android:layout_width="match_parent" android:layout_height="@dimen/baseui_dp_1" />
+                        <RelativeLayout android:id="@id/air_purify_layout_ll" android:layout_width="match_parent" android:layout_height="@dimen/font48">
+                            <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/air_purify_fun_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:translationX="@dimen/font14" android:layout_alignParentEnd="true" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_air_purify" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeBody1" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/before_defrost_fun" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_below="@id/air_purify_layout">
+                        <View android:background="@color/bottom_line_color" android:layout_width="match_parent" android:layout_height="@dimen/baseui_dp_1" />
+                        <RelativeLayout android:id="@id/before_defrost_fun_ll" android:layout_width="match_parent" android:layout_height="@dimen/font48" android:layout_centerVertical="true">
+                            <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/before_defrost_fun_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:translationX="@dimen/font14" android:layout_alignParentEnd="true" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_departure_deforest" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeBody1" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+            <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:background="@drawable/hwlistdrawable_rectangle_bg" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" app:cardCornerRadius="@dimen/emui_corner_radius_icon" app:hwAdvancedCardViewClickAnimationEnable="false">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:layout_marginBottom="@dimen/font4">
+                    <LinearLayout android:orientation="vertical" android:id="@id/departure_seat_hot_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp">
+                        <RelativeLayout android:id="@id/departure_seat_hot_layout_ll" android:layout_width="match_parent" android:layout_height="@dimen/font48">
+                            <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/departure_seat_hot_fun_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:translationX="@dimen/font14" android:layout_alignParentEnd="true" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_seat_hot" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeBody1" />
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/departure_seat_hot_fun" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <androidx.recyclerview.widget.RecyclerView android:id="@id/departure_seat_hot_content_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/departure_seat_vent_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_below="@id/departure_seat_hot_layout">
+                        <View android:background="@color/bottom_line_color" android:layout_width="match_parent" android:layout_height="@dimen/baseui_dp_1" />
+                        <RelativeLayout android:id="@id/departure_seat_vent_layout_ll" android:layout_width="match_parent" android:layout_height="@dimen/font48">
+                            <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/departure_seat_vent_fun_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:translationX="@dimen/font14" android:layout_alignParentEnd="true" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_seat_ventilation" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeBody1" />
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/departure_seat_vent_fun" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <androidx.recyclerview.widget.RecyclerView android:id="@id/departure_seat_vent_content_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/steer_wheel_hot_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_below="@id/departure_seat_vent_layout">
+                        <View android:background="@color/bottom_line_color" android:layout_width="match_parent" android:layout_height="@dimen/baseui_dp_1" />
+                        <RelativeLayout android:id="@id/steer_wheel_hot_layout_ll" android:layout_width="match_parent" android:layout_height="@dimen/font48">
+                            <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/departure_steer_wheel_fun_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:translationX="@dimen/font14" android:layout_alignParentEnd="true" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_departure_steering_wheel_heating" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeBody1" />
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/departure_steer_wheel_hot_fun" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:id="@id/steer_wheel_hot" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font16">
+                                <com.huawei.uikit.phone.hwtoggle.widget.HwToggleButton android:enabled="true" android:id="@id/departure_steer_wheel_hot_third_gear" android:layout_width="0.0dp" android:layout_height="28.0dp" android:textOn="@string/xcar_app_button_departure_level_3" android:textOff="@string/xcar_app_button_departure_level_3" android:layout_weight="1.0" android:layout_marginEnd="8.0dp" />
+                                <com.huawei.uikit.phone.hwtoggle.widget.HwToggleButton android:enabled="true" android:id="@id/departure_steer_wheel_hot_second_gear" android:layout_width="0.0dp" android:layout_height="28.0dp" android:textOn="@string/xcar_app_button_departure_level_2" android:textOff="@string/xcar_app_button_departure_level_2" android:layout_weight="1.0" android:layout_marginEnd="8.0dp" />
+                                <com.huawei.uikit.phone.hwtoggle.widget.HwToggleButton android:enabled="true" android:id="@id/departure_steer_wheel_hot_first_gear" android:layout_width="0.0dp" android:layout_height="28.0dp" android:textOn="@string/xcar_app_button_departure_level_1" android:textOff="@string/xcar_app_button_departure_level_1" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/exterior_mirror_hot_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_below="@id/steer_wheel_hot_layout">
+                        <View android:background="@color/bottom_line_color" android:layout_width="match_parent" android:layout_height="@dimen/baseui_dp_1" />
+                        <RelativeLayout android:id="@id/exterior_mirror_hot_layout_rl" android:layout_width="match_parent" android:layout_height="@dimen/font48">
+                            <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/departure_exterior_mirror_fun_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:translationX="@dimen/font14" android:layout_alignParentEnd="true" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_departure_exterior_mirror_heating" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeBody1" />
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/departure_exterior_mirror_hot_fun" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:id="@id/exterior_mirror_hot" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font16">
+                                <com.huawei.uikit.phone.hwtoggle.widget.HwToggleButton android:enabled="true" android:id="@id/departure_exterior_mirror_hot_third_gear" android:layout_width="0.0dp" android:layout_height="28.0dp" android:textOn="@string/xcar_app_button_departure_level_3" android:textOff="@string/xcar_app_button_departure_level_3" android:layout_weight="1.0" android:layout_marginEnd="8.0dp" />
+                                <com.huawei.uikit.phone.hwtoggle.widget.HwToggleButton android:enabled="true" android:id="@id/departure_exterior_mirror_hot_second_gear" android:layout_width="0.0dp" android:layout_height="28.0dp" android:textOn="@string/xcar_app_button_departure_level_2" android:textOff="@string/xcar_app_button_departure_level_2" android:layout_weight="1.0" android:layout_marginEnd="8.0dp" />
+                                <com.huawei.uikit.phone.hwtoggle.widget.HwToggleButton android:enabled="true" android:id="@id/departure_exterior_mirror_hot_first_gear" android:layout_width="0.0dp" android:layout_height="28.0dp" android:textOn="@string/xcar_app_button_departure_level_1" android:textOff="@string/xcar_app_button_departure_level_1" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+            <com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView android:id="@id/heat_cool_box_view" android:background="@drawable/hwlistdrawable_rectangle_bg" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" app:cardCornerRadius="@dimen/emui_corner_radius_icon" app:hwAdvancedCardViewClickAnimationEnable="false">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:layout_marginBottom="@dimen/font4">
+                    <LinearLayout android:orientation="vertical" android:id="@id/warm_cool_box_fun" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp">
+                        <RelativeLayout android:id="@id/warm_cool_box_fun_ll" android:layout_width="match_parent" android:layout_height="@dimen/font48">
+                            <com.huawei.uikit.phone.hwcheckbox.widget.HwCheckBox android:id="@id/warm_cool_box_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:translationX="@dimen/font14" android:layout_alignParentEnd="true" />
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:textSize="@dimen/emui_text_size_body1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_text_vehicle_control_warmcool_box_title" android:layout_centerVertical="true" style="@style/textColorPrimaryAndSizeBody1" />
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/warm_cool_box_layout" android:paddingBottom="@dimen/font12" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:id="@id/warm_cool_box_btn_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <com.huawei.uikit.phone.hwtoggle.widget.HwToggleButton android:enabled="true" android:id="@id/cool_box_btn" android:layout_width="0.0dp" android:layout_height="28.0dp" android:textOn="@string/xcar_app_button_departure_cooling" android:textOff="@string/xcar_app_button_departure_cooling" android:layout_weight="1.0" android:layout_marginEnd="8.0dp" />
+                                <com.huawei.uikit.phone.hwtoggle.widget.HwToggleButton android:enabled="true" android:id="@id/warm_box_btn" android:layout_width="0.0dp" android:layout_height="28.0dp" android:textOn="@string/xcar_app_button_departure_heating" android:textOff="@string/xcar_app_button_departure_heating" android:layout_weight="1.0" android:layout_marginEnd="8.0dp" />
+                                <com.huawei.uikit.phone.hwtoggle.widget.HwToggleButton android:enabled="true" android:id="@id/warm_box_btn_holder" android:visibility="invisible" android:layout_width="0.0dp" android:layout_height="28.0dp" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:id="@id/tv_warm_box_cool_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:text="@string/xcar_app_text_vehicle_control_warmcool_box_cool_open_tips" style="@style/textColorThirdAndSizeBody3AndRegular" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.huawei.uikit.phone.hwadvancedcardview.widget.HwAdvancedCardView>
+            <include android:id="@id/departure_reserve_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/vehicle_departure_reserve_bottom" />
+        </LinearLayout>
+    </com.huawei.uikit.hwscrollview.widget.HwScrollView>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_bottom_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font16" android:layout_marginBottom="@dimen/font16" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout android:orientation="vertical" android:id="@id/departure_column_plan_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:hwColumnType="button_type">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.huawei.uikit.phone.hwbutton.widget.HwButton android:layout_gravity="center_horizontal" android:id="@id/departure_plan_btn_del" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_button_delete" android:layout_weight="1.0" android:layout_marginEnd="@dimen/font12" style="@style/Widget.Emui.HwButton.Warning.Light" />
+                <com.huawei.uikit.phone.hwbutton.widget.HwButton android:layout_gravity="center_horizontal" android:id="@id/departure_plan_btn_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xcar_app_button_save" android:layout_weight="1.0" style="@style/Widget.Emui.HwButton.Light" />
+            </LinearLayout>
+        </com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout>
+        <com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout android:orientation="vertical" android:id="@id/departure_column_plan_save_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:hwColumnType="button_type">
+            <com.huawei.uikit.phone.hwbutton.widget.HwButton android:layout_gravity="center_horizontal" android:id="@id/departure_plan_new_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Emui.HwButton.Light" />
+        </com.huawei.uikit.phone.hwcolumnlayout.widget.HwColumnRelativeLayout>
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/xcar_ota_loadding_view" />
+</RelativeLayout>

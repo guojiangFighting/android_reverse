@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/hwseekbar_default_progress_height" />
+    <corners android:radius="@dimen/emui_corner_radius_progressbar" />
+    <solid android:color="@color/emui_accent" />
+</shape>

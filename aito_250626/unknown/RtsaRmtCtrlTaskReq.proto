@@ -1,0 +1,11 @@
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+
+option java_package = "com.huawei.ads.rpa.net.proto";
+
+package RtsaMsgs;
+
+message RmtCtrlTaskReq {
+  bool switchTask = 1;
+  uint32 targetTask = 2;  // 切换任务，失败可以重试
+}

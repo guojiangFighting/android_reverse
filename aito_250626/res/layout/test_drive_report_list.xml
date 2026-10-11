@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/id_fa_color_sub_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout android:id="@id/test_drive_report_refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/font8" android:layout_below="@id/title">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/test_drive_report_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:layout_marginStart="@dimen/hwlistpattern_item_icon_right_height_16" android:layout_marginEnd="@dimen/hwlistpattern_item_icon_right_height_16" />
+    </com.huawei.uikit.phone.hwswiperefreshlayout.widget.HwSwipeRefreshLayout>
+    <include android:id="@id/test_drive_report_empty_view" android:visibility="gone" layout="@layout/x_car_empty_view" />
+    <include android:id="@id/test_drive_report_load_progress" android:visibility="gone" layout="@layout/xcar_loading_layout" />
+    <include android:id="@id/test_drive_report_error_view" android:visibility="gone" layout="@layout/xcar_error_layout" />
+</LinearLayout>

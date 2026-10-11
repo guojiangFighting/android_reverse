@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <Space android:id="@id/space_fir" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toTopOf="@id/space_sec" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_weight="4.0" />
+        <Space android:id="@id/space_top" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" app:layout_constraintBottom_toBottomOf="@id/space_fir" />
+        <Space android:id="@id/space_sec" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/space_fir" app:layout_constraintVertical_weight="6.0" />
+        <com.huawei.uikit.phone.hwimageview.widget.HwImageView android:id="@id/empty_hiv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_topic_no_post_tips" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/space_top" />
+        <com.huawei.uikit.phone.hwtextview.widget.HwTextView android:gravity="center" android:id="@id/empty_htv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:text="@string/xcar_app_text_has_no_content" app:layout_constraintTop_toBottomOf="@id/empty_hiv" style="@style/textColorTertiaryAndSizeBody2AndFamilyRegular" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
